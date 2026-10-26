@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { STAMPS, EXHIBITION, getHome, getFocus } from '../config.js';
 import { FocusMotion, clamp, lerp, damp } from '../motion.js';
 import { createStampArtwork } from '../artwork.js';
-import { createStampMaterial, createShadowTexture } from './StampMaterial.js';
+import { createStampMaterial, createShadowTexture, createShadowMaterial } from './StampMaterial.js';
 import { createDappledLight } from './DappledLight.js';
 import { DEFAULT_PARAMETERS, normalizeParameters } from '../parameters.js';
 
@@ -39,7 +39,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
   let lightPalette = '';
   function syncLightPalette() {
     const { light, color, intensity, enabled, contrast, grain } = background.parameters;
-    const key = `${light}:${color}:${intensity}:${enabled}:${contrast}:${grain}:${settings.surfaceRelief}:${settings.surfaceShine}:${settings.lightModel}:${settings.surfaceRoughness}:${settings.surfaceCoat}`;
+    const key = `${light}:${color}:${intensity}:${enabled}:${contrast}:${grain}:${settings.surfaceRelief}:${settings.surfaceShine}:${settings.textureScale}:${settings.shadowStrength}:${settings.contactShadowColor}:${settings.contactShadowSoftness}:${settings.contactShadowOpacity}`;
     if (key === lightPalette) return;
     lightPalette = key;
     const rgb = (hex) => {
@@ -54,9 +54,10 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       entry.material.uniforms.uLightGrain.value = grain;
       if (entry.material.uniforms.uSurfaceRelief) entry.material.uniforms.uSurfaceRelief.value = settings.surfaceRelief;
       if (entry.material.uniforms.uSurfaceShine) entry.material.uniforms.uSurfaceShine.value = settings.surfaceShine;
-      if (entry.material.uniforms.uSurfaceRoughness) entry.material.uniforms.uSurfaceRoughness.value = settings.surfaceRoughness;
-      if (entry.material.uniforms.uSurfaceCoat) entry.material.uniforms.uSurfaceCoat.value = settings.surfaceCoat;
-      if (entry.material.uniforms.uLightModel) entry.material.uniforms.uLightModel.value = settings.lightModel === 'dappled' ? 1 : 0;
+      entry.material.uniforms.uTextureScale.value = settings.textureScale;
+      entry.material.uniforms.uShadowStrength.value = settings.shadowStrength;
+      entry.shadowMaterial.uniforms.uColor.value.fromArray(rgb(settings.contactShadowColor));
+      entry.shadowMaterial.uniforms.uSoftness.value = settings.contactShadowSoftness;
     }
   }
   let renderer;
@@ -92,7 +93,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     mesh.rotation.order = 'ZXY';
     mesh.frustumCulled = false;
     const shadowSource = createShadowTexture(artwork);
-    const shadowMaterial = new THREE.MeshBasicMaterial({ map: shadowSource.texture, transparent: true, depthTest: false, depthWrite: false, toneMapped: false });
+    const shadowMaterial = createShadowMaterial(shadowSource.texture);
     const shadow = new THREE.Mesh(geometry, shadowMaterial);
     shadow.frustumCulled = false;
     scene.add(shadow, mesh);
@@ -262,7 +263,10 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       else if (!(isActive && (settings.pinLight || (isSelected && !settings.resetTiltOnLeave && !settings.focusTrackOutside)))) entry.lightTarget.set(0.5, 0.5);
       uvTarget.copy(entry.lightTarget);
       if (reducedMotion || !settings.lightFollowPointer) uvTarget.set(0.5, 0.5);
-      if (isActive) background.setPointer(uvTarget.x, uvTarget.y);
+      if (isActive) {
+        background.setPointer(uvTarget.x, uvTarget.y);
+        background.setStampSize(stampWidth, stampHeight, Math.min(devicePixelRatio || 1, EXHIBITION.maxDpr));
+      }
       const uniforms = material.uniforms;
       uvTarget.set(0.5 + (uvTarget.x - 0.5) * settings.pointerInfluence, 0.5 + (uvTarget.y - 0.5) * settings.pointerInfluence);
       if (reducedMotion) uniforms.uPointer.value.copy(uvTarget);
@@ -288,7 +292,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       shadow.position.z -= 0.1;
       shadow.rotation.copy(mesh.rotation);
       shadow.scale.set(stampWidth * entry.shadowSource.scaleX, stampHeight * entry.shadowSource.scaleY, 1);
-      entry.shadowMaterial.opacity = visible * (1 - p * 0.86) * (0.74 + entry.hover * 0.12);
+      entry.shadowMaterial.uniforms.uOpacity.value = visible * (1 - p * 0.86) * settings.contactShadowOpacity * (0.9 + entry.hover * 0.1);
       shadow.visible = mesh.visible;
 
       const button = buttons[stamp.id];
@@ -327,7 +331,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     focusUi.style.visibility = selected === null ? 'hidden' : 'visible';
     label.style.opacity = selected === null && hovered !== null ? '1' : '0';
     host.dataset.progress = progress.toFixed(4);
-    const lightActive = settings.lightModel === 'dappled' && entries.some((entry) => entry.light > 0.001);
+    const lightActive = entries.some((entry) => entry.light > 0.001);
     background.render(elapsed, progress, reducedMotion, lightActive);
     renderer.autoClear = false;
     renderer.clearDepth();

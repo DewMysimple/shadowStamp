@@ -28,14 +28,15 @@ export function createSurfaceNormalData(width = 512, height = 640, seed = 17041)
     const d = sample(white, ix + salt + 1, iy + salt * 3 + 1);
     return (a + (b - a) * fx) * (1 - fy) + (c + (d - c) * fx) * fy;
   };
-  // A smooth, domain-warped latent field creates coherent curving etch ridges.
-  // Many height levels make each visible ridge only a few texels wide. These
-  // are not printed waves: the unlit albedo never samples this texture.
+  // Irregular fibres at several scales, rather than sine contour rings.
+  // The latent height only produces normals; no printed waves or raised ink.
   for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
-    const wx = x + (noise(x / 110, y / 110, 23) - .5) * 42;
-    const wy = y + (noise(x / 110, y / 110, 71) - .5) * 42;
-    const field = noise(wx / 65, wy / 65, 0) * .68 + noise(wx / 29, wy / 29, 37) * .25 + noise(x / 11, y / 11, 113) * .07;
-    etched[y * width + x] = .5 + Math.sin(field * 320) * .035;
+    const wx = x + (noise(x / 44, y / 44, 23) - .5) * 14;
+    const wy = y + (noise(x / 44, y / 44, 71) - .5) * 14;
+    etched[y * width + x] = .5
+      + (noise(wx / 2.4, wy / 2.4, 131) - .5) * .11
+      + (noise(wx / 5.7, wy / 5.7, 167) - .5) * .10
+      + (noise(wx / 13, wy / 13, 73) - .5) * .05;
   }
   const encode = value => Math.round((Math.max(-1, Math.min(1, value)) * .5 + .5) * 255);
   for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
@@ -58,6 +59,7 @@ export function createSurfaceNormalTexture(seed = 17041) {
   const texture = new THREE.DataTexture(data, width, height, THREE.RGBAFormat);
   texture.name = 'Independent shallow paper normal';
   texture.colorSpace = THREE.NoColorSpace;
+  texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
   texture.minFilter = THREE.LinearMipmapLinearFilter;
   texture.magFilter = THREE.LinearFilter;
   texture.generateMipmaps = true;

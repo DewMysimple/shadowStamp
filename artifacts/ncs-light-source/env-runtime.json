@@ -1,0 +1,2093 @@
+{
+  "observedAt": "2026-10-26T09:12:15.130Z",
+  "url": "https://billguo.me/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scope": "Read-only real WebGL uniform calls of the shipped NCS hover material; no parameter overrides or shader changes.",
+  "bounds": {
+    "x": 728.4067993164062,
+    "y": 330.27301025390625,
+    "width": 205.40814208984375,
+    "height": 250.03558349609375
+  },
+  "captures": [
+    {
+      "name": "center",
+      "pointer": [
+        0.5,
+        0.5
+      ],
+      "programs": {
+        "1": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 682,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "2": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1192,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "3": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1161,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "4": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1661,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "5": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 2303,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "6": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 229,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "7": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 17569,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 13210,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "8": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2,
+            "roughness": 1,
+            "metalness": 0
+          },
+          "features": [
+            {
+              "chars": 18873,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 73656,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "9": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2,
+            "roughness": 1,
+            "metalness": 0
+          },
+          "features": [
+            {
+              "chars": 18877,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 73637,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "10": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2
+          },
+          "features": [
+            {
+              "chars": 19587,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 42499,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "11": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 2680,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 6749,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "12": {
+          "uniforms": {
+            "roughness": 0
+          },
+          "features": [
+            {
+              "chars": 2689,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 8811,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "13": {
+          "uniforms": {
+            "toneMappingExposure": 1,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "metalnessMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "roughnessMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "directionalLights[0].direction": [
+              -0.43810795433832356,
+              0.6571619315074854,
+              0.6133511360736529
+            ],
+            "directionalLights[0].color": [
+              1.6,
+              1.3941873907135307,
+              1.1451096008009154
+            ],
+            "pointLights[0].position": [
+              0,
+              0,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0,
+              0,
+              0
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.3,
+              0.3,
+              0.3
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.09694296273066855,
+              0.08240319361487097,
+              0.061523620913919434
+            ],
+            "roughness": 1,
+            "metalness": 1,
+            "sheenRoughness": 0.55,
+            "envMapIntensity": 0.45,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1,
+              -1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19589,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79346,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "14": {
+          "uniforms": {
+            "toneMappingExposure": 0.57,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "clearcoatNormalMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "directionalLights[0].direction": [
+              -0.48763374292764833,
+              0.6516103019900824,
+              0.5810484894557131
+            ],
+            "directionalLights[0].color": [
+              1.6,
+              1.4474578790224326,
+              1.2660767045250483
+            ],
+            "pointLights[0].position": [
+              -0.035692288527885634,
+              -0.0014244929193658606,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0.65,
+              0.48451273619776847,
+              0.2821998635071106
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.32,
+              0.32,
+              0.32
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.10340582691271312,
+              0.08789673985586237,
+              0.06562519564151406
+            ],
+            "roughness": 0.622443694960892,
+            "metalness": 0,
+            "clearcoat": 0.5464630730829194,
+            "clearcoatRoughness": 0.20514462097029895,
+            "envMapIntensity": 1,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1.6,
+              1.6
+            ],
+            "clearcoatNormalScale": [
+              1.1,
+              1.1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19418,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79256,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "15": {
+          "uniforms": {
+            "toneMappingExposure": 0.9,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "directionalLights[0].direction": [
+              -0.40730653998127847,
+              0.6109598099719177,
+              0.6788442333021307
+            ],
+            "directionalLights[0].color": [
+              1.7,
+              1.7,
+              1.7
+            ],
+            "pointLights[0].position": [
+              0,
+              0,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0,
+              0,
+              0
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.28,
+              0.28,
+              0.28
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.09048009854862399,
+              0.07690964737387958,
+              0.057422046186324814
+            ],
+            "roughness": 0.32000000000000006,
+            "metalness": 0.85,
+            "clearcoat": 0.35,
+            "clearcoatRoughness": 0.12,
+            "envMapIntensity": 1,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1,
+              1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19375,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79243,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "16": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1192,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "17": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1161,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "18": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1661,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "19": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 2303,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "20": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 229,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "upperRight",
+      "pointer": [
+        0.8,
+        0.2
+      ],
+      "programs": {
+        "1": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 682,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "2": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1192,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "3": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1161,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "4": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1661,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "5": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 2303,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "6": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 229,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "7": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 17569,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 13210,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "8": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2,
+            "roughness": 1,
+            "metalness": 0
+          },
+          "features": [
+            {
+              "chars": 18873,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 73656,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "9": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2,
+            "roughness": 1,
+            "metalness": 0
+          },
+          "features": [
+            {
+              "chars": 18877,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 73637,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "10": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2
+          },
+          "features": [
+            {
+              "chars": 19587,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 42499,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "11": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 2680,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 6749,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "12": {
+          "uniforms": {
+            "roughness": 0
+          },
+          "features": [
+            {
+              "chars": 2689,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 8811,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "13": {
+          "uniforms": {
+            "toneMappingExposure": 1,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "metalnessMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "roughnessMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "directionalLights[0].direction": [
+              -0.43810795433832356,
+              0.6571619315074854,
+              0.6133511360736529
+            ],
+            "directionalLights[0].color": [
+              1.6,
+              1.3941873907135307,
+              1.1451096008009154
+            ],
+            "pointLights[0].position": [
+              0,
+              0,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0,
+              0,
+              0
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.3,
+              0.3,
+              0.3
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.09694296273066855,
+              0.08240319361487097,
+              0.061523620913919434
+            ],
+            "roughness": 1,
+            "metalness": 1,
+            "sheenRoughness": 0.55,
+            "envMapIntensity": 0.45,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1,
+              -1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19589,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79346,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "14": {
+          "uniforms": {
+            "toneMappingExposure": 0.57,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "clearcoatNormalMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "directionalLights[0].direction": [
+              -0.08892587324873565,
+              0.8701013039810485,
+              0.484784395249506
+            ],
+            "directionalLights[0].color": [
+              1.6,
+              1.4474578790224326,
+              1.2660767045250483
+            ],
+            "pointLights[0].position": [
+              0.22662645570266937,
+              0.267928475014737,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0.65,
+              0.48451273619776847,
+              0.2821998635071106
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.32,
+              0.32,
+              0.32
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.10340582691271312,
+              0.08789673985586237,
+              0.06562519564151406
+            ],
+            "roughness": 0.62,
+            "metalness": 0,
+            "clearcoat": 0.55,
+            "clearcoatRoughness": 0.19999999999999996,
+            "envMapIntensity": 1,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1.6,
+              1.6
+            ],
+            "clearcoatNormalScale": [
+              1.1,
+              1.1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19418,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79256,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "15": {
+          "uniforms": {
+            "toneMappingExposure": 0.9,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "directionalLights[0].direction": [
+              -0.40730653998127847,
+              0.6109598099719177,
+              0.6788442333021307
+            ],
+            "directionalLights[0].color": [
+              1.7,
+              1.7,
+              1.7
+            ],
+            "pointLights[0].position": [
+              0,
+              0,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0,
+              0,
+              0
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.28,
+              0.28,
+              0.28
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.09048009854862399,
+              0.07690964737387958,
+              0.057422046186324814
+            ],
+            "roughness": 0.32000000000000006,
+            "metalness": 0.85,
+            "clearcoat": 0.35,
+            "clearcoatRoughness": 0.12,
+            "envMapIntensity": 1,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1,
+              1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19375,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79243,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "16": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1192,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "17": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1161,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "18": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1661,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "19": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 2303,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "20": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 229,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "lowerLeft",
+      "pointer": [
+        0.2,
+        0.8
+      ],
+      "programs": {
+        "1": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 682,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "2": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1192,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "3": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1161,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "4": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1661,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "5": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 2303,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "6": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 229,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "7": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 17569,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 13210,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "8": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2,
+            "roughness": 1,
+            "metalness": 0
+          },
+          "features": [
+            {
+              "chars": 18873,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 73656,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "9": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2,
+            "roughness": 1,
+            "metalness": 0
+          },
+          "features": [
+            {
+              "chars": 18877,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 73637,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "10": {
+          "uniforms": {
+            "pointLights[0].position": [
+              0.418,
+              12.699000000000002,
+              0.3
+            ],
+            "pointLights[0].color": [
+              900,
+              900,
+              900
+            ],
+            "pointLights[0].distance": 28,
+            "pointLights[0].decay": 2
+          },
+          "features": [
+            {
+              "chars": 19587,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 42499,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "11": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 2680,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 6749,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "12": {
+          "uniforms": {
+            "roughness": 0
+          },
+          "features": [
+            {
+              "chars": 2689,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 8811,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "13": {
+          "uniforms": {
+            "toneMappingExposure": 1,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "metalnessMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "roughnessMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "directionalLights[0].direction": [
+              -0.43810795433832356,
+              0.6571619315074854,
+              0.6133511360736529
+            ],
+            "directionalLights[0].color": [
+              1.6,
+              1.3941873907135307,
+              1.1451096008009154
+            ],
+            "pointLights[0].position": [
+              0,
+              0,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0,
+              0,
+              0
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.3,
+              0.3,
+              0.3
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.09694296273066855,
+              0.08240319361487097,
+              0.061523620913919434
+            ],
+            "roughness": 1,
+            "metalness": 1,
+            "sheenRoughness": 0.55,
+            "envMapIntensity": 0.45,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1,
+              -1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19589,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79346,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "14": {
+          "uniforms": {
+            "toneMappingExposure": 0.57,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "clearcoatNormalMapTransform": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "directionalLights[0].direction": [
+              -0.8293595862647232,
+              0.19110545735196358,
+              0.5250156005692634
+            ],
+            "directionalLights[0].color": [
+              1.6,
+              1.4474578790224326,
+              1.2660767045250483
+            ],
+            "pointLights[0].position": [
+              -0.33187424172955304,
+              -0.3044001685704182,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0.65,
+              0.48451273619776847,
+              0.2821998635071106
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.32,
+              0.32,
+              0.32
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.10340582691271312,
+              0.08789673985586237,
+              0.06562519564151406
+            ],
+            "roughness": 0.62,
+            "metalness": 0,
+            "clearcoat": 0.55,
+            "clearcoatRoughness": 0.19999999999999996,
+            "envMapIntensity": 1,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1.6,
+              1.6
+            ],
+            "clearcoatNormalScale": [
+              1.1,
+              1.1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19418,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79256,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "15": {
+          "uniforms": {
+            "toneMappingExposure": 0.9,
+            "directionalLightShadows[0].shadowIntensity": 0.4,
+            "directionalLightShadows[0].shadowBias": -0.0006,
+            "directionalLightShadows[0].shadowNormalBias": 0,
+            "directionalLightShadows[0].shadowRadius": 4,
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "directionalLights[0].direction": [
+              -0.40730653998127847,
+              0.6109598099719177,
+              0.6788442333021307
+            ],
+            "directionalLights[0].color": [
+              1.7,
+              1.7,
+              1.7
+            ],
+            "pointLights[0].position": [
+              0,
+              0,
+              -2.7068757573375217
+            ],
+            "pointLights[0].color": [
+              0,
+              0,
+              0
+            ],
+            "pointLights[0].distance": 0,
+            "pointLights[0].decay": 2,
+            "hemisphereLights[0].direction": [
+              0,
+              1,
+              0
+            ],
+            "hemisphereLights[0].skyColor": [
+              0.28,
+              0.28,
+              0.28
+            ],
+            "hemisphereLights[0].groundColor": [
+              0.09048009854862399,
+              0.07690964737387958,
+              0.057422046186324814
+            ],
+            "roughness": 0.32000000000000006,
+            "metalness": 0.85,
+            "clearcoat": 0.35,
+            "clearcoatRoughness": 0.12,
+            "envMapIntensity": 1,
+            "envMapRotation": [
+              false,
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "normalScale": [
+              1,
+              1
+            ]
+          },
+          "features": [
+            {
+              "chars": 19375,
+              "physical": true,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 79243,
+              "physical": true,
+              "dapple": true,
+              "neutral": true,
+              "linearToSRGB": true
+            }
+          ]
+        },
+        "16": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1192,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "17": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1161,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "18": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 1661,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "19": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 2303,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        },
+        "20": {
+          "uniforms": {},
+          "features": [
+            {
+              "chars": 144,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            },
+            {
+              "chars": 229,
+              "physical": false,
+              "dapple": false,
+              "neutral": false,
+              "linearToSRGB": false
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "uploads": [
+    {
+      "kind": "HTMLImageElement",
+      "src": "https://billguo.me/about/camellia.webp",
+      "width": 1534,
+      "height": 1847
+    }
+  ],
+  "errors": []
+}

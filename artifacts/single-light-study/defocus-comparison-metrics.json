@@ -1,0 +1,21 @@
+{
+  "scope": "Same 1440x1000 gallery screenshot, identical static nonactive C geometry. Hand-selected C region, not an original-site similarity metric.",
+  "roi": {
+    "x": 651,
+    "y": 557,
+    "width": 91,
+    "height": 128
+  },
+  "metric": "RMS of luminance minus Gaussian(sigma=1.2); measures unwanted fine contour energy in this already-defocused C patch.",
+  "images": {
+    "defocus-before.png": {
+      "sha256": "57e914c9d835ead83f7b276f82518cd09f9f61c39b1104cd0d6a3edcdef9266d",
+      "highFrequencyRMS": 2.3425
+    },
+    "hover.png": {
+      "sha256": "6285e5410ae6d88415d0636f3f4c8ddd92f6d7702f31e5220db152c063879db9",
+      "highFrequencyRMS": 1.716
+    }
+  },
+  "note": "After statistics and whole-frame SHA refreshed using the final orange/RGB-source hover.png without re-rendering; before remains the original saved image. Whole-frame lighting differs from the earlier pair, while the C geometry/ROI remains the same."
+}

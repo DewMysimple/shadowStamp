@@ -27,7 +27,7 @@ test('panel inputs preserve zero, clamp optical extremes and reject malformed im
   const p = normalizeDappledParameters({
     lightEnabled: false, lightAnimation: false, lightCoverage: 99, lightIntensity: NaN,
     pointerInfluence: 0, lightResponse: 0, lightColor: '#AB12EF', shadowColor: 'invalid',
-    lightDensity: -10, lightContrast: 0, unknown: 'ignored',
+    lightScale: -10, lightContrast: 0, unknown: 'ignored',
   });
   assert.equal(p.enabled, false);
   assert.equal(p.animate, false);
@@ -37,7 +37,7 @@ test('panel inputs preserve zero, clamp optical extremes and reject malformed im
   assert.equal(p.responseTime, 0);
   assert.equal(p.light, '#ab12ef');
   assert.equal(p.color, DAPPLED_DEFAULTS.color);
-  assert.equal(p.density, 2);
+  assert.equal(p.scale, 0.2);
   assert.equal(p.contrast, 0);
   assert.equal('unknown' in p, false);
 });
@@ -46,7 +46,7 @@ test('the complete public light-slider range reaches the optical adapter without
   const nativeKeys = {
     lightIntensity: 'intensity', lightContrast: 'contrast', lightSpeed: 'speed',
     pointerInfluence: 'pointerInfluence', lightResponse: 'responseTime',
-    lightCoverage: 'coverage', lightDensity: 'density', lightAngle: 'angle',
+    lightCoverage: 'coverage', lightScale: 'scale', lightAngle: 'angle',
     lightStretch: 'stretch', lightScatter: 'scatter', lightWarp: 'wave',
     lightSoftness: 'softness', lightGrain: 'grain',
   };
@@ -74,15 +74,28 @@ test('disabling light stops optical passes and time; re-enabling reuses the same
   assert.equal(light.stats.fieldUpdates, original.fieldUpdates);
   assert.equal(light.stats.time, original.time);
   assert.equal(light.needsFrame, false);
-  light.configure({ lightEnabled: true, lightDensity: 32 });
+  light.configure({ lightEnabled: true, density: 32 });
   light.render(3, 0, false, true);
   assert.equal(light.parameters, reference);
   assert.equal(light.stats.texture, original.texture);
   assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 1);
-  assert.equal(renderer.draws.at(-3).uniforms.uDensity.value, 32);
+  assert.equal(renderer.draws.at(-3).uniforms.uDensity.value, 32 / 3);
   assert.equal(renderer.getRenderTarget(), null);
   assert.equal(renderer.autoClear, false);
   light.dispose();
+  light.dispose();
+});
+
+test('source light-map scale follows original NCS half-resolution and DPR rules', () => {
+  const renderer = fakeRenderer(), light = createDappledLight(renderer, { lightAnimation: false });
+  light.resize(1440, 900);
+  for (const [height, dpr, expected] of [[238, 1, 8.9], [540, 1, 12.873214285714285], [238, 2, 11.3475], [540, 2, 25.74642857142857]]) {
+    light.setStampSize(190, height, dpr);
+    light.render(dpr + height, 0, false, true);
+    assert.ok(Math.abs(light.stats.density - expected) < 1e-10);
+  }
+  light.configure({ lightScale: 2 }); light.render(1000, 0, false, true);
+  assert.ok(Math.abs(light.stats.density - 25.74642857142857 / 2) < 1e-10);
   light.dispose();
 });
 

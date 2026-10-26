@@ -1,0 +1,3383 @@
+{
+  "observedAt": "2026-10-26T09:10:50.030Z",
+  "url": "https://billguo.me/",
+  "scope": "Read-only original NCS GPU uploads; no shader or image added to product.",
+  "errors": [],
+  "states": [
+    {
+      "label": "center",
+      "pointer": [
+        0.5,
+        0.5
+      ],
+      "gl": {
+        "programs": {
+          "1": {
+            "uniforms": {
+              "uArt": [
+                0
+              ],
+              "uField": [
+                1
+              ],
+              "uRest": [
+                0.02
+              ],
+              "uLitGain": [
+                0
+              ],
+              "uGrain": [
+                0
+              ],
+              "uGrainPx": [
+                1
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": "HomeBloom-module__vLuROW__canvas"
+            }
+          },
+          "2": {
+            "uniforms": {
+              "uRadius": [
+                0.28319999999999995
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "uClearColor": [
+                [
+                  1,
+                  0.6666666865348816,
+                  0.6470588445663452
+                ]
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "3": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                0
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "4": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uAmount": [
+                0.35600000000000004
+              ],
+              "uSpread": [
+                2.4
+              ],
+              "uAngle": [
+                0.12222222238779068
+              ],
+              "uTime": [
+                0
+              ],
+              "uSkew": [
+                0.8399999737739563
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "5": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ],
+              "uAmount": [
+                0.7540000081062317
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "6": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uOutputColor": [
+                [
+                  1,
+                  0.8196078538894653,
+                  0.5960784554481506
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "7": {
+            "uniforms": {
+              "diffuse": [
+                0,
+                0,
+                0
+              ],
+              "opacity": [
+                1
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "8": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "dfgLUT": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "9": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "dfgLUT": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "10": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                0,
+                0,
+                0
+              ],
+              "emissive": [
+                20,
+                20,
+                20
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "11": {
+            "uniforms": {
+              "samples": [
+                20
+              ],
+              "latitudinal": [
+                false
+              ],
+              "dTheta": [
+                0.006159985595274104
+              ],
+              "mipInt": [
+                8
+              ],
+              "poleAxis": [
+                0,
+                1,
+                0
+              ],
+              "envMap": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "12": {
+            "uniforms": {
+              "roughness": [
+                0
+              ],
+              "mipInt": [
+                -2
+              ],
+              "envMap": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "13": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                1
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.075
+              ],
+              "displacementBias": [
+                -0.0375
+              ],
+              "directionalLights[0].direction": [
+                -0.43810795433832356,
+                0.6571619315074854,
+                0.6133511360736529
+              ],
+              "directionalLights[0].color": [
+                1.6,
+                1.3941873907135307,
+                1.1451096008009154
+              ],
+              "pointLights[0].position": [
+                0,
+                0,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0,
+                0,
+                0
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.3,
+                0.3,
+                0.3
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.09694296273066855,
+                0.08240319361487097,
+                0.061523620913919434
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                1
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.85
+              ],
+              "specularIntensity": [
+                1
+              ],
+              "specularColor": [
+                1,
+                1,
+                1
+              ],
+              "sheenColor": [
+                0.7008941014596806,
+                0.7008941014596806,
+                0.7733756183561232
+              ],
+              "sheenRoughness": [
+                0.55
+              ],
+              "anisotropyVector": [
+                1,
+                0
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                0.45
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1,
+                -1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "sheenColorMap": [
+                2
+              ],
+              "anisotropyMap": [
+                3
+              ],
+              "map": [
+                4
+              ],
+              "envMap": [
+                5
+              ],
+              "dfgLUT": [
+                6
+              ],
+              "normalMap": [
+                7
+              ],
+              "roughnessMap": [
+                8
+              ],
+              "metalnessMap": [
+                9
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "14": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                0.57
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.09
+              ],
+              "displacementBias": [
+                -0.045
+              ],
+              "directionalLights[0].direction": [
+                -0.4847571836386966,
+                0.6556960119992414,
+                0.5788550878751689
+              ],
+              "directionalLights[0].color": [
+                1.6,
+                1.4474578790224326,
+                1.2660767045250483
+              ],
+              "pointLights[0].position": [
+                -0.034976538199305116,
+                0.003098556604994973,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0.65,
+                0.48451273619776847,
+                0.2821998635071106
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.32,
+                0.32,
+                0.32
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.10340582691271312,
+                0.08789673985586237,
+                0.06562519564151406
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                0.6204975888936317
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.5
+              ],
+              "specularIntensity": [
+                0.6
+              ],
+              "specularColor": [
+                1,
+                0.9215818562755338,
+                0.8227857543924378
+              ],
+              "clearcoat": [
+                0.5492798055486909
+              ],
+              "clearcoatRoughness": [
+                0.20104755556554055
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1.6,
+                1.6
+              ],
+              "clearcoatNormalScale": [
+                1.1,
+                1.1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "map": [
+                2
+              ],
+              "envMap": [
+                3
+              ],
+              "dfgLUT": [
+                4
+              ],
+              "normalMap": [
+                5
+              ],
+              "clearcoatNormalMap": [
+                6
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "15": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                0.9
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.022
+              ],
+              "displacementBias": [
+                -0.011
+              ],
+              "directionalLights[0].direction": [
+                -0.40730653998127847,
+                0.6109598099719177,
+                0.6788442333021307
+              ],
+              "directionalLights[0].color": [
+                1.7,
+                1.7,
+                1.7
+              ],
+              "pointLights[0].position": [
+                0,
+                0,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0,
+                0,
+                0
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.28,
+                0.28,
+                0.28
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.09048009854862399,
+                0.07690964737387958,
+                0.057422046186324814
+              ],
+              "diffuse": [
+                0.7912979403281551,
+                0.8069522576650873,
+                0.8227857543924378
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                0.32000000000000006
+              ],
+              "metalness": [
+                0.85
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.5
+              ],
+              "specularIntensity": [
+                1
+              ],
+              "specularColor": [
+                0.9046611743890203,
+                0.9215818562755338,
+                0.9386857284565036
+              ],
+              "clearcoat": [
+                0.35
+              ],
+              "clearcoatRoughness": [
+                0.12
+              ],
+              "anisotropyVector": [
+                -0.1423504748063865,
+                0.5312592044589877
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1,
+                1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "map": [
+                2
+              ],
+              "envMap": [
+                3
+              ],
+              "dfgLUT": [
+                4
+              ],
+              "normalMap": [
+                5
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "16": {
+            "uniforms": {
+              "uRadius": [
+                0.354
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                [
+                  0.30588235,
+                  0.36078431,
+                  0.23529412
+                ]
+              ],
+              "uClearColor": [
+                [
+                  1,
+                  0.6666666865348816,
+                  0.6470588445663452
+                ]
+              ],
+              "uPos": [
+                0.46502346180069487,
+                0.503098556604995
+              ],
+              "uResolution": [
+                95,
+                119
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "17": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                6.32929999999702
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "18": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uAmount": [
+                0.17800000000000002
+              ],
+              "uSpread": [
+                1
+              ],
+              "uAngle": [
+                0.12222222238779068
+              ],
+              "uTime": [
+                6.32929999999702
+              ],
+              "uSkew": [
+                0.8399999737739563
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "19": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ],
+              "uAmount": [
+                0.7540000081062317
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "20": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uOutputColor": [
+                [
+                  1,
+                  0.8196078538894653,
+                  0.5960784554481506
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          }
+        },
+        "canvasImages": []
+      }
+    },
+    {
+      "label": "upperRight",
+      "pointer": [
+        0.82,
+        0.18
+      ],
+      "gl": {
+        "programs": {
+          "1": {
+            "uniforms": {
+              "uArt": [
+                0
+              ],
+              "uField": [
+                1
+              ],
+              "uRest": [
+                0.02
+              ],
+              "uLitGain": [
+                0
+              ],
+              "uGrain": [
+                0
+              ],
+              "uGrainPx": [
+                1
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": "HomeBloom-module__vLuROW__canvas"
+            }
+          },
+          "2": {
+            "uniforms": {
+              "uRadius": [
+                0.28319999999999995
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "uClearColor": [
+                [
+                  1,
+                  0.6666666865348816,
+                  0.6470588445663452
+                ]
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "3": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                0
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "4": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uAmount": [
+                0.35600000000000004
+              ],
+              "uSpread": [
+                2.4
+              ],
+              "uAngle": [
+                0.12222222238779068
+              ],
+              "uTime": [
+                0
+              ],
+              "uSkew": [
+                0.8399999737739563
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "5": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ],
+              "uAmount": [
+                0.7540000081062317
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "6": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uOutputColor": [
+                [
+                  1,
+                  0.8196078538894653,
+                  0.5960784554481506
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "7": {
+            "uniforms": {
+              "diffuse": [
+                0,
+                0,
+                0
+              ],
+              "opacity": [
+                1
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "8": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "dfgLUT": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "9": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "dfgLUT": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "10": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                0,
+                0,
+                0
+              ],
+              "emissive": [
+                20,
+                20,
+                20
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "11": {
+            "uniforms": {
+              "samples": [
+                20
+              ],
+              "latitudinal": [
+                false
+              ],
+              "dTheta": [
+                0.006159985595274104
+              ],
+              "mipInt": [
+                8
+              ],
+              "poleAxis": [
+                0,
+                1,
+                0
+              ],
+              "envMap": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "12": {
+            "uniforms": {
+              "roughness": [
+                0
+              ],
+              "mipInt": [
+                -2
+              ],
+              "envMap": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "13": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                1
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.075
+              ],
+              "displacementBias": [
+                -0.0375
+              ],
+              "directionalLights[0].direction": [
+                -0.43810795433832356,
+                0.6571619315074854,
+                0.6133511360736529
+              ],
+              "directionalLights[0].color": [
+                1.6,
+                1.3941873907135307,
+                1.1451096008009154
+              ],
+              "pointLights[0].position": [
+                0,
+                0,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0,
+                0,
+                0
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.3,
+                0.3,
+                0.3
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.09694296273066855,
+                0.08240319361487097,
+                0.061523620913919434
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                1
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.85
+              ],
+              "specularIntensity": [
+                1
+              ],
+              "specularColor": [
+                1,
+                1,
+                1
+              ],
+              "sheenColor": [
+                0.7008941014596806,
+                0.7008941014596806,
+                0.7733756183561232
+              ],
+              "sheenRoughness": [
+                0.55
+              ],
+              "anisotropyVector": [
+                1,
+                0
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                0.45
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1,
+                -1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "sheenColorMap": [
+                2
+              ],
+              "anisotropyMap": [
+                3
+              ],
+              "map": [
+                4
+              ],
+              "envMap": [
+                5
+              ],
+              "dfgLUT": [
+                6
+              ],
+              "normalMap": [
+                7
+              ],
+              "roughnessMap": [
+                8
+              ],
+              "metalnessMap": [
+                9
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "14": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                0.57
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.09
+              ],
+              "displacementBias": [
+                -0.045
+              ],
+              "directionalLights[0].direction": [
+                -0.05111839819337519,
+                0.8797938292794948,
+                0.47259890745521904
+              ],
+              "directionalLights[0].color": [
+                1.6,
+                1.4474578790224326,
+                1.2660767045250483
+              ],
+              "pointLights[0].position": [
+                0.2567342222870298,
+                0.2946431342948962,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0.65,
+                0.48451273619776847,
+                0.2821998635071106
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.32,
+                0.32,
+                0.32
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.10340582691271312,
+                0.08789673985586237,
+                0.06562519564151406
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                0.62
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.5
+              ],
+              "specularIntensity": [
+                0.6
+              ],
+              "specularColor": [
+                1,
+                0.9215818562755338,
+                0.8227857543924378
+              ],
+              "clearcoat": [
+                0.55
+              ],
+              "clearcoatRoughness": [
+                0.19999999999999996
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1.6,
+                1.6
+              ],
+              "clearcoatNormalScale": [
+                1.1,
+                1.1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "map": [
+                2
+              ],
+              "envMap": [
+                3
+              ],
+              "dfgLUT": [
+                4
+              ],
+              "normalMap": [
+                5
+              ],
+              "clearcoatNormalMap": [
+                6
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "15": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                0.9
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.022
+              ],
+              "displacementBias": [
+                -0.011
+              ],
+              "directionalLights[0].direction": [
+                -0.40730653998127847,
+                0.6109598099719177,
+                0.6788442333021307
+              ],
+              "directionalLights[0].color": [
+                1.7,
+                1.7,
+                1.7
+              ],
+              "pointLights[0].position": [
+                0,
+                0,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0,
+                0,
+                0
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.28,
+                0.28,
+                0.28
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.09048009854862399,
+                0.07690964737387958,
+                0.057422046186324814
+              ],
+              "diffuse": [
+                0.7912979403281551,
+                0.8069522576650873,
+                0.8227857543924378
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                0.32000000000000006
+              ],
+              "metalness": [
+                0.85
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.5
+              ],
+              "specularIntensity": [
+                1
+              ],
+              "specularColor": [
+                0.9046611743890203,
+                0.9215818562755338,
+                0.9386857284565036
+              ],
+              "clearcoat": [
+                0.35
+              ],
+              "clearcoatRoughness": [
+                0.12
+              ],
+              "anisotropyVector": [
+                -0.1423504748063865,
+                0.5312592044589877
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1,
+                1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "map": [
+                2
+              ],
+              "envMap": [
+                3
+              ],
+              "dfgLUT": [
+                4
+              ],
+              "normalMap": [
+                5
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "16": {
+            "uniforms": {
+              "uRadius": [
+                0.354
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                [
+                  0.30588235,
+                  0.36078431,
+                  0.23529412
+                ]
+              ],
+              "uClearColor": [
+                [
+                  1,
+                  0.6666666865348816,
+                  0.6470588445663452
+                ]
+              ],
+              "uPos": [
+                0.7566227064419325,
+                0.794542135608115
+              ],
+              "uResolution": [
+                95,
+                119
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "17": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                7.251599999994039
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "18": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uAmount": [
+                0.17800000000000002
+              ],
+              "uSpread": [
+                1
+              ],
+              "uAngle": [
+                0.12222222238779068
+              ],
+              "uTime": [
+                7.251599999994039
+              ],
+              "uSkew": [
+                0.8399999737739563
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "19": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ],
+              "uAmount": [
+                0.7540000081062317
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "20": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uOutputColor": [
+                [
+                  1,
+                  0.8196078538894653,
+                  0.5960784554481506
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          }
+        },
+        "canvasImages": []
+      }
+    },
+    {
+      "label": "lowerLeft",
+      "pointer": [
+        0.18,
+        0.82
+      ],
+      "gl": {
+        "programs": {
+          "1": {
+            "uniforms": {
+              "uArt": [
+                0
+              ],
+              "uField": [
+                1
+              ],
+              "uRest": [
+                0.02
+              ],
+              "uLitGain": [
+                0
+              ],
+              "uGrain": [
+                0
+              ],
+              "uGrainPx": [
+                1
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": "HomeBloom-module__vLuROW__canvas"
+            }
+          },
+          "2": {
+            "uniforms": {
+              "uRadius": [
+                0.28319999999999995
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "uClearColor": [
+                [
+                  1,
+                  0.6666666865348816,
+                  0.6470588445663452
+                ]
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "3": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                0
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "4": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uAmount": [
+                0.35600000000000004
+              ],
+              "uSpread": [
+                2.4
+              ],
+              "uAngle": [
+                0.12222222238779068
+              ],
+              "uTime": [
+                0
+              ],
+              "uSkew": [
+                0.8399999737739563
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "5": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ],
+              "uAmount": [
+                0.7540000081062317
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                2,
+                2
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "6": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uOutputColor": [
+                [
+                  1,
+                  0.8196078538894653,
+                  0.5960784554481506
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "7": {
+            "uniforms": {
+              "diffuse": [
+                0,
+                0,
+                0
+              ],
+              "opacity": [
+                1
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "8": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "dfgLUT": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "9": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "dfgLUT": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "10": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "pointLights[0].position": [
+                0.418,
+                12.699000000000002,
+                0.3
+              ],
+              "pointLights[0].color": [
+                900,
+                900,
+                900
+              ],
+              "pointLights[0].distance": [
+                28
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "diffuse": [
+                0,
+                0,
+                0
+              ],
+              "emissive": [
+                20,
+                20,
+                20
+              ],
+              "opacity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "11": {
+            "uniforms": {
+              "samples": [
+                20
+              ],
+              "latitudinal": [
+                false
+              ],
+              "dTheta": [
+                0.006159985595274104
+              ],
+              "mipInt": [
+                8
+              ],
+              "poleAxis": [
+                0,
+                1,
+                0
+              ],
+              "envMap": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "12": {
+            "uniforms": {
+              "roughness": [
+                0
+              ],
+              "mipInt": [
+                -2
+              ],
+              "envMap": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "13": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                1
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.075
+              ],
+              "displacementBias": [
+                -0.0375
+              ],
+              "directionalLights[0].direction": [
+                -0.43810795433832356,
+                0.6571619315074854,
+                0.6133511360736529
+              ],
+              "directionalLights[0].color": [
+                1.6,
+                1.3941873907135307,
+                1.1451096008009154
+              ],
+              "pointLights[0].position": [
+                0,
+                0,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0,
+                0,
+                0
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.3,
+                0.3,
+                0.3
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.09694296273066855,
+                0.08240319361487097,
+                0.061523620913919434
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                1
+              ],
+              "metalness": [
+                1
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.85
+              ],
+              "specularIntensity": [
+                1
+              ],
+              "specularColor": [
+                1,
+                1,
+                1
+              ],
+              "sheenColor": [
+                0.7008941014596806,
+                0.7008941014596806,
+                0.7733756183561232
+              ],
+              "sheenRoughness": [
+                0.55
+              ],
+              "anisotropyVector": [
+                1,
+                0
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                0.45
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1,
+                -1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "sheenColorMap": [
+                2
+              ],
+              "anisotropyMap": [
+                3
+              ],
+              "map": [
+                4
+              ],
+              "envMap": [
+                5
+              ],
+              "dfgLUT": [
+                6
+              ],
+              "normalMap": [
+                7
+              ],
+              "roughnessMap": [
+                8
+              ],
+              "metalnessMap": [
+                9
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "14": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                0.57
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.09
+              ],
+              "displacementBias": [
+                -0.045
+              ],
+              "directionalLights[0].direction": [
+                -0.8224029498410615,
+                0.20383428251074764,
+                0.5311355508399425
+              ],
+              "directionalLights[0].color": [
+                1.6,
+                1.4474578790224326,
+                1.2660767045250483
+              ],
+              "pointLights[0].position": [
+                -0.3193544744203292,
+                -0.29649170465927027,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0.65,
+                0.48451273619776847,
+                0.2821998635071106
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.32,
+                0.32,
+                0.32
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.10340582691271312,
+                0.08789673985586237,
+                0.06562519564151406
+              ],
+              "diffuse": [
+                1,
+                1,
+                1
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                0.62
+              ],
+              "metalness": [
+                0
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.5
+              ],
+              "specularIntensity": [
+                0.6
+              ],
+              "specularColor": [
+                1,
+                0.9215818562755338,
+                0.8227857543924378
+              ],
+              "clearcoat": [
+                0.55
+              ],
+              "clearcoatRoughness": [
+                0.19999999999999996
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1.6,
+                1.6
+              ],
+              "clearcoatNormalScale": [
+                1.1,
+                1.1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "map": [
+                2
+              ],
+              "envMap": [
+                3
+              ],
+              "dfgLUT": [
+                4
+              ],
+              "normalMap": [
+                5
+              ],
+              "clearcoatNormalMap": [
+                6
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "15": {
+            "uniforms": {
+              "isOrthographic": [
+                false
+              ],
+              "receiveShadow": [
+                false
+              ],
+              "toneMappingExposure": [
+                0.9
+              ],
+              "directionalLightShadows[0].shadowIntensity": [
+                0.4
+              ],
+              "directionalLightShadows[0].shadowBias": [
+                -0.0006
+              ],
+              "directionalLightShadows[0].shadowNormalBias": [
+                0
+              ],
+              "directionalLightShadows[0].shadowRadius": [
+                4
+              ],
+              "directionalLightShadows[0].shadowMapSize": [
+                1024,
+                1024
+              ],
+              "displacementScale": [
+                0.022
+              ],
+              "displacementBias": [
+                -0.011
+              ],
+              "directionalLights[0].direction": [
+                -0.40730653998127847,
+                0.6109598099719177,
+                0.6788442333021307
+              ],
+              "directionalLights[0].color": [
+                1.7,
+                1.7,
+                1.7
+              ],
+              "pointLights[0].position": [
+                0,
+                0,
+                -2.7068757573375217
+              ],
+              "pointLights[0].color": [
+                0,
+                0,
+                0
+              ],
+              "pointLights[0].distance": [
+                0
+              ],
+              "pointLights[0].decay": [
+                2
+              ],
+              "hemisphereLights[0].direction": [
+                0,
+                1,
+                0
+              ],
+              "hemisphereLights[0].skyColor": [
+                0.28,
+                0.28,
+                0.28
+              ],
+              "hemisphereLights[0].groundColor": [
+                0.09048009854862399,
+                0.07690964737387958,
+                0.057422046186324814
+              ],
+              "diffuse": [
+                0.7912979403281551,
+                0.8069522576650873,
+                0.8227857543924378
+              ],
+              "emissive": [
+                0,
+                0,
+                0
+              ],
+              "roughness": [
+                0.32000000000000006
+              ],
+              "metalness": [
+                0.85
+              ],
+              "opacity": [
+                1
+              ],
+              "ior": [
+                1.5
+              ],
+              "specularIntensity": [
+                1
+              ],
+              "specularColor": [
+                0.9046611743890203,
+                0.9215818562755338,
+                0.9386857284565036
+              ],
+              "clearcoat": [
+                0.35
+              ],
+              "clearcoatRoughness": [
+                0.12
+              ],
+              "anisotropyVector": [
+                -0.1423504748063865,
+                0.5312592044589877
+              ],
+              "alphaTest": [
+                0.5
+              ],
+              "envMapIntensity": [
+                1
+              ],
+              "ambientLightColor": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "normalScale": [
+                1,
+                1
+              ],
+              "displacementMap": [
+                1
+              ],
+              "map": [
+                2
+              ],
+              "envMap": [
+                3
+              ],
+              "dfgLUT": [
+                4
+              ],
+              "normalMap": [
+                5
+              ]
+            },
+            "canvas": {
+              "width": 190,
+              "height": 238,
+              "cls": ""
+            }
+          },
+          "16": {
+            "uniforms": {
+              "uRadius": [
+                0.354
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                [
+                  0.30588235,
+                  0.36078431,
+                  0.23529412
+                ]
+              ],
+              "uClearColor": [
+                [
+                  1,
+                  0.6666666865348816,
+                  0.6470588445663452
+                ]
+              ],
+              "uPos": [
+                0.18011285412889144,
+                0.2032183042148039
+              ],
+              "uResolution": [
+                95,
+                119
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "17": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                8.16839999999106
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "18": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uAmount": [
+                0.17800000000000002
+              ],
+              "uSpread": [
+                1
+              ],
+              "uAngle": [
+                0.12222222238779068
+              ],
+              "uTime": [
+                8.16839999999106
+              ],
+              "uSkew": [
+                0.8399999737739563
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "19": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ],
+              "uAmount": [
+                0.7540000081062317
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                95,
+                119
+              ],
+              "uMousePos": [
+                0,
+                0
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          },
+          "20": {
+            "uniforms": {
+              "tInput": [
+                0
+              ],
+              "uOutputColor": [
+                [
+                  1,
+                  0.8196078538894653,
+                  0.5960784554481506
+                ]
+              ]
+            },
+            "canvas": {
+              "width": 300,
+              "height": 150,
+              "cls": ""
+            }
+          }
+        },
+        "canvasImages": []
+      }
+    }
+  ]
+}

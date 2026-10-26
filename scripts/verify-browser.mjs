@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 
 // Run against the retained Vite development server; never starts or replaces it.
 const baseURL = process.env.VERIFY_URL || 'http://127.0.0.1:4173/';
-const output = resolve('artifacts/verification');
+const output = resolve('artifacts/single-light-verification/browser');
 await mkdir(output, { recursive: true });
 const report = { baseURL, startedAt: new Date().toISOString(), browser: 'Installed Chrome, headless, real WebGL', checks: [], consoleErrors: [], pageErrors: [], screenshots: [] };
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });

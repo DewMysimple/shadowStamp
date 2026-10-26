@@ -1,0 +1,169 @@
+{
+  "observedAt": "2026-10-26T09:08:13.999Z",
+  "url": "https://billguo.me/",
+  "scripts": [
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/2u5v7xdlfh11m.js",
+      "status": 200,
+      "chars": 31914,
+      "sha256": "891e801d6863e274798fa1dff7fab7962d5d2e5197e4dafa631de05092f4c908"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/0fhp91xm0lvps.js",
+      "status": 200,
+      "chars": 229617,
+      "sha256": "b04734514fc5099efac20f5ae996b2ef76debd28e272e5e56b845119d6b9d5c4"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/1cc677ai9v_a2.js",
+      "status": 200,
+      "chars": 155684,
+      "sha256": "5a208f2c52335e27cf77363867c2726530bc7d9ede7c44668dd6eb49d2b76ab8"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/turbopack-2rk2zh_gdqiqs.js",
+      "status": 200,
+      "chars": 9761,
+      "sha256": "ff79f4951298f284038e72e862c99726ae93c4cbcad1ee1826090a4294e5bdbf"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/13jullzwfjoaf.js",
+      "status": 200,
+      "chars": 14641,
+      "sha256": "f7f0ccd686b7255e8af8fe0485874f6dba8b4ad03d0e0e375cec5c82af6f7819"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/2nvj2cjvmbkxe.js",
+      "status": 200,
+      "chars": 68044,
+      "sha256": "558caa2e3ed6a784a4d3a7b4ac9b30ce2e4a46e10cd797457f9da531a81dcec3"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/02_3gww7bcfb3.js",
+      "status": 200,
+      "chars": 28598,
+      "sha256": "5736b60b23eae1c25558e07327d7f8aec7c42400e0b99c6a8cd451ee535f22ea"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/3k2a8xskh3-fj.js",
+      "status": 200,
+      "chars": 76199,
+      "sha256": "6d4ccf58170d833b80bc131c7821a7c70e6ec28404068cbe72a3ff661e29853f"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/2clate34j23mk.js",
+      "status": 200,
+      "chars": 62564,
+      "sha256": "ca6ab51d8d631e9293171582e0f7b4c6c52cfbea7346e7e4d2630ff43c7ede24"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/1t6nxw83tt83g.js",
+      "status": 200,
+      "chars": 83327,
+      "sha256": "e8f33ff76edf2e03a97ee5b0967df0a753235be32b7d99f4f34e0027870144dc"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/1pwgxukp-i63o.js",
+      "status": 200,
+      "chars": 73657,
+      "sha256": "9ce25c8bb88ee8b36622208f786ee4d6f7ad1cf1ca9f8718a781c61755ad6924"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/23g065mpsw7sx.js",
+      "status": 200,
+      "chars": 281,
+      "sha256": "73258ad9781d0a0715b0f8a484b730f23b647a592b3176388b1fd8cdf38814c0"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/09j4kyo_en-y6.js",
+      "status": 200,
+      "chars": 50570,
+      "sha256": "cf3389992591cb64b4c1475de522809a208b85d62c07f99271d620915b7f3953"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/125leska-e-p9.js",
+      "status": 200,
+      "chars": 98943,
+      "sha256": "531b75d02d0d040036fe12c5a93dedd0eeeccc243ccf8bdda41eed755a9e4741"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+      "status": 200,
+      "chars": 112541,
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+    },
+    {
+      "url": "https://billguo.me/84d4e374b8164cd1/script.js",
+      "status": 200,
+      "chars": 4522,
+      "sha256": "050e35bf7e6e96590f2a9de114c14ff792806ed28457b3248762944350c0ba4c"
+    },
+    {
+      "url": "https://billguo.me/64229fd0fba06762/script.js",
+      "status": 200,
+      "chars": 12567,
+      "sha256": "c703720710415599d2f0b3f31fbfda63e34d6d19e730bada78b9b92197564f5b"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/1tsv4_hr1pvu5.js",
+      "status": 200,
+      "chars": 12251,
+      "sha256": "b52bd075fa59f20f87223421a457fa297336d59dc117c0cb9c9cfe6d961fcebd"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/2dfwuczh65qab.js",
+      "status": 200,
+      "chars": 372104,
+      "sha256": "df6d00d4456d724fd8a9ef2ea462db98d5e0dc402cc9380be4ed572fb127e115"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/1jwzz__q8k_t6.js",
+      "status": 200,
+      "chars": 378250,
+      "sha256": "e74c565b888098ec2b1f15fc30d0673c079d384b903360747ce02c3428fed548"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/4579-lwkikfr3.js",
+      "status": 200,
+      "chars": 2283,
+      "sha256": "c9cd818faa1ba9011ba0555f67d48b79ee930d47d15fb16025c70c1b7c7151d4"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/3w2nom2m9dhx_.js",
+      "status": 200,
+      "chars": 26774,
+      "sha256": "9156751e0941654637669a05d758e57018cc7aa2eaa1652c6ec7aeb2e1bac402"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/1m-kxyysin3s8.js",
+      "status": 200,
+      "chars": 15947,
+      "sha256": "100f3c6ef80a3d6d98304f499bf7e1438a5cd2822ae39bb96cca68a13aa37644"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/1w0j3op360orl.js",
+      "status": 200,
+      "chars": 31241,
+      "sha256": "e6ea3f5e1ea8a1b5152e7bd259030eda85110e2678ce9d05dd3d6e37f4c0677a"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/0obsy5pcqh32f.js",
+      "status": 200,
+      "chars": 1243,
+      "sha256": "fe29e43261c11fa20da6a9f8746a494b744ba7b321a1043a12318bcf79df4c2b"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/31-l9dmpcqtaa.js",
+      "status": 200,
+      "chars": 13231,
+      "sha256": "92eac3f23bc7a1b20a77352e92f6e63e5c21c0a640464cffca67361917b46c37"
+    },
+    {
+      "url": "https://billguo.me/_next/static/immutable/chunks/1mlftcslf095m.js",
+      "status": 200,
+      "chars": 12651,
+      "sha256": "d9840d6de414f19d28fbe08cc2ddd0aeb95cf379864950a506592a54f4996f31"
+    }
+  ],
+  "note": "Public script URLs, response status, UTF-16 character counts and SHA256 only. Full source cached solely in ignored .sites-runtime/ncs-source for analysis; no remote shader or asset used by product."
+}

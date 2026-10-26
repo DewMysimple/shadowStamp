@@ -1,21 +1,23 @@
 import * as THREE from 'three';
-import { PARAMETER_FIELDS } from '../parameters.js';
+import { PARAMETER_FIELDS, DEFAULT_PARAMETERS } from '../parameters.js';
+import { NCS_LIGHTING } from './ncsLighting.js';
 import { SCREEN_VERTEX, DAPPLED_FIELD_FRAGMENT, DAPPLED_BLUR_FRAGMENT, DAPPLED_OUTPUT_FRAGMENT } from './dappledShaders.js';
 
 // Core optical field/blur migrated from the user's 幽兰 scene 8, never modified there.
 // This adapter owns no renderer, RAF, or DOM events; the gallery supplies all three.
 export const DAPPLED_DEFAULTS = Object.freeze({
   enabled: true,
-  intensity: 1,
-  speed: 0.65,
-  color: '#908470',
-  light: '#fff1cf',
+  intensity: DEFAULT_PARAMETERS.lightIntensity,
+  speed: DEFAULT_PARAMETERS.lightSpeed,
+  color: DEFAULT_PARAMETERS.shadowColor,
+  light: DEFAULT_PARAMETERS.lightColor,
   background: '#fbf7f1',
   focusColor: '#24231f',
-  softness: 1.15,
+  softness: DEFAULT_PARAMETERS.lightSoftness,
   coverage: 0.708,
   animate: true,
   density: 26.7,
+  scale: DEFAULT_PARAMETERS.lightScale,
   angle: 44,
   stretch: 0.84,
   scatter: 1,
@@ -34,7 +36,7 @@ export const DAPPLED_DEFAULTS = Object.freeze({
 const PANEL_KEYS = Object.freeze({
   lightEnabled: 'enabled', lightAnimation: 'animate', lightFollowPointer: 'followPointer',
   lightIntensity: 'intensity', lightSpeed: 'speed', lightCoverage: 'coverage',
-  lightDensity: 'density', lightAngle: 'angle', lightStretch: 'stretch',
+  lightScale: 'scale', lightAngle: 'angle', lightStretch: 'stretch',
   lightScatter: 'scatter', lightWarp: 'wave', lightSoftness: 'softness',
   lightContrast: 'contrast', lightGrain: 'grain', lightColor: 'light',
   shadowColor: 'color', lightResponse: 'responseTime',
@@ -42,7 +44,7 @@ const PANEL_KEYS = Object.freeze({
 const LIMITS = Object.freeze({
   // Only internal, non-panel parameters need local bounds. Every public light
   // slider uses the same contract as the UI, import and persistence layer.
-  stampRatio: [0.1, 5], study: [0, 1],
+  stampRatio: [0.1, 5], study: [0, 1], density: [2, 50],
   ...Object.fromEntries(PARAMETER_FIELDS
     .filter(field => field.type === 'number' && (PANEL_KEYS[field.key] || Object.hasOwn(DAPPLED_DEFAULTS, field.key)))
     .map(field => [PANEL_KEYS[field.key] ?? field.key, [field.min, field.max]])),
@@ -94,10 +96,10 @@ export function createDappledLight(renderer, options = {}) {
     // Paper grain is fixed. The panel's lightGrain only affects the stamp,
     // where the gallery synchronizes it to StampMaterial's uLightGrain.
     uPaperGrain: { value: DAPPLED_DEFAULTS.grain }, uFocus: { value: 0 },
-    // The lens retains the original palette: its colour-dependent sample weights
-    // must not change when the paper/study output palette changes.
-    uBackground: { value: displayColor('#ffaaa5') },
-    uShadow: { value: displayColor('#4a0035') }, uLight: { value: displayColor('#ffd198') },
+    // NCS's coral/peach/moss field is separate from the desk palette. RGB is
+    // colour-weighted by the lens, then composited by the stamp material.
+    uBackground: { value: displayColor(NCS_LIGHTING.fieldBackground) },
+    uShadow: { value: displayColor(parameters.color) }, uLight: { value: displayColor(parameters.light) },
     uPaper: { value: displayColor(parameters.background) },
     uPaperShadow: { value: displayColor(parameters.color) }, uPaperLight: { value: displayColor(parameters.light) },
     uStudy: { value: parameters.study },
@@ -119,6 +121,7 @@ export function createDappledLight(renderer, options = {}) {
   let disposed = false, dirty = true, lastFieldTime = -Infinity, active = false, fieldUpdates = 0;
   let pendingField = false, reduced = false;
   let previousTime = null, fieldClock = 3, previousReducedMotion = null, parameterKey = '', opticalKey = '';
+  let patternSizeNorm = NCS_LIGHTING.maximumSizeNorm;
   const oldViewport = new THREE.Vector4();
   const oldScissor = new THREE.Vector4();
   const outputSize = new THREE.Vector2();
@@ -155,10 +158,11 @@ export function createDappledLight(renderer, options = {}) {
     const key = JSON.stringify(parameters);
     if (key !== parameterKey) {
       parameterKey = key;
-      // Palette/study fades only touch the final pass. In particular, a study
-      // transition must not force the expensive 50-tap lens to run every frame.
+      // Light-map colours affect the lens weights and invalidate it once.
+      // Desk/focus colours still touch only the inexpensive background output.
       const nextOpticalKey = JSON.stringify([parameters.coverage, parameters.density, parameters.angle,
-        parameters.stretch, parameters.scatter, parameters.wave, parameters.softness, parameters.stampRatio]);
+        parameters.stretch, parameters.scatter, parameters.wave, parameters.softness, parameters.stampRatio,
+        parameters.color, parameters.light, parameters.scale]);
       if (nextOpticalKey !== opticalKey) { opticalKey = nextOpticalKey; dirty = true; }
       uniforms.uRadius.value = Math.max(0.05, parameters.coverage * 0.5);
       uniforms.uDensity.value = parameters.density;
@@ -173,8 +177,11 @@ export function createDappledLight(renderer, options = {}) {
       displayColor(parameters.background, uniforms.uPaper.value);
       displayColor(parameters.color, uniforms.uPaperShadow.value);
       displayColor(parameters.light, uniforms.uPaperLight.value);
+      displayColor(parameters.color, uniforms.uShadow.value);
+      displayColor(parameters.light, uniforms.uLight.value);
       displayColor(parameters.focusColor, uniforms.uFocusColor.value);
     }
+    uniforms.uDensity.value = parameters.density / (parameters.scale * patternSizeNorm);
     if (!parameters.followPointer) pointerTarget.set(0.5, 0.5);
     const moving = active && !reducedMotion && pointer.distanceToSquared(pointerTarget) > 0.000001;
     if (moving) {
@@ -221,6 +228,7 @@ export function createDappledLight(renderer, options = {}) {
       return { active, time: fieldClock, fieldUpdates, pointer: pointer.toArray(), target: pointerTarget.toArray(),
         aspect: uniforms.uAspect.value, width: blurTarget.width, height: blurTarget.height, texture: blurTarget.texture.uuid,
         enabled: parameters.enabled, animate: parameters.animate, followPointer: parameters.followPointer,
+        sizeNorm: patternSizeNorm, density: uniforms.uDensity.value,
         parameters: { ...parameters } };
     },
     setPointer(x, y) {
@@ -228,6 +236,11 @@ export function createDappledLight(renderer, options = {}) {
       if (!parameters.followPointer) return;
       pointerTarget.set(0.5 + (THREE.MathUtils.clamp(x, 0, 1) - 0.5) * parameters.pointerInfluence,
         0.5 + (THREE.MathUtils.clamp(y, 0, 1) - 0.5) * parameters.pointerInfluence);
+    },
+    setStampSize(_width, stampHeight, pixelRatio = 1) {
+      const lightHeight = Math.max(1, Math.floor(stampHeight * Math.min(pixelRatio, 2)) >> 1);
+      const next = THREE.MathUtils.clamp(NCS_LIGHTING.patternReferenceHeight / lightHeight, 1, NCS_LIGHTING.maximumSizeNorm);
+      if (Math.abs(next - patternSizeNorm) > 0.0001) { patternSizeNorm = next; pendingField = true; }
     },
     dispose() {
       if (disposed) return; disposed = true;

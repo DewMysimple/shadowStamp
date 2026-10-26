@@ -1,0 +1,196 @@
+{
+  "scope": "Illustrative hand-selected local patch statistics only. Different poses, light positions, scales, art and background states; no corresponding-point error, texture scale ratio, or pixel similarity claim. Rectangles are exact screenshot coordinates, not normalized stamp UV.",
+  "images": {
+    "3": {
+      "file": "C:\\Users\\Administrator\\.codex\\attachments\\9854cda5-27ba-47b9-abb4-1a41416070bf\\image-3.png",
+      "sha256": "fcd0e65e293fcc5e0de03e6c25090f608b382c3a0346991a07519709f75074f7",
+      "size": [
+        584,
+        745
+      ],
+      "regions": {
+        "paper_left_mid": {
+          "rect": [
+            22,
+            325,
+            43,
+            370
+          ],
+          "meanRGB": [
+            183.54,
+            176.0,
+            157.19
+          ],
+          "medianRGB": [
+            183.0,
+            175.0,
+            157.0
+          ],
+          "luminanceStd": 4.53
+        },
+        "green_mid": {
+          "rect": [
+            245,
+            335,
+            280,
+            385
+          ],
+          "meanRGB": [
+            186.85,
+            202.09,
+            136.16
+          ],
+          "medianRGB": [
+            187.0,
+            202.0,
+            136.0
+          ],
+          "luminanceStd": 2.85
+        },
+        "green_bottom": {
+          "rect": [
+            280,
+            570,
+            330,
+            625
+          ],
+          "meanRGB": [
+            177.46,
+            191.73,
+            132.46
+          ],
+          "medianRGB": [
+            179.0,
+            193.0,
+            133.0
+          ],
+          "luminanceStd": 8.19
+        }
+      }
+    },
+    "4": {
+      "file": "C:\\Users\\Administrator\\.codex\\attachments\\9854cda5-27ba-47b9-abb4-1a41416070bf\\image-4.png",
+      "sha256": "6612667136bfa2d72b7666629d81a52d1cfff67507f449ba26112cafc6509d33",
+      "size": [
+        371,
+        421
+      ],
+      "regions": {
+        "paper_left": {
+          "rect": [
+            21,
+            262,
+            34,
+            278
+          ],
+          "meanRGB": [
+            202.04,
+            199.62,
+            194.21
+          ],
+          "medianRGB": [
+            200.0,
+            199.0,
+            194.0
+          ],
+          "luminanceStd": 7.47
+        },
+        "paper_bottom": {
+          "rect": [
+            163,
+            376,
+            182,
+            388
+          ],
+          "meanRGB": [
+            235.57,
+            217.89,
+            199.46
+          ],
+          "medianRGB": [
+            236.0,
+            218.0,
+            200.0
+          ],
+          "luminanceStd": 3.61
+        },
+        "paper_right": {
+          "rect": [
+            310,
+            330,
+            317,
+            342
+          ],
+          "meanRGB": [
+            219.98,
+            217.15,
+            211.45
+          ],
+          "medianRGB": [
+            220.0,
+            217.0,
+            211.0
+          ],
+          "luminanceStd": 2.09
+        },
+        "green_mid": {
+          "rect": [
+            154,
+            190,
+            180,
+            216
+          ],
+          "meanRGB": [
+            200.0,
+            207.52,
+            141.52
+          ],
+          "medianRGB": [
+            201.0,
+            209.0,
+            142.0
+          ],
+          "luminanceStd": 11.17
+        },
+        "green_left": {
+          "rect": [
+            80,
+            230,
+            105,
+            255
+          ],
+          "meanRGB": [
+            171.98,
+            186.66,
+            140.16
+          ],
+          "medianRGB": [
+            172.0,
+            188.0,
+            138.0
+          ],
+          "luminanceStd": 10.53
+        },
+        "desk_top_left": {
+          "rect": [
+            8,
+            8,
+            38,
+            35
+          ],
+          "meanRGB": [
+            240.61,
+            237.72,
+            233.34
+          ],
+          "medianRGB": [
+            240.0,
+            238.0,
+            233.0
+          ],
+          "luminanceStd": 1.89
+        }
+      }
+    }
+  }
+}

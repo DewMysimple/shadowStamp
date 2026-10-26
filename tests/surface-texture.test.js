@@ -37,7 +37,8 @@ test('stamp material owns only its micro-normal and releases it with the persist
   surface.addEventListener('dispose', () => surfaceDisposals++);
   art.addEventListener('dispose', () => externalDisposals++);
   light.addEventListener('dispose', () => externalDisposals++);
-  assert.equal(material.uniforms.uLightModel.value, 0);
+  assert.equal(material.uniforms.uLightModel, undefined);
+  assert.equal(material.uniforms.uTextureScale.value, 1);
   assert.equal(material.uniforms.uSurfaceMetalness, undefined);
   assert.equal(material.uniforms.uArtworkResolution, undefined);
   assert.equal(material.uniforms.uActivity.value, 0);

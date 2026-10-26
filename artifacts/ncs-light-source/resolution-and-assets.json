@@ -1,0 +1,7040 @@
+{
+  "observedAt": "2026-10-26T09:18:45.807Z",
+  "url": "https://billguo.me/",
+  "scope": "Read-only original-site DPR1/2 hover/focus optical resolution, loaded texture metadata, and actual Canvas2D multiply alpha.",
+  "errors": [],
+  "states": [
+    {
+      "dpr": 1,
+      "label": "hover",
+      "data": {
+        "programs": {
+          "1": {
+            "uRest": [
+              0.02
+            ],
+            "uLitGain": [
+              0
+            ],
+            "uGrain": [
+              0
+            ],
+            "uGrainPx": [
+              1
+            ]
+          },
+          "2": {
+            "uRadius": [
+              0.28319999999999995
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.54
+            ],
+            "uAngle": [
+              0
+            ],
+            "uVignetteColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "uClearColor": [
+              [
+                1,
+                0.6666666865348816,
+                0.6470588445663452
+              ]
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ]
+          },
+          "3": {
+            "uMixRadius": [
+              1
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              0
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "4": {
+            "uAmount": [
+              0.35600000000000004
+            ],
+            "uSpread": [
+              2.4
+            ],
+            "uAngle": [
+              0.12222222238779068
+            ],
+            "uTime": [
+              0
+            ],
+            "uSkew": [
+              0.8399999737739563
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "5": {
+            "uAmount": [
+              0.7540000081062317
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ]
+          },
+          "6": {
+            "uOutputColor": [
+              [
+                1,
+                0.8196078538894653,
+                0.5960784554481506
+              ]
+            ]
+          },
+          "7": {
+            "opacity": [
+              1
+            ]
+          },
+          "8": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "9": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "10": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "11": {
+            "dTheta": [
+              0.006159985595274104
+            ],
+            "mipInt": [
+              8
+            ]
+          },
+          "12": {
+            "roughness": [
+              0
+            ],
+            "mipInt": [
+              -2
+            ]
+          },
+          "13": {
+            "toneMappingExposure": [
+              1
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.075
+            ],
+            "displacementBias": [
+              -0.0375
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              1
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.85
+            ],
+            "specularIntensity": [
+              1
+            ],
+            "sheenRoughness": [
+              0.55
+            ],
+            "anisotropyVector": [
+              1,
+              0
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              0.45
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1,
+              -1
+            ]
+          },
+          "14": {
+            "toneMappingExposure": [
+              0.57
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.09
+            ],
+            "displacementBias": [
+              -0.045
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              0.62
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.5
+            ],
+            "specularIntensity": [
+              0.6
+            ],
+            "clearcoat": [
+              0.55
+            ],
+            "clearcoatRoughness": [
+              0.19999999999999996
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1.6,
+              1.6
+            ],
+            "clearcoatNormalScale": [
+              1.1,
+              1.1
+            ]
+          },
+          "15": {
+            "toneMappingExposure": [
+              0.9
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.022
+            ],
+            "displacementBias": [
+              -0.011
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              0.32000000000000006
+            ],
+            "metalness": [
+              0.85
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.5
+            ],
+            "specularIntensity": [
+              1
+            ],
+            "clearcoat": [
+              0.35
+            ],
+            "clearcoatRoughness": [
+              0.12
+            ],
+            "anisotropyVector": [
+              -0.1423504748063865,
+              0.5312592044589877
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1,
+              1
+            ]
+          },
+          "16": {
+            "uRadius": [
+              0.354
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.54
+            ],
+            "uAngle": [
+              0
+            ],
+            "uVignetteColor": [
+              [
+                0.30588235,
+                0.36078431,
+                0.23529412
+              ]
+            ],
+            "uClearColor": [
+              [
+                1,
+                0.6666666865348816,
+                0.6470588445663452
+              ]
+            ],
+            "uPos": [
+              0.46627407979745006,
+              0.5033396213584511
+            ],
+            "uResolution": [
+              95,
+              119
+            ]
+          },
+          "17": {
+            "uMixRadius": [
+              1
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              6.28909999999404
+            ],
+            "uResolution": [
+              95,
+              119
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "18": {
+            "uAmount": [
+              0.17800000000000002
+            ],
+            "uSpread": [
+              1
+            ],
+            "uAngle": [
+              0.12222222238779068
+            ],
+            "uTime": [
+              6.28909999999404
+            ],
+            "uSkew": [
+              0.8399999737739563
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              95,
+              119
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "19": {
+            "uAmount": [
+              0.7540000081062317
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              95,
+              119
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ]
+          },
+          "20": {
+            "uOutputColor": [
+              [
+                1,
+                0.8196078538894653,
+                0.5960784554481506
+              ]
+            ]
+          }
+        },
+        "textures": [
+          {
+            "url": "https://billguo.me/about/camellia.webp",
+            "width": 1534,
+            "height": 1847
+          }
+        ],
+        "multiply": [
+          {
+            "alpha": 0,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.000009185578987031892,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.00047047623567849815,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.0015595958533279057,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.0032970247293202647,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.005689389592228446,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.008353208154713654,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.011864035241979444,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.015219966844028208,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.019106031576556423,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.023780424469483794,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.02835510325904453,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.035887874545531495,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.038195649206817145,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.04591158471095477,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.04963892802496575,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.05725555149073734,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.061538708366898835,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.06824268165736139,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.07271343980224663,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.0772019088386738,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.08337366830655536,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.08891543622544681,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.09558421151034271,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.10220697719280096,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.10590454255198643,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.11160729481582338,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.11734048575791163,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.12269588571381482,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.12825939580686624,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.13353279817284536,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1387992201658238,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1438645194717837,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.14890748570178844,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.15374347107369604,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.15854438076605293,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.16313554126243515,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1676012092337974,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.17209468559416924,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.17629908444037737,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1804462439534041,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.18438745731379325,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.18819778997753658,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.19194313554922207,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.19549028489930284,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1989691232832667,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.20225657900370692,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.20547367301649305,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2085612052839516,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.21259869498596376,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.21533814170043533,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.21786649867576963,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.22042155994756893,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2228171579822902,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.22461325229035004,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.22669727363481595,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.22939135506848507,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23143157073464915,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23333311279800872,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23497887420941801,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23630463590543627,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2384862238413823,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23990466933916543,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2412741764712759,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24266430161318772,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24394975071110506,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24524236864943685,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24627508426871478,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24713793097158138,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24841110860233848,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24901709544995543,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2502133607590354,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25094173446530105,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2516920121661026,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2523791989039568,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2530882398308122,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2536904628754592,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2542495194490363,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2547768095294971,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25525580175239737,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2557292996573355,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2561282498831977,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25649628637652944,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25683526055365485,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25715799510689147,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2573664386395826,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25773215615581047,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2580061781108499,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25811103691545745,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25837803236150975,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2585635256068127,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25869378954679106,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2588721259426656,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25901614178754145,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2591425823555262,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2592292822126638,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25935222608002756,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2594355748494524,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25948604956196597,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2595571101647772,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          }
+        ]
+      },
+      "canvases": [
+        {
+          "width": 190,
+          "height": 238,
+          "clientWidth": 190,
+          "clientHeight": 238
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://billguo.me/stamps/ncs-384.avif",
+          "bytes": 19209
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-paint-sm.webp",
+          "bytes": 31842
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-sm.webp",
+          "bytes": 203588
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-height-sm.webp",
+          "bytes": 34142
+        }
+      ]
+    },
+    {
+      "dpr": 1,
+      "label": "focus",
+      "data": {
+        "programs": {
+          "1": {
+            "uRest": [
+              0.02
+            ],
+            "uLitGain": [
+              0
+            ],
+            "uGrain": [
+              0
+            ],
+            "uGrainPx": [
+              1
+            ]
+          },
+          "2": {
+            "uRadius": [
+              0.28319999999999995
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.54
+            ],
+            "uAngle": [
+              0
+            ],
+            "uVignetteColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "uClearColor": [
+              [
+                1,
+                0.6666666865348816,
+                0.6470588445663452
+              ]
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ]
+          },
+          "3": {
+            "uMixRadius": [
+              1
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              0
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "4": {
+            "uAmount": [
+              0.35600000000000004
+            ],
+            "uSpread": [
+              2.4
+            ],
+            "uAngle": [
+              0.12222222238779068
+            ],
+            "uTime": [
+              0
+            ],
+            "uSkew": [
+              0.8399999737739563
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "5": {
+            "uAmount": [
+              0.7540000081062317
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ]
+          },
+          "6": {
+            "uOutputColor": [
+              [
+                1,
+                0.8196078538894653,
+                0.5960784554481506
+              ]
+            ]
+          },
+          "7": {
+            "opacity": [
+              1
+            ]
+          },
+          "8": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "9": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "10": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "11": {
+            "dTheta": [
+              0.006159985595274104
+            ],
+            "mipInt": [
+              8
+            ]
+          },
+          "12": {
+            "roughness": [
+              0
+            ],
+            "mipInt": [
+              -2
+            ]
+          },
+          "13": {
+            "toneMappingExposure": [
+              1
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.075
+            ],
+            "displacementBias": [
+              -0.0375
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              1
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.85
+            ],
+            "specularIntensity": [
+              1
+            ],
+            "sheenRoughness": [
+              0.55
+            ],
+            "anisotropyVector": [
+              1,
+              0
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              0.45
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1,
+              -1
+            ]
+          },
+          "14": {
+            "toneMappingExposure": [
+              0.57
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.09
+            ],
+            "displacementBias": [
+              -0.045
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              0.62
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.5
+            ],
+            "specularIntensity": [
+              0.6
+            ],
+            "clearcoat": [
+              0.55
+            ],
+            "clearcoatRoughness": [
+              0.19999999999999996
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1.6,
+              1.6
+            ],
+            "clearcoatNormalScale": [
+              1.1,
+              1.1
+            ]
+          },
+          "15": {
+            "toneMappingExposure": [
+              0.9
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.022
+            ],
+            "displacementBias": [
+              -0.011
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              0.32000000000000006
+            ],
+            "metalness": [
+              0.85
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.5
+            ],
+            "specularIntensity": [
+              1
+            ],
+            "clearcoat": [
+              0.35
+            ],
+            "clearcoatRoughness": [
+              0.12
+            ],
+            "anisotropyVector": [
+              -0.1423504748063865,
+              0.5312592044589877
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1,
+              1
+            ]
+          },
+          "16": {
+            "uRadius": [
+              0.354
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.54
+            ],
+            "uAngle": [
+              0
+            ],
+            "uVignetteColor": [
+              [
+                0.30588235,
+                0.36078431,
+                0.23529412
+              ]
+            ],
+            "uClearColor": [
+              [
+                1,
+                0.6666666865348816,
+                0.6470588445663452
+              ]
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              215,
+              270
+            ]
+          },
+          "17": {
+            "uMixRadius": [
+              1
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              7.916599999994039
+            ],
+            "uResolution": [
+              215,
+              270
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "18": {
+            "uAmount": [
+              0.25746428571428576
+            ],
+            "uSpread": [
+              1
+            ],
+            "uAngle": [
+              0.12222222238779068
+            ],
+            "uTime": [
+              7.916599999994039
+            ],
+            "uSkew": [
+              0.8399999737739563
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              215,
+              270
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "19": {
+            "uAmount": [
+              0.7540000081062317
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              215,
+              270
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ]
+          },
+          "20": {
+            "uOutputColor": [
+              [
+                1,
+                0.8196078538894653,
+                0.5960784554481506
+              ]
+            ]
+          }
+        },
+        "textures": [
+          {
+            "url": "https://billguo.me/about/camellia.webp",
+            "width": 1534,
+            "height": 1847
+          }
+        ],
+        "multiply": [
+          {
+            "alpha": 0,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.000009185578987031892,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.00047047623567849815,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.0015595958533279057,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.0032970247293202647,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.005689389592228446,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.008353208154713654,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.011864035241979444,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.015219966844028208,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.019106031576556423,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.023780424469483794,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.02835510325904453,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.035887874545531495,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.038195649206817145,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.04591158471095477,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.04963892802496575,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.05725555149073734,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.061538708366898835,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.06824268165736139,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.07271343980224663,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.0772019088386738,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.08337366830655536,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.08891543622544681,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.09558421151034271,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.10220697719280096,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.10590454255198643,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.11160729481582338,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.11734048575791163,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.12269588571381482,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.12825939580686624,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.13353279817284536,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1387992201658238,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1438645194717837,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.14890748570178844,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.15374347107369604,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.15854438076605293,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.16313554126243515,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1676012092337974,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.17209468559416924,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.17629908444037737,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1804462439534041,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.18438745731379325,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.18819778997753658,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.19194313554922207,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.19549028489930284,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.1989691232832667,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.20225657900370692,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.20547367301649305,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2085612052839516,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.21259869498596376,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.21533814170043533,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.21786649867576963,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.22042155994756893,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2228171579822902,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.22461325229035004,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.22669727363481595,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.22939135506848507,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23143157073464915,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23333311279800872,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23497887420941801,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23630463590543627,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2384862238413823,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.23990466933916543,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2412741764712759,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24266430161318772,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24394975071110506,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24524236864943685,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24627508426871478,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24713793097158138,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24841110860233848,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.24901709544995543,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2502133607590354,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25094173446530105,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2516920121661026,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2523791989039568,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2530882398308122,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2536904628754592,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2542495194490363,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2547768095294971,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25525580175239737,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2557292996573355,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2561282498831977,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25649628637652944,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25683526055365485,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25715799510689147,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2573664386395826,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25773215615581047,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2580061781108499,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25811103691545745,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25837803236150975,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2585635256068127,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25869378954679106,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2588721259426656,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25901614178754145,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2591425823555262,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2592292822126638,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25935222608002756,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2594355748494524,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.25948604956196597,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          },
+          {
+            "alpha": 0.2595571101647772,
+            "source": [
+              95,
+              119
+            ],
+            "target": [
+              190,
+              238
+            ]
+          }
+        ]
+      },
+      "canvases": [
+        {
+          "width": 431,
+          "height": 540,
+          "clientWidth": 431,
+          "clientHeight": 540
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://billguo.me/stamps/ncs-384.avif",
+          "bytes": 19209
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-paint-sm.webp",
+          "bytes": 31842
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-sm.webp",
+          "bytes": 203588
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-height-sm.webp",
+          "bytes": 34142
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-paint.webp",
+          "bytes": 277586
+        },
+        {
+          "url": "https://billguo.me/relief/ncs.webp",
+          "bytes": 1632718
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-height.webp",
+          "bytes": 197286
+        },
+        {
+          "url": "https://billguo.me/stamps/ncs-640.avif",
+          "bytes": 50232
+        }
+      ]
+    },
+    {
+      "dpr": 2,
+      "label": "hover",
+      "data": {
+        "programs": {
+          "1": {
+            "uRest": [
+              0.02
+            ],
+            "uLitGain": [
+              0
+            ],
+            "uGrain": [
+              0
+            ],
+            "uGrainPx": [
+              1
+            ]
+          },
+          "2": {
+            "uRadius": [
+              0.28319999999999995
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.54
+            ],
+            "uAngle": [
+              0
+            ],
+            "uVignetteColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "uClearColor": [
+              [
+                1,
+                0.6666666865348816,
+                0.6470588445663452
+              ]
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ]
+          },
+          "3": {
+            "uMixRadius": [
+              1
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              0
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "4": {
+            "uAmount": [
+              0.35600000000000004
+            ],
+            "uSpread": [
+              2.4
+            ],
+            "uAngle": [
+              0.12222222238779068
+            ],
+            "uTime": [
+              0
+            ],
+            "uSkew": [
+              0.8399999737739563
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "5": {
+            "uAmount": [
+              0.7540000081062317
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ]
+          },
+          "6": {
+            "uOutputColor": [
+              [
+                1,
+                0.8196078538894653,
+                0.5960784554481506
+              ]
+            ]
+          },
+          "7": {
+            "opacity": [
+              1
+            ]
+          },
+          "8": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "9": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "10": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "11": {
+            "dTheta": [
+              0.006159985595274104
+            ],
+            "mipInt": [
+              8
+            ]
+          },
+          "12": {
+            "roughness": [
+              0
+            ],
+            "mipInt": [
+              -2
+            ]
+          },
+          "13": {
+            "toneMappingExposure": [
+              1
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.075
+            ],
+            "displacementBias": [
+              -0.0375
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              1
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.85
+            ],
+            "specularIntensity": [
+              1
+            ],
+            "sheenRoughness": [
+              0.55
+            ],
+            "anisotropyVector": [
+              1,
+              0
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              0.45
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1,
+              -1
+            ]
+          },
+          "14": {
+            "toneMappingExposure": [
+              0.57
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.09
+            ],
+            "displacementBias": [
+              -0.045
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              0.62
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.5
+            ],
+            "specularIntensity": [
+              0.6
+            ],
+            "clearcoat": [
+              0.55
+            ],
+            "clearcoatRoughness": [
+              0.19999999999999996
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1.6,
+              1.6
+            ],
+            "clearcoatNormalScale": [
+              1.1,
+              1.1
+            ]
+          },
+          "15": {
+            "toneMappingExposure": [
+              0.9
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.022
+            ],
+            "displacementBias": [
+              -0.011
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              0.32000000000000006
+            ],
+            "metalness": [
+              0.85
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.5
+            ],
+            "specularIntensity": [
+              1
+            ],
+            "clearcoat": [
+              0.35
+            ],
+            "clearcoatRoughness": [
+              0.12
+            ],
+            "anisotropyVector": [
+              -0.1423504748063865,
+              0.5312592044589877
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1,
+              1
+            ]
+          },
+          "16": {
+            "uRadius": [
+              0.354
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.54
+            ],
+            "uAngle": [
+              0
+            ],
+            "uVignetteColor": [
+              [
+                0.30588235,
+                0.36078431,
+                0.23529412
+              ]
+            ],
+            "uClearColor": [
+              [
+                1,
+                0.6666666865348816,
+                0.6470588445663452
+              ]
+            ],
+            "uPos": [
+              0.4652808547997113,
+              0.5031580020416606
+            ],
+            "uResolution": [
+              190,
+              238
+            ]
+          },
+          "17": {
+            "uMixRadius": [
+              1
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              5.27679999999702
+            ],
+            "uResolution": [
+              190,
+              238
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "18": {
+            "uAmount": [
+              0.22695
+            ],
+            "uSpread": [
+              1
+            ],
+            "uAngle": [
+              0.12222222238779068
+            ],
+            "uTime": [
+              5.27679999999702
+            ],
+            "uSkew": [
+              0.8399999737739563
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              190,
+              238
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "19": {
+            "uAmount": [
+              0.7540000081062317
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              190,
+              238
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ]
+          },
+          "20": {
+            "uOutputColor": [
+              [
+                1,
+                0.8196078538894653,
+                0.5960784554481506
+              ]
+            ]
+          }
+        },
+        "textures": [
+          {
+            "url": "https://billguo.me/about/camellia.webp",
+            "width": 1534,
+            "height": 1847
+          }
+        ],
+        "multiply": [
+          {
+            "alpha": 0,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.00014205998314975027,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.0008997069856984532,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.002385626225751407,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.004339261152888197,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.006942047765801568,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.00998783626760335,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.013337520260059027,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.0171945837693064,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.021321312992249836,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.025827741873393328,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.030428909584159076,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.0355222300511298,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.040634706680879366,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.04600887497452637,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.051524380836899496,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.05705275370094485,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.06266747262719818,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.06834638413429704,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.0742776244834751,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.08013004097628929,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.08588434186944452,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.09173307633538043,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.09734872443604492,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.10323631318240255,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.10886576004651971,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.11443327999999994,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.11992878941945503,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.12553845821106968,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.13086025553661754,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.13617939075299562,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.14129942594512865,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1464007438021231,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.15147206944491878,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.15607390788363723,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.16081375610556276,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.16550594697129387,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1699045971400224,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.17417486753012096,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.17838957361780747,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1824690327023715,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1863436137026613,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.19008736979386184,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.19376517048286426,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1973084856486673,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.20059888862553396,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2038814365515773,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.20703351544349002,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2102680939875162,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.21310564400292162,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2156782986696799,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2183314589231505,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2208654353948182,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2232408117492814,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2254663549828615,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.22770385826802372,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.22975707471900192,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.23174396843251474,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.23362942329998018,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.23541664795153694,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2370794753770621,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.238653755076118,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24016887369897585,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2415738525300851,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24292297825831397,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24419317701350787,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2453669597383167,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2464901219209983,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.247525548749306,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24851391590333835,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24943880177519906,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2502882427881366,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25108204557659397,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2518488668757429,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2525255005047947,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2531898395475421,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25378483568851634,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25433705352574404,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25485776681170025,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2553306665695973,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2558131668689869,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2561846789595509,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2565547513356523,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25689498771189195,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25721268552987053,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2574983158940244,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2577685729484305,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2580061781108499,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2582226085210212,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2584227557597315,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2585978238262642,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25876494088510027,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2589127942888368,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2590434891835134,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2591609413190356,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2592680317461413,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25936196105811893,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25944856201225297,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2595226732392075,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2595883436856038,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          }
+        ]
+      },
+      "canvases": [
+        {
+          "width": 380,
+          "height": 476,
+          "clientWidth": 190,
+          "clientHeight": 238
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://billguo.me/stamps/ncs-384.avif",
+          "bytes": 19209
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-paint-sm.webp",
+          "bytes": 31842
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-height-sm.webp",
+          "bytes": 34142
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-sm.webp",
+          "bytes": 203588
+        }
+      ]
+    },
+    {
+      "dpr": 2,
+      "label": "focus",
+      "data": {
+        "programs": {
+          "1": {
+            "uRest": [
+              0.02
+            ],
+            "uLitGain": [
+              0
+            ],
+            "uGrain": [
+              0
+            ],
+            "uGrainPx": [
+              1
+            ]
+          },
+          "2": {
+            "uRadius": [
+              0.28319999999999995
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.54
+            ],
+            "uAngle": [
+              0
+            ],
+            "uVignetteColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "uClearColor": [
+              [
+                1,
+                0.6666666865348816,
+                0.6470588445663452
+              ]
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ]
+          },
+          "3": {
+            "uMixRadius": [
+              1
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              0
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "4": {
+            "uAmount": [
+              0.35600000000000004
+            ],
+            "uSpread": [
+              2.4
+            ],
+            "uAngle": [
+              0.12222222238779068
+            ],
+            "uTime": [
+              0
+            ],
+            "uSkew": [
+              0.8399999737739563
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "5": {
+            "uAmount": [
+              0.7540000081062317
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              2,
+              2
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ]
+          },
+          "6": {
+            "uOutputColor": [
+              [
+                1,
+                0.8196078538894653,
+                0.5960784554481506
+              ]
+            ]
+          },
+          "7": {
+            "opacity": [
+              1
+            ]
+          },
+          "8": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "9": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "10": {
+            "pointLights[0].distance": [
+              28
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "opacity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "11": {
+            "dTheta": [
+              0.006159985595274104
+            ],
+            "mipInt": [
+              8
+            ]
+          },
+          "12": {
+            "roughness": [
+              0
+            ],
+            "mipInt": [
+              -2
+            ]
+          },
+          "13": {
+            "toneMappingExposure": [
+              1
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.075
+            ],
+            "displacementBias": [
+              -0.0375
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              1
+            ],
+            "metalness": [
+              1
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.85
+            ],
+            "specularIntensity": [
+              1
+            ],
+            "sheenRoughness": [
+              0.55
+            ],
+            "anisotropyVector": [
+              1,
+              0
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              0.45
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1,
+              -1
+            ]
+          },
+          "14": {
+            "toneMappingExposure": [
+              0.57
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.09
+            ],
+            "displacementBias": [
+              -0.045
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              0.62
+            ],
+            "metalness": [
+              0
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.5
+            ],
+            "specularIntensity": [
+              0.6
+            ],
+            "clearcoat": [
+              0.55
+            ],
+            "clearcoatRoughness": [
+              0.19999999999999996
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1.6,
+              1.6
+            ],
+            "clearcoatNormalScale": [
+              1.1,
+              1.1
+            ]
+          },
+          "15": {
+            "toneMappingExposure": [
+              0.9
+            ],
+            "directionalLightShadows[0].shadowIntensity": [
+              0.4
+            ],
+            "directionalLightShadows[0].shadowBias": [
+              -0.0006
+            ],
+            "directionalLightShadows[0].shadowNormalBias": [
+              0
+            ],
+            "directionalLightShadows[0].shadowRadius": [
+              4
+            ],
+            "directionalLightShadows[0].shadowMapSize": [
+              1024,
+              1024
+            ],
+            "displacementScale": [
+              0.022
+            ],
+            "displacementBias": [
+              -0.011
+            ],
+            "pointLights[0].distance": [
+              0
+            ],
+            "pointLights[0].decay": [
+              2
+            ],
+            "roughness": [
+              0.32000000000000006
+            ],
+            "metalness": [
+              0.85
+            ],
+            "opacity": [
+              1
+            ],
+            "ior": [
+              1.5
+            ],
+            "specularIntensity": [
+              1
+            ],
+            "clearcoat": [
+              0.35
+            ],
+            "clearcoatRoughness": [
+              0.12
+            ],
+            "anisotropyVector": [
+              -0.1423504748063865,
+              0.5312592044589877
+            ],
+            "alphaTest": [
+              0.5
+            ],
+            "envMapIntensity": [
+              1
+            ],
+            "ambientLightColor": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "normalScale": [
+              1,
+              1
+            ]
+          },
+          "16": {
+            "uRadius": [
+              0.354
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.54
+            ],
+            "uAngle": [
+              0
+            ],
+            "uVignetteColor": [
+              [
+                0.30588235,
+                0.36078431,
+                0.23529412
+              ]
+            ],
+            "uClearColor": [
+              [
+                1,
+                0.6666666865348816,
+                0.6470588445663452
+              ]
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              431,
+              540
+            ]
+          },
+          "17": {
+            "uMixRadius": [
+              1
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              6.8985999999940395
+            ],
+            "uResolution": [
+              431,
+              540
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "18": {
+            "uAmount": [
+              0.5149285714285715
+            ],
+            "uSpread": [
+              1
+            ],
+            "uAngle": [
+              0.12222222238779068
+            ],
+            "uTime": [
+              6.8985999999940395
+            ],
+            "uSkew": [
+              0.8399999737739563
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              431,
+              540
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ]
+          },
+          "19": {
+            "uAmount": [
+              0.7540000081062317
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              431,
+              540
+            ],
+            "uMousePos": [
+              0,
+              0
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ]
+          },
+          "20": {
+            "uOutputColor": [
+              [
+                1,
+                0.8196078538894653,
+                0.5960784554481506
+              ]
+            ]
+          }
+        },
+        "textures": [
+          {
+            "url": "https://billguo.me/about/camellia.webp",
+            "width": 1534,
+            "height": 1847
+          }
+        ],
+        "multiply": [
+          {
+            "alpha": 0,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.00014205998314975027,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.0008997069856984532,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.002385626225751407,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.004339261152888197,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.006942047765801568,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.00998783626760335,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.013337520260059027,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.0171945837693064,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.021321312992249836,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.025827741873393328,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.030428909584159076,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.0355222300511298,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.040634706680879366,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.04600887497452637,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.051524380836899496,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.05705275370094485,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.06266747262719818,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.06834638413429704,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.0742776244834751,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.08013004097628929,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.08588434186944452,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.09173307633538043,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.09734872443604492,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.10323631318240255,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.10886576004651971,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.11443327999999994,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.11992878941945503,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.12553845821106968,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.13086025553661754,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.13617939075299562,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.14129942594512865,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1464007438021231,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.15147206944491878,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.15607390788363723,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.16081375610556276,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.16550594697129387,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1699045971400224,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.17417486753012096,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.17838957361780747,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1824690327023715,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1863436137026613,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.19008736979386184,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.19376517048286426,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.1973084856486673,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.20059888862553396,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2038814365515773,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.20703351544349002,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2102680939875162,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.21310564400292162,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2156782986696799,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2183314589231505,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2208654353948182,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2232408117492814,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2254663549828615,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.22770385826802372,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.22975707471900192,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.23174396843251474,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.23362942329998018,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.23541664795153694,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2370794753770621,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.238653755076118,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24016887369897585,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2415738525300851,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24292297825831397,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24419317701350787,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2453669597383167,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2464901219209983,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.247525548749306,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24851391590333835,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.24943880177519906,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2502882427881366,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25108204557659397,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2518488668757429,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2525255005047947,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2531898395475421,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25378483568851634,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25433705352574404,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25485776681170025,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2553306665695973,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2558131668689869,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2561846789595509,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2565547513356523,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25689498771189195,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25721268552987053,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2574983158940244,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2577685729484305,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2580061781108499,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2582226085210212,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2584227557597315,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2585978238262642,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25876494088510027,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2589127942888368,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2590434891835134,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2591609413190356,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2592680317461413,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25936196105811893,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.25944856201225297,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2595226732392075,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          },
+          {
+            "alpha": 0.2595883436856038,
+            "source": [
+              190,
+              238
+            ],
+            "target": [
+              380,
+              476
+            ]
+          }
+        ]
+      },
+      "canvases": [
+        {
+          "width": 862,
+          "height": 1080,
+          "clientWidth": 431,
+          "clientHeight": 540
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://billguo.me/stamps/ncs-384.avif",
+          "bytes": 19209
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-paint-sm.webp",
+          "bytes": 31842
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-height-sm.webp",
+          "bytes": 34142
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-sm.webp",
+          "bytes": 203588
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-paint.webp",
+          "bytes": 277586
+        },
+        {
+          "url": "https://billguo.me/relief/ncs-height.webp",
+          "bytes": 197286
+        },
+        {
+          "url": "https://billguo.me/stamps/ncs.avif",
+          "bytes": 82211
+        },
+        {
+          "url": "https://billguo.me/relief/ncs.webp",
+          "bytes": 1632718
+        }
+      ]
+    }
+  ]
+}

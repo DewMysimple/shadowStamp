@@ -1,5 +1,6 @@
 // Migrated read-only from the user's 幽兰/src/viewer/dappledLightShaders.js.
-// Field and 50-tap lens algorithms retained verbatim; final composition adapted.
+// Organic field and 50-tap lens retained; colour staging follows the NCS source
+// audit so RGB survives the blur and the peach mix occurs afterwards.
 // Screen-space reconstruction of the Microsoft AI reference (2026-09-05).
 // An elliptical illumination field, sine warp and stretched Voronoi cells
 // produce the dappled shape; a separate lens pass softens the cell boundaries.
@@ -33,6 +34,8 @@ export const DAPPLED_FIELD_FRAGMENT = /* glsl */`
   }
 
   void main() {
+    // The source Voronoi pass keeps uPos at (.5,.5); only its underlying
+    // illumination ellipse follows the pointer. Do not move the cell lattice.
     vec2 p = (vUv - 0.5) * vec2(uAspect, 1.0) * uDensity;
     float c = cos(uAngle), s = sin(uAngle);
     p = vec2(c * p.x - s * p.y, s * p.x + c * p.y);
@@ -57,9 +60,9 @@ export const DAPPLED_FIELD_FRAGMENT = /* glsl */`
     sampleUV = clamp(sampleUV, 0.0, 1.0);
     float distanceToLight = length((sampleUV - uPointer) * vec2(uAspect * 0.54, 0.46));
     float shade = smoothstep(uRadius * 0.25, uRadius * 0.75, distanceToLight);
+    // Preserve RGB and alpha separately. The original final colour is mixed
+    // with peach AFTER the colour-weighted lens, not collapsed into shade^3.
     vec3 field = mix(uBackground, uShadow, shade);
-    // Collapse the three source-over field stages into one analytical pass.
-    field = mix(uLight, field, shade * shade * shade);
     gl_FragColor = vec4(field, shade);
   }
 `;

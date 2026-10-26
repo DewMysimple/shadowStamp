@@ -1,10 +1,8 @@
 import React, { useRef, useState } from 'react';
-import { DEFAULT_PARAMETERS, PARAMETER_GROUPS, PRESETS, parseParameters, serializeParameters } from './parameters.js';
+import { DEFAULT_PARAMETERS, PARAMETER_GROUPS, parseParameters, serializeParameters } from './parameters.js';
 
-function ParameterField({ field, value, onChange, model }) {
-  if (field.models && !field.models.includes(model)) { const scope = field.models.includes('surface') ? '票面反光' : '斑驳投影'; return <div className="parameter-inactive" title={`切换到${scope}后可调节`}><span>{field.label}</span><span>{scope}可调</span></div>; }
+function ParameterField({ field, value, onChange }) {
   const id = `parameter-${field.key}`;
-  if (field.type === 'select') return <label className="parameter-select" htmlFor={id}><span>{field.label}</span><select id={id} data-parameter={field.key} value={value} onChange={event => onChange(field.key, event.target.value)}>{field.options.map(option => <option key={option.value} value={option.value}>{option.label}</option>)}</select></label>;
   if (field.type === 'boolean') return <label className="parameter-toggle" htmlFor={id} title={field.hint}>
     <span>{field.label}</span><input id={id} data-parameter={field.key} type="checkbox" checked={value} onChange={event => onChange(field.key, event.target.checked)} /><span className="toggle-track" aria-hidden="true" />
   </label>;
@@ -22,7 +20,6 @@ export default function ParameterPanel({ parameters, onChange, onReplace, onFocu
   const [json, setJson] = useState('');
   const fileInput = useRef(null);
   const toggle = useRef(null);
-  const selectedPreset = Object.entries(PRESETS).find(([, preset]) => JSON.stringify(preset.values) === JSON.stringify(parameters))?.[0] ?? 'custom';
   const applyJson = text => {
     try { onReplace(parseParameters(text)); setMessage('已导入参数并应用。'); setImportOpen(false); }
     catch (error) { setMessage(error.message); }
@@ -44,18 +41,17 @@ export default function ParameterPanel({ parameters, onChange, onReplace, onFocu
       {unavailable && <p className="parameter-notice">当前为纸面回退模式，光影与偏转需要 WebGL。</p>}
       {reducedMotion && <p className="parameter-notice">系统已开启减少动态：偏转和光影流动暂停，颜色与形态仍可调节。</p>}
       <div className="parameter-scroll">
-        <div className="parameter-presets"><label htmlFor="parameter-preset">效果预设</label><select id="parameter-preset" value={selectedPreset} onChange={event => { if (PRESETS[event.target.value]) { onReplace(PRESETS[event.target.value].values); setMessage(PRESETS[event.target.value].description); } }}><option value="custom" disabled>自定义</option>{Object.entries(PRESETS).map(([key, preset]) => <option value={key} key={key}>{preset.name}</option>)}</select></div>
         <div className="parameter-preview"><button disabled={unavailable} onClick={focused ? onClose : onFocus}>{focused ? '返回画廊' : '聚焦主邮票'}<span aria-hidden="true">↗</span></button><label><input type="checkbox" checked={parameters.pinLight} onChange={event => onChange('pinLight', event.target.checked)} />固定光影预览</label></div>
         {PARAMETER_GROUPS.map((group, index) => <details key={group.id} open={index === 0 || index === 2} className="parameter-group">
           <summary><span>{group.title}</span><span className="group-count">{group.fields.length.toString().padStart(2, '0')}</span></summary>
           <p className="parameter-group-note">{group.note}</p>
-          <fieldset disabled={group.models && !group.models.includes(parameters.lightModel)} className="parameter-fieldset">
-            {group.fields.map(field => <ParameterField key={field.key} field={field} value={parameters[field.key]} onChange={onChange} model={parameters.lightModel} />)}
+          <fieldset className="parameter-fieldset">
+            {group.fields.map(field => <ParameterField key={field.key} field={field} value={parameters[field.key]} onChange={onChange} />)}
           </fieldset>
           <button className="group-reset" onClick={() => { onReplace({ ...parameters, ...Object.fromEntries(group.fields.map(field => [field.key, DEFAULT_PARAMETERS[field.key]])) }); setMessage(`已重置${group.title}。`); }}>重置这一组</button>
         </details>)}
         {importOpen && <div className="parameter-import"><label htmlFor="parameter-json">参数 JSON</label><textarea id="parameter-json" value={json} onChange={event => setJson(event.target.value)} placeholder="粘贴本面板导出的 JSON" spellCheck={false} /><div><button onClick={() => applyJson(json)}>应用 JSON</button><button onClick={() => setImportOpen(false)}>收起</button></div></div>}
-        <p className="parameter-footnote">先调“聚焦偏转 / 透视距离”，再调光影。参数无法消除原图案与材质算法本身的差异。</p>
+        <p className="parameter-footnote">先调光影强度与阴影颜色，再调光纹放大和散焦柔化。</p>
       </div>
       <footer className="parameter-footer"><div><button onClick={copy}>复制</button><button onClick={download}>导出</button><button onClick={() => fileInput.current?.click()}>导入</button><button onClick={() => { setImportOpen(value => !value); setJson(''); }}>粘贴</button><button onClick={() => { onReplace(DEFAULT_PARAMETERS); setMessage('全部参数已恢复。'); }}>全部重置</button></div><input ref={fileInput} className="sr-only" tabIndex={-1} type="file" accept=".json,application/json" aria-label="导入参数 JSON 文件" onChange={async event => { const file = event.target.files?.[0]; if (file) { if (file.size > 100000) setMessage('参数文件过大，请选择本面板导出的 JSON。'); else applyJson(await file.text()); } event.target.value = ''; }} /><p role="status" aria-live="polite">{storageError || message || '悬停看光影，点击看聚焦。'}</p></footer>
     </div>}

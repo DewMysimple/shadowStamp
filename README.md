@@ -1,6 +1,6 @@
 # Postal Studies · 光与纸的交互展览
 
-React + Vite + 原生 Three.js。保留邮票印刷图案，只呈现鼠标引导的纸面光影与细微压纹；幽兰场景8的斑驳投影保留为可选模式，原工程保持只读。背景为静态暖白纸面。
+React + Vite + 原生 Three.js。保留邮票印刷图案，只有一套默认开启的暖光：有机光斑、浅纸纹、柔和暗部与周围投影共同作用。没有预设或材质模式切换。背景为静态暖白纸面。
 
 ## 运行
 
@@ -17,9 +17,9 @@ npm run dev
 - 悬停也显示名称、抬升当前票并虚化其他票；点选进入暗色聚焦。
 - 点击、右上返回或 Escape 退出；触屏直接点选。
 - 聚焦后可在票内继续移动鼠标或拖动手指，引导局部光照。支持键盘和减少动态偏好。
-- 左上角“参数控件”实时调节悬停/聚焦偏转、透视、转场、票面光影与场景8形态；支持预设、单组/全部重置、本机自动保存及JSON导入导出。聚焦后仍可调参，固定光影预览便于边调边看。
+- 左上角“参数控件”直接调节光色、暗部、纹理放大、光斑散焦、周围投影及原有偏转/聚焦。支持单组/全部重置、本机自动保存及JSON导入导出；聚焦后仍可调参。
 
-本轮重新分析了已更新的桌面1/2.mp4和原站实际材质；第2段现在是黑白C，不与第1段绿色票冒充同款比较。差异与修正见[本轮材质研究](docs/fidelity-pass.md)，操作方式见[参数说明](docs/parameter-guide.md)。
+本轮读取原站公开JS并核对实际GPU参数：此前丢弃彩色光图RGB，漏掉桃橙/珊瑚色和独立橙暖点光；固定密度也不符合原站随尺寸/DPR变化的尺度规则。现已在同一效果中修正。见[源码与参数对照](docs/ncs-light-source-audit.md)、[灯光实测](docs/ncs-environment-source.md)、[参数说明](docs/parameter-guide.md)。旧视频分析保留在[前轮记录](docs/fidelity-pass.md)。
 
 用户后续明确要求光效作用在**悬停邮票表面**，最终版本不显示票面彩虹色带、不把动态光影铺在背景上，也不提供额外的背景光影模式。
 
@@ -35,7 +35,7 @@ npm run test:controls
 npm run test:fidelity
 ```
 
-浏览器脚本使用本机安装的 Chrome（Playwright channel: chrome），不要求下载额外浏览器。其他端口可设置 `VERIFY_URL`。主脚本在真实浏览器中验证14项交互/响应式/资源/回退，并把截图和报告写入 `artifacts/verification/`。票内光影专项脚本、`final-report.json` 与 `light-motion.webm` 在 `artifacts/light-study/`。该目录早期编号图为研究过程，不代表最终作用位置。`npm run preview -- --port 4174` 可预览生产构建。
+浏览器脚本使用本机安装的 Chrome（Playwright channel: chrome），不要求下载额外浏览器。其他端口可设置 `VERIFY_URL`。本轮报告和截图统一放在 `artifacts/single-light-verification/`；视觉复查在 `artifacts/single-light-study/`。`npm run preview -- --port 4175` 可预览生产构建，实际端口以终端为准。
 
 ## 代码与参数
 
@@ -43,11 +43,12 @@ npm run test:fidelity
 | --- | --- |
 | `src/App.jsx` | 语义按钮、键盘说明、模式切换和无WebGL纸面回退 |
 | `src/config.js` | 六票布局/角度/尺寸/层级、虚化与聚焦时间 |
-| `src/parameters.js`、`src/ParameterPanel.jsx` | 四组实时参数、预设、验证、保存与导入导出 |
+| `src/parameters.js`、`src/ParameterPanel.jsx` | 四组实时参数、验证、保存与导入导出；仅一个默认效果 |
 | `src/artwork.js` | 六种固定seed的原创印刷图案和真实alpha齿孔 |
 | `src/rendering/SurfaceTexture.js` | 独立于印刷图稿的细密表面法线，创建一次并随材质释放 |
 | `src/rendering/StampGallery.js` | 一个renderer、一个RAF、统一坐标/输入/生命周期 |
 | `src/rendering/StampMaterial.js` | 局部UV采样光场、按hover强度合成纸面暖光、连续alpha虚化 |
+| `src/rendering/ncsLighting.js` | 原站实码与GPU核实的主光/橙暖点光及非金属浅纸面参数 |
 | `src/rendering/DappledLight.js` | 384×480邮票光场、强度/速度/颜色/柔化/覆盖范围/开关与缓存 |
 | `src/rendering/dappledShaders.js` | 场景8原始光场、50采样散焦、静态纸面输出 |
 | `src/motion.js` | 可在中途反向的统一聚焦进度 |
