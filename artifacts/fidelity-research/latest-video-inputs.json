@@ -1,0 +1,45 @@
+{
+  "observedAt": "2026-10-26",
+  "scope": "Latest user 1.mp4 / 2.mp4; no source input writes",
+  "videos": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\1.mp4",
+      "role": "original-hover",
+      "bytes": 383387,
+      "sha256": "d323032107fc69cece2da02ae26d975301840ca434da0be81d7ad1959ef50cfa",
+      "codec": "h264",
+      "width": 446,
+      "height": 534,
+      "fps": 24.0,
+      "frames": 147,
+      "video_duration": "6.125000",
+      "container_duration": "6.130000",
+      "all_frame_contact_sheets": [
+        "1-original-hover-frames-000-047.jpg",
+        "1-original-hover-frames-048-095.jpg",
+        "1-original-hover-frames-096-143.jpg",
+        "1-original-hover-frames-144-146.jpg"
+      ],
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\2.mp4",
+      "role": "latest-current-hover",
+      "bytes": 186685,
+      "sha256": "e78e78bbe8e0cb54ab66c36d3f26129e8c7073ec7600fd08ab39d064190d2de8",
+      "codec": "h264",
+      "width": 546,
+      "height": 538,
+      "fps": 24.0,
+      "frames": 134,
+      "video_duration": "5.583333",
+      "container_duration": "5.619002",
+      "all_frame_contact_sheets": [
+        "2-latest-current-hover-frames-000-047.jpg",
+        "2-latest-current-hover-frames-048-095.jpg",
+        "2-latest-current-hover-frames-096-133.jpg"
+      ],
+      "input_unchanged": true
+    }
+  ]
+}

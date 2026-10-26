@@ -8,7 +8,7 @@ import {promisify} from 'node:util';
 
 const out=resolve('artifacts/light-study');await mkdir(out,{recursive:true});
 const base=process.env.VERIFY_URL||'http://127.0.0.1:4173/';
-const report={base,scope:'Scene 8 light inside the hovered stamp; static paper background',startedAt:new Date().toISOString(),checks:[],errors:[],screenshots:[]};
+const report={base,scope:'Explicit dappled lighting mode: Scene 8 light inside the hovered stamp; static paper background',startedAt:new Date().toISOString(),checks:[],errors:[],screenshots:[]};
 const browser=await chromium.launch({headless:true,channel:'chrome',args:['--enable-unsafe-swiftshader']});
 const contexts=[],hash=b=>createHash('sha256').update(b).digest('hex');
 async function check(name,fn){try{const details=await fn();report.checks.push({name,result:'passed',details});console.log(`PASS ${name}`)}catch(e){report.checks.push({name,result:'failed',error:e.stack});console.error(`FAIL ${name}: ${e.message}`)}}
@@ -33,7 +33,13 @@ async function createPage(options={}){
  });
  const p=await ctx.newPage();p.on('pageerror',e=>report.errors.push({type:'pageerror',message:e.message}));p.on('console',e=>{if(e.type()==='error')report.errors.push({type:'console',message:e.text()})});return p;
 }
-async function visit(p){await p.goto(base,{waitUntil:'networkidle'});await p.waitForFunction(()=>!!window.__postalGallery,{timeout:15000})}
+async function visit(p){
+ await p.goto(base,{waitUntil:'networkidle'});await p.waitForFunction(()=>!!window.__postalGallery,{timeout:15000});
+ if(await p.locator('.parameter-launcher').getAttribute('aria-expanded')!=='true')await p.locator('.parameter-launcher').click();
+ await p.locator('[data-parameter="lightModel"]').selectOption('dappled');
+ await p.waitForFunction(()=>__postalGallery.getDiagnostics().parameters.lightModel==='dappled');
+ if(p.viewportSize().width<700)await p.locator('.parameter-launcher').click();
+}
 const diagnostics=p=>p.evaluate(()=>window.__postalGallery.getDiagnostics());
 const field=p=>p.evaluate(()=>Object.values(__lightQA.programs).find(p=>p.field)?.uniforms);
 const textureHash=p=>p.evaluate(()=>__fieldPixels());

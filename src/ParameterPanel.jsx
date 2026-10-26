@@ -1,8 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { DEFAULT_PARAMETERS, PARAMETER_GROUPS, PRESETS, parseParameters, serializeParameters } from './parameters.js';
 
-function ParameterField({ field, value, onChange }) {
+function ParameterField({ field, value, onChange, model }) {
+  if (field.models && !field.models.includes(model)) { const scope = field.models.includes('surface') ? '票面反光' : '斑驳投影'; return <div className="parameter-inactive" title={`切换到${scope}后可调节`}><span>{field.label}</span><span>{scope}可调</span></div>; }
   const id = `parameter-${field.key}`;
+  if (field.type === 'select') return <label className="parameter-select" htmlFor={id}><span>{field.label}</span><select id={id} data-parameter={field.key} value={value} onChange={event => onChange(field.key, event.target.value)}>{field.options.map(option => <option key={option.value} value={option.value}>{option.label}</option>)}</select></label>;
   if (field.type === 'boolean') return <label className="parameter-toggle" htmlFor={id} title={field.hint}>
     <span>{field.label}</span><input id={id} data-parameter={field.key} type="checkbox" checked={value} onChange={event => onChange(field.key, event.target.checked)} /><span className="toggle-track" aria-hidden="true" />
   </label>;
@@ -47,7 +49,9 @@ export default function ParameterPanel({ parameters, onChange, onReplace, onFocu
         {PARAMETER_GROUPS.map((group, index) => <details key={group.id} open={index === 0 || index === 2} className="parameter-group">
           <summary><span>{group.title}</span><span className="group-count">{group.fields.length.toString().padStart(2, '0')}</span></summary>
           <p className="parameter-group-note">{group.note}</p>
-          {group.fields.map(field => <ParameterField key={field.key} field={field} value={parameters[field.key]} onChange={onChange} />)}
+          <fieldset disabled={group.models && !group.models.includes(parameters.lightModel)} className="parameter-fieldset">
+            {group.fields.map(field => <ParameterField key={field.key} field={field} value={parameters[field.key]} onChange={onChange} model={parameters.lightModel} />)}
+          </fieldset>
           <button className="group-reset" onClick={() => { onReplace({ ...parameters, ...Object.fromEntries(group.fields.map(field => [field.key, DEFAULT_PARAMETERS[field.key]])) }); setMessage(`已重置${group.title}。`); }}>重置这一组</button>
         </details>)}
         {importOpen && <div className="parameter-import"><label htmlFor="parameter-json">参数 JSON</label><textarea id="parameter-json" value={json} onChange={event => setJson(event.target.value)} placeholder="粘贴本面板导出的 JSON" spellCheck={false} /><div><button onClick={() => applyJson(json)}>应用 JSON</button><button onClick={() => setImportOpen(false)}>收起</button></div></div>}

@@ -10,7 +10,8 @@
     "test": "node --test tests/*.test.js",
     "test:browser": "node scripts/verify-browser.mjs",
     "test:light": "node scripts/verify-light.mjs",
-    "test:controls": "node scripts/verify-controls.mjs"
+    "test:controls": "node scripts/verify-controls.mjs",
+    "test:fidelity": "node scripts/verify-fidelity.mjs"
   },
   "dependencies": {
     "react": "19.2.8",

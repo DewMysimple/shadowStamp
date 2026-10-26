@@ -131,7 +131,9 @@ try {
     await screenshot(desktop, 'desktop-04-focus.png');
     await assertViewportOrigin(desktop);
     assert.equal(await desktop.locator('.focus-instruction').textContent(), 'CLICK ANYWHERE OR PRESS ESC.');
-    await desktop.mouse.click(80,450);await waitState(desktop, 'idle', null);await desktop.waitForTimeout(300);
+    // This point is outside both the stamp and the open parameter panel.
+    assert.equal(await desktop.evaluate(() => Boolean(document.elementFromPoint(400,150)?.closest('[data-stamp], [data-parameter-panel]'))), false);
+    await desktop.mouse.click(400,150);await waitState(desktop, 'idle', null);await desktop.waitForTimeout(300);
     await screenshot(desktop, 'desktop-05-return.png');
     return { canvasCount: 1, midpoint: midpoint.progress, label: 'NEW CRAFT SOCIETY', backgroundExit: true };
   });

@@ -87,6 +87,12 @@ button:focus-visible { outline: 1px solid #71814c; outline-offset: 8px; }
 .parameter-color { display: flex; align-items: center; gap: 8px; min-height: 33px; color: #747768; font-size: 10px; }
 .color-value { margin-left: auto; color: #9b9f8b; font-size: 8px; }
 .parameter-color input { width: 37px; height: 21px; padding: 1px; border: 1px solid #d1d4c1; border-radius: 3px; background: none; cursor: pointer; }
+.parameter-select { display: flex; align-items: center; gap: 10px; margin: 3px 0 10px; color: #747768; font-size: 10px; }
+.parameter-select select { flex: 1; min-width: 0; padding: 7px 5px; border: 1px solid #ced1c0; border-radius: 3px; background: #eef0e5; color: #4c5d43; font: inherit; }
+.parameter-fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.parameter-fieldset:disabled { opacity: .4; }
+.parameter-inactive { display: flex; align-items: center; justify-content: space-between; min-height: 30px; color: #939686; font-size: 10px; }
+.parameter-inactive > span:last-child { font-size: 8px; color: #a5aa98; }
 .group-reset { display: block; margin: 10px 0 4px auto; padding: 2px 0; background: none; border: none; color: #959b85; font-size: 9px; text-decoration: underline; text-underline-offset: 3px; }
 .parameter-footer { flex: 0 0 auto; padding: 13px 15px 10px; border-top: 1px solid #d9ddcb; background: #edf0e4; }
 .parameter-footer > div { display: flex; align-items: center; gap: 5px; }

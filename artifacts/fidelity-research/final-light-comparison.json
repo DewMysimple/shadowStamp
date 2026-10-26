@@ -1,0 +1,131 @@
+{
+  "status": "final-paper-preserving-light",
+  "user_choice": "保留界面和印刷纸色，只改票内光与微细纸纹，不做浮雕或金属化。",
+  "method": "Exact remote DOM canvas / current GPU projected paper corner bounding boxes. User video before crop is manually estimated and marked. Equal paper-bbox height by uniform scaling; preserve pose and aspect. No similarity score.",
+  "rows": [
+    {
+      "title": "NCS · 原站光影参考 / 本轮按用户选择保留绿纸印刷",
+      "cells": [
+        {
+          "path": "artifacts\\fidelity-research\\bill-ncs-hover-upperRight.png",
+          "input_sha256": "59da1e5f06c5a5297fc95c7fe0a5839a4fd1656dc3e6f2e42e03b769d2328110",
+          "paper_bbox_xywh": [
+            721.624755859375,
+            309.7930908203125,
+            220.91363525390625,
+            267.24322509765625
+          ],
+          "crop_ltrb": [
+            714,
+            303,
+            950,
+            584
+          ],
+          "scale": 1.3770227472203462,
+          "bbox_method": "remote DOM rectangle",
+          "caption": "原站：NCS光影参考"
+        },
+        {
+          "path": "artifacts\\fidelity-research\\paper-light-craft-gallery.png",
+          "input_sha256": "f6d89b0da1010a9e0955f1ea64b708c80526bb8c9902d56b66b5aff61c8b6317",
+          "paper_bbox_xywh": [
+            727.6886209403341,
+            326.7104674559883,
+            258.1267022766648,
+            299.2245825890921
+          ],
+          "crop_ltrb": [
+            720,
+            319,
+            994,
+            634
+          ],
+          "scale": 1.2298454786562547,
+          "bbox_method": "current gallery projected corners",
+          "caption": "本轮：悬停光影 / 绿纸保色"
+        },
+        {
+          "path": "artifacts\\fidelity-research\\paper-light-craft-focus-lowerLeft.png",
+          "input_sha256": "eefe3cc61fd786adb129a56ed9694115851b2a425e20f0ede79b1d5eef334afd",
+          "paper_bbox_xywh": [
+            489.7819550673485,
+            191.71334745932847,
+            403.00431228987173,
+            512.228919322236
+          ],
+          "crop_ltrb": [
+            476,
+            178,
+            906,
+            717
+          ],
+          "scale": 0.7184287847061137,
+          "bbox_method": "current focus projected corners",
+          "caption": "本轮：聚焦光影 / 左下指针"
+        }
+      ]
+    },
+    {
+      "title": "Kensho · 用户录屏2修改前 / 本轮保留白纸与黑墨",
+      "cells": [
+        {
+          "path": "artifacts\\fidelity-research\\latest-kensho-before-frame-060.png",
+          "input_sha256": "485f6e1e7aa5cb47f95e27035163e71a3c96894d0cf7fffdc9a50423bc99a0f3",
+          "paper_bbox_xywh": [
+            73,
+            59,
+            404,
+            449
+          ],
+          "crop_ltrb": [
+            61,
+            47,
+            489,
+            520
+          ],
+          "scale": 0.8195991091314031,
+          "bbox_method": "manual estimated paper bounds in user recording",
+          "caption": "修改前：2.mp4 第60帧 / 2.500s"
+        },
+        {
+          "path": "artifacts\\fidelity-research\\paper-light-kensho-gallery.png",
+          "input_sha256": "1840857043c5608985fa976285c5cc47e5a2619ebacedc071eddbdccddd37443",
+          "paper_bbox_xywh": [
+            575.0026675974626,
+            384.53723192627626,
+            277.5478104573808,
+            306.69347409511613
+          ],
+          "crop_ltrb": [
+            567,
+            376,
+            861,
+            699
+          ],
+          "scale": 1.1998951105359048,
+          "bbox_method": "current gallery projected corners",
+          "caption": "本轮：悬停光影 / 白纸黑墨"
+        },
+        {
+          "path": "artifacts\\fidelity-research\\paper-light-kensho-focus-lowerLeft.png",
+          "input_sha256": "8c398e4ec6ff841d8fbb5cd25a61dd3dc6c748de5b4cd77f70efde6f99d500ed",
+          "paper_bbox_xywh": [
+            478.6973622381351,
+            191.67058588993143,
+            425.5398984909504,
+            512.4324860466315
+          ],
+          "crop_ltrb": [
+            465,
+            178,
+            918,
+            717
+          ],
+          "scale": 0.7181433847785206,
+          "bbox_method": "current focus projected corners",
+          "caption": "本轮：聚焦光影 / 左下指针"
+        }
+      ]
+    }
+  ]
+}

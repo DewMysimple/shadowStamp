@@ -1,10 +1,13 @@
 // Shared by the controls, persistence and renderer. Values are in CSS px / seconds / degrees.
-export const PARAMETER_VERSION = 1;
-export const STORAGE_KEY = 'postal-studies:parameters:v1';
+export const PARAMETER_VERSION = 2;
+export const STORAGE_KEY = 'postal-studies:parameters:v2';
+export const LEGACY_STORAGE_KEY = 'postal-studies:parameters:v1';
+const APPEARANCE_REVISION = 2;
 
 const number = (key, label, value, min, max, step, unit = '', hint = '') => ({ key, label, value, min, max, step, unit, hint, type: 'number' });
 const toggle = (key, label, value, hint = '') => ({ key, label, value, hint, type: 'boolean' });
 const color = (key, label, value) => ({ key, label, value, type: 'color' });
+const select = (key, label, value, options, hint = '') => ({ key, label, value, options, hint, type: 'select' });
 
 export const PARAMETER_GROUPS = [
   { id: 'interaction', title: '指针与悬停', note: '偏转改变邮票姿态；光斑追踪在下方单独调节。', fields: [
@@ -34,24 +37,28 @@ export const PARAMETER_GROUPS = [
     color('backgroundColor', '画廊纸色', '#fbf7f1'),
     color('focusBackground', '聚焦底色', '#22201c'),
   ] },
-  { id: 'light', title: '邮票光影', note: '光只作用在邮票上。固定预览可让你离开票面继续调参。', fields: [
+  { id: 'light', title: '邮票光影', note: '保留原图案，只调纸面光影与细微压纹。固定预览便于调参。', fields: [
+    select('lightModel', '光照方式', 'surface', [{ value: 'surface', label: '票面反光' }, { value: 'dappled', label: '斑驳投影 · 场景8' }]),
     toggle('lightEnabled', '启用票面光影', true),
     toggle('pinLight', '固定预览光影', false, '照亮最近交互的邮票；未选择时使用主邮票。'),
-    toggle('lightAnimation', '光影流动', true),
+    { ...toggle('lightAnimation', '光影流动', true, '自动流动用于斑驳投影；票面反光由指针方向驱动。'), models: ['dappled'] },
     toggle('lightFollowPointer', '光斑跟随指针', true),
-    number('lightIntensity', '光影强度', 0.55, 0, 2, 0.01),
-    number('lightContrast', '明暗对比', 0.18, 0, 1, 0.01),
-    number('lightSpeed', '流动速度', 0.35, 0, 3, 0.05, '×'),
-    number('surfaceRelief', '印刷压纹', 0.22, 0, 1, 0.01, '', '沿实际印刷图案计算细微凹凸，不改变原图。'),
-    number('surfaceShine', '纸面高光', 0.25, 0, 1, 0.01),
+    number('lightIntensity', '光影强度', 0.8, 0, 2, 0.01),
+    number('lightContrast', '明暗对比', 0.26, 0, 1, 0.01),
+    { ...number('lightSpeed', '流动速度', 0.35, 0, 3, 0.05, '×'), models: ['dappled'] },
+    number('surfaceRelief', '细微压纹', 0.22, 0, 1, 0.01, '', '只调节纸面细纹的明暗，不改变图案。'),
+    number('surfaceShine', '纸面高光', 0.45, 0, 1, 0.01),
+    { ...number('surfaceRoughness', '表面粗糙度', 0.62, 0.2, 1, 0.01, '', '数值越低，高光越集中。'), models: ['surface'] },
+    { ...number('surfaceCoat', '表面涂层', 0.55, 0, 1, 0.01), models: ['surface'] },
     number('pointerInfluence', '指针影响', 0.85, 0, 2, 0.05, '×'),
     number('lightResponse', '光斑跟随缓动', 0.16, 0, 0.8, 0.01, 's'),
     number('lightFadeIn', '光影渐入', 0.12, 0.02, 0.8, 0.01, 's'),
     number('lightFadeOut', '光影渐出', 0.16, 0.02, 0.8, 0.01, 's'),
+    number('lightGrain', '细微颗粒', 0.65, 0, 1.5, 0.05),
     color('lightColor', '暖光颜色', '#fff1cf'),
     color('shadowColor', '阴影颜色', '#908470'),
   ] },
-  { id: 'shape', title: '场景8 · 光斑形态', note: '沿用幽兰场景8的光场与散焦。覆盖范围 = 原场景光照半径 × 2。', fields: [
+  { id: 'shape', title: '场景8 · 光斑形态', models: ['dappled'], note: '切换“光照方式”为斑驳投影后可调。覆盖范围 = 原场景光照半径 × 2。', fields: [
     number('lightCoverage', '覆盖范围', 0.708, 0.1, 1.6, 0.01),
     number('lightDensity', '光斑密度', 26.7, 2, 50, 0.1),
     number('lightAngle', '倾斜角度', 44, -90, 90, 1, '°'),
@@ -59,7 +66,6 @@ export const PARAMETER_GROUPS = [
     number('lightScatter', '斑驳散布', 1, 0, 2, 0.02),
     number('lightWarp', '波纹扭曲', 0.118, 0, 0.5, 0.005),
     number('lightSoftness', '散焦柔化', 1.5, 0, 3, 0.05),
-    number('lightGrain', '细微颗粒', 0.65, 0, 1.5, 0.05),
   ] },
 ];
 
@@ -68,8 +74,8 @@ export const DEFAULT_PARAMETERS = Object.freeze(Object.fromEntries(PARAMETER_FIE
 export const PRESETS = Object.freeze({
   reference: { name: '参考方向', description: '柔缓追踪，清楚的聚焦微偏转。是复刻起点，并非原站参数原值。', values: DEFAULT_PARAMETERS },
   soft: { name: '柔和日光', description: '更淡、更慢、更柔的票面光影。', values: { ...DEFAULT_PARAMETERS, lightIntensity: 0.35, lightContrast: 0.13, lightSpeed: 0.2, lightSoftness: 1.8, focusTilt: 5, hoverTilt: 5 } },
-  scene8: { name: '场景8 形态', description: '使用场景8截图的形态参数，配色仍为邮票暖光。', values: { ...DEFAULT_PARAMETERS, lightSoftness: 1, lightSpeed: 1, lightContrast: 0.26, lightCoverage: 0.708, lightDensity: 26.7, lightAngle: 44, lightStretch: 0.84, lightScatter: 1, lightWarp: 0.118 } },
-  previous: { name: '上一版光影', description: '恢复上一版较深、较快的光影参数，便于对比；保留本轮修正的偏转。', values: { ...DEFAULT_PARAMETERS, lightIntensity: 1, lightContrast: 0.26, lightSpeed: 0.65, lightSoftness: 1.15, surfaceRelief: 0, surfaceShine: 0 } },
+  scene8: { name: '场景8 形态', description: '使用场景8投影与截图形态，配色仍为邮票暖光。', values: { ...DEFAULT_PARAMETERS, lightModel: 'dappled', lightSoftness: 1, lightSpeed: 1, lightContrast: 0.26, lightCoverage: 0.708, lightDensity: 26.7, lightAngle: 44, lightStretch: 0.84, lightScatter: 1, lightWarp: 0.118 } },
+  previous: { name: '上一版光影', description: '恢复此前的大块光影参数用于对比；不恢复已移除的静态粗波纹。', values: { ...DEFAULT_PARAMETERS, lightModel: 'dappled', lightIntensity: 1, lightContrast: 0.26, lightSpeed: 0.65, lightSoftness: 1.15, surfaceRelief: 0, surfaceShine: 0 } },
 });
 
 /** Whitelist & clamp persisted/imported values; never pass arbitrary JSON to uniforms. */
@@ -80,6 +86,7 @@ export function normalizeParameters(input = {}, base = DEFAULT_PARAMETERS) {
     if (field.type === 'number') value = typeof value === 'number' && Number.isFinite(value) ? Math.min(field.max, Math.max(field.min, value)) : base[field.key];
     if (field.type === 'boolean') value = typeof value === 'boolean' ? value : base[field.key];
     if (field.type === 'color') value = typeof value === 'string' && /^#[0-9a-f]{6}$/i.test(value) ? value.toLowerCase() : base[field.key];
+    if (field.type === 'select') value = field.options.some(option => option.value === value) ? value : base[field.key];
     return [field.key, value];
   }));
 }
@@ -87,16 +94,32 @@ export function normalizeParameters(input = {}, base = DEFAULT_PARAMETERS) {
 export function readParameters(storage) {
   try {
     const parsed = JSON.parse(storage.getItem(STORAGE_KEY));
-    return parsed?.version === PARAMETER_VERSION ? normalizeParameters(parsed.parameters) : { ...DEFAULT_PARAMETERS };
+    if (parsed?.version === PARAMETER_VERSION) return restoreParameters(parsed);
+    const legacy = JSON.parse(storage.getItem(LEGACY_STORAGE_KEY));
+    return legacy?.version === 1 ? restoreParameters(legacy) : { ...DEFAULT_PARAMETERS };
   } catch { return { ...DEFAULT_PARAMETERS }; }
 }
 
 export function serializeParameters(parameters) {
-  return JSON.stringify({ version: PARAMETER_VERSION, parameters: normalizeParameters(parameters) }, null, 2);
+  return JSON.stringify({ version: PARAMETER_VERSION, appearanceRevision: APPEARANCE_REVISION, parameters: normalizeParameters(parameters) }, null, 2);
+}
+
+function restoreParameters(saved) {
+  const values = normalizeParameters(saved.parameters);
+  const old = saved.parameters;
+  // Upgrade only the old untouched factory lighting triplet. Other user edits
+  // (including a disabled light and custom values) survive migration unchanged.
+  if ((saved.appearanceRevision ?? 0) < APPEARANCE_REVISION && old?.lightModel !== 'dappled' &&
+      old?.lightIntensity === 0.55 && old?.lightContrast === 0.18 && old?.surfaceShine === 0.25) {
+    values.lightIntensity = DEFAULT_PARAMETERS.lightIntensity;
+    values.lightContrast = DEFAULT_PARAMETERS.lightContrast;
+    values.surfaceShine = DEFAULT_PARAMETERS.surfaceShine;
+  }
+  return values;
 }
 
 export function parseParameters(json) {
   const parsed = JSON.parse(json);
-  if (parsed?.version !== PARAMETER_VERSION || !parsed.parameters || typeof parsed.parameters !== 'object' || Array.isArray(parsed.parameters)) throw new Error('请选择从本面板导出的 v1 参数 JSON。');
-  return normalizeParameters(parsed.parameters);
+  if (![1, PARAMETER_VERSION].includes(parsed?.version) || !parsed.parameters || typeof parsed.parameters !== 'object' || Array.isArray(parsed.parameters)) throw new Error('请选择本面板导出的 v1 或 v2 参数 JSON。');
+  return restoreParameters(parsed);
 }

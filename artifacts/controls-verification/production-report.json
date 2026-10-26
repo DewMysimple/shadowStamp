@@ -1,6 +1,6 @@
 {
-  "baseURL": "http://127.0.0.1:4174/",
-  "startedAt": "2026-10-26T06:33:06.320Z",
+  "baseURL": "http://127.0.0.1:4175/",
+  "startedAt": "2026-10-26T08:10:15.593Z",
   "checks": [
     {
       "name": "production desktop controls stay usable in focus, persist and export",
@@ -41,5 +41,5 @@
   ],
   "errors": [],
   "result": "passed",
-  "finishedAt": "2026-10-26T06:33:12.849Z"
+  "finishedAt": "2026-10-26T08:10:22.852Z"
 }

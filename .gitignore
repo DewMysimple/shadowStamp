@@ -4,3 +4,6 @@ dist/
 test-results/
 playwright-report/
 *.log
+__pycache__/
+*.py[cod]
+artifacts/**/recording/

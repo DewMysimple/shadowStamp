@@ -1,6 +1,6 @@
 # Postal Studies · 光与纸的交互展览
 
-React + Vite + 原生 Three.js。悬停邮票表面的自然斑驳光影来自用户「幽兰」场景8的光场与散焦算法，原工程保持只读。背景为静态暖白纸面。
+React + Vite + 原生 Three.js。保留邮票印刷图案，只呈现鼠标引导的纸面光影与细微压纹；幽兰场景8的斑驳投影保留为可选模式，原工程保持只读。背景为静态暖白纸面。
 
 ## 运行
 
@@ -13,13 +13,13 @@ npm run dev
 
 打开终端打印的地址，默认 [http://127.0.0.1:4173/](http://127.0.0.1:4173/)。端口占用时 Vite 会选择后续端口。
 
-- 悬停邮票后，柔软的暖光和有机影形在票内渐显，随鼠标移动与时间变化，移出渐隐。纸面背景保持静止。
+- 悬停后，纸面反光与细微压纹随指针方向渐显，移出渐隐。静态图稿中已移除此前额外绘制的粗波纹；没有凸起浮雕、立体字边或金属化。
 - 悬停也显示名称、抬升当前票并虚化其他票；点选进入暗色聚焦。
 - 点击、右上返回或 Escape 退出；触屏直接点选。
 - 聚焦后可在票内继续移动鼠标或拖动手指，引导局部光照。支持键盘和减少动态偏好。
 - 左上角“参数控件”实时调节悬停/聚焦偏转、透视、转场、票面光影与场景8形态；支持预设、单组/全部重置、本机自动保存及JSON导入导出。聚焦后仍可调参，固定光影预览便于边调边看。
 
-本轮已分析用户桌面的4段对比录屏，补上原站聚焦时的透视和朝指针微偏转，减弱上一版较深的大块光纹。[参数使用与差异说明](docs/parameter-guide.md)。
+本轮重新分析了已更新的桌面1/2.mp4和原站实际材质；第2段现在是黑白C，不与第1段绿色票冒充同款比较。差异与修正见[本轮材质研究](docs/fidelity-pass.md)，操作方式见[参数说明](docs/parameter-guide.md)。
 
 用户后续明确要求光效作用在**悬停邮票表面**，最终版本不显示票面彩虹色带、不把动态光影铺在背景上，也不提供额外的背景光影模式。
 
@@ -32,6 +32,7 @@ npm run test
 npm run test:browser
 npm run test:light
 npm run test:controls
+npm run test:fidelity
 ```
 
 浏览器脚本使用本机安装的 Chrome（Playwright channel: chrome），不要求下载额外浏览器。其他端口可设置 `VERIFY_URL`。主脚本在真实浏览器中验证14项交互/响应式/资源/回退，并把截图和报告写入 `artifacts/verification/`。票内光影专项脚本、`final-report.json` 与 `light-motion.webm` 在 `artifacts/light-study/`。该目录早期编号图为研究过程，不代表最终作用位置。`npm run preview -- --port 4174` 可预览生产构建。
@@ -44,6 +45,7 @@ npm run test:controls
 | `src/config.js` | 六票布局/角度/尺寸/层级、虚化与聚焦时间 |
 | `src/parameters.js`、`src/ParameterPanel.jsx` | 四组实时参数、预设、验证、保存与导入导出 |
 | `src/artwork.js` | 六种固定seed的原创印刷图案和真实alpha齿孔 |
+| `src/rendering/SurfaceTexture.js` | 独立于印刷图稿的细密表面法线，创建一次并随材质释放 |
 | `src/rendering/StampGallery.js` | 一个renderer、一个RAF、统一坐标/输入/生命周期 |
 | `src/rendering/StampMaterial.js` | 局部UV采样光场、按hover强度合成纸面暖光、连续alpha虚化 |
 | `src/rendering/DappledLight.js` | 384×480邮票光场、强度/速度/颜色/柔化/覆盖范围/开关与缓存 |
@@ -51,6 +53,12 @@ npm run test:controls
 | `src/motion.js` | 可在中途反向的统一聚焦进度 |
 
 没有运行时远程图片、字体或CDN依赖。邮票图案由代码生成；没有把视频帧或网站素材当成网页纹理。
+
+## 工程记忆与Git
+
+使用用户指定的 **standard** 工程记忆：[wiki_memory/README.md](wiki_memory/README.md)。新会话按根 `AGENTS.md` 和记忆协议读取当前状态。
+
+每轮完整对话只要修改本项目文件，结束前须同步相关记忆、验证并完成本轮本地Git提交；无修改不空提交。不自动推送或发布。仓库已初始化在本工程目录，基线提交为 `2345174`；当前交付状态以 `git status` / `git log -1` 为准。
 
 ## 研究与交付记录
 

@@ -39,7 +39,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
   let lightPalette = '';
   function syncLightPalette() {
     const { light, color, intensity, enabled, contrast, grain } = background.parameters;
-    const key = `${light}:${color}:${intensity}:${enabled}:${contrast}:${grain}:${settings.surfaceRelief}:${settings.surfaceShine}`;
+    const key = `${light}:${color}:${intensity}:${enabled}:${contrast}:${grain}:${settings.surfaceRelief}:${settings.surfaceShine}:${settings.lightModel}:${settings.surfaceRoughness}:${settings.surfaceCoat}`;
     if (key === lightPalette) return;
     lightPalette = key;
     const rgb = (hex) => {
@@ -54,6 +54,9 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       entry.material.uniforms.uLightGrain.value = grain;
       if (entry.material.uniforms.uSurfaceRelief) entry.material.uniforms.uSurfaceRelief.value = settings.surfaceRelief;
       if (entry.material.uniforms.uSurfaceShine) entry.material.uniforms.uSurfaceShine.value = settings.surfaceShine;
+      if (entry.material.uniforms.uSurfaceRoughness) entry.material.uniforms.uSurfaceRoughness.value = settings.surfaceRoughness;
+      if (entry.material.uniforms.uSurfaceCoat) entry.material.uniforms.uSurfaceCoat.value = settings.surfaceCoat;
+      if (entry.material.uniforms.uLightModel) entry.material.uniforms.uLightModel.value = settings.lightModel === 'dappled' ? 1 : 0;
     }
   }
   let renderer;
@@ -93,7 +96,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     const shadow = new THREE.Mesh(geometry, shadowMaterial);
     shadow.frustumCulled = false;
     scene.add(shadow, mesh);
-    return { stamp, artwork, texture, material, mesh, shadow, shadowSource, shadowMaterial, hover: 0, light: 0, tiltX: 0, tiltY: 0, roll: 0, shiftX: 0, shiftY: 0, targetX: 0, targetY: 0, blur: 0, home: null, focus: null };
+    return { stamp, artwork, texture, material, mesh, shadow, shadowSource, shadowMaterial, lightTarget: new THREE.Vector2(0.5, 0.5), hover: 0, light: 0, tiltX: 0, tiltY: 0, roll: 0, shiftX: 0, shiftY: 0, targetX: 0, targetY: 0, blur: 0, home: null, focus: null };
   });
 
   function publish() {
@@ -255,14 +258,17 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       // Intersect the current persistent mesh, rather than unrotated screen UVs.
       mesh.updateMatrixWorld();
       const hit = isActive && pointerValid ? raycaster.intersectObject(mesh, false)[0] : null;
-      if (hit?.uv) uvTarget.copy(hit.uv);
-      else if (isActive && (settings.pinLight || (isSelected && !settings.resetTiltOnLeave && !settings.focusTrackOutside))) uvTarget.copy(material.uniforms.uPointer.value);
-      else uvTarget.set(0.5, 0.5);
-      if (reducedMotion) uvTarget.set(0.5, 0.5);
+      if (hit?.uv) entry.lightTarget.copy(hit.uv);
+      else if (!(isActive && (settings.pinLight || (isSelected && !settings.resetTiltOnLeave && !settings.focusTrackOutside)))) entry.lightTarget.set(0.5, 0.5);
+      uvTarget.copy(entry.lightTarget);
+      if (reducedMotion || !settings.lightFollowPointer) uvTarget.set(0.5, 0.5);
       if (isActive) background.setPointer(uvTarget.x, uvTarget.y);
       const uniforms = material.uniforms;
-      uniforms.uPointer.value.lerp(uvTarget, settings.lightResponse <= 0 ? 1 : -Math.expm1(-dt / settings.lightResponse));
+      uvTarget.set(0.5 + (uvTarget.x - 0.5) * settings.pointerInfluence, 0.5 + (uvTarget.y - 0.5) * settings.pointerInfluence);
+      if (reducedMotion) uniforms.uPointer.value.copy(uvTarget);
+      else uniforms.uPointer.value.lerp(uvTarget, settings.lightResponse <= 0 ? 1 : -Math.expm1(-dt / settings.lightResponse));
       if (uniforms.uPointer.value.distanceToSquared(uvTarget) > 0.000001) stillMoving = true;
+      else uniforms.uPointer.value.copy(uvTarget);
       const blurTarget = active !== null && !isActive ? settings.blur * (width < 700 ? 6 / 11 : 1) : 0;
       entry.blur = damp(entry.blur, blurTarget, dt, settings.blurResponse);
       if (Math.abs(entry.blur - blurTarget) < 0.005) entry.blur = blurTarget;
@@ -321,7 +327,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     focusUi.style.visibility = selected === null ? 'hidden' : 'visible';
     label.style.opacity = selected === null && hovered !== null ? '1' : '0';
     host.dataset.progress = progress.toFixed(4);
-    const lightActive = entries.some((entry) => entry.light > 0.001);
+    const lightActive = settings.lightModel === 'dappled' && entries.some((entry) => entry.light > 0.001);
     background.render(elapsed, progress, reducedMotion, lightActive);
     renderer.autoClear = false;
     renderer.clearDepth();

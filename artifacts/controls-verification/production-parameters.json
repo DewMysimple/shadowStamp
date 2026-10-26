@@ -1,5 +1,6 @@
 {
-  "version": 1,
+  "version": 2,
+  "appearanceRevision": 2,
   "parameters": {
     "tiltEnabled": true,
     "hoverTilt": 6,
@@ -24,19 +25,23 @@
     "focusY": 0.5,
     "backgroundColor": "#fbf7f1",
     "focusBackground": "#22201c",
+    "lightModel": "surface",
     "lightEnabled": true,
     "pinLight": false,
     "lightAnimation": true,
     "lightFollowPointer": true,
-    "lightIntensity": 0.55,
-    "lightContrast": 0.18,
+    "lightIntensity": 0.8,
+    "lightContrast": 0.26,
     "lightSpeed": 0.35,
     "surfaceRelief": 0.22,
-    "surfaceShine": 0.25,
+    "surfaceShine": 0.45,
+    "surfaceRoughness": 0.62,
+    "surfaceCoat": 0.55,
     "pointerInfluence": 0.85,
     "lightResponse": 0.16,
     "lightFadeIn": 0.12,
     "lightFadeOut": 0.16,
+    "lightGrain": 0.65,
     "lightColor": "#fff1cf",
     "shadowColor": "#908470",
     "lightCoverage": 0.708,
@@ -45,7 +50,6 @@
     "lightStretch": 0.84,
     "lightScatter": 1,
     "lightWarp": 0.118,
-    "lightSoftness": 1.5,
-    "lightGrain": 0.65
+    "lightSoftness": 1.5
   }
 }

@@ -2,6 +2,7 @@ import { chromium } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { writeFile, mkdir } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
+import { STORAGE_KEY } from '../src/parameters.js';
 
 const baseURL = process.env.PRODUCTION_URL || 'http://127.0.0.1:4174/';
 const output = resolve('artifacts/controls-verification');
@@ -42,7 +43,7 @@ try {
     await page.getByRole('button', { name: '导出', exact: true }).click();
     const download = await downloadEvent;
     await download.saveAs(join(output, 'production-parameters.json'));
-    const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('postal-studies:parameters:v1')));
+    const saved = await page.evaluate(key => JSON.parse(localStorage.getItem(key)), STORAGE_KEY);
     assert.equal(saved.parameters.focusTilt, 12);
     assert.equal(saved.parameters.resetTiltOnLeave, true);
     await page.screenshot({ path: join(output, 'production-desktop.png') });

@@ -1,12 +1,12 @@
 {
-  "startedAt": "2026-10-26T06:32:58.276Z",
+  "startedAt": "2026-10-26T08:03:17.047Z",
   "base": "http://127.0.0.1:4173/",
   "checks": [
     {
       "name": "desktop panel renders all four groups and shares one WebGL renderer",
       "result": "passed",
       "details": {
-        "fields": 46,
+        "fields": 49,
         "groups": 4
       }
     },
@@ -14,9 +14,10 @@
       "name": "all numeric, boolean and color controls reach live renderer configuration",
       "result": "passed",
       "details": {
-        "testedFields": 46,
+        "testedFields": 49,
         "fullSnapshot": {
           "tiltEnabled": false,
+          "lightModel": "dappled",
           "hoverTilt": 7.5,
           "focusTilt": 7.5,
           "tiltResponse": 0.235,
@@ -48,10 +49,13 @@
           "lightSpeed": 1.1,
           "surfaceRelief": 0.37,
           "surfaceShine": 0.37,
+          "surfaceRoughness": 0.5,
+          "surfaceCoat": 0.37,
           "pointerInfluence": 0.75,
           "lightResponse": 0.3,
           "lightFadeIn": 0.31,
           "lightFadeOut": 0.31,
+          "lightGrain": 0.55,
           "lightColor": "#a8b890",
           "shadowColor": "#a8b890",
           "lightCoverage": 0.65,
@@ -60,8 +64,7 @@
           "lightStretch": 0.37,
           "lightScatter": 0.74,
           "lightWarp": 0.185,
-          "lightSoftness": 1.1,
-          "lightGrain": 0.55
+          "lightSoftness": 1.1
         }
       }
     },
@@ -70,15 +73,15 @@
       "result": "passed",
       "details": {
         "paused": {
-          "raf": 221,
+          "raf": 236,
           "fieldUpdates": 2
         },
         "zero": {
-          "raf": 225,
+          "raf": 240,
           "fieldUpdates": 3
         },
         "disabled": {
-          "raf": 428,
+          "raf": 443,
           "fieldUpdates": 4
         },
         "backgroundPixelsUnchanged": true
@@ -97,8 +100,8 @@
       "name": "shape, color, contrast and relief update actual GPU uniforms and stamp pixels",
       "result": "passed",
       "details": {
-        "before": "d9aa11bfae0269e9b0dab73bc665a1cda84f757ea12345b715c6616f3cf16765",
-        "after": "d64b1edc1d3bd291cec35d52b9eec2f1225dd02a1a76b405ed3caa6f13541740",
+        "before": "7386f295bff1a892db61c9bcb8308f110bb9fc57cda9aaada189302cd9db94d6",
+        "after": "84127dc6f476cd5cb8811ee75cb834b4fde8cbaa566e0204f8ed7832e496c986",
         "gpuFields": true,
         "colorsGPU": true
       }
@@ -253,7 +256,7 @@
             "name": "left",
             "rotation": [
               -1.2569491870580476e-8,
-              -0.07955401756296951,
+              -0.0795561945050954,
               0,
               "ZXY"
             ],
@@ -263,20 +266,20 @@
             ],
             "corners": [
               [
-                493.1251730851797,
-                701.39818456857
+                493.12527675928726,
+                701.3981075687473
               ],
               [
-                493.1251741093405,
-                198.60181696105738
+                493.12527778344725,
+                198.60189396088987
               ],
               [
-                890.9071951580588,
-                707.1672599554382
+                890.9072137359193,
+                707.1673405298375
               ],
               [
-                890.9071943688431,
-                192.8327408282875
+                890.9072129467033,
+                192.83266025387798
               ]
             ]
           },
@@ -284,7 +287,7 @@
             "name": "right",
             "rotation": [
               -1.2569491870580476e-8,
-              0.07951608868612536,
+              0.07951608867078595,
               0,
               "ZXY"
             ],
@@ -294,20 +297,20 @@
             ],
             "corners": [
               [
-                487.9195161306085,
-                707.1658561130167
+                487.91951613087457,
+                707.165856112449
               ],
               [
-                487.91951720230446,
-                192.83414467089037
+                487.9195172025706,
+                192.83414467145812
               ],
               [
-                887.0746927597461,
-                701.3995261466939
+                887.0746927603474,
+                701.3995261472364
               ],
               [
-                887.0746920055317,
-                198.6004753827598
+                887.074692006133,
+                198.6004753822172
               ]
             ]
           },
@@ -315,7 +318,7 @@
             "name": "top",
             "rotation": [
               -0.07955579786059597,
-              0.000028769731016294547,
+              0.000028768063274867835,
               0,
               "ZXY"
             ],
@@ -325,27 +328,27 @@
             ],
             "corners": [
               [
-                486.54922748656264,
-                707.157904095392
+                486.5492275427636,
+                707.1579040603475
               ],
               [
-                493.1920153839491,
-                200.1585639370978
+                493.19201543699694,
+                200.15856402165312
               ],
               [
-                892.0834178755938,
-                707.1566950229873
+                892.0834179170378,
+                707.156695058031
               ],
               [
-                887.1868634227076,
-                200.16148119532627
+                887.1868634618269,
+                200.1614811107723
               ]
             ]
           },
           {
             "name": "bottom",
             "rotation": [
-              0.07951584311811444,
+              0.07951584311811442,
               -0.0000024256240800583976,
               0,
               "ZXY"
@@ -403,24 +406,24 @@
       "name": "perspective changes projected corners while CSS hit polygons stay aligned",
       "result": "passed",
       "details": {
-        "maxCornerErrorPx": 0.6839949287443687,
-        "cornerDelta": 75.323025176086,
+        "maxCornerErrorPx": 0.6840087699241622,
+        "cornerDelta": 75.32146242079422,
         "near": [
           [
-            437.90722573791953,
-            748.4941282079564
+            437.90863806669483,
+            748.4933126758947
           ],
           [
-            500.1367301674188,
-            196.97619512729014
+            500.13631241730513,
+            196.9762302641805
           ],
           [
-            887.5209754163833,
-            713.882352094079
+            887.5211541686152,
+            713.8819726213158
           ],
           [
-            856.1885543284473,
-            252.75005356309876
+            856.1893543156666,
+            252.74853820584383
           ]
         ],
         "far": [
@@ -448,14 +451,14 @@
       "result": "passed",
       "details": {
         "center": [
-          -16.245158345218442,
-          8.256792304075475,
+          -16.244943331970717,
+          8.25699225826611,
           0
         ],
         "rotation": [
-          -0.061815705312736294,
-          0.10473965098981307,
-          -0.03489259336921171,
+          -0.061811759191412366,
+          0.10473547772584077,
+          -0.03489259887279987,
           "ZXY"
         ]
       }
@@ -490,7 +493,7 @@
       "result": "passed",
       "details": {
         "file": "postal-studies-parameters.json",
-        "bytes": 1229,
+        "bytes": 1340,
         "actualFileImport": true,
         "persistence": true
       }
@@ -518,9 +521,9 @@
       "details": {
         "edits": 12,
         "renderer": {
-          "programs": 3,
+          "programs": 5,
           "geometries": 2,
-          "textures": 12
+          "textures": 20
         },
         "persistentAssets": true
       }
@@ -530,14 +533,14 @@
       "result": "passed",
       "details": {
         "scroll": {
-          "top": 1645,
+          "top": 1866,
           "height": 523,
-          "content": 2412
+          "content": 2580
         },
         "parameter": 15.3,
         "touchRotation": [
-          -0.05232453974730021,
-          0.05232248165215384,
+          -0.05232681089593764,
+          0.05232475273372658,
           0,
           "ZXY"
         ]
@@ -555,7 +558,7 @@
           "ZXY"
         ],
         "rest": {
-          "raf": 167,
+          "raf": 169,
           "fieldUpdates": 2
         },
         "liveForm": true
@@ -566,7 +569,7 @@
       "result": "passed",
       "details": {
         "file": "focused-pointer.webm",
-        "bytes": 91161,
+        "bytes": 67698,
         "source": "real browser recording"
       }
     },
@@ -588,6 +591,6 @@
     "04-mobile-panel.png",
     "05-mobile-focus.png"
   ],
-  "finishedAt": "2026-10-26T06:33:34.683Z",
+  "finishedAt": "2026-10-26T08:03:55.734Z",
   "result": "passed"
 }

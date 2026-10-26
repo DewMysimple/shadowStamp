@@ -1,15 +1,15 @@
 {
   "baseURL": "http://127.0.0.1:4173/",
-  "startedAt": "2026-10-26T06:23:34.106Z",
+  "startedAt": "2026-10-26T08:08:49.528Z",
   "browser": "Installed Chrome, headless, real WebGL",
   "checks": [
     {
       "name": "desktop: initial, hover, midpoint, focus and return screenshots",
       "result": "passed",
-      "elapsedMs": 2696,
+      "elapsedMs": 2872,
       "details": {
         "canvasCount": 1,
-        "midpoint": 0.42596364380085383,
+        "midpoint": 0.4268640928227999,
         "label": "NEW CRAFT SOCIETY",
         "backgroundExit": true
       }
@@ -17,7 +17,7 @@
     {
       "name": "desktop: all six stamps select through exposed pointer targets",
       "result": "passed",
-      "elapsedMs": 7397,
+      "elapsedMs": 8393,
       "details": [
         {
           "id": "specimen",
@@ -72,7 +72,7 @@
     {
       "name": "desktop: keyboard names, Enter, focus trap and Escape restoration",
       "result": "passed",
-      "elapsedMs": 1760,
+      "elapsedMs": 2411,
       "details": {
         "reachable": [
           {
@@ -108,17 +108,17 @@
     {
       "name": "desktop: Escape reverses an unfinished transition continuously",
       "result": "passed",
-      "elapsedMs": 206,
+      "elapsedMs": 410,
       "details": {
-        "before": 0.1056124191665978,
-        "after": 0.07880322873233729,
+        "before": 0.10440105917646303,
+        "after": 0.08658070141915424,
         "final": 0
       }
     },
     {
       "name": "desktop: choosing another stamp while returning queues a new focus",
       "result": "passed",
-      "elapsedMs": 1505,
+      "elapsedMs": 1950,
       "details": {
         "selected": "mint"
       }
@@ -126,13 +126,13 @@
     {
       "name": "desktop: ten repeated cycles preserve texture/material UUIDs and GPU counts",
       "result": "passed",
-      "elapsedMs": 11867,
+      "elapsedMs": 13961,
       "details": {
         "cycles": 10,
         "renderer": {
-          "programs": 5,
+          "programs": 3,
           "geometries": 2,
-          "textures": 14
+          "textures": 18
         },
         "materialsStable": true,
         "texturesStable": true
@@ -141,7 +141,7 @@
     {
       "name": "resize: focused stamp keeps intended center across desktop and mobile",
       "result": "passed",
-      "elapsedMs": 2428,
+      "elapsedMs": 2734,
       "details": {
         "centers": [
           {
@@ -187,7 +187,7 @@
     {
       "name": "mobile: initial, synthetic hover, touch midpoint, focus and return screenshots",
       "result": "passed",
-      "elapsedMs": 1935,
+      "elapsedMs": 2173,
       "details": {
         "genuineTouchEntryAndBackgroundExit": true,
         "overflow": {
@@ -200,7 +200,7 @@
     {
       "name": "mobile: all six stamps are reachable with real touch",
       "result": "passed",
-      "elapsedMs": 6576,
+      "elapsedMs": 6904,
       "details": [
         {
           "id": "specimen",
@@ -255,7 +255,7 @@
     {
       "name": "lifecycle: explicit dispose is idempotent and releases uploaded GPU assets",
       "result": "passed",
-      "elapsedMs": 937,
+      "elapsedMs": 815,
       "details": {
         "before": {
           "phase": "idle",
@@ -555,19 +555,23 @@
             "focusY": 0.5,
             "backgroundColor": "#fbf7f1",
             "focusBackground": "#22201c",
+            "lightModel": "surface",
             "lightEnabled": true,
             "pinLight": false,
             "lightAnimation": true,
             "lightFollowPointer": true,
-            "lightIntensity": 0.55,
-            "lightContrast": 0.18,
+            "lightIntensity": 0.8,
+            "lightContrast": 0.26,
             "lightSpeed": 0.35,
             "surfaceRelief": 0.22,
-            "surfaceShine": 0.25,
+            "surfaceShine": 0.45,
+            "surfaceRoughness": 0.62,
+            "surfaceCoat": 0.55,
             "pointerInfluence": 0.85,
             "lightResponse": 0.16,
             "lightFadeIn": 0.12,
             "lightFadeOut": 0.16,
+            "lightGrain": 0.65,
             "lightColor": "#fff1cf",
             "shadowColor": "#908470",
             "lightCoverage": 0.708,
@@ -576,8 +580,7 @@
             "lightStretch": 0.84,
             "lightScatter": 1,
             "lightWarp": 0.118,
-            "lightSoftness": 1.5,
-            "lightGrain": 0.65
+            "lightSoftness": 1.5
           },
           "camera": {
             "type": "PerspectiveCamera",
@@ -587,23 +590,23 @@
           "renderer": {
             "programs": 3,
             "geometries": 2,
-            "textures": 12
+            "textures": 18
           },
           "materials": [
-            "c0294b26-09b5-44b7-9ec4-ef71913e4551",
-            "b25d4b7c-77dc-49ec-8d65-fe2d3921b55d",
-            "1ad95f7f-0be8-43e6-8852-1315fa987738",
-            "f521a980-5c81-454a-b154-2ecbe99fa572",
-            "ca30a613-a788-409b-aef0-732185e896f1",
-            "99d7e457-e20b-4b58-a874-2bf589fac28d"
+            "97d412be-3005-4dfd-9c69-11eb8bee2d87",
+            "f29a183e-d5cc-459f-aa59-5ee88bd8368d",
+            "af0ef28e-26c1-4c4f-9c1c-8a6817187fb5",
+            "ecddfffc-1803-4fca-866f-2bc519f5bb67",
+            "bbec3d14-6f4c-47f1-8ccb-bc9e54669935",
+            "f0763329-ab03-4856-91c3-36a6b2b49ee5"
           ],
           "textures": [
-            "968d7408-827a-4911-9394-1f1e73a246cd",
-            "7bcfa0ce-53f5-45d8-b46f-bfdbc6a72f99",
-            "aae0405d-07a0-4dcb-8840-f3aa76c3cfeb",
-            "a2cbe240-2ac8-42fd-bbfc-a6eaaad09c13",
-            "9ac662ca-aceb-4f76-85a9-5d2e369460de",
-            "9a6a9e2a-503f-4092-a537-afd561f16e85"
+            "f2fe8c47-9733-4fe7-bfd2-0b35e68361a3",
+            "d0d0df1a-af88-42cc-8e85-13590046bfe6",
+            "13f07dc3-15c6-4e55-bfda-329c54026233",
+            "c0acb896-b6fd-4b53-8ac3-f5dd6ec6a6e6",
+            "2754088f-2a92-4807-a7e9-066c32069d7f",
+            "24e33a6a-ac01-4a87-94cd-698b0fffa156"
           ],
           "background": {
             "active": false,
@@ -620,13 +623,13 @@
             "aspect": 0.786,
             "width": 384,
             "height": 480,
-            "texture": "5d15c3ae-927a-4d92-af3b-721079c7cb53",
+            "texture": "220a15bd-ae88-4df9-a304-b959a137dbb8",
             "enabled": true,
             "animate": true,
             "followPointer": true,
             "parameters": {
               "enabled": true,
-              "intensity": 0.55,
+              "intensity": 0.8,
               "speed": 0.35,
               "color": "#908470",
               "light": "#fff1cf",
@@ -641,7 +644,7 @@
               "scatter": 1,
               "wave": 0.118,
               "grain": 0.65,
-              "contrast": 0.18,
+              "contrast": 0.26,
               "study": 0,
               "followPointer": true,
               "responseTime": 0.16,
@@ -948,19 +951,23 @@
             "focusY": 0.5,
             "backgroundColor": "#fbf7f1",
             "focusBackground": "#22201c",
+            "lightModel": "surface",
             "lightEnabled": true,
             "pinLight": false,
             "lightAnimation": true,
             "lightFollowPointer": true,
-            "lightIntensity": 0.55,
-            "lightContrast": 0.18,
+            "lightIntensity": 0.8,
+            "lightContrast": 0.26,
             "lightSpeed": 0.35,
             "surfaceRelief": 0.22,
-            "surfaceShine": 0.25,
+            "surfaceShine": 0.45,
+            "surfaceRoughness": 0.62,
+            "surfaceCoat": 0.55,
             "pointerInfluence": 0.85,
             "lightResponse": 0.16,
             "lightFadeIn": 0.12,
             "lightFadeOut": 0.16,
+            "lightGrain": 0.65,
             "lightColor": "#fff1cf",
             "shadowColor": "#908470",
             "lightCoverage": 0.708,
@@ -969,8 +976,7 @@
             "lightStretch": 0.84,
             "lightScatter": 1,
             "lightWarp": 0.118,
-            "lightSoftness": 1.5,
-            "lightGrain": 0.65
+            "lightSoftness": 1.5
           },
           "camera": {
             "type": "PerspectiveCamera",
@@ -983,20 +989,20 @@
             "textures": 0
           },
           "materials": [
-            "c0294b26-09b5-44b7-9ec4-ef71913e4551",
-            "b25d4b7c-77dc-49ec-8d65-fe2d3921b55d",
-            "1ad95f7f-0be8-43e6-8852-1315fa987738",
-            "f521a980-5c81-454a-b154-2ecbe99fa572",
-            "ca30a613-a788-409b-aef0-732185e896f1",
-            "99d7e457-e20b-4b58-a874-2bf589fac28d"
+            "97d412be-3005-4dfd-9c69-11eb8bee2d87",
+            "f29a183e-d5cc-459f-aa59-5ee88bd8368d",
+            "af0ef28e-26c1-4c4f-9c1c-8a6817187fb5",
+            "ecddfffc-1803-4fca-866f-2bc519f5bb67",
+            "bbec3d14-6f4c-47f1-8ccb-bc9e54669935",
+            "f0763329-ab03-4856-91c3-36a6b2b49ee5"
           ],
           "textures": [
-            "968d7408-827a-4911-9394-1f1e73a246cd",
-            "7bcfa0ce-53f5-45d8-b46f-bfdbc6a72f99",
-            "aae0405d-07a0-4dcb-8840-f3aa76c3cfeb",
-            "a2cbe240-2ac8-42fd-bbfc-a6eaaad09c13",
-            "9ac662ca-aceb-4f76-85a9-5d2e369460de",
-            "9a6a9e2a-503f-4092-a537-afd561f16e85"
+            "f2fe8c47-9733-4fe7-bfd2-0b35e68361a3",
+            "d0d0df1a-af88-42cc-8e85-13590046bfe6",
+            "13f07dc3-15c6-4e55-bfda-329c54026233",
+            "c0acb896-b6fd-4b53-8ac3-f5dd6ec6a6e6",
+            "2754088f-2a92-4807-a7e9-066c32069d7f",
+            "24e33a6a-ac01-4a87-94cd-698b0fffa156"
           ],
           "background": {
             "active": false,
@@ -1013,13 +1019,13 @@
             "aspect": 0.786,
             "width": 384,
             "height": 480,
-            "texture": "5d15c3ae-927a-4d92-af3b-721079c7cb53",
+            "texture": "220a15bd-ae88-4df9-a304-b959a137dbb8",
             "enabled": true,
             "animate": true,
             "followPointer": true,
             "parameters": {
               "enabled": true,
-              "intensity": 0.55,
+              "intensity": 0.8,
               "speed": 0.35,
               "color": "#908470",
               "light": "#fff1cf",
@@ -1034,7 +1040,7 @@
               "scatter": 1,
               "wave": 0.118,
               "grain": 0.65,
-              "contrast": 0.18,
+              "contrast": 0.26,
               "study": 0,
               "followPointer": true,
               "responseTime": 0.16,
@@ -1050,17 +1056,17 @@
     {
       "name": "reduced motion: static renderer, stable pixels and live preference changes",
       "result": "passed",
-      "elapsedMs": 3013,
+      "elapsedMs": 3255,
       "details": {
         "rafCount": 2,
-        "stableScreenshotSHA256": "4fca544cf476c66dd0e87d88c5f3fc0d44c57087c4fcf25595753e1c624a858e",
+        "stableScreenshotSHA256": "7f8a8b5de75a515095dfb304ee781c4ed8e8792d85a339fc16620aec82da15ee",
         "livePreferenceRestartsAndStops": true
       }
     },
     {
       "name": "WebGL context loss: renderer cleans up and paper fallback remains interactive",
       "result": "passed",
-      "elapsedMs": 346,
+      "elapsedMs": 601,
       "details": {
         "realContextLost": true,
         "canvasRemoved": true,
@@ -1071,7 +1077,7 @@
     {
       "name": "WebGL disabled: DOM paper edition loads, focuses and exits",
       "result": "passed",
-      "elapsedMs": 1069,
+      "elapsedMs": 1110,
       "details": {
         "artworkCount": 6,
         "canvasCount": 0,
@@ -1397,19 +1403,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -1418,8 +1428,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -1429,23 +1438,23 @@
       "renderer": {
         "programs": 3,
         "geometries": 2,
-        "textures": 12
+        "textures": 18
       },
       "materials": [
-        "8cd4005d-da15-4790-8e87-a28f0e576aec",
-        "c5d22b49-2758-401b-8985-683561619d6d",
-        "2969bf12-8968-4acc-90d8-350e8a1239df",
-        "f9bc5072-99dd-498c-b728-c69f46156706",
-        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
-        "c39487f4-738f-4857-a681-67914b741d7f"
+        "ed20b484-48f2-4595-9209-ceaff2db3c36",
+        "09ca654f-f86b-4b05-b60f-ebaa6e1a18a2",
+        "7379a053-aa40-4484-8e38-198784e486ac",
+        "0d9d8a39-956e-43b1-bbd9-abfd3cfd14ff",
+        "edba8e8f-c316-4b70-bbce-976928206383",
+        "f7dee342-8b2e-4205-b8fa-1647403fc48b"
       ],
       "textures": [
-        "556a6900-da74-464a-ae40-87b2b92cbcd5",
-        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
-        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
-        "42db563b-17d8-41b9-8334-a5df545b2c1a",
-        "58fec7d4-b365-4981-94f5-5f7fa6200324",
-        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+        "7e1b94f8-df38-42b2-be2b-f8797ba2f957",
+        "93730a6b-e171-4b4d-b442-6fac8b96c843",
+        "2a00fc3d-81a5-4f76-9908-b2133e01c371",
+        "ba1a33b9-654f-4dfa-9e8f-aadb2fcdcdae",
+        "4e008558-1526-4e53-aaf4-5e42daaa6d3d",
+        "6b236e35-e117-4586-a7d5-037fade39f09"
       ],
       "background": {
         "active": false,
@@ -1462,13 +1471,13 @@
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "texture": "6658961e-1253-44d8-ad87-f4781a69ad08",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -1483,7 +1492,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -1519,10 +1528,10 @@
         },
         {
           "id": "craft",
-          "amount": 0.9897678670600466,
+          "amount": 0.9882596332089644,
           "uv": [
-            0.5051166944240896,
-            0.485853970354393
+            0.5046409685400705,
+            0.48717513513400756
           ]
         },
         {
@@ -1626,36 +1635,36 @@
         {
           "id": "craft",
           "rotation": [
-            0.0031051855765470192,
-            0.0011220015930992896,
+            0.003094279959902097,
+            0.0011180452436275526,
             -0.2792526803190927,
             "ZXY"
           ],
           "center": [
             138.24,
-            -25.70620298130592,
+            -25.707531902600806,
             0
           ],
           "target": [
-            0.010908018081782708,
-            0.03018638383342049
+            0.010904519699860941,
+            0.0301767989219141
           ],
           "corners": [
             [
-              727.3264270736657,
-              570.2078539122252
+              727.3285029649111,
+              570.2077884723437
             ],
             [
-              797.3461169248077,
-              326.115982185736
+              797.3469674748359,
+              326.1198565886376
             ],
             [
-              919.0825338170966,
-              625.1702806165397
+              919.0818652163025,
+              625.1695114108653
             ],
             [
-              989.2151718548105,
-              381.16008606946156
+              989.2128779729983,
+              381.1629666624026
             ]
           ]
         },
@@ -1792,19 +1801,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -1813,8 +1826,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -1822,48 +1834,48 @@
         "fov": 41.112090439166934
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "8cd4005d-da15-4790-8e87-a28f0e576aec",
-        "c5d22b49-2758-401b-8985-683561619d6d",
-        "2969bf12-8968-4acc-90d8-350e8a1239df",
-        "f9bc5072-99dd-498c-b728-c69f46156706",
-        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
-        "c39487f4-738f-4857-a681-67914b741d7f"
+        "ed20b484-48f2-4595-9209-ceaff2db3c36",
+        "09ca654f-f86b-4b05-b60f-ebaa6e1a18a2",
+        "7379a053-aa40-4484-8e38-198784e486ac",
+        "0d9d8a39-956e-43b1-bbd9-abfd3cfd14ff",
+        "edba8e8f-c316-4b70-bbce-976928206383",
+        "f7dee342-8b2e-4205-b8fa-1647403fc48b"
       ],
       "textures": [
-        "556a6900-da74-464a-ae40-87b2b92cbcd5",
-        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
-        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
-        "42db563b-17d8-41b9-8334-a5df545b2c1a",
-        "58fec7d4-b365-4981-94f5-5f7fa6200324",
-        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+        "7e1b94f8-df38-42b2-be2b-f8797ba2f957",
+        "93730a6b-e171-4b4d-b442-6fac8b96c843",
+        "2a00fc3d-81a5-4f76-9908-b2133e01c371",
+        "ba1a33b9-654f-4dfa-9e8f-aadb2fcdcdae",
+        "4e008558-1526-4e53-aaf4-5e42daaa6d3d",
+        "6b236e35-e117-4586-a7d5-037fade39f09"
       ],
       "background": {
-        "active": true,
-        "time": 3.373239999999993,
-        "fieldUpdates": 13,
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
         "pointer": [
-          0.504640374691924,
-          0.4871767362050736
+          0.5,
+          0.5
         ],
         "target": [
-          0.5046424805399178,
-          0.48717106234080654
+          0.5046409685400705,
+          0.48717513513400756
         ],
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "texture": "6658961e-1253-44d8-ad87-f4781a69ad08",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -1878,7 +1890,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -1893,7 +1905,7 @@
       "phase": "focusing",
       "selected": "craft",
       "hovered": null,
-      "progress": 0.42596364380085383,
+      "progress": 0.4268640928227999,
       "reducedMotion": false,
       "lightStates": [
         {
@@ -1914,10 +1926,10 @@
         },
         {
           "id": "craft",
-          "amount": 0.9969283965445945,
+          "amount": 0.9963164889386077,
           "uv": [
-            0.5676070586388385,
-            0.4933169993744507
+            0.557802145866031,
+            0.49399701098688936
           ]
         },
         {
@@ -1966,7 +1978,7 @@
           "corners": [
             [
               664.0375704364999,
-              823.2350936483623
+              823.2350936483624
             ],
             [
               498.35430419856993,
@@ -1974,7 +1986,7 @@
             ],
             [
               814.9256958014299,
-              687.3748153332597
+              687.3748153332598
             ],
             [
               649.2424295635001,
@@ -2002,7 +2014,7 @@
           "corners": [
             [
               656.3190117974277,
-              685.6032113402
+              685.6032113402001
             ],
             [
               581.7975159009343,
@@ -2021,36 +2033,36 @@
         {
           "id": "craft",
           "rotation": [
-            0.0005472979317358373,
-            0.022424443886467915,
-            -0.160301191069217,
+            0.0005412976716254246,
+            0.02250178406448789,
+            -0.16004973826634786,
             "ZXY"
           ],
           "center": [
-            66.47364529243214,
-            -14.75273435431808,
+            66.32193764121462,
+            -14.729592814454065,
             0
           ],
           "target": [
-            0.5053272629207175,
-            -0.0038894640015096453
+            0.5060958891561714,
+            -0.0038121168568962787
           ],
           "corners": [
             [
-              615.2267851596749,
-              622.7128516065399
+              615.0052770490493,
+              622.8344336972478
             ],
             [
-              673.7209625378476,
-              260.8678863206617
+              673.4460366303862,
+              260.74257257899416
             ],
             [
-              898.6449460708975,
-              667.5862994122201
+              898.6137852646609,
+              667.6611237108823
             ],
             [
-              956.8905724783136,
-              307.5581570103803
+              956.8046795943619,
+              307.3943593549863
             ]
           ]
         },
@@ -2073,7 +2085,7 @@
           ],
           "corners": [
             [
-              1306.4385041493802,
+              1306.43850414938,
               697.2606574003296
             ],
             [
@@ -2110,18 +2122,18 @@
           "corners": [
             [
               891.7039706573994,
-              1014.3415768779411
+              1014.3415768779413
             ],
             [
               914.8231782073046,
-              750.0878253841307
+              750.0878253841308
             ],
             [
               1092.5368217926953,
               1031.912174615869
             ],
             [
-              1115.6560293426005,
+              1115.6560293426003,
               767.6584231220587
             ]
           ]
@@ -2158,7 +2170,7 @@
             ],
             [
               1157.5608373168002,
-              662.1603752679509
+              662.160375267951
             ]
           ]
         }
@@ -2187,19 +2199,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -2208,57 +2224,56 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
-        "distance": 1285.1927287601707,
-        "fov": 38.59459178951712
+        "distance": 1285.37281856456,
+        "fov": 38.589584084735776
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "8cd4005d-da15-4790-8e87-a28f0e576aec",
-        "c5d22b49-2758-401b-8985-683561619d6d",
-        "2969bf12-8968-4acc-90d8-350e8a1239df",
-        "f9bc5072-99dd-498c-b728-c69f46156706",
-        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
-        "c39487f4-738f-4857-a681-67914b741d7f"
+        "ed20b484-48f2-4595-9209-ceaff2db3c36",
+        "09ca654f-f86b-4b05-b60f-ebaa6e1a18a2",
+        "7379a053-aa40-4484-8e38-198784e486ac",
+        "0d9d8a39-956e-43b1-bbd9-abfd3cfd14ff",
+        "edba8e8f-c316-4b70-bbce-976928206383",
+        "f7dee342-8b2e-4205-b8fa-1647403fc48b"
       ],
       "textures": [
-        "556a6900-da74-464a-ae40-87b2b92cbcd5",
-        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
-        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
-        "42db563b-17d8-41b9-8334-a5df545b2c1a",
-        "58fec7d4-b365-4981-94f5-5f7fa6200324",
-        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+        "7e1b94f8-df38-42b2-be2b-f8797ba2f957",
+        "93730a6b-e171-4b4d-b442-6fac8b96c843",
+        "2a00fc3d-81a5-4f76-9908-b2133e01c371",
+        "ba1a33b9-654f-4dfa-9e8f-aadb2fcdcdae",
+        "4e008558-1526-4e53-aaf4-5e42daaa6d3d",
+        "6b236e35-e117-4586-a7d5-037fade39f09"
       ],
       "background": {
-        "active": true,
-        "time": 3.4743199999999916,
-        "fieldUpdates": 15,
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
         "pointer": [
-          0.5575824517569369,
-          0.49399978885915985
+          0.5,
+          0.5
         ],
         "target": [
-          0.715346304147734,
-          0.5016413726736344
+          0.7156759975363538,
+          0.5016083709079031
         ],
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "texture": "6658961e-1253-44d8-ad87-f4781a69ad08",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -2273,7 +2288,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -2311,8 +2326,8 @@
           "id": "craft",
           "amount": 1,
           "uv": [
-            0.8938166487535754,
-            0.4558932980237047
+            0.8357623981549289,
+            0.4622755071514417
           ]
         },
         {
@@ -2416,8 +2431,8 @@
         {
           "id": "craft",
           "rotation": [
-            0.010200090978081576,
-            0.08729246229461322,
+            0.010222734106132945,
+            0.08736065610917837,
             0,
             "ZXY"
           ],
@@ -2427,25 +2442,25 @@
             0
           ],
           "target": [
-            0.8432066858475885,
-            0.10084796256606442
+            0.8432228730733067,
+            0.10083715988354207
           ],
           "corners": [
             [
-              488.2255525957143,
-              707.1379741661802
+              488.22544631798655,
+              707.1399043830186
             ],
             [
-              487.3544313384702,
-              192.25614534337214
+              487.3523787021291,
+              192.2531359982374
             ],
             [
-              886.4598309919356,
-              700.4781512950769
+              886.4563935290556,
+              700.4741583715453
             ],
             [
-              887.0700605179078,
-              198.2519246826171
+              887.0679616458639,
+              198.25284565505345
             ]
           ]
         },
@@ -2582,19 +2597,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -2603,8 +2622,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -2612,48 +2630,48 @@
         "fov": 35.63777782904556
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "8cd4005d-da15-4790-8e87-a28f0e576aec",
-        "c5d22b49-2758-401b-8985-683561619d6d",
-        "2969bf12-8968-4acc-90d8-350e8a1239df",
-        "f9bc5072-99dd-498c-b728-c69f46156706",
-        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
-        "c39487f4-738f-4857-a681-67914b741d7f"
+        "ed20b484-48f2-4595-9209-ceaff2db3c36",
+        "09ca654f-f86b-4b05-b60f-ebaa6e1a18a2",
+        "7379a053-aa40-4484-8e38-198784e486ac",
+        "0d9d8a39-956e-43b1-bbd9-abfd3cfd14ff",
+        "edba8e8f-c316-4b70-bbce-976928206383",
+        "f7dee342-8b2e-4205-b8fa-1647403fc48b"
       ],
       "textures": [
-        "556a6900-da74-464a-ae40-87b2b92cbcd5",
-        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
-        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
-        "42db563b-17d8-41b9-8334-a5df545b2c1a",
-        "58fec7d4-b365-4981-94f5-5f7fa6200324",
-        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+        "7e1b94f8-df38-42b2-be2b-f8797ba2f957",
+        "93730a6b-e171-4b4d-b442-6fac8b96c843",
+        "2a00fc3d-81a5-4f76-9908-b2133e01c371",
+        "ba1a33b9-654f-4dfa-9e8f-aadb2fcdcdae",
+        "4e008558-1526-4e53-aaf4-5e42daaa6d3d",
+        "6b236e35-e117-4586-a7d5-037fade39f09"
       ],
       "background": {
-        "active": true,
-        "time": 3.7776299999999887,
-        "fieldUpdates": 24,
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
         "pointer": [
-          0.8347519143207907,
-          0.46248799420683184
+          0.5,
+          0.5
         ],
         "target": [
-          0.8629252674682772,
-          0.45642009068159045
+          0.862937080516138,
+          0.4564235651038587
         ],
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "texture": "6658961e-1253-44d8-ad87-f4781a69ad08",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -2668,7 +2686,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -2704,10 +2722,10 @@
         },
         {
           "id": "craft",
-          "amount": 0.0026386179570919216,
+          "amount": 0,
           "uv": [
-            0.5335748507943279,
-            0.49622959066294575
+            0.5112654542968432,
+            0.49864738419150706
           ]
         },
         {
@@ -2977,19 +2995,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -2998,8 +3020,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -3007,48 +3028,48 @@
         "fov": 41.112090439166934
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "8cd4005d-da15-4790-8e87-a28f0e576aec",
-        "c5d22b49-2758-401b-8985-683561619d6d",
-        "2969bf12-8968-4acc-90d8-350e8a1239df",
-        "f9bc5072-99dd-498c-b728-c69f46156706",
-        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
-        "c39487f4-738f-4857-a681-67914b741d7f"
+        "ed20b484-48f2-4595-9209-ceaff2db3c36",
+        "09ca654f-f86b-4b05-b60f-ebaa6e1a18a2",
+        "7379a053-aa40-4484-8e38-198784e486ac",
+        "0d9d8a39-956e-43b1-bbd9-abfd3cfd14ff",
+        "edba8e8f-c316-4b70-bbce-976928206383",
+        "f7dee342-8b2e-4205-b8fa-1647403fc48b"
       ],
       "textures": [
-        "556a6900-da74-464a-ae40-87b2b92cbcd5",
-        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
-        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
-        "42db563b-17d8-41b9-8334-a5df545b2c1a",
-        "58fec7d4-b365-4981-94f5-5f7fa6200324",
-        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+        "7e1b94f8-df38-42b2-be2b-f8797ba2f957",
+        "93730a6b-e171-4b4d-b442-6fac8b96c843",
+        "2a00fc3d-81a5-4f76-9908-b2133e01c371",
+        "ba1a33b9-654f-4dfa-9e8f-aadb2fcdcdae",
+        "4e008558-1526-4e53-aaf4-5e42daaa6d3d",
+        "6b236e35-e117-4586-a7d5-037fade39f09"
       ],
       "background": {
-        "active": true,
-        "time": 4.446549999999978,
-        "fieldUpdates": 46,
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
         "pointer": [
-          0.835721080242524,
-          0.4622792523039832
+          0.5,
+          0.5
         ],
         "target": [
-          0.8357135843633072,
-          0.46229982849921786
+          0.8629412230717183,
+          0.45642252651824716
         ],
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "texture": "6658961e-1253-44d8-ad87-f4781a69ad08",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -3063,7 +3084,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -3372,19 +3393,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -3393,8 +3418,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -3404,23 +3428,23 @@
       "renderer": {
         "programs": 3,
         "geometries": 2,
-        "textures": 12
+        "textures": 18
       },
       "materials": [
-        "fc337f66-99a6-4e54-9401-aae88d056ad7",
-        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
-        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
-        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
-        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
-        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+        "9384529c-9222-454b-9269-cefce25b5779",
+        "4f423de6-8dab-490f-94d4-5fe1a87fc9c8",
+        "cbc2109c-b941-469a-ae9b-b764309927ad",
+        "54ecbc18-6dfe-4788-a0aa-79555b3d5c04",
+        "fd869619-69b8-4ed4-a092-cd3bf073d2b1",
+        "671ac56f-20f8-4356-a27a-ec01a419879b"
       ],
       "textures": [
-        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
-        "3263286d-e772-43c0-bfda-52bc237f508f",
-        "c753de27-a6a8-47da-a593-2997f817bc66",
-        "9a094988-3a85-4460-8a67-e3462c1e6843",
-        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
-        "6e257016-5918-41cf-abc1-b60134104004"
+        "bbcbd725-9aab-4c74-aa6a-737285752e0d",
+        "fccae8a4-0bf1-4939-9551-201356f3945b",
+        "2579793f-25bb-4700-b644-232e850085c2",
+        "9ed85c23-a7b7-4aad-868e-c1f845b0cf27",
+        "d28b0cb5-9f21-4554-a77d-6c5526ffa3d1",
+        "e9840b7a-04d1-4f32-9d0b-bfe6722c1535"
       ],
       "background": {
         "active": false,
@@ -3437,13 +3461,13 @@
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "texture": "227280ac-4bab-46de-8272-35635f5da826",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -3458,7 +3482,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -3494,7 +3518,7 @@
         },
         {
           "id": "craft",
-          "amount": 0.9703103136835572,
+          "amount": 0.9794926561872906,
           "uv": [
             0.5,
             0.5
@@ -3608,7 +3632,7 @@
           ],
           "center": [
             29.24999999999997,
-            126.35209137126657,
+            126.36344713093791,
             0
           ],
           "target": [
@@ -3617,20 +3641,20 @@
           ],
           "corners": [
             [
-              139.22972837010485,
-              361.67403262442474
+              139.21823086234897,
+              361.67160574557414
             ],
             [
-              180.17894343712413,
-              197.43570159036497
+              180.17298359596006,
+              197.4110643439317
             ],
             [
-              268.32105656287575,
-              393.86011566710187
+              268.3270164040399,
+              393.86204139419243
             ],
             [
-              309.2702716298951,
-              229.62178463304213
+              309.281769137651,
+              229.60149999255003
             ]
           ]
         },
@@ -3767,19 +3791,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -3788,8 +3816,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -3797,30 +3824,30 @@
         "fov": 38.750147309498914
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "fc337f66-99a6-4e54-9401-aae88d056ad7",
-        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
-        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
-        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
-        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
-        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+        "9384529c-9222-454b-9269-cefce25b5779",
+        "4f423de6-8dab-490f-94d4-5fe1a87fc9c8",
+        "cbc2109c-b941-469a-ae9b-b764309927ad",
+        "54ecbc18-6dfe-4788-a0aa-79555b3d5c04",
+        "fd869619-69b8-4ed4-a092-cd3bf073d2b1",
+        "671ac56f-20f8-4356-a27a-ec01a419879b"
       ],
       "textures": [
-        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
-        "3263286d-e772-43c0-bfda-52bc237f508f",
-        "c753de27-a6a8-47da-a593-2997f817bc66",
-        "9a094988-3a85-4460-8a67-e3462c1e6843",
-        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
-        "6e257016-5918-41cf-abc1-b60134104004"
+        "bbcbd725-9aab-4c74-aa6a-737285752e0d",
+        "fccae8a4-0bf1-4939-9551-201356f3945b",
+        "2579793f-25bb-4700-b644-232e850085c2",
+        "9ed85c23-a7b7-4aad-868e-c1f845b0cf27",
+        "d28b0cb5-9f21-4554-a77d-6c5526ffa3d1",
+        "e9840b7a-04d1-4f32-9d0b-bfe6722c1535"
       ],
       "background": {
-        "active": true,
-        "time": 3.283757599999994,
-        "fieldUpdates": 10,
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
         "pointer": [
           0.5,
           0.5
@@ -3832,13 +3859,13 @@
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "texture": "227280ac-4bab-46de-8272-35635f5da826",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -3853,7 +3880,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -3868,7 +3895,7 @@
       "phase": "focusing",
       "selected": "craft",
       "hovered": null,
-      "progress": 0.42596364380085494,
+      "progress": 0.4268640928227999,
       "reducedMotion": false,
       "lightStates": [
         {
@@ -3889,7 +3916,7 @@
         },
         {
           "id": "craft",
-          "amount": 0.8358944373175182,
+          "amount": 0.8151478542465285,
           "uv": [
             0.5,
             0.5
@@ -3940,19 +3967,19 @@
           ],
           "corners": [
             [
-              74.09567566717175,
+              74.0956756671717,
               513.6596978220938
             ],
             [
-              9.342951580483609,
+              9.342951580483588,
               391.87753592899054
             ],
             [
               173.95704841951635,
-              460.56246407100946
+              460.5624640710096
             ],
             [
-              109.20432433282826,
+              109.20432433282824,
               338.78030217790626
             ]
           ]
@@ -3976,11 +4003,11 @@
           ],
           "corners": [
             [
-              107.36475083088034,
+              107.36475083088033,
               437.3627838280885
             ],
             [
-              62.35251634903557,
+              62.35251634903555,
               298.8293707918426
             ],
             [
@@ -3998,12 +4025,12 @@
           "rotation": [
             0,
             0,
-            -0.1402635421855646,
+            -0.14004352098305436,
             "ZXY"
           ],
           "center": [
-            16.790563418824973,
-            72.10167820558593,
+            16.764225284933076,
+            71.93276021912658,
             0
           ],
           "target": [
@@ -4012,20 +4039,20 @@
           ],
           "corners": [
             [
-              96.84252716962685,
-              460.1146768982162
+              96.84007962171161,
+              460.3092305992978
             ],
             [
-              131.85062601226173,
-              212.16560100030097
+              131.79373370410505,
+              212.35167685368776
             ],
             [
-              291.7305008253882,
-              487.6310425885272
+              291.7347168657611,
+              487.782802708059
             ],
             [
-              326.7385996680231,
-              239.681966690612
+              326.68837094815456,
+              239.82524896244902
             ]
           ]
         },
@@ -4049,14 +4076,14 @@
           "corners": [
             [
               277.64452346804893,
-              552.8232234472289
+              552.823223447229
             ],
             [
               231.61732563166842,
               419.1505348218755
             ],
             [
-              384.5826743683316,
+              384.5826743683317,
               516.0014651781245
             ],
             [
@@ -4084,16 +4111,16 @@
           ],
           "corners": [
             [
-              98.00716170059633,
-              692.7635966999981
+              98.0071617005963,
+              692.7635966999983
             ],
             [
-              117.39400856596782,
-              534.8703996823194
+              117.3940085659678,
+              534.8703996823195
             ],
             [
               218.00599143403215,
-              707.4976003176805
+              707.4976003176806
             ],
             [
               237.39283829940368,
@@ -4121,14 +4148,14 @@
           "corners": [
             [
               202.44549019622275,
-              692.6538108443054
+              692.6538108443056
             ],
             [
               167.35312571857983,
               540.6520807378089
             ],
             [
-              324.04687428142006,
+              324.0468742814202,
               664.5799192621912
             ],
             [
@@ -4162,19 +4189,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -4183,39 +4214,38 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
-        "distance": 1285.192728760171,
-        "fov": 36.35574925243528
+        "distance": 1285.37281856456,
+        "fov": 36.35099048348334
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "fc337f66-99a6-4e54-9401-aae88d056ad7",
-        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
-        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
-        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
-        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
-        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+        "9384529c-9222-454b-9269-cefce25b5779",
+        "4f423de6-8dab-490f-94d4-5fe1a87fc9c8",
+        "cbc2109c-b941-469a-ae9b-b764309927ad",
+        "54ecbc18-6dfe-4788-a0aa-79555b3d5c04",
+        "fd869619-69b8-4ed4-a092-cd3bf073d2b1",
+        "671ac56f-20f8-4356-a27a-ec01a419879b"
       ],
       "textures": [
-        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
-        "3263286d-e772-43c0-bfda-52bc237f508f",
-        "c753de27-a6a8-47da-a593-2997f817bc66",
-        "9a094988-3a85-4460-8a67-e3462c1e6843",
-        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
-        "6e257016-5918-41cf-abc1-b60134104004"
+        "bbcbd725-9aab-4c74-aa6a-737285752e0d",
+        "fccae8a4-0bf1-4939-9551-201356f3945b",
+        "2579793f-25bb-4700-b644-232e850085c2",
+        "9ed85c23-a7b7-4aad-868e-c1f845b0cf27",
+        "d28b0cb5-9f21-4554-a77d-6c5526ffa3d1",
+        "e9840b7a-04d1-4f32-9d0b-bfe6722c1535"
       ],
       "background": {
-        "active": true,
-        "time": 3.3809875999999925,
-        "fieldUpdates": 13,
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
         "pointer": [
           0.5,
           0.5
@@ -4227,13 +4257,13 @@
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "texture": "227280ac-4bab-46de-8272-35635f5da826",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -4248,7 +4278,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -4284,7 +4314,7 @@
         },
         {
           "id": "craft",
-          "amount": 0.9946584819283731,
+          "amount": 0.9945147849856096,
           "uv": [
             0.5,
             0.5
@@ -4557,19 +4587,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -4578,8 +4612,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -4587,30 +4620,30 @@
         "fov": 33.54861488416168
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "fc337f66-99a6-4e54-9401-aae88d056ad7",
-        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
-        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
-        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
-        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
-        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+        "9384529c-9222-454b-9269-cefce25b5779",
+        "4f423de6-8dab-490f-94d4-5fe1a87fc9c8",
+        "cbc2109c-b941-469a-ae9b-b764309927ad",
+        "54ecbc18-6dfe-4788-a0aa-79555b3d5c04",
+        "fd869619-69b8-4ed4-a092-cd3bf073d2b1",
+        "671ac56f-20f8-4356-a27a-ec01a419879b"
       ],
       "textures": [
-        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
-        "3263286d-e772-43c0-bfda-52bc237f508f",
-        "c753de27-a6a8-47da-a593-2997f817bc66",
-        "9a094988-3a85-4460-8a67-e3462c1e6843",
-        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
-        "6e257016-5918-41cf-abc1-b60134104004"
+        "bbcbd725-9aab-4c74-aa6a-737285752e0d",
+        "fccae8a4-0bf1-4939-9551-201356f3945b",
+        "2579793f-25bb-4700-b644-232e850085c2",
+        "9ed85c23-a7b7-4aad-868e-c1f845b0cf27",
+        "d28b0cb5-9f21-4554-a77d-6c5526ffa3d1",
+        "e9840b7a-04d1-4f32-9d0b-bfe6722c1535"
       ],
       "background": {
-        "active": true,
-        "time": 3.6686875999999873,
-        "fieldUpdates": 22,
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
         "pointer": [
           0.5,
           0.5
@@ -4622,13 +4655,13 @@
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "texture": "227280ac-4bab-46de-8272-35635f5da826",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -4643,7 +4676,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -4679,7 +4712,7 @@
         },
         {
           "id": "craft",
-          "amount": 0.003348467804102257,
+          "amount": 0.0025399696527880736,
           "uv": [
             0.5,
             0.5
@@ -4952,19 +4985,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -4973,8 +5010,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -4982,30 +5018,30 @@
         "fov": 38.750147309498914
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "fc337f66-99a6-4e54-9401-aae88d056ad7",
-        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
-        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
-        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
-        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
-        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+        "9384529c-9222-454b-9269-cefce25b5779",
+        "4f423de6-8dab-490f-94d4-5fe1a87fc9c8",
+        "cbc2109c-b941-469a-ae9b-b764309927ad",
+        "54ecbc18-6dfe-4788-a0aa-79555b3d5c04",
+        "fd869619-69b8-4ed4-a092-cd3bf073d2b1",
+        "671ac56f-20f8-4356-a27a-ec01a419879b"
       ],
       "textures": [
-        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
-        "3263286d-e772-43c0-bfda-52bc237f508f",
-        "c753de27-a6a8-47da-a593-2997f817bc66",
-        "9a094988-3a85-4460-8a67-e3462c1e6843",
-        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
-        "6e257016-5918-41cf-abc1-b60134104004"
+        "bbcbd725-9aab-4c74-aa6a-737285752e0d",
+        "fccae8a4-0bf1-4939-9551-201356f3945b",
+        "2579793f-25bb-4700-b644-232e850085c2",
+        "9ed85c23-a7b7-4aad-868e-c1f845b0cf27",
+        "d28b0cb5-9f21-4554-a77d-6c5526ffa3d1",
+        "e9840b7a-04d1-4f32-9d0b-bfe6722c1535"
       ],
       "background": {
-        "active": true,
-        "time": 4.314297599999976,
-        "fieldUpdates": 42,
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
         "pointer": [
           0.5,
           0.5
@@ -5017,13 +5053,13 @@
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "texture": "227280ac-4bab-46de-8272-35635f5da826",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -5038,7 +5074,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -5074,10 +5110,10 @@
         },
         {
           "id": "craft",
-          "amount": 0.7263409313158697,
+          "amount": 0.863380495366434,
           "uv": [
-            0.7484288389614692,
-            0.46938905002100006
+            0.5,
+            0.5
           ]
         },
         {
@@ -5347,19 +5383,23 @@
         "focusY": 0.5,
         "backgroundColor": "#fbf7f1",
         "focusBackground": "#22201c",
+        "lightModel": "surface",
         "lightEnabled": true,
         "pinLight": false,
         "lightAnimation": true,
         "lightFollowPointer": true,
-        "lightIntensity": 0.55,
-        "lightContrast": 0.18,
+        "lightIntensity": 0.8,
+        "lightContrast": 0.26,
         "lightSpeed": 0.35,
         "surfaceRelief": 0.22,
-        "surfaceShine": 0.25,
+        "surfaceShine": 0.45,
+        "surfaceRoughness": 0.62,
+        "surfaceCoat": 0.55,
         "pointerInfluence": 0.85,
         "lightResponse": 0.16,
         "lightFadeIn": 0.12,
         "lightFadeOut": 0.16,
+        "lightGrain": 0.65,
         "lightColor": "#fff1cf",
         "shadowColor": "#908470",
         "lightCoverage": 0.708,
@@ -5368,8 +5408,7 @@
         "lightStretch": 0.84,
         "lightScatter": 1,
         "lightWarp": 0.118,
-        "lightSoftness": 1.5,
-        "lightGrain": 0.65
+        "lightSoftness": 1.5
       },
       "camera": {
         "type": "PerspectiveCamera",
@@ -5377,48 +5416,48 @@
         "fov": 35.63777782904556
       },
       "renderer": {
-        "programs": 5,
+        "programs": 3,
         "geometries": 2,
-        "textures": 14
+        "textures": 18
       },
       "materials": [
-        "d5367009-fbfd-4cff-a1f6-228b5cd1f584",
-        "c5553b8d-2ae4-42d7-9023-94a7f52119db",
-        "641a583b-a0ac-4849-9398-7167d8ee900e",
-        "00b4b523-be97-4444-bb8d-6f21d2303cba",
-        "c379f098-cbe1-4e8d-81eb-591a506871b3",
-        "ea804dee-a8c9-479f-a8b7-ef360d60942e"
+        "ebdcc73d-67c0-4314-b565-b33858a1da80",
+        "ba6f225b-0375-4ccf-ba80-fa419f645df0",
+        "751cdaf0-5a2c-4d87-97e8-d5504146b7de",
+        "73ded87e-917e-49b6-85d4-5b69fb0cc04d",
+        "2041deb6-bf5a-491a-8395-24f43060283a",
+        "ae8938ca-2356-4f01-9517-5e5f6e5f7b8b"
       ],
       "textures": [
-        "170b160c-291a-48e4-bfe2-ab248970521b",
-        "2ca7713d-463c-4ba3-829c-6f00962b3838",
-        "afd25f2b-e72d-4130-a599-86ac1ccf7670",
-        "90a66a73-e0e5-4d75-bdce-45b90b080754",
-        "649448b1-2a63-4a9d-9f53-02364133c10e",
-        "9fc5404d-b94c-4764-987f-2f4771c06105"
+        "f92ead7d-738f-490f-910c-f914ad607ca3",
+        "4dbb584e-3ee8-4624-bed4-2a6f7c1f7669",
+        "dfdf3b77-f003-4275-8f5e-f2ed10f81f70",
+        "867c6cf4-0fac-4d83-bbc6-dad298d54037",
+        "d58adbce-76d1-40fb-a3b3-5cc1fae77201",
+        "ffb4e221-80e8-4f5c-983e-06bbc7aae41b"
       ],
       "background": {
-        "active": true,
+        "active": false,
         "time": 3,
-        "fieldUpdates": 1,
+        "fieldUpdates": 0,
         "pointer": [
           0.5,
           0.5
         ],
         "target": [
-          0.8583049492468218,
-          0.4503575837952093
+          0.5,
+          0.5
         ],
         "aspect": 0.786,
         "width": 384,
         "height": 480,
-        "texture": "2c97879b-b980-4bbb-b97e-fe8142a73725",
+        "texture": "30fb0665-0726-4485-ad1e-0b897da44fef",
         "enabled": true,
         "animate": true,
         "followPointer": true,
         "parameters": {
           "enabled": true,
-          "intensity": 0.55,
+          "intensity": 0.8,
           "speed": 0.35,
           "color": "#908470",
           "light": "#fff1cf",
@@ -5433,7 +5472,7 @@
           "scatter": 1,
           "wave": 0.118,
           "grain": 0.65,
-          "contrast": 0.18,
+          "contrast": 0.26,
           "study": 0,
           "followPointer": true,
           "responseTime": 0.16,
@@ -5451,6 +5490,6 @@
       "note": "Separate Chrome launched with --disable-webgl; all artwork remains usable as DOM images."
     }
   ],
-  "finishedAt": "2026-10-26T06:24:18.446Z",
+  "finishedAt": "2026-10-26T08:09:39.669Z",
   "result": "passed"
 }

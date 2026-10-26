@@ -1,0 +1,26 @@
+{
+  "craft": {
+    "scope": "same browser, fixed tilt, identical hover pose; eroded paper polygon",
+    "meanBefore": 190.44180957798076,
+    "meanAfter": 190.75545946349808,
+    "meanLuminanceDelta": 0.3136498855173409,
+    "deltaP01": -2.0000000000000284,
+    "deltaP99": 4.927799999999991,
+    "minDelta": -4.212600000000009,
+    "maxDelta": 11.068200000000019,
+    "percentChangedMoreThan2": 6.668916150490468,
+    "pixels": 41491
+  },
+  "kensho": {
+    "scope": "same browser, fixed tilt, identical hover pose; eroded paper polygon",
+    "meanBefore": 213.95881875171722,
+    "meanAfter": 214.13780286656285,
+    "meanLuminanceDelta": 0.1789841148456816,
+    "deltaP01": -1.9999999999999716,
+    "deltaP99": 3.1403999999999996,
+    "minDelta": -3.000000000000057,
+    "maxDelta": 8.1404,
+    "percentChangedMoreThan2": 3.5351222639435846,
+    "pixels": 43676
+  }
+}

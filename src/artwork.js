@@ -46,63 +46,6 @@ function paperGrain(ctx, seed, strength = 14) {
   ctx.restore();
 }
 
-// Marching squares of a smooth analytic field makes fine engraved contours.
-// Each level is a batched Path2D; the field and print grain never change per frame.
-function engravedContours(ctx, x, y, width, height) {
-  const step = 4;
-  const nx = Math.ceil(width / step);
-  const ny = Math.ceil(height / step);
-  const field = new Float32Array((nx + 1) * (ny + 1));
-  for (let j = 0; j <= ny; j++) {
-    for (let i = 0; i <= nx; i++) {
-      const px = i * step;
-      const py = j * step;
-      const u = px / width;
-      const v = py / height;
-      const warpX = px + 22 * Math.sin(py * .017) + 12 * Math.cos(py * .041 + px * .007);
-      const warpY = py + 26 * Math.sin(px * .015) + 11 * Math.sin(py * .021);
-      let f = .23 * Math.sin(warpX * .024 + Math.sin(warpY * .011) * 2.1)
-        + .21 * Math.cos(warpY * .018 + Math.cos(warpX * .012) * 2.2)
-        + .12 * Math.sin((warpX + warpY) * .035)
-        + .055 * Math.cos(warpX * .063 - warpY * .048);
-      f += .42 * Math.exp(-((u - .28) ** 2 / .018 + (v - .34) ** 2 / .026));
-      f -= .38 * Math.exp(-((u - .76) ** 2 / .019 + (v - .65) ** 2 / .018));
-      field[j * (nx + 1) + i] = f;
-    }
-  }
-  const low = -.8;
-  const spacing = .023;
-  const levels = 74;
-  const paths = Array.from({ length: levels }, () => new Path2D());
-  for (let j = 0; j < ny; j++) {
-    for (let i = 0; i < nx; i++) {
-      const a = field[j * (nx + 1) + i];
-      const b = field[j * (nx + 1) + i + 1];
-      const c = field[(j + 1) * (nx + 1) + i + 1];
-      const d = field[(j + 1) * (nx + 1) + i];
-      const first = Math.max(0, Math.ceil((Math.min(a, b, c, d) - low) / spacing));
-      const last = Math.min(levels - 1, Math.floor((Math.max(a, b, c, d) - low) / spacing));
-      for (let k = first; k <= last; k++) {
-        const level = low + k * spacing;
-        const points = [];
-        if ((a > level) !== (b > level)) points.push([i + (level - a) / (b - a), j]);
-        if ((b > level) !== (c > level)) points.push([i + 1, j + (level - b) / (c - b)]);
-        if ((c > level) !== (d > level)) points.push([i + 1 - (level - c) / (d - c), j + 1]);
-        if ((d > level) !== (a > level)) points.push([i, j + 1 - (level - d) / (a - d)]);
-        for (let n = 0; n + 1 < points.length; n += 2) {
-          paths[k].moveTo(x + points[n][0] * step, y + points[n][1] * step);
-          paths[k].lineTo(x + points[n + 1][0] * step, y + points[n + 1][1] * step);
-        }
-      }
-    }
-  }
-  ctx.lineWidth = .68;
-  for (let i = 0; i < paths.length; i++) {
-    ctx.strokeStyle = i % 5 === 0 ? 'rgba(52,78,43,.59)' : 'rgba(72,94,51,.40)';
-    ctx.stroke(paths[i]);
-  }
-}
-
 function organicIsland(ctx, x, y, rx, ry, phase = 0) {
   ctx.beginPath();
   for (let i = 0; i <= 110; i++) {
@@ -121,45 +64,27 @@ function craft(ctx) {
   ctx.save();
   roundBox(ctx, x, y, width, height, 15);
   ctx.clip();
-  const green = ctx.createLinearGradient(80, 90, 610, 810);
-  green.addColorStop(0, '#dce3c9');
-  green.addColorStop(.28, '#b6d47f');
-  green.addColorStop(.64, '#c4d992');
-  green.addColorStop(1, '#e1e0c9');
+  // Source-image samples show a muted green centre fading to pale inner corners.
+  // These are print colours only; lighting is calculated independently on hover.
+  ctx.save();
+  ctx.translate(x + width / 2, y + height / 2);
+  ctx.scale(width, height);
+  const green = ctx.createRadialGradient(0, 0, 0, 0, 0, .68);
+  green.addColorStop(0, '#a5c08e');
+  green.addColorStop(.48, '#a6c190');
+  green.addColorStop(.8, '#bdcead');
+  green.addColorStop(1, '#e1e7d9');
   ctx.fillStyle = green;
-  ctx.fillRect(x, y, width, height);
-  const glazes = [[210,360,190,'rgba(127,170,82,.22)'], [525,485,260,'rgba(182,203,115,.26)'], [340,155,145,'rgba(242,230,195,.30)']];
-  for (const [cx,cy,r,color] of glazes) {
-    const glaze = ctx.createRadialGradient(cx,cy,0,cx,cy,r);
-    glaze.addColorStop(0,color);glaze.addColorStop(1,'rgba(255,255,255,0)');
-    ctx.fillStyle = glaze;ctx.fillRect(x,y,width,height);
-  }
+  ctx.fillRect(-.5, -.5, 1, 1);
+  ctx.restore();
   ctx.fillStyle = '#e1dfc9';
   organicIsland(ctx, 441, 270, 34, 45, .8);
   organicIsland(ctx, 520, 294, 27, 67, 1.3);
   organicIsland(ctx, 160, 451, 25, 41, 2.2);
   organicIsland(ctx, 230, 591, 45, 18, .5);
   organicIsland(ctx, 111, 288, 15, 27, .9);
-  engravedContours(ctx,x,y,width,height);
-  // Fine secondary engraving gives a continuous print even between contour levels.
-  ctx.strokeStyle = 'rgba(95,115,64,.12)';
-  ctx.lineWidth = .6;
-  for (let row = 0; row < 170; row++) {
-    const yy = y + row * 4.7;
-    ctx.beginPath();
-    for (let xx = x; xx <= x + width; xx += 3) {
-      const py = yy + Math.sin(xx * .045 + row * .16) * 2.4 + Math.sin(xx * .018 - row * .1) * 3;
-      if (xx === x) ctx.moveTo(xx,py);else ctx.lineTo(xx,py);
-    }
-    ctx.stroke();
-  }
-  // A quiet border of concentric irregular hairlines, like a hand-pulled proof.
-  for (let inset = 6; inset < 29; inset += 3.2) {
-    ctx.strokeStyle = `rgba(79,94,58,${inset < 12 ? .35 : .18})`;
-    ctx.lineWidth = .6;
-    roundBox(ctx,x+inset,y+inset,width-inset*2,height-inset*2,11);
-    ctx.stroke();
-  }
+  // Keep the albedo quiet. Surface relief belongs in the independently lit
+  // normal map; baking contour bands into ink creates waves even at idle.
   ctx.fillStyle = 'rgba(232,231,211,.23)';
   ctx.fillRect(99, 95, 240, 76);
   type(ctx,'NEW CRAFT',103,123,26,'#536748');
