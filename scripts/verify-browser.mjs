@@ -7,7 +7,7 @@ import { STAMPS } from '../src/config.js';
 
 // Run against the retained Vite development server; never starts or replaces it.
 const baseURL = process.env.VERIFY_URL || 'http://127.0.0.1:4173/';
-const output = resolve('artifacts/lion-stamps/regression/browser');
+const output = resolve(process.env.VERIFY_OUTPUT || 'artifacts/lion-stamps/regression/browser');
 await mkdir(output, { recursive: true });
 const report = { baseURL, startedAt: new Date().toISOString(), browser: 'Installed Chrome, headless, real WebGL', checks: [], consoleErrors: [], pageErrors: [], screenshots: [] };
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });

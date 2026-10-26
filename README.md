@@ -4,6 +4,8 @@ React + Vite + 原生 Three.js。使用用户lion工程中的喜、怒、哀、�
 
 [八枚票面总览](artifacts/lion-stamps/stamps-contact-sheet.png) · [独立PNG](artifacts/lion-stamps/prints/) · [素材与设计说明](docs/lion-stamps.md)
 
+2026-10-27已修复快速切卡的光影延迟：新票在恢复清晰的同时开始出光，共享光图在首帧交接到新票指针位置，不再等待约半秒。保留原渐入/渐出与虚化参数，详见[切换修复与实测](docs/rapid-hover.md)。
+
 ## 运行
 
 需要 Node.js 22.12+（本机验证为24.16）。在本目录运行：
@@ -32,6 +34,7 @@ npm run build
 npm run test
 # 保持开发服务启动，再开一个终端：
 npm run test:stamps
+npm run test:rapid-hover
 npm run test:browser
 npm run test:light
 npm run test:controls

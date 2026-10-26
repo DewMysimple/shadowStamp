@@ -5,7 +5,7 @@ import { resolve, join } from 'node:path';
 import { STORAGE_KEY } from '../src/parameters.js';
 
 const baseURL = process.env.PRODUCTION_URL || 'http://127.0.0.1:4174/';
-const output = resolve('artifacts/lion-stamps/regression/production');
+const output = resolve(process.env.VERIFY_OUTPUT || 'artifacts/lion-stamps/regression/production');
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });
 const report = { baseURL, startedAt: new Date().toISOString(), checks: [], errors: [] };

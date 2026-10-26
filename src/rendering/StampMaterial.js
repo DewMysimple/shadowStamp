@@ -99,7 +99,9 @@ const fragmentShader = /* glsl */`
   vec3 paperLight(vec3 ink) {
     float activity = clamp(uActivity, 0.0, 1.0) * clamp(uLightStrength, 0.0, 2.0);
     vec3 color = ink;
-    if (activity > 0.001 && uBlur < 0.02) {
+    // Lighting and print defocus have independent transitions. Waiting for blur
+    // to reach zero hid the entire light for ~473ms on every card handoff.
+    if (activity > 0.001) {
       vec2 local = (vUv - 0.5) * vec2(1.0, 1.27);
       // One optical field and one paper response. Neither alters print UVs,
       // vertices, lettering nor alpha. Enlarging fibres does not enlarge ink.

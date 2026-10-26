@@ -123,3 +123,41 @@ test('pausing flow retains pointer response, then settles fully; reduced motion 
   assert.equal(light.needsFrame, false);
   light.dispose();
 });
+
+test('card handoffs refresh the shared field immediately without waiting for the flow budget', () => {
+  const renderer = fakeRenderer();
+  const light = createDappledLight(renderer, { lightAnimation: false });
+  light.resize(1440, 900);
+  light.setActiveStamp('joy');
+  light.setPointer(0.1, 0.9);
+  light.render(0, 0, false, true);
+  const original = light.stats;
+  assert.deepEqual(original.pointer, original.target);
+
+  light.setActiveStamp('anger');
+  light.setPointer(0.9, 0.1);
+  light.render(0.001, 0, false, true);
+  assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 1);
+  assert.equal(light.stats.texture, original.texture);
+  assert.equal(light.stats.owner, 'anger');
+  assert.deepEqual(light.stats.pointer, light.stats.target);
+
+  // Same-card movement still obeys the user's response and 24fps flow budget.
+  light.setActiveStamp('anger');
+  light.setPointer(0.1, 0.9);
+  light.render(0.002, 0, false, true);
+  assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 1);
+  assert.notDeepEqual(light.stats.pointer, light.stats.target);
+  light.setActiveStamp(null);
+  light.render(0.003, 0, false, false);
+  assert.equal(light.needsFrame, false);
+  light.setActiveStamp('anger');
+  light.render(0.004, 0, false, true);
+  assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 2);
+  assert.deepEqual(light.stats.pointer, light.stats.target);
+  light.configure({ lightEnabled: false });
+  light.setActiveStamp('joy');
+  light.render(0.005, 0, false, true);
+  assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 2);
+  light.dispose();
+});

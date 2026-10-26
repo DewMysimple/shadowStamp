@@ -120,6 +120,7 @@ export function createDappledLight(renderer, options = {}) {
   fieldScene.add(fieldPlane); outputScene.add(outputPlane);
   let disposed = false, dirty = true, lastFieldTime = -Infinity, active = false, fieldUpdates = 0;
   let pendingField = false, reduced = false;
+  let activeStamp = null, snapPointer = false;
   let previousTime = null, fieldClock = 3, previousReducedMotion = null, parameterKey = '', opticalKey = '';
   let patternSizeNorm = NCS_LIGHTING.maximumSizeNorm;
   const oldViewport = new THREE.Vector4();
@@ -183,6 +184,9 @@ export function createDappledLight(renderer, options = {}) {
     }
     uniforms.uDensity.value = parameters.density / (parameters.scale * patternSizeNorm);
     if (!parameters.followPointer) pointerTarget.set(0.5, 0.5);
+    // A new paper owns a new local UV space. Hand the existing cache to its
+    // target immediately; normal movement within that paper retains damping.
+    if (active && snapPointer) { pointer.copy(pointerTarget); snapPointer = false; }
     const moving = active && !reducedMotion && pointer.distanceToSquared(pointerTarget) > 0.000001;
     if (moving) {
       pointer.lerp(pointerTarget, parameters.responseTime <= 0 ? 1 : -Math.expm1(-dt / parameters.responseTime));
@@ -226,10 +230,16 @@ export function createDappledLight(renderer, options = {}) {
     },
     get stats() {
       return { active, time: fieldClock, fieldUpdates, pointer: pointer.toArray(), target: pointerTarget.toArray(),
+        owner: activeStamp,
         aspect: uniforms.uAspect.value, width: blurTarget.width, height: blurTarget.height, texture: blurTarget.texture.uuid,
         enabled: parameters.enabled, animate: parameters.animate, followPointer: parameters.followPointer,
         sizeNorm: patternSizeNorm, density: uniforms.uDensity.value,
         parameters: { ...parameters } };
+    },
+    setActiveStamp(id) {
+      if (disposed || id === activeStamp) return;
+      activeStamp = id;
+      if (id !== null) { dirty = true; snapPointer = true; }
     },
     setPointer(x, y) {
       if (disposed) return;

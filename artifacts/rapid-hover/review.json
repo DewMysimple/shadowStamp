@@ -1,0 +1,425 @@
+{
+  "defaultSettings": {
+    "tiltEnabled": true,
+    "hoverTilt": 6,
+    "focusTilt": 6,
+    "tiltResponse": 0.085,
+    "hoverPerspective": 1200,
+    "hoverScale": 1.05,
+    "hoverLift": 4,
+    "hoverResponse": 0.085,
+    "blur": 11,
+    "blurResponse": 0.075,
+    "focusTrackOutside": false,
+    "resetTiltOnLeave": false,
+    "perspective": 1400,
+    "focusShift": 0,
+    "focusRoll": 0,
+    "enterDuration": 0.46,
+    "returnDuration": 0.56,
+    "focusHeight": 0.565,
+    "focusWidth": 0.295,
+    "focusX": 0.479,
+    "focusY": 0.5,
+    "backgroundColor": "#fbf7f1",
+    "focusBackground": "#22201c",
+    "lightEnabled": true,
+    "pinLight": false,
+    "lightAnimation": true,
+    "lightFollowPointer": true,
+    "lightIntensity": 1,
+    "lightContrast": 0.26,
+    "shadowStrength": 1,
+    "lightSpeed": 0.35,
+    "pointerInfluence": 0.85,
+    "lightResponse": 0.16,
+    "lightFadeIn": 0.12,
+    "lightFadeOut": 0.16,
+    "lightColor": "#ffd198",
+    "shadowColor": "#4e5c3c",
+    "contactShadowColor": "#635e53",
+    "contactShadowOpacity": 0.44,
+    "contactShadowSoftness": 1.4,
+    "textureScale": 0.9,
+    "surfaceRelief": 0.22,
+    "surfaceShine": 0.45,
+    "lightGrain": 0.65,
+    "lightCoverage": 0.708,
+    "lightScale": 1,
+    "lightAngle": 44,
+    "lightStretch": 0.84,
+    "lightScatter": 1,
+    "lightWarp": 0.118,
+    "lightSoftness": 1.35
+  },
+  "createdAt": "2026-10-26T16:22:59.670Z",
+  "sourceHashesBefore": {
+    "src/rendering/StampGallery.js": "59db68ae082c2d393bf0a1a0289c06d46b29fbf5c9d61fbd4d1fb0796b46f02c",
+    "src/rendering/DappledLight.js": "ca3cacc5bf18ade1e1448bd374d199b74aac8a3bff7f38e0a064e37698d91563",
+    "src/rendering/StampMaterial.js": "6dfbb592c65423ccd4b037a3b5b59b0176907c7591e3cb84abef080d964d9a33"
+  },
+  "sourceHashesAfter": {
+    "src/rendering/StampGallery.js": "59db68ae082c2d393bf0a1a0289c06d46b29fbf5c9d61fbd4d1fb0796b46f02c",
+    "src/rendering/DappledLight.js": "ca3cacc5bf18ade1e1448bd374d199b74aac8a3bff7f38e0a064e37698d91563",
+    "src/rendering/StampMaterial.js": "6dfbb592c65423ccd4b037a3b5b59b0176907c7591e3cb84abef080d964d9a33"
+  },
+  "visits": [
+    {
+      "id": "joy",
+      "firstFrameMs": 27.600000008940697,
+      "firstAmount": 0.12967527416660946,
+      "firstBlur": 0,
+      "owner": "joy",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 1,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "anger",
+      "firstFrameMs": 0.3999999910593033,
+      "firstAmount": 0.04559452026635447,
+      "firstBlur": 8.347780863946417,
+      "owner": "anger",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 4,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "sorrow",
+      "firstFrameMs": 0.5999999940395355,
+      "firstAmount": 0.04559452026635267,
+      "firstBlur": 10.112540941284156,
+      "owner": "sorrow",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 9,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "delight",
+      "firstFrameMs": 0.30000001192092896,
+      "firstAmount": 0.04559452026635267,
+      "firstBlur": 10.188291315504795,
+      "owner": "delight",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 12,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "motion",
+      "firstFrameMs": 0.29999999701976776,
+      "firstAmount": 0.0447988508837116,
+      "firstBlur": 10.222201161933238,
+      "owner": "motion",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 15,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "stillness",
+      "firstFrameMs": 0.4000000059604645,
+      "firstAmount": 0.04638952686737224,
+      "firstBlur": 10.194978272153229,
+      "owner": "stillness",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 21,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "surprise",
+      "firstFrameMs": 0.4000000059604645,
+      "firstAmount": 0.04559452026635267,
+      "firstBlur": 10.208580642747986,
+      "owner": "surprise",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 24,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "doubt",
+      "firstFrameMs": 0.4000000059604645,
+      "firstAmount": 0.04559452026635267,
+      "firstBlur": 10.208580642747986,
+      "owner": "doubt",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 27,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "joy",
+      "firstFrameMs": 0.5,
+      "firstAmount": 0.04559452026635267,
+      "firstBlur": 10.208580642747986,
+      "owner": "joy",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 33,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "anger",
+      "firstFrameMs": 0.30000001192092896,
+      "firstAmount": 0.04699488770485587,
+      "firstBlur": 10.208580642747986,
+      "owner": "anger",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 36,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "sorrow",
+      "firstFrameMs": 0.4000000059604645,
+      "firstAmount": 0.046662930585957,
+      "firstBlur": 10.208580642747986,
+      "owner": "sorrow",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 39,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "delight",
+      "firstFrameMs": 0.30000001192092896,
+      "firstAmount": 0.04587520474950634,
+      "firstBlur": 10.222201161933238,
+      "owner": "delight",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 42,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "motion",
+      "firstFrameMs": 0.7000000029802322,
+      "firstAmount": 0.04782970680727145,
+      "firstBlur": 10.222201161933238,
+      "owner": "motion",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 45,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "stillness",
+      "firstFrameMs": 0.7999999970197678,
+      "firstAmount": 0.04767287067403473,
+      "firstBlur": 10.208580642747986,
+      "owner": "stillness",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 48,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "surprise",
+      "firstFrameMs": 0.5999999940395355,
+      "firstAmount": 0.04767287067403472,
+      "firstBlur": 10.208580642747986,
+      "owner": "surprise",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 51,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "doubt",
+      "firstFrameMs": 0.7000000029802322,
+      "firstAmount": 0.05192117777086045,
+      "firstBlur": 10.208580642747986,
+      "owner": "doubt",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 54,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "joy",
+      "firstFrameMs": 0.29999999701976776,
+      "firstAmount": 0.04833052824246618,
+      "firstBlur": 10.23583985392325,
+      "owner": "joy",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 57,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "anger",
+      "firstFrameMs": 0.29999999701976776,
+      "firstAmount": 0.049264859880673986,
+      "firstBlur": 10.222201161933238,
+      "owner": "anger",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 60,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "sorrow",
+      "firstFrameMs": 0.5,
+      "firstAmount": 0.0489830597774403,
+      "firstBlur": 10.222201161933238,
+      "owner": "sorrow",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 63,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "delight",
+      "firstFrameMs": 0.4000000059604645,
+      "firstAmount": 0.049563968494068376,
+      "firstBlur": 10.222201161933238,
+      "owner": "delight",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 66,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "motion",
+      "firstFrameMs": 1.6000000089406967,
+      "firstAmount": 0.04893895439502099,
+      "firstBlur": 10.235839853923313,
+      "owner": "motion",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 69,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "stillness",
+      "firstFrameMs": 0.4000000059604645,
+      "firstAmount": 0.050061678257356544,
+      "firstBlur": 10.208580642747986,
+      "owner": "stillness",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 72,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "surprise",
+      "firstFrameMs": 0.20000000298023224,
+      "firstAmount": 0.04943150624656317,
+      "firstBlur": 10.222201161933238,
+      "owner": "surprise",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 75,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    },
+    {
+      "id": "doubt",
+      "firstFrameMs": 0.29999999701976776,
+      "firstAmount": 0.04899938581694425,
+      "firstBlur": 10.222201161933238,
+      "owner": "doubt",
+      "pointerError": 0,
+      "fieldUpdatesFirst": 78,
+      "resources": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      }
+    }
+  ],
+  "errors": [],
+  "resourceSummary": {
+    "textures": [
+      26
+    ],
+    "programs": [
+      5
+    ]
+  },
+  "outgoingFadeMonotonic": true,
+  "outgoingFadeViolations": [],
+  "sourceStable": true,
+  "reviewConclusions": [
+    "Default animation/tilt remain enabled; no parameter configuration or localStorage seed was used.",
+    "24 real-pointer visits at 100ms dwell each. Incoming light amplitude is positive on the first rendered visit while blur is still 8–10px.",
+    "Every owner matches entered card, new optical pointer exactly equals its local target on that first frame, and resources remain 26 textures/5 programs.",
+    "Viewed anger/motion/doubt 100ms screenshots: peach warm light is already visible on incoming paper. Older cards retain only their existing short fade-out; measured amplitudes decline monotonically. No obvious white flash or stalled handoff observed."
+  ],
+  "limits": [
+    "Screenshots show selected transition instants; this is not a hardware frame-time benchmark or a complete temporal luminance proof."
+  ]
+}

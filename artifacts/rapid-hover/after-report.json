@@ -1,0 +1,1033 @@
+{
+  "phase": "after",
+  "baseURL": "http://127.0.0.1:4173/",
+  "startedAt": "2026-10-26T16:18:12.400Z",
+  "checks": [
+    {
+      "name": "cold first hover and a switch from a fully blurred card",
+      "result": "passed",
+      "details": {
+        "hardBlurGate": false,
+        "summary": [
+          {
+            "id": "joy",
+            "dwellMs": 669.5999999940395,
+            "frameCount": 116,
+            "firstFrameMs": 28.599999994039536,
+            "firstActivityMs": 28.599999994039536,
+            "firstEligibleMs": 28.599999994039536,
+            "firstOwner": "joy",
+            "blockedFrames": 0,
+            "firstDraw": {
+              "at": 1623.4000000059605,
+              "activity": 0.12967527416660946,
+              "blur": 0,
+              "uv": [
+                0.506001393568445,
+                0.49605098035774214
+              ],
+              "size": [
+                198.72000000000003,
+                248.40000000000003
+              ]
+            },
+            "lastDraw": {
+              "at": 2259.4000000059605,
+              "activity": 0.9966335243697023,
+              "blur": 0,
+              "uv": [
+                0.5598182932960718,
+                0.4606385396161018
+              ],
+              "size": [
+                198.72000000000003,
+                248.40000000000003
+              ]
+            }
+          },
+          {
+            "id": "anger",
+            "dwellMs": null,
+            "frameCount": 129,
+            "firstFrameMs": 0.5,
+            "firstActivityMs": 0.5,
+            "firstEligibleMs": 0.5,
+            "firstOwner": "anger",
+            "blockedFrames": 0,
+            "firstDraw": {
+              "at": 2264.9000000059605,
+              "activity": 0.04559452026635267,
+              "blur": 10.208580642747986,
+              "uv": [
+                0.5011824301562542,
+                0.497851291805093
+              ],
+              "size": [
+                190.08,
+                237.6
+              ]
+            },
+            "lastDraw": {
+              "at": 2975.7000000029802,
+              "activity": 0.9974521362091977,
+              "blur": 0,
+              "uv": [
+                0.5343783825124606,
+                0.43752771625329845
+              ],
+              "size": [
+                190.08,
+                237.6
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "eight cards switch repeatedly with 40, 80 and 120ms dwell",
+      "result": "passed",
+      "details": {
+        "runs": [
+          {
+            "requestedDwellMs": 40,
+            "summary": [
+              {
+                "id": "joy",
+                "dwellMs": 61.20000000298023,
+                "frameCount": 11,
+                "firstFrameMs": 0.5,
+                "firstActivityMs": 0.5,
+                "firstEligibleMs": 0.5,
+                "firstOwner": "joy",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 3870.4000000059605,
+                  "activity": 0.0447988508837116,
+                  "blur": 0.010412259241010916,
+                  "uv": [
+                    0.5020499636793959,
+                    0.4986510888273659
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                },
+                "lastDraw": {
+                  "at": 3925.800000011921,
+                  "activity": 0.39900379964205046,
+                  "blur": 0,
+                  "uv": [
+                    0.5192566303694703,
+                    0.4873288077668197
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                }
+              },
+              {
+                "id": "anger",
+                "dwellMs": 50.099999994039536,
+                "frameCount": 9,
+                "firstFrameMs": 0.7000000029802322,
+                "firstActivityMs": 0.7000000029802322,
+                "firstEligibleMs": 0.7000000029802322,
+                "firstOwner": "anger",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 3931.7000000029802,
+                  "activity": 0.07138069827615619,
+                  "blur": 5.688354882903673,
+                  "uv": [
+                    0.5020793201624819,
+                    0.49622146623263247
+                  ],
+                  "size": [
+                    190.08,
+                    237.6
+                  ]
+                },
+                "lastDraw": {
+                  "at": 3975.7000000029802,
+                  "activity": 0.35857076820685113,
+                  "blur": 3.1469101984310455,
+                  "uv": [
+                    0.5099061722102938,
+                    0.4819985364075563
+                  ],
+                  "size": [
+                    190.08,
+                    237.6
+                  ]
+                }
+              },
+              {
+                "id": "sorrow",
+                "dwellMs": 61,
+                "frameCount": 11,
+                "firstFrameMs": 0.4000000059604645,
+                "firstActivityMs": 0.4000000059604645,
+                "firstEligibleMs": 0.4000000059604645,
+                "firstOwner": "sorrow",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 3981.6000000089407,
+                  "activity": 0.0447988508837116,
+                  "blur": 7.9007105271719205,
+                  "uv": [
+                    0.5018085839681572,
+                    0.4985952674979109
+                  ],
+                  "size": [
+                    194.4,
+                    243
+                  ]
+                },
+                "lastDraw": {
+                  "at": 4037,
+                  "activity": 0.3990037996420528,
+                  "blur": 3.764516232316447,
+                  "uv": [
+                    0.5169891951340403,
+                    0.48680444203348916
+                  ],
+                  "size": [
+                    194.4,
+                    243
+                  ]
+                }
+              },
+              {
+                "id": "delight",
+                "dwellMs": 61.1000000089407,
+                "frameCount": 11,
+                "firstFrameMs": 0.4000000059604645,
+                "firstActivityMs": 0.4000000059604645,
+                "firstEligibleMs": 0.4000000059604645,
+                "firstOwner": "delight",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 4042.6000000089407,
+                  "activity": 0.04559452026635267,
+                  "blur": 9.182024659134303,
+                  "uv": [
+                    0.501373032864274,
+                    0.4981391165241963
+                  ],
+                  "size": [
+                    192.96,
+                    241.2
+                  ]
+                },
+                "lastDraw": {
+                  "at": 4097.800000011921,
+                  "activity": 0.3990037996420482,
+                  "blur": 4.380871737530285,
+                  "uv": [
+                    0.5126714015917091,
+                    0.4828263383558903
+                  ],
+                  "size": [
+                    192.96,
+                    241.2
+                  ]
+                }
+              },
+              {
+                "id": "motion",
+                "dwellMs": 50,
+                "frameCount": 9,
+                "firstFrameMs": 0.5,
+                "firstActivityMs": 0.5,
+                "firstEligibleMs": 0.5,
+                "firstOwner": "motion",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 4103.70000000298,
+                  "activity": 0.0447988508837116,
+                  "blur": 9.76704915697729,
+                  "uv": [
+                    0.5025411759217882,
+                    0.49886891405305056
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                },
+                "lastDraw": {
+                  "at": 4148.4000000059605,
+                  "activity": 0.34075936979955623,
+                  "blur": 5.3961247447651335,
+                  "uv": [
+                    0.5201833058178053,
+                    0.49101634271843775
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                }
+              },
+              {
+                "id": "stillness",
+                "dwellMs": 61.29999999701977,
+                "frameCount": 11,
+                "firstFrameMs": 0.3999999910593033,
+                "firstActivityMs": 0.3999999910593033,
+                "firstEligibleMs": 0.3999999910593033,
+                "firstOwner": "stillness",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 4153.70000000298,
+                  "activity": 0.045594520266356284,
+                  "blur": 9.975209181123894,
+                  "uv": [
+                    0.5012897942254051,
+                    0.4979901197983426
+                  ],
+                  "size": [
+                    185.76,
+                    232.2
+                  ]
+                },
+                "lastDraw": {
+                  "at": 4209.5,
+                  "activity": 0.3990037996420528,
+                  "blur": 4.759311110547391,
+                  "uv": [
+                    0.5119032115152005,
+                    0.4814512821585732
+                  ],
+                  "size": [
+                    185.76,
+                    232.2
+                  ]
+                }
+              },
+              {
+                "id": "surprise",
+                "dwellMs": 61,
+                "frameCount": 11,
+                "firstFrameMs": 0.5999999940395355,
+                "firstActivityMs": 0.5999999940395355,
+                "firstEligibleMs": 0.5999999940395355,
+                "firstOwner": "surprise",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 4215.100000008941,
+                  "activity": 0.045594520266356284,
+                  "blur": 10.105246817080902,
+                  "uv": [
+                    0.5019027379703049,
+                    0.49858165402661825
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                },
+                "lastDraw": {
+                  "at": 4270.300000011921,
+                  "activity": 0.39950442118773316,
+                  "blur": 4.8149296881128265,
+                  "uv": [
+                    0.5175835202682395,
+                    0.48689282730488787
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                }
+              },
+              {
+                "id": "doubt",
+                "dwellMs": null,
+                "frameCount": 22,
+                "firstFrameMs": 0.3999999910593033,
+                "firstActivityMs": 0.3999999910593033,
+                "firstEligibleMs": 0.3999999910593033,
+                "firstOwner": "doubt",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 4275.9000000059605,
+                  "activity": 0.0447988508837116,
+                  "blur": 10.176446297766578,
+                  "uv": [
+                    0.5013924004393036,
+                    0.4982859668515746
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                },
+                "lastDraw": {
+                  "at": 4392.20000000298,
+                  "activity": 0.6388035671553074,
+                  "blur": 2.147009327913823,
+                  "uv": [
+                    0.5220076716268667,
+                    0.4729087426121633
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "requestedDwellMs": 80,
+            "summary": [
+              {
+                "id": "joy",
+                "dwellMs": 100.29999999701977,
+                "frameCount": 18,
+                "firstFrameMs": 0.5999999940395355,
+                "firstActivityMs": 0.5999999940395355,
+                "firstEligibleMs": 0.5999999940395355,
+                "firstOwner": "joy",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 4998.20000000298,
+                  "activity": 0.04638952686737224,
+                  "blur": 0.01206635464855046,
+                  "uv": [
+                    0.5021231881512833,
+                    0.4986029058721107
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                },
+                "lastDraw": {
+                  "at": 5092.600000008941,
+                  "activity": 0.5657638058064284,
+                  "blur": 0,
+                  "uv": [
+                    0.5282141938440235,
+                    0.48143457775101584
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                }
+              },
+              {
+                "id": "anger",
+                "dwellMs": 88.79999999701977,
+                "frameCount": 16,
+                "firstFrameMs": 0.4000000059604645,
+                "firstActivityMs": 0.4000000059604645,
+                "firstEligibleMs": 0.4000000059604645,
+                "firstOwner": "anger",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 5098.20000000298,
+                  "activity": 0.0447988508837116,
+                  "blur": 7.5344327202063,
+                  "uv": [
+                    0.5011616762010962,
+                    0.4978890058242162
+                  ],
+                  "size": [
+                    190.08,
+                    237.6
+                  ]
+                },
+                "lastDraw": {
+                  "at": 5181.20000000298,
+                  "activity": 0.5232835137900229,
+                  "blur": 2.47807870269353,
+                  "uv": [
+                    0.514655037670801,
+                    0.47336891369577866
+                  ],
+                  "size": [
+                    190.08,
+                    237.6
+                  ]
+                }
+              },
+              {
+                "id": "sorrow",
+                "dwellMs": 94.5,
+                "frameCount": 17,
+                "firstFrameMs": 0.4000000059604645,
+                "firstActivityMs": 0.4000000059604645,
+                "firstEligibleMs": 0.4000000059604645,
+                "firstOwner": "sorrow",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 5187,
+                  "activity": 0.0447988508837116,
+                  "blur": 9.400699285063418,
+                  "uv": [
+                    0.5018085839681572,
+                    0.4985952674979109
+                  ],
+                  "size": [
+                    194.4,
+                    243
+                  ]
+                },
+                "lastDraw": {
+                  "at": 5275.70000000298,
+                  "activity": 0.5450191732818265,
+                  "blur": 2.869441500972375,
+                  "uv": [
+                    0.5238721999663033,
+                    0.4814583918803586
+                  ],
+                  "size": [
+                    194.4,
+                    243
+                  ]
+                }
+              },
+              {
+                "id": "delight",
+                "dwellMs": 94.40000000596046,
+                "frameCount": 17,
+                "firstFrameMs": 0.5,
+                "firstActivityMs": 0.5,
+                "firstEligibleMs": 0.5,
+                "firstOwner": "delight",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 5281.70000000298,
+                  "activity": 0.0447988508837116,
+                  "blur": 9.98917836721702,
+                  "uv": [
+                    0.5013489334598864,
+                    0.4981717786581979
+                  ],
+                  "size": [
+                    192.96,
+                    241.2
+                  ]
+                },
+                "lastDraw": {
+                  "at": 5370.20000000298,
+                  "activity": 0.5442602396349369,
+                  "blur": 3.057208802815598,
+                  "uv": [
+                    0.5177774340046168,
+                    0.47590608787148364
+                  ],
+                  "size": [
+                    192.96,
+                    241.2
+                  ]
+                }
+              },
+              {
+                "id": "motion",
+                "dwellMs": 94.5,
+                "frameCount": 17,
+                "firstFrameMs": 0.5999999940395355,
+                "firstActivityMs": 0.5999999940395355,
+                "firstEligibleMs": 0.5999999940395355,
+                "firstOwner": "motion",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 5376.100000008941,
+                  "activity": 0.04638952686737224,
+                  "blur": 10.128880247070438,
+                  "uv": [
+                    0.5026319464396837,
+                    0.49882851179033877
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                },
+                "lastDraw": {
+                  "at": 5464.600000008941,
+                  "activity": 0.5450191732818265,
+                  "blur": 3.0999648535293804,
+                  "uv": [
+                    0.5335419647760634,
+                    0.4850703587004781
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                }
+              },
+              {
+                "id": "stillness",
+                "dwellMs": 94.29999999701977,
+                "frameCount": 17,
+                "firstFrameMs": 0.5999999940395355,
+                "firstActivityMs": 0.5999999940395355,
+                "firstEligibleMs": 0.5999999940395355,
+                "firstOwner": "stillness",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 5470.70000000298,
+                  "activity": 0.04559452026634906,
+                  "blur": 10.189806469412279,
+                  "uv": [
+                    0.501289794225405,
+                    0.4979901197983429
+                  ],
+                  "size": [
+                    185.76,
+                    232.2
+                  ]
+                },
+                "lastDraw": {
+                  "at": 5559.100000008941,
+                  "activity": 0.5446398645695473,
+                  "blur": 3.118611450518485,
+                  "uv": [
+                    0.5167126922911659,
+                    0.47395669115989775
+                  ],
+                  "size": [
+                    185.76,
+                    232.2
+                  ]
+                }
+              },
+              {
+                "id": "surprise",
+                "dwellMs": 94.5,
+                "frameCount": 17,
+                "firstFrameMs": 0.29999999701976776,
+                "firstActivityMs": 0.29999999701976776,
+                "firstEligibleMs": 0.29999999701976776,
+                "firstOwner": "surprise",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 5564.70000000298,
+                  "activity": 0.045594520266356284,
+                  "blur": 10.203248058168022,
+                  "uv": [
+                    0.5019027379703049,
+                    0.49858165402661825
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                },
+                "lastDraw": {
+                  "at": 5653.600000008941,
+                  "activity": 0.5450191732818265,
+                  "blur": 3.118564417517201,
+                  "uv": [
+                    0.5246741583003797,
+                    0.4816072976846521
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                }
+              },
+              {
+                "id": "doubt",
+                "dwellMs": null,
+                "frameCount": 30,
+                "firstFrameMs": 0.7000000029802322,
+                "firstActivityMs": 0.7000000029802322,
+                "firstEligibleMs": 0.7000000029802322,
+                "firstOwner": "doubt",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 5659.5,
+                  "activity": 0.0447988508837116,
+                  "blur": 10.222201161933238,
+                  "uv": [
+                    0.5013924004393036,
+                    0.4982859668515746
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                },
+                "lastDraw": {
+                  "at": 5820,
+                  "activity": 0.7507170461059626,
+                  "blur": 1.1915185739319383,
+                  "uv": [
+                    0.5266690772705083,
+                    0.46717059174267983
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "requestedDwellMs": 120,
+            "summary": [
+              {
+                "id": "joy",
+                "dwellMs": 138.90000000596046,
+                "frameCount": 25,
+                "firstFrameMs": 0.29999999701976776,
+                "firstActivityMs": 0.29999999701976776,
+                "firstEligibleMs": 0.29999999701976776,
+                "firstOwner": "joy",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 6464.70000000298,
+                  "activity": 0.045594520266356284,
+                  "blur": 0.00967601895561913,
+                  "uv": [
+                    0.5020865873566631,
+                    0.49862698982115167
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                },
+                "lastDraw": {
+                  "at": 6597.70000000298,
+                  "activity": 0.6857291232039913,
+                  "blur": 0,
+                  "uv": [
+                    0.5352022788464629,
+                    0.47683629826448115
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                }
+              },
+              {
+                "id": "anger",
+                "dwellMs": 144.29999999701977,
+                "frameCount": 26,
+                "firstFrameMs": 0.29999999701976776,
+                "firstActivityMs": 0.29999999701976776,
+                "firstEligibleMs": 0.29999999701976776,
+                "firstOwner": "anger",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 6603.5,
+                  "activity": 0.045594520266356284,
+                  "blur": 8.60813786876836,
+                  "uv": [
+                    0.5011824301562543,
+                    0.49785129180509285
+                  ],
+                  "size": [
+                    190.08,
+                    237.6
+                  ]
+                },
+                "lastDraw": {
+                  "at": 6742.20000000298,
+                  "activity": 0.7000581530651921,
+                  "blur": 1.3508148725453495,
+                  "uv": [
+                    0.5204447858276426,
+                    0.46284780236818573
+                  ],
+                  "size": [
+                    190.08,
+                    237.6
+                  ]
+                }
+              },
+              {
+                "id": "sorrow",
+                "dwellMs": 139,
+                "frameCount": 25,
+                "firstFrameMs": 0.3999999910593033,
+                "firstActivityMs": 0.3999999910593033,
+                "firstEligibleMs": 0.3999999910593033,
+                "firstOwner": "sorrow",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 6748,
+                  "activity": 0.0447988508837116,
+                  "blur": 9.988813169938659,
+                  "uv": [
+                    0.5018085839681572,
+                    0.4985952674979109
+                  ],
+                  "size": [
+                    194.4,
+                    243
+                  ]
+                },
+                "lastDraw": {
+                  "at": 6881.100000008941,
+                  "activity": 0.6857291232039936,
+                  "blur": 1.6867424376469862,
+                  "uv": [
+                    0.5310572708210477,
+                    0.4758777261566894
+                  ],
+                  "size": [
+                    194.4,
+                    243
+                  ]
+                }
+              },
+              {
+                "id": "delight",
+                "dwellMs": 138.8999999910593,
+                "frameCount": 25,
+                "firstFrameMs": 0.29999999701976776,
+                "firstActivityMs": 0.29999999701976776,
+                "firstEligibleMs": 0.29999999701976776,
+                "firstOwner": "delight",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 6886.9000000059605,
+                  "activity": 0.04559452026634906,
+                  "blur": 10.172005496809536,
+                  "uv": [
+                    0.5013730328642739,
+                    0.4981391165241964
+                  ],
+                  "size": [
+                    192.96,
+                    241.2
+                  ]
+                },
+                "lastDraw": {
+                  "at": 7020,
+                  "activity": 0.6857291232039912,
+                  "blur": 1.719968634000222,
+                  "uv": [
+                    0.5231640844555054,
+                    0.4686055133005399
+                  ],
+                  "size": [
+                    192.96,
+                    241.2
+                  ]
+                }
+              },
+              {
+                "id": "motion",
+                "dwellMs": 139,
+                "frameCount": 25,
+                "firstFrameMs": 0.4000000059604645,
+                "firstActivityMs": 0.4000000059604645,
+                "firstEligibleMs": 0.4000000059604645,
+                "firstOwner": "motion",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 7025.9000000059605,
+                  "activity": 0.0447988508837116,
+                  "blur": 10.216454015122205,
+                  "uv": [
+                    0.5025411759217882,
+                    0.49886891405305056
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                },
+                "lastDraw": {
+                  "at": 7158.9000000059605,
+                  "activity": 0.6854671216545125,
+                  "blur": 1.72748436502785,
+                  "uv": [
+                    0.5436177133413331,
+                    0.4805856091365231
+                  ],
+                  "size": [
+                    198.72000000000003,
+                    248.40000000000003
+                  ]
+                }
+              },
+              {
+                "id": "stillness",
+                "dwellMs": 127.80000001192093,
+                "frameCount": 23,
+                "firstFrameMs": 0.20000000298023224,
+                "firstActivityMs": 0.20000000298023224,
+                "firstEligibleMs": 0.20000000298023224,
+                "firstOwner": "stillness",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 7164.70000000298,
+                  "activity": 0.045594520266356284,
+                  "blur": 10.208580642747924,
+                  "uv": [
+                    0.5012897942254051,
+                    0.4979901197983426
+                  ],
+                  "size": [
+                    185.76,
+                    232.2
+                  ]
+                },
+                "lastDraw": {
+                  "at": 7286.9000000059605,
+                  "activity": 0.6552721452327803,
+                  "blur": 2.001496744258424,
+                  "uv": [
+                    0.5206290457578412,
+                    0.4678538561957457
+                  ],
+                  "size": [
+                    185.76,
+                    232.2
+                  ]
+                }
+              },
+              {
+                "id": "surprise",
+                "dwellMs": 138.79999999701977,
+                "frameCount": 25,
+                "firstFrameMs": 0.29999999701976776,
+                "firstActivityMs": 0.29999999701976776,
+                "firstEligibleMs": 0.29999999701976776,
+                "firstOwner": "surprise",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 7292.600000008941,
+                  "activity": 0.04559452026634906,
+                  "blur": 10.208580642748046,
+                  "uv": [
+                    0.5019027379703046,
+                    0.49858165402661847
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                },
+                "lastDraw": {
+                  "at": 7425.70000000298,
+                  "activity": 0.6857291232039912,
+                  "blur": 1.7261530687036784,
+                  "uv": [
+                    0.5321006031156733,
+                    0.4760714497304404
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                }
+              },
+              {
+                "id": "doubt",
+                "dwellMs": null,
+                "frameCount": 39,
+                "firstFrameMs": 0.3999999910593033,
+                "firstActivityMs": 0.3999999910593033,
+                "firstEligibleMs": 0.3999999910593033,
+                "firstOwner": "doubt",
+                "blockedFrames": 0,
+                "firstDraw": {
+                  "at": 7431.5,
+                  "activity": 0.045594520266356284,
+                  "blur": 10.208580642747924,
+                  "uv": [
+                    0.5014172764040966,
+                    0.498255344749591
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                },
+                "lastDraw": {
+                  "at": 7642.4000000059605,
+                  "activity": 0.8356625483766664,
+                  "blur": 0.611746033501958,
+                  "uv": [
+                    0.5305706630291556,
+                    0.4623677727166453
+                  ],
+                  "size": [
+                    187.20000000000002,
+                    234
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "stableMaterials": true,
+        "stableTextures": true,
+        "textures": 26
+      }
+    },
+    {
+      "name": "inactive cards settle and the background remains static",
+      "result": "passed",
+      "details": {
+        "stoppedFrames": 434,
+        "allLightsZero": true,
+        "staticPaperPixels": true
+      }
+    },
+    {
+      "name": "the first switched draw has real light pixels while deblur is still running",
+      "result": "passed",
+      "details": {
+        "id": "anger",
+        "at": 10349.800000011921,
+        "activity": 0.045594520266356284,
+        "blur": 10.208580642747924,
+        "meanRGBDelta": 0.8602430555555556,
+        "changedPixels": 2300,
+        "samplePixels": 2304,
+        "rgbaError": 0
+      }
+    },
+    {
+      "name": "custom fade, disabled light and reduced motion retain their semantics",
+      "result": "passed",
+      "details": {
+        "customFadeActivityAfter150ms": 0.1880974838256574,
+        "offStopsOpticalField": true,
+        "reducedMotionStopsRAF": true
+      }
+    },
+    {
+      "name": "source stability and browser error audit",
+      "result": "passed",
+      "details": {
+        "errors": 0,
+        "unchangedSources": true
+      }
+    }
+  ],
+  "errors": [],
+  "sourceHashesBefore": {
+    "src/rendering/StampGallery.js": "59db68ae082c2d393bf0a1a0289c06d46b29fbf5c9d61fbd4d1fb0796b46f02c",
+    "src/rendering/StampMaterial.js": "6dfbb592c65423ccd4b037a3b5b59b0176907c7591e3cb84abef080d964d9a33",
+    "src/rendering/DappledLight.js": "ca3cacc5bf18ade1e1448bd374d199b74aac8a3bff7f38e0a064e37698d91563",
+    "src/parameters.js": "2d11c3e128361a2cc41608bd7c910de8d87ff11a9f69caf4487787ad85a5d7f1"
+  },
+  "sourceHashesAfter": {
+    "src/rendering/StampGallery.js": "59db68ae082c2d393bf0a1a0289c06d46b29fbf5c9d61fbd4d1fb0796b46f02c",
+    "src/rendering/StampMaterial.js": "6dfbb592c65423ccd4b037a3b5b59b0176907c7591e3cb84abef080d964d9a33",
+    "src/rendering/DappledLight.js": "ca3cacc5bf18ade1e1448bd374d199b74aac8a3bff7f38e0a064e37698d91563",
+    "src/parameters.js": "2d11c3e128361a2cc41608bd7c910de8d87ff11a9f69caf4487787ad85a5d7f1"
+  },
+  "finishedAt": "2026-10-26T16:18:26.884Z",
+  "result": "passed"
+}

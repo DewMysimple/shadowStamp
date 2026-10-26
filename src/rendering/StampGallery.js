@@ -205,6 +205,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       }
     }
     const active = selected !== null ? selected : hovered ?? (settings.pinLight ? lastHovered : null);
+    background.setActiveStamp(active);
     syncLightPalette();
     raycaster.setFromCamera(pointerNdc, camera);
     let stillMoving = !motion.settled;
@@ -412,7 +413,8 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     },
     getDiagnostics: () => ({
       phase: host.dataset.phase, selected, hovered, progress: motion.value, reducedMotion,
-      lightStates: entries.map((entry) => ({ id: entry.stamp.id, amount: entry.light, uv: entry.material.uniforms.uPointer.value.toArray() })),
+      lightStates: entries.map((entry) => ({ id: entry.stamp.id, amount: entry.light, blur: entry.blur,
+        target: entry.lightTarget.toArray(), uv: entry.material.uniforms.uPointer.value.toArray() })),
       poses: entries.map(entry => ({ id: entry.stamp.id, rotation: entry.mesh.rotation.toArray(), center: entry.mesh.position.toArray(), target: [entry.targetX, entry.targetY], corners: corners.map(([x,y]) => { const p = new THREE.Vector3(x,y,0).applyMatrix4(entry.mesh.matrixWorld).project(camera); return [(p.x + 1) * width / 2, (1 - p.y) * height / 2]; }) })),
       parameters: { ...settings },
       camera: { type: camera.type, distance: camera.position.z, fov: camera.fov },
