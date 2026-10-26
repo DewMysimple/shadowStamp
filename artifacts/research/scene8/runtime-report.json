@@ -1,0 +1,68 @@
+{
+  "source": "E:\\Software Development\\幽兰",
+  "sourceHashesBefore": {
+    "/scene.js": "3083b89b26e7ea493fa9b71d55f88f19fbe4c3f4e807bf51bde62f7d475bcdd2",
+    "/dappledLightShaders.js": "c55f47b285731cbe0a26c68effef8e3dbf5bb1efb0378b7f2e4af70ed2825452",
+    "/sceneCatalog.js": "1c84b79a83d329c6f20ef79df7a50fdeefff89168b3a43c267cefdad1b30abf0",
+    "/three.module.js": "bbf5ed13fe4373f5bd38b14ea8e62e9f157327da5638edc6d3863e08b167c9c7",
+    "/three.core.js": "3718df126d69c125362a03340913204470d8c50238605150e57f808840fb7759"
+  },
+  "original": {
+    "parameters": {
+      "animate": true,
+      "speed": 1,
+      "followPointer": true,
+      "responseTime": 0.16,
+      "radius": 0.354,
+      "density": 26.7,
+      "angle": 44,
+      "stretch": 0.84,
+      "scatter": 1,
+      "wave": 0.118,
+      "softness": 1,
+      "contrast": 0.26,
+      "grain": 0.65,
+      "background": "#ffaaa5",
+      "shadow": "#4a0035",
+      "light": "#ffd198"
+    },
+    "memory": {
+      "geometries": 1,
+      "textures": 2
+    },
+    "programs": 3,
+    "renderCount": 33,
+    "canvas": 1
+  },
+  "pointer": [
+    0.2361111111111111,
+    0.6666666666666667
+  ],
+  "pausedStopsRendering": true,
+  "reducedMotionStopsRendering": true,
+  "mobile": {
+    "aspect": 0.46208530805687204,
+    "width": 390,
+    "height": 844
+  },
+  "cleanup": {
+    "before": {
+      "geometries": 1,
+      "textures": 2
+    },
+    "after": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "sceneChildren": 0
+  },
+  "consoleErrors": [],
+  "result": "passed",
+  "sourceHashesAfter": {
+    "/scene.js": "3083b89b26e7ea493fa9b71d55f88f19fbe4c3f4e807bf51bde62f7d475bcdd2",
+    "/dappledLightShaders.js": "c55f47b285731cbe0a26c68effef8e3dbf5bb1efb0378b7f2e4af70ed2825452",
+    "/sceneCatalog.js": "1c84b79a83d329c6f20ef79df7a50fdeefff89168b3a43c267cefdad1b30abf0",
+    "/three.module.js": "bbf5ed13fe4373f5bd38b14ea8e62e9f157327da5638edc6d3863e08b167c9c7",
+    "/three.core.js": "3718df126d69c125362a03340913204470d8c50238605150e57f808840fb7759"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "matching": [
+    {
+      "tag": "CANVAS",
+      "id": "",
+      "cls": "w-full h-full",
+      "rect": {
+        "x": 0,
+        "y": 80,
+        "w": 1440,
+        "h": 900
+      },
+      "text": "\n        ",
+      "style": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "filter": "none",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "role",
+          "img"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ],
+        [
+          "__aria-label",
+          "A Webgl animation showing bokeh blur shapes on purple gradient background"
+        ],
+        [
+          "class",
+          "w-full h-full"
+        ],
+        [
+          "width",
+          "720"
+        ],
+        [
+          "height",
+          "450"
+        ],
+        [
+          "style",
+          "transform: translateZ(0px);"
+        ]
+      ]
+    }
+  ],
+  "css": [],
+  "resources": [
+    {
+      "name": "https://microsoft.ai/wp-content/plugins/microsoft-uhf/assets/microsoft-cookie-list.js",
+      "type": "script"
+    },
+    {
+      "name": "https://microsoft.ai/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "type": "script"
+    },
+    {
+      "name": "https://microsoft.ai/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "type": "script"
+    },
+    {
+      "name": "https://uhf.microsoft.com/statics/20261021.14.40/js/entry.js",
+      "type": "script"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/themes/wp-base-theme/dist/assets/index-xB6vPeVl.css",
+      "type": "link"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/plugins/microsoft-uhf/assets/microsoft-uhf.js?ver=1.0.1",
+      "type": "script"
+    },
+    {
+      "name": "https://unpkg.com/yett",
+      "type": "script"
+    },
+    {
+      "name": "https://uhf.microsoft.com/statics/20261021.14.40/css/style-PF2pqjN1.css",
+      "type": "link"
+    },
+    {
+      "name": "https://microsoft.ai/wp-includes/css/dist/block-library/common.min.css?ver=7.1.3",
+      "type": "link"
+    },
+    {
+      "name": "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png",
+      "type": "img"
+    },
+    {
+      "name": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
+      "type": "script"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/03/Mustafa-Signature-Fill-1-300x254-1.png",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/plugins/microsoft-uhf/assets/microsoft-cookie-updates.js?ver=1.0.1",
+      "type": "script"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/plugins/microsoft-uhf-cookies//scripts.js?ver=43",
+      "type": "script"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/themes/wp-base-theme/dist/assets/index-Cqrq5vC8.js",
+      "type": "script"
+    },
+    {
+      "name": "https://uhf.microsoft.com/statics/20261021.14.40/js/index-BoAUqyYg.js",
+      "type": "script"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/themes/wp-base-theme/dist/assets/RedHatMono-Medium-BxJECwMl.woff2",
+      "type": "css"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/themes/wp-base-theme/dist/assets/BradfordLLWeb-Regular-C6SjiFc8.woff2",
+      "type": "css"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/themes/wp-base-theme/dist/assets/RedHatMono-Regular-CEF4ave-.woff2",
+      "type": "css"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/themes/wp-base-theme/dist/assets/BradfordLLWeb-Italic-CA7el69X.woff2",
+      "type": "css"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/10/quotation_marks_swarm_5664-1440x871.webp",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/10/grain_clouds_sunset-1-1440x878.webp",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/10/health_v5_logo_small-1440x807.webp",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/09/Humanist_AI_v1_BLUE-1440x807.webp",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/05/travistrautt_-6849-1.png",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/05/travistrautt_-7066-1.png",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/05/000162720008-Large-7.png",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/05/travistrautt_-8090-2.png",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/05/Group-2117134009.png",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/05/Travistrautt_MAI_MIAMI-8680-2.png",
+      "type": "img"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/uploads/2026/05/MAI_2025_Portraits_Mustafa_Suleyman-65Fullsize-6-1.png",
+      "type": "img"
+    },
+    {
+      "name": "https://uhf-exp-fd-gbcrdgggfbggh0g3.b02.azurefd.net/api/v1/tas",
+      "type": "fetch"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/themes/wp-base-theme/dist/assets/BlockGL-DT3DcmA6.js",
+      "type": "script"
+    },
+    {
+      "name": "https://microsoft.ai/wp-content/themes/wp-base-theme/dist/assets/LDR_RG01_0-Cx9G0smZ.png",
+      "type": "img"
+    }
+  ]
+}

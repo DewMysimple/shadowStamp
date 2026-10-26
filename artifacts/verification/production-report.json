@@ -1,0 +1,11 @@
+{
+  "result": "passed",
+  "testedAt": "2026-10-26T05:51:11.151Z",
+  "httpStatus": 200,
+  "productionBundle": true,
+  "desktopFocusEscape": true,
+  "mobileFocusReturn": true,
+  "noBackgroundLightStudyUI": true,
+  "developmentDiagnosticsExcluded": true,
+  "consoleAndPageErrors": []
+}

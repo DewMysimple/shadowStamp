@@ -1,0 +1,293 @@
+{
+  "base": "http://127.0.0.1:4173/",
+  "scope": "Scene 8 light inside the hovered stamp; static paper background",
+  "startedAt": "2026-10-26T06:24:51.136Z",
+  "checks": [
+    {
+      "name": "idle gallery has static paper and no optical work",
+      "result": "passed",
+      "details": {
+        "field": {
+          "active": false,
+          "time": 3,
+          "fieldUpdates": 0,
+          "pointer": [
+            0.5,
+            0.5
+          ],
+          "target": [
+            0.5,
+            0.5
+          ],
+          "aspect": 0.786,
+          "width": 384,
+          "height": 480,
+          "texture": "4f849aed-f518-4392-947d-b1cd3acfeabf",
+          "enabled": true,
+          "animate": true,
+          "followPointer": true,
+          "parameters": {
+            "enabled": true,
+            "intensity": 0.55,
+            "speed": 0.35,
+            "color": "#908470",
+            "light": "#fff1cf",
+            "background": "#fbf7f1",
+            "focusColor": "#22201c",
+            "softness": 1.5,
+            "coverage": 0.708,
+            "animate": true,
+            "density": 26.7,
+            "angle": 44,
+            "stretch": 0.84,
+            "scatter": 1,
+            "wave": 0.118,
+            "grain": 0.65,
+            "contrast": 0.18,
+            "study": 0,
+            "followPointer": true,
+            "responseTime": 0.16,
+            "pointerInfluence": 0.85,
+            "stampRatio": 0.786
+          }
+        },
+        "rafStopped": true
+      }
+    },
+    {
+      "name": "hover animates the stamp while the background pixels remain unchanged",
+      "result": "passed",
+      "details": {
+        "stampPixelsChanged": true,
+        "backgroundPixelsIdentical": true,
+        "paperSHA256": "92103ebcc5d0afc5e6624e3ffc257dd8b4a347a8a829c811039a7ed6bed737ad",
+        "fieldBefore": {
+          "active": true,
+          "time": 3.4122299999999917,
+          "fieldUpdates": 14,
+          "pointer": [
+            0.5046403855694845,
+            0.4871767071841176
+          ],
+          "target": [
+            0.5046494874822935,
+            0.48715205200756434
+          ],
+          "aspect": 0.786,
+          "width": 384,
+          "height": 480,
+          "texture": "4f849aed-f518-4392-947d-b1cd3acfeabf",
+          "enabled": true,
+          "animate": true,
+          "followPointer": true,
+          "parameters": {
+            "enabled": true,
+            "intensity": 0.55,
+            "speed": 0.35,
+            "color": "#908470",
+            "light": "#fff1cf",
+            "background": "#fbf7f1",
+            "focusColor": "#22201c",
+            "softness": 1.5,
+            "coverage": 0.708,
+            "animate": true,
+            "density": 26.7,
+            "angle": 44,
+            "stretch": 0.84,
+            "scatter": 1,
+            "wave": 0.118,
+            "grain": 0.65,
+            "contrast": 0.18,
+            "study": 0,
+            "followPointer": true,
+            "responseTime": 0.16,
+            "pointerInfluence": 0.85,
+            "stampRatio": 0.786
+          }
+        },
+        "fieldAfter": {
+          "active": true,
+          "time": 4.077159999999984,
+          "fieldUpdates": 35,
+          "pointer": [
+            0.5046403855694845,
+            0.4871767071841176
+          ],
+          "target": [
+            0.5046495582436841,
+            0.48715205414681545
+          ],
+          "aspect": 0.786,
+          "width": 384,
+          "height": 480,
+          "texture": "4f849aed-f518-4392-947d-b1cd3acfeabf",
+          "enabled": true,
+          "animate": true,
+          "followPointer": true,
+          "parameters": {
+            "enabled": true,
+            "intensity": 0.55,
+            "speed": 0.35,
+            "color": "#908470",
+            "light": "#fff1cf",
+            "background": "#fbf7f1",
+            "focusColor": "#22201c",
+            "softness": 1.5,
+            "coverage": 0.708,
+            "animate": true,
+            "density": 26.7,
+            "angle": 44,
+            "stretch": 0.84,
+            "scatter": 1,
+            "wave": 0.118,
+            "grain": 0.65,
+            "contrast": 0.18,
+            "study": 0,
+            "followPointer": true,
+            "responseTime": 0.16,
+            "pointerInfluence": 0.85,
+            "stampRatio": 0.786
+          }
+        }
+      }
+    },
+    {
+      "name": "local pointer UV independently changes optical texture with uTime frozen",
+      "result": "passed",
+      "details": {
+        "frozenTime": 4.151149999999983,
+        "localPointerBefore": [
+          0.5000363401340224,
+          0.5002219696182394
+        ],
+        "localPointerAfter": [
+          0.5904780900398275,
+          0.683990240257301
+        ],
+        "textureHashBefore": "9d58e37f",
+        "textureHashAfter": "b4020edf"
+      }
+    },
+    {
+      "name": "expensive optical updates are capped at 24fps and freeze on pointer exit",
+      "result": "passed",
+      "details": {
+        "observedOpticalFps": 23.092783505154642,
+        "cap": 24,
+        "idleTextureStable": true,
+        "idleTimeStable": true,
+        "note": "Software-rendered observed rate is not a hardware performance guarantee."
+      }
+    },
+    {
+      "name": "ten hover round trips reuse renderer, material and texture UUIDs",
+      "result": "passed",
+      "details": {
+        "cycles": 10,
+        "renderer": {
+          "programs": 5,
+          "geometries": 2,
+          "textures": 14
+        },
+        "lightTextureStable": true,
+        "artTextureUUIDsStable": true,
+        "materialUUIDsStable": true
+      }
+    },
+    {
+      "name": "mobile touch focus and local touch movement illuminate the stamp",
+      "result": "passed",
+      "details": {
+        "touchMoves": 13,
+        "localUVBefore": [
+          0.5030223113778378,
+          0.4976230467008118
+        ],
+        "localUVAfter": [
+          0.647397932718996,
+          0.6391317075238903
+        ],
+        "opticalPixelsChanged": true
+      }
+    },
+    {
+      "name": "reduced motion hover remains static and stops RAF",
+      "result": "passed",
+      "details": {
+        "pixelsStatic": true,
+        "rafStopped": true,
+        "field": {
+          "active": true,
+          "time": 3,
+          "fieldUpdates": 1,
+          "pointer": [
+            0.5,
+            0.5
+          ],
+          "target": [
+            0.4999446073843243,
+            0.5000240713991709
+          ],
+          "aspect": 0.786,
+          "width": 384,
+          "height": 480,
+          "texture": "58ef80ab-6707-44f8-a637-3c99f71830e3",
+          "enabled": true,
+          "animate": true,
+          "followPointer": true,
+          "parameters": {
+            "enabled": true,
+            "intensity": 0.55,
+            "speed": 0.35,
+            "color": "#908470",
+            "light": "#fff1cf",
+            "background": "#fbf7f1",
+            "focusColor": "#22201c",
+            "softness": 1.5,
+            "coverage": 0.708,
+            "animate": true,
+            "density": 26.7,
+            "angle": 44,
+            "stretch": 0.84,
+            "scatter": 1,
+            "wave": 0.118,
+            "grain": 0.65,
+            "contrast": 0.18,
+            "study": 0,
+            "followPointer": true,
+            "responseTime": 0.16,
+            "pointerInfluence": 0.85,
+            "stampRatio": 0.786
+          }
+        }
+      }
+    },
+    {
+      "name": "five-second video shows actual stamp hover light and local pointer motion",
+      "result": "passed",
+      "details": {
+        "file": "light-motion.webm",
+        "width": 720,
+        "height": 450,
+        "durationSeconds": 5,
+        "bytes": 70588,
+        "content": "Real browser stamp hover, time drift and pointer-guided local light; static paper background."
+      }
+    },
+    {
+      "name": "console and page errors",
+      "result": "passed",
+      "details": {
+        "errors": 0
+      }
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "final-gallery.png",
+    "final-hover.png",
+    "final-mobile.png"
+  ],
+  "finishedAt": "2026-10-26T06:25:25.899Z",
+  "result": "passed"
+}

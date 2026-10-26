@@ -1,0 +1,199 @@
+{
+  "method": "Projected paper bounding-box height = 480 px in every panel; uniform resize only, centered by projected bounds. Gray padding shows area outside source recording. Original and previous use different mouse paths and times; no pixel-equivalence score.",
+  "inputs": [
+    {
+      "row": 0,
+      "column": 0,
+      "path": "C:\\Users\\Administrator\\Desktop\\1.mp4",
+      "bytes": 383387,
+      "sha256": "d323032107fc69cece2da02ae26d975301840ca434da0be81d7ad1959ef50cfa",
+      "source_size": [
+        446,
+        534
+      ],
+      "paper_bounds": [
+        38,
+        72,
+        411,
+        488
+      ],
+      "paper_bounds_method": "Paper bounds manually estimated, +/- 5 px",
+      "uniform_scale": 1.1538461538461537,
+      "caption": "1.mp4 / f070 / 2.917 s"
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "path": "C:\\Users\\Administrator\\Desktop\\2.mp4",
+      "bytes": 160924,
+      "sha256": "3d4d9ba7451b4b18912c7fc85210c073155c6d4a1565ba74eab782286df8272b",
+      "source_size": [
+        430,
+        514
+      ],
+      "paper_bounds": [
+        27,
+        50,
+        409,
+        484
+      ],
+      "paper_bounds_method": "Paper bounds manually estimated, +/- 5 px",
+      "uniform_scale": 1.1059907834101383,
+      "caption": "2.mp4 / f040 / 1.667 s"
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "path": "C:\\Users\\Administrator\\Desktop\\炫技3\\artifacts\\controls-research\\final-gallery-hover.png",
+      "bytes": 517730,
+      "sha256": "4ad67edea4ff31c02ce406c0cb2e45af7dcf78e740a50fadf79f9c08f3c8e8f6",
+      "source_size": [
+        1440,
+        900
+      ],
+      "paper_bounds": [
+        727.4789212131182,
+        326.57688991426284,
+        987.11004045432,
+        625.7633468414368
+      ],
+      "paper_bounds_method": "Paper bounds from current projected GPU corners",
+      "uniform_scale": 1.6043506946467114,
+      "caption": "New / actual hover / light time paused"
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "path": "C:\\Users\\Administrator\\Desktop\\3.mp4",
+      "bytes": 2580034,
+      "sha256": "bec012180dd9a4ecc1961a1269d1a1e4497374cf897e5fac073d7fec259f7cf0",
+      "source_size": [
+        898,
+        1022
+      ],
+      "paper_bounds": [
+        107.461,
+        94.226,
+        761.342,
+        911.857
+      ],
+      "paper_bounds_method": "Paper bounds from fitted outer edges",
+      "uniform_scale": 0.5870618897766842,
+      "caption": "3.mp4 / f048 / 2.000 s"
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "path": "C:\\Users\\Administrator\\Desktop\\4.mp4",
+      "bytes": 846471,
+      "sha256": "29f8497537d2880c8aa4a530ab8f1f203fd9f2e6640f2e5126a47ecf2a9c94a6",
+      "source_size": [
+        902,
+        1036
+      ],
+      "paper_bounds": [
+        190.0,
+        172.0,
+        772.0,
+        913.0
+      ],
+      "paper_bounds_method": "Paper bounds from fitted outer edges",
+      "uniform_scale": 0.6477732793522267,
+      "caption": "4.mp4 / f048 / 2.000 s"
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "path": "C:\\Users\\Administrator\\Desktop\\炫技3\\artifacts\\controls-research\\final-focused.png",
+      "bytes": 377048,
+      "sha256": "c5d6bbadab72a2076fb63b611b7c79045b914080890d829c54c3e4c80db81489",
+      "source_size": [
+        1440,
+        900
+      ],
+      "paper_bounds": [
+        485.2600735587549,
+        196.20324156187309,
+        889.6755505275019,
+        708.3747967205023
+      ],
+      "paper_bounds_method": "Paper bounds from current projected GPU corners",
+      "uniform_scale": 0.9371859783414465,
+      "caption": "New / pointer upper right / light paused"
+    }
+  ],
+  "current_poses": {
+    "hover": {
+      "id": "craft",
+      "rotation": [
+        -0.049292418200703826,
+        0.02493012599017608,
+        -0.2792526803190927,
+        "ZXY"
+      ],
+      "center": [
+        138.24,
+        -25.700000000000045,
+        0
+      ],
+      "target": [
+        0.23806516699441532,
+        -0.4707079208156954
+      ],
+      "corners": [
+        [
+          727.4789212131182,
+          570.8599228483305
+        ],
+        [
+          797.0880224904573,
+          326.57688991426284
+        ],
+        [
+          919.7775471030493,
+          625.7633468414368
+        ],
+        [
+          987.11004045432,
+          381.9162592962289
+        ]
+      ]
+    },
+    "focus": {
+      "id": "craft",
+      "rotation": [
+        -0.06797553550727806,
+        0.06570982242179889,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        -30.24000000000001,
+        0,
+        0
+      ],
+      "target": [
+        0.6274825828871969,
+        -0.6491185491181171
+      ],
+      "corners": [
+        [
+          485.2600735587549,
+          708.3747967205023
+        ],
+        [
+          491.0340361709241,
+          196.20324156187309
+        ],
+        [
+          889.6755505275019,
+          705.3160025375104
+        ],
+        [
+          885.5783932787082,
+          202.5938593818619
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,5456 @@
+{
+  "baseURL": "http://127.0.0.1:4173/",
+  "startedAt": "2026-10-26T06:23:34.106Z",
+  "browser": "Installed Chrome, headless, real WebGL",
+  "checks": [
+    {
+      "name": "desktop: initial, hover, midpoint, focus and return screenshots",
+      "result": "passed",
+      "elapsedMs": 2696,
+      "details": {
+        "canvasCount": 1,
+        "midpoint": 0.42596364380085383,
+        "label": "NEW CRAFT SOCIETY",
+        "backgroundExit": true
+      }
+    },
+    {
+      "name": "desktop: all six stamps select through exposed pointer targets",
+      "result": "passed",
+      "elapsedMs": 7397,
+      "details": [
+        {
+          "id": "specimen",
+          "point": {
+            "x": 617.066047668457,
+            "y": 663.3027801513672,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "kensho",
+          "point": {
+            "x": 714.2381591796875,
+            "y": 540.0004119873047,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "craft",
+          "point": {
+            "x": 858.2396545410156,
+            "y": 479.6978454589844,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "mint",
+          "point": {
+            "x": 1351.0514526367188,
+            "y": 544.5000762939453,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "nocturne",
+          "point": {
+            "x": 975.6843795776367,
+            "y": 870.2664680480957,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "gaohan",
+          "point": {
+            "x": 1095.8364562988281,
+            "y": 809.5605392456055,
+            "clearance": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "desktop: keyboard names, Enter, focus trap and Escape restoration",
+      "result": "passed",
+      "elapsedMs": 1760,
+      "details": {
+        "reachable": [
+          {
+            "id": "specimen",
+            "name": "View SPECIMEN, stamp 03 of 6"
+          },
+          {
+            "id": "kensho",
+            "name": "View KENSHO TECHNOLOGIES, stamp 02 of 6"
+          },
+          {
+            "id": "craft",
+            "name": "View NEW CRAFT SOCIETY, stamp 01 of 6"
+          },
+          {
+            "id": "mint",
+            "name": "View EVERGREEN STUDIO, stamp 04 of 6"
+          },
+          {
+            "id": "nocturne",
+            "name": "View NOCTURNE, stamp 06 of 6"
+          },
+          {
+            "id": "gaohan",
+            "name": "View GAO HAN — DESIGN HERO, stamp 05 of 6"
+          }
+        ],
+        "otherControls": [],
+        "focusedTabCycle": true,
+        "escapeRestoresTrigger": true
+      }
+    },
+    {
+      "name": "desktop: Escape reverses an unfinished transition continuously",
+      "result": "passed",
+      "elapsedMs": 206,
+      "details": {
+        "before": 0.1056124191665978,
+        "after": 0.07880322873233729,
+        "final": 0
+      }
+    },
+    {
+      "name": "desktop: choosing another stamp while returning queues a new focus",
+      "result": "passed",
+      "elapsedMs": 1505,
+      "details": {
+        "selected": "mint"
+      }
+    },
+    {
+      "name": "desktop: ten repeated cycles preserve texture/material UUIDs and GPU counts",
+      "result": "passed",
+      "elapsedMs": 11867,
+      "details": {
+        "cycles": 10,
+        "renderer": {
+          "programs": 5,
+          "geometries": 2,
+          "textures": 14
+        },
+        "materialsStable": true,
+        "texturesStable": true
+      }
+    },
+    {
+      "name": "resize: focused stamp keeps intended center across desktop and mobile",
+      "result": "passed",
+      "elapsedMs": 2428,
+      "details": {
+        "centers": [
+          {
+            "size": {
+              "width": 1024,
+              "height": 768
+            },
+            "center": {
+              "x": 490.49505615234375,
+              "y": 383.99340057373047
+            },
+            "expectedX": 490.496,
+            "expectedY": 384
+          },
+          {
+            "size": {
+              "width": 390,
+              "height": 844
+            },
+            "center": {
+              "x": 194.9984245300293,
+              "y": 421.99903106689453
+            },
+            "expectedX": 195,
+            "expectedY": 422
+          },
+          {
+            "size": {
+              "width": 1440,
+              "height": 900
+            },
+            "center": {
+              "x": 689.7554016113281,
+              "y": 449.9999694824219
+            },
+            "expectedX": 689.76,
+            "expectedY": 450
+          }
+        ],
+        "note": "Neutral pose: desktop follows video at 47.9% viewport width; mobile uses 50%. Tilt corners verified separately."
+      }
+    },
+    {
+      "name": "mobile: initial, synthetic hover, touch midpoint, focus and return screenshots",
+      "result": "passed",
+      "elapsedMs": 1935,
+      "details": {
+        "genuineTouchEntryAndBackgroundExit": true,
+        "overflow": {
+          "innerWidth": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        }
+      }
+    },
+    {
+      "name": "mobile: all six stamps are reachable with real touch",
+      "result": "passed",
+      "elapsedMs": 6576,
+      "details": [
+        {
+          "id": "specimen",
+          "point": {
+            "x": 81.35817813873291,
+            "y": 437.14879035949707,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "kensho",
+          "point": {
+            "x": 122.34654235839844,
+            "y": 338.42162895202637,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "craft",
+          "point": {
+            "x": 224.25115966796875,
+            "y": 299.61536407470703,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "mint",
+          "point": {
+            "x": 308.09703826904297,
+            "y": 467.5770263671875,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "nocturne",
+          "point": {
+            "x": 158.9843807220459,
+            "y": 621.1830139160156,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "gaohan",
+          "point": {
+            "x": 245.69847106933594,
+            "y": 602.6163635253906,
+            "clearance": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "lifecycle: explicit dispose is idempotent and releases uploaded GPU assets",
+      "result": "passed",
+      "elapsedMs": 937,
+      "details": {
+        "before": {
+          "phase": "idle",
+          "selected": null,
+          "hovered": null,
+          "progress": 0,
+          "reducedMotion": false,
+          "lightStates": [
+            {
+              "id": "specimen",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "kensho",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "craft",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "mint",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "nocturne",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "gaohan",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            }
+          ],
+          "poses": [
+            {
+              "id": "specimen",
+              "rotation": [
+                0,
+                0,
+                0.7330382858376184,
+                "ZXY"
+              ],
+              "center": [
+                -63.360000000000014,
+                -213.29999999999995,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  664.0375704364999,
+                  823.2350936483623
+                ],
+                [
+                  498.35430419856993,
+                  639.2251846667401
+                ],
+                [
+                  814.9256958014302,
+                  687.3748153332597
+                ],
+                [
+                  649.2424295635001,
+                  503.3649063516376
+                ]
+              ]
+            },
+            {
+              "id": "kensho",
+              "rotation": [
+                0,
+                0,
+                0.3141592653589793,
+                "ZXY"
+              ],
+              "center": [
+                -5.759999999999991,
+                -90,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  656.3190117974277,
+                  685.6032113402
+                ],
+                [
+                  581.7975159009343,
+                  456.24963025388934
+                ],
+                [
+                  846.6824840990656,
+                  623.7503697461107
+                ],
+                [
+                  772.1609882025723,
+                  394.3967886597998
+                ]
+              ]
+            },
+            {
+              "id": "craft",
+              "rotation": [
+                0,
+                0,
+                -0.2792526803190927,
+                "ZXY"
+              ],
+              "center": [
+                138.24,
+                -29.700000000000045,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  733.5527134856461,
+                  569.7353742807323
+                ],
+                [
+                  800.2106633503982,
+                  337.2714771255726
+                ],
+                [
+                  916.2693366496017,
+                  622.1285228744275
+                ],
+                [
+                  982.9272865143539,
+                  389.6646257192677
+                ]
+              ]
+            },
+            {
+              "id": "mint",
+              "rotation": [
+                0,
+                0,
+                0.4188790204786391,
+                "ZXY"
+              ],
+              "center": [
+                626.4000000000001,
+                -94.5,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  1306.4385041493802,
+                  697.2606574003296
+                ],
+                [
+                  1206.1372479668878,
+                  471.98034754566424
+                ],
+                [
+                  1486.6627520331124,
+                  617.0196524543358
+                ],
+                [
+                  1386.36149585062,
+                  391.73934259967035
+                ]
+              ]
+            },
+            {
+              "id": "nocturne",
+              "rotation": [
+                0,
+                0,
+                -0.08726646259971647,
+                "ZXY"
+              ],
+              "center": [
+                283.67999999999995,
+                -441,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  891.7039706573994,
+                  1014.3415768779411
+                ],
+                [
+                  914.8231782073046,
+                  750.0878253841307
+                ],
+                [
+                  1092.5368217926953,
+                  1031.912174615869
+                ],
+                [
+                  1115.6560293426005,
+                  767.6584231220587
+                ]
+              ]
+            },
+            {
+              "id": "gaohan",
+              "rotation": [
+                0,
+                0,
+                0.2792526803190927,
+                "ZXY"
+              ],
+              "center": [
+                375.8399999999999,
+                -360,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  1034.1191626831994,
+                  957.839624732049
+                ],
+                [
+                  965.1546962577863,
+                  717.3319484082815
+                ],
+                [
+                  1226.5253037422135,
+                  902.6680515917184
+                ],
+                [
+                  1157.5608373168002,
+                  662.160375267951
+                ]
+              ]
+            }
+          ],
+          "parameters": {
+            "tiltEnabled": true,
+            "hoverTilt": 6,
+            "focusTilt": 6,
+            "tiltResponse": 0.085,
+            "hoverPerspective": 1200,
+            "hoverScale": 1.05,
+            "hoverLift": 4,
+            "hoverResponse": 0.085,
+            "blur": 11,
+            "blurResponse": 0.075,
+            "focusTrackOutside": false,
+            "resetTiltOnLeave": false,
+            "perspective": 1400,
+            "focusShift": 0,
+            "focusRoll": 0,
+            "enterDuration": 0.46,
+            "returnDuration": 0.56,
+            "focusHeight": 0.565,
+            "focusWidth": 0.295,
+            "focusX": 0.479,
+            "focusY": 0.5,
+            "backgroundColor": "#fbf7f1",
+            "focusBackground": "#22201c",
+            "lightEnabled": true,
+            "pinLight": false,
+            "lightAnimation": true,
+            "lightFollowPointer": true,
+            "lightIntensity": 0.55,
+            "lightContrast": 0.18,
+            "lightSpeed": 0.35,
+            "surfaceRelief": 0.22,
+            "surfaceShine": 0.25,
+            "pointerInfluence": 0.85,
+            "lightResponse": 0.16,
+            "lightFadeIn": 0.12,
+            "lightFadeOut": 0.16,
+            "lightColor": "#fff1cf",
+            "shadowColor": "#908470",
+            "lightCoverage": 0.708,
+            "lightDensity": 26.7,
+            "lightAngle": 44,
+            "lightStretch": 0.84,
+            "lightScatter": 1,
+            "lightWarp": 0.118,
+            "lightSoftness": 1.5,
+            "lightGrain": 0.65
+          },
+          "camera": {
+            "type": "PerspectiveCamera",
+            "distance": 1200,
+            "fov": 41.112090439166934
+          },
+          "renderer": {
+            "programs": 3,
+            "geometries": 2,
+            "textures": 12
+          },
+          "materials": [
+            "c0294b26-09b5-44b7-9ec4-ef71913e4551",
+            "b25d4b7c-77dc-49ec-8d65-fe2d3921b55d",
+            "1ad95f7f-0be8-43e6-8852-1315fa987738",
+            "f521a980-5c81-454a-b154-2ecbe99fa572",
+            "ca30a613-a788-409b-aef0-732185e896f1",
+            "99d7e457-e20b-4b58-a874-2bf589fac28d"
+          ],
+          "textures": [
+            "968d7408-827a-4911-9394-1f1e73a246cd",
+            "7bcfa0ce-53f5-45d8-b46f-bfdbc6a72f99",
+            "aae0405d-07a0-4dcb-8840-f3aa76c3cfeb",
+            "a2cbe240-2ac8-42fd-bbfc-a6eaaad09c13",
+            "9ac662ca-aceb-4f76-85a9-5d2e369460de",
+            "9a6a9e2a-503f-4092-a537-afd561f16e85"
+          ],
+          "background": {
+            "active": false,
+            "time": 3,
+            "fieldUpdates": 0,
+            "pointer": [
+              0.5,
+              0.5
+            ],
+            "target": [
+              0.5,
+              0.5
+            ],
+            "aspect": 0.786,
+            "width": 384,
+            "height": 480,
+            "texture": "5d15c3ae-927a-4d92-af3b-721079c7cb53",
+            "enabled": true,
+            "animate": true,
+            "followPointer": true,
+            "parameters": {
+              "enabled": true,
+              "intensity": 0.55,
+              "speed": 0.35,
+              "color": "#908470",
+              "light": "#fff1cf",
+              "background": "#fbf7f1",
+              "focusColor": "#22201c",
+              "softness": 1.5,
+              "coverage": 0.708,
+              "animate": true,
+              "density": 26.7,
+              "angle": 44,
+              "stretch": 0.84,
+              "scatter": 1,
+              "wave": 0.118,
+              "grain": 0.65,
+              "contrast": 0.18,
+              "study": 0,
+              "followPointer": true,
+              "responseTime": 0.16,
+              "pointerInfluence": 0.85,
+              "stampRatio": 0.786
+            }
+          }
+        },
+        "after": {
+          "phase": "idle",
+          "selected": null,
+          "hovered": null,
+          "progress": 0,
+          "reducedMotion": false,
+          "lightStates": [
+            {
+              "id": "specimen",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "kensho",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "craft",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "mint",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "nocturne",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "gaohan",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            }
+          ],
+          "poses": [
+            {
+              "id": "specimen",
+              "rotation": [
+                0,
+                0,
+                0.7330382858376184,
+                "ZXY"
+              ],
+              "center": [
+                -63.360000000000014,
+                -213.29999999999995,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  664.0375704364999,
+                  823.2350936483623
+                ],
+                [
+                  498.35430419856993,
+                  639.2251846667401
+                ],
+                [
+                  814.9256958014302,
+                  687.3748153332597
+                ],
+                [
+                  649.2424295635001,
+                  503.3649063516376
+                ]
+              ]
+            },
+            {
+              "id": "kensho",
+              "rotation": [
+                0,
+                0,
+                0.3141592653589793,
+                "ZXY"
+              ],
+              "center": [
+                -5.759999999999991,
+                -90,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  656.3190117974277,
+                  685.6032113402
+                ],
+                [
+                  581.7975159009343,
+                  456.24963025388934
+                ],
+                [
+                  846.6824840990656,
+                  623.7503697461107
+                ],
+                [
+                  772.1609882025723,
+                  394.3967886597998
+                ]
+              ]
+            },
+            {
+              "id": "craft",
+              "rotation": [
+                0,
+                0,
+                -0.2792526803190927,
+                "ZXY"
+              ],
+              "center": [
+                138.24,
+                -29.700000000000045,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  733.5527134856461,
+                  569.7353742807323
+                ],
+                [
+                  800.2106633503982,
+                  337.2714771255726
+                ],
+                [
+                  916.2693366496017,
+                  622.1285228744275
+                ],
+                [
+                  982.9272865143539,
+                  389.6646257192677
+                ]
+              ]
+            },
+            {
+              "id": "mint",
+              "rotation": [
+                0,
+                0,
+                0.4188790204786391,
+                "ZXY"
+              ],
+              "center": [
+                626.4000000000001,
+                -94.5,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  1306.4385041493802,
+                  697.2606574003296
+                ],
+                [
+                  1206.1372479668878,
+                  471.98034754566424
+                ],
+                [
+                  1486.6627520331124,
+                  617.0196524543358
+                ],
+                [
+                  1386.36149585062,
+                  391.73934259967035
+                ]
+              ]
+            },
+            {
+              "id": "nocturne",
+              "rotation": [
+                0,
+                0,
+                -0.08726646259971647,
+                "ZXY"
+              ],
+              "center": [
+                283.67999999999995,
+                -441,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  891.7039706573994,
+                  1014.3415768779411
+                ],
+                [
+                  914.8231782073046,
+                  750.0878253841307
+                ],
+                [
+                  1092.5368217926953,
+                  1031.912174615869
+                ],
+                [
+                  1115.6560293426005,
+                  767.6584231220587
+                ]
+              ]
+            },
+            {
+              "id": "gaohan",
+              "rotation": [
+                0,
+                0,
+                0.2792526803190927,
+                "ZXY"
+              ],
+              "center": [
+                375.8399999999999,
+                -360,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  1034.1191626831994,
+                  957.839624732049
+                ],
+                [
+                  965.1546962577863,
+                  717.3319484082815
+                ],
+                [
+                  1226.5253037422135,
+                  902.6680515917184
+                ],
+                [
+                  1157.5608373168002,
+                  662.160375267951
+                ]
+              ]
+            }
+          ],
+          "parameters": {
+            "tiltEnabled": true,
+            "hoverTilt": 6,
+            "focusTilt": 6,
+            "tiltResponse": 0.085,
+            "hoverPerspective": 1200,
+            "hoverScale": 1.05,
+            "hoverLift": 4,
+            "hoverResponse": 0.085,
+            "blur": 11,
+            "blurResponse": 0.075,
+            "focusTrackOutside": false,
+            "resetTiltOnLeave": false,
+            "perspective": 1400,
+            "focusShift": 0,
+            "focusRoll": 0,
+            "enterDuration": 0.46,
+            "returnDuration": 0.56,
+            "focusHeight": 0.565,
+            "focusWidth": 0.295,
+            "focusX": 0.479,
+            "focusY": 0.5,
+            "backgroundColor": "#fbf7f1",
+            "focusBackground": "#22201c",
+            "lightEnabled": true,
+            "pinLight": false,
+            "lightAnimation": true,
+            "lightFollowPointer": true,
+            "lightIntensity": 0.55,
+            "lightContrast": 0.18,
+            "lightSpeed": 0.35,
+            "surfaceRelief": 0.22,
+            "surfaceShine": 0.25,
+            "pointerInfluence": 0.85,
+            "lightResponse": 0.16,
+            "lightFadeIn": 0.12,
+            "lightFadeOut": 0.16,
+            "lightColor": "#fff1cf",
+            "shadowColor": "#908470",
+            "lightCoverage": 0.708,
+            "lightDensity": 26.7,
+            "lightAngle": 44,
+            "lightStretch": 0.84,
+            "lightScatter": 1,
+            "lightWarp": 0.118,
+            "lightSoftness": 1.5,
+            "lightGrain": 0.65
+          },
+          "camera": {
+            "type": "PerspectiveCamera",
+            "distance": 1200,
+            "fov": 41.112090439166934
+          },
+          "renderer": {
+            "programs": 0,
+            "geometries": 0,
+            "textures": 0
+          },
+          "materials": [
+            "c0294b26-09b5-44b7-9ec4-ef71913e4551",
+            "b25d4b7c-77dc-49ec-8d65-fe2d3921b55d",
+            "1ad95f7f-0be8-43e6-8852-1315fa987738",
+            "f521a980-5c81-454a-b154-2ecbe99fa572",
+            "ca30a613-a788-409b-aef0-732185e896f1",
+            "99d7e457-e20b-4b58-a874-2bf589fac28d"
+          ],
+          "textures": [
+            "968d7408-827a-4911-9394-1f1e73a246cd",
+            "7bcfa0ce-53f5-45d8-b46f-bfdbc6a72f99",
+            "aae0405d-07a0-4dcb-8840-f3aa76c3cfeb",
+            "a2cbe240-2ac8-42fd-bbfc-a6eaaad09c13",
+            "9ac662ca-aceb-4f76-85a9-5d2e369460de",
+            "9a6a9e2a-503f-4092-a537-afd561f16e85"
+          ],
+          "background": {
+            "active": false,
+            "time": 3,
+            "fieldUpdates": 0,
+            "pointer": [
+              0.5,
+              0.5
+            ],
+            "target": [
+              0.5,
+              0.5
+            ],
+            "aspect": 0.786,
+            "width": 384,
+            "height": 480,
+            "texture": "5d15c3ae-927a-4d92-af3b-721079c7cb53",
+            "enabled": true,
+            "animate": true,
+            "followPointer": true,
+            "parameters": {
+              "enabled": true,
+              "intensity": 0.55,
+              "speed": 0.35,
+              "color": "#908470",
+              "light": "#fff1cf",
+              "background": "#fbf7f1",
+              "focusColor": "#22201c",
+              "softness": 1.5,
+              "coverage": 0.708,
+              "animate": true,
+              "density": 26.7,
+              "angle": 44,
+              "stretch": 0.84,
+              "scatter": 1,
+              "wave": 0.118,
+              "grain": 0.65,
+              "contrast": 0.18,
+              "study": 0,
+              "followPointer": true,
+              "responseTime": 0.16,
+              "pointerInfluence": 0.85,
+              "stampRatio": 0.786
+            }
+          }
+        },
+        "canvasCount": 0,
+        "globalRemoved": true
+      }
+    },
+    {
+      "name": "reduced motion: static renderer, stable pixels and live preference changes",
+      "result": "passed",
+      "elapsedMs": 3013,
+      "details": {
+        "rafCount": 2,
+        "stableScreenshotSHA256": "4fca544cf476c66dd0e87d88c5f3fc0d44c57087c4fcf25595753e1c624a858e",
+        "livePreferenceRestartsAndStops": true
+      }
+    },
+    {
+      "name": "WebGL context loss: renderer cleans up and paper fallback remains interactive",
+      "result": "passed",
+      "elapsedMs": 346,
+      "details": {
+        "realContextLost": true,
+        "canvasRemoved": true,
+        "diagnosticRemoved": true,
+        "interactiveFallback": true
+      }
+    },
+    {
+      "name": "WebGL disabled: DOM paper edition loads, focuses and exits",
+      "result": "passed",
+      "elapsedMs": 1069,
+      "details": {
+        "artworkCount": 6,
+        "canvasCount": 0,
+        "focusAndEscape": true,
+        "expectedConsoleErrors": [
+          "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch",
+          "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch",
+          "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+        ],
+        "unexpectedPageErrors": []
+      }
+    },
+    {
+      "name": "browser console and page errors",
+      "result": "passed",
+      "elapsedMs": 0,
+      "details": {
+        "consoleErrors": 0,
+        "pageErrors": 0
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "screenshots": [
+    {
+      "file": "desktop-01-initial.png",
+      "note": "",
+      "phase": "idle",
+      "selected": null,
+      "hovered": null,
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.7330382858376184,
+            "ZXY"
+          ],
+          "center": [
+            -63.360000000000014,
+            -213.29999999999995,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              664.0375704364999,
+              823.2350936483623
+            ],
+            [
+              498.35430419856993,
+              639.2251846667401
+            ],
+            [
+              814.9256958014302,
+              687.3748153332597
+            ],
+            [
+              649.2424295635001,
+              503.3649063516376
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -5.759999999999991,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.3190117974277,
+              685.6032113402
+            ],
+            [
+              581.7975159009343,
+              456.24963025388934
+            ],
+            [
+              846.6824840990656,
+              623.7503697461107
+            ],
+            [
+              772.1609882025723,
+              394.3967886597998
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0,
+            0,
+            -0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            138.24,
+            -29.700000000000045,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              733.5527134856461,
+              569.7353742807323
+            ],
+            [
+              800.2106633503982,
+              337.2714771255726
+            ],
+            [
+              916.2693366496017,
+              622.1285228744275
+            ],
+            [
+              982.9272865143539,
+              389.6646257192677
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.4188790204786391,
+            "ZXY"
+          ],
+          "center": [
+            626.4000000000001,
+            -94.5,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1306.4385041493802,
+              697.2606574003296
+            ],
+            [
+              1206.1372479668878,
+              471.98034754566424
+            ],
+            [
+              1486.6627520331124,
+              617.0196524543358
+            ],
+            [
+              1386.36149585062,
+              391.73934259967035
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.08726646259971647,
+            "ZXY"
+          ],
+          "center": [
+            283.67999999999995,
+            -441,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              891.7039706573994,
+              1014.3415768779411
+            ],
+            [
+              914.8231782073046,
+              750.0878253841307
+            ],
+            [
+              1092.5368217926953,
+              1031.912174615869
+            ],
+            [
+              1115.6560293426005,
+              767.6584231220587
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            375.8399999999999,
+            -360,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1034.1191626831994,
+              957.839624732049
+            ],
+            [
+              965.1546962577863,
+              717.3319484082815
+            ],
+            [
+              1226.5253037422135,
+              902.6680515917184
+            ],
+            [
+              1157.5608373168002,
+              662.160375267951
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 41.112090439166934
+      },
+      "renderer": {
+        "programs": 3,
+        "geometries": 2,
+        "textures": 12
+      },
+      "materials": [
+        "8cd4005d-da15-4790-8e87-a28f0e576aec",
+        "c5d22b49-2758-401b-8985-683561619d6d",
+        "2969bf12-8968-4acc-90d8-350e8a1239df",
+        "f9bc5072-99dd-498c-b728-c69f46156706",
+        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
+        "c39487f4-738f-4857-a681-67914b741d7f"
+      ],
+      "textures": [
+        "556a6900-da74-464a-ae40-87b2b92cbcd5",
+        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
+        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
+        "42db563b-17d8-41b9-8334-a5df545b2c1a",
+        "58fec7d4-b365-4981-94f5-5f7fa6200324",
+        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+      ],
+      "background": {
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-02-hover.png",
+      "note": "",
+      "phase": "hovering",
+      "selected": null,
+      "hovered": "craft",
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0.9897678670600466,
+          "uv": [
+            0.5051166944240896,
+            0.485853970354393
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.7330382858376184,
+            "ZXY"
+          ],
+          "center": [
+            -63.360000000000014,
+            -213.29999999999995,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              664.0375704364999,
+              823.2350936483623
+            ],
+            [
+              498.35430419856993,
+              639.2251846667401
+            ],
+            [
+              814.9256958014302,
+              687.3748153332597
+            ],
+            [
+              649.2424295635001,
+              503.3649063516376
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -5.759999999999991,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.3190117974277,
+              685.6032113402
+            ],
+            [
+              581.7975159009343,
+              456.24963025388934
+            ],
+            [
+              846.6824840990656,
+              623.7503697461107
+            ],
+            [
+              772.1609882025723,
+              394.3967886597998
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0.0031051855765470192,
+            0.0011220015930992896,
+            -0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            138.24,
+            -25.70620298130592,
+            0
+          ],
+          "target": [
+            0.010908018081782708,
+            0.03018638383342049
+          ],
+          "corners": [
+            [
+              727.3264270736657,
+              570.2078539122252
+            ],
+            [
+              797.3461169248077,
+              326.115982185736
+            ],
+            [
+              919.0825338170966,
+              625.1702806165397
+            ],
+            [
+              989.2151718548105,
+              381.16008606946156
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.4188790204786391,
+            "ZXY"
+          ],
+          "center": [
+            626.4000000000001,
+            -94.5,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1306.4385041493802,
+              697.2606574003296
+            ],
+            [
+              1206.1372479668878,
+              471.98034754566424
+            ],
+            [
+              1486.6627520331124,
+              617.0196524543358
+            ],
+            [
+              1386.36149585062,
+              391.73934259967035
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.08726646259971647,
+            "ZXY"
+          ],
+          "center": [
+            283.67999999999995,
+            -441,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              891.7039706573994,
+              1014.3415768779411
+            ],
+            [
+              914.8231782073046,
+              750.0878253841307
+            ],
+            [
+              1092.5368217926953,
+              1031.912174615869
+            ],
+            [
+              1115.6560293426005,
+              767.6584231220587
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            375.8399999999999,
+            -360,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1034.1191626831994,
+              957.839624732049
+            ],
+            [
+              965.1546962577863,
+              717.3319484082815
+            ],
+            [
+              1226.5253037422135,
+              902.6680515917184
+            ],
+            [
+              1157.5608373168002,
+              662.160375267951
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 41.112090439166934
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "8cd4005d-da15-4790-8e87-a28f0e576aec",
+        "c5d22b49-2758-401b-8985-683561619d6d",
+        "2969bf12-8968-4acc-90d8-350e8a1239df",
+        "f9bc5072-99dd-498c-b728-c69f46156706",
+        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
+        "c39487f4-738f-4857-a681-67914b741d7f"
+      ],
+      "textures": [
+        "556a6900-da74-464a-ae40-87b2b92cbcd5",
+        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
+        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
+        "42db563b-17d8-41b9-8334-a5df545b2c1a",
+        "58fec7d4-b365-4981-94f5-5f7fa6200324",
+        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.373239999999993,
+        "fieldUpdates": 13,
+        "pointer": [
+          0.504640374691924,
+          0.4871767362050736
+        ],
+        "target": [
+          0.5046424805399178,
+          0.48717106234080654
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-03-mid-transition.png",
+      "note": "RAF held after an actual transition frame for an exact intermediate screenshot; immediately resumed.",
+      "phase": "focusing",
+      "selected": "craft",
+      "hovered": null,
+      "progress": 0.42596364380085383,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0.9969283965445945,
+          "uv": [
+            0.5676070586388385,
+            0.4933169993744507
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.7330382858376184,
+            "ZXY"
+          ],
+          "center": [
+            -63.360000000000014,
+            -213.29999999999995,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              664.0375704364999,
+              823.2350936483623
+            ],
+            [
+              498.35430419856993,
+              639.2251846667401
+            ],
+            [
+              814.9256958014299,
+              687.3748153332597
+            ],
+            [
+              649.2424295635001,
+              503.3649063516376
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -5.759999999999991,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.3190117974277,
+              685.6032113402
+            ],
+            [
+              581.7975159009343,
+              456.24963025388934
+            ],
+            [
+              846.6824840990656,
+              623.7503697461107
+            ],
+            [
+              772.1609882025723,
+              394.3967886597998
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0.0005472979317358373,
+            0.022424443886467915,
+            -0.160301191069217,
+            "ZXY"
+          ],
+          "center": [
+            66.47364529243214,
+            -14.75273435431808,
+            0
+          ],
+          "target": [
+            0.5053272629207175,
+            -0.0038894640015096453
+          ],
+          "corners": [
+            [
+              615.2267851596749,
+              622.7128516065399
+            ],
+            [
+              673.7209625378476,
+              260.8678863206617
+            ],
+            [
+              898.6449460708975,
+              667.5862994122201
+            ],
+            [
+              956.8905724783136,
+              307.5581570103803
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.4188790204786391,
+            "ZXY"
+          ],
+          "center": [
+            626.4000000000001,
+            -94.5,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1306.4385041493802,
+              697.2606574003296
+            ],
+            [
+              1206.1372479668878,
+              471.98034754566424
+            ],
+            [
+              1486.6627520331124,
+              617.0196524543358
+            ],
+            [
+              1386.36149585062,
+              391.73934259967035
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.08726646259971647,
+            "ZXY"
+          ],
+          "center": [
+            283.67999999999995,
+            -441,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              891.7039706573994,
+              1014.3415768779411
+            ],
+            [
+              914.8231782073046,
+              750.0878253841307
+            ],
+            [
+              1092.5368217926953,
+              1031.912174615869
+            ],
+            [
+              1115.6560293426005,
+              767.6584231220587
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            375.8399999999999,
+            -360,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1034.1191626831994,
+              957.839624732049
+            ],
+            [
+              965.1546962577863,
+              717.3319484082815
+            ],
+            [
+              1226.5253037422135,
+              902.6680515917184
+            ],
+            [
+              1157.5608373168002,
+              662.1603752679509
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1285.1927287601707,
+        "fov": 38.59459178951712
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "8cd4005d-da15-4790-8e87-a28f0e576aec",
+        "c5d22b49-2758-401b-8985-683561619d6d",
+        "2969bf12-8968-4acc-90d8-350e8a1239df",
+        "f9bc5072-99dd-498c-b728-c69f46156706",
+        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
+        "c39487f4-738f-4857-a681-67914b741d7f"
+      ],
+      "textures": [
+        "556a6900-da74-464a-ae40-87b2b92cbcd5",
+        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
+        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
+        "42db563b-17d8-41b9-8334-a5df545b2c1a",
+        "58fec7d4-b365-4981-94f5-5f7fa6200324",
+        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.4743199999999916,
+        "fieldUpdates": 15,
+        "pointer": [
+          0.5575824517569369,
+          0.49399978885915985
+        ],
+        "target": [
+          0.715346304147734,
+          0.5016413726736344
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-04-focus.png",
+      "note": "",
+      "phase": "focused",
+      "selected": "craft",
+      "hovered": null,
+      "progress": 1,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 1,
+          "uv": [
+            0.8938166487535754,
+            0.4558932980237047
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.7330382858376184,
+            "ZXY"
+          ],
+          "center": [
+            -63.360000000000014,
+            -213.29999999999995,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              664.0375704364999,
+              823.2350936483623
+            ],
+            [
+              498.35430419856993,
+              639.2251846667401
+            ],
+            [
+              814.9256958014299,
+              687.3748153332597
+            ],
+            [
+              649.2424295635001,
+              503.3649063516376
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -5.759999999999991,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.3190117974277,
+              685.6032113402
+            ],
+            [
+              581.7975159009343,
+              456.24963025388934
+            ],
+            [
+              846.6824840990656,
+              623.7503697461107
+            ],
+            [
+              772.1609882025723,
+              394.3967886597998
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0.010200090978081576,
+            0.08729246229461322,
+            0,
+            "ZXY"
+          ],
+          "center": [
+            -30.24000000000001,
+            0,
+            0
+          ],
+          "target": [
+            0.8432066858475885,
+            0.10084796256606442
+          ],
+          "corners": [
+            [
+              488.2255525957143,
+              707.1379741661802
+            ],
+            [
+              487.3544313384702,
+              192.25614534337214
+            ],
+            [
+              886.4598309919356,
+              700.4781512950769
+            ],
+            [
+              887.0700605179078,
+              198.2519246826171
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.4188790204786391,
+            "ZXY"
+          ],
+          "center": [
+            626.4000000000001,
+            -94.5,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1306.4385041493802,
+              697.2606574003296
+            ],
+            [
+              1206.1372479668878,
+              471.98034754566424
+            ],
+            [
+              1486.6627520331124,
+              617.0196524543358
+            ],
+            [
+              1386.36149585062,
+              391.73934259967035
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.08726646259971647,
+            "ZXY"
+          ],
+          "center": [
+            283.67999999999995,
+            -441,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              891.7039706573994,
+              1014.3415768779411
+            ],
+            [
+              914.8231782073046,
+              750.0878253841307
+            ],
+            [
+              1092.5368217926953,
+              1031.912174615869
+            ],
+            [
+              1115.6560293426005,
+              767.6584231220587
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            375.8399999999999,
+            -360,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1034.1191626831994,
+              957.839624732049
+            ],
+            [
+              965.1546962577863,
+              717.3319484082815
+            ],
+            [
+              1226.5253037422135,
+              902.6680515917184
+            ],
+            [
+              1157.5608373168002,
+              662.1603752679509
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1400,
+        "fov": 35.63777782904556
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "8cd4005d-da15-4790-8e87-a28f0e576aec",
+        "c5d22b49-2758-401b-8985-683561619d6d",
+        "2969bf12-8968-4acc-90d8-350e8a1239df",
+        "f9bc5072-99dd-498c-b728-c69f46156706",
+        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
+        "c39487f4-738f-4857-a681-67914b741d7f"
+      ],
+      "textures": [
+        "556a6900-da74-464a-ae40-87b2b92cbcd5",
+        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
+        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
+        "42db563b-17d8-41b9-8334-a5df545b2c1a",
+        "58fec7d4-b365-4981-94f5-5f7fa6200324",
+        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.7776299999999887,
+        "fieldUpdates": 24,
+        "pointer": [
+          0.8347519143207907,
+          0.46248799420683184
+        ],
+        "target": [
+          0.8629252674682772,
+          0.45642009068159045
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-05-return.png",
+      "note": "",
+      "phase": "idle",
+      "selected": null,
+      "hovered": null,
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0.0026386179570919216,
+          "uv": [
+            0.5335748507943279,
+            0.49622959066294575
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.7330382858376184,
+            "ZXY"
+          ],
+          "center": [
+            -63.360000000000014,
+            -213.29999999999995,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              664.0375704364999,
+              823.2350936483623
+            ],
+            [
+              498.35430419856993,
+              639.2251846667401
+            ],
+            [
+              814.9256958014302,
+              687.3748153332597
+            ],
+            [
+              649.2424295635001,
+              503.3649063516376
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -5.759999999999991,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.3190117974277,
+              685.6032113402
+            ],
+            [
+              581.7975159009343,
+              456.24963025388934
+            ],
+            [
+              846.6824840990656,
+              623.7503697461107
+            ],
+            [
+              772.1609882025723,
+              394.3967886597998
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0,
+            0,
+            -0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            138.24,
+            -29.700000000000045,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              733.5527134856461,
+              569.7353742807323
+            ],
+            [
+              800.2106633503982,
+              337.2714771255726
+            ],
+            [
+              916.2693366496017,
+              622.1285228744275
+            ],
+            [
+              982.9272865143539,
+              389.6646257192677
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.4188790204786391,
+            "ZXY"
+          ],
+          "center": [
+            626.4000000000001,
+            -94.5,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1306.4385041493802,
+              697.2606574003296
+            ],
+            [
+              1206.1372479668878,
+              471.98034754566424
+            ],
+            [
+              1486.6627520331124,
+              617.0196524543358
+            ],
+            [
+              1386.36149585062,
+              391.73934259967035
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.08726646259971647,
+            "ZXY"
+          ],
+          "center": [
+            283.67999999999995,
+            -441,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              891.7039706573994,
+              1014.3415768779411
+            ],
+            [
+              914.8231782073046,
+              750.0878253841307
+            ],
+            [
+              1092.5368217926953,
+              1031.912174615869
+            ],
+            [
+              1115.6560293426005,
+              767.6584231220587
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            375.8399999999999,
+            -360,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1034.1191626831994,
+              957.839624732049
+            ],
+            [
+              965.1546962577863,
+              717.3319484082815
+            ],
+            [
+              1226.5253037422135,
+              902.6680515917184
+            ],
+            [
+              1157.5608373168002,
+              662.160375267951
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 41.112090439166934
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "8cd4005d-da15-4790-8e87-a28f0e576aec",
+        "c5d22b49-2758-401b-8985-683561619d6d",
+        "2969bf12-8968-4acc-90d8-350e8a1239df",
+        "f9bc5072-99dd-498c-b728-c69f46156706",
+        "2ddefbf1-c401-414e-9483-af73d54e0e0b",
+        "c39487f4-738f-4857-a681-67914b741d7f"
+      ],
+      "textures": [
+        "556a6900-da74-464a-ae40-87b2b92cbcd5",
+        "3e8f4e39-1363-4739-810e-6f5fdd20269b",
+        "be9d9835-f9a7-4762-aa2c-630b9009d8ab",
+        "42db563b-17d8-41b9-8334-a5df545b2c1a",
+        "58fec7d4-b365-4981-94f5-5f7fa6200324",
+        "8519394c-4a0f-4f74-95ff-036b7bb29319"
+      ],
+      "background": {
+        "active": true,
+        "time": 4.446549999999978,
+        "fieldUpdates": 46,
+        "pointer": [
+          0.835721080242524,
+          0.4622792523039832
+        ],
+        "target": [
+          0.8357135843633072,
+          0.46229982849921786
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "2cd63b44-7e29-4f8d-a126-b231d233f464",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-01-initial.png",
+      "note": "",
+      "phase": "idle",
+      "selected": null,
+      "hovered": null,
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.4886921905584123,
+            "ZXY"
+          ],
+          "center": [
+            -103.35000000000001,
+            -4.220000000000027,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              74.09567566717172,
+              513.6596978220938
+            ],
+            [
+              9.342951580483609,
+              391.87753592899054
+            ],
+            [
+              173.95704841951635,
+              460.5624640710096
+            ],
+            [
+              109.20432433282826,
+              338.78030217790626
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -52.650000000000006,
+            72.584,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              107.36475083088034,
+              437.3627838280885
+            ],
+            [
+              62.35251634903557,
+              298.8293707918426
+            ],
+            [
+              222.34748365096442,
+              400.0026292081573
+            ],
+            [
+              177.33524916911966,
+              261.46921617191146
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0,
+            0,
+            -0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            29.24999999999997,
+            122.38,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              143.2514013070183,
+              362.52292207087646
+            ],
+            [
+              182.26361538749907,
+              206.05347766186563
+            ],
+            [
+              266.2363846125009,
+              393.1865223381344
+            ],
+            [
+              305.2485986929816,
+              236.7170779291235
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            113.10000000000002,
+            -45.57600000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              277.64452346804893,
+              552.823223447229
+            ],
+            [
+              231.61732563166842,
+              419.1505348218755
+            ],
+            [
+              384.5826743683316,
+              516.0014651781245
+            ],
+            [
+              338.5554765319512,
+              382.3287765527711
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -27.30000000000001,
+            -199.18399999999997,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              98.00716170059633,
+              692.7635966999982
+            ],
+            [
+              117.39400856596782,
+              534.8703996823194
+            ],
+            [
+              218.00599143403215,
+              707.4976003176806
+            ],
+            [
+              237.39283829940368,
+              549.6044033000018
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.22689280275926285,
+            "ZXY"
+          ],
+          "center": [
+            50.69999999999999,
+            -180.61599999999999,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              202.44549019622275,
+              692.6538108443056
+            ],
+            [
+              167.35312571857983,
+              540.6520807378089
+            ],
+            [
+              324.0468742814201,
+              664.5799192621912
+            ],
+            [
+              288.9545098037772,
+              512.5781891556945
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 38.750147309498914
+      },
+      "renderer": {
+        "programs": 3,
+        "geometries": 2,
+        "textures": 12
+      },
+      "materials": [
+        "fc337f66-99a6-4e54-9401-aae88d056ad7",
+        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
+        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
+        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
+        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
+        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+      ],
+      "textures": [
+        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
+        "3263286d-e772-43c0-bfda-52bc237f508f",
+        "c753de27-a6a8-47da-a593-2997f817bc66",
+        "9a094988-3a85-4460-8a67-e3462c1e6843",
+        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
+        "6e257016-5918-41cf-abc1-b60134104004"
+      ],
+      "background": {
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-02-hover.png",
+      "note": "Synthetic mouse pointerenter on a touch viewport; real touch is tested separately below.",
+      "phase": "hovering",
+      "selected": null,
+      "hovered": "craft",
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0.9703103136835572,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.4886921905584123,
+            "ZXY"
+          ],
+          "center": [
+            -103.35000000000001,
+            -4.220000000000027,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              74.09567566717172,
+              513.6596978220938
+            ],
+            [
+              9.342951580483609,
+              391.87753592899054
+            ],
+            [
+              173.95704841951635,
+              460.5624640710096
+            ],
+            [
+              109.20432433282826,
+              338.78030217790626
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -52.650000000000006,
+            72.584,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              107.36475083088034,
+              437.3627838280885
+            ],
+            [
+              62.35251634903557,
+              298.8293707918426
+            ],
+            [
+              222.34748365096442,
+              400.0026292081573
+            ],
+            [
+              177.33524916911966,
+              261.46921617191146
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0,
+            0,
+            -0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            29.24999999999997,
+            126.35209137126657,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              139.22972837010485,
+              361.67403262442474
+            ],
+            [
+              180.17894343712413,
+              197.43570159036497
+            ],
+            [
+              268.32105656287575,
+              393.86011566710187
+            ],
+            [
+              309.2702716298951,
+              229.62178463304213
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            113.10000000000002,
+            -45.57600000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              277.64452346804893,
+              552.823223447229
+            ],
+            [
+              231.61732563166842,
+              419.1505348218755
+            ],
+            [
+              384.5826743683316,
+              516.0014651781245
+            ],
+            [
+              338.5554765319512,
+              382.3287765527711
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -27.30000000000001,
+            -199.18399999999997,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              98.00716170059633,
+              692.7635966999982
+            ],
+            [
+              117.39400856596782,
+              534.8703996823194
+            ],
+            [
+              218.00599143403215,
+              707.4976003176806
+            ],
+            [
+              237.39283829940368,
+              549.6044033000018
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.22689280275926285,
+            "ZXY"
+          ],
+          "center": [
+            50.69999999999999,
+            -180.61599999999999,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              202.44549019622275,
+              692.6538108443056
+            ],
+            [
+              167.35312571857983,
+              540.6520807378089
+            ],
+            [
+              324.0468742814201,
+              664.5799192621912
+            ],
+            [
+              288.9545098037772,
+              512.5781891556945
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 38.750147309498914
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "fc337f66-99a6-4e54-9401-aae88d056ad7",
+        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
+        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
+        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
+        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
+        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+      ],
+      "textures": [
+        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
+        "3263286d-e772-43c0-bfda-52bc237f508f",
+        "c753de27-a6a8-47da-a593-2997f817bc66",
+        "9a094988-3a85-4460-8a67-e3462c1e6843",
+        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
+        "6e257016-5918-41cf-abc1-b60134104004"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.283757599999994,
+        "fieldUpdates": 10,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-03-mid-transition.png",
+      "note": "Actual touch entry; RAF held after an intermediate frame for screenshot only.",
+      "phase": "focusing",
+      "selected": "craft",
+      "hovered": null,
+      "progress": 0.42596364380085494,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0.8358944373175182,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.4886921905584123,
+            "ZXY"
+          ],
+          "center": [
+            -103.35000000000001,
+            -4.220000000000027,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              74.09567566717175,
+              513.6596978220938
+            ],
+            [
+              9.342951580483609,
+              391.87753592899054
+            ],
+            [
+              173.95704841951635,
+              460.56246407100946
+            ],
+            [
+              109.20432433282826,
+              338.78030217790626
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -52.650000000000006,
+            72.584,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              107.36475083088034,
+              437.3627838280885
+            ],
+            [
+              62.35251634903557,
+              298.8293707918426
+            ],
+            [
+              222.34748365096442,
+              400.0026292081573
+            ],
+            [
+              177.33524916911966,
+              261.46921617191146
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0,
+            0,
+            -0.1402635421855646,
+            "ZXY"
+          ],
+          "center": [
+            16.790563418824973,
+            72.10167820558593,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              96.84252716962685,
+              460.1146768982162
+            ],
+            [
+              131.85062601226173,
+              212.16560100030097
+            ],
+            [
+              291.7305008253882,
+              487.6310425885272
+            ],
+            [
+              326.7385996680231,
+              239.681966690612
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            113.10000000000002,
+            -45.57600000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              277.64452346804893,
+              552.8232234472289
+            ],
+            [
+              231.61732563166842,
+              419.1505348218755
+            ],
+            [
+              384.5826743683316,
+              516.0014651781245
+            ],
+            [
+              338.5554765319512,
+              382.3287765527711
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -27.30000000000001,
+            -199.18399999999997,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              98.00716170059633,
+              692.7635966999981
+            ],
+            [
+              117.39400856596782,
+              534.8703996823194
+            ],
+            [
+              218.00599143403215,
+              707.4976003176805
+            ],
+            [
+              237.39283829940368,
+              549.6044033000018
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.22689280275926285,
+            "ZXY"
+          ],
+          "center": [
+            50.69999999999999,
+            -180.61599999999999,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              202.44549019622275,
+              692.6538108443054
+            ],
+            [
+              167.35312571857983,
+              540.6520807378089
+            ],
+            [
+              324.04687428142006,
+              664.5799192621912
+            ],
+            [
+              288.9545098037772,
+              512.5781891556945
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1285.192728760171,
+        "fov": 36.35574925243528
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "fc337f66-99a6-4e54-9401-aae88d056ad7",
+        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
+        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
+        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
+        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
+        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+      ],
+      "textures": [
+        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
+        "3263286d-e772-43c0-bfda-52bc237f508f",
+        "c753de27-a6a8-47da-a593-2997f817bc66",
+        "9a094988-3a85-4460-8a67-e3462c1e6843",
+        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
+        "6e257016-5918-41cf-abc1-b60134104004"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.3809875999999925,
+        "fieldUpdates": 13,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-04-focus.png",
+      "note": "",
+      "phase": "focused",
+      "selected": "craft",
+      "hovered": null,
+      "progress": 1,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0.9946584819283731,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.4886921905584123,
+            "ZXY"
+          ],
+          "center": [
+            -103.35000000000001,
+            -4.220000000000027,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              74.09567566717172,
+              513.6596978220938
+            ],
+            [
+              9.342951580483609,
+              391.87753592899054
+            ],
+            [
+              173.95704841951635,
+              460.5624640710096
+            ],
+            [
+              109.20432433282826,
+              338.78030217790626
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -52.650000000000006,
+            72.584,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              107.36475083088037,
+              437.3627838280885
+            ],
+            [
+              62.35251634903557,
+              298.8293707918426
+            ],
+            [
+              222.34748365096442,
+              400.0026292081573
+            ],
+            [
+              177.33524916911966,
+              261.46921617191146
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0,
+            0,
+            0,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              54.60000000000001,
+              600.6259541984733
+            ],
+            [
+              54.60000000000001,
+              243.37404580152668
+            ],
+            [
+              335.4,
+              600.6259541984733
+            ],
+            [
+              335.4,
+              243.37404580152668
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            113.10000000000002,
+            -45.57600000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              277.64452346804893,
+              552.823223447229
+            ],
+            [
+              231.61732563166836,
+              419.1505348218755
+            ],
+            [
+              384.5826743683316,
+              516.0014651781245
+            ],
+            [
+              338.5554765319511,
+              382.3287765527711
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -27.30000000000001,
+            -199.18399999999997,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              98.00716170059633,
+              692.7635966999981
+            ],
+            [
+              117.39400856596784,
+              534.8703996823194
+            ],
+            [
+              218.00599143403215,
+              707.4976003176806
+            ],
+            [
+              237.39283829940368,
+              549.6044033000018
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.22689280275926285,
+            "ZXY"
+          ],
+          "center": [
+            50.69999999999999,
+            -180.61599999999999,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              202.44549019622275,
+              692.6538108443056
+            ],
+            [
+              167.35312571857983,
+              540.6520807378089
+            ],
+            [
+              324.0468742814201,
+              664.5799192621912
+            ],
+            [
+              288.95450980377717,
+              512.5781891556945
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1400,
+        "fov": 33.54861488416168
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "fc337f66-99a6-4e54-9401-aae88d056ad7",
+        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
+        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
+        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
+        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
+        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+      ],
+      "textures": [
+        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
+        "3263286d-e772-43c0-bfda-52bc237f508f",
+        "c753de27-a6a8-47da-a593-2997f817bc66",
+        "9a094988-3a85-4460-8a67-e3462c1e6843",
+        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
+        "6e257016-5918-41cf-abc1-b60134104004"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.6686875999999873,
+        "fieldUpdates": 22,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-05-return.png",
+      "note": "",
+      "phase": "idle",
+      "selected": null,
+      "hovered": null,
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0.003348467804102257,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.4886921905584123,
+            "ZXY"
+          ],
+          "center": [
+            -103.35000000000001,
+            -4.220000000000027,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              74.09567566717172,
+              513.6596978220938
+            ],
+            [
+              9.342951580483609,
+              391.87753592899054
+            ],
+            [
+              173.95704841951635,
+              460.5624640710096
+            ],
+            [
+              109.20432433282826,
+              338.78030217790626
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -52.650000000000006,
+            72.584,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              107.36475083088034,
+              437.3627838280885
+            ],
+            [
+              62.35251634903557,
+              298.8293707918426
+            ],
+            [
+              222.34748365096442,
+              400.0026292081573
+            ],
+            [
+              177.33524916911966,
+              261.46921617191146
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0,
+            0,
+            -0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            29.24999999999997,
+            122.38,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              143.2514013070183,
+              362.52292207087646
+            ],
+            [
+              182.26361538749907,
+              206.05347766186563
+            ],
+            [
+              266.2363846125009,
+              393.1865223381344
+            ],
+            [
+              305.2485986929816,
+              236.7170779291235
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            113.10000000000002,
+            -45.57600000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              277.64452346804893,
+              552.823223447229
+            ],
+            [
+              231.61732563166842,
+              419.1505348218755
+            ],
+            [
+              384.5826743683316,
+              516.0014651781245
+            ],
+            [
+              338.5554765319512,
+              382.3287765527711
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -27.30000000000001,
+            -199.18399999999997,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              98.00716170059633,
+              692.7635966999982
+            ],
+            [
+              117.39400856596782,
+              534.8703996823194
+            ],
+            [
+              218.00599143403215,
+              707.4976003176806
+            ],
+            [
+              237.39283829940368,
+              549.6044033000018
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.22689280275926285,
+            "ZXY"
+          ],
+          "center": [
+            50.69999999999999,
+            -180.61599999999999,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              202.44549019622275,
+              692.6538108443056
+            ],
+            [
+              167.35312571857983,
+              540.6520807378089
+            ],
+            [
+              324.0468742814201,
+              664.5799192621912
+            ],
+            [
+              288.9545098037772,
+              512.5781891556945
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 38.750147309498914
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "fc337f66-99a6-4e54-9401-aae88d056ad7",
+        "8f93336e-0ba2-47ac-94d7-bf75a211e1ce",
+        "f4d36a2d-14a7-4260-98da-f5f81ef41f1d",
+        "8f9abb93-9b37-468d-bb44-f3a153f87ec6",
+        "0fb68665-ac3d-4a49-a886-f4eb6f2e2b9c",
+        "433d92ef-6513-432d-81fc-d09f4c84fbff"
+      ],
+      "textures": [
+        "d9d600aa-8866-46b0-9288-7e4371bc37d5",
+        "3263286d-e772-43c0-bfda-52bc237f508f",
+        "c753de27-a6a8-47da-a593-2997f817bc66",
+        "9a094988-3a85-4460-8a67-e3462c1e6843",
+        "9fd75580-54aa-4b3f-b481-f06ed90ff024",
+        "6e257016-5918-41cf-abc1-b60134104004"
+      ],
+      "background": {
+        "active": true,
+        "time": 4.314297599999976,
+        "fieldUpdates": 42,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "23bf1444-5d96-4aa4-9ed4-bdd69f0d6b5f",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "reduced-motion-focus.png",
+      "note": "",
+      "phase": "focused",
+      "selected": "craft",
+      "hovered": null,
+      "progress": 1,
+      "reducedMotion": true,
+      "lightStates": [
+        {
+          "id": "specimen",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "kensho",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "craft",
+          "amount": 0.7263409313158697,
+          "uv": [
+            0.7484288389614692,
+            0.46938905002100006
+          ]
+        },
+        {
+          "id": "mint",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "nocturne",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "gaohan",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "specimen",
+          "rotation": [
+            0,
+            0,
+            0.7330382858376184,
+            "ZXY"
+          ],
+          "center": [
+            -63.360000000000014,
+            -213.29999999999995,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              664.0375704364999,
+              823.2350936483623
+            ],
+            [
+              498.35430419856993,
+              639.2251846667401
+            ],
+            [
+              814.9256958014299,
+              687.3748153332597
+            ],
+            [
+              649.2424295635001,
+              503.3649063516376
+            ]
+          ]
+        },
+        {
+          "id": "kensho",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -5.759999999999991,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.3190117974277,
+              685.6032113402
+            ],
+            [
+              581.7975159009343,
+              456.24963025388934
+            ],
+            [
+              846.6824840990656,
+              623.7503697461107
+            ],
+            [
+              772.1609882025723,
+              394.3967886597998
+            ]
+          ]
+        },
+        {
+          "id": "craft",
+          "rotation": [
+            0,
+            0,
+            0,
+            "ZXY"
+          ],
+          "center": [
+            -30.24000000000001,
+            0,
+            0
+          ],
+          "target": [
+            0.8430704688160678,
+            0.11680568518774562
+          ],
+          "corners": [
+            [
+              489.9195,
+              704.25
+            ],
+            [
+              489.9195,
+              195.75000000000009
+            ],
+            [
+              889.6004999999999,
+              704.25
+            ],
+            [
+              889.6004999999999,
+              195.75000000000009
+            ]
+          ]
+        },
+        {
+          "id": "mint",
+          "rotation": [
+            0,
+            0,
+            0.4188790204786391,
+            "ZXY"
+          ],
+          "center": [
+            626.4000000000001,
+            -94.5,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1306.4385041493802,
+              697.2606574003296
+            ],
+            [
+              1206.1372479668878,
+              471.98034754566424
+            ],
+            [
+              1486.6627520331124,
+              617.0196524543358
+            ],
+            [
+              1386.36149585062,
+              391.73934259967035
+            ]
+          ]
+        },
+        {
+          "id": "nocturne",
+          "rotation": [
+            0,
+            0,
+            -0.08726646259971647,
+            "ZXY"
+          ],
+          "center": [
+            283.67999999999995,
+            -441,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              891.7039706573994,
+              1014.3415768779411
+            ],
+            [
+              914.8231782073046,
+              750.0878253841307
+            ],
+            [
+              1092.5368217926953,
+              1031.912174615869
+            ],
+            [
+              1115.6560293426005,
+              767.6584231220587
+            ]
+          ]
+        },
+        {
+          "id": "gaohan",
+          "rotation": [
+            0,
+            0,
+            0.2792526803190927,
+            "ZXY"
+          ],
+          "center": [
+            375.8399999999999,
+            -360,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1034.1191626831994,
+              957.839624732049
+            ],
+            [
+              965.1546962577863,
+              717.3319484082815
+            ],
+            [
+              1226.5253037422135,
+              902.6680515917184
+            ],
+            [
+              1157.5608373168002,
+              662.1603752679509
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 0.55,
+        "lightContrast": 0.18,
+        "lightSpeed": 0.35,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.25,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#fff1cf",
+        "shadowColor": "#908470",
+        "lightCoverage": 0.708,
+        "lightDensity": 26.7,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.5,
+        "lightGrain": 0.65
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1400,
+        "fov": 35.63777782904556
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "d5367009-fbfd-4cff-a1f6-228b5cd1f584",
+        "c5553b8d-2ae4-42d7-9023-94a7f52119db",
+        "641a583b-a0ac-4849-9398-7167d8ee900e",
+        "00b4b523-be97-4444-bb8d-6f21d2303cba",
+        "c379f098-cbe1-4e8d-81eb-591a506871b3",
+        "ea804dee-a8c9-479f-a8b7-ef360d60942e"
+      ],
+      "textures": [
+        "170b160c-291a-48e4-bfe2-ab248970521b",
+        "2ca7713d-463c-4ba3-829c-6f00962b3838",
+        "afd25f2b-e72d-4130-a599-86ac1ccf7670",
+        "90a66a73-e0e5-4d75-bdce-45b90b080754",
+        "649448b1-2a63-4a9d-9f53-02364133c10e",
+        "9fc5404d-b94c-4764-987f-2f4771c06105"
+      ],
+      "background": {
+        "active": true,
+        "time": 3,
+        "fieldUpdates": 1,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.8583049492468218,
+          0.4503575837952093
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "2c97879b-b980-4bbb-b97e-fe8142a73725",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "parameters": {
+          "enabled": true,
+          "intensity": 0.55,
+          "speed": 0.35,
+          "color": "#908470",
+          "light": "#fff1cf",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.5,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.18,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-context-loss-fallback.png",
+      "note": "Real WEBGL_lose_context event, with renderer removed and DOM edition restored."
+    },
+    {
+      "file": "mobile-webgl-disabled-focus.png",
+      "note": "Separate Chrome launched with --disable-webgl; all artwork remains usable as DOM images."
+    }
+  ],
+  "finishedAt": "2026-10-26T06:24:18.446Z",
+  "result": "passed"
+}

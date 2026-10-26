@@ -1,0 +1,25 @@
+{
+  "name": "postal-studies",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4173",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "node scripts/verify-browser.mjs",
+    "test:light": "node scripts/verify-light.mjs",
+    "test:controls": "node scripts/verify-controls.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.1",
+    "vite": "8.2.2",
+    "@playwright/test": "1.56.1"
+  }
+}

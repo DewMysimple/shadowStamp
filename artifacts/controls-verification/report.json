@@ -1,0 +1,593 @@
+{
+  "startedAt": "2026-10-26T06:32:58.276Z",
+  "base": "http://127.0.0.1:4173/",
+  "checks": [
+    {
+      "name": "desktop panel renders all four groups and shares one WebGL renderer",
+      "result": "passed",
+      "details": {
+        "fields": 46,
+        "groups": 4
+      }
+    },
+    {
+      "name": "all numeric, boolean and color controls reach live renderer configuration",
+      "result": "passed",
+      "details": {
+        "testedFields": 46,
+        "fullSnapshot": {
+          "tiltEnabled": false,
+          "hoverTilt": 7.5,
+          "focusTilt": 7.5,
+          "tiltResponse": 0.235,
+          "hoverPerspective": 1800,
+          "hoverScale": 1.075,
+          "hoverLift": 7,
+          "hoverResponse": 0.16,
+          "blur": 8,
+          "blurResponse": 0.16,
+          "focusTrackOutside": true,
+          "resetTiltOnLeave": true,
+          "perspective": 1800,
+          "focusShift": 7.5,
+          "focusRoll": 1.1,
+          "enterDuration": 0.65,
+          "returnDuration": 0.65,
+          "focusHeight": 0.485,
+          "focusWidth": 0.31,
+          "focusX": 0.46,
+          "focusY": 0.46,
+          "backgroundColor": "#a8b890",
+          "focusBackground": "#a8b890",
+          "lightEnabled": false,
+          "pinLight": true,
+          "lightAnimation": false,
+          "lightFollowPointer": false,
+          "lightIntensity": 0.74,
+          "lightContrast": 0.37,
+          "lightSpeed": 1.1,
+          "surfaceRelief": 0.37,
+          "surfaceShine": 0.37,
+          "pointerInfluence": 0.75,
+          "lightResponse": 0.3,
+          "lightFadeIn": 0.31,
+          "lightFadeOut": 0.31,
+          "lightColor": "#a8b890",
+          "shadowColor": "#a8b890",
+          "lightCoverage": 0.65,
+          "lightDensity": 19.8,
+          "lightAngle": -23,
+          "lightStretch": 0.37,
+          "lightScatter": 0.74,
+          "lightWarp": 0.185,
+          "lightSoftness": 1.1,
+          "lightGrain": 0.55
+        }
+      }
+    },
+    {
+      "name": "light zero boundary, disabled and paused states stop optical updates and RAF",
+      "result": "passed",
+      "details": {
+        "paused": {
+          "raf": 221,
+          "fieldUpdates": 2
+        },
+        "zero": {
+          "raf": 225,
+          "fieldUpdates": 3
+        },
+        "disabled": {
+          "raf": 428,
+          "fieldUpdates": 4
+        },
+        "backgroundPixelsUnchanged": true
+      }
+    },
+    {
+      "name": "range Home reaches true zero and fixed preview illuminates a stamp while tuning",
+      "result": "passed",
+      "details": {
+        "rangeZero": true,
+        "pinnedStamp": "craft",
+        "lightAmount": 1
+      }
+    },
+    {
+      "name": "shape, color, contrast and relief update actual GPU uniforms and stamp pixels",
+      "result": "passed",
+      "details": {
+        "before": "d9aa11bfae0269e9b0dab73bc665a1cda84f757ea12345b715c6616f3cf16765",
+        "after": "d64b1edc1d3bd291cec35d52b9eec2f1225dd02a1a76b405ed3caa6f13541740",
+        "gpuFields": true,
+        "colorsGPU": true
+      }
+    },
+    {
+      "name": "optical controls honor their full advertised minimum and maximum in GPU",
+      "result": "passed",
+      "details": {
+        "testedBoundaries": 22,
+        "measurements": [
+          {
+            "key": "lightCoverage",
+            "value": 0.1,
+            "uniform": "uRadius",
+            "target": 0.05
+          },
+          {
+            "key": "lightCoverage",
+            "value": 1.6,
+            "uniform": "uRadius",
+            "target": 0.8
+          },
+          {
+            "key": "lightDensity",
+            "value": 2,
+            "uniform": "uDensity",
+            "target": 2
+          },
+          {
+            "key": "lightDensity",
+            "value": 50,
+            "uniform": "uDensity",
+            "target": 50
+          },
+          {
+            "key": "lightAngle",
+            "value": -90,
+            "uniform": "uAngle",
+            "target": -1.5707963267948966
+          },
+          {
+            "key": "lightAngle",
+            "value": 90,
+            "uniform": "uAngle",
+            "target": 1.5707963267948966
+          },
+          {
+            "key": "lightStretch",
+            "value": 0,
+            "uniform": "uStretch",
+            "target": 0
+          },
+          {
+            "key": "lightStretch",
+            "value": 1,
+            "uniform": "uStretch",
+            "target": 1
+          },
+          {
+            "key": "lightScatter",
+            "value": 0,
+            "uniform": "uScatter",
+            "target": 0
+          },
+          {
+            "key": "lightScatter",
+            "value": 2,
+            "uniform": "uScatter",
+            "target": 2
+          },
+          {
+            "key": "lightWarp",
+            "value": 0,
+            "uniform": "uWave",
+            "target": 0
+          },
+          {
+            "key": "lightWarp",
+            "value": 0.5,
+            "uniform": "uWave",
+            "target": 0.5
+          },
+          {
+            "key": "lightSoftness",
+            "value": 0,
+            "uniform": "uSoftness",
+            "target": 0
+          },
+          {
+            "key": "lightSoftness",
+            "value": 3,
+            "uniform": "uSoftness",
+            "target": 3
+          },
+          {
+            "key": "lightContrast",
+            "value": 0,
+            "uniform": "uLightContrast",
+            "target": 0
+          },
+          {
+            "key": "lightContrast",
+            "value": 1,
+            "uniform": "uLightContrast",
+            "target": 1
+          },
+          {
+            "key": "lightGrain",
+            "value": 0,
+            "uniform": "uLightGrain",
+            "target": 0
+          },
+          {
+            "key": "lightGrain",
+            "value": 1.5,
+            "uniform": "uLightGrain",
+            "target": 1.5
+          },
+          {
+            "key": "surfaceRelief",
+            "value": 0,
+            "uniform": "uSurfaceRelief",
+            "target": 0
+          },
+          {
+            "key": "surfaceRelief",
+            "value": 1,
+            "uniform": "uSurfaceRelief",
+            "target": 1
+          },
+          {
+            "key": "surfaceShine",
+            "value": 0,
+            "uniform": "uSurfaceShine",
+            "target": 0
+          },
+          {
+            "key": "surfaceShine",
+            "value": 1,
+            "uniform": "uSurfaceShine",
+            "target": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "focused pointer tilt matches reference signs and six-degree edge gains",
+      "result": "passed",
+      "details": {
+        "states": [
+          {
+            "name": "left",
+            "rotation": [
+              -1.2569491870580476e-8,
+              -0.07955401756296951,
+              0,
+              "ZXY"
+            ],
+            "target": [
+              -0.760005469596378,
+              -1.200298058013766e-7
+            ],
+            "corners": [
+              [
+                493.1251730851797,
+                701.39818456857
+              ],
+              [
+                493.1251741093405,
+                198.60181696105738
+              ],
+              [
+                890.9071951580588,
+                707.1672599554382
+              ],
+              [
+                890.9071943688431,
+                192.8327408282875
+              ]
+            ]
+          },
+          {
+            "name": "right",
+            "rotation": [
+              -1.2569491870580476e-8,
+              0.07951608868612536,
+              0,
+              "ZXY"
+            ],
+            "target": [
+              0.7599594490082404,
+              -1.200298058013766e-7
+            ],
+            "corners": [
+              [
+                487.9195161306085,
+                707.1658561130167
+              ],
+              [
+                487.91951720230446,
+                192.83414467089037
+              ],
+              [
+                887.0746927597461,
+                701.3995261466939
+              ],
+              [
+                887.0746920055317,
+                198.6004753827598
+              ]
+            ]
+          },
+          {
+            "name": "top",
+            "rotation": [
+              -0.07955579786059597,
+              0.000028769731016294547,
+              0,
+              "ZXY"
+            ],
+            "target": [
+              -0.000023163003745441516,
+              -0.7600000432107302
+            ],
+            "corners": [
+              [
+                486.54922748656264,
+                707.157904095392
+              ],
+              [
+                493.1920153839491,
+                200.1585639370978
+              ],
+              [
+                892.0834178755938,
+                707.1566950229873
+              ],
+              [
+                887.1868634227076,
+                200.16148119532627
+              ]
+            ]
+          },
+          {
+            "name": "bottom",
+            "rotation": [
+              0.07951584311811444,
+              -0.0000024256240800583976,
+              0,
+              "ZXY"
+            ],
+            "target": [
+              -0.000023163003745441516,
+              0.7599996831213127
+            ],
+            "corners": [
+              [
+                493.1913905492405,
+                699.8424315273038
+              ],
+              [
+                486.55199211491254,
+                192.84381978245403
+              ],
+              [
+                887.1887871549067,
+                699.8426774522032
+              ],
+              [
+                892.0829300704996,
+                192.84371780528477
+              ]
+            ]
+          }
+        ],
+        "camera": {
+          "type": "PerspectiveCamera",
+          "distance": 1400,
+          "fov": 35.63777782904556
+        }
+      }
+    },
+    {
+      "name": "focused pointer exit preserves last pose by default and reset option returns it",
+      "result": "passed",
+      "details": {
+        "heldRotation": [
+          0.07958698070748288,
+          -0.0000024256240800583976,
+          0,
+          "ZXY"
+        ],
+        "resetRotation": [
+          0,
+          0,
+          0,
+          "ZXY"
+        ]
+      }
+    },
+    {
+      "name": "perspective changes projected corners while CSS hit polygons stay aligned",
+      "result": "passed",
+      "details": {
+        "maxCornerErrorPx": 0.6839949287443687,
+        "cornerDelta": 75.323025176086,
+        "near": [
+          [
+            437.90722573791953,
+            748.4941282079564
+          ],
+          [
+            500.1367301674188,
+            196.97619512729014
+          ],
+          [
+            887.5209754163833,
+            713.882352094079
+          ],
+          [
+            856.1885543284473,
+            252.75005356309876
+          ]
+        ],
+        "far": [
+          [
+            489.63940224340206,
+            693.7461598832515
+          ],
+          [
+            496.11036008615736,
+            192.3349782419192
+          ],
+          [
+            884.4297631496066,
+            709.0223703999684
+          ],
+          [
+            879.914025161842,
+            218.39308927152115
+          ]
+        ]
+      }
+    },
+    {
+      "name": "focus shift and roll are independently configurable without closing focus",
+      "result": "passed",
+      "details": {
+        "center": [
+          -16.245158345218442,
+          8.256792304075475,
+          0
+        ],
+        "rotation": [
+          -0.061815705312736294,
+          0.10473965098981307,
+          -0.03489259336921171,
+          "ZXY"
+        ]
+      }
+    },
+    {
+      "name": "panel buttons and keyboard navigation remain usable during focus",
+      "result": "passed",
+      "details": {
+        "tabbed": {
+          "tag": "SELECT",
+          "id": "parameter-preset",
+          "panel": true
+        },
+        "escapePanelBeforeFocus": true
+      }
+    },
+    {
+      "name": "group reset, four presets and all reset preserve intended scope",
+      "result": "passed",
+      "details": {
+        "groupResetPreservedLight": true,
+        "presets": [
+          "reference",
+          "soft",
+          "scene8",
+          "previous"
+        ]
+      }
+    },
+    {
+      "name": "actual JSON download round trips through file import and persistence reload",
+      "result": "passed",
+      "details": {
+        "file": "postal-studies-parameters.json",
+        "bytes": 1229,
+        "actualFileImport": true,
+        "persistence": true
+      }
+    },
+    {
+      "name": "invalid JSON reports error and imported numbers clamp safely",
+      "result": "passed",
+      "details": {
+        "invalidFeedback": true,
+        "clampedMax": 2,
+        "clampedMin": 2,
+        "unknownKeysIgnored": true
+      }
+    },
+    {
+      "name": "corrupted local storage falls back to defaults without crashing",
+      "result": "passed",
+      "details": {
+        "defaultsRestored": true
+      }
+    },
+    {
+      "name": "parameter edits reuse existing materials, textures and renderer",
+      "result": "passed",
+      "details": {
+        "edits": 12,
+        "renderer": {
+          "programs": 3,
+          "geometries": 2,
+          "textures": 12
+        },
+        "persistentAssets": true
+      }
+    },
+    {
+      "name": "mobile panel opens, scrolls and changes controls with actual touch focus",
+      "result": "passed",
+      "details": {
+        "scroll": {
+          "top": 1645,
+          "height": 523,
+          "content": 2412
+        },
+        "parameter": 15.3,
+        "touchRotation": [
+          -0.05232453974730021,
+          0.05232248165215384,
+          0,
+          "ZXY"
+        ]
+      }
+    },
+    {
+      "name": "reduced motion keeps controls effective while pointer, light and RAF remain static",
+      "result": "passed",
+      "details": {
+        "staticPixels": true,
+        "rotation": [
+          0,
+          0,
+          0,
+          "ZXY"
+        ],
+        "rest": {
+          "raf": 167,
+          "fieldUpdates": 2
+        },
+        "liveForm": true
+      }
+    },
+    {
+      "name": "real focused pointer recording",
+      "result": "passed",
+      "details": {
+        "file": "focused-pointer.webm",
+        "bytes": 91161,
+        "source": "real browser recording"
+      }
+    },
+    {
+      "name": "no console, page or WebGL warnings/errors",
+      "result": "passed",
+      "details": {
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "screenshots": [
+    "01-desktop-panel.png",
+    "02-fixed-light-preview.png",
+    "03-focused-pointer.png",
+    "04-mobile-panel.png",
+    "05-mobile-focus.png"
+  ],
+  "finishedAt": "2026-10-26T06:33:34.683Z",
+  "result": "passed"
+}
