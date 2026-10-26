@@ -33,7 +33,7 @@ test('reselecting during return moves continuously toward the same focus', () =>
   assert.equal(motion.value, 1);
 });
 
-test('all six rotated mobile stamps fit and focused stamps have safe margins', () => {
+test('all eight rotated mobile stamps fit and focused stamps have safe margins', () => {
   for (const [width, height] of [[390, 844], [320, 568], [1440, 900], [1920, 1080]]) {
     for (const stamp of STAMPS) {
       const focus = getFocus(stamp, width, height);

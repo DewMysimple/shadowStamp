@@ -7,6 +7,7 @@ button:focus { outline: none; }
 button:focus-visible { outline: 1px solid #71814c; outline-offset: 8px; }
 .exhibition { position: relative; width: 100%; height: 100%; min-height: 320px; overflow: clip; isolation: isolate; background: #fbf7f1; }
 .exhibition-canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; display: block; }
+.artwork-loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #8c6c52; font: 13px 'SimSun', serif; letter-spacing: .12em; }
 .gallery-chrome { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
 .masthead { position: absolute; inset: 35px 40px auto; display: flex; justify-content: space-between; align-items: flex-start; }
 .wordmark { display: flex; gap: 12px; align-items: flex-start; font-size: 12px; letter-spacing: 0.07em; line-height: 1.4; }
@@ -32,14 +33,8 @@ button:focus-visible { outline: 1px solid #71814c; outline-offset: 8px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .fallback-gallery { position: absolute; inset: 0; z-index: 70; background: #fbf7f1; transition: background 350ms; }
 .fallback-note { position: absolute; top: 24px; left: 24px; font-size: 10px; opacity: .55; }
-.fallback-stamp { position: absolute; padding: 0; border: 0; background: none; width: 15%; cursor: pointer; filter: drop-shadow(4px 10px 10px #30241033); transition: all 400ms ease; }
+.fallback-stamp { position: absolute; left: calc(var(--desktop-x) * 100%); top: calc(var(--desktop-y) * 100%); width: calc(min(100vw, 160vh) * var(--desktop-width)); z-index: var(--desktop-z); transform: translate(-50%, -50%) rotate(var(--desktop-angle)); padding: 0; border: 0; background: none; cursor: pointer; filter: drop-shadow(4px 10px 10px #30241033); transition: all 400ms ease; }
 .fallback-stamp img { display: block; width: 100%; }
-.fallback-specimen { left: 38%; top: 57%; transform: rotate(-40deg); }
-.fallback-kensho { left: 42%; top: 44%; transform: rotate(-18deg); }
-.fallback-craft { left: 53%; top: 35%; transform: rotate(16deg); }
-.fallback-mint { left: 82%; top: 47%; transform: rotate(-24deg); }
-.fallback-nocturne { left: 62%; top: 80%; transform: rotate(5deg); }
-.fallback-gaohan { left: 68%; top: 70%; transform: rotate(-16deg); }
 .fallback-gallery.is-focused { background: #22201c; }
 .is-focused .fallback-stamp { opacity: 0; pointer-events: none; }
 .is-focused .fallback-stamp.is-active { left: 50%; top: 50%; width: min(30vw, 45vh); opacity: 1; transform: translate(-50%, -50%); pointer-events: auto; }
@@ -118,13 +113,7 @@ button:focus-visible { outline: 1px solid #71814c; outline-offset: 8px; }
   .hover-label { font-size: 10px; padding: 4px 9px; }
   .close-focus { top: max(22px, env(safe-area-inset-top)); right: 24px; font-size: 9px; min-height: 44px; }
   .focus-instruction { bottom: max(28px, env(safe-area-inset-bottom)); font-size: 9px; letter-spacing: 0.035em; }
-  .fallback-stamp { width: 29%; }
-  .fallback-specimen { left: 10%; top: 40%; }
-  .fallback-kensho { left: 20%; top: 31%; }
-  .fallback-craft { left: 42%; top: 23%; }
-  .fallback-mint { left: 65%; top: 46%; }
-  .fallback-nocturne { left: 25%; top: 65%; }
-  .fallback-gaohan { left: 47%; top: 63%; }
+  .fallback-stamp { left: calc(var(--mobile-x) * 100%); top: calc(var(--mobile-y) * 100%); width: calc(min(100vw, 520px) * var(--mobile-width)); z-index: var(--mobile-z); transform: translate(-50%, -50%) rotate(var(--mobile-angle)); }
   .is-focused .fallback-stamp.is-active { width: 72%; }
   .parameter-workbench { top: max(82px, calc(env(safe-area-inset-top) + 65px)); left: 18px; width: min(304px, calc(100% - 36px)); }
   .parameter-panel { max-height: calc(100dvh - 150px); }

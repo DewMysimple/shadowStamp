@@ -21,7 +21,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
   let elapsed = 0;
   let returnFocus = false;
   let previousButton = null;
-  let lastHovered = 'craft';
+  let lastHovered = STAMPS[0].id;
   let pointerValid = false;
   const motion = new FocusMotion();
   const media = matchMedia('(prefers-reduced-motion: reduce)');

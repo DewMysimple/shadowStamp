@@ -3,15 +3,16 @@ import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
+import { STAMPS } from '../src/config.js';
 
 // Run against the retained Vite development server; never starts or replaces it.
 const baseURL = process.env.VERIFY_URL || 'http://127.0.0.1:4173/';
-const output = resolve('artifacts/single-light-verification/browser');
+const output = resolve('artifacts/lion-stamps/regression/browser');
 await mkdir(output, { recursive: true });
 const report = { baseURL, startedAt: new Date().toISOString(), browser: 'Installed Chrome, headless, real WebGL', checks: [], consoleErrors: [], pageErrors: [], screenshots: [] };
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });
 const timeout = 15000;
-const ids = ['specimen', 'kensho', 'craft', 'mint', 'nocturne', 'gaohan'];
+const ids = STAMPS.map(stamp => stamp.id);
 const allContexts = [];
 
 async function createPage(options = {}, expectedErrors = null) {
@@ -116,18 +117,18 @@ try {
     await closeGallery(desktop);await desktop.waitForTimeout(350);
     assert.equal(await desktop.locator('canvas').count(), 1);
     await screenshot(desktop, 'desktop-01-initial.png');
-    await desktop.locator('[data-stamp="craft"]').hover();
-    await desktop.waitForFunction(() => window.__postalGallery.getDiagnostics().hovered === 'craft');
+    await desktop.locator('[data-stamp="joy"]').hover();
+    await desktop.waitForFunction(() => window.__postalGallery.getDiagnostics().hovered === 'joy');
     await desktop.waitForTimeout(400);
-    assert.equal(await desktop.locator('.hover-label').textContent(), 'NEW CRAFT SOCIETY');
+    assert.equal(await desktop.locator('.hover-label').textContent(), '醒狮八态 · 喜');
     await screenshot(desktop, 'desktop-02-hover.png');
     await assertViewportOrigin(desktop);
     await desktop.evaluate(() => { window.__qaHoldProgress = .42; });
-    await clickVisible(desktop, 'craft');
+    await clickVisible(desktop, 'joy');
     await desktop.waitForFunction(() => window.__qaFreeze, null, { timeout, polling: 20 });
     const midpoint = await diagnostic(desktop);assert.ok(midpoint.progress >= .42 && midpoint.progress < .99);
     await screenshot(desktop, 'desktop-03-mid-transition.png', 'RAF held after an actual transition frame for an exact intermediate screenshot; immediately resumed.');
-    await desktop.evaluate(() => window.__qaResume());await waitState(desktop, 'focused', 'craft');
+    await desktop.evaluate(() => window.__qaResume());await waitState(desktop, 'focused', 'joy');
     await screenshot(desktop, 'desktop-04-focus.png');
     await assertViewportOrigin(desktop);
     assert.equal(await desktop.locator('.focus-instruction').textContent(), 'CLICK ANYWHERE OR PRESS ESC.');
@@ -135,10 +136,10 @@ try {
     assert.equal(await desktop.evaluate(() => Boolean(document.elementFromPoint(400,150)?.closest('[data-stamp], [data-parameter-panel]'))), false);
     await desktop.mouse.click(400,150);await waitState(desktop, 'idle', null);await desktop.waitForTimeout(300);
     await screenshot(desktop, 'desktop-05-return.png');
-    return { canvasCount: 1, midpoint: midpoint.progress, label: 'NEW CRAFT SOCIETY', backgroundExit: true };
+    return { canvasCount: 1, midpoint: midpoint.progress, label: '醒狮八态 · 喜', backgroundExit: true };
   });
 
-  await check('desktop: all six stamps select through exposed pointer targets', async () => {
+  await check('desktop: all eight stamps select through exposed pointer targets', async () => {
     const selected = [];
     for (const id of ids) {
       await closeGallery(desktop);await desktop.waitForTimeout(100);
@@ -153,13 +154,13 @@ try {
     // Reload resets the browser's native sequential-focus starting point.
     await desktop.reload({waitUntil:'networkidle'});await desktop.waitForFunction(()=>!!window.__postalGallery);
     const reachable = [], otherControls = [];
-    for (let i=0;i<12 && reachable.length<6;i++) {
+    for (let i=0;i<ids.length+6 && reachable.length<ids.length;i++) {
       await desktop.keyboard.press('Tab');
       const control=await desktop.evaluate(() => ({ id: document.activeElement.dataset.stamp, name: document.activeElement.getAttribute('aria-label') }));
       if(control.id)reachable.push(control);else otherControls.push(control);
     }
     assert.deepEqual(new Set(reachable.map(x=>x.id)),new Set(ids));assert.ok(reachable.every(x=>x.name?.startsWith('View ')));
-    const selected = reachable[5].id;await desktop.keyboard.press('Enter');await waitState(desktop,'focused',selected);
+    const selected = reachable.at(-1).id;await desktop.keyboard.press('Enter');await waitState(desktop,'focused',selected);
     await assertViewportOrigin(desktop);
     await desktop.keyboard.press('Tab');assert.equal(await desktop.evaluate(() => document.activeElement.className),'close-focus');
     await desktop.keyboard.press('Tab');assert.equal(await desktop.evaluate(() => document.activeElement.className),'parameter-launcher');
@@ -171,7 +172,7 @@ try {
   });
 
   await check('desktop: Escape reverses an unfinished transition continuously', async () => {
-    await closeGallery(desktop);await clickVisible(desktop,'craft');
+    await closeGallery(desktop);await clickVisible(desktop,'joy');
     await desktop.waitForFunction(() => { const d=window.__postalGallery.getDiagnostics();return d.progress>.1 && d.progress<.9; }, { timeout });
     const before=await diagnostic(desktop);await desktop.keyboard.press('Escape');const after=await diagnostic(desktop);
     assert.ok(after.progress <= before.progress+.18, `position jumped: ${before.progress} -> ${after.progress}`);
@@ -180,17 +181,17 @@ try {
   });
 
   await check('desktop: choosing another stamp while returning queues a new focus', async () => {
-    await closeGallery(desktop);await clickVisible(desktop,'craft');await waitState(desktop,'focused','craft');
+    await closeGallery(desktop);await clickVisible(desktop,'joy');await waitState(desktop,'focused','joy');
     await desktop.keyboard.press('Escape');
     await desktop.waitForFunction(() => {const d=window.__postalGallery.getDiagnostics();return d.phase==='returning'&&d.progress<.75&&d.progress>.05;}, { timeout });
-    await clickVisible(desktop,'mint');await waitState(desktop,'focused','mint');
+    await clickVisible(desktop,'delight');await waitState(desktop,'focused','delight');
     return { selected: (await diagnostic(desktop)).selected };
   });
 
   await check('desktop: ten repeated cycles preserve texture/material UUIDs and GPU counts', async () => {
     await closeGallery(desktop);const before=await diagnostic(desktop);
     for(let i=0;i<10;i++) {
-      await clickVisible(desktop,'craft');await waitState(desktop,'focused','craft');
+      await clickVisible(desktop,'joy');await waitState(desktop,'focused','joy');
       await desktop.keyboard.press('Escape');await desktop.waitForFunction(()=>window.__postalGallery.getDiagnostics().selected===null, { timeout });
     }
     const after=await diagnostic(desktop);
@@ -199,7 +200,7 @@ try {
   });
 
   await check('resize: focused stamp keeps intended center across desktop and mobile', async () => {
-    await closeGallery(desktop);await clickVisible(desktop,'craft');await waitState(desktop,'focused','craft');
+    await closeGallery(desktop);await clickVisible(desktop,'joy');await waitState(desktop,'focused','joy');
     // Measure the neutral anchor. Perspective tilt legitimately moves the bounding-box center;
     // its four-corner alignment and directional response are covered in verify-controls.mjs.
     await desktop.evaluate(()=>window.__postalGallery.configure({tiltEnabled:false}));await desktop.waitForTimeout(700);
@@ -207,7 +208,7 @@ try {
     for(const size of [{width:1024,height:768},{width:390,height:844},{width:1440,height:900}]) {
       await desktop.setViewportSize(size);await desktop.waitForTimeout(180);
       await assertViewportOrigin(desktop);
-      const box=await desktop.locator('[data-stamp="craft"]').boundingBox();
+      const box=await desktop.locator('[data-stamp="joy"]').boundingBox();
       const expectedX=size.width*(size.width<700?.5:.479),expectedY=size.height*.5;
       const center={x:box.x+box.width/2,y:box.y+box.height/2};
       assert.ok(Math.abs(center.x-expectedX)<1.5,JSON.stringify({size,center,expectedX}));
@@ -219,21 +220,21 @@ try {
   const mobile = await createPage({ viewport:{width:390,height:844}, isMobile:true, hasTouch:true });
   await check('mobile: initial, synthetic hover, touch midpoint, focus and return screenshots', async () => {
     await screenshot(mobile,'mobile-01-initial.png');
-    await mobile.locator('[data-stamp="craft"]').dispatchEvent('pointerenter',{pointerType:'mouse',isPrimary:true});
+    await mobile.locator('[data-stamp="joy"]').dispatchEvent('pointerenter',{pointerType:'mouse',isPrimary:true});
     await mobile.waitForTimeout(350);await screenshot(mobile,'mobile-02-hover.png','Synthetic mouse pointerenter on a touch viewport; real touch is tested separately below.');
-    await mobile.locator('[data-stamp="craft"]').dispatchEvent('pointerleave',{pointerType:'mouse',isPrimary:true});
-    await mobile.evaluate(()=>{window.__qaHoldProgress=.42;});await clickVisible(mobile,'craft','touch');
+    await mobile.locator('[data-stamp="joy"]').dispatchEvent('pointerleave',{pointerType:'mouse',isPrimary:true});
+    await mobile.evaluate(()=>{window.__qaHoldProgress=.42;});await clickVisible(mobile,'joy','touch');
     await mobile.waitForFunction(()=>window.__qaFreeze,null,{timeout,polling:20});await screenshot(mobile,'mobile-03-mid-transition.png','Actual touch entry; RAF held after an intermediate frame for screenshot only.');
-    await mobile.evaluate(()=>window.__qaResume());await waitState(mobile,'focused','craft');await screenshot(mobile,'mobile-04-focus.png');
+    await mobile.evaluate(()=>window.__qaResume());await waitState(mobile,'focused','joy');await screenshot(mobile,'mobile-04-focus.png');
     await assertViewportOrigin(mobile);
-    const focusBox=await mobile.locator('[data-stamp="craft"]').boundingBox();assert.ok(Math.abs(focusBox.x+focusBox.width/2-195)<1);
+    const focusBox=await mobile.locator('[data-stamp="joy"]').boundingBox();assert.ok(Math.abs(focusBox.x+focusBox.width/2-195)<1);
     await mobile.touchscreen.tap(25,450);await mobile.waitForFunction(()=>window.__postalGallery.getDiagnostics().selected===null,{timeout});await mobile.waitForTimeout(300);await screenshot(mobile,'mobile-05-return.png');
     const overflow=await mobile.evaluate(()=>({innerWidth,documentWidth:document.documentElement.scrollWidth,bodyWidth:document.body.scrollWidth}));
     assert.equal(overflow.documentWidth,390);assert.equal(overflow.bodyWidth,390);
     return { genuineTouchEntryAndBackgroundExit:true,overflow };
   });
 
-  await check('mobile: all six stamps are reachable with real touch', async () => {
+  await check('mobile: all eight stamps are reachable with real touch', async () => {
     const selected=[];for(const id of ids){try{await closeGallery(mobile);const point=await clickVisible(mobile,id,'touch');await waitState(mobile,'focused',id);await assertViewportOrigin(mobile);selected.push({id,point});await mobile.locator('.close-focus').tap();await mobile.waitForFunction(()=>window.__postalGallery.getDiagnostics().selected===null,null,{timeout});}catch(error){throw Error(`${id}: ${error.message}`);}}
     return selected;
   });
@@ -255,7 +256,7 @@ try {
     const first=await reduced.screenshot();await reduced.waitForTimeout(350);const second=await reduced.screenshot();
     assert.equal(await reduced.evaluate(()=>window.__qaRafExecutions),before);
     const firstHash=createHash('sha256').update(first).digest('hex'),secondHash=createHash('sha256').update(second).digest('hex');assert.equal(firstHash,secondHash);
-    await clickVisible(reduced,'craft');await waitState(reduced,'focused','craft');await screenshot(reduced,'reduced-motion-focus.png');
+    await clickVisible(reduced,'joy');await waitState(reduced,'focused','joy');await screenshot(reduced,'reduced-motion-focus.png');
     await reduced.emulateMedia({reducedMotion:'no-preference'});await reduced.waitForTimeout(250);const running=await reduced.evaluate(()=>window.__qaRafExecutions);await reduced.waitForTimeout(250);assert.ok(await reduced.evaluate(()=>window.__qaRafExecutions)>running);
     await reduced.emulateMedia({reducedMotion:'reduce'});await reduced.waitForTimeout(500);const stopped=await reduced.evaluate(()=>window.__qaRafExecutions);await reduced.waitForTimeout(250);assert.equal(await reduced.evaluate(()=>window.__qaRafExecutions),stopped);
     return { rafCount:before,stableScreenshotSHA256:firstHash,livePreferenceRestartsAndStops:true };
@@ -267,7 +268,7 @@ try {
     assert.ok(extension,'WEBGL_lose_context unavailable');
     await desktop.locator('.fallback-gallery').waitFor({state:'visible',timeout});await desktop.waitForFunction(()=>[...document.querySelectorAll('.fallback-stamp img')].every(img=>img.complete&&img.naturalWidth>0),{timeout});
     assert.equal(await desktop.locator('canvas').count(),0);assert.equal(await desktop.evaluate(()=>window.__postalGallery),undefined);
-    await desktop.locator('.fallback-craft').click();await desktop.locator('.fallback-gallery.is-focused').waitFor({timeout});
+    await desktop.locator('.fallback-stamp').filter({ has: desktop.getByAltText(STAMPS[0].name, { exact: true }) }).click();await desktop.locator('.fallback-gallery.is-focused').waitFor({timeout});
     await desktop.keyboard.press('Escape');await desktop.waitForFunction(()=>!document.querySelector('.fallback-gallery').classList.contains('is-focused'));
     await desktop.screenshot({path:join(output,'desktop-context-loss-fallback.png')});report.screenshots.push({file:'desktop-context-loss-fallback.png',note:'Real WEBGL_lose_context event, with renderer removed and DOM edition restored.'});
     return { realContextLost:true,canvasRemoved:true,diagnosticRemoved:true,interactiveFallback:true };
@@ -281,13 +282,13 @@ try {
       page.on('console',msg=>{if(msg.type()==='error')expectedConsoleErrors.push(msg.text());});page.on('pageerror',error=>unexpectedPageErrors.push(error.message));
       await page.goto(baseURL,{waitUntil:'networkidle'});await page.locator('.fallback-gallery').waitFor({state:'visible',timeout});
       await page.waitForFunction(()=>[...document.querySelectorAll('.fallback-stamp img')].every(img=>img.complete&&img.naturalWidth>0),null,{timeout});
-      assert.equal(await page.locator('.fallback-stamp').count(),6);assert.equal(await page.locator('canvas').count(),0);
-      await page.locator('.fallback-craft').tap();await page.locator('.fallback-gallery.is-focused').waitFor({timeout});
+      assert.equal(await page.locator('.fallback-stamp').count(),ids.length);assert.equal(await page.locator('canvas').count(),0);
+      await page.locator('.fallback-stamp').filter({ has: page.getByAltText(STAMPS[0].name, { exact: true }) }).tap();await page.locator('.fallback-gallery.is-focused').waitFor({timeout});
       await page.screenshot({path:join(output,'mobile-webgl-disabled-focus.png')});report.screenshots.push({file:'mobile-webgl-disabled-focus.png',note:'Separate Chrome launched with --disable-webgl; all artwork remains usable as DOM images.'});
       await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.querySelector('.fallback-gallery').classList.contains('is-focused'));
       assert.deepEqual(unexpectedPageErrors,[]);
       assert.ok(expectedConsoleErrors.every(text=>/WebGL|context/i.test(text)),JSON.stringify(expectedConsoleErrors));
-      return {artworkCount:6,canvasCount:0,focusAndEscape:true,expectedConsoleErrors,unexpectedPageErrors};
+      return {artworkCount:ids.length,canvasCount:0,focusAndEscape:true,expectedConsoleErrors,unexpectedPageErrors};
     } finally {await disabled.close();}
   });
 

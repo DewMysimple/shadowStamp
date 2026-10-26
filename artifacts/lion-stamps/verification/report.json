@@ -1,0 +1,632 @@
+{
+  "baseURL": "http://127.0.0.1:4173/",
+  "startedAt": "2026-10-26T10:08:37.643Z",
+  "browser": "Installed Chrome, real WebGL and genuine touchscreen input",
+  "checks": [
+    {
+      "name": "eight source images match the supplied lion project and decode locally",
+      "result": "passed",
+      "elapsedMs": 181,
+      "details": [
+        {
+          "id": "joy",
+          "image": "/assets/lion-states/lion-joy.png",
+          "sha256": "db755d607d4ea75244d0e89975ce7f183319da6cd24940a266acc46ec5dd688e",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "id": "anger",
+          "image": "/assets/lion-states/lion-anger.png",
+          "sha256": "3c9b8b091ca8d8e549672c9cc6e0cbbca1e83a5a92d7052999ea04bc470ab37f",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "id": "sorrow",
+          "image": "/assets/lion-states/lion-sorrow.png",
+          "sha256": "d89c62066a6324c215f0c783aba2b2a43bca094d2a94d3cdf63c0b0e219cc27d",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "id": "delight",
+          "image": "/assets/lion-states/lion-delight.png",
+          "sha256": "b8e98ac5437d9735227f47dece7f74273d540590a97c4940383745aa51e563f2",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "id": "motion",
+          "image": "/assets/lion-states/lion-motion.png",
+          "sha256": "aa4d0032fad8faf2462decf90dcb9219ca92890aa567654d8993b885461a3476",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "id": "stillness",
+          "image": "/assets/lion-states/lion-stillness.png",
+          "sha256": "8ecbfdd200043946d5e63be21a175e349979c822376c9003c561cdb2893cd886",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "id": "surprise",
+          "image": "/assets/lion-states/lion-surprise.png",
+          "sha256": "7b167fa62fb0e24afc103e6821322443fd361bd951b5d18ac2a58423f1b97480",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "id": "doubt",
+          "image": "/assets/lion-states/lion-doubt.png",
+          "sha256": "872da547c9c3774dbeab0333e13e88455a5573267ff93389791836d83e61177e",
+          "width": 1254,
+          "height": 1254
+        }
+      ]
+    },
+    {
+      "name": "eight print canvases draw the correct face with transparent perforations",
+      "result": "passed",
+      "elapsedMs": 318,
+      "details": [
+        {
+          "id": "joy",
+          "sha256": "2d6e367da4fd261127f4191574b77c2dc726e4ded605abca6cc6e4ad0684bfee",
+          "draws": [
+            "http://127.0.0.1:4173/assets/lion-states/lion-joy.png"
+          ],
+          "size": [
+            720,
+            900
+          ],
+          "topCutAlpha": 0,
+          "leftCutAlpha": 0,
+          "centerAlpha": 255
+        },
+        {
+          "id": "anger",
+          "sha256": "93c956b8ee80d138dae4462880eb30522c73890809eeb43d4c2ca97a78b7b5f3",
+          "draws": [
+            "http://127.0.0.1:4173/assets/lion-states/lion-anger.png"
+          ],
+          "size": [
+            720,
+            900
+          ],
+          "topCutAlpha": 0,
+          "leftCutAlpha": 0,
+          "centerAlpha": 255
+        },
+        {
+          "id": "sorrow",
+          "sha256": "a8bb5e5b64fb0bc242a289bacd03883acf7ee911f579935051e4d0c2c08c595f",
+          "draws": [
+            "http://127.0.0.1:4173/assets/lion-states/lion-sorrow.png"
+          ],
+          "size": [
+            720,
+            900
+          ],
+          "topCutAlpha": 0,
+          "leftCutAlpha": 0,
+          "centerAlpha": 255
+        },
+        {
+          "id": "delight",
+          "sha256": "ace57574e60949879eabcbbb599f0239464c3456809e77705f01b27019b3dc3e",
+          "draws": [
+            "http://127.0.0.1:4173/assets/lion-states/lion-delight.png"
+          ],
+          "size": [
+            720,
+            900
+          ],
+          "topCutAlpha": 0,
+          "leftCutAlpha": 0,
+          "centerAlpha": 255
+        },
+        {
+          "id": "motion",
+          "sha256": "1217465ccb9ec0a7e89a9e5570087456eeb8cd9c6de7ab6c426b91a2a4ce1d81",
+          "draws": [
+            "http://127.0.0.1:4173/assets/lion-states/lion-motion.png"
+          ],
+          "size": [
+            720,
+            900
+          ],
+          "topCutAlpha": 0,
+          "leftCutAlpha": 0,
+          "centerAlpha": 255
+        },
+        {
+          "id": "stillness",
+          "sha256": "f208d240f067af6e2a98ffa56ee6f75471672c5db48374181f02210669297db0",
+          "draws": [
+            "http://127.0.0.1:4173/assets/lion-states/lion-stillness.png"
+          ],
+          "size": [
+            720,
+            900
+          ],
+          "topCutAlpha": 0,
+          "leftCutAlpha": 0,
+          "centerAlpha": 255
+        },
+        {
+          "id": "surprise",
+          "sha256": "bdc83ec16ab85d61460fbe381b838a8c3649408d7c23329a2deda6e52520fac0",
+          "draws": [
+            "http://127.0.0.1:4173/assets/lion-states/lion-surprise.png"
+          ],
+          "size": [
+            720,
+            900
+          ],
+          "topCutAlpha": 0,
+          "leftCutAlpha": 0,
+          "centerAlpha": 255
+        },
+        {
+          "id": "doubt",
+          "sha256": "001df959203ce7bb91b75683c362ba8485ec7d1690677002f601c809fe391321",
+          "draws": [
+            "http://127.0.0.1:4173/assets/lion-states/lion-doubt.png"
+          ],
+          "size": [
+            720,
+            900
+          ],
+          "topCutAlpha": 0,
+          "leftCutAlpha": 0,
+          "centerAlpha": 255
+        }
+      ]
+    },
+    {
+      "name": "desktop mouse reaches all eight hover lights, focused stamps and Escape returns",
+      "result": "passed",
+      "elapsedMs": 21983,
+      "details": [
+        {
+          "id": "joy",
+          "point": {
+            "x": 705.6001892089844,
+            "y": 350.9952697753906,
+            "clearance": 20
+          },
+          "activeLightCount": 1,
+          "defocusedOtherStamps": 7
+        },
+        {
+          "id": "anger",
+          "point": {
+            "x": 525.5981140136719,
+            "y": 539.9973449707031,
+            "clearance": 20
+          },
+          "activeLightCount": 1,
+          "defocusedOtherStamps": 7
+        },
+        {
+          "id": "sorrow",
+          "point": {
+            "x": 766.0753479003906,
+            "y": 647.99951171875,
+            "clearance": 20
+          },
+          "activeLightCount": 1,
+          "defocusedOtherStamps": 7
+        },
+        {
+          "id": "delight",
+          "point": {
+            "x": 964.7954711914062,
+            "y": 296.9944305419922,
+            "clearance": 20
+          },
+          "activeLightCount": 1,
+          "defocusedOtherStamps": 7
+        },
+        {
+          "id": "motion",
+          "point": {
+            "x": 1022.4009399414062,
+            "y": 557.995361328125,
+            "clearance": 20
+          },
+          "activeLightCount": 1,
+          "defocusedOtherStamps": 7
+        },
+        {
+          "id": "stillness",
+          "point": {
+            "x": 1223.9935913085938,
+            "y": 422.9951477050781,
+            "clearance": 20
+          },
+          "activeLightCount": 1,
+          "defocusedOtherStamps": 7
+        },
+        {
+          "id": "surprise",
+          "point": {
+            "x": 1252.7938232421875,
+            "y": 674.9992370605469,
+            "clearance": 20
+          },
+          "activeLightCount": 1,
+          "defocusedOtherStamps": 7
+        },
+        {
+          "id": "doubt",
+          "point": {
+            "x": 489.5937805175781,
+            "y": 297.0007553100586,
+            "clearance": 20
+          },
+          "activeLightCount": 1,
+          "defocusedOtherStamps": 7
+        }
+      ]
+    },
+    {
+      "name": "keyboard reaches eight named stamps and preserves focus trapping and Escape",
+      "result": "passed",
+      "elapsedMs": 1682,
+      "details": {
+        "reached": [
+          {
+            "id": "joy",
+            "label": "View 醒狮八态 · 喜, stamp 01 of 8"
+          },
+          {
+            "id": "anger",
+            "label": "View 醒狮八态 · 怒, stamp 02 of 8"
+          },
+          {
+            "id": "sorrow",
+            "label": "View 醒狮八态 · 哀, stamp 03 of 8"
+          },
+          {
+            "id": "delight",
+            "label": "View 醒狮八态 · 乐, stamp 04 of 8"
+          },
+          {
+            "id": "motion",
+            "label": "View 醒狮八态 · 动, stamp 05 of 8"
+          },
+          {
+            "id": "stillness",
+            "label": "View 醒狮八态 · 静, stamp 06 of 8"
+          },
+          {
+            "id": "surprise",
+            "label": "View 醒狮八态 · 惊, stamp 07 of 8"
+          },
+          {
+            "id": "doubt",
+            "label": "View 醒狮八态 · 疑, stamp 08 of 8"
+          }
+        ],
+        "trappedFocus": true,
+        "restoredTrigger": "doubt"
+      }
+    },
+    {
+      "name": "existing parameter preview and light controls operate on the new collection",
+      "result": "passed",
+      "elapsedMs": 2410,
+      "details": {
+        "previewId": "joy",
+        "lightEnabledApplied": true,
+        "originalParametersRetained": true
+      }
+    },
+    {
+      "name": "repeated selection of eight stamps preserves GPU allocations",
+      "result": "passed",
+      "elapsedMs": 9288,
+      "details": {
+        "cycles": 8,
+        "renderer": {
+          "programs": 5,
+          "geometries": 2,
+          "textures": 26
+        },
+        "textureUUIDsStable": true,
+        "materialUUIDsStable": true
+      }
+    },
+    {
+      "name": "genuine touch reaches all eight stamps and the small viewport keeps all targets exposed",
+      "result": "passed",
+      "elapsedMs": 12642,
+      "details": {
+        "touched": [
+          {
+            "id": "joy",
+            "point": {
+              "x": 194.9984588623047,
+              "y": 274.2997817993164,
+              "clearance": 20
+            },
+            "pointerType": "touch"
+          },
+          {
+            "id": "anger",
+            "point": {
+              "x": 70.19844913482666,
+              "y": 464.20025634765625,
+              "clearance": 20
+            },
+            "pointerType": "touch"
+          },
+          {
+            "id": "sorrow",
+            "point": {
+              "x": 132.59844589233398,
+              "y": 658.3202514648438,
+              "clearance": 20
+            },
+            "pointerType": "touch"
+          },
+          {
+            "id": "delight",
+            "point": {
+              "x": 319.7953643798828,
+              "y": 295.4007339477539,
+              "clearance": 20
+            },
+            "pointerType": "touch"
+          },
+          {
+            "id": "motion",
+            "point": {
+              "x": 194.99388885498047,
+              "y": 472.63868713378906,
+              "clearance": 20
+            },
+            "pointerType": "touch"
+          },
+          {
+            "id": "stillness",
+            "point": {
+              "x": 70.19535446166992,
+              "y": 278.5206527709961,
+              "clearance": 20
+            },
+            "pointerType": "touch"
+          },
+          {
+            "id": "surprise",
+            "point": {
+              "x": 319.79541015625,
+              "y": 481.0809631347656,
+              "clearance": 20
+            },
+            "pointerType": "touch"
+          },
+          {
+            "id": "doubt",
+            "point": {
+              "x": 261.2984619140625,
+              "y": 658.3197021484375,
+              "clearance": 20
+            },
+            "pointerType": "touch"
+          }
+        ],
+        "smallViewport": {
+          "targets": [
+            {
+              "id": "joy",
+              "point": {
+                "x": 159.99535751342773,
+                "y": 184.59933853149414,
+                "clearance": 20
+              }
+            },
+            {
+              "id": "anger",
+              "point": {
+                "x": 57.59537601470947,
+                "y": 312.4008102416992,
+                "clearance": 20
+              }
+            },
+            {
+              "id": "sorrow",
+              "point": {
+                "x": 108.79536437988281,
+                "y": 443.0407409667969,
+                "clearance": 20
+              }
+            },
+            {
+              "id": "delight",
+              "point": {
+                "x": 262.3938217163086,
+                "y": 198.80097198486328,
+                "clearance": 20
+              }
+            },
+            {
+              "id": "motion",
+              "point": {
+                "x": 159.99694442749023,
+                "y": 318.079345703125,
+                "clearance": 20
+              }
+            },
+            {
+              "id": "stillness",
+              "point": {
+                "x": 57.593807220458984,
+                "y": 187.44086456298828,
+                "clearance": 20
+              }
+            },
+            {
+              "id": "surprise",
+              "point": {
+                "x": 262.39388275146484,
+                "y": 323.7613067626953,
+                "clearance": 20
+              }
+            },
+            {
+              "id": "doubt",
+              "point": {
+                "x": 214.3953857421875,
+                "y": 443.0391845703125,
+                "clearance": 20
+              }
+            }
+          ],
+          "viewport": {
+            "width": 320,
+            "documentWidth": 320,
+            "bodyWidth": 320
+          }
+        }
+      }
+    },
+    {
+      "name": "reduced motion and disposal preserve the existing mechanisms",
+      "result": "passed",
+      "elapsedMs": 1727,
+      "details": {
+        "reducedMotion": true,
+        "cleanup": {
+          "memory": {
+            "programs": 0,
+            "geometries": 0,
+            "textures": 0
+          },
+          "canvasCount": 0,
+          "diagnosticRemoved": true
+        }
+      }
+    },
+    {
+      "name": "WebGL disabled still shows eight correct paper stamps with touch focus",
+      "result": "passed",
+      "elapsedMs": 5212,
+      "details": {
+        "count": 8,
+        "allTouchFocusAndEscape": true,
+        "expectedConsoleErrors": [
+          "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch",
+          "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch",
+          "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+        ],
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "unchanged sources and browser error audit",
+      "result": "passed",
+      "elapsedMs": 0,
+      "details": {
+        "changedDuringRun": false,
+        "consoleErrors": 0,
+        "pageErrors": 0,
+        "failedRequests": 0
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "desktop-gallery.png",
+      "note": ""
+    },
+    {
+      "file": "desktop-hover-joy.png",
+      "note": ""
+    },
+    {
+      "file": "focus-joy.png",
+      "note": ""
+    },
+    {
+      "file": "focus-anger.png",
+      "note": ""
+    },
+    {
+      "file": "focus-sorrow.png",
+      "note": ""
+    },
+    {
+      "file": "focus-delight.png",
+      "note": ""
+    },
+    {
+      "file": "focus-motion.png",
+      "note": ""
+    },
+    {
+      "file": "focus-stillness.png",
+      "note": ""
+    },
+    {
+      "file": "focus-surprise.png",
+      "note": ""
+    },
+    {
+      "file": "focus-doubt.png",
+      "note": ""
+    },
+    {
+      "file": "mobile-gallery.png",
+      "note": ""
+    },
+    {
+      "file": "mobile-focus-joy.png",
+      "note": ""
+    },
+    {
+      "file": "small-mobile-gallery.png",
+      "note": ""
+    },
+    {
+      "file": "reduced-motion-focus-surprise.png",
+      "note": ""
+    },
+    {
+      "file": "fallback-focus-anger.png",
+      "note": ""
+    },
+    {
+      "file": "fallback-gallery.png",
+      "note": ""
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "sourceHashesBefore": {
+    "src/App.jsx": "42b25650a259b145780ab6e56dfc6319f13dc43c1dc2c2a1ace0008a2041fc77",
+    "src/config.js": "375679ff0599fe0dafbf4e7f8ce5b5ef35d04e84aea565d15698cef00930ffe7",
+    "src/artwork.js": "3d8204ea80d8fcdd49a94840e33f5ddc12f9cc5af7c8ba06f958abff34655f52",
+    "src/styles.css": "8db33ab3f541834d2c65c102eb20417a17da1dccf85e34610e93e143a3157f65",
+    "src/rendering/StampGallery.js": "7f73715b31d1661e37ac7d4cddbaf5655103b8e20ffeb535b6d241b998ca38c6",
+    "src/rendering/StampMaterial.js": "741374545803db3050230923acabb59d53ed28c4e0598c02113f8e292bf6cd6e",
+    "src/rendering/DappledLight.js": "c1316b92413a941f408e0f900040ec45eee4dd1d88a30ae84aa07a4d0e5f8ab9",
+    "src/rendering/dappledShaders.js": "680b10b983864b3d24e20e88ddba66b3f505181c025225d24e26eeb57f2671b3"
+  },
+  "sourceHashesAfter": {
+    "src/App.jsx": "42b25650a259b145780ab6e56dfc6319f13dc43c1dc2c2a1ace0008a2041fc77",
+    "src/config.js": "375679ff0599fe0dafbf4e7f8ce5b5ef35d04e84aea565d15698cef00930ffe7",
+    "src/artwork.js": "3d8204ea80d8fcdd49a94840e33f5ddc12f9cc5af7c8ba06f958abff34655f52",
+    "src/styles.css": "8db33ab3f541834d2c65c102eb20417a17da1dccf85e34610e93e143a3157f65",
+    "src/rendering/StampGallery.js": "7f73715b31d1661e37ac7d4cddbaf5655103b8e20ffeb535b6d241b998ca38c6",
+    "src/rendering/StampMaterial.js": "741374545803db3050230923acabb59d53ed28c4e0598c02113f8e292bf6cd6e",
+    "src/rendering/DappledLight.js": "c1316b92413a941f408e0f900040ec45eee4dd1d88a30ae84aa07a4d0e5f8ab9",
+    "src/rendering/dappledShaders.js": "680b10b983864b3d24e20e88ddba66b3f505181c025225d24e26eeb57f2671b3"
+  },
+  "finishedAt": "2026-10-26T10:09:35.107Z",
+  "result": "passed"
+}

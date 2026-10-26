@@ -3,13 +3,14 @@ import assert from 'node:assert/strict';
 import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
+import { STAMPS } from '../src/config.js';
 import { DEFAULT_PARAMETERS, PARAMETER_FIELDS, PARAMETER_GROUPS, STORAGE_KEY, LEGACY_STORAGE_KEY, serializeParameters } from '../src/parameters.js';
 
 const base = process.env.VERIFY_URL || 'http://127.0.0.1:4173/';
-const out = resolve('artifacts/single-light-verification');
+const out = resolve('artifacts/lion-stamps/regression/single-light');
 await mkdir(out, { recursive: true });
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
-const sourceFiles = ['src/parameters.js', 'src/ParameterPanel.jsx', 'src/rendering/StampMaterial.js', 'src/rendering/StampGallery.js', 'src/rendering/DappledLight.js', 'src/rendering/dappledShaders.js', 'src/rendering/ncsLighting.js', 'src/rendering/SurfaceTexture.js'];
+const sourceFiles = ['src/App.jsx', 'src/config.js', 'src/artwork.js', 'src/parameters.js', 'src/ParameterPanel.jsx', 'src/rendering/StampMaterial.js', 'src/rendering/StampGallery.js', 'src/rendering/DappledLight.js', 'src/rendering/dappledShaders.js', 'src/rendering/ncsLighting.js', 'src/rendering/SurfaceTexture.js'];
 const fingerprint = async () => Object.fromEntries(await Promise.all(sourceFiles.map(async path => [path, hash(await readFile(path))])));
 const report = { base, startedAt: new Date().toISOString(), scope: 'One enabled stamp-local light: rendered appearance controls, static surroundings, interaction, migration and resource lifecycle. Visual similarity to reference is reviewed separately.', sourceSnapshot: await fingerprint(), checks: [], errors: [], warnings: [] };
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });
@@ -79,19 +80,19 @@ async function set(p, key, value) {
 }
 async function setMany(p, values) { for (const [key, value] of Object.entries(values)) await set(p, key, value); }
 async function configure(p, values) { await p.evaluate(values => __postalGallery.configure(values), values); await p.waitForTimeout(120); }
-async function focus(p, id = 'craft') {
+async function focus(p, id = 'joy') {
   const d = await diag(p);
   if (d.selected && d.selected !== id) { await p.evaluate(() => __postalGallery.close()); await p.waitForFunction(() => __postalGallery.getDiagnostics().selected === null); }
   await p.evaluate(id => __postalGallery.focus(id), id);
   await p.waitForFunction(id => { const d = __postalGallery.getDiagnostics(); return d.selected === id && d.phase === 'focused'; }, id);
   await p.waitForTimeout(250);
 }
-async function pointer(p, u = .65, v = .3, id = 'craft') {
+async function pointer(p, u = .65, v = .3, id = 'joy') {
   const pose = (await diag(p)).poses.find(pose => pose.id === id), [bl, tl, , tr] = pose.corners;
   await p.mouse.move(tl[0] + (tr[0] - tl[0]) * u + (bl[0] - tl[0]) * v, tl[1] + (tr[1] - tl[1]) * u + (bl[1] - tl[1]) * v);
   await p.waitForTimeout(650);
 }
-async function delta(p, before, after, id = 'craft', region = 'inside') {
+async function delta(p, before, after, id = 'joy', region = 'inside') {
   const corners = (await diag(p)).poses.find(pose => pose.id === id).corners;
   return p.evaluate(async ({ before, after, corners, region }) => {
     async function decode(base64) { const image = new Image(); image.src = `data:image/png;base64,${base64}`; await image.decode(); const canvas = document.createElement('canvas'); canvas.width = image.width; canvas.height = image.height; const ctx = canvas.getContext('2d', { willReadFrequently: true }); ctx.drawImage(image, 0, 0); return { data: ctx.getImageData(0, 0, canvas.width, canvas.height).data, width: canvas.width, height: canvas.height }; }
@@ -137,7 +138,7 @@ try {
   });
   await check('default light flows on the stamp while the surrounding background remains static', async () => {
     await focus(page); await closePanel(page); await pointer(page);
-    const clip = { x: 1100, y: 120, width: 180, height: 180 }, a = await page.screenshot(), paperA = await page.screenshot({ clip }), d = await diag(page);
+    const clip = { x: 350, y: 80, width: 160, height: 70 }, a = await page.screenshot(), paperA = await page.screenshot({ clip }), d = await diag(page);
     await page.waitForTimeout(1100); const b = await page.screenshot(), paperB = await page.screenshot({ clip }), e = await diag(page);
     assert.ok(e.background.time > d.background.time); assert.ok(e.background.fieldUpdates > d.background.fieldUpdates);
     assert.equal(hash(paperA), hash(paperB)); const pixels = await delta(page, a, b); assert.ok(pixels.meanRGBDelta > .1, JSON.stringify(pixels));
@@ -149,7 +150,7 @@ try {
     await configure(page, { ...DEFAULT_PARAMETERS, lightAnimation: false, tiltEnabled: false, lightEnabled: false }); await pointer(page); await page.waitForTimeout(600);
     const unlit = await page.screenshot({ path: join(out, 'default-warm-off.png') });
     await configure(page, { lightEnabled: true }); await pointer(page); const lit = await page.screenshot({ path: join(out, 'default-warm-on.png') });
-    const corners = (await diag(page)).poses.find(pose => pose.id === 'craft').corners;
+    const corners = (await diag(page)).poses.find(pose => pose.id === 'joy').corners;
     const warmth = await page.evaluate(async ({ unlit, lit, corners }) => {
       async function decode(source) { const image = new Image(); image.src = `data:image/png;base64,${source}`; await image.decode(); const canvas = document.createElement('canvas'); canvas.width = image.width; canvas.height = image.height; const ctx = canvas.getContext('2d', { willReadFrequently: true }); ctx.drawImage(image, 0, 0); return { data: ctx.getImageData(0, 0, canvas.width, canvas.height).data, width: canvas.width }; }
       const a = await decode(unlit), b = await decode(lit), [bl, tl, , tr] = corners;
@@ -181,9 +182,9 @@ try {
     await setMany(page, { tiltEnabled: false, hoverScale: 1, hoverLift: 0, lightAnimation: false, surfaceRelief: .8, surfaceShine: .8 }); await pointer(page); await page.waitForTimeout(800);
     const measurements = [];
     for (const [key, low, high, uniform] of [['textureScale', .4, 3, 'uTextureScale'], ['surfaceRelief', 0, 1, 'uSurfaceRelief'], ['surfaceShine', 0, 1, 'uSurfaceShine']]) {
-      await set(page, key, low); await pointer(page); const a = await page.screenshot(), poseBefore = (await diag(page)).poses.find(pose => pose.id === 'craft');
+      await set(page, key, low); await pointer(page); const a = await page.screenshot(), poseBefore = (await diag(page)).poses.find(pose => pose.id === 'joy');
       await set(page, key, high); await pointer(page); const b = await page.screenshot(), pixels = await delta(page, a, b), uniforms = await uniformValue(page, uniform, high);
-      const poseAfter = (await diag(page)).poses.find(pose => pose.id === 'craft');
+      const poseAfter = (await diag(page)).poses.find(pose => pose.id === 'joy');
       for (const attribute of ['center', 'rotation', 'corners']) assert.deepEqual(poseAfter[attribute], poseBefore[attribute], `${key} must not move or extrude geometry`);
       assert.ok(pixels.meanRGBDelta > .015 && pixels.changedFraction > .01, `${key}: ${JSON.stringify(pixels)}`);
       measurements.push({ key, from: low, to: high, pixels, uniforms });
@@ -219,7 +220,7 @@ try {
     const measurements = [];
     for (const [key, low, high, uniform] of [['contactShadowColor', '#3a4a37', '#874f45', 'uColor'], ['contactShadowOpacity', 0, .9, 'uOpacity'], ['contactShadowSoftness', 0, 3, 'uSoftness']]) {
       await set(page, key, low); await page.mouse.move(1200, 100); await page.waitForTimeout(500); const a = await page.screenshot();
-      await set(page, key, high); await page.mouse.move(1200, 100); await page.waitForTimeout(500); const b = await page.screenshot(), pixels = await delta(page, a, b, 'craft', 'outside'), uniforms = await uniformValue(page, uniform, typeof high === 'string' ? high : undefined);
+      await set(page, key, high); await page.mouse.move(1200, 100); await page.waitForTimeout(500); const b = await page.screenshot(), pixels = await delta(page, a, b, 'joy', 'outside'), uniforms = await uniformValue(page, uniform, typeof high === 'string' ? high : undefined);
       assert.ok(pixels.meanRGBDelta > .01 && pixels.maximum > 1, `${key}: ${JSON.stringify(pixels)}`); measurements.push({ key, from: low, to: high, pixels, uniforms });
       await set(page, key, DEFAULT_PARAMETERS[key]);
     }
@@ -259,22 +260,22 @@ try {
   });
   await check('mobile touch moves stamp-local illumination and keeps controls usable', async () => {
     const mobile = await createPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
-    await mobile.locator('[data-stamp="craft"]').tap(); await mobile.waitForFunction(() => __postalGallery.getDiagnostics().phase === 'focused');
-    await configure(mobile, { tiltEnabled: false, lightAnimation: false }); const box = await mobile.locator('[data-stamp="craft"]').boundingBox(), cdp = await mobile.context().newCDPSession(mobile);
+    await mobile.locator('[data-stamp="joy"]').tap(); await mobile.waitForFunction(() => __postalGallery.getDiagnostics().phase === 'focused');
+    await configure(mobile, { tiltEnabled: false, lightAnimation: false }); const box = await mobile.locator('[data-stamp="joy"]').boundingBox(), cdp = await mobile.context().newCDPSession(mobile);
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: box.x + box.width * .3, y: box.y + box.height * .7 }] });
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: box.x + box.width * .31, y: box.y + box.height * .69 }] }); await mobile.waitForTimeout(600); const a = await mobile.screenshot(), d = await diag(mobile), opticalA = await mobile.evaluate(() => __singleOpticalHash());
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: box.x + box.width * .7, y: box.y + box.height * .3 }] }); await mobile.waitForTimeout(700); const b = await mobile.screenshot(), e = await diag(mobile), opticalB = await mobile.evaluate(() => __singleOpticalHash());
     const pixels = await delta(mobile, a, b); assert.ok(pixels.meanRGBDelta > .1, JSON.stringify(pixels)); assert.notEqual(opticalA, opticalB); assert.equal(d.background.time, e.background.time);
-    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] }); await set(mobile, 'textureScale', 1.4); assert.equal((await diag(mobile)).selected, 'craft'); await closePanel(mobile); await mobile.screenshot({ path: join(out, 'single-mobile-focus.png') });
-    return { opticalA, opticalB, pixels, actualTouchUV: e.lightStates.find(light => light.id === 'craft').uv, panelEditKeptFocus: true };
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] }); await set(mobile, 'textureScale', 1.4); assert.equal((await diag(mobile)).selected, 'joy'); await closePanel(mobile); await mobile.screenshot({ path: join(out, 'single-mobile-focus.png') });
+    return { opticalA, opticalB, pixels, actualTouchUV: e.lightStates.find(light => light.id === 'joy').uv, panelEditKeptFocus: true };
   });
-  await check('six-stamp cycles and lighting edits reuse GPU assets; dispose releases owned textures', async () => {
-    await reset(page); await closePanel(page); const ids = ['craft', 'kensho', 'specimen', 'mint', 'gaohan', 'nocturne'];
+  await check('eight-stamp cycles and lighting edits reuse GPU assets; dispose releases owned textures', async () => {
+    await reset(page); await closePanel(page); const ids = STAMPS.map(stamp => stamp.id);
     for (const id of ids) { await focus(page, id); await pointer(page, .6, .35, id); }
     const a = await diag(page), created = await page.evaluate(() => __singleLightQA.createdTextures);
     for (const [index, id] of ids.entries()) { await focus(page, id); await configure(page, { textureScale: .8 + index * .2, contactShadowSoftness: index * .4, lightIntensity: .5 + index * .1 }); await pointer(page, .6, .35, id); }
     const b = await diag(page); assert.deepEqual(a.materials, b.materials); assert.deepEqual(a.textures, b.textures); assert.equal(a.background.texture, b.background.texture); assert.deepEqual(a.renderer, b.renderer); assert.equal(await page.evaluate(() => __singleLightQA.createdTextures), created);
-    await focus(page, 'craft'); await configure(page, DEFAULT_PARAMETERS); await closePanel(page); await pointer(page); await page.screenshot({ path: join(out, 'single-final-focus.png') });
+    await focus(page, 'joy'); await configure(page, DEFAULT_PARAMETERS); await closePanel(page); await pointer(page); await page.screenshot({ path: join(out, 'single-final-focus.png') });
     const disposed = await page.evaluate(() => { const api = __postalGallery, before = api.getDiagnostics(); api.dispose(); api.dispose(); return { before, after: api.getDiagnostics(), deletedTextures: __singleLightQA.deletedTextures, canvasCount: document.querySelectorAll('canvas').length }; });
     assert.equal(disposed.after.renderer.textures, 0); assert.equal(disposed.canvasCount, 0); assert.ok(disposed.deletedTextures >= disposed.before.renderer.textures);
     return { cycles: ids.length, before: a.renderer, after: b.renderer, stableTextureAllocations: created, disposedTextureCount: disposed.after.renderer.textures, deletedTextures: disposed.deletedTextures };

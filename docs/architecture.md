@@ -2,19 +2,19 @@
 
 ## 分工
 
-React 负责语义按钮、键盘导航、标签、聚焦提示、参数面板和错误回退。原生 Three.js 负责六枚邮票、alpha轮廓阴影、票内光影与静态纸面。一个renderer、一个统一RAF；只有一套默认开启的光照：活动时更新离屏光场，再结合独立浅纸纹输出邮票。没有活动交互时停止RAF。未引入R3F、GSAP或状态库，因为单一可逆进度足以描述全部动画。
+React 负责语义按钮、键盘导航、标签、聚焦提示、参数面板和错误回退。原生 Three.js 负责八枚邮票、alpha轮廓阴影、票内光影与静态纸面。一个renderer、一个统一RAF；只有一套默认开启的光照：活动时更新离屏光场，再结合独立浅纸纹输出邮票。没有活动交互时停止RAF。未引入R3F、GSAP或状态库，因为单一可逆进度足以描述全部动画。
 
-`src/config.js` 集中六票的桌面/移动坐标、比例、角度、层级、纸色和时长。`src/artwork.js` 首次加载时生成六种独立 CanvasTexture；纹理与材质在 hover、聚焦、返回中复用，绝不重建。`src/rendering/StampMaterial.js` 提供纸面暖光、纸张 alpha 和可控多样本虚化；按用户后续校正移除了彩虹光谱。`src/rendering/DappledLight.js` 原样保留幽兰场景8的光场/散焦核心，按24fps上限离屏更新，最终合成跟随统一聚焦进度。
+`src/config.js` 集中八票的桌面/移动坐标、比例、角度、层级、纸色和时长。`src/artwork.js`先一次解码八张用户提供的本地1254方形透明PNG，再生成720×900票面Canvas，由gallery创建八种独立CanvasTexture；纹理与材质在 hover、聚焦、返回中复用，绝不重建。`src/rendering/StampMaterial.js` 提供纸面暖光、纸张 alpha 和可控多样本虚化；按用户后续校正移除了彩虹光谱。`src/rendering/DappledLight.js` 原样保留幽兰场景8的光场/散焦核心，按24fps上限离屏更新，最终合成跟随统一聚焦进度。
 
 ## 悬停票内的自然光场
 
 光学RT与屏幕背景明确分工：沿用本地参考的形态算法，并据原站NCS公开代码修正颜色阶段。首场保留珊瑚/苔绿RGB与alpha，经颜色加权50采样，再在票面使用`mix(peach,blurRGB,blurAlpha)`生成彩色光图，按默认.26的multiply关系合成；不再丢弃RGB。alpha齿孔裁掉票外部分。每枚票独立 `light` 阻尼值控制渐入/渐出，没有固定自动结束时长。
 
-`StampMaterial.paperLight()` 同时使用光图和独立纸纹法线，另有浅暖主灯与独立橙暖点灯。`ncsLighting.js`集中经公开代码与GPU核实的灯色、1.6/.65强度、.45灯高及.62粗糙度/.55涂层等参数；光源颜色从sRGB转线性RGB，光图在显示色域合成。保留原印刷，不从文字/C形/岛形提取高度、不位移几何、不金属化。`SurfaceTexture.js` 用多尺度域扭曲噪声生成浅纸纤维，纸纹UV缩放独立于光纹尺度。材质dispose释放独立法线。该适配器没有原站完整RoomEnvironment/Neutral输出链，不把相同参数值冒充完全相同的物理渲染。
+`StampMaterial.paperLight()` 同时使用光图和独立纸纹法线，另有浅暖主灯与独立橙暖点灯。`ncsLighting.js`集中经公开代码与GPU核实的灯色、1.6/.65强度、.45灯高及.62粗糙度/.55涂层等参数；光源颜色从sRGB转线性RGB，光图在显示色域合成。印刷图稿由独立Canvas提供，不从图像或文字提取高度、不位移几何、不金属化。`SurfaceTexture.js` 用多尺度域扭曲噪声生成浅纸纤维，纸纹UV缩放独立于光纹尺度。材质dispose释放独立法线。该适配器没有原站完整RoomEnvironment/Neutral输出链，不把相同参数值冒充完全相同的物理渲染。
 
 唯一光场默认scale1、stretch.84、angle44°、softness1.35、speed.35、coverage.708（radius.354）。Voronoi坐标密度为`26.7/(scale*sizeNorm)`，26.7是原站.534×50；sizeNorm按实际票面与min(DPR,2)半分辨率高度计算。固定RT仍384×480；悬停/聚焦变化只改uniform，不重分配纹理。Voronoi晶格中心固定.5，底层椭圆跟指针。默认1.35为产品额外柔化，原站bokeh参数.754没有半径乘法作用。周围投影独立持久alpha纹理与24采样shader，颜色/浓度/柔化直接更新uniform。
 
-RT固定384×480、aspect .786，接近六票的共同比例；resize不扩大成屏幕尺寸。`render(time,focus,reducedMotion,lightActive)`只有活动时推进和重算，离开后冻结缓存。背景output只用纸色、静态grain和极弱wash，聚焦时变暗；不存在背景光影模式。减少动态时关闭光场漂移和指针跟随，保留静态照明。
+RT固定384×480、aspect .786，接近八票0.8的共同比例；resize不扩大成屏幕尺寸。`render(time,focus,reducedMotion,lightActive)`只有活动时推进和重算，离开后冻结缓存。背景output只用纸色、静态grain和极弱wash，聚焦时变暗；不存在背景光影模式。减少动态时关闭光场漂移和指针跟随，保留静态照明。
 
 没有 `lightModel` 或预设分支。光影关闭、强度0或无交互票时不执行光场pass；暂停流动且指针收敛后同样停帧。参数v2、appearanceRevision4，兼容导入v1/v2：旧光影设置首次升级为唯一开启效果，保留布局/交互；当前revision保留手调与主动关闭。详见[参数说明](parameter-guide.md)。
 
@@ -36,4 +36,8 @@ RT固定384×480、aspect .786，接近六票的共同比例；resize不扩大�
 
 复用纹理、材质、几何和renderer；每帧只更新变换与uniforms，React只在输入阶段改变时更新。票内光场仅活动时以最高24fps重算，画面合成跟随RAF，空闲后停帧；背景保持静态。后台隐藏暂停，减少动画偏好关闭漂移/倾斜并缩短过场。取消RAF、移除事件与observer，释放geometry/material/texture/render targets/renderer，热更新或卸载不会堆积资源。
 
-每枚票是可聚焦的DOM按钮，有可读名称和Enter/Space操作；聚焦时隐藏其他票的键盘目标，Escape/背景/显式关闭按钮可返回，归还原按钮焦点。小屏触摸不依赖hover。无WebGL时提供带原创插画的DOM展示与相同聚焦操作。
+每枚票是可聚焦的DOM按钮，有可读名称和Enter/Space操作；聚焦时隐藏其他票的键盘目标，Escape/背景/显式关闭按钮可返回，归还原按钮焦点。小屏触摸不依赖hover。无WebGL时提供带醒狮八态票面的DOM展示与相同聚焦操作。
+
+## 醒狮图稿替换
+
+2026-10-26用户授权以醒狮八态替换旧六种印刷，保留相同机制。App等待`prepareStampArtwork()`后建立gallery，使用最新参数；异步完成前卸载有取消保护。静态回退复用同一票面生成函数与config布局。8票现为26张GPU纹理，旧六票20张是历史；源图只读复制、设计与本轮验收见[lion-stamps.md](lion-stamps.md)。

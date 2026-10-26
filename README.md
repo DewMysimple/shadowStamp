@@ -1,6 +1,8 @@
-# Postal Studies · 光与纸的交互展览
+# Postal Studies · 醒狮八态
 
-React + Vite + 原生 Three.js。保留邮票印刷图案，只有一套默认开启的暖光：有机光斑、浅纸纹、柔和暗部与周围投影共同作用。没有预设或材质模式切换。背景为静态暖白纸面。
+React + Vite + 原生 Three.js。使用用户lion工程中的喜、怒、哀、乐、动、静、惊、疑八张完整神态图，分别设计八枚邮票：米白票纸、朱红题签、双语态名、01–08编号和透明齿孔。原有悬停暖光、浅纸纹、聚焦、参数与输入机制保留，背景为静态暖白纸面。
+
+[八枚票面总览](artifacts/lion-stamps/stamps-contact-sheet.png) · [独立PNG](artifacts/lion-stamps/prints/) · [素材与设计说明](docs/lion-stamps.md)
 
 ## 运行
 
@@ -19,7 +21,7 @@ npm run dev
 - 聚焦后可在票内继续移动鼠标或拖动手指，引导局部光照。支持键盘和减少动态偏好。
 - 左上角“参数控件”直接调节光色、暗部、纹理放大、光斑散焦、周围投影及原有偏转/聚焦。支持单组/全部重置、本机自动保存及JSON导入导出；聚焦后仍可调参。
 
-本轮读取原站公开JS并核对实际GPU参数：此前丢弃彩色光图RGB，漏掉桃橙/珊瑚色和独立橙暖点光；固定密度也不符合原站随尺寸/DPR变化的尺度规则。现已在同一效果中修正。见[源码与参数对照](docs/ncs-light-source-audit.md)、[灯光实测](docs/ncs-environment-source.md)、[参数说明](docs/parameter-guide.md)。旧视频分析保留在[前轮记录](docs/fidelity-pass.md)。
+光影沿用前轮已完成的NCS源码/GPU参数适配，本轮没有调整灯色、光图、法线或光学算法。见[源码与参数对照](docs/ncs-light-source-audit.md)、[灯光实测](docs/ncs-environment-source.md)、[参数说明](docs/parameter-guide.md)。
 
 用户后续明确要求光效作用在**悬停邮票表面**，最终版本不显示票面彩虹色带、不把动态光影铺在背景上，也不提供额外的背景光影模式。
 
@@ -29,22 +31,23 @@ npm run dev
 npm run build
 npm run test
 # 保持开发服务启动，再开一个终端：
+npm run test:stamps
 npm run test:browser
 npm run test:light
 npm run test:controls
 npm run test:fidelity
 ```
 
-浏览器脚本使用本机安装的 Chrome（Playwright channel: chrome），不要求下载额外浏览器。其他端口可设置 `VERIFY_URL`。本轮报告和截图统一放在 `artifacts/single-light-verification/`；视觉复查在 `artifacts/single-light-study/`。`npm run preview -- --port 4175` 可预览生产构建，实际端口以终端为准。
+浏览器脚本使用本机安装的 Chrome（Playwright channel: chrome），不要求下载额外浏览器。其他端口可设置 `VERIFY_URL`。八态验收位于 `artifacts/lion-stamps/verification/`，原有机制的回归脚本已适配八枚，写入 `artifacts/lion-stamps/regression/`。前轮光影报告保留原目录。`npm run preview -- --port 4280 --strictPort` 可预览生产构建。
 
 ## 代码与参数
 
 | 文件 | 职责 |
 | --- | --- |
-| `src/App.jsx` | 语义按钮、键盘说明、模式切换和无WebGL纸面回退 |
-| `src/config.js` | 六票布局/角度/尺寸/层级、虚化与聚焦时间 |
+| `src/App.jsx` | 图稿预解码、语义按钮、键盘说明和无WebGL纸面回退 |
+| `src/config.js` | 八态元数据、图片路径、布局/角度/尺寸/层级、聚焦时间 |
 | `src/parameters.js`、`src/ParameterPanel.jsx` | 四组实时参数、验证、保存与导入导出；仅一个默认效果 |
-| `src/artwork.js` | 六种固定seed的原创印刷图案和真实alpha齿孔 |
+| `src/artwork.js` | 八张神态图的一次解码、统一票面排版和真实alpha齿孔 |
 | `src/rendering/SurfaceTexture.js` | 独立于印刷图稿的细密表面法线，创建一次并随材质释放 |
 | `src/rendering/StampGallery.js` | 一个renderer、一个RAF、统一坐标/输入/生命周期 |
 | `src/rendering/StampMaterial.js` | 局部UV采样光场、按hover强度合成纸面暖光、连续alpha虚化 |
@@ -53,7 +56,7 @@ npm run test:fidelity
 | `src/rendering/dappledShaders.js` | 场景8原始光场、50采样散焦、静态纸面输出 |
 | `src/motion.js` | 可在中途反向的统一聚焦进度 |
 
-没有运行时远程图片、字体或CDN依赖。邮票图案由代码生成；没有把视频帧或网站素材当成网页纹理。
+八张1254×1254透明原图复制在`public/assets/lion-states/`，与用户源图逐字节一致，E盘工程未改动。票面Canvas首次生成后复用；没有运行时远程图片、字体或CDN依赖。`node scripts/capture-lion-stamps.mjs`可重导出八张720×900透明齿孔PNG与总览。
 
 ## 工程记忆与Git
 
@@ -69,4 +72,4 @@ npm run test:fidelity
 - [工程验收与文件清单](docs/validation.md)
 - [本轮4段视频分析](docs/controls-video-analysis.md)、[网站重新实测](docs/controls-web-research.md)、[场景8参数映射](docs/controls-scene8.md)
 
-初始工作区只有MP4，未包含任务书所称的既有镭射Shader。未修改或删除此类旧代码；最终纸面材质为新建模块，可在取得原资产后替换适配。六枚图案为原创近似设计，并不等于复原原网站所有插画。参考视频不含退出或手机画面，这两部分为本工程独立实现。
+初始六票与早期视频/原站研究属于历史。当前为用户授权的醒狮八态图稿，沿用本工程纸面材质与交互，并非复制原站插画。光影适配范围与差异继续见源码审计。

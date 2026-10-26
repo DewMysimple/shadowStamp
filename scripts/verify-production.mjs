@@ -5,7 +5,7 @@ import { resolve, join } from 'node:path';
 import { STORAGE_KEY } from '../src/parameters.js';
 
 const baseURL = process.env.PRODUCTION_URL || 'http://127.0.0.1:4174/';
-const output = resolve('artifacts/single-light-verification/production');
+const output = resolve('artifacts/lion-stamps/regression/production');
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });
 const report = { baseURL, startedAt: new Date().toISOString(), checks: [], errors: [] };
@@ -19,6 +19,7 @@ async function pageFor(options = {}, init) {
   page.on('console', message => { if (['error', 'warning'].includes(message.type())) report.errors.push(message.text()); });
   const response = await page.goto(baseURL, { waitUntil: 'networkidle' });
   assert.equal(response.status(), 200);
+  await page.waitForFunction(() => document.querySelector('main')?.dataset.phase === 'idle');
   assert.equal(await page.locator('canvas').count(), 1);
   assert.equal(await page.evaluate(() => typeof window.__postalGallery), 'undefined');
   return page;
@@ -38,7 +39,7 @@ try {
     await page.locator('[data-parameter="resetTiltOnLeave"]').check();
     await page.waitForTimeout(300);
     assert.equal(await page.locator('main').getAttribute('data-phase'), 'focused');
-    assert.equal(await page.locator('[data-stamp="craft"]').getAttribute('data-selected'), 'true');
+    assert.equal(await page.locator('[data-stamp="joy"]').getAttribute('data-selected'), 'true');
     const downloadEvent = page.waitForEvent('download');
     await page.getByRole('button', { name: '导出', exact: true }).click();
     const download = await downloadEvent;
@@ -51,7 +52,7 @@ try {
     assert.equal(await page.getByRole('spinbutton', { name: '聚焦偏转数值', exact: true }).inputValue(), '12');
     await page.getByRole('button', { name: '聚焦主邮票', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('main').dataset.phase === 'focused');
-    await page.locator('[data-stamp="craft"]').focus();
+    await page.locator('[data-stamp="joy"]').focus();
     await page.keyboard.press('Escape');
     await page.waitForFunction(() => document.querySelector('main').dataset.phase === 'hovering' || document.querySelector('main').dataset.phase === 'idle');
     return { http: 200, canvas: 1, devDiagnosticsExposed: false, persistedTilt: 12, exported: download.suggestedFilename(), focusedControlClicksSafe: true };
