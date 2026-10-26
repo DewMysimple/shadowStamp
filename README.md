@@ -1,6 +1,6 @@
 # Postal Studies · 醒狮八态
 
-React + Vite + 原生 Three.js。使用用户lion工程中的喜、怒、哀、乐、动、静、惊、疑八张完整神态图，分别设计八枚邮票：米白票纸、朱红题签、双语态名、01–08编号和透明齿孔。原有悬停暖光、浅纸纹、聚焦、参数与输入机制保留，背景为静态暖白纸面。
+React + Vite + 原生 Three.js。使用用户lion工程中的喜、怒、哀、乐、动、静、惊、疑八张完整神态图，分别设计八枚邮票：米白票纸、朱红题签、双语态名、01–08编号和透明齿孔。原有邮票图稿、画廊背景、悬停暖光、浅纸纹、聚焦、参数与输入机制保留；参数面板与界面控件采用醒狮浅红色点缀，卡片外围不显示焦点描边。
 
 [八枚票面总览](artifacts/lion-stamps/stamps-contact-sheet.png) · [独立PNG](artifacts/lion-stamps/prints/) · [素材与设计说明](docs/lion-stamps.md)
 

@@ -1,6 +1,14 @@
-# 当前验收：快速切卡光影
+# 当前验收：醒狮浅红UI与卡片焦点样式
 
-2026-10-27，基线`73cba51`。已移除照明等待虚化近零的门槛，并在活动票变化首帧刷新共享光图，保留图稿/暖光/参数。当前unit15、快速切换6、browser14、production4与build通过；默认动态24次切换独立复查通过。实际GPU首帧在blur仍10.21时已有光影像素差，完整证据见[切换验收](rapid-hover.md)。下文为前轮八态内容与原站光影的历史验收。
+2026-10-27，基线`6a0c297`。移除邮票按钮周围的绿色焦点框，键盘聚焦在票角显示小红点；浅红色只用于参数面板和界面控件。邮票图稿、票面光影、画廊背景及原参数保持不变。
+
+`node --test tests/parameters.test.js`的4项参数保存检查通过；`npm run build`成功。使用本机Chrome/SwiftShader在1440×900检查初始画廊、真实悬停、键盘焦点样式，并在390×844检查手机画面；焦点态计算样式`outline:none`，小红点保留，邮票和背景颜色与原值一致，诊断错误0。截图见[桌面UI](../artifacts/theme-update/desktop-ui-palette.png)、[暖光悬停](../artifacts/theme-update/desktop-hover.png)、[键盘聚焦](../artifacts/theme-update/keyboard-focus.png)、[手机UI](../artifacts/theme-update/mobile-ui-palette.png)。本轮没有改交互/渲染结构，未重跑整套浏览器回归。原有4173开发预览保留。
+
+下文为前轮八态内容与原站光影的历史验收。
+
+---
+
+# 前轮验收：快速切卡光影
 
 ---
 
