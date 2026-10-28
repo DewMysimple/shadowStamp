@@ -124,26 +124,41 @@ test('pausing flow retains pointer response, then settles fully; reduced motion 
   light.dispose();
 });
 
+test('the stamp-local light field follows vertical, horizontal and extra-tall stamp ratios', () => {
+  const renderer = fakeRenderer();
+  const light = createDappledLight(renderer, { lightAnimation: false });
+  light.resize(1440, 900);
+  for (const [id, width, height] of [['foshan', 45, 65], ['beijing', 60, 45], ['singapore', 40, 75]]) {
+    light.setActiveStamp(id);
+    light.setStampSize(width, height, 1);
+    light.render(0.001 * (width + height), 0, false, true);
+    assert.ok(Math.abs(light.stats.aspect - width / height) < 1e-8, id);
+  }
+  light.resize(390, 844);
+  assert.ok(Math.abs(light.stats.aspect - 40 / 75) < 1e-8, 'viewport resize preserves the active stamp ratio');
+  light.dispose();
+});
+
 test('card handoffs refresh the shared field immediately without waiting for the flow budget', () => {
   const renderer = fakeRenderer();
   const light = createDappledLight(renderer, { lightAnimation: false });
   light.resize(1440, 900);
-  light.setActiveStamp('joy');
+  light.setActiveStamp('foshan');
   light.setPointer(0.1, 0.9);
   light.render(0, 0, false, true);
   const original = light.stats;
   assert.deepEqual(original.pointer, original.target);
 
-  light.setActiveStamp('anger');
+  light.setActiveStamp('guangzhou');
   light.setPointer(0.9, 0.1);
   light.render(0.001, 0, false, true);
   assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 1);
   assert.equal(light.stats.texture, original.texture);
-  assert.equal(light.stats.owner, 'anger');
+  assert.equal(light.stats.owner, 'guangzhou');
   assert.deepEqual(light.stats.pointer, light.stats.target);
 
   // Same-card movement still obeys the user's response and 24fps flow budget.
-  light.setActiveStamp('anger');
+  light.setActiveStamp('guangzhou');
   light.setPointer(0.1, 0.9);
   light.render(0.002, 0, false, true);
   assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 1);
@@ -151,12 +166,12 @@ test('card handoffs refresh the shared field immediately without waiting for the
   light.setActiveStamp(null);
   light.render(0.003, 0, false, false);
   assert.equal(light.needsFrame, false);
-  light.setActiveStamp('anger');
+  light.setActiveStamp('guangzhou');
   light.render(0.004, 0, false, true);
   assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 2);
   assert.deepEqual(light.stats.pointer, light.stats.target);
   light.configure({ lightEnabled: false });
-  light.setActiveStamp('joy');
+  light.setActiveStamp('foshan');
   light.render(0.005, 0, false, true);
   assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 2);
   light.dispose();

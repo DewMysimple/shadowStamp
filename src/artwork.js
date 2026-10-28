@@ -1,13 +1,10 @@
 import { STAMPS } from './config.js';
 
-// Supplied expressions remain flat ink; the paper normal and hover light are
-// generated independently by the existing renderer.
 const W = 720;
-const H = 900;
 const images = new Map();
 let preparation;
 
-/** Decode once before either the GPU gallery or its paper fallback is created. */
+/** Decode all twelve independent ImageGen scene paintings before creating the gallery. */
 export function prepareStampArtwork() {
   if (!preparation) {
     preparation = Promise.all(STAMPS.map(async stamp => {
@@ -18,7 +15,7 @@ export function prepareStampArtwork() {
       images.set(stamp.id, image);
     })).catch(error => {
       preparation = null;
-      throw new Error('醒狮图稿未能加载，请刷新重试。', { cause: error });
+      throw new Error('邮票美术资产未能加载，请刷新重试。', { cause: error });
     });
   }
   return preparation;
@@ -34,13 +31,25 @@ function seeded(seed) {
   };
 }
 
-function text(ctx, value, x, y, size, color, family = '"SimSun", "Songti SC", serif') {
-  ctx.fillStyle = color;
-  ctx.font = `${size}px ${family}`;
-  ctx.fillText(value, x, y);
+function roundRect(ctx, x, y, width, height, radius) {
+  const r = Math.min(radius, width / 2, height / 2);
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + width, y, x + width, y + height, r);
+  ctx.arcTo(x + width, y + height, x, y + height, r);
+  ctx.arcTo(x, y + height, x, y, r);
+  ctx.arcTo(x, y, x + width, y, r);
+  ctx.closePath();
 }
 
-function paperGrain(ctx, seed) {
+function drawContained(ctx, image, x, y, width, height) {
+  const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight);
+  const drawWidth = image.naturalWidth * scale;
+  const drawHeight = image.naturalHeight * scale;
+  ctx.drawImage(image, x + (width - drawWidth) / 2, y + (height - drawHeight) / 2, drawWidth, drawHeight);
+}
+
+function paperGrain(ctx, width, height, seed) {
   const random = seeded(seed);
   const tile = document.createElement('canvas');
   tile.width = 360;
@@ -48,7 +57,7 @@ function paperGrain(ctx, seed) {
   const grain = tile.getContext('2d');
   const pixels = grain.createImageData(tile.width, tile.height);
   for (let i = 0; i < pixels.data.length; i += 4) {
-    const value = Math.round(255 - random() * 7);
+    const value = Math.round(255 - random() * 3);
     pixels.data[i] = value;
     pixels.data[i + 1] = value;
     pixels.data[i + 2] = value;
@@ -57,75 +66,99 @@ function paperGrain(ctx, seed) {
   grain.putImageData(pixels, 0, 0);
   ctx.save();
   ctx.globalCompositeOperation = 'multiply';
-  ctx.drawImage(tile, 0, 0, W, H);
+  ctx.globalAlpha = 0.7;
+  ctx.drawImage(tile, 0, 0, width, height);
   ctx.restore();
 }
 
-function perforate(ctx) {
+function perforate(ctx, width, height) {
   ctx.save();
   ctx.globalCompositeOperation = 'destination-out';
   ctx.fillStyle = '#000';
-  for (let i = 0; i < 6; i++) {
-    const x = (i + .5) * W / 6;
-    for (const y of [0, H]) {
-      ctx.beginPath(); ctx.arc(x, y, 24, 0, Math.PI * 2); ctx.fill();
+  const radius = 21;
+  const horizontalCount = 6;
+  const verticalCount = Math.max(5, Math.round(height / 110));
+  for (let i = 0; i < horizontalCount; i++) {
+    const x = (i + 0.5) * width / horizontalCount;
+    for (const y of [0, height]) {
+      ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2); ctx.fill();
     }
   }
-  for (let i = 0; i < 8; i++) {
-    const y = (i + .5) * H / 8;
-    for (const x of [0, W]) {
-      ctx.beginPath(); ctx.arc(x, y, 24, 0, Math.PI * 2); ctx.fill();
+  for (let i = 0; i < verticalCount; i++) {
+    const y = (i + 0.5) * height / verticalCount;
+    for (const x of [0, width]) {
+      ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2); ctx.fill();
     }
   }
   ctx.restore();
 }
 
-/** One stamp layout around each user-supplied lion expression. */
-export function createStampArtwork(kind, width = W, height = H) {
+/** Compose only the printable paper, type, and perforations around the generated scene. */
+export function createStampArtwork(kind, width = W, height) {
   const stamp = STAMPS.find(item => item.id === kind);
   if (!stamp) throw new Error(`Unknown stamp artwork: ${kind}`);
   const image = images.get(kind);
   if (!image) throw new Error('Call prepareStampArtwork() before creating a stamp.');
+  const logicalHeight = height ?? Math.round(width / stamp.ratio);
   const canvas = document.createElement('canvas');
   canvas.width = Math.max(1, Math.round(width));
-  canvas.height = Math.max(1, Math.round(height));
+  canvas.height = Math.max(1, Math.round(logicalHeight));
   const ctx = canvas.getContext('2d');
-  ctx.scale(canvas.width / W, canvas.height / H);
+  ctx.scale(canvas.width / W, canvas.height / logicalHeight);
   ctx.imageSmoothingQuality = 'high';
+  const H = logicalHeight;
 
   const paper = ctx.createLinearGradient(0, 0, W, H);
-  paper.addColorStop(0, '#faf6ed');
-  paper.addColorStop(1, '#eee5d5');
+  paper.addColorStop(0, '#fbf7f1');
+  paper.addColorStop(1, '#f2ebdf');
   ctx.fillStyle = paper;
   ctx.fillRect(0, 0, W, H);
-  ctx.strokeStyle = '#c4a58a';
+
+  const topBand = Math.max(48, Math.round(H * 0.052));
+  const bottomBand = Math.max(50, Math.round(H * 0.05));
+  const art = { x: 29, y: topBand + 6, width: W - 58, height: H - topBand - bottomBand - 12 };
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(art.x, art.y, art.width, art.height);
+  ctx.clip();
+  drawContained(ctx, image, art.x, art.y, art.width, art.height);
+  ctx.restore();
+
+  ctx.strokeStyle = 'rgba(145, 104, 72, .46)';
+  ctx.lineWidth = 1.3;
+  ctx.strokeRect(17.5, 17.5, W - 35, H - 35);
+  ctx.strokeStyle = 'rgba(145, 104, 72, .23)';
   ctx.lineWidth = 1;
-  ctx.strokeRect(39.5, 39.5, 641, 821);
+  ctx.strokeRect(art.x - 0.5, art.y - 0.5, art.width + 1, art.height + 1);
 
-  text(ctx, '醒 狮 八 态', 65, 84, 25, '#81382f');
-  ctx.textAlign = 'right';
-  text(ctx, `${stamp.number} / 08`, 655, 80, 16, '#927c65', 'monospace');
+  ctx.fillStyle = '#a3483d';
+  ctx.font = '12px Georgia, "Times New Roman", serif';
   ctx.textAlign = 'left';
-  ctx.strokeStyle = '#bda58b';
-  ctx.beginPath(); ctx.moveTo(65, 105); ctx.lineTo(655, 105); ctx.stroke();
+  ctx.fillText('POSTAL STUDIES', 34, topBand - 19);
+  ctx.font = '10px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif';
+  ctx.fillStyle = '#765d51';
+  ctx.fillText(`${stamp.place}  ·  ${stamp.english}`, 34, topBand - 5);
 
-  // Quiet registration circles echo the supplied reference's paper backdrop.
-  ctx.strokeStyle = 'rgba(176,145,105,.19)';
-  for (const radius of [263, 271]) {
-    ctx.beginPath(); ctx.arc(360, 426, radius, 0, Math.PI * 2); ctx.stroke();
-  }
-  // Preserve the whole illustration, including fur, beard and crown.
-  ctx.drawImage(image, 45, 119, 630, 630);
-
-  ctx.strokeStyle = '#bda58b';
-  ctx.beginPath(); ctx.moveTo(65, 758); ctx.lineTo(655, 758); ctx.stroke();
-  text(ctx, stamp.label, 64, 831, 66, '#9d3029');
-  text(ctx, stamp.english, 157, 793, 23, '#573d30', 'Georgia, serif');
-  text(ctx, '岭南醒狮 · 神态图志', 159, 826, 18, '#87725e');
   ctx.textAlign = 'right';
-  text(ctx, stamp.number, 655, 829, 52, '#a34334', 'Georgia, serif');
+  ctx.fillStyle = '#a3483d';
+  ctx.font = '32px Georgia, "Times New Roman", serif';
+  ctx.fillText(stamp.number, W - 34, topBand - 9);
+
+  const footerY = H - bottomBand + 8;
   ctx.textAlign = 'left';
-  paperGrain(ctx, 7493 + STAMPS.indexOf(stamp) * 811);
-  perforate(ctx);
+  ctx.fillStyle = '#9e3e34';
+  ctx.font = '23px "Microsoft YaHei", "Noto Sans CJK SC", serif';
+  ctx.fillText(stamp.title, 34, footerY + 21);
+  ctx.fillStyle = '#886e5d';
+  ctx.font = '10px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif';
+  ctx.fillText(stamp.caption, 36, footerY + 37);
+  ctx.textAlign = 'right';
+  ctx.fillStyle = '#b39276';
+  ctx.font = '9px Georgia, "Times New Roman", serif';
+  ctx.fillText(stamp.series === 'guangdong' ? 'LINGNAN' : stamp.series === 'china' ? 'CHINA' : 'WORLD', W - 34, footerY + 33);
+  ctx.textAlign = 'left';
+
+  paperGrain(ctx, W, H, 18713 + STAMPS.indexOf(stamp) * 811);
+  perforate(ctx, W, H);
   return canvas;
 }

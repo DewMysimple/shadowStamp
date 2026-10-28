@@ -31,7 +31,7 @@ test('paper micro-normals are deterministic, unbiased between axes and contain n
 test('stamp material owns only its micro-normal and releases it with the persistent material', () => {
   const art = new THREE.Texture({ width: 720, height: 900 });
   const light = new THREE.Texture();
-  const material = createStampMaterial(art, .2, light);
+  const material = createStampMaterial(art, light);
   const surface = material.uniforms.uSurfaceNormal.value;
   let surfaceDisposals = 0, externalDisposals = 0;
   surface.addEventListener('dispose', () => surfaceDisposals++);
@@ -39,6 +39,7 @@ test('stamp material owns only its micro-normal and releases it with the persist
   light.addEventListener('dispose', () => externalDisposals++);
   assert.equal(material.uniforms.uLightModel, undefined);
   assert.equal(material.uniforms.uTextureScale.value, 1);
+  assert.equal(material.uniforms.uFoil, undefined);
   assert.equal(material.uniforms.uSurfaceMetalness, undefined);
   assert.equal(material.uniforms.uArtworkResolution, undefined);
   assert.equal(material.uniforms.uActivity.value, 0);

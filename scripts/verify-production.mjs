@@ -39,7 +39,7 @@ try {
     await page.locator('[data-parameter="resetTiltOnLeave"]').check();
     await page.waitForTimeout(300);
     assert.equal(await page.locator('main').getAttribute('data-phase'), 'focused');
-    assert.equal(await page.locator('[data-stamp="joy"]').getAttribute('data-selected'), 'true');
+    assert.equal(await page.locator('[data-stamp="foshan"]').getAttribute('data-selected'), 'true');
     const downloadEvent = page.waitForEvent('download');
     await page.getByRole('button', { name: '导出', exact: true }).click();
     const download = await downloadEvent;
@@ -52,7 +52,7 @@ try {
     assert.equal(await page.getByRole('spinbutton', { name: '聚焦偏转数值', exact: true }).inputValue(), '12');
     await page.getByRole('button', { name: '聚焦主邮票', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('main').dataset.phase === 'focused');
-    await page.locator('[data-stamp="joy"]').focus();
+    await page.locator('[data-stamp="foshan"]').focus();
     await page.keyboard.press('Escape');
     await page.waitForFunction(() => document.querySelector('main').dataset.phase === 'hovering' || document.querySelector('main').dataset.phase === 'idle');
     return { http: 200, canvas: 1, devDiagnosticsExposed: false, persistedTilt: 12, exported: download.suggestedFilename(), focusedControlClicksSafe: true };

@@ -13,6 +13,8 @@ const report = { baseURL, startedAt: new Date().toISOString(), browser: 'Install
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });
 const timeout = 15000;
 const ids = STAMPS.map(stamp => stamp.id);
+const primaryId = STAMPS[0].id;
+const secondId = STAMPS[1].id;
 const allContexts = [];
 
 async function createPage(options = {}, expectedErrors = null) {
@@ -117,18 +119,18 @@ try {
     await closeGallery(desktop);await desktop.waitForTimeout(350);
     assert.equal(await desktop.locator('canvas').count(), 1);
     await screenshot(desktop, 'desktop-01-initial.png');
-    await desktop.locator('[data-stamp="joy"]').hover();
-    await desktop.waitForFunction(() => window.__postalGallery.getDiagnostics().hovered === 'joy');
+    await desktop.locator(`[data-stamp="${primaryId}"]`).hover();
+    await desktop.waitForFunction(id => window.__postalGallery.getDiagnostics().hovered === id, primaryId);
     await desktop.waitForTimeout(400);
-    assert.equal(await desktop.locator('.hover-label').textContent(), '醒狮八态 · 喜');
+    assert.equal(await desktop.locator('.hover-label').textContent(), STAMPS[0].name);
     await screenshot(desktop, 'desktop-02-hover.png');
     await assertViewportOrigin(desktop);
     await desktop.evaluate(() => { window.__qaHoldProgress = .42; });
-    await clickVisible(desktop, 'joy');
+    await clickVisible(desktop, primaryId);
     await desktop.waitForFunction(() => window.__qaFreeze, null, { timeout, polling: 20 });
     const midpoint = await diagnostic(desktop);assert.ok(midpoint.progress >= .42 && midpoint.progress < .99);
     await screenshot(desktop, 'desktop-03-mid-transition.png', 'RAF held after an actual transition frame for an exact intermediate screenshot; immediately resumed.');
-    await desktop.evaluate(() => window.__qaResume());await waitState(desktop, 'focused', 'joy');
+    await desktop.evaluate(() => window.__qaResume());await waitState(desktop, 'focused', primaryId);
     await screenshot(desktop, 'desktop-04-focus.png');
     await assertViewportOrigin(desktop);
     assert.equal(await desktop.locator('.focus-instruction').textContent(), 'CLICK ANYWHERE OR PRESS ESC.');
@@ -136,10 +138,10 @@ try {
     assert.equal(await desktop.evaluate(() => Boolean(document.elementFromPoint(400,150)?.closest('[data-stamp], [data-parameter-panel]'))), false);
     await desktop.mouse.click(400,150);await waitState(desktop, 'idle', null);await desktop.waitForTimeout(300);
     await screenshot(desktop, 'desktop-05-return.png');
-    return { canvasCount: 1, midpoint: midpoint.progress, label: '醒狮八态 · 喜', backgroundExit: true };
+    return { canvasCount: 1, midpoint: midpoint.progress, label: STAMPS[0].name, backgroundExit: true };
   });
 
-  await check('desktop: all eight stamps select through exposed pointer targets', async () => {
+  await check('desktop: all twelve stamps select through exposed pointer targets', async () => {
     const selected = [];
     for (const id of ids) {
       await closeGallery(desktop);await desktop.waitForTimeout(100);
@@ -172,7 +174,7 @@ try {
   });
 
   await check('desktop: Escape reverses an unfinished transition continuously', async () => {
-    await closeGallery(desktop);await clickVisible(desktop,'joy');
+    await closeGallery(desktop);await clickVisible(desktop,primaryId);
     await desktop.waitForFunction(() => { const d=window.__postalGallery.getDiagnostics();return d.progress>.1 && d.progress<.9; }, { timeout });
     const before=await diagnostic(desktop);await desktop.keyboard.press('Escape');const after=await diagnostic(desktop);
     assert.ok(after.progress <= before.progress+.18, `position jumped: ${before.progress} -> ${after.progress}`);
@@ -181,17 +183,17 @@ try {
   });
 
   await check('desktop: choosing another stamp while returning queues a new focus', async () => {
-    await closeGallery(desktop);await clickVisible(desktop,'joy');await waitState(desktop,'focused','joy');
+    await closeGallery(desktop);await clickVisible(desktop,primaryId);await waitState(desktop,'focused',primaryId);
     await desktop.keyboard.press('Escape');
     await desktop.waitForFunction(() => {const d=window.__postalGallery.getDiagnostics();return d.phase==='returning'&&d.progress<.75&&d.progress>.05;}, { timeout });
-    await clickVisible(desktop,'delight');await waitState(desktop,'focused','delight');
+    await clickVisible(desktop,secondId);await waitState(desktop,'focused',secondId);
     return { selected: (await diagnostic(desktop)).selected };
   });
 
   await check('desktop: ten repeated cycles preserve texture/material UUIDs and GPU counts', async () => {
     await closeGallery(desktop);const before=await diagnostic(desktop);
     for(let i=0;i<10;i++) {
-      await clickVisible(desktop,'joy');await waitState(desktop,'focused','joy');
+      await clickVisible(desktop,primaryId);await waitState(desktop,'focused',primaryId);
       await desktop.keyboard.press('Escape');await desktop.waitForFunction(()=>window.__postalGallery.getDiagnostics().selected===null, { timeout });
     }
     const after=await diagnostic(desktop);
@@ -200,41 +202,44 @@ try {
   });
 
   await check('resize: focused stamp keeps intended center across desktop and mobile', async () => {
-    await closeGallery(desktop);await clickVisible(desktop,'joy');await waitState(desktop,'focused','joy');
-    // Measure the neutral anchor. Perspective tilt legitimately moves the bounding-box center;
-    // its four-corner alignment and directional response are covered in verify-controls.mjs.
-    await desktop.evaluate(()=>window.__postalGallery.configure({tiltEnabled:false}));await desktop.waitForTimeout(700);
+    // Re-enter focus at each viewport so a resize-induced pointer leave cannot
+    // change which transparent hit target receives the next measurement.
     const centers=[];
     for(const size of [{width:1024,height:768},{width:390,height:844},{width:1440,height:900}]) {
-      await desktop.setViewportSize(size);await desktop.waitForTimeout(180);
+      await closeGallery(desktop);await desktop.setViewportSize(size);await desktop.waitForTimeout(250);
+      await desktop.mouse.move(8,size.height-10);await clickVisible(desktop,primaryId);await waitState(desktop,'focused',primaryId);
+      // Perspective tilt legitimately moves the bounding-box center; the
+      // neutral anchor is measured, with corner alignment tested separately.
+      await desktop.evaluate(()=>window.__postalGallery.configure({tiltEnabled:false}));await desktop.waitForTimeout(700);
       await assertViewportOrigin(desktop);
-      const box=await desktop.locator('[data-stamp="joy"]').boundingBox();
+      const box=await desktop.locator(`[data-stamp="${primaryId}"]`).boundingBox();
       const expectedX=size.width*(size.width<700?.5:.479),expectedY=size.height*.5;
       const center={x:box.x+box.width/2,y:box.y+box.height/2};
       assert.ok(Math.abs(center.x-expectedX)<1.5,JSON.stringify({size,center,expectedX}));
       assert.ok(Math.abs(center.y-expectedY)<1.5,JSON.stringify({size,center,expectedY}));centers.push({size,center,expectedX,expectedY});
+      await closeGallery(desktop);
     }
-    await desktop.evaluate(()=>window.__postalGallery.configure({tiltEnabled:true}));await closeGallery(desktop);return { centers,note:'Neutral pose: desktop follows video at 47.9% viewport width; mobile uses 50%. Tilt corners verified separately.' };
+    await desktop.evaluate(()=>window.__postalGallery.configure({tiltEnabled:true}));return { centers,note:'Neutral pose: desktop follows video at 47.9% viewport width; mobile uses 50%. Tilt corners verified separately.' };
   });
 
   const mobile = await createPage({ viewport:{width:390,height:844}, isMobile:true, hasTouch:true });
   await check('mobile: initial, synthetic hover, touch midpoint, focus and return screenshots', async () => {
     await screenshot(mobile,'mobile-01-initial.png');
-    await mobile.locator('[data-stamp="joy"]').dispatchEvent('pointerenter',{pointerType:'mouse',isPrimary:true});
+    await mobile.locator(`[data-stamp="${primaryId}"]`).dispatchEvent('pointerenter',{pointerType:'mouse',isPrimary:true});
     await mobile.waitForTimeout(350);await screenshot(mobile,'mobile-02-hover.png','Synthetic mouse pointerenter on a touch viewport; real touch is tested separately below.');
-    await mobile.locator('[data-stamp="joy"]').dispatchEvent('pointerleave',{pointerType:'mouse',isPrimary:true});
-    await mobile.evaluate(()=>{window.__qaHoldProgress=.42;});await clickVisible(mobile,'joy','touch');
+    await mobile.locator(`[data-stamp="${primaryId}"]`).dispatchEvent('pointerleave',{pointerType:'mouse',isPrimary:true});
+    await mobile.evaluate(()=>{window.__qaHoldProgress=.42;});await clickVisible(mobile,primaryId,'touch');
     await mobile.waitForFunction(()=>window.__qaFreeze,null,{timeout,polling:20});await screenshot(mobile,'mobile-03-mid-transition.png','Actual touch entry; RAF held after an intermediate frame for screenshot only.');
-    await mobile.evaluate(()=>window.__qaResume());await waitState(mobile,'focused','joy');await screenshot(mobile,'mobile-04-focus.png');
+    await mobile.evaluate(()=>window.__qaResume());await waitState(mobile,'focused',primaryId);await screenshot(mobile,'mobile-04-focus.png');
     await assertViewportOrigin(mobile);
-    const focusBox=await mobile.locator('[data-stamp="joy"]').boundingBox();assert.ok(Math.abs(focusBox.x+focusBox.width/2-195)<1);
+    const focusBox=await mobile.locator(`[data-stamp="${primaryId}"]`).boundingBox();assert.ok(Math.abs(focusBox.x+focusBox.width/2-195)<1);
     await mobile.touchscreen.tap(25,450);await mobile.waitForFunction(()=>window.__postalGallery.getDiagnostics().selected===null,{timeout});await mobile.waitForTimeout(300);await screenshot(mobile,'mobile-05-return.png');
     const overflow=await mobile.evaluate(()=>({innerWidth,documentWidth:document.documentElement.scrollWidth,bodyWidth:document.body.scrollWidth}));
     assert.equal(overflow.documentWidth,390);assert.equal(overflow.bodyWidth,390);
     return { genuineTouchEntryAndBackgroundExit:true,overflow };
   });
 
-  await check('mobile: all eight stamps are reachable with real touch', async () => {
+  await check('mobile: all twelve stamps are reachable with real touch', async () => {
     const selected=[];for(const id of ids){try{await closeGallery(mobile);const point=await clickVisible(mobile,id,'touch');await waitState(mobile,'focused',id);await assertViewportOrigin(mobile);selected.push({id,point});await mobile.locator('.close-focus').tap();await mobile.waitForFunction(()=>window.__postalGallery.getDiagnostics().selected===null,null,{timeout});}catch(error){throw Error(`${id}: ${error.message}`);}}
     return selected;
   });
@@ -256,7 +261,7 @@ try {
     const first=await reduced.screenshot();await reduced.waitForTimeout(350);const second=await reduced.screenshot();
     assert.equal(await reduced.evaluate(()=>window.__qaRafExecutions),before);
     const firstHash=createHash('sha256').update(first).digest('hex'),secondHash=createHash('sha256').update(second).digest('hex');assert.equal(firstHash,secondHash);
-    await clickVisible(reduced,'joy');await waitState(reduced,'focused','joy');await screenshot(reduced,'reduced-motion-focus.png');
+    await clickVisible(reduced,primaryId);await waitState(reduced,'focused',primaryId);await screenshot(reduced,'reduced-motion-focus.png');
     await reduced.emulateMedia({reducedMotion:'no-preference'});await reduced.waitForTimeout(250);const running=await reduced.evaluate(()=>window.__qaRafExecutions);await reduced.waitForTimeout(250);assert.ok(await reduced.evaluate(()=>window.__qaRafExecutions)>running);
     await reduced.emulateMedia({reducedMotion:'reduce'});await reduced.waitForTimeout(500);const stopped=await reduced.evaluate(()=>window.__qaRafExecutions);await reduced.waitForTimeout(250);assert.equal(await reduced.evaluate(()=>window.__qaRafExecutions),stopped);
     return { rafCount:before,stableScreenshotSHA256:firstHash,livePreferenceRestartsAndStops:true };

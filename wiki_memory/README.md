@@ -1,7 +1,7 @@
 ---
 type: moc
 status: active
-updated: 2026-10-26
+updated: 2026-10-28
 topic: memory-entry
 sources:
   - "AGENTS.md"

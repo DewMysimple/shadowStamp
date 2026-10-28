@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { STAMPS, EXHIBITION, getHome, getFocus } from '../config.js';
+import { SERIES, STAMPS, EXHIBITION, getHome, getFocus } from '../config.js';
 import { FocusMotion, clamp, lerp, damp } from '../motion.js';
 import { createStampArtwork } from '../artwork.js';
 import { createStampMaterial, createShadowTexture, createShadowMaterial } from './StampMaterial.js';
@@ -7,8 +7,9 @@ import { createDappledLight } from './DappledLight.js';
 import { DEFAULT_PARAMETERS, normalizeParameters } from '../parameters.js';
 
 /** Owns the one renderer, one clock, all persistent GPU assets, and input. */
-export function createStampGallery({ host, buttons, label, focusUi, chrome, onState, onError, parameters = DEFAULT_PARAMETERS }) {
+export function createStampGallery({ host, buttons, label, focusUi, chrome, onState, onError, parameters = DEFAULT_PARAMETERS, series = 'all' }) {
   let settings = normalizeParameters(parameters);
+  let currentSeries = SERIES.some(option => option.id === series) ? series : 'all';
   let disposed = false;
   let frame = 0;
   let lastTime = null;
@@ -48,7 +49,6 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     };
     for (const entry of entries) {
       entry.material.uniforms.uLightColor.value.fromArray(rgb(light));
-      entry.material.uniforms.uShadowColor.value.fromArray(rgb(color));
       entry.material.uniforms.uLightStrength.value = enabled ? intensity : 0;
       entry.material.uniforms.uLightContrast.value = contrast;
       entry.material.uniforms.uLightGrain.value = grain;
@@ -87,7 +87,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     const texture = new THREE.CanvasTexture(artwork);
     texture.colorSpace = THREE.NoColorSpace;
     texture.anisotropy = Math.min(renderer.capabilities.getMaxAnisotropy(), 8);
-    const material = createStampMaterial(texture, stamp.foil, background.texture);
+    const material = createStampMaterial(texture, background.texture);
     const mesh = new THREE.Mesh(geometry, material);
     mesh.name = stamp.id;
     mesh.rotation.order = 'ZXY';
@@ -97,12 +97,12 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     const shadow = new THREE.Mesh(geometry, shadowMaterial);
     shadow.frustumCulled = false;
     scene.add(shadow, mesh);
-    return { stamp, artwork, texture, material, mesh, shadow, shadowSource, shadowMaterial, lightTarget: new THREE.Vector2(0.5, 0.5), hover: 0, light: 0, tiltX: 0, tiltY: 0, roll: 0, shiftX: 0, shiftY: 0, targetX: 0, targetY: 0, blur: 0, home: null, focus: null };
+    return { stamp, artwork, texture, material, mesh, shadow, shadowSource, shadowMaterial, lightTarget: new THREE.Vector2(0.5, 0.5), hover: 0, light: 0, tiltX: 0, tiltY: 0, roll: 0, shiftX: 0, shiftY: 0, targetX: 0, targetY: 0, blur: 0, home: null, layoutFrom: null, displayHome: null, layoutT: 1, seriesOpacity: 1, focus: null };
   });
 
   function publish() {
     const phase = selected !== null ? (motion.target === 0 ? 'returning' : motion.settled ? 'focused' : 'focusing') : hovered !== null ? 'hovering' : 'idle';
-    const key = `${phase}:${selected}:${hovered}`;
+    const key = `${phase}:${selected}:${hovered}:${currentSeries}`;
     host.dataset.phase = phase;
     if (key !== previousState) {
       previousState = key;
@@ -143,6 +143,8 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
 
   function setHover(id) {
     if (selected !== null && motion.target === 1) return;
+    const stamp = STAMPS.find(item => item.id === id);
+    if (stamp && currentSeries !== 'all' && stamp.series !== currentSeries) return;
     hovered = id;
     if (id) lastHovered = id;
     publish();
@@ -168,9 +170,29 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     renderer.setSize(width, height, false);
     background.resize(width, height);
     for (const entry of entries) {
-      entry.home = getHome(entry.stamp, width, height);
+      entry.home = getHome(entry.stamp, width, height, currentSeries);
+      entry.layoutFrom = entry.home;
+      entry.displayHome = entry.home;
+      entry.layoutT = 1;
+      entry.seriesOpacity = currentSeries === 'all' || entry.stamp.series === currentSeries ? 1 : 0;
       entry.focus = getFocus(entry.stamp, width, height, settings);
     }
+    wake();
+  }
+
+  function setSeries(next) {
+    if (!SERIES.some(option => option.id === next) || next === currentSeries) return;
+    if (selected !== null) close();
+    currentSeries = next;
+    hovered = null;
+    lastHovered = STAMPS.find(stamp => next === 'all' || stamp.series === next)?.id ?? STAMPS[0].id;
+    for (const entry of entries) {
+      entry.layoutFrom = { ...(entry.displayHome ?? entry.home ?? getHome(entry.stamp, width, height, currentSeries)) };
+      const visible = next === 'all' || entry.stamp.series === next;
+      if (visible) entry.home = getHome(entry.stamp, width, height, next);
+      entry.layoutT = 0;
+    }
+    publish();
     wake();
   }
 
@@ -211,7 +233,25 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     let stillMoving = !motion.settled;
 
     for (const entry of entries) {
-      const { stamp, mesh, shadow, material, home, focus } = entry;
+      const { stamp, mesh, shadow, material, focus } = entry;
+      const targetVisible = currentSeries === 'all' || stamp.series === currentSeries;
+      const layoutTarget = reducedMotion ? 1 : damp(entry.layoutT, 1, dt, 0.18);
+      entry.layoutT = Math.abs(layoutTarget - 1) < 0.001 ? 1 : layoutTarget;
+      if (entry.layoutT < 1) stillMoving = true;
+      const layoutEase = entry.layoutT * entry.layoutT * (3 - 2 * entry.layoutT);
+      const home = {
+        x: lerp(entry.layoutFrom?.x ?? entry.home.x, entry.home.x, layoutEase),
+        y: lerp(entry.layoutFrom?.y ?? entry.home.y, entry.home.y, layoutEase),
+        width: lerp(entry.layoutFrom?.width ?? entry.home.width, entry.home.width, layoutEase),
+        height: lerp(entry.layoutFrom?.height ?? entry.home.height, entry.home.height, layoutEase),
+        angle: lerp(entry.layoutFrom?.angle ?? entry.home.angle, entry.home.angle, layoutEase),
+        z: entry.home.z,
+      };
+      entry.displayHome = home;
+      const opacityTarget = targetVisible ? 1 : 0;
+      entry.seriesOpacity = reducedMotion ? opacityTarget : damp(entry.seriesOpacity, opacityTarget, dt, 0.16);
+      if (Math.abs(entry.seriesOpacity - opacityTarget) < 0.005) entry.seriesOpacity = opacityTarget;
+      else stillMoving = true;
       const isSelected = selected === stamp.id;
       const isHovered = hovered === stamp.id && selected === null;
       const isActive = active === stamp.id;
@@ -249,7 +289,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       smooth('shiftX', !reducedMotion && settings.tiltEnabled ? entry.targetX * settings.focusShift * p : 0, 0.001);
       smooth('shiftY', !reducedMotion && settings.tiltEnabled ? entry.targetY * settings.focusShift * p : 0, 0.001);
       const x = baseX + entry.shiftX, y = baseY + entry.shiftY;
-      const visible = isSelected ? 1 : 1 - progress;
+      const visible = (isSelected ? 1 : 1 - progress) * entry.seriesOpacity;
       const rank = isSelected || isHovered ? 20 : home.z;
       mesh.renderOrder = rank * 2 + 1;
       shadow.renderOrder = rank * 2;
@@ -307,8 +347,8 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       button.style.transform = `matrix3d(${buttonMatrix.elements.map(value => value / divisor).join(',')})`;
       button.style.zIndex = rank + 5;
       button.style.visibility = visible < 0.05 ? 'hidden' : 'visible';
-      button.style.pointerEvents = selected !== null && !isSelected && motion.target === 1 ? 'none' : 'auto';
-      button.tabIndex = selected !== null && !isSelected ? -1 : 0;
+      button.style.pointerEvents = (!targetVisible || entry.seriesOpacity < 0.995 || (selected !== null && !isSelected && motion.target === 1)) ? 'none' : 'auto';
+      button.tabIndex = !targetVisible || (selected !== null && !isSelected) ? -1 : 0;
       button.dataset.selected = String(isSelected);
       if (isHovered) {
         mesh.updateMatrixWorld();
@@ -326,6 +366,11 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
 
     chrome.style.opacity = `${1 - progress}`;
     chrome.style.pointerEvents = progress > 0.1 ? 'none' : '';
+    const seriesNav = host.querySelector('[data-series-nav]');
+    if (seriesNav) {
+      seriesNav.style.pointerEvents = selected !== null || progress > 0.1 ? 'none' : 'auto';
+      seriesNav.setAttribute('aria-hidden', String(selected !== null));
+    }
     focusUi.style.opacity = `${clamp((progress - 0.12) / 0.6)}`;
     focusUi.style.pointerEvents = 'none';
     focusUi.querySelector('button').style.pointerEvents = selected !== null && progress > 0.15 ? 'auto' : 'none';
@@ -401,7 +446,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
   publish();
 
   const api = {
-    focus: startFocus, close,
+    focus: startFocus, close, setSeries,
     configure(values) {
       if (disposed) return;
       settings = normalizeParameters(values, settings);
@@ -412,7 +457,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       wake();
     },
     getDiagnostics: () => ({
-      phase: host.dataset.phase, selected, hovered, progress: motion.value, reducedMotion,
+      phase: host.dataset.phase, selected, hovered, series: currentSeries, progress: motion.value, reducedMotion,
       lightStates: entries.map((entry) => ({ id: entry.stamp.id, amount: entry.light, blur: entry.blur,
         target: entry.lightTarget.toArray(), uv: entry.material.uniforms.uPointer.value.toArray() })),
       poses: entries.map(entry => ({ id: entry.stamp.id, rotation: entry.mesh.rotation.toArray(), center: entry.mesh.position.toArray(), target: [entry.targetX, entry.targetY], corners: corners.map(([x,y]) => { const p = new THREE.Vector3(x,y,0).applyMatrix4(entry.mesh.matrixWorld).project(camera); return [(p.x + 1) * width / 2, (1 - p.y) * height / 2]; }) })),

@@ -21,14 +21,12 @@ const fragmentShader = /* glsl */`
   uniform vec2 uPointer;
   uniform vec2 uSize;
   uniform float uActivity;
-  uniform float uFoil;
   uniform float uOpacity;
   uniform float uBlur;
   uniform float uTime;
   uniform sampler2D uDappled;
   uniform sampler2D uSurfaceNormal;
   uniform vec3 uLightColor;
-  uniform vec3 uShadowColor;
   uniform float uLightStrength;
   uniform float uLightContrast;
   uniform float uLightGrain;
@@ -102,18 +100,23 @@ const fragmentShader = /* glsl */`
     // Lighting and print defocus have independent transitions. Waiting for blur
     // to reach zero hid the entire light for ~473ms on every card handoff.
     if (activity > 0.001) {
-      vec2 local = (vUv - 0.5) * vec2(1.0, 1.27);
+      vec2 paperMetric = vec2(uSize.x / max(uSize.y, 1.0), 1.0) * 1.27;
+      vec2 local = (vUv - 0.5) * paperMetric;
       // One optical field and one paper response. Neither alters print UVs,
       // vertices, lettering nor alpha. Enlarging fibres does not enlarge ink.
       vec4 optical = texture2D(uDappled, clamp(vUv, 0.0, 1.0));
       float shade = optical.a;
+      // Use the orange/coral RGB map as a light source only where its field is
+      // bright. At rest and outside that footprint the printed RGB is exact.
+      float lightMask = pow(clamp(1.0 - shade, 0.0, 1.0), mix(1.0, 1.7, clamp(uShadowStrength, 0.0, 1.0)));
+      float localActivity = activity * lightMask;
       vec2 normalUv = (vUv - 0.5) / uTextureScale + 0.5;
       vec2 microNormal = texture2D(uSurfaceNormal, normalUv).rg * 2.0 - 1.0;
       vec3 normal = normalize(vec3(microNormal * uSurfaceRelief * (uNormalScale / 0.22), 1.0));
       vec3 coatNormal = normalize(vec3(microNormal * uSurfaceRelief * (uCoatNormalScale / 0.22), 1.0));
       vec3 viewDirection = normalize(vec3(-local * 0.4, 1.65));
-      vec3 lightDirection = normalize(vec3((uPointer - 0.5) + vec2(-0.3, 0.45), 0.4));
-      vec3 toLamp = vec3((uPointer - vUv) * vec2(1.0, 1.27), uLampHeight);
+      vec3 lightDirection = normalize(vec3((uPointer - 0.5) * vec2(paperMetric.x, 1.0) + vec2(-0.3, 0.45), 0.4));
+      vec3 toLamp = vec3((uPointer - vUv) * paperMetric, uLampHeight);
       float lampDistance2 = max(dot(toLamp, toLamp), 0.01);
       vec3 lampDirection = normalize(toLamp);
       // Actual source light colours are linear-RGB, independently of the
@@ -132,18 +135,16 @@ const fragmentShader = /* glsl */`
       // remains unchanged at rest; the original displacement/env assets are
       // intentionally absent. Exposure is a light-response gain here, not a
       // claim to reproduce the original complete Neutral/PMREM render.
-      color += ink * diffuseDelta * uMainColor * uMainIntensity * uExposure * activity * 0.72;
-      color += uMainColor * uMainIntensity * uExposure * paperReflectance * activity * 0.07;
+      color += ink * diffuseDelta * uMainColor * uMainIntensity * uExposure * localActivity * 0.72;
+      color += uMainColor * uMainIntensity * uExposure * paperReflectance * localActivity * 0.07;
       float lampDiffuse = max(dot(normal, lampDirection), 0.0);
-      color += lampRadiance * lampDiffuse * uExposure * paperReflectance * activity * 0.035;
+      color += lampRadiance * lampDiffuse * uExposure * paperReflectance * localActivity * 0.035;
       vec3 fibreGlint = clamp(specular - flatSpecular, vec3(-0.045), vec3(0.12));
-      color += (uMainColor + lampRadiance * 0.3) * fibreGlint * uSurfaceShine * paperReflectance * activity;
-      // The original draws a full-colour optical map over the physical paper:
-      // final map = mix(peach, blurred RGB, blurred alpha), then multiply .26.
-      // Sampling alpha alone discarded the orange/coral light entirely.
-      vec3 mapColor = mix(uLightColor, optical.rgb, shade);
-      mapColor += (vec3(1.0) - uShadowColor) * (1.0 - uShadowStrength) * shade;
-      color *= mix(vec3(1.0), clamp(mapColor, 0.0, 1.0), clamp(uLightContrast * activity, 0.0, 1.0));
+      color += (uMainColor + lampRadiance * 0.3) * fibreGlint * uSurfaceShine * paperReflectance * localActivity;
+      // Add the warm RGB map locally. Multiplying the full print by this map
+      // tinted every pixel, so use its source colour as a bounded highlight.
+      vec3 warmMap = mix(uLightColor, optical.rgb, 0.72);
+      color += warmMap * localActivity * clamp(uLightContrast * 0.55, 0.0, 0.55);
     }
     return color;
   }
@@ -161,18 +162,18 @@ const fragmentShader = /* glsl */`
   }
 `;
 
-export function createStampMaterial(texture, foil, lightTexture) {
-  const surfaceNormal = createSurfaceNormalTexture(17041 + Math.round(foil * 10000));
+export function createStampMaterial(texture, lightTexture) {
+  const surfaceNormal = createSurfaceNormalTexture(17041);
   const material = new THREE.ShaderMaterial({
     vertexShader, fragmentShader,
     uniforms: {
       uArtwork: { value: texture }, uPointer: { value: new THREE.Vector2(0.5, 0.5) },
       uSize: { value: new THREE.Vector2(200, 250) }, uActivity: { value: 0 },
-      uFoil: { value: foil }, uOpacity: { value: 1 }, uBlur: { value: 0 }, uTime: { value: 0 },
+      uOpacity: { value: 1 }, uBlur: { value: 0 }, uTime: { value: 0 },
       uDappled: { value: lightTexture },
       uSurfaceNormal: { value: surfaceNormal },
       uLightColor: { value: new THREE.Vector3(1, 0.945, 0.812) },
-      uShadowColor: { value: new THREE.Vector3(0.565, 0.518, 0.439) }, uLightStrength: { value: 1 },
+      uLightStrength: { value: 1 },
       uLightContrast: { value: 0.26 }, uLightGrain: { value: 0.65 },
       uSurfaceRelief: { value: 0.22 }, uSurfaceShine: { value: 0.25 },
       uTextureScale: { value: 1 }, uShadowStrength: { value: 0.32 },

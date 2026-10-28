@@ -42,7 +42,7 @@ export const PARAMETER_GROUPS = [
     toggle('lightAnimation', '光影流动', true, '缓慢流动的光斑与指针位置共同影响票面。'),
     toggle('lightFollowPointer', '光斑跟随指针', true),
     number('lightIntensity', '光影强度', 1, 0, 2, 0.01),
-    number('lightContrast', '光图叠加强度', 0.26, 0, 1, 0.01, '', '原站 RGB 光图以 multiply 叠加，默认透明度为 0.26。'),
+    number('lightContrast', '暖光明暗强度', 0.26, 0, 1, 0.01, '', '调节局部暖光的明暗变化；不对整张印刷图做颜色乘算。'),
     number('shadowStrength', '票面暗部深度', 1, 0, 1, 0.01),
     number('lightSpeed', '流动速度', 0.35, 0, 3, 0.05, '×'),
     number('pointerInfluence', '指针影响', 0.85, 0, 2, 0.05, '×'),

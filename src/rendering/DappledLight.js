@@ -123,6 +123,7 @@ export function createDappledLight(renderer, options = {}) {
   let activeStamp = null, snapPointer = false;
   let previousTime = null, fieldClock = 3, previousReducedMotion = null, parameterKey = '', opticalKey = '';
   let patternSizeNorm = NCS_LIGHTING.maximumSizeNorm;
+  let activeAspect = parameters.stampRatio;
   const oldViewport = new THREE.Vector4();
   const oldScissor = new THREE.Vector4();
   const outputSize = new THREE.Vector2();
@@ -140,7 +141,7 @@ export function createDappledLight(renderer, options = {}) {
   function resize(_w, _h) {
     if (disposed) return;
     // The field is a stamp-local light study, independent of viewport shape/DPR.
-    uniforms.uAspect.value = parameters.stampRatio;
+    uniforms.uAspect.value = activeAspect;
     const rw = 384, rh = 480;
     if (fieldTarget.width !== rw || fieldTarget.height !== rh) {
       fieldTarget.setSize(rw, rh); blurTarget.setSize(rw, rh);
@@ -167,7 +168,6 @@ export function createDappledLight(renderer, options = {}) {
       if (nextOpticalKey !== opticalKey) { opticalKey = nextOpticalKey; dirty = true; }
       uniforms.uRadius.value = Math.max(0.05, parameters.coverage * 0.5);
       uniforms.uDensity.value = parameters.density;
-      uniforms.uAspect.value = parameters.stampRatio;
       uniforms.uAngle.value = THREE.MathUtils.degToRad(parameters.angle);
       uniforms.uStretch.value = parameters.stretch;
       uniforms.uScatter.value = parameters.scatter;
@@ -247,7 +247,13 @@ export function createDappledLight(renderer, options = {}) {
       pointerTarget.set(0.5 + (THREE.MathUtils.clamp(x, 0, 1) - 0.5) * parameters.pointerInfluence,
         0.5 + (THREE.MathUtils.clamp(y, 0, 1) - 0.5) * parameters.pointerInfluence);
     },
-    setStampSize(_width, stampHeight, pixelRatio = 1) {
+    setStampSize(stampWidth, stampHeight, pixelRatio = 1) {
+      const nextAspect = stampWidth / Math.max(1, stampHeight);
+      if (Number.isFinite(nextAspect) && Math.abs(nextAspect - activeAspect) > 0.0001) {
+        activeAspect = nextAspect;
+        uniforms.uAspect.value = nextAspect;
+        dirty = true;
+      }
       const lightHeight = Math.max(1, Math.floor(stampHeight * Math.min(pixelRatio, 2)) >> 1);
       const next = THREE.MathUtils.clamp(NCS_LIGHTING.patternReferenceHeight / lightHeight, 1, NCS_LIGHTING.maximumSizeNorm);
       if (Math.abs(next - patternSizeNorm) > 0.0001) { patternSizeNorm = next; pendingField = true; }

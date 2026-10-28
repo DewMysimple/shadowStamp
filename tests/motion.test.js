@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { FocusMotion } from '../src/motion.js';
-import { STAMPS, getHome, getFocus } from '../src/config.js';
+import { SERIES, STAMPS, getHome, getFocus } from '../src/config.js';
 
 test('Escape during entry reverses from the actual current pose without a jump', () => {
   const motion = new FocusMotion();
@@ -33,7 +33,7 @@ test('reselecting during return moves continuously toward the same focus', () =>
   assert.equal(motion.value, 1);
 });
 
-test('all eight rotated mobile stamps fit and focused stamps have safe margins', () => {
+test('all twelve stamp proportions fit on mobile, each series filter, and focused view', () => {
   for (const [width, height] of [[390, 844], [320, 568], [1440, 900], [1920, 1080]]) {
     for (const stamp of STAMPS) {
       const focus = getFocus(stamp, width, height);
@@ -41,15 +41,18 @@ test('all eight rotated mobile stamps fit and focused stamps have safe margins',
       assert.ok(focus.x + focus.width / 2 < width - 15);
       assert.ok(focus.y - focus.height / 2 > 45);
       assert.ok(focus.y + focus.height / 2 < height - 45);
-      if (width >= 700) continue;
-      const home = getHome(stamp, width, height);
-      const angle = Math.abs(home.angle) * Math.PI / 180;
-      const halfX = (home.width * Math.cos(angle) + home.height * Math.sin(angle)) / 2;
-      const halfY = (home.width * Math.sin(angle) + home.height * Math.cos(angle)) / 2;
-      assert.ok(home.x > halfX, `${stamp.id} left`);
-      assert.ok(home.x + halfX < width, `${stamp.id} right`);
-      assert.ok(home.y - halfY > 75, `${stamp.id} top`);
-      assert.ok(home.y + halfY < height - 60, `${stamp.id} bottom`);
+      for (const series of ['all', ...SERIES.filter(item => item.id !== 'all').map(item => item.id)]) {
+        const home = getHome(stamp, width, height, series);
+        const angle = Math.abs(home.angle) * Math.PI / 180;
+        const halfX = (home.width * Math.cos(angle) + home.height * Math.sin(angle)) / 2;
+        const halfY = (home.width * Math.sin(angle) + home.height * Math.cos(angle)) / 2;
+        assert.ok(home.x > halfX, `${width}x${height} ${series} ${stamp.id} left`);
+        assert.ok(home.x + halfX < width, `${width}x${height} ${series} ${stamp.id} right`);
+        if (width < 700) {
+          assert.ok(home.y - halfY > 75, `${width}x${height} ${series} ${stamp.id} top`);
+          assert.ok(home.y + halfY < height - 60, `${width}x${height} ${series} ${stamp.id} bottom`);
+        }
+      }
     }
   }
 });

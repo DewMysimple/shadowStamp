@@ -1,0 +1,428 @@
+{
+  "baseURL": "http://127.0.0.1:4175/",
+  "startedAt": "2026-10-28T03:30:46.059Z",
+  "checks": [
+    {
+      "name": "twelve independent scene artworks load at their intended ratios",
+      "result": "passed",
+      "elapsedMs": 321,
+      "details": [
+        {
+          "id": "foshan",
+          "series": "guangdong",
+          "image": "/assets/stamps/01-foshan.png",
+          "ratio": 0.6923076923076923,
+          "sha256": "4af5328281944742634c5a8c39cb95f48b4f6305bc59822a6b448bf9618e0e7c",
+          "bytes": 3381304,
+          "width": 1044,
+          "height": 1507
+        },
+        {
+          "id": "guangzhou",
+          "series": "guangdong",
+          "image": "/assets/stamps/02-guangzhou.png",
+          "ratio": 0.6923076923076923,
+          "sha256": "fa7b897eebba55b0f86326524efd6a31cfa2a1fcfc0b677f95538e8fabf55ef0",
+          "bytes": 3195027,
+          "width": 1044,
+          "height": 1507
+        },
+        {
+          "id": "heshan",
+          "series": "guangdong",
+          "image": "/assets/stamps/03-heshan.png",
+          "ratio": 0.6923076923076923,
+          "sha256": "5ccbd466fec2126ba86e1e089b73b48356795d51a269669963bb08b16af630e3",
+          "bytes": 3199245,
+          "width": 1044,
+          "height": 1507
+        },
+        {
+          "id": "suixi",
+          "series": "guangdong",
+          "image": "/assets/stamps/04-suixi.png",
+          "ratio": 0.6923076923076923,
+          "sha256": "0c4c1eaee0cdcc71eac9b125432265c429950a548ee67ea554d9e02b965ff347",
+          "bytes": 2842689,
+          "width": 1044,
+          "height": 1507
+        },
+        {
+          "id": "beijing",
+          "series": "china",
+          "image": "/assets/stamps/05-beijing.png",
+          "ratio": 1.3333333333333333,
+          "sha256": "2451c9970975764c7c5d4397d76b11f8187545895a0deeed1a7b5de9637a86f1",
+          "bytes": 3251988,
+          "width": 1448,
+          "height": 1086
+        },
+        {
+          "id": "tianyang",
+          "series": "china",
+          "image": "/assets/stamps/06-tianyang.png",
+          "ratio": 1.3333333333333333,
+          "sha256": "f7209429b54d0e31664cc8dec6ca97de32c449454e7afae04a798e97e2c8d642",
+          "bytes": 3366866,
+          "width": 1448,
+          "height": 1086
+        },
+        {
+          "id": "quanzhou",
+          "series": "china",
+          "image": "/assets/stamps/07-quanzhou.png",
+          "ratio": 1.3333333333333333,
+          "sha256": "eebf5539ca51c8d68ed884ac32c699e4b3539494a73fc3cacb88eeedc4e1cee6",
+          "bytes": 3418142,
+          "width": 1448,
+          "height": 1086
+        },
+        {
+          "id": "hongkong",
+          "series": "china",
+          "image": "/assets/stamps/08-hongkong.png",
+          "ratio": 1.3333333333333333,
+          "sha256": "548b07f608378429bcf090a7877218e6f65f04c509679d7fe01048f6ba728854",
+          "bytes": 3035295,
+          "width": 1448,
+          "height": 1086
+        },
+        {
+          "id": "singapore",
+          "series": "world",
+          "image": "/assets/stamps/09-singapore.png",
+          "ratio": 0.5333333333333333,
+          "sha256": "710de0bc89b979b9cc47de6b86f1638b0c88833148ab788641942ed0e4df8d5f",
+          "bytes": 3119445,
+          "width": 916,
+          "height": 1717
+        },
+        {
+          "id": "kualalumpur",
+          "series": "world",
+          "image": "/assets/stamps/10-kualalumpur.png",
+          "ratio": 0.5333333333333333,
+          "sha256": "cade59e01d7688043d61939790985ec0be6ab7a9c71ffe74214c2536022333ce",
+          "bytes": 3253653,
+          "width": 916,
+          "height": 1717
+        },
+        {
+          "id": "sanfrancisco",
+          "series": "world",
+          "image": "/assets/stamps/11-sanfrancisco.png",
+          "ratio": 0.5333333333333333,
+          "sha256": "ab98df88da3f0968805219d91e768e437b3d6709803f951b89c55e43d9490da7",
+          "bytes": 3184507,
+          "width": 916,
+          "height": 1717
+        },
+        {
+          "id": "london",
+          "series": "world",
+          "image": "/assets/stamps/12-london.png",
+          "ratio": 0.5333333333333333,
+          "sha256": "6a957488a16e64999d33f07561d37951b283caeb93ec7d220a9430632956e427",
+          "bytes": 3412614,
+          "width": 916,
+          "height": 1717
+        }
+      ]
+    },
+    {
+      "name": "all three series filters show their four stamps and return continuously",
+      "result": "passed",
+      "elapsedMs": 2643,
+      "details": [
+        {
+          "id": "guangdong",
+          "visible": [
+            "foshan",
+            "guangzhou",
+            "heshan",
+            "suixi"
+          ]
+        },
+        {
+          "id": "china",
+          "visible": [
+            "beijing",
+            "tianyang",
+            "quanzhou",
+            "hongkong"
+          ]
+        },
+        {
+          "id": "world",
+          "visible": [
+            "singapore",
+            "kualalumpur",
+            "sanfrancisco",
+            "london"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "warm hover light follows each stamp and leaves the desk untouched",
+      "result": "passed",
+      "elapsedMs": 9152,
+      "details": [
+        {
+          "id": "foshan",
+          "active": [
+            "foshan"
+          ],
+          "light": [
+            0.4994082360126228,
+            0.48686632347300624
+          ]
+        },
+        {
+          "id": "guangzhou",
+          "active": [
+            "guangzhou"
+          ],
+          "light": [
+            0.5004905269369722,
+            0.4808441575084811
+          ]
+        },
+        {
+          "id": "heshan",
+          "active": [
+            "heshan"
+          ],
+          "light": [
+            0.49951116249258376,
+            0.48084418810912066
+          ]
+        },
+        {
+          "id": "suixi",
+          "active": [
+            "suixi"
+          ],
+          "light": [
+            0.5007229298382061,
+            0.4808477552787226
+          ]
+        },
+        {
+          "id": "beijing",
+          "active": [
+            "beijing"
+          ],
+          "light": [
+            0.49955308505033996,
+            0.4808342019614391
+          ]
+        },
+        {
+          "id": "tianyang",
+          "active": [
+            "tianyang"
+          ],
+          "light": [
+            0.5002549452849344,
+            0.4808280086890764
+          ]
+        },
+        {
+          "id": "quanzhou",
+          "active": [
+            "quanzhou"
+          ],
+          "light": [
+            0.4997459933429302,
+            0.4808280276325994
+          ]
+        },
+        {
+          "id": "hongkong",
+          "active": [
+            "hongkong"
+          ],
+          "light": [
+            0.5003757001147787,
+            0.48083159746598203
+          ]
+        },
+        {
+          "id": "singapore",
+          "active": [
+            "singapore"
+          ],
+          "light": [
+            0.49888180903795065,
+            0.48081800322186
+          ]
+        },
+        {
+          "id": "kualalumpur",
+          "active": [
+            "kualalumpur"
+          ],
+          "light": [
+            0.5006379772502573,
+            0.48081181113843036
+          ]
+        },
+        {
+          "id": "sanfrancisco",
+          "active": [
+            "sanfrancisco"
+          ],
+          "light": [
+            0.4993645389892334,
+            0.48081183485008355
+          ]
+        },
+        {
+          "id": "london",
+          "active": [
+            "london"
+          ],
+          "light": [
+            0.5009401773951495,
+            0.48081540491568586
+          ]
+        }
+      ]
+    },
+    {
+      "name": "focus opens the selected stamp and Escape returns to the same series",
+      "result": "passed",
+      "elapsedMs": 1251,
+      "details": {
+        "selected": "london",
+        "escapeReturns": true
+      }
+    },
+    {
+      "name": "mobile 390x844 keeps stamp corners in bounds and touch focus works",
+      "result": "passed",
+      "elapsedMs": 1258,
+      "details": {
+        "stampCorners": 48,
+        "realTouch": true,
+        "focusAndReturn": true
+      }
+    },
+    {
+      "name": "mobile 320x568 keeps stamp corners in bounds and touch focus works",
+      "result": "passed",
+      "elapsedMs": 1215,
+      "details": {
+        "stampCorners": 48,
+        "realTouch": true,
+        "focusAndReturn": true
+      }
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "desktop-overview.png",
+    "desktop-guangdong.png",
+    "desktop-china.png",
+    "desktop-world.png",
+    "desktop-hover-foshan.png",
+    "desktop-focus-london.png",
+    "mobile-390x844.png",
+    "mobile-320x568.png"
+  ],
+  "assets": [
+    {
+      "id": "foshan",
+      "series": "guangdong",
+      "image": "/assets/stamps/01-foshan.png",
+      "ratio": 0.6923076923076923
+    },
+    {
+      "id": "guangzhou",
+      "series": "guangdong",
+      "image": "/assets/stamps/02-guangzhou.png",
+      "ratio": 0.6923076923076923
+    },
+    {
+      "id": "heshan",
+      "series": "guangdong",
+      "image": "/assets/stamps/03-heshan.png",
+      "ratio": 0.6923076923076923
+    },
+    {
+      "id": "suixi",
+      "series": "guangdong",
+      "image": "/assets/stamps/04-suixi.png",
+      "ratio": 0.6923076923076923
+    },
+    {
+      "id": "beijing",
+      "series": "china",
+      "image": "/assets/stamps/05-beijing.png",
+      "ratio": 1.3333333333333333
+    },
+    {
+      "id": "tianyang",
+      "series": "china",
+      "image": "/assets/stamps/06-tianyang.png",
+      "ratio": 1.3333333333333333
+    },
+    {
+      "id": "quanzhou",
+      "series": "china",
+      "image": "/assets/stamps/07-quanzhou.png",
+      "ratio": 1.3333333333333333
+    },
+    {
+      "id": "hongkong",
+      "series": "china",
+      "image": "/assets/stamps/08-hongkong.png",
+      "ratio": 1.3333333333333333
+    },
+    {
+      "id": "singapore",
+      "series": "world",
+      "image": "/assets/stamps/09-singapore.png",
+      "ratio": 0.5333333333333333
+    },
+    {
+      "id": "kualalumpur",
+      "series": "world",
+      "image": "/assets/stamps/10-kualalumpur.png",
+      "ratio": 0.5333333333333333
+    },
+    {
+      "id": "sanfrancisco",
+      "series": "world",
+      "image": "/assets/stamps/11-sanfrancisco.png",
+      "ratio": 0.5333333333333333
+    },
+    {
+      "id": "london",
+      "series": "world",
+      "image": "/assets/stamps/12-london.png",
+      "ratio": 0.5333333333333333
+    }
+  ],
+  "result": "passed",
+  "mobile": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "phase": "idle"
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "phase": "idle"
+    }
+  ],
+  "finishedAt": "2026-10-28T03:31:05.954Z"
+}

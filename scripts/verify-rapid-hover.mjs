@@ -6,7 +6,7 @@ import { resolve, join } from 'node:path';
 
 const baseURL = process.env.VERIFY_URL || 'http://127.0.0.1:4173/';
 const phase = process.env.RAPID_PHASE || 'after';
-const output = resolve('artifacts/rapid-hover');
+const output = resolve(process.env.VERIFY_OUTPUT || 'artifacts/region-stamps/regression/rapid-hover');
 await mkdir(output, { recursive: true });
 const sources = ['src/rendering/StampGallery.js', 'src/rendering/StampMaterial.js', 'src/rendering/DappledLight.js', 'src/parameters.js'];
 const sourceHashes = async () => Object.fromEntries(await Promise.all(sources.map(async path => [path, createHash('sha256').update(await readFile(path)).digest('hex')])));
@@ -15,7 +15,7 @@ const shader = await readFile('src/rendering/StampMaterial.js', 'utf8');
 const hardBlurGate = /activity\s*>\s*0\.001\s*&&\s*uBlur\s*<\s*0\.02/.test(shader);
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });
 const contexts = [];
-const ids = ['joy', 'anger', 'sorrow', 'delight', 'motion', 'stillness', 'surprise', 'doubt'];
+const ids = ['foshan', 'guangzhou', 'heshan', 'suixi', 'beijing', 'tianyang', 'quanzhou', 'hongkong', 'singapore', 'kualalumpur', 'sanfrancisco', 'london'];
 function instrument() {
   window.__rapidFrames = [];
   window.__rapidEnters = [];
@@ -150,12 +150,12 @@ try {
   const page = await pageFor();
   await check('cold first hover and a switch from a fully blurred card', async () => {
     await page.evaluate(() => { __rapidFrames.length = 0; __rapidEnters.length = 0; });
-    await move(page, 'joy'); await page.waitForTimeout(650);
-    await move(page, 'anger'); await page.waitForTimeout(700);
+    await move(page, 'foshan'); await page.waitForTimeout(650);
+    await move(page, 'guangzhou'); await page.waitForTimeout(700);
     const data = await page.evaluate(() => ({ frames: __rapidFrames, enters: __rapidEnters }));
     const summary = summarize(data.frames, data.enters);
     await writeFile(join(output, `${phase}-cold-switch-frames.json`), JSON.stringify(data));
-    await page.screenshot({ path: join(output, `${phase}-warm-anger.png`) });
+    await page.screenshot({ path: join(output, `${phase}-warm-guangzhou.png`) });
     assert.equal(summary.length, 2);
     if (phase !== 'baseline') for (const item of summary) {
       assert.ok(item.firstEligibleMs < 110, JSON.stringify(item));
@@ -164,7 +164,7 @@ try {
     }
     return { hardBlurGate, summary };
   });
-  await check('eight cards switch repeatedly with 40, 80 and 120ms dwell', async () => {
+  await check('twelve stamps switch repeatedly with 40, 80 and 120ms dwell', async () => {
     const runs = [];
     const before = await page.evaluate(() => __postalGallery.getDiagnostics());
     for (const dwell of [40, 80, 120]) {
@@ -175,7 +175,7 @@ try {
       const data = await page.evaluate(() => ({ frames: __rapidFrames, enters: __rapidEnters }));
       const summary = summarize(data.frames, data.enters);
       await writeFile(join(output, `${phase}-rapid-${dwell}-frames.json`), JSON.stringify(data));
-      assert.equal(summary.length, 8);
+      assert.equal(summary.length, 12);
       if (phase !== 'baseline') for (const item of summary) {
         assert.ok(item.firstEligibleMs < 110, JSON.stringify(item));
         assert.ok(item.firstDraw.activity > .01, JSON.stringify(item));
@@ -202,9 +202,9 @@ try {
   });
   await check('the first switched draw has real light pixels while deblur is still running', async () => {
     await page.evaluate(() => __postalGallery.configure({ lightEnabled: true, lightFadeIn: .12, lightFadeOut: .16 }));
-    await move(page, 'joy'); await page.waitForTimeout(700);
-    await page.evaluate(() => { __rapidPixelProbe = 'anger'; __rapidPixelResult = null; });
-    await move(page, 'anger');
+    await move(page, 'foshan'); await page.waitForTimeout(700);
+    await page.evaluate(() => { __rapidPixelProbe = 'guangzhou'; __rapidPixelResult = null; });
+    await move(page, 'guangzhou');
     await page.waitForFunction(() => __rapidPixelResult);
     const pixels = await page.evaluate(() => __rapidPixelResult);
     assert.equal(pixels.rgbaError, 0);
@@ -216,16 +216,16 @@ try {
     await page.evaluate(() => __postalGallery.configure({ lightFadeOut: .02 }));
     await page.mouse.move(10, 850); await page.waitForTimeout(500);
     await page.evaluate(() => __postalGallery.configure({ lightFadeIn: .8, lightFadeOut: .8 }));
-    await move(page, 'joy'); await page.waitForTimeout(150);
+    await move(page, 'foshan'); await page.waitForTimeout(150);
     const gradual = await page.evaluate(() => __postalGallery.getDiagnostics());
-    const amount = gradual.lightStates.find(s => s.id === 'joy').amount;
+    const amount = gradual.lightStates.find(s => s.id === 'foshan').amount;
     assert.ok(amount > .01 && amount < .6, String(amount));
     await page.evaluate(() => __postalGallery.configure({ lightEnabled: false }));
-    await page.waitForTimeout(50); await move(page, 'motion');
+    await page.waitForTimeout(50); await move(page, 'heshan');
     const off = await page.evaluate(() => __postalGallery.getDiagnostics());
     assert.equal(off.background.enabled, false); assert.equal(off.background.active, false);
     const reduced = await pageFor({ reducedMotion: 'reduce' });
-    await move(reduced, 'surprise'); await reduced.waitForTimeout(1500);
+    await move(reduced, 'quanzhou'); await reduced.waitForTimeout(1500);
     const before = await reduced.evaluate(() => ({ count: __rapidFrames.length, d: __postalGallery.getDiagnostics() }));
     await reduced.waitForTimeout(250);
     const after = await reduced.evaluate(() => ({ count: __rapidFrames.length, d: __postalGallery.getDiagnostics() }));

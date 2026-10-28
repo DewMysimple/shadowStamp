@@ -1,3 +1,22 @@
+# 当前验收：12枚地域狮舞邮票
+
+2026-10-28，地域图稿版本。三组各4枚：广东竖版、中国横版、世界超长竖版。当前分支`codex/redesign-lion-stamps`，提交前基线`11d5049`，报告针对该revision上的本轮工作树变更。
+
+| 命令 | 结果与证据 |
+| --- | --- |
+| `npm test` | 16项通过，含12张适配画幅布局与小屏边界。 |
+| `npm run build` | 成功；Three.js依赖块约514kB，仍有Vite的大块提示。 |
+| `npm run test:stamps` | 6项通过：12张独立图稿/原始比例与SHA、三组筛选、逐票暖光命中、背景像素静止、聚焦返回、390×844和320×568触摸；浏览器错误、控制台错误、失败请求均为0。[报告](../artifacts/region-stamps/verification/report.json) |
+| `npm run test:browser` | 14项通过：12票鼠标/键盘/触摸、焦点转场与恢复、跨尺寸聚焦定位、10轮循环资源稳定、减少动态、dispose、WebGL context loss及无WebGL回退；浏览器错误0。[报告](../artifacts/region-stamps/regression/browser/browser-report.json) |
+| `npm run test:rapid-hover` | 6项通过：首悬停与快速切换首帧有实际暖光像素、40/80/120ms逐票循环、资源稳定、闲置时背景静止、自定义渐隐与减少动态。[报告](../artifacts/region-stamps/regression/rapid-hover/after-report.json) |
+| `node scripts/capture-region-stamps.mjs` | 导出12张静态票面、总览、广东篇悬停、三组筛选、伦敦聚焦及390×844移动截图；记录中无页面或控制台错误。[采集清单](../artifacts/region-stamps/capture-record.json) |
+
+本机Chrome/Playwright执行；静态桌面纸面像素在所有12票悬停期间一致。悬停暖光只作用于当前邮票的局部光区，静态插画颜色与桌面背景不被整图滤色。总览、三组与移动画面见[总览图](../artifacts/region-stamps/contact-sheet.png)、[桌面画廊](../artifacts/region-stamps/overview.png)、[悬停](../artifacts/region-stamps/hover-foshan.png)和[移动画廊](../artifacts/region-stamps/mobile-overview.png)。
+
+地标精确性与低端真机帧率未覆盖；图稿生成内容是视觉表达，不等同于地图/建筑测绘。旧八态内容验收如下，均为历史证据。
+
+---
+
 # 当前验收：醒狮浅红UI与卡片焦点样式
 
 2026-10-27，基线`6a0c297`。移除邮票按钮周围的绿色焦点框，键盘聚焦在票角显示小红点；浅红色只用于参数面板和界面控件。邮票图稿、票面光影、画廊背景及原参数保持不变。
