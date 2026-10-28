@@ -5,6 +5,7 @@ import { createStampArtwork } from '../artwork.js';
 import { createStampMaterial, createShadowTexture, createShadowMaterial } from './StampMaterial.js';
 import { createDappledLight } from './DappledLight.js';
 import { DEFAULT_PARAMETERS, normalizeParameters } from '../parameters.js';
+import { getLightPreset } from '../lightPresets.js';
 
 /** Owns the one renderer, one clock, all persistent GPU assets, and input. */
 export function createStampGallery({ host, buttons, label, focusUi, chrome, onState, onError, parameters = DEFAULT_PARAMETERS, series = 'all' }) {
@@ -40,7 +41,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
   let lightPalette = '';
   function syncLightPalette() {
     const { light, color, intensity, enabled, contrast, grain } = background.parameters;
-    const key = `${light}:${color}:${intensity}:${enabled}:${contrast}:${grain}:${settings.surfaceRelief}:${settings.surfaceShine}:${settings.textureScale}:${settings.shadowStrength}:${settings.contactShadowColor}:${settings.contactShadowSoftness}:${settings.contactShadowOpacity}`;
+    const key = `${settings.lightAlgorithm}:${light}:${color}:${intensity}:${enabled}:${contrast}:${grain}:${settings.surfaceRelief}:${settings.surfaceShine}:${settings.textureScale}:${settings.shadowStrength}:${settings.contactShadowColor}:${settings.contactShadowSoftness}:${settings.contactShadowOpacity}`;
     if (key === lightPalette) return;
     lightPalette = key;
     const rgb = (hex) => {
@@ -49,6 +50,8 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     };
     for (const entry of entries) {
       entry.material.uniforms.uLightColor.value.fromArray(rgb(light));
+      entry.material.uniforms.uShadowColor.value.fromArray(rgb(color));
+      entry.material.uniforms.uLightAlgorithm.value = getLightPreset(settings.lightAlgorithm).index;
       entry.material.uniforms.uLightStrength.value = enabled ? intensity : 0;
       entry.material.uniforms.uLightContrast.value = contrast;
       entry.material.uniforms.uLightGrain.value = grain;

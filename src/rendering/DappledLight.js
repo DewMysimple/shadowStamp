@@ -1,11 +1,13 @@
 import * as THREE from 'three';
 import { PARAMETER_FIELDS, DEFAULT_PARAMETERS } from '../parameters.js';
+import { LIGHT_PRESETS } from '../lightPresets.js';
 import { NCS_LIGHTING } from './ncsLighting.js';
 import { SCREEN_VERTEX, DAPPLED_FIELD_FRAGMENT, DAPPLED_BLUR_FRAGMENT, DAPPLED_OUTPUT_FRAGMENT } from './dappledShaders.js';
 
 // Core optical field/blur migrated from the user's 幽兰 scene 8, never modified there.
 // This adapter owns no renderer, RAF, or DOM events; the gallery supplies all three.
 export const DAPPLED_DEFAULTS = Object.freeze({
+  lightAlgorithm: DEFAULT_PARAMETERS.lightAlgorithm,
   enabled: true,
   intensity: DEFAULT_PARAMETERS.lightIntensity,
   speed: DEFAULT_PARAMETERS.lightSpeed,
@@ -57,7 +59,8 @@ export function normalizeDappledParameters(options = {}, previous = DAPPLED_DEFA
   const safe = options && typeof options === 'object' && !Array.isArray(options) ? options : {};
   for (const [publicKey, value] of Object.entries(safe)) {
     const key = PANEL_KEYS[publicKey] ?? publicKey;
-    if (BOOLEAN_KEYS.has(key) && typeof value === 'boolean') result[key] = value;
+    if (key === 'lightAlgorithm' && LIGHT_PRESETS.some(preset => preset.id === value)) result[key] = value;
+    else if (BOOLEAN_KEYS.has(key) && typeof value === 'boolean') result[key] = value;
     else if (COLOR_KEYS.has(key) && typeof value === 'string' && /^#[\da-f]{6}$/i.test(value)) result[key] = value.toLowerCase();
     else if (LIMITS[key] && Number.isFinite(value)) {
       const [min, max] = LIMITS[key];
@@ -141,7 +144,7 @@ export function createDappledLight(renderer, options = {}) {
   function resize(_w, _h) {
     if (disposed) return;
     // The field is a stamp-local light study, independent of viewport shape/DPR.
-    uniforms.uAspect.value = activeAspect;
+    uniforms.uAspect.value = parameters.lightAlgorithm === 'legacy-multiply' ? parameters.stampRatio : activeAspect;
     const rw = 384, rh = 480;
     if (fieldTarget.width !== rw || fieldTarget.height !== rh) {
       fieldTarget.setSize(rw, rh); blurTarget.setSize(rw, rh);
@@ -164,7 +167,7 @@ export function createDappledLight(renderer, options = {}) {
       // Desk/focus colours still touch only the inexpensive background output.
       const nextOpticalKey = JSON.stringify([parameters.coverage, parameters.density, parameters.angle,
         parameters.stretch, parameters.scatter, parameters.wave, parameters.softness, parameters.stampRatio,
-        parameters.color, parameters.light, parameters.scale]);
+        parameters.color, parameters.light, parameters.scale, parameters.lightAlgorithm]);
       if (nextOpticalKey !== opticalKey) { opticalKey = nextOpticalKey; dirty = true; }
       uniforms.uRadius.value = Math.max(0.05, parameters.coverage * 0.5);
       uniforms.uDensity.value = parameters.density;
@@ -173,6 +176,9 @@ export function createDappledLight(renderer, options = {}) {
       uniforms.uScatter.value = parameters.scatter;
       uniforms.uWave.value = parameters.wave;
       uniforms.uSoftness.value = parameters.softness;
+      // Preserve the old optical-map proportions in its archived algorithm.
+      // All newer compositors fit the current portrait/landscape/tall artwork.
+      uniforms.uAspect.value = parameters.lightAlgorithm === 'legacy-multiply' ? parameters.stampRatio : activeAspect;
       uniforms.uIntensity.value = parameters.intensity;
       uniforms.uStudy.value = THREE.MathUtils.clamp(parameters.study, 0, 1);
       displayColor(parameters.background, uniforms.uPaper.value);
@@ -251,7 +257,7 @@ export function createDappledLight(renderer, options = {}) {
       const nextAspect = stampWidth / Math.max(1, stampHeight);
       if (Number.isFinite(nextAspect) && Math.abs(nextAspect - activeAspect) > 0.0001) {
         activeAspect = nextAspect;
-        uniforms.uAspect.value = nextAspect;
+        uniforms.uAspect.value = parameters.lightAlgorithm === 'legacy-multiply' ? parameters.stampRatio : nextAspect;
         dirty = true;
       }
       const lightHeight = Math.max(1, Math.floor(stampHeight * Math.min(pixelRatio, 2)) >> 1);

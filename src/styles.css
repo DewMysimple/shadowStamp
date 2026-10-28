@@ -114,6 +114,10 @@ button:focus-visible { outline: 1px solid var(--theme-accent); outline-offset: 4
 .parameter-color input { width: 37px; height: 21px; padding: 1px; border: 1px solid #dfcbc6; border-radius: 3px; background: none; cursor: pointer; }
 .parameter-select { display: flex; align-items: center; gap: 10px; margin: 3px 0 10px; color: #806c67; font-size: 10px; }
 .parameter-select select { flex: 1; min-width: 0; padding: 7px 5px; border: 1px solid #dfc9c4; border-radius: 3px; background: var(--theme-panel-inset); color: #70413d; font: inherit; }
+.parameter-preset-note { margin: 0 0 10px; padding: 9px; border-radius: 3px; background: var(--theme-panel-inset); color: #9b8581; font-size: 9px; line-height: 1.7; }
+.parameter-preset-note p { margin: 0 0 6px; }
+.parameter-preset-note > div { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.parameter-preset-note button { border: 0; padding: 2px 0; background: none; color: #9f5149; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 .parameter-fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .parameter-fieldset:disabled { opacity: .4; }
 .parameter-inactive { display: flex; align-items: center; justify-content: space-between; min-height: 30px; color: #a08c87; font-size: 10px; }

@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as parameters from '../src/parameters.js';
+import { LIGHT_PRESETS, LIGHT_PRESET_KEYS } from '../src/lightPresets.js';
 const { DEFAULT_PARAMETERS, PARAMETER_FIELDS, PARAMETER_GROUPS, PARAMETER_VERSION, STORAGE_KEY, LEGACY_STORAGE_KEY, normalizeParameters, parseParameters, readParameters, serializeParameters } = parameters;
 
 test('user JSON is whitelisted and clamped; removed material choices cannot reach the renderer', () => {
@@ -15,10 +16,11 @@ test('user JSON is whitelisted and clamped; removed material choices cannot reac
   assert.equal(result.lightAnimation, true);
   assert.equal(result.perspective, DEFAULT_PARAMETERS.perspective);
   for (const key of ['injected', 'lightModel', 'lightDensity', 'surfaceFinish', 'surfaceRoughness', 'surfaceCoat']) assert.equal(Object.hasOwn(result, key), false);
-  assert.equal(Object.hasOwn(parameters, 'PRESETS'), false);
+  assert.equal(normalizeParameters({ lightAlgorithm: 'silver' }).lightAlgorithm, 'local-add');
   assert.equal(DEFAULT_PARAMETERS.lightEnabled, true);
   assert.equal(new Set(PARAMETER_FIELDS.map(field => field.key)).size, PARAMETER_FIELDS.length);
-  assert.equal(PARAMETER_FIELDS.some(field => field.models || field.type === 'select'), false);
+  assert.equal(PARAMETER_FIELDS.filter(field => field.type === 'select').length, 1);
+  assert.equal(PARAMETER_FIELDS.some(field => field.models), false);
   assert.equal(PARAMETER_GROUPS.length, 4);
   assert.throws(() => parseParameters('{"version":1,"parameters":[]}'));
   assert.throws(() => parseParameters('{"version":9,"parameters":{}}'));
@@ -70,4 +72,34 @@ test('current saved values round trip exactly, and denied/corrupt storage restor
   assert.deepEqual(readParameters({ getItem(key) { assert.equal(key, STORAGE_KEY); return json; } }), values);
   assert.deepEqual(readParameters({ getItem() { return '{'; } }), DEFAULT_PARAMETERS);
   assert.deepEqual(readParameters({ getItem() { throw new Error('blocked'); } }), DEFAULT_PARAMETERS);
+});
+
+test('all six presets preserve interaction preferences and persist their distinct algorithm', () => {
+  const custom = normalizeParameters({ hoverTilt: 12, focusHeight: .7, backgroundColor: '#ffeedd', pinLight: true,
+    lightAnimation: false, lightFollowPointer: false, lightEnabled: false, lightResponse: .3, lightSpeed: .7, surfaceRelief: .8 });
+  assert.equal(LIGHT_PRESETS.length, 6);
+  assert.equal(new Set(LIGHT_PRESETS.map(preset => preset.id)).size, 6);
+  assert.equal(new Set(LIGHT_PRESETS.map(preset => preset.name)).size, 6);
+  assert.deepEqual(LIGHT_PRESETS.map(preset => preset.index), [0, 1, 2, 3, 4, 5]);
+  for (const preset of LIGHT_PRESETS) {
+    const applied = parameters.applyLightPreset(custom, preset.id);
+    assert.equal(applied.lightAlgorithm, preset.id);
+    for (const field of PARAMETER_FIELDS.filter(field => !LIGHT_PRESET_KEYS.includes(field.key))) {
+      assert.equal(applied[field.key], custom[field.key], `${preset.id} preserves ${field.key}`);
+    }
+    assert.equal(parameters.isLightPresetModified(applied), false);
+    assert.equal(parameters.isLightPresetModified({ ...applied, lightContrast: .91 }), true);
+    assert.deepEqual(parseParameters(serializeParameters(applied)), applied);
+    const stored = serializeParameters({ ...applied, lightContrast: .91 });
+    assert.equal(readParameters({ getItem: () => stored }).lightAlgorithm, preset.id);
+    assert.equal(parseParameters(stored).lightContrast, .91);
+    assert.equal(parameters.applyLightPreset(parseParameters(stored), preset.id).lightContrast, applied.lightContrast);
+  }
+});
+
+test('previous revision-4 exports retain all values and adopt the exact current compositor', () => {
+  const saved = { ...DEFAULT_PARAMETERS, lightContrast: .41, lightEnabled: false, textureScale: 1.6 };
+  delete saved.lightAlgorithm;
+  assert.deepEqual(parseParameters(JSON.stringify({ version: 2, appearanceRevision: 4, parameters: saved })),
+    { ...saved, lightAlgorithm: 'local-add' });
 });

@@ -1,3 +1,5 @@
+import { DEFAULT_LIGHT_ALGORITHM, LIGHT_PRESETS, LIGHT_PRESET_KEYS, getLightPreset } from './lightPresets.js';
+
 // Shared by the controls, persistence and renderer. Values are in CSS px / seconds / degrees.
 export const PARAMETER_VERSION = 2;
 export const STORAGE_KEY = 'postal-studies:parameters:v2';
@@ -36,13 +38,15 @@ export const PARAMETER_GROUPS = [
     color('backgroundColor', '画廊纸色', '#fbf7f1'),
     color('focusBackground', '聚焦底色', '#22201c'),
   ] },
-  { id: 'light', title: '邮票光影', note: '光影默认开启；直接调整票面的明暗、暖光与阴影色调。', fields: [
+  { id: 'light', title: '邮票光影', note: '六种光影各有笔触；选择后仍可继续调节，自动保存。', fields: [
+    { key: 'lightAlgorithm', label: '光影预设', type: 'select', value: DEFAULT_LIGHT_ALGORITHM,
+      options: LIGHT_PRESETS.map(preset => ({ value: preset.id, label: `${preset.name} · ${preset.origin}` })) },
     toggle('lightEnabled', '启用票面光影', true),
     toggle('pinLight', '固定预览光影', false, '照亮最近交互的邮票；未选择时使用主邮票。'),
     toggle('lightAnimation', '光影流动', true, '缓慢流动的光斑与指针位置共同影响票面。'),
     toggle('lightFollowPointer', '光斑跟随指针', true),
     number('lightIntensity', '光影强度', 1, 0, 2, 0.01),
-    number('lightContrast', '暖光明暗强度', 0.26, 0, 1, 0.01, '', '调节局部暖光的明暗变化；不对整张印刷图做颜色乘算。'),
+    number('lightContrast', '暖光明暗强度', 0.26, 0, 1, 0.01, '', '调节所选算法的光影合成强度；各算法的明暗响应不同。'),
     number('shadowStrength', '票面暗部深度', 1, 0, 1, 0.01),
     number('lightSpeed', '流动速度', 0.35, 0, 3, 0.05, '×'),
     number('pointerInfluence', '指针影响', 0.85, 0, 2, 0.05, '×'),
@@ -81,8 +85,20 @@ export function normalizeParameters(input = {}, base = DEFAULT_PARAMETERS) {
     if (field.type === 'number') value = typeof value === 'number' && Number.isFinite(value) ? Math.min(field.max, Math.max(field.min, value)) : base[field.key];
     if (field.type === 'boolean') value = typeof value === 'boolean' ? value : base[field.key];
     if (field.type === 'color') value = typeof value === 'string' && /^#[0-9a-f]{6}$/i.test(value) ? value.toLowerCase() : base[field.key];
+    if (field.type === 'select') value = field.options.some(option => option.value === value) ? value : base[field.key];
     return [field.key, value];
   }));
+}
+
+export function applyLightPreset(parameters, id) {
+  const preset = getLightPreset(id);
+  const values = { ...DEFAULT_PARAMETERS, ...preset.values, lightAlgorithm: preset.id };
+  return normalizeParameters({ ...parameters, ...Object.fromEntries(LIGHT_PRESET_KEYS.map(key => [key, values[key]])) });
+}
+
+export function isLightPresetModified(parameters) {
+  const preset = applyLightPreset(parameters, parameters.lightAlgorithm);
+  return LIGHT_PRESET_KEYS.some(key => parameters[key] !== preset[key]);
 }
 
 export function readParameters(storage) {
@@ -100,9 +116,9 @@ export function serializeParameters(parameters) {
 
 function restoreParameters(saved) {
   const values = normalizeParameters(saved.parameters);
-  // Earlier appearances offered incompatible materials and several presets.
-  // Adopt the single tuned light once; preserve gallery/interaction preferences.
-  // A current export retains all deliberate edits, including disabling the light.
+  // Pre-revision-4 material modes are incompatible; preserve their established
+  // migration. Revision-4 exports without an algorithm adopt the current local
+  // additive branch, retaining every deliberate numeric edit and enable state.
   if ((saved.appearanceRevision ?? 0) < APPEARANCE_REVISION) {
     for (const group of PARAMETER_GROUPS.filter(group => group.id === 'light' || group.id === 'shape')) {
       for (const field of group.fields) values[field.key] = DEFAULT_PARAMETERS[field.key];

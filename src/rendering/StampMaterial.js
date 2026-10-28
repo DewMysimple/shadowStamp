@@ -26,7 +26,10 @@ const fragmentShader = /* glsl */`
   uniform float uTime;
   uniform sampler2D uDappled;
   uniform sampler2D uSurfaceNormal;
+  uniform sampler2D uLegacySurfaceNormal;
+  uniform float uLightAlgorithm;
   uniform vec3 uLightColor;
+  uniform vec3 uShadowColor;
   uniform float uLightStrength;
   uniform float uLightContrast;
   uniform float uLightGrain;
@@ -94,13 +97,25 @@ const fragmentShader = /* glsl */`
     return outputColor;
   }
 
+  // W3C-style soft light: bend midtones instead of adding a flat colour wash.
+  vec3 softLight(vec3 base, vec3 blend) {
+    vec3 curve = mix(((16.0 * base - 12.0) * base + 4.0) * base,
+      sqrt(max(base, vec3(0.0))), step(vec3(0.25), base));
+    vec3 dark = base - (1.0 - 2.0 * blend) * base * (1.0 - base);
+    vec3 light = base + (2.0 * blend - 1.0) * (curve - base);
+    return mix(dark, light, step(vec3(0.5), blend));
+  }
+
   vec3 paperLight(vec3 ink) {
     float activity = clamp(uActivity, 0.0, 1.0) * clamp(uLightStrength, 0.0, 2.0);
     vec3 color = ink;
     // Lighting and print defocus have independent transitions. Waiting for blur
     // to reach zero hid the entire light for ~473ms on every card handoff.
     if (activity > 0.001) {
-      vec2 paperMetric = vec2(uSize.x / max(uSize.y, 1.0), 1.0) * 1.27;
+      bool legacy = uLightAlgorithm < 0.5;
+      // The previous algorithm used a fixed portrait metric. Other algorithms
+      // retain the current adapter for horizontal and tall stamp formats.
+      vec2 paperMetric = legacy ? vec2(1.0, 1.27) : vec2(uSize.x / max(uSize.y, 1.0), 1.0) * 1.27;
       vec2 local = (vUv - 0.5) * paperMetric;
       // One optical field and one paper response. Neither alters print UVs,
       // vertices, lettering nor alpha. Enlarging fibres does not enlarge ink.
@@ -110,12 +125,15 @@ const fragmentShader = /* glsl */`
       // bright. At rest and outside that footprint the printed RGB is exact.
       float lightMask = pow(clamp(1.0 - shade, 0.0, 1.0), mix(1.0, 1.7, clamp(uShadowStrength, 0.0, 1.0)));
       float localActivity = activity * lightMask;
+      float responseActivity = legacy ? activity : localActivity;
       vec2 normalUv = (vUv - 0.5) / uTextureScale + 0.5;
       vec2 microNormal = texture2D(uSurfaceNormal, normalUv).rg * 2.0 - 1.0;
+      if (legacy) microNormal = texture2D(uLegacySurfaceNormal, normalUv).rg * 2.0 - 1.0;
       vec3 normal = normalize(vec3(microNormal * uSurfaceRelief * (uNormalScale / 0.22), 1.0));
       vec3 coatNormal = normalize(vec3(microNormal * uSurfaceRelief * (uCoatNormalScale / 0.22), 1.0));
       vec3 viewDirection = normalize(vec3(-local * 0.4, 1.65));
-      vec3 lightDirection = normalize(vec3((uPointer - 0.5) * vec2(paperMetric.x, 1.0) + vec2(-0.3, 0.45), 0.4));
+      vec2 pointerMetric = legacy ? vec2(1.0) : vec2(paperMetric.x, 1.0);
+      vec3 lightDirection = normalize(vec3((uPointer - 0.5) * pointerMetric + vec2(-0.3, 0.45), 0.4));
       vec3 toLamp = vec3((uPointer - vUv) * paperMetric, uLampHeight);
       float lampDistance2 = max(dot(toLamp, toLamp), 0.01);
       vec3 lampDirection = normalize(toLamp);
@@ -135,16 +153,53 @@ const fragmentShader = /* glsl */`
       // remains unchanged at rest; the original displacement/env assets are
       // intentionally absent. Exposure is a light-response gain here, not a
       // claim to reproduce the original complete Neutral/PMREM render.
-      color += ink * diffuseDelta * uMainColor * uMainIntensity * uExposure * localActivity * 0.72;
-      color += uMainColor * uMainIntensity * uExposure * paperReflectance * localActivity * 0.07;
+      color += ink * diffuseDelta * uMainColor * uMainIntensity * uExposure * responseActivity * 0.72;
+      color += uMainColor * uMainIntensity * uExposure * paperReflectance * responseActivity * 0.07;
       float lampDiffuse = max(dot(normal, lampDirection), 0.0);
-      color += lampRadiance * lampDiffuse * uExposure * paperReflectance * localActivity * 0.035;
+      color += lampRadiance * lampDiffuse * uExposure * paperReflectance * responseActivity * 0.035;
       vec3 fibreGlint = clamp(specular - flatSpecular, vec3(-0.045), vec3(0.12));
-      color += (uMainColor + lampRadiance * 0.3) * fibreGlint * uSurfaceShine * paperReflectance * localActivity;
-      // Add the warm RGB map locally. Multiplying the full print by this map
-      // tinted every pixel, so use its source colour as a bounded highlight.
+      color += (uMainColor + lampRadiance * 0.3) * fibreGlint * uSurfaceShine * paperReflectance * responseActivity;
       vec3 warmMap = mix(uLightColor, optical.rgb, 0.72);
-      color += warmMap * localActivity * clamp(uLightContrast * 0.55, 0.0, 0.55);
+      vec3 paperResponse = color - ink;
+      if (legacy) {
+        // 0 / 林隙旧笺: exact desktop multiply composition. Dark-field colour
+        // compensation and the ungated paper response belong to this algorithm.
+        vec3 mapColor = mix(uLightColor, optical.rgb, shade);
+        mapColor += (vec3(1.0) - uShadowColor) * (1.0 - uShadowStrength) * shade;
+        color *= mix(vec3(1.0), clamp(mapColor, 0.0, 1.0), clamp(uLightContrast * activity, 0.0, 1.0));
+      } else if (uLightAlgorithm < 1.5) {
+        // 1 / 晴窗暖笺: preserve the current local additive light unchanged.
+        color += warmMap * localActivity * clamp(uLightContrast * 0.55, 0.0, 0.55);
+      } else if (uLightAlgorithm < 2.5) {
+        // 2 / 晨雾透光: screen uses the paper's remaining highlight headroom;
+        // unlike addition it approaches white without clipping the whole print.
+        vec3 screenLight = clamp(warmMap * localActivity * uLightContrast * 0.95 + paperResponse * 0.65, 0.0, 0.85);
+        color = 1.0 - (1.0 - ink) * (1.0 - screenLight);
+      } else if (uLightAlgorithm < 3.5) {
+        // 3 / 午后柔映: signed soft-light bends bright and dark midtones. The
+        // neutral 0.5 blend is identity, including throughout hover fade-out.
+        vec3 signedField = warmMap * lightMask * 0.85 - (1.0 - uShadowColor) * shade * uShadowStrength * 0.55;
+        vec3 blend = clamp(0.5 + signedField * activity * uLightContrast + paperResponse * 0.75, 0.0, 1.0);
+        color = softLight(ink, blend);
+      } else if (uLightAlgorithm < 4.5) {
+        // 4 / 琥珀漫照: exponential absorption in shade plus bounded diffuse
+        // scattering in light. This is a display-RGB artistic approximation,
+        // not a claim to simulate a measured paper transmittance spectrum.
+        vec3 absorption = (1.0 - uShadowColor) * shade * uShadowStrength * uLightContrast * activity * 0.85;
+        vec3 transmitted = ink * exp(-absorption);
+        vec3 irradiance = max(warmMap * localActivity * uLightContrast * 0.9 + paperResponse * 0.65, vec3(0.0));
+        color = transmitted + (1.0 - transmitted) * (1.0 - exp(-irradiance));
+      } else {
+        // 5 / 暮色留白: dodge/burn luminance with one RGB gain. Cap that gain
+        // at the first channel's headroom so saturated ink keeps its RGB ratios.
+        float warmLuma = dot(warmMap, vec3(0.2126, 0.7152, 0.0722));
+        float responseLuma = dot(paperResponse, vec3(0.2126, 0.7152, 0.0722));
+        float targetLuma = luminance + (1.0 - luminance) * warmLuma * localActivity * uLightContrast * 0.8
+          - luminance * shade * uShadowStrength * activity * uLightContrast * 0.55 + responseLuma * 0.6;
+        float peak = max(max(ink.r, ink.g), ink.b);
+        float gain = clamp(targetLuma / max(luminance, 0.0001), 0.0, 1.0 / max(peak, 0.0001));
+        color = ink * gain;
+      }
     }
     return color;
   }
@@ -164,6 +219,7 @@ const fragmentShader = /* glsl */`
 
 export function createStampMaterial(texture, lightTexture) {
   const surfaceNormal = createSurfaceNormalTexture(17041);
+  const legacySurfaceNormal = createSurfaceNormalTexture(27041);
   const material = new THREE.ShaderMaterial({
     vertexShader, fragmentShader,
     uniforms: {
@@ -172,7 +228,10 @@ export function createStampMaterial(texture, lightTexture) {
       uOpacity: { value: 1 }, uBlur: { value: 0 }, uTime: { value: 0 },
       uDappled: { value: lightTexture },
       uSurfaceNormal: { value: surfaceNormal },
+      uLegacySurfaceNormal: { value: legacySurfaceNormal },
+      uLightAlgorithm: { value: 1 },
       uLightColor: { value: new THREE.Vector3(1, 0.945, 0.812) },
+      uShadowColor: { value: new THREE.Vector3(0.306, 0.361, 0.235) },
       uLightStrength: { value: 1 },
       uLightContrast: { value: 0.26 }, uLightGrain: { value: 0.65 },
       uSurfaceRelief: { value: 0.22 }, uSurfaceShine: { value: 0.25 },
@@ -189,7 +248,7 @@ export function createStampMaterial(texture, lightTexture) {
     },
     transparent: true, depthTest: false, depthWrite: false, toneMapped: false,
   });
-  material.addEventListener('dispose', () => surfaceNormal.dispose());
+  material.addEventListener('dispose', () => { surfaceNormal.dispose(); legacySurfaceNormal.dispose(); });
   return material;
 }
 

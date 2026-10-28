@@ -1,8 +1,10 @@
 import React, { useRef, useState } from 'react';
-import { DEFAULT_PARAMETERS, PARAMETER_GROUPS, parseParameters, serializeParameters } from './parameters.js';
+import { DEFAULT_PARAMETERS, PARAMETER_GROUPS, applyLightPreset, isLightPresetModified, parseParameters, serializeParameters } from './parameters.js';
+import { getLightPreset } from './lightPresets.js';
 
 function ParameterField({ field, value, onChange }) {
   const id = `parameter-${field.key}`;
+  if (field.type === 'select') return <label className="parameter-select" htmlFor={id}><span>{field.label}</span><select id={id} data-parameter={field.key} value={value} onChange={event => onChange(field.key, event.target.value)}>{field.options.map(option => <option key={option.value} value={option.value}>{option.label}</option>)}</select></label>;
   if (field.type === 'boolean') return <label className="parameter-toggle" htmlFor={id} title={field.hint}>
     <span>{field.label}</span><input id={id} data-parameter={field.key} type="checkbox" checked={value} onChange={event => onChange(field.key, event.target.checked)} /><span className="toggle-track" aria-hidden="true" />
   </label>;
@@ -20,6 +22,14 @@ export default function ParameterPanel({ parameters, onChange, onReplace, onFocu
   const [json, setJson] = useState('');
   const fileInput = useRef(null);
   const toggle = useRef(null);
+  const preset = getLightPreset(parameters.lightAlgorithm);
+  const presetModified = isLightPresetModified(parameters);
+  const changeField = (key, value) => {
+    if (key === 'lightAlgorithm') {
+      onReplace(applyLightPreset(parameters, value));
+      setMessage(`已应用「${getLightPreset(value).name}」。`);
+    } else onChange(key, value);
+  };
   const applyJson = text => {
     try { onReplace(parseParameters(text)); setMessage('已导入参数并应用。'); setImportOpen(false); }
     catch (error) { setMessage(error.message); }
@@ -46,12 +56,12 @@ export default function ParameterPanel({ parameters, onChange, onReplace, onFocu
           <summary><span>{group.title}</span><span className="group-count">{group.fields.length.toString().padStart(2, '0')}</span></summary>
           <p className="parameter-group-note">{group.note}</p>
           <fieldset className="parameter-fieldset">
-            {group.fields.map(field => <ParameterField key={field.key} field={field} value={parameters[field.key]} onChange={onChange} />)}
+            {group.fields.map(field => <React.Fragment key={field.key}><ParameterField field={field} value={parameters[field.key]} onChange={changeField} />{field.key === 'lightAlgorithm' && <div className="parameter-preset-note"><p>{preset.description}</p><div><span data-preset-state>{presetModified ? '已微调' : '预设原值'}</span><button type="button" onClick={() => { onReplace(applyLightPreset(parameters, parameters.lightAlgorithm)); setMessage(`已恢复「${preset.name}」的光影参数。`); }}>恢复此光影预设</button></div></div>}</React.Fragment>)}
           </fieldset>
           <button className="group-reset" onClick={() => { onReplace({ ...parameters, ...Object.fromEntries(group.fields.map(field => [field.key, DEFAULT_PARAMETERS[field.key]])) }); setMessage(`已重置${group.title}。`); }}>重置这一组</button>
         </details>)}
         {importOpen && <div className="parameter-import"><label htmlFor="parameter-json">参数 JSON</label><textarea id="parameter-json" value={json} onChange={event => setJson(event.target.value)} placeholder="粘贴本面板导出的 JSON" spellCheck={false} /><div><button onClick={() => applyJson(json)}>应用 JSON</button><button onClick={() => setImportOpen(false)}>收起</button></div></div>}
-        <p className="parameter-footnote">先调光影强度与阴影颜色，再调光纹放大和散焦柔化。</p>
+        <p className="parameter-footnote">先选光影，再调明暗与纸纹。预设保留画廊、聚焦与指针设置。</p>
       </div>
       <footer className="parameter-footer"><div><button onClick={copy}>复制</button><button onClick={download}>导出</button><button onClick={() => fileInput.current?.click()}>导入</button><button onClick={() => { setImportOpen(value => !value); setJson(''); }}>粘贴</button><button onClick={() => { onReplace(DEFAULT_PARAMETERS); setMessage('全部参数已恢复。'); }}>全部重置</button></div><input ref={fileInput} className="sr-only" tabIndex={-1} type="file" accept=".json,application/json" aria-label="导入参数 JSON 文件" onChange={async event => { const file = event.target.files?.[0]; if (file) { if (file.size > 100000) setMessage('参数文件过大，请选择本面板导出的 JSON。'); else applyJson(await file.text()); } event.target.value = ''; }} /><p role="status" aria-live="polite">{storageError || message || '悬停看光影，点击看聚焦。'}</p></footer>
     </div>}

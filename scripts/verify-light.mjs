@@ -9,7 +9,7 @@ import {promisify} from 'node:util';
 const out=resolve('artifacts/lion-stamps/regression/light');await mkdir(out,{recursive:true});
 const base=process.env.VERIFY_URL||'http://127.0.0.1:4173/';
 const report={base,scope:'Single default light: stamp-local dappled illumination and shallow paper normals; static paper background',startedAt:new Date().toISOString(),checks:[],errors:[],screenshots:[]};
-const browser=await chromium.launch({headless:true,channel:'chrome',args:['--enable-unsafe-swiftshader']});
+const browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH ? {executablePath:process.env.CHROME_PATH} : {channel:'chrome'}),args:['--enable-unsafe-swiftshader']});
 const contexts=[],hash=b=>createHash('sha256').update(b).digest('hex');
 async function check(name,fn){try{const details=await fn();report.checks.push({name,result:'passed',details});console.log(`PASS ${name}`)}catch(e){report.checks.push({name,result:'failed',error:e.stack});console.error(`FAIL ${name}: ${e.message}`)}}
 async function createPage(options={}){
@@ -37,7 +37,7 @@ async function visit(p){
  await p.goto(base,{waitUntil:'networkidle'});await p.waitForFunction(()=>!!window.__postalGallery,{timeout:15000});
  if(await p.locator('.parameter-launcher').getAttribute('aria-expanded')!=='true')await p.locator('.parameter-launcher').click();
  assert.equal((await p.evaluate(()=>__postalGallery.getDiagnostics().parameters)).lightEnabled,true);
- assert.equal(await p.locator('#parameter-preset, [data-parameter="lightModel"]').count(),0);
+ assert.equal(await p.locator('#parameter-lightAlgorithm option').count(),6);assert.equal(await p.locator('[data-parameter="lightModel"]').count(),0);
  if(p.viewportSize().width<700)await p.locator('.parameter-launcher').click();
 }
 const diagnostics=p=>p.evaluate(()=>window.__postalGallery.getDiagnostics());

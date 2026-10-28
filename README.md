@@ -4,7 +4,7 @@ React、Vite 与原生 Three.js 构建的交互邮票展览。当前是三组、
 
 [12张票面总览](artifacts/region-stamps/contact-sheet.png) · [桌面画廊](artifacts/region-stamps/overview.png) · [广东篇悬停暖光](artifacts/region-stamps/hover-foshan.png) · [独立票面PNG](artifacts/region-stamps/prints/) · [生成与设计记录](docs/region-stamps.md)
 
-当前交互保留一套默认开启的暖光、微细纸纹、聚焦、背景邮票虚化、参数面板、键盘和触摸操作。动态光图只采样于当前悬停/聚焦邮票；桌面背景保持静止，票面插画在未受光时保持原始RGB。纸面允许浅压纹，不做凸字浮雕、真实图案位移或金属化。
+当前参数面板提供六种艺术命名的光影算法，包含旧版乘算与本工程新版局部加光，默认保留新版；另保留微细纸纹、聚焦、背景邮票虚化、键盘和触摸操作。详见[六种光影](docs/light-presets.md)。动态光图只采样于当前悬停/聚焦邮票；桌面背景保持静止，票面插画在未受光时保持原始RGB。纸面允许浅压纹，不做凸字浮雕、真实图案位移或金属化。
 
 ## 运行
 

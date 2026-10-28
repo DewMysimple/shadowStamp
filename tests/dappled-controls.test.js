@@ -176,3 +176,25 @@ test('card handoffs refresh the shared field immediately without waiting for the
   assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 2);
   light.dispose();
 });
+
+test('legacy optical proportions return without replacing targets or losing the active stamp aspect', () => {
+  const renderer = fakeRenderer(), light = createDappledLight(renderer, { lightAnimation: false });
+  light.resize(1440, 900);
+  light.setStampSize(60, 45);
+  light.render(0, 0, false, true);
+  const original = light.stats;
+  light.configure({ lightAlgorithm: 'legacy-multiply' });
+  light.render(.01, 0, false, true);
+  assert.equal(light.stats.aspect, .786);
+  assert.equal(light.stats.fieldUpdates, original.fieldUpdates + 1);
+  assert.equal(light.stats.texture, original.texture);
+  light.setStampSize(40, 75);
+  light.resize(390, 844);
+  assert.equal(light.stats.aspect, .786);
+  light.configure({ lightAlgorithm: 'screen' });
+  light.render(.02, 0, false, true);
+  assert.equal(light.stats.aspect, 40 / 75);
+  assert.equal(light.stats.texture, original.texture);
+  assert.equal(normalizeDappledParameters({ lightAlgorithm: 'unknown' }).lightAlgorithm, 'local-add');
+  light.dispose();
+});

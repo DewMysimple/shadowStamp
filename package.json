@@ -11,6 +11,7 @@
     "test:browser": "node scripts/verify-browser.mjs",
     "test:light": "node scripts/verify-light.mjs",
     "test:controls": "node scripts/verify-controls.mjs",
+    "test:presets": "node scripts/verify-light-presets.mjs",
     "test:fidelity": "node scripts/verify-fidelity.mjs",
     "test:stamps": "node scripts/verify-region-stamps.mjs",
     "test:rapid-hover": "node scripts/verify-rapid-hover.mjs"

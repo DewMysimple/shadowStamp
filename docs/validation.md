@@ -1,4 +1,26 @@
-# 当前验收：12枚地域狮舞邮票
+# 当前验收：六种艺术光影算法
+
+2026-10-28，分支codex/redesign-lion-stamps、基线59890ef加本轮修改。按用户新要求提供六个不同算法，包含旧版乘算与本工程新版局部加光，默认保留新版。12张图稿与界面机制保持。[算法说明](light-presets.md)、[同参对比](../artifacts/light-presets/comparison.png)、[面板预览](../artifacts/light-presets/preview.png)。
+
+| 命令 / 核验 | 结果与本轮证据 |
+| --- | --- |
+| npm test | 19项通过，含六预设范围、枚举白名单、旧存档兼容、法线资源释放。 |
+| npm run build | 成功；Three.js约514kB依赖块提示仍存在。 |
+| npm run test:presets | 8项通过；GPU分支0–5、真实控件、佛山/田阳各15对画面有差异、禁用时5120点RGB采样完全相同、32×32桌面像素静止、50个纹理稳定、导出/导入/刷新、手机、减少动态。零浏览器错误/警告。[报告](../artifacts/light-presets/report.json) |
+| npm run test:controls | 20项通过，52字段与实际GPU边界、真实JSON文件导出/导入、本机保存、聚焦和手机控件。[报告](../artifacts/light-presets/controls/report.json) |
+| npm run test:browser | 14项通过，12票鼠标/触摸/键盘、转场、资源循环、dispose、减少动态与无WebGL回退。[报告](../artifacts/light-presets/browser/browser-report.json) |
+| npm run test:rapid-hover | 6项通过，快速切换首帧实际光影、40/80/120ms逐票循环、资源/背景稳定、手调渐隐与减少动态。[报告](../artifacts/light-presets/rapid-hover/after-report.json) |
+| 隔离材质历史回归 | 同印刷与光图、横竖两种尺寸，本工程新版对59890ef、旧版对桌面11d5049的RGBA8逐通道差异均0。[条件与结果](../artifacts/light-presets/baseline-equivalence.json) |
+
+浏览器使用本机Chrome/SwiftShader，VERIFY_URL=http://127.0.0.1:4311/；浏览器与快速悬停报告另设VERIFY_OUTPUT到本轮目录，CHROME_PATH指定安装路径。历史报告保持历史，不归为本轮证据。
+
+验收中修正了旧参数脚本把小邮票区域当作空白背景的采样错误，并将采样尺寸适配当前12票布局；原失败不是背景动态。另遇Windows下载文件锁使Vite watcher EBUSY退出，已忽略artifacts输出目录的文件监视；重启本轮服务后参数20项完整通过。没有修改用户已运行的其他服务。
+
+此轮没有重做图稿/地标准确性审查；低端真机帧率仍未覆盖。下面均为前轮验收记录。
+
+---
+
+# 前轮验收：12枚地域狮舞邮票
 
 2026-10-28，地域图稿版本。三组各4枚：广东竖版、中国横版、世界超长竖版。当前分支`codex/redesign-lion-stamps`，提交前基线`11d5049`，报告针对该revision上的本轮工作树变更。
 

@@ -13,7 +13,7 @@ const sourceHashes = async () => Object.fromEntries(await Promise.all(sources.ma
 const report = { phase, baseURL, startedAt: new Date().toISOString(), checks: [], errors: [], sourceHashesBefore: await sourceHashes() };
 const shader = await readFile('src/rendering/StampMaterial.js', 'utf8');
 const hardBlurGate = /activity\s*>\s*0\.001\s*&&\s*uBlur\s*<\s*0\.02/.test(shader);
-const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });
+const browser = await chromium.launch({ ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: 'chrome' }), headless: true, args: ['--enable-unsafe-swiftshader'] });
 const contexts = [];
 const ids = ['foshan', 'guangzhou', 'heshan', 'suixi', 'beijing', 'tianyang', 'quanzhou', 'hongkong', 'singapore', 'kualalumpur', 'sanfrancisco', 'london'];
 function instrument() {

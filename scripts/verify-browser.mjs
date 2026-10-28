@@ -10,7 +10,7 @@ const baseURL = process.env.VERIFY_URL || 'http://127.0.0.1:4173/';
 const output = resolve(process.env.VERIFY_OUTPUT || 'artifacts/lion-stamps/regression/browser');
 await mkdir(output, { recursive: true });
 const report = { baseURL, startedAt: new Date().toISOString(), browser: 'Installed Chrome, headless, real WebGL', checks: [], consoleErrors: [], pageErrors: [], screenshots: [] };
-const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-swiftshader'] });
+const browser = await chromium.launch({ ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: 'chrome' }), headless: true, args: ['--enable-unsafe-swiftshader'] });
 const timeout = 15000;
 const ids = STAMPS.map(stamp => stamp.id);
 const primaryId = STAMPS[0].id;
@@ -280,7 +280,7 @@ try {
   });
 
   await check('WebGL disabled: DOM paper edition loads, focuses and exits', async () => {
-    const disabled=await chromium.launch({channel:'chrome',headless:true,args:['--disable-webgl']});
+    const disabled=await chromium.launch({...(process.env.CHROME_PATH ? {executablePath:process.env.CHROME_PATH} : {channel:'chrome'}),headless:true,args:['--disable-webgl']});
     const expectedConsoleErrors=[];const unexpectedPageErrors=[];
     try {
       const page=await disabled.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
