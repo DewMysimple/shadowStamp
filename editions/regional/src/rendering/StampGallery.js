@@ -7,9 +7,10 @@ import { createDappledLight } from './DappledLight.js';
 import { DEFAULT_PARAMETERS, normalizeParameters } from '../parameters.js';
 import { getLightPreset } from '../lightPresets.js';
 import { createArtFrame } from './ArtFrame.js';
+import { FRAME_DEFAULTS } from '../frameParameters.js';
 
 /** Owns the one renderer, one clock, all persistent GPU assets, and input. */
-export function createStampGallery({ host, buttons, label, focusUi, chrome, frameButtons = {}, onState, onError, onSeries = () => {}, onFrameStatus = () => {}, parameters = DEFAULT_PARAMETERS, series = 'guangdong' }) {
+export function createStampGallery({ host, buttons, label, focusUi, chrome, frameButtons = {}, onState, onError, onSeries = () => {}, onFrameStatus = () => {}, parameters = DEFAULT_PARAMETERS, frameParameters = FRAME_DEFAULTS, series = 'guangdong' }) {
   let settings = normalizeParameters(parameters);
   let currentSeries = SERIES.some(option => option.id === series) ? series : 'all';
   let disposed = false;
@@ -105,6 +106,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, fram
     return { stamp, artwork, texture, material, mesh, shadow, shadowSource, shadowMaterial, lightTarget: new THREE.Vector2(0.5, 0.5), hover: 0, light: 0, tiltX: 0, tiltY: 0, roll: 0, shiftX: 0, shiftY: 0, targetX: 0, targetY: 0, blur: 0, home: null, layoutFrom: null, displayHome: null, layoutT: 1, seriesOpacity: 1, focus: null };
   });
   const artFrame = createArtFrame({ renderer, wake, onStatus: onFrameStatus,
+    parameters: frameParameters,
     onCategory: id => { setSeries(id); onSeries(id); } });
 
   function publish() {
@@ -427,14 +429,14 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, fram
     });
   }
   listen(host, 'pointermove', move, { passive: true });
-  listen(host, 'pointerleave', () => { artFrame.hover(null); host.style.cursor = ''; hovered = null; pointerValid = false; pointerNdc.set(10, 10); publish(); wake(); });
+  listen(host, 'pointerleave', () => { artFrame.leave(); host.style.cursor = ''; hovered = null; pointerValid = false; pointerNdc.set(10, 10); publish(); wake(); });
   for (const [id, button] of Object.entries(frameButtons)) {
     if (!button) continue;
     listen(button, 'focus', () => artFrame.hover(id, true));
     listen(button, 'blur', () => artFrame.hover(null));
   }
-  const panel = host.querySelector('[data-parameter-panel]');
-  if (panel) listen(panel, 'pointerenter', () => { artFrame.hover(null); host.style.cursor = ''; pointerValid = false; pointerNdc.set(10, 10); hovered = null; publish(); wake(); });
+  const panel = host.querySelector('[data-parameter-panel]:not([data-frame-parameter-panel])');
+  for (const workbench of host.querySelectorAll('[data-parameter-panel]')) listen(workbench, 'pointerenter', () => { artFrame.leave(); host.style.cursor = ''; pointerValid = false; pointerNdc.set(10, 10); hovered = null; publish(); wake(); });
   // React delegates panel events at #root, after this native host listener.
   // Guard here as well so operating controls never triggers background-close.
   listen(host, 'click', event => {
@@ -478,6 +480,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, fram
 
   const api = {
     focus: startFocus, close, setSeries,
+    configureFrame: values => { if (!disposed) artFrame.configure(values); },
     configure(values) {
       if (disposed) return;
       settings = normalizeParameters(values, settings);

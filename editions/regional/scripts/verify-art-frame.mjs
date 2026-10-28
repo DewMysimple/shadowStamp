@@ -9,7 +9,8 @@ import { STAMPS } from '../src/config.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const project = resolve(root, '../..');
-const out = join(root, 'artifacts/art-frame');
+const assetReports = join(root, 'artifacts/art-frame');
+const out = resolve(root, process.env.VERIFY_OUTPUT || 'artifacts/frame-stability/integration');
 await mkdir(out, { recursive: true });
 const base = process.env.VERIFY_URL || 'http://127.0.0.1:4174/';
 const report = { startedAt: new Date().toISOString(), base, checks: [], screenshots: [], errors: [], scope: 'Desktop frame integration, exact assets, real raycast categories, HDRI/display pipeline, existing stamp interactions and lifecycle. Mobile optimization excluded by user.' };
@@ -52,7 +53,7 @@ async function visibleIds() { return page.locator('.stamp-hit').evaluateAll(node
 async function snap(name) { await page.screenshot({path:join(out,name)}); report.screenshots.push(name); }
 
 await check('Original frame, source blend, HDRI, twelve print assets and original edition preserved', async()=>{
-  const build=JSON.parse(await readFile(join(out,'model-build.json'),'utf8'));
+  const build=JSON.parse(await readFile(join(assetReports,'model-build.json'),'utf8'));
   for (const [name, expected] of Object.entries(build.source_hashes)) assert.equal(hash(await readFile(join('C:/Users/Administrator/Desktop/Modeling/相框/Models/ArtFrame_2to1',name))), expected);
   const originalHash=hash(await readFile(join(root,'public/models/art-frame-original.glb'))); assert.equal(originalHash, build.source_hashes['ArtFrame_2to1.glb']);
   const hdriSource='E:/数字媒体竞赛/张钧儒/lion/source/public/assets/environments/citrus_orchard_road_puresky_4k.exr';
@@ -73,7 +74,7 @@ await check('Five real mesh text nodes and small physical glyph scale',async()=>
   const gltf=JSON.parse(data.subarray(20,20+data.readUInt32LE(12)).toString());
   const names=['Title_Chinese','Title_English','Category_Guangdong','Category_China','Category_World'];
   for(const name of names){ const node=gltf.nodes.find(n=>n.name===name); assert.ok(node,name); assert.ok(gltf.accessors[gltf.meshes[node.mesh].primitives[0].attributes.POSITION].count>100); }
-  const build=JSON.parse(await readFile(join(out,'model-build.json'),'utf8'));
+  const build=JSON.parse(await readFile(join(assetReports,'model-build.json'),'utf8'));
   const categories=build.objects.filter(o=>o.category);
   for(const object of categories){ assert.ok(object.world_dimensions_m[2]>.017 && object.world_dimensions_m[2]<.020); assert.ok(object.world_dimensions_m[1]>.001); const bounds=object.bounds_blender; assert.ok(bounds[0][2]>-.228 && bounds[1][2]<-.115); }
   return {names,categoryGlyphHeights:categories.map(o=>o.world_dimensions_m[2]),categoryThickness:categories[0].world_dimensions_m[1],verifiedGlyphs:build.glyphs.length};

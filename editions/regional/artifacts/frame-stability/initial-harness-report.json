@@ -1,0 +1,283 @@
+{
+  "startedAt": "2026-10-28T19:31:15.086Z",
+  "scope": "Source Blender transforms and actual GPU uploads; continuous inner-trim hover stability; whole-frame tilt; real model controls, isolation, persistence and lifecycle. Desktop only.",
+  "checks": [
+    {
+      "name": "Three source disk lights match original Blender transforms and actual GPU uploads",
+      "result": "passed",
+      "elapsedMs": 12,
+      "evidence": {
+        "lights": 3,
+        "uploads": [
+          {
+            "name": "Key | large softbox",
+            "position": [
+              -0.6499999761581421,
+              1.0499999523162842,
+              -1.050000011920929
+            ],
+            "color": [
+              10.097058564709805,
+              9.69317600546204,
+              9.08735246750619
+            ]
+          },
+          {
+            "name": "Fill | gentle frontal bounce",
+            "position": [
+              0.75,
+              0.3499999940395355,
+              -1.350000023841858
+            ],
+            "color": [
+              4.5594530072386465,
+              4.812756019187605,
+              5.066059031136563
+            ]
+          },
+          {
+            "name": "Rim | timber edge",
+            "position": [
+              0.550000011920929,
+              0.75,
+              -2.025000000372529
+            ],
+            "color": [
+              13.779680975357937,
+              13.228493440663744,
+              12.263915870948647
+            ]
+          }
+        ],
+        "world": [
+          0.11199999558925633,
+          0.11839999887943264,
+          0.12479999263286601
+        ],
+        "diskShaderVariants": 8
+      }
+    },
+    {
+      "name": "Solid opaque geometry, micrometer seam ordering and stable source display pass",
+      "result": "failed",
+      "elapsedMs": 8,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   -1,\n    -2,\n-   -1\n  ]\n\n    at file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-studio.mjs:134:96\n    at async check (file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-studio.mjs:58:24)\n    at async file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-studio.mjs:130:1"
+    },
+    {
+      "name": "Model control launcher is at upper left and exposes the actual supplied HDRI",
+      "result": "passed",
+      "elapsedMs": 195,
+      "evidence": {
+        "box": {
+          "x": 50.390625,
+          "y": 114,
+          "width": 161.796875,
+          "height": 40.5
+        },
+        "preview": [
+          512,
+          256
+        ],
+        "sourceDownload": true
+      }
+    },
+    {
+      "name": "Whole frame tilts gently with pointer, damps smoothly and returns on leave",
+      "result": "passed",
+      "elapsedMs": 3411,
+      "evidence": {
+        "during": {
+          "rotation": [
+            0.012645982691145218,
+            0.01601824425316915,
+            0,
+            "XYZ"
+          ],
+          "position": [
+            0,
+            0,
+            0.011170191037280466
+          ],
+          "target": [
+            0.7599999459670703,
+            -0.5999999756570936
+          ],
+          "pointerInside": true,
+          "enabled": true
+        },
+        "settled": {
+          "rotation": [
+            0.02617993771775528,
+            0.03316125343026094,
+            0,
+            "XYZ"
+          ],
+          "position": [
+            0,
+            0,
+            0.02312182482761494
+          ],
+          "target": [
+            0.7599999459670703,
+            -0.5999999756570936
+          ],
+          "pointerInside": true,
+          "enabled": true
+        },
+        "returned": true
+      }
+    },
+    {
+      "name": "Repeated traversal of both inner seams produces no black strips or nonfinite poses",
+      "result": "passed",
+      "elapsedMs": 24565,
+      "evidence": {
+        "poses": 18,
+        "minimumChannel": 179
+      }
+    },
+    {
+      "name": "Near-stationary pointer perturbations do not trigger sudden long-line flashes",
+      "result": "passed",
+      "elapsedMs": 2248,
+      "evidence": {
+        "points": 644,
+        "perturbationCssPx": 0.05,
+        "mean": 0.03260869565217391,
+        "max": 1,
+        "strongFraction": 0,
+        "stationarySha256": "5c3e082b50b2741460bc707de2a0ad07c1a220f61fa8ce1dba7746c6e10acac8"
+      }
+    },
+    {
+      "name": "HDRI, world and exposure controls update actual GPU uniforms while stamps and desk stay identical",
+      "result": "passed",
+      "elapsedMs": 2043,
+      "evidence": {
+        "frameDelta": {
+          "mean": 6.174189814814815,
+          "max": 29,
+          "strongFraction": 0.0005787037037037037
+        },
+        "stampAndDeskSha256": "bd62ab1505f35e11fbb036e02cd86d9774cef647e6e4c97fce85a5e45fde6c46",
+        "actualWorldUniform": [
+          0.16099999725818634,
+          0.17020000219345094,
+          0.1793999934196472
+        ],
+        "actualExposure": 0.6372803110267208
+      }
+    },
+    {
+      "name": "All three light controls change power, diameter, color, position and angle without adding emitters",
+      "result": "failed",
+      "elapsedMs": 30146,
+      "error": "locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('spinbutton', { name: '补光功率数值', exact: true })\u001b[22m\n\n    at C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\scripts\\verify-frame-studio.mjs:182:111\n    at async check (C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\scripts\\verify-frame-studio.mjs:58:24)\n    at async file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-studio.mjs:179:1"
+    },
+    {
+      "name": "Paper, wood and shadow controls change their own material or projection",
+      "result": "failed",
+      "elapsedMs": 30008,
+      "error": "locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('spinbutton', { name: '木纹法线强度数值', exact: true })\u001b[22m\n\n    at setNumber (C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\scripts\\verify-frame-studio.mjs:79:121)\n    at async file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-studio.mjs:195:3\n    at async check (C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\scripts\\verify-frame-studio.mjs:58:24)\n    at async file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-studio.mjs:194:1"
+    },
+    {
+      "name": "Real export, edited import and reload preserve a complete independent frame rig",
+      "result": "passed",
+      "elapsedMs": 5694,
+      "evidence": {
+        "filename": "postal-frame-studio.json",
+        "roundTrip": true,
+        "restoredSource": true
+      }
+    },
+    {
+      "name": "Tilt controls, reduced motion and panel event isolation behave correctly",
+      "result": "failed",
+      "elapsedMs": 30106,
+      "error": "locator.check: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-frame-parameter=tiltEnabled]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"checkbox\" data-frame-parameter=\"tiltEnabled\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    59 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\scripts\\verify-frame-studio.mjs:212:30\n    at async check (C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\scripts\\verify-frame-studio.mjs:58:24)\n    at async file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-studio.mjs:209:1"
+    },
+    {
+      "name": "Desktop resize, all-corner maximum tilt and supersampling stay within the view and depth range",
+      "result": "passed",
+      "elapsedMs": 559,
+      "evidence": [
+        {
+          "width": 1024,
+          "height": 768,
+          "target": [
+            1663,
+            1071
+          ]
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "target": [
+            2079,
+            1339
+          ]
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "target": [
+            2338,
+            1506
+          ]
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "target": [
+            3118,
+            2008
+          ]
+        },
+        {
+          "width": 2560,
+          "height": 1440,
+          "target": [
+            4096,
+            2638
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stationary frame reuses one cached render and parameter edits do not leak resources",
+      "result": "passed",
+      "elapsedMs": 685,
+      "evidence": {
+        "renderer": {
+          "programs": 15,
+          "geometries": 24,
+          "textures": 29
+        },
+        "unchangedRenders": 129,
+        "assetRequests": 35,
+        "pixelSha256": "b3cd2d4e749ea239243436b5c2253af580d77b8b20758e9e78093eeff1969870"
+      }
+    },
+    {
+      "name": "No new runtime errors; teardown releases the new render target and animation",
+      "result": "passed",
+      "elapsedMs": 338,
+      "evidence": {
+        "errors": 0,
+        "disposed": true
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "screenshots": [
+    "final-02-model-controls.png",
+    "final-03-pointer-tilt.png",
+    "final-05-desktop-1920.png",
+    "final-06-default-restored.png"
+  ],
+  "finishedAt": "2026-10-28T19:33:35.418Z",
+  "passed": false
+}

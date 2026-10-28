@@ -1,0 +1,22 @@
+{
+  "startedAt": "2026-10-28T20:21:48.265Z",
+  "scope": "Built production app; actual GPU disk adapter, source HDRI panel, real category raycast and exposure input; no development diagnostics.",
+  "errors": [],
+  "gpu": {
+    "contexts": 1,
+    "patchedShaders": 8,
+    "dpr": 1.25,
+    "devApi": false,
+    "canvas": 1
+  },
+  "visibleStamps": [
+    "beijing",
+    "tianyang",
+    "quanzhou",
+    "hongkong"
+  ],
+  "exposureControl": 0.2,
+  "savedExposure": 0.2,
+  "passed": true,
+  "finishedAt": "2026-10-28T20:22:00.761Z"
+}

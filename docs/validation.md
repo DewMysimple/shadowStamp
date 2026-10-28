@@ -1,4 +1,4 @@
-> 2026-10-29当前相框任务：新版unit21、桌面浏览器19、六算法GPU8、原版unit19及两次build通过；真实截图、文件保全和适用范围见[相框交付](art-frame.md)与[当前报告](../editions/regional/artifacts/art-frame/report.json)。下文保留原版历史记录。
+> 2026-10-29当前相框稳定性与摄影棚任务：新版unit25、相框专项14、整页浏览器19、六算法GPU8、原版unit19及两版build通过。源三灯GPU、接缝像素、微旋转与模型参数见[摄影棚说明](frame-studio.md)及[当前报告](../editions/regional/artifacts/frame-stability/report.json)。原资产整合见[相框交付](art-frame.md)，下文保留原版历史记录。
 
 # 当前验收：双版本桌面整合
 

@@ -1,0 +1,83 @@
+{
+  "source": "art-frame-original.glb",
+  "records": [
+    {
+      "node": "Mat_Canvas_Base_PBR",
+      "mesh": "Cube.004",
+      "material": "PBR_Canvas_WarmIvory_Baked",
+      "doubleSided": true,
+      "minimum": [
+        -0.4779999852180481,
+        -0.2280000001192093,
+        -0.014983969507738948
+      ],
+      "maximum": [
+        0.4779999852180481,
+        0.2280000001192093,
+        0.011000000173225999
+      ],
+      "vertices": 157
+    },
+    {
+      "node": "Photo_Landscape_PBR",
+      "mesh": "Photo_Landscape mesh.001",
+      "material": "M_Landscape_Photo",
+      "doubleSided": true,
+      "minimum": [
+        -0.4350000023841858,
+        -0.10499999672174454,
+        0.011350000277161598
+      ],
+      "maximum": [
+        0.4350000023841858,
+        0.1550000011920929,
+        0.011350000277161598
+      ],
+      "vertices": 4
+    },
+    {
+      "node": "Trim_Photo_Inner_PBR",
+      "mesh": "Trim_Photo_Inner mesh.001",
+      "material": "M_Mat_Trim",
+      "doubleSided": true,
+      "minimum": [
+        -0.43950000405311584,
+        -0.10949999839067459,
+        0.011020000092685223
+      ],
+      "maximum": [
+        0.43950000405311584,
+        0.15950000286102295,
+        0.012350000441074371
+      ],
+      "vertices": 240
+    },
+    {
+      "node": "Trim_Photo_Outer_PBR",
+      "mesh": "Trim_Photo_Outer mesh.001",
+      "material": "M_Mat_Trim",
+      "doubleSided": true,
+      "minimum": [
+        -0.4440000057220459,
+        -0.11400000005960464,
+        0.011020000092685223
+      ],
+      "maximum": [
+        0.4440000057220459,
+        0.164000004529953,
+        0.011850000359117985
+      ],
+      "vertices": 240
+    }
+  ],
+  "canvasFrontZ": 0.011000000173225999,
+  "trimBackZ": [
+    0.011020000092685223,
+    0.011020000092685223
+  ],
+  "clearanceMicrometers": [
+    19.999919459223747,
+    19.999919459223747
+  ],
+  "sourceChanged": false
+}

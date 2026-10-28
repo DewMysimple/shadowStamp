@@ -12,6 +12,7 @@ sources: []
 
 | 日期 | 类型 | 任务结果 | 日志 |
 | --- | --- | --- | --- |
+| 2026-10-29 | feature | completed | [相框稳定渲染与源三灯控件](%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0/2026-10-29-%E7%9B%B8%E6%A1%86%E7%A8%B3%E5%AE%9A%E6%B8%B2%E6%9F%93%E4%B8%8E%E6%BA%90%E4%B8%89%E7%81%AF%E6%8E%A7%E4%BB%B6.md) |
 | 2026-10-29 | feature | completed | [相框三维文字与HDRI展览](%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0/2026-10-29-%E7%9B%B8%E6%A1%86%E4%B8%89%E7%BB%B4%E6%96%87%E5%AD%97%E4%B8%8EHDRI%E5%B1%95%E8%A7%88.md) |
 | 2026-10-28 | feature | completed | [双版本服务器整合](%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0/2026-10-28-%E5%8F%8C%E7%89%88%E6%9C%AC%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%B4%E5%90%88.md) |
 | 2026-10-27 | ui | completed | [仅更新界面浅红主题](UI%E4%BF%AE%E6%94%B9/2026-10-27-%E4%BB%85%E6%9B%B4%E6%96%B0%E7%95%8C%E9%9D%A2%E6%B5%85%E7%BA%A2%E4%B8%BB%E9%A2%98.md) |

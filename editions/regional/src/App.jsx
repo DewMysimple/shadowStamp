@@ -3,6 +3,8 @@ import { SERIES, STAMPS, getFocus, getHome } from './config.js';
 import { createStampGallery } from './rendering/StampGallery.js';
 import { createStampArtwork, prepareStampArtwork } from './artwork.js';
 import ParameterPanel from './ParameterPanel.jsx';
+import FrameParameterPanel from './FrameParameterPanel.jsx';
+import { FRAME_STORAGE_KEY, readFrameParameters, normalizeFrameParameters, serializeFrameParameters } from './frameParameters.js';
 import { DEFAULT_PARAMETERS, normalizeParameters, readParameters, serializeParameters, STORAGE_KEY } from './parameters.js';
 import './styles.css';
 
@@ -18,6 +20,10 @@ export default function App() {
   const latestParameters = useRef(parameters);
   latestParameters.current = parameters;
   const [storageError, setStorageError] = useState('');
+  const [frameParameters, setFrameParameters] = useState(() => { try { return readFrameParameters(window.localStorage); } catch { return normalizeFrameParameters(); } });
+  const latestFrameParameters = useRef(frameParameters);
+  latestFrameParameters.current = frameParameters;
+  const [frameStorageError, setFrameStorageError] = useState('');
   const [reducedMotion, setReducedMotion] = useState(() => matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [state, setState] = useState({ phase: 'idle', activeId: null, hoverId: null });
   const [selectedSeries, setSelectedSeries] = useState('guangdong');
@@ -37,6 +43,7 @@ export default function App() {
         frameButtons: frameButtons.current, onSeries: setSelectedSeries, onFrameStatus: setFrameState,
         onError: (reason) => { setError(reason.message); setFrameState({ status: 'error', message: '当前设备无法显示相框，可继续翻阅邮票。' }); },
         parameters: latestParameters.current, series: selectedSeries,
+        frameParameters: latestFrameParameters.current,
       });
       galleryRef.current = gallery;
       setLoading(false);
@@ -53,6 +60,11 @@ export default function App() {
     try { localStorage.setItem(STORAGE_KEY, serializeParameters(parameters)); setStorageError(''); }
     catch { setStorageError('当前浏览器无法保存；参数仍可实时应用并导出。'); }
   }, [parameters]);
+  useEffect(() => {
+    galleryRef.current?.configureFrame?.(frameParameters);
+    try { localStorage.setItem(FRAME_STORAGE_KEY, serializeFrameParameters(frameParameters)); setFrameStorageError(''); }
+    catch { setFrameStorageError('本机保存不可用，仍可实时调节和导出。'); }
+  }, [frameParameters]);
   useEffect(() => { galleryRef.current?.setSeries?.(selectedSeries); }, [selectedSeries]);
   useEffect(() => {
     if (!error) return;
@@ -98,7 +110,7 @@ export default function App() {
               frameButtons.current[ids[next]]?.focus();
             }}>{series.label.replace('篇', '')}</button>)}
           </div>
-          <div className="frame-caption"><span>01 — 从岭南出发</span><span>选择画芯中的地域，翻阅狮舞足迹。</span></div>
+          <div className="frame-caption"><span>01 — 从岭南出发</span><span>悬停微转 · 点击地域，翻阅狮舞足迹。</span></div>
         </section>
         <section className="collection-heading" aria-label="当前邮票系列">
           <div><span className="collection-kicker">{activeSeries.edition}</span><h2>{activeSeries.title}</h2></div>
@@ -123,6 +135,7 @@ export default function App() {
       </div>
       <p className="sr-only" role="status" aria-live="polite">{focused ? `${focused.name}。聚焦查看。按Escape返回。` : `画廊视图。使用Tab浏览${selectedSeries === 'all' ? STAMPS.length : STAMPS.filter(stamp => stamp.series === selectedSeries).length}枚${activeSeries.label}邮票。`}</p>
       {loading && <p className="artwork-loading" role="status">正在装裱地域狮舞邮票…</p>}
+      <FrameParameterPanel parameters={frameParameters} onReplace={setFrameParameters} unavailable={Boolean(error) || frameState.status !== 'ready'} focused={Boolean(focused)} storageError={frameStorageError} reducedMotion={reducedMotion} />
       <ParameterPanel parameters={parameters} onChange={(key, value) => setParameters(previous => normalizeParameters({ ...previous, [key]: value }))} onReplace={values => setParameters(normalizeParameters(values))} onFocus={() => { const stamp = STAMPS.find(item => selectedSeries === 'all' || item.series === selectedSeries) ?? STAMPS[0]; galleryRef.current?.focus?.(stamp.id); }} onClose={() => galleryRef.current?.close?.()} focused={Boolean(focused)} unavailable={Boolean(error) || loading} storageError={storageError} reducedMotion={reducedMotion} />
       {error && <div className={`fallback-gallery ${fallbackActive ? 'is-focused' : ''}`} onClick={() => setFallbackActive(null)}>
         <p className="fallback-note">POSTAL STUDIES · 狮行万里 · PAPER EDITION</p>
