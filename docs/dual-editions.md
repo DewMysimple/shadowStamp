@@ -33,3 +33,7 @@
 - 双版本同时运行、资源、悬停/聚焦、原版与新版存储互不干扰等实际验证见[report.json](../artifacts/dual-editions/report.json)。
 
 Chrome/SwiftShader与本机Node24验收不代表低端真机性能。此前每版渲染细节与历史证据分别在各自docs/artifacts内；本轮报告只证明明确列出的整合行为，不重做原站底层研究或图稿地标准确性审查。
+
+## 远程核对结果
+
+实际执行 `git push -u origin main` 成功；2026-10-28用 `git ls-remote --symref origin HEAD refs/heads/main` 核实默认分支main、远程HEAD与合并提交 `bfd742d39a7622d1fc8372bcabd59382dc8499d1` 一致。该合并的两个父节点分别为11d5049与74ba21c，包含两版运行代码与历史。发布证据见[remote-publication.json](../artifacts/dual-editions/remote-publication.json)。本说明的后续文档提交同样推送，最终交付再次核对最新HEAD，不将旧合并SHA冒充文档提交SHA。
