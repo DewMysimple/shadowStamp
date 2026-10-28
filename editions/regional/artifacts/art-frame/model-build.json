@@ -1,0 +1,318 @@
+{
+  "blender": "5.0.0",
+  "executable": "F:\\Blender\\blender.exe",
+  "source_hashes": {
+    "ArtFrame_2to1.glb": "9ef10f1d8656a3d09664719dea1e9bb358be8c0878ddbe9eb46b066f96894fdf",
+    "ArtFrame_2to1.blend": "f3b26677371d7278f5e8e72ce64a61caac3184cc762eda8ab446548894933394"
+  },
+  "source_unchanged": true,
+  "original_glb_sha256": "9ef10f1d8656a3d09664719dea1e9bb358be8c0878ddbe9eb46b066f96894fdf",
+  "coordinates": "Blender X right / Z up / front -Y; glTF X right / Y up / front +Z; meters; common origin, no transform offsets",
+  "hidden_original_text": [
+    "Text_Header_CN_Mesh",
+    "Text_Header_EN_Mesh",
+    "Text_Quote_CN_Mesh",
+    "Text_Title_EN_Mesh"
+  ],
+  "objects": [
+    {
+      "name": "Title_Chinese",
+      "body": "狮行万里·从岭南到世界",
+      "font": "C:/Windows/Fonts/simhei.ttf",
+      "dimensions": [
+        0.12483719736337662,
+        0.010614068247377872,
+        0.00031999999191612005
+      ],
+      "bounds_blender": [
+        [
+          0.309811532497406,
+          -0.011359999887645245,
+          0.1946929693222046
+        ],
+        [
+          0.434648722410202,
+          -0.011039999313652515,
+          0.2053070366382599
+        ]
+      ],
+      "world_dimensions_m": [
+        0.12483718991279602,
+        0.0003200005739927292,
+        0.010614067316055298
+      ],
+      "extrusion": 0.00011999999696854502,
+      "bevel": 3.9999998989515007e-05,
+      "category": ""
+    },
+    {
+      "name": "Title_English",
+      "body": "FROM LINGNAN TO THE WORLD",
+      "font": "C:/Windows/Fonts/arial.ttf",
+      "dimensions": [
+        0.14163224399089813,
+        0.0065800282172858715,
+        0.00031999999191612005
+      ],
+      "bounds_blender": [
+        [
+          0.2929407060146332,
+          -0.011359999887645245,
+          0.17770998179912567
+        ],
+        [
+          0.4345729649066925,
+          -0.011039999313652515,
+          0.18429000675678253
+        ]
+      ],
+      "world_dimensions_m": [
+        0.14163225889205933,
+        0.0003200005739927292,
+        0.00658002495765686
+      ],
+      "extrusion": 0.00011999999696854502,
+      "bevel": 3.9999998989515007e-05,
+      "category": ""
+    },
+    {
+      "name": "Category_Guangdong",
+      "body": "广东",
+      "font": "C:/Windows/Fonts/simhei.ttf",
+      "dimensions": [
+        0.03846907988190651,
+        0.018344318494200706,
+        0.0014400000218302011
+      ],
+      "bounds_blender": [
+        [
+          -0.30454757809638977,
+          -0.012520001269876957,
+          -0.17917215824127197
+        ],
+        [
+          -0.26607850193977356,
+          -0.011080000549554825,
+          -0.16082783043384552
+        ]
+      ],
+      "world_dimensions_m": [
+        0.03846907615661621,
+        0.0014400007203221321,
+        0.018344327807426453
+      ],
+      "extrusion": 0.0006000000284984708,
+      "bevel": 0.00011999999696854502,
+      "category": "guangdong"
+    },
+    {
+      "name": "Category_China",
+      "body": "中国",
+      "font": "C:/Windows/Fonts/simhei.ttf",
+      "dimensions": [
+        0.036605749279260635,
+        0.018240001052618027,
+        0.0014400000218302011
+      ],
+      "bounds_blender": [
+        [
+          -0.018111929297447205,
+          -0.012520001269876957,
+          -0.1791200041770935
+        ],
+        [
+          0.01849381998181343,
+          -0.011080000549554825,
+          -0.16087999939918518
+        ]
+      ],
+      "world_dimensions_m": [
+        0.036605749279260635,
+        0.0014400007203221321,
+        0.018240004777908325
+      ],
+      "extrusion": 0.0006000000284984708,
+      "bevel": 0.00011999999696854502,
+      "category": "china"
+    },
+    {
+      "name": "Category_World",
+      "body": "世界",
+      "font": "C:/Windows/Fonts/simhei.ttf",
+      "dimensions": [
+        0.03968384861946106,
+        0.01828881725668907,
+        0.0014400000218302011
+      ],
+      "bounds_blender": [
+        [
+          0.26526620984077454,
+          -0.012520001269876957,
+          -0.17914441227912903
+        ],
+        [
+          0.3049500584602356,
+          -0.011080000549554825,
+          -0.16085559129714966
+        ]
+      ],
+      "world_dimensions_m": [
+        0.03968384861946106,
+        0.0014400007203221321,
+        0.01828882098197937
+      ],
+      "extrusion": 0.0006000000284984708,
+      "bevel": 0.00011999999696854502,
+      "category": "world"
+    }
+  ],
+  "glyphs": [
+    {
+      "character": "A",
+      "vertices": 140,
+      "faces": 105
+    },
+    {
+      "character": "D",
+      "vertices": 792,
+      "faces": 594
+    },
+    {
+      "character": "E",
+      "vertices": 48,
+      "faces": 32
+    },
+    {
+      "character": "F",
+      "vertices": 40,
+      "faces": 26
+    },
+    {
+      "character": "G",
+      "vertices": 1128,
+      "faces": 842
+    },
+    {
+      "character": "H",
+      "vertices": 48,
+      "faces": 32
+    },
+    {
+      "character": "I",
+      "vertices": 16,
+      "faces": 8
+    },
+    {
+      "character": "L",
+      "vertices": 24,
+      "faces": 14
+    },
+    {
+      "character": "M",
+      "vertices": 148,
+      "faces": 107
+    },
+    {
+      "character": "N",
+      "vertices": 40,
+      "faces": 26
+    },
+    {
+      "character": "O",
+      "vertices": 960,
+      "faces": 720
+    },
+    {
+      "character": "R",
+      "vertices": 812,
+      "faces": 609
+    },
+    {
+      "character": "T",
+      "vertices": 32,
+      "faces": 20
+    },
+    {
+      "character": "W",
+      "vertices": 340,
+      "faces": 251
+    },
+    {
+      "character": "·",
+      "vertices": 16,
+      "faces": 8
+    },
+    {
+      "character": "万",
+      "vertices": 844,
+      "faces": 629
+    },
+    {
+      "character": "世",
+      "vertices": 800,
+      "faces": 600
+    },
+    {
+      "character": "东",
+      "vertices": 1456,
+      "faces": 1080
+    },
+    {
+      "character": "中",
+      "vertices": 464,
+      "faces": 352
+    },
+    {
+      "character": "从",
+      "vertices": 1056,
+      "faces": 784
+    },
+    {
+      "character": "到",
+      "vertices": 2060,
+      "faces": 1533
+    },
+    {
+      "character": "南",
+      "vertices": 1860,
+      "faces": 1383
+    },
+    {
+      "character": "国",
+      "vertices": 1088,
+      "faces": 808
+    },
+    {
+      "character": "岭",
+      "vertices": 1796,
+      "faces": 1331
+    },
+    {
+      "character": "广",
+      "vertices": 636,
+      "faces": 469
+    },
+    {
+      "character": "狮",
+      "vertices": 2108,
+      "faces": 1565
+    },
+    {
+      "character": "界",
+      "vertices": 1540,
+      "faces": 1159
+    },
+    {
+      "character": "行",
+      "vertices": 1400,
+      "faces": 1034
+    },
+    {
+      "character": "里",
+      "vertices": 712,
+      "faces": 546
+    }
+  ],
+  "output_blend": "C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\assets\\blender\\FrameTypography.blend",
+  "output_glb": "C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\public\\models\\frame-typography.glb"
+}

@@ -105,29 +105,52 @@ export const STAMPS = Object.freeze([
 ]);
 
 const SERIES_INDEX = Object.freeze({ guangdong: 0, china: 1, world: 2 });
-const CATEGORY_ANGLES = [-2.2, 1.6, -1.3, 2.1];
 
-/** Four stamps per row in the overview; selecting a series brings its four stamps into one row. */
-export function getHome(stamp, width, height, selectedSeries = 'all') {
-  const mobile = width < 700;
-  const left = mobile ? 12 : Math.min(360, Math.max(344, width * 0.25));
-  const right = mobile ? 12 : 24;
-  const usable = Math.max(1, width - left - right);
-  const gap = mobile ? Math.max(4, usable * 0.018) : Math.max(12, usable * 0.025);
-  const cell = (usable - gap * 3) / 4;
+/** Shared CSS-pixel layout: the frame viewport, collection heading and four paper cells. */
+export function getExhibitionLayout(width, height) {
+  const mobile = width < 800;
+  if (!mobile) {
+    // User's marked composition: a dominant frame (~59% visible width),
+    // with the four stamps kept inside the smaller right-hand display.
+    const frameWidth = width * .615;
+    const frameHeight = frameWidth * .53;
+    const gridHeight = frameWidth / 1.05 / 2;
+    const gridY = Math.max(205, height * .48 - gridHeight / 2);
+    const frame = { x: width * .014, y: gridY + gridHeight / 2 - frameHeight / 2,
+      width: frameWidth, height: frameHeight };
+    const collection = { x: width * .645, y: gridY - 61, width: width * .33, bottom: gridY + gridHeight };
+    const grid = { x: collection.x, y: gridY, width: collection.width, height: gridHeight };
+    return { mobile, margin: frame.x, frame, collection, grid };
+  }
+  const margin = mobile ? 20 : Math.max(30, Math.min(64, width * .035));
+  const usable = width - margin * 2;
+  const gap = mobile ? 0 : Math.max(36, width * .04);
+  const column = mobile ? usable : (usable - gap) / 2;
+  const frameWidth = column;
+  const frameHeight = frameWidth * .53;
+  const frameY = mobile ? 104 : Math.max(144, (height - frameHeight) / 2 - 12);
+  const frame = { x: margin, y: frameY, width: frameWidth, height: frameHeight };
+  const collection = { x: mobile ? margin : margin + column + gap,
+    y: mobile ? frameY + frameHeight + 58 : 145,
+    width: column, bottom: height - (mobile ? 65 : 83) };
+  const grid = { x: collection.x, y: collection.y + 61, width: column,
+    height: Math.max(120, collection.bottom - collection.y - 61) };
+  return { mobile, margin, frame, collection, grid };
+}
+
+/** Category views retain each original ratio in two rows without any overlap. */
+export function getHome(stamp, width, height, selectedSeries = 'guangdong') {
+  const { grid } = getExhibitionLayout(width, height);
   const peers = STAMPS.filter(item => item.series === stamp.series);
-  const column = Math.max(0, peers.findIndex(item => item.id === stamp.id));
-  const x = left + cell * (column + 0.5) + gap * column;
-  const inOverview = selectedSeries === 'all';
-  const row = SERIES_INDEX[stamp.series] ?? 0;
-  const top = height * (mobile ? 0.205 : 0.19);
-  const bottom = height * (mobile ? 0.91 : 0.91);
-  const rowHeight = (bottom - top) / 3;
-  const y = inOverview ? top + rowHeight * (row + 0.5) : height * (mobile ? 0.54 : 0.53);
-  const maxHeight = inOverview ? rowHeight * 0.78 : height * (mobile ? 0.58 : 0.62);
-  const stampWidth = Math.min(cell, maxHeight * stamp.ratio);
-  const angle = CATEGORY_ANGLES[column] * (inOverview ? 0.72 : 1);
-  return { x, y, width: stampWidth, height: stampWidth / stamp.ratio, angle, z: 2 + column };
+  const index = Math.max(0, peers.findIndex(item => item.id === stamp.id));
+  const overview = selectedSeries === 'all';
+  const rows = overview ? 6 : 2;
+  const cellWidth = grid.width / 2;
+  const cellHeight = grid.height / rows;
+  const row = Math.floor(index / 2) + (overview ? (SERIES_INDEX[stamp.series] ?? 0) * 2 : 0);
+  const w = Math.min(cellWidth * .76, cellHeight * .85 * stamp.ratio);
+  return { x: grid.x + cellWidth * (index % 2 + .5), y: grid.y + cellHeight * (row + .5),
+    width: w, height: w / stamp.ratio, angle: 0, z: 2 + index };
 }
 
 export function getFocus(stamp, width, height, parameters = {}) {

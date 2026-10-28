@@ -1,0 +1,13 @@
+{
+  "asset": "art-frame-original.glb",
+  "status": "相框暂时未能加载，请重新载入。",
+  "category": "china",
+  "buttons": 3,
+  "visibleStamps": [
+    "beijing",
+    "tianyang",
+    "quanzhou",
+    "hongkong"
+  ],
+  "errors": []
+}

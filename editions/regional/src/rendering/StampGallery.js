@@ -1,14 +1,15 @@
 import * as THREE from 'three';
-import { SERIES, STAMPS, EXHIBITION, getHome, getFocus } from '../config.js';
+import { SERIES, STAMPS, EXHIBITION, getHome, getFocus, getExhibitionLayout } from '../config.js';
 import { FocusMotion, clamp, lerp, damp } from '../motion.js';
 import { createStampArtwork } from '../artwork.js';
 import { createStampMaterial, createShadowTexture, createShadowMaterial } from './StampMaterial.js';
 import { createDappledLight } from './DappledLight.js';
 import { DEFAULT_PARAMETERS, normalizeParameters } from '../parameters.js';
 import { getLightPreset } from '../lightPresets.js';
+import { createArtFrame } from './ArtFrame.js';
 
 /** Owns the one renderer, one clock, all persistent GPU assets, and input. */
-export function createStampGallery({ host, buttons, label, focusUi, chrome, onState, onError, parameters = DEFAULT_PARAMETERS, series = 'all' }) {
+export function createStampGallery({ host, buttons, label, focusUi, chrome, frameButtons = {}, onState, onError, onSeries = () => {}, onFrameStatus = () => {}, parameters = DEFAULT_PARAMETERS, series = 'guangdong' }) {
   let settings = normalizeParameters(parameters);
   let currentSeries = SERIES.some(option => option.id === series) ? series : 'all';
   let disposed = false;
@@ -25,6 +26,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
   let previousButton = null;
   let lastHovered = STAMPS[0].id;
   let pointerValid = false;
+  let seriesElapsed = 1;
   const motion = new FocusMotion();
   const media = matchMedia('(prefers-reduced-motion: reduce)');
   let reducedMotion = media.matches;
@@ -102,6 +104,8 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     scene.add(shadow, mesh);
     return { stamp, artwork, texture, material, mesh, shadow, shadowSource, shadowMaterial, lightTarget: new THREE.Vector2(0.5, 0.5), hover: 0, light: 0, tiltX: 0, tiltY: 0, roll: 0, shiftX: 0, shiftY: 0, targetX: 0, targetY: 0, blur: 0, home: null, layoutFrom: null, displayHome: null, layoutT: 1, seriesOpacity: 1, focus: null };
   });
+  const artFrame = createArtFrame({ renderer, wake, onStatus: onFrameStatus,
+    onCategory: id => { setSeries(id); onSeries(id); } });
 
   function publish() {
     const phase = selected !== null ? (motion.target === 0 ? 'returning' : motion.settled ? 'focused' : 'focusing') : hovered !== null ? 'hovering' : 'idle';
@@ -172,6 +176,11 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     renderer.setPixelRatio(Math.min(devicePixelRatio || 1, EXHIBITION.maxDpr));
     renderer.setSize(width, height, false);
     background.resize(width, height);
+    artFrame.resize(width, height);
+    const layout = getExhibitionLayout(width, height);
+    for (const [name, rect] of Object.entries({ frame: layout.frame, collection: layout.collection })) {
+      for (const key of ['x', 'y', 'width', 'height']) if (rect[key] !== undefined) host.style.setProperty(`--${name}-${key}`, `${rect[key]}px`);
+    }
     for (const entry of entries) {
       entry.home = getHome(entry.stamp, width, height, currentSeries);
       entry.layoutFrom = entry.home;
@@ -187,6 +196,8 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     if (!SERIES.some(option => option.id === next) || next === currentSeries) return;
     if (selected !== null) close();
     currentSeries = next;
+    seriesElapsed = 0;
+    artFrame.setSeries(next);
     hovered = null;
     lastHovered = STAMPS.find(stamp => next === 'all' || stamp.series === next)?.id ?? STAMPS[0].id;
     for (const entry of entries) {
@@ -194,6 +205,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       const visible = next === 'all' || entry.stamp.series === next;
       if (visible) entry.home = getHome(entry.stamp, width, height, next);
       entry.layoutT = 0;
+      entry.seriesStartOpacity = entry.seriesOpacity;
     }
     publish();
     wake();
@@ -202,6 +214,8 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
   function move(event) {
     if (event.target.closest?.('[data-parameter-panel]')) return;
     const rect = host.getBoundingClientRect();
+    const category = selected === null ? artFrame.pointer(event.clientX - rect.left, event.clientY - rect.top) : null;
+    host.style.cursor = category ? 'pointer' : '';
     const x = clamp((event.clientX - rect.left) / width);
     const y = clamp((event.clientY - rect.top) / height);
     pointer.set(x, y);
@@ -217,6 +231,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     lastTime = timestamp;
     elapsed += dt;
     const progress = motion.update(dt);
+    seriesElapsed += dt;
     updateCamera(progress);
     if (selected !== null && motion.settled && motion.target === 0) {
       selected = null;
@@ -233,7 +248,8 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     background.setActiveStamp(active);
     syncLightPalette();
     raycaster.setFromCamera(pointerNdc, camera);
-    let stillMoving = !motion.settled;
+    const frameMoving = artFrame.update(dt, progress, reducedMotion);
+    let stillMoving = !motion.settled || frameMoving;
 
     for (const entry of entries) {
       const { stamp, mesh, shadow, material, focus } = entry;
@@ -252,9 +268,10 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       };
       entry.displayHome = home;
       const opacityTarget = targetVisible ? 1 : 0;
-      entry.seriesOpacity = reducedMotion ? opacityTarget : damp(entry.seriesOpacity, opacityTarget, dt, 0.16);
-      if (Math.abs(entry.seriesOpacity - opacityTarget) < 0.005) entry.seriesOpacity = opacityTarget;
-      else stillMoving = true;
+      const peerIndex = STAMPS.filter(item => item.series === stamp.series).findIndex(item => item.id === stamp.id);
+      const reveal = reducedMotion ? 1 : THREE.MathUtils.smoothstep(seriesElapsed - (targetVisible ? .14 + peerIndex * .035 : 0), 0, targetVisible ? .22 : .13);
+      entry.seriesOpacity = lerp(entry.seriesStartOpacity ?? opacityTarget, opacityTarget, reveal);
+      if (reveal < 1) stillMoving = true;
       const isSelected = selected === stamp.id;
       const isHovered = hovered === stamp.id && selected === null;
       const isActive = active === stamp.id;
@@ -383,6 +400,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     const lightActive = entries.some((entry) => entry.light > 0.001);
     background.render(elapsed, progress, reducedMotion, lightActive);
     renderer.autoClear = false;
+    artFrame.render();
     renderer.clearDepth();
     renderer.render(scene, camera);
     publish();
@@ -409,12 +427,22 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     });
   }
   listen(host, 'pointermove', move, { passive: true });
-  listen(host, 'pointerleave', () => { hovered = null; pointerValid = false; pointerNdc.set(10, 10); publish(); wake(); });
+  listen(host, 'pointerleave', () => { artFrame.hover(null); host.style.cursor = ''; hovered = null; pointerValid = false; pointerNdc.set(10, 10); publish(); wake(); });
+  for (const [id, button] of Object.entries(frameButtons)) {
+    if (!button) continue;
+    listen(button, 'focus', () => artFrame.hover(id, true));
+    listen(button, 'blur', () => artFrame.hover(null));
+  }
   const panel = host.querySelector('[data-parameter-panel]');
-  if (panel) listen(panel, 'pointerenter', () => { pointerValid = false; pointerNdc.set(10, 10); hovered = null; publish(); wake(); });
+  if (panel) listen(panel, 'pointerenter', () => { artFrame.hover(null); host.style.cursor = ''; pointerValid = false; pointerNdc.set(10, 10); hovered = null; publish(); wake(); });
   // React delegates panel events at #root, after this native host listener.
   // Guard here as well so operating controls never triggers background-close.
-  listen(host, 'click', event => { if (!event.target.closest?.('[data-parameter-panel]')) close(); });
+  listen(host, 'click', event => {
+    if (event.target.closest?.('[data-parameter-panel], [data-frame-controls]')) return;
+    const rect = host.getBoundingClientRect();
+    if (selected === null && artFrame.click(event.clientX - rect.left, event.clientY - rect.top)) return;
+    close();
+  });
   listen(focusUi.querySelector('button'), 'click', (event) => { event.stopPropagation(); close({ restoreFocus: event.detail === 0 }); });
   listen(document, 'keydown', (event) => {
     if (event.key === 'Escape' && selected !== null) {
@@ -462,6 +490,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
     getDiagnostics: () => ({
       phase: host.dataset.phase, selected, hovered, series: currentSeries, progress: motion.value, reducedMotion,
       lightStates: entries.map((entry) => ({ id: entry.stamp.id, amount: entry.light, blur: entry.blur,
+        opacity: entry.seriesOpacity,
         target: entry.lightTarget.toArray(), uv: entry.material.uniforms.uPointer.value.toArray() })),
       poses: entries.map(entry => ({ id: entry.stamp.id, rotation: entry.mesh.rotation.toArray(), center: entry.mesh.position.toArray(), target: [entry.targetX, entry.targetY], corners: corners.map(([x,y]) => { const p = new THREE.Vector3(x,y,0).applyMatrix4(entry.mesh.matrixWorld).project(camera); return [(p.x + 1) * width / 2, (1 - p.y) * height / 2]; }) })),
       parameters: { ...settings },
@@ -470,6 +499,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       materials: entries.map((entry) => entry.material.uuid),
       textures: entries.map((entry) => entry.texture.uuid),
       background: background.stats ?? null,
+      artFrame: artFrame.getDiagnostics(),
     }),
     dispose() {
       if (disposed) return;
@@ -478,6 +508,7 @@ export function createStampGallery({ host, buttons, label, focusUi, chrome, onSt
       observer.disconnect();
       listeners.forEach((remove) => remove());
       background.dispose();
+      artFrame.dispose();
       for (const entry of entries) {
         entry.texture.dispose();
         entry.shadowSource.texture.dispose();

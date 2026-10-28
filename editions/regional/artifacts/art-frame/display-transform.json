@@ -1,0 +1,15 @@
+{
+  "size": 64,
+  "minEV": -12,
+  "maxEV": 6,
+  "width": 4096,
+  "height": 64,
+  "transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.4000000059604645,
+  "gamma": 1.0,
+  "input": "scene-linear Rec.709, logarithmically indexed",
+  "output": "display-encoded sRGB; data texture; no second output conversion",
+  "source": "C:\\Users\\Administrator\\Desktop\\Modeling\\\u76f8\u6846\\Models\\ArtFrame_2to1\\ArtFrame_2to1.blend",
+  "source_saved": false
+}

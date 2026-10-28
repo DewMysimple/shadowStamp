@@ -13,6 +13,8 @@
 
 远程仓库：[DewMysimple/shadowStamp](https://github.com/DewMysimple/shadowStamp)。
 
+2026-10-29地域新版已加入真实艺术相框及Blender分类文字：默认广东，可在画芯上选择中国或世界；相框占主要展示面积，使用用户指定4K EXR与原Blender AgX显示曲线，邮票保留原图稿及六种光影。运行入口仍为`runGo.cmd`。文件、坐标、官方Three.js研究与当前验收见[相框交付说明](docs/art-frame.md)；新的桌面验收为`node editions/regional/scripts/verify-art-frame.mjs`。旧双版本报告记录的是整合时的历史源码快照，不代表新增相框后的界面验收。
+
 下面保留原版八态的使用与研究记录；地域新版说明见 [新版README](editions/regional/README.md)。
 
 ---

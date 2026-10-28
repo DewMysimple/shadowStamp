@@ -1,3 +1,5 @@
+> 2026-10-29当前相框任务：新版unit21、桌面浏览器19、六算法GPU8、原版unit19及两次build通过；真实截图、文件保全和适用范围见[相框交付](art-frame.md)与[当前报告](../editions/regional/artifacts/art-frame/report.json)。下文保留原版历史记录。
+
 # 当前验收：双版本桌面整合
 
 2026-10-28，桌面main基线11d5049，合入工作树74ba21c历史并将新版完整置于editions/regional。原版4173与新版4174同时运行；两个CMD正确复用，原版27个运行文件及同条件PNG不变。原版/启动器unit19、新版unit19、新版六预设8项与两次build通过；双版本运行证据、存储隔离和版本Git指纹见[双版本说明](dual-editions.md)及[本轮报告](../artifacts/dual-editions/report.json)。没有修改用户真实浏览器参数或停止原版服务。下面保留原版历史验收。

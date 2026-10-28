@@ -16,7 +16,7 @@ function ParameterField({ field, value, onChange }) {
 }
 
 export default function ParameterPanel({ parameters, onChange, onReplace, onFocus, onClose, focused, unavailable, storageError, reducedMotion }) {
-  const [open, setOpen] = useState(() => innerWidth >= 1050);
+  const [open, setOpen] = useState(false);
   const [message, setMessage] = useState('');
   const [importOpen, setImportOpen] = useState(false);
   const [json, setJson] = useState('');

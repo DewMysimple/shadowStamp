@@ -13,13 +13,15 @@ export default function App() {
   const focusUi = useRef(null);
   const chrome = useRef(null);
   const galleryRef = useRef(null);
+  const frameButtons = useRef({});
   const [parameters, setParameters] = useState(() => { try { return readParameters(window.localStorage); } catch { return { ...DEFAULT_PARAMETERS }; } });
   const latestParameters = useRef(parameters);
   latestParameters.current = parameters;
   const [storageError, setStorageError] = useState('');
   const [reducedMotion, setReducedMotion] = useState(() => matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [state, setState] = useState({ phase: 'idle', activeId: null, hoverId: null });
-  const [selectedSeries, setSelectedSeries] = useState('all');
+  const [selectedSeries, setSelectedSeries] = useState('guangdong');
+  const [frameState, setFrameState] = useState({ status: 'loading' });
   const [error, setError] = useState(null);
   const [fallbackActive, setFallbackActive] = useState(null);
   const [fallbackArt, setFallbackArt] = useState({});
@@ -32,7 +34,8 @@ export default function App() {
       gallery = createStampGallery({
         host: host.current, buttons: buttons.current, label: label.current,
         focusUi: focusUi.current, chrome: chrome.current, onState: setState,
-        onError: (reason) => setError(reason.message),
+        frameButtons: frameButtons.current, onSeries: setSelectedSeries, onFrameStatus: setFrameState,
+        onError: (reason) => { setError(reason.message); setFrameState({ status: 'error', message: '当前设备无法显示相框，可继续翻阅邮票。' }); },
         parameters: latestParameters.current, series: selectedSeries,
       });
       galleryRef.current = gallery;
@@ -79,15 +82,31 @@ export default function App() {
     <main className={`exhibition ${error ? 'has-fallback' : ''}`} ref={host} aria-busy={loading} role={focused ? 'dialog' : undefined} aria-modal={focused ? true : undefined} aria-label={focused ? `${focused.name}，邮票聚焦` : '狮行万里，十二枚地域狮舞邮票展览'}>
       <div className="gallery-chrome" ref={chrome} aria-hidden={Boolean(focused)}>
         <header className="masthead">
-          <div className="wordmark"><span className="wordmark-icon" aria-hidden="true">✳</span><span>POSTAL STUDIES<small>狮行万里 · FROM LINGNAN TO THE WORLD</small></span></div>
-          <span className="edition">{activeSeries.edition}<span>{selectedSeries === 'all' ? `${STAMPS.length} REGIONAL STAMP ARTWORKS` : `${STAMPS.filter(stamp => stamp.series === selectedSeries).length} STAMPS`}</span></span>
+          <div className="wordmark"><span className="wordmark-icon" aria-hidden="true">✳</span><span>POSTAL STUDIES<small>狮行万里 · A JOURNEY IN TWELVE STAMPS</small></span></div>
+          <span className="edition">PAPER, PLACE & MEMORY<span>私人邮票收藏 · 2026</span></span>
         </header>
-        <div className="gallery-note"><span className="note-dot" aria-hidden="true" /> <span>Small things, closely observed.<br /><span className="desktop-instruction">HOVER A STAMP TO BRING IT INTO THE LIGHT</span><span className="mobile-instruction">TOUCH A STAMP TO LOOK CLOSER</span></span></div>
-        <span className="folio" aria-hidden="true">PAPER / LIGHT / MOTION</span>
+        <section className={`frame-region ${frameState.status === 'error' ? 'frame-unavailable' : ''}`} aria-label="狮行万里艺术相框" aria-busy={frameState.status === 'loading'}>
+          <h1 className="sr-only">狮行万里·从岭南到世界 / FROM LINGNAN TO THE WORLD</h1>
+          {frameState.status === 'loading' && <p className="frame-status" role="status">正在陈列相框…</p>}
+          {frameState.status === 'error' && <p className="frame-status" role="alert">{frameState.message}</p>}
+          <div className="frame-accessibility" role="group" aria-label="选择邮票地域" data-frame-controls>
+            {SERIES.filter(series => series.id !== 'all').map(series => <button key={series.id} ref={node => { frameButtons.current[series.id] = node; }} type="button" className="frame-category-access" aria-label={`选择${series.label.replace('篇', '')}邮票`} aria-pressed={selectedSeries === series.id} disabled={Boolean(focused) || loading} onClick={event => { event.stopPropagation(); setSelectedSeries(series.id); }} onKeyDown={event => {
+              if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+              event.preventDefault();
+              const ids = ['guangdong', 'china', 'world'];
+              const next = event.key === 'Home' ? 0 : event.key === 'End' ? 2 : (ids.indexOf(series.id) + (event.key === 'ArrowLeft' ? 2 : 1)) % 3;
+              frameButtons.current[ids[next]]?.focus();
+            }}>{series.label.replace('篇', '')}</button>)}
+          </div>
+          <div className="frame-caption"><span>01 — 从岭南出发</span><span>选择画芯中的地域，翻阅狮舞足迹。</span></div>
+        </section>
+        <section className="collection-heading" aria-label="当前邮票系列">
+          <div><span className="collection-kicker">{activeSeries.edition}</span><h2>{activeSeries.title}</h2></div>
+          <span className="collection-count" data-collection-count>{STAMPS.filter(stamp => stamp.series === selectedSeries).length.toString().padStart(2, '0')} / 12</span>
+        </section>
+        <div className="gallery-note"><span className="note-dot" aria-hidden="true" /><span>一方纸，一路狮。<span className="desktop-instruction">悬停迎光 · 点击细看</span><span className="mobile-instruction">轻触邮票，细看作品</span></span></div>
+        <span className="folio" aria-hidden="true">LINGNAN → THE WORLD</span>
       </div>
-      <nav className="series-switcher" aria-label="选择邮票系列" data-series-nav>
-        {SERIES.map(series => <button key={series.id} type="button" aria-pressed={selectedSeries === series.id} onClick={event => { event.stopPropagation(); setSelectedSeries(series.id); }}>{series.label}</button>)}
-      </nav>
       <div className="stamp-controls" aria-label="The collection">
         {STAMPS.map((stamp) => <button key={stamp.id} ref={(node) => { buttons.current[stamp.id] = node; }} className="stamp-hit" disabled={loading} data-stamp={stamp.id} aria-label={`View ${stamp.name}, stamp ${stamp.number} of ${STAMPS.length}`} aria-pressed={state.activeId === stamp.id} aria-hidden={Boolean(focused) && state.activeId !== stamp.id ? true : undefined}><span className="sr-only">{stamp.name}</span></button>)}
       </div>

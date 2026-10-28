@@ -1,0 +1,1282 @@
+{
+  "phase": "idle",
+  "selected": null,
+  "hovered": null,
+  "series": "guangdong",
+  "progress": 0,
+  "reducedMotion": false,
+  "lightStates": [
+    {
+      "id": "foshan",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 1,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "guangzhou",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 1,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "heshan",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 1,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "suixi",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 1,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "beijing",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "tianyang",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "quanzhou",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "hongkong",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "singapore",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "kualalumpur",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "sanfrancisco",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "london",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "id": "foshan",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          985.5593406593408,
+          416.18571428571425
+        ],
+        [
+          985.5593406593408,
+          236.95714285714286
+        ],
+        [
+          1109.6406593406593,
+          416.18571428571425
+        ],
+        [
+          1109.6406593406593,
+          236.95714285714286
+        ]
+      ]
+    },
+    {
+      "id": "guangzhou",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1223.1593406593406,
+          416.18571428571425
+        ],
+        [
+          1223.1593406593406,
+          236.95714285714286
+        ],
+        [
+          1347.2406593406592,
+          416.18571428571425
+        ],
+        [
+          1347.2406593406592,
+          236.95714285714286
+        ]
+      ]
+    },
+    {
+      "id": "heshan",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          985.5593406593408,
+          627.0428571428571
+        ],
+        [
+          985.5593406593408,
+          447.81428571428575
+        ],
+        [
+          1109.6406593406593,
+          627.0428571428571
+        ],
+        [
+          1109.6406593406593,
+          447.81428571428575
+        ]
+      ]
+    },
+    {
+      "id": "suixi",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1223.1593406593406,
+          627.0428571428571
+        ],
+        [
+          1223.1593406593406,
+          447.81428571428575
+        ],
+        [
+          1347.2406593406592,
+          627.0428571428571
+        ],
+        [
+          1347.2406593406592,
+          447.81428571428575
+        ]
+      ]
+    },
+    {
+      "id": "beijing",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          957.3120000000001,
+          394.28742857142856
+        ],
+        [
+          957.3120000000001,
+          258.8554285714286
+        ],
+        [
+          1137.888,
+          394.28742857142856
+        ],
+        [
+          1137.888,
+          258.8554285714286
+        ]
+      ]
+    },
+    {
+      "id": "tianyang",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1194.912,
+          394.28742857142856
+        ],
+        [
+          1194.912,
+          258.8554285714286
+        ],
+        [
+          1375.488,
+          394.28742857142856
+        ],
+        [
+          1375.488,
+          258.8554285714286
+        ]
+      ]
+    },
+    {
+      "id": "quanzhou",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          957.3120000000001,
+          605.1445714285715
+        ],
+        [
+          957.3120000000001,
+          469.7125714285714
+        ],
+        [
+          1137.888,
+          605.1445714285715
+        ],
+        [
+          1137.888,
+          469.7125714285714
+        ]
+      ]
+    },
+    {
+      "id": "hongkong",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1194.912,
+          605.1445714285715
+        ],
+        [
+          1194.912,
+          469.7125714285714
+        ],
+        [
+          1375.488,
+          605.1445714285715
+        ],
+        [
+          1375.488,
+          469.7125714285714
+        ]
+      ]
+    },
+    {
+      "id": "singapore",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          999.8057142857144,
+          416.18571428571425
+        ],
+        [
+          999.8057142857144,
+          236.95714285714286
+        ],
+        [
+          1095.3942857142858,
+          416.18571428571425
+        ],
+        [
+          1095.3942857142858,
+          236.95714285714286
+        ]
+      ]
+    },
+    {
+      "id": "kualalumpur",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1237.4057142857143,
+          416.18571428571425
+        ],
+        [
+          1237.4057142857143,
+          236.95714285714286
+        ],
+        [
+          1332.9942857142858,
+          416.18571428571425
+        ],
+        [
+          1332.9942857142858,
+          236.95714285714286
+        ]
+      ]
+    },
+    {
+      "id": "sanfrancisco",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          999.8057142857144,
+          627.0428571428571
+        ],
+        [
+          999.8057142857144,
+          447.81428571428575
+        ],
+        [
+          1095.3942857142858,
+          627.0428571428571
+        ],
+        [
+          1095.3942857142858,
+          447.81428571428575
+        ]
+      ]
+    },
+    {
+      "id": "london",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1237.4057142857143,
+          627.0428571428571
+        ],
+        [
+          1237.4057142857143,
+          447.81428571428575
+        ],
+        [
+          1332.9942857142858,
+          627.0428571428571
+        ],
+        [
+          1332.9942857142858,
+          447.81428571428575
+        ]
+      ]
+    }
+  ],
+  "parameters": {
+    "tiltEnabled": true,
+    "hoverTilt": 6,
+    "focusTilt": 6,
+    "tiltResponse": 0.085,
+    "hoverPerspective": 1200,
+    "hoverScale": 1.05,
+    "hoverLift": 4,
+    "hoverResponse": 0.085,
+    "blur": 11,
+    "blurResponse": 0.075,
+    "focusTrackOutside": false,
+    "resetTiltOnLeave": false,
+    "perspective": 1400,
+    "focusShift": 0,
+    "focusRoll": 0,
+    "enterDuration": 0.46,
+    "returnDuration": 0.56,
+    "focusHeight": 0.565,
+    "focusWidth": 0.295,
+    "focusX": 0.479,
+    "focusY": 0.5,
+    "backgroundColor": "#fbf7f1",
+    "focusBackground": "#22201c",
+    "lightAlgorithm": "local-add",
+    "lightEnabled": true,
+    "pinLight": false,
+    "lightAnimation": true,
+    "lightFollowPointer": true,
+    "lightIntensity": 1,
+    "lightContrast": 0.26,
+    "shadowStrength": 1,
+    "lightSpeed": 0.35,
+    "pointerInfluence": 0.85,
+    "lightResponse": 0.16,
+    "lightFadeIn": 0.12,
+    "lightFadeOut": 0.16,
+    "lightColor": "#ffd198",
+    "shadowColor": "#4e5c3c",
+    "contactShadowColor": "#635e53",
+    "contactShadowOpacity": 0.44,
+    "contactShadowSoftness": 1.4,
+    "textureScale": 0.9,
+    "surfaceRelief": 0.22,
+    "surfaceShine": 0.45,
+    "lightGrain": 0.65,
+    "lightCoverage": 0.708,
+    "lightScale": 1,
+    "lightAngle": 44,
+    "lightStretch": 0.84,
+    "lightScatter": 1,
+    "lightWarp": 0.118,
+    "lightSoftness": 1.35
+  },
+  "camera": {
+    "type": "PerspectiveCamera",
+    "distance": 1200,
+    "fov": 41.112090439166934
+  },
+  "renderer": {
+    "programs": 15,
+    "geometries": 24,
+    "textures": 63
+  },
+  "materials": [
+    "9166b3a1-e270-4a40-ba2b-5ad69e372a68",
+    "e7e14614-863d-4617-87dd-efee24eb5612",
+    "46ab4f19-cc99-4228-90bc-54aa82c50a3c",
+    "8106ba33-5dda-461c-8de3-63250250203a",
+    "59679e49-1894-44f3-aff3-8d5507f8016e",
+    "8abef3b4-af27-49e6-a7be-a067c0372cd9",
+    "c17fd7c3-0d32-4bec-98cb-578635f0cea1",
+    "dd8ffa85-3a5f-4957-bbd0-0ca2f9302ee8",
+    "aacc9d9c-3772-4733-a19a-f9fea7ea14b0",
+    "750fffc3-3ffe-4f9a-ae96-660b773b6f50",
+    "ae3a7392-da68-48bf-83d3-c45564b20b6c",
+    "2fbac34b-8315-415e-b6d5-386a656227ce"
+  ],
+  "textures": [
+    "e50cfbef-b1bb-4cb4-91a6-de271721b659",
+    "332df5e2-dae4-42cd-acd5-35447b27eb11",
+    "47cd3089-9be0-44dc-982c-52f78d12fcdc",
+    "f497e501-4799-4639-a2bc-5035efd420dc",
+    "1d69a744-92fb-41cf-a709-b71bae218892",
+    "34a45953-b626-418c-ae18-600e63bbfb25",
+    "f4407e36-33c1-426e-8be9-65b272ceaced",
+    "1afb688a-2772-4275-b80a-10654be2f3a5",
+    "b5b94e31-b8a9-4fb1-8ea3-dbe74394f612",
+    "a033b21e-81f7-4de0-9ebf-d3b283da400d",
+    "1f5359e9-6a4f-4252-9c92-4ef94441bfd2",
+    "68bf2ce0-2f91-4385-bc57-39f6778f2c0c"
+  ],
+  "background": {
+    "active": false,
+    "time": 3,
+    "fieldUpdates": 0,
+    "pointer": [
+      0.5,
+      0.5
+    ],
+    "target": [
+      0.5,
+      0.5
+    ],
+    "owner": null,
+    "aspect": 0.786,
+    "width": 384,
+    "height": 480,
+    "texture": "4ba70405-329e-47f5-9c90-f051520b4367",
+    "enabled": true,
+    "animate": true,
+    "followPointer": true,
+    "sizeNorm": 3,
+    "density": 8.9,
+    "parameters": {
+      "lightAlgorithm": "local-add",
+      "enabled": true,
+      "intensity": 1,
+      "speed": 0.35,
+      "color": "#4e5c3c",
+      "light": "#ffd198",
+      "background": "#fbf7f1",
+      "focusColor": "#22201c",
+      "softness": 1.35,
+      "coverage": 0.708,
+      "animate": true,
+      "density": 26.7,
+      "scale": 1,
+      "angle": 44,
+      "stretch": 0.84,
+      "scatter": 1,
+      "wave": 0.118,
+      "grain": 0.65,
+      "contrast": 0.26,
+      "study": 0,
+      "followPointer": true,
+      "responseTime": 0.16,
+      "pointerInfluence": 0.85,
+      "stampRatio": 0.786
+    }
+  },
+  "artFrame": {
+    "status": "ready",
+    "loaded": true,
+    "selected": "guangdong",
+    "hovered": null,
+    "keyboard": false,
+    "viewport": {
+      "x": 20.16,
+      "y": 197.31599999999997,
+      "width": 885.6,
+      "height": 469.36800000000005
+    },
+    "renderViewport": {
+      "x": -41.83200000000001,
+      "y": 135.32399999999996,
+      "width": 1009.5840000000001,
+      "height": 593.3520000000001
+    },
+    "reducedMotion": false,
+    "modelSizeM": [
+      1.0000855550841519,
+      0.5001279072635887,
+      0.03499923078603534
+    ],
+    "frameCorners": [
+      [
+        41.20963448451198,
+        642.9110513429846
+      ],
+      [
+        41.20963448451198,
+        642.9110513429846
+      ],
+      [
+        41.20963448451198,
+        221.08888498809486
+      ],
+      [
+        41.20963448451198,
+        221.08888498809486
+      ],
+      [
+        884.710365515488,
+        642.9110513429846
+      ],
+      [
+        884.710365515488,
+        642.9110513429846
+      ],
+      [
+        884.710365515488,
+        221.08888498809486
+      ],
+      [
+        884.710365515488,
+        221.08888498809486
+      ]
+    ],
+    "categories": [
+      {
+        "id": "guangdong",
+        "name": "Category_Guangdong",
+        "activity": 0.62,
+        "reveal": 1,
+        "position": [
+          -0.2853130307048559,
+          -0.16999999256961534,
+          0.014280001397090767
+        ],
+        "base": [
+          -0.2853130307048559,
+          -0.16999999256961534,
+          0.011800001397090767
+        ],
+        "scale": 1.0217,
+        "color": "#944e3b",
+        "opacity": 1,
+        "visible": true,
+        "bounds": [
+          0.03930809579370531,
+          0.018748599430115476,
+          0.0016641071405825835
+        ],
+        "depth": 0.014103890094021385,
+        "screen": [
+          222.2837885577273,
+          575.3364151970434
+        ],
+        "vertices": 5330
+      },
+      {
+        "id": "china",
+        "name": "Category_China",
+        "activity": 0,
+        "reveal": 1,
+        "position": [
+          0.0001909453421831131,
+          -0.16999999933422805,
+          0.011800001384566706
+        ],
+        "base": [
+          0.0001909453421831131,
+          -0.16999999933422805,
+          0.011800001384566706
+        ],
+        "scale": 1,
+        "color": "#453e34",
+        "opacity": 1,
+        "visible": true,
+        "bounds": [
+          0.03660990455503045,
+          0.01824605732504661,
+          0.0016227557922989504
+        ],
+        "depth": 0.012480424899729548,
+        "screen": [
+          463.0911907023137,
+          575.3418980394863
+        ],
+        "vertices": 4061
+      },
+      {
+        "id": "world",
+        "name": "Category_World",
+        "activity": 0,
+        "reveal": 1,
+        "position": [
+          0.28510812763124704,
+          -0.17000000692766876,
+          0.011800001358121915
+        ],
+        "base": [
+          0.28510812763124704,
+          -0.17000000692766876,
+          0.011800001358121915
+        ],
+        "scale": 1,
+        "color": "#453e34",
+        "opacity": 1,
+        "visible": true,
+        "bounds": [
+          0.039687991906450726,
+          0.018294910315062946,
+          0.0016321852668761145
+        ],
+        "depth": 0.013335168330406214,
+        "screen": [
+          703.3974013538965,
+          575.3390207685602
+        ],
+        "vertices": 6039
+      }
+    ],
+    "roots": [
+      "1850bf1c-5a84-4ba2-b4a4-fa9130d86b1d",
+      "761cb7aa-4e0e-40ba-a06a-ecbf2c838a5e"
+    ],
+    "studio": {
+      "environment": true,
+      "environmentIntensity": 0.2,
+      "hdri": {
+        "url": "/environments/citrus-orchard-road-4k.exr",
+        "loaded": true,
+        "width": 4096,
+        "height": 2048,
+        "colorSpace": "srgb-linear"
+      },
+      "environmentRotation": [
+        0,
+        1.0995574287564276,
+        0,
+        "XYZ"
+      ],
+      "toneMapping": "Source AgX Medium High Contrast LUT",
+      "exposure": 1.3195079107728942,
+      "shadow": "VSM",
+      "softboxes": [
+        {
+          "name": "Source_Key",
+          "position": [
+            -0.65,
+            1.05,
+            0.95
+          ],
+          "watts": 18,
+          "diameter": 0.85,
+          "color": [
+            1,
+            0.96,
+            0.9
+          ]
+        },
+        {
+          "name": "Source_Fill",
+          "position": [
+            0.75,
+            0.35,
+            0.65
+          ],
+          "watts": 8,
+          "diameter": 0.8,
+          "color": [
+            0.9,
+            0.95,
+            1
+          ]
+        },
+        {
+          "name": "Source_Rim",
+          "position": [
+            0.55,
+            0.75,
+            -0.025
+          ],
+          "watts": 8.5,
+          "diameter": 0.5,
+          "color": [
+            1,
+            0.96,
+            0.89
+          ]
+        }
+      ],
+      "invisibleHitAreasCastShadows": false
+    },
+    "materials": [
+      {
+        "name": "PBR_Wood_HoneyOak_Baked",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "roughness": 1,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map",
+            "name": "wood_atlas_4k_basecolor",
+            "colorSpace": "srgb",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "normalMap",
+            "name": "wood_atlas_4k_normal",
+            "colorSpace": "",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "roughnessMap",
+            "name": "wood_atlas_4k_roughness",
+            "colorSpace": "",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          }
+        ]
+      },
+      {
+        "name": "PBR_Canvas_WarmIvory_Baked",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "roughness": 1,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map",
+            "name": "canvas_128mm_2k_basecolor",
+            "colorSpace": "srgb",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "normalMap",
+            "name": "canvas_128mm_2k_normal",
+            "colorSpace": "",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "roughnessMap",
+            "name": "canvas_128mm_2k_roughness",
+            "colorSpace": "",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          }
+        ]
+      },
+      {
+        "name": "M_Backing_NaturalFibre",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "roughness": 0.949999988079071,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "M_Landscape_Photo",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "roughness": 0.8500000238418579,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map",
+            "name": "iceland_budir_arthouse_4641301",
+            "colorSpace": "srgb",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "M_Ink_CharcoalUmber",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "roughness": 0.8199999928474426,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "M_Mat_Trim",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "roughness": 0.6600000262260437,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "Typography_WarmUmber",
+        "type": "MeshStandardMaterial",
+        "displayTransform": true,
+        "roughness": 0.7799999713897705,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "Typography_WarmLimestone",
+        "type": "MeshStandardMaterial",
+        "displayTransform": true,
+        "roughness": 0.78,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "Typography_WarmLimestone",
+        "type": "MeshStandardMaterial",
+        "displayTransform": true,
+        "roughness": 0.78,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "Typography_WarmLimestone",
+        "type": "MeshStandardMaterial",
+        "displayTransform": true,
+        "roughness": 0.78,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      }
+    ],
+    "hiddenOriginalTexts": [
+      {
+        "name": "Text_Header_CN_Mesh",
+        "visible": false
+      },
+      {
+        "name": "Text_Header_EN_Mesh",
+        "visible": false
+      },
+      {
+        "name": "Text_Quote_CN_Mesh",
+        "visible": false
+      },
+      {
+        "name": "Text_Title_EN_Mesh",
+        "visible": false
+      }
+    ]
+  }
+}

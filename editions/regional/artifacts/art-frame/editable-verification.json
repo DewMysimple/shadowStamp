@@ -1,0 +1,43 @@
+{
+  "file": "C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\assets\\blender\\FrameTypography.blend",
+  "editable_texts": [
+    {
+      "name": "Category_China",
+      "body": "中国",
+      "font": "SimHei Regular",
+      "packed": true
+    },
+    {
+      "name": "Category_Guangdong",
+      "body": "广东",
+      "font": "SimHei Regular",
+      "packed": true
+    },
+    {
+      "name": "Category_World",
+      "body": "世界",
+      "font": "SimHei Regular",
+      "packed": true
+    },
+    {
+      "name": "Title_Chinese",
+      "body": "狮行万里·从岭南到世界",
+      "font": "SimHei Regular",
+      "packed": true
+    },
+    {
+      "name": "Title_English",
+      "body": "FROM LINGNAN TO THE WORLD",
+      "font": "Arial Regular",
+      "packed": true
+    }
+  ],
+  "hdr": [
+    {
+      "path": "//..\\..\\public\\environments\\citrus-orchard-road-4k.exr",
+      "resolved": "C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\assets\\blender\\..\\..\\public\\environments\\citrus-orchard-road-4k.exr",
+      "exists": true
+    }
+  ],
+  "look": "AgX - Medium High Contrast"
+}

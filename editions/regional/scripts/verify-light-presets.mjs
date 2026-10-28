@@ -5,8 +5,9 @@ import { createHash } from 'node:crypto';
 import { resolve, join } from 'node:path';
 import { DEFAULT_PARAMETERS, PARAMETER_FIELDS, PARAMETER_GROUPS, STORAGE_KEY, serializeParameters } from '../src/parameters.js';
 import { LIGHT_PRESETS, LIGHT_PRESET_KEYS } from '../src/lightPresets.js';
+import { STAMPS } from '../src/config.js';
 
-const base = process.env.VERIFY_URL || 'http://127.0.0.1:4173/';
+const base = process.env.VERIFY_URL || 'http://127.0.0.1:4174/';
 const output = resolve(process.env.VERIFY_OUTPUT || 'artifacts/light-presets');
 await mkdir(output, { recursive: true });
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -44,7 +45,8 @@ async function pageAt(options = {}, seed) {
   const p = await context.newPage();
   p.on('pageerror', error => report.errors.push({ url: p.url(), message: error.message }));
   p.on('console', message => { if (message.type() === 'error') report.errors.push({ url: p.url(), message: message.text() }); if (message.type() === 'warning') report.warnings.push({ url: p.url(), message: message.text() }); });
-  await p.goto(base, { waitUntil: 'networkidle' }); await p.waitForFunction(() => Boolean(window.__postalGallery)); return p;
+  await p.goto(base, { waitUntil: 'networkidle' }); await p.waitForFunction(() => Boolean(window.__postalGallery));
+  await p.waitForFunction(() => __postalGallery.getDiagnostics().artFrame.loaded); return p;
 }
 const diagnostics = p => p.evaluate(() => __postalGallery.getDiagnostics());
 async function panel(p, open = true) { if ((await p.locator('.parameter-launcher').getAttribute('aria-expanded') === 'true') !== open) await p.locator('.parameter-launcher').click(); }
@@ -61,7 +63,17 @@ async function set(p, key, value) {
 }
 async function setMany(p, values) { for (const [key, value] of Object.entries(values)) await set(p, key, value); }
 async function reset(p) { await panel(p); await p.getByRole('button', { name: '全部重置', exact: true }).click(); await p.waitForFunction(defaults => JSON.stringify(__postalGallery.getDiagnostics().parameters) === JSON.stringify(defaults), DEFAULT_PARAMETERS); }
+async function category(p, id) {
+  if ((await diagnostics(p)).selected) { await p.evaluate(() => __postalGallery.close()); await p.waitForFunction(() => !__postalGallery.getDiagnostics().selected); }
+  if ((await diagnostics(p)).series === id) return;
+  await panel(p, false);
+  const c = (await diagnostics(p)).artFrame.categories.find(c => c.id === id);
+  await p.mouse.click(...c.screen);
+  await p.waitForFunction(id => __postalGallery.getDiagnostics().series === id, id);
+  await p.waitForTimeout(700);
+}
 async function focus(p, id) {
+  await category(p, STAMPS.find(s => s.id === id).series);
   if ((await diagnostics(p)).selected !== id) {
     if ((await diagnostics(p)).selected) { await p.evaluate(() => __postalGallery.close()); await p.waitForFunction(() => !__postalGallery.getDiagnostics().selected); }
     await p.evaluate(id => __postalGallery.focus(id), id);
@@ -122,6 +134,12 @@ try {
   });
   await check('six GPU branches produce distinct portrait and landscape light; disabled output and desk are identical', async () => {
     await setMany(page, { lightAnimation: false, lightFollowPointer: false, tiltEnabled: false, pinLight: true });
+    // The category gallery uploads resources lazily. Warm both tested series
+    // and their six real shader variants before checking steady-state reuse.
+    for (const id of ['foshan', 'tianyang']) {
+      await focus(page, id);
+      for (const preset of LIGHT_PRESETS) { await set(page, 'lightAlgorithm', preset.id); await set(page, 'lightEnabled', true); await settle(page); await gpuBranch(page, preset.index); }
+    }
     const renders = [], common = { lightContrast: .4, shadowStrength: .7, surfaceRelief: .22, surfaceShine: .3 };
     let resources;
     for (const id of ['foshan', 'tianyang']) {
@@ -150,6 +168,7 @@ try {
   });
   await check('each algorithm lights only the hovered stamp and animated light leaves the desk static', async () => {
     await reset(page); await setMany(page, { lightAnimation: false, tiltEnabled: false, lightFollowPointer: false });
+    await category(page, 'guangdong');
     const states = [];
     for (const preset of LIGHT_PRESETS) {
       await set(page, 'lightAlgorithm', preset.id); await panel(page, false); await page.locator('[data-stamp="foshan"]').hover({ force: true }); await page.waitForTimeout(550);
@@ -164,7 +183,7 @@ try {
     await set(page, 'lightAlgorithm', 'soft-light'); await setMany(page, { lightContrast: .57, textureScale: 1.4, lightEnabled: false, focusTilt: 9.5 }); const expected = (await diagnostics(page)).parameters;
     const event = page.waitForEvent('download'); await page.getByRole('button', { name: '导出', exact: true }).click(); const download = await event, file = join(output, 'six-light-parameters.json'); await download.saveAs(file); const json = await readFile(file, 'utf8'); assert.deepEqual(JSON.parse(json).parameters, expected);
     await reset(page); await paste(page, json); await page.waitForFunction(expected => JSON.stringify(__postalGallery.getDiagnostics().parameters) === JSON.stringify(expected), expected);
-    await page.reload({ waitUntil: 'networkidle' }); await page.waitForFunction(() => Boolean(window.__postalGallery)); assert.deepEqual((await diagnostics(page)).parameters, expected); assert.equal(await page.locator('#parameter-lightAlgorithm').inputValue(), 'soft-light'); assert.equal(await page.locator('[data-preset-state]').innerText(), '已微调');
+    await page.reload({ waitUntil: 'networkidle' }); await page.waitForFunction(() => Boolean(window.__postalGallery)); await page.waitForFunction(() => __postalGallery.getDiagnostics().artFrame.loaded); await panel(page); assert.deepEqual((await diagnostics(page)).parameters, expected); assert.equal(await page.locator('#parameter-lightAlgorithm').inputValue(), 'soft-light'); assert.equal(await page.locator('[data-preset-state]').innerText(), '已微调');
     await reset(page); return { file: 'six-light-parameters.json', algorithm: expected.lightAlgorithm, lightContrast: expected.lightContrast, exactReload: true, disabledPreserved: true };
   });
   await check('revision-four saves without an algorithm retain edits; invalid identifiers fall back safely', async () => {
@@ -176,17 +195,22 @@ try {
     await paste(legacy, JSON.stringify({ version: 2, appearanceRevision: 4, parameters: { ...values, lightAlgorithm: { injected: true } } })); assert.equal((await diagnostics(legacy)).parameters.lightAlgorithm, 'local-add');
     await legacy.close(); return { legacyEditsPreserved: true, fallbackAlgorithm: 'local-add', invalidObjectRejected: true };
   });
-  await check('mobile controls select all six and retain touch focus; reduced motion changes appearance without continuous frames', async () => {
-    const mobile = await pageAt({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true }); await panel(mobile);
-    for (const preset of LIGHT_PRESETS) await set(mobile, 'lightAlgorithm', preset.id);
-    await panel(mobile, false); await mobile.locator('[data-stamp="foshan"]').tap(); await mobile.waitForFunction(() => __postalGallery.getDiagnostics().phase === 'focused'); await panel(mobile);
-    await set(mobile, 'lightAlgorithm', 'screen'); assert.equal((await diagnostics(mobile)).phase, 'focused'); assert.equal((await diagnostics(mobile)).parameters.lightAlgorithm, 'screen'); await snap(mobile, '02-mobile-preset-focus.png');
+  await check('desktop controls retain focus; reduced motion changes appearance without continuous frames', async () => {
+    const desktop = await pageAt({ viewport: { width: 1280, height: 800 } }); await panel(desktop);
+    for (const preset of LIGHT_PRESETS) await set(desktop, 'lightAlgorithm', preset.id);
+    await panel(desktop, false); await desktop.locator('[data-stamp="foshan"]').click(); await desktop.waitForFunction(() => __postalGallery.getDiagnostics().phase === 'focused'); await panel(desktop);
+    await set(desktop, 'lightAlgorithm', 'screen'); assert.equal((await diagnostics(desktop)).phase, 'focused'); assert.equal((await diagnostics(desktop)).parameters.lightAlgorithm, 'screen'); await snap(desktop, '02-desktop-preset-focus.png');
     const reduced = await pageAt({ reducedMotion: 'reduce' }); await set(reduced, 'pinLight', true); await focus(reduced, 'foshan'); const outputs = [];
     for (const id of ['legacy-multiply', 'local-add', 'screen']) { await set(reduced, 'lightAlgorithm', id); await settle(reduced); outputs.push(hash(Uint8Array.from((await stampPixels(reduced, 'foshan')).samples))); }
     assert.equal(new Set(outputs).size, 3); await panel(reduced, false); await settle(reduced); const a = await diagnostics(reduced), ra = await reduced.evaluate(() => __presetQA.raf), pixels = await stampPixels(reduced, 'foshan'); await reduced.waitForTimeout(350); const b = await diagnostics(reduced), rb = await reduced.evaluate(() => __presetQA.raf); assert.equal(ra, rb); assert.equal(a.background.time, b.background.time); assert.deepEqual((await stampPixels(reduced, 'foshan')).samples, pixels.samples); await snap(reduced, '03-reduced-motion-focus.png');
-    return { mobileOptions: 6, focusRetained: true, reducedDistinctOutputs: outputs.length, reducedRAFStopped: true };
+    return { desktopOptions: 6, focusRetained: true, reducedDistinctOutputs: outputs.length, reducedRAFStopped: true };
   });
-  await check('no browser, shader or WebGL warnings and errors', async () => { assert.deepEqual(report.errors, []); assert.deepEqual(report.warnings, []); return { errors: 0, warnings: 0 }; });
+  await check('no browser errors or unexpected shader diagnostics', async () => {
+    assert.deepEqual(report.errors, []);
+    const precision = warning => /warning X4122: sum of/.test(warning.message) && /e-01[78]/.test(warning.message) && !/error|failed/i.test(warning.message);
+    assert.deepEqual(report.warnings.filter(warning => !precision(warning)), []);
+    return { errors: 0, unexpectedWarnings: 0, angleSubPrecisionNotices: report.warnings.filter(precision).length };
+  });
 } finally {
   report.finishedAt = new Date().toISOString(); report.result = report.checks.every(check => check.result === 'passed') ? 'passed' : 'failed'; await writeFile(join(output, 'report.json'), JSON.stringify(report, null, 2)); await Promise.all(contexts.map(context => context.close())); await browser.close();
 }

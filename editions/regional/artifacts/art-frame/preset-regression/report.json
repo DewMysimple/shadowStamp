@@ -1,0 +1,565 @@
+{
+  "base": "http://127.0.0.1:4174/",
+  "startedAt": "2026-10-28T17:56:44.149Z",
+  "scope": "Six stamp-light algorithms: real controls, GPU branch, controlled portrait/landscape pixels, local scope, persistence and lifecycle.",
+  "checks": [
+    {
+      "name": "six named presets are selectable; current additive appearance remains the default",
+      "result": "passed",
+      "elapsedMs": 1924,
+      "details": {
+        "options": [
+          {
+            "value": "legacy-multiply",
+            "text": "林隙旧笺 · 旧版留存"
+          },
+          {
+            "value": "local-add",
+            "text": "晴窗暖笺 · 本工程新版"
+          },
+          {
+            "value": "screen",
+            "text": "晨雾透光 · 滤色"
+          },
+          {
+            "value": "soft-light",
+            "text": "午后柔映 · 柔光"
+          },
+          {
+            "value": "diffuse-transmission",
+            "text": "琥珀漫照 · 指数漫照"
+          },
+          {
+            "value": "luminance",
+            "text": "暮色留白 · 亮度塑形"
+          }
+        ],
+        "default": "local-add",
+        "canvasCount": 1
+      }
+    },
+    {
+      "name": "preset selection and restoration preserve gallery, pointer, animation and enabled preferences",
+      "result": "passed",
+      "elapsedMs": 553,
+      "details": {
+        "checkedPresets": 6,
+        "unaffectedKeys": [
+          "tiltEnabled",
+          "hoverTilt",
+          "focusTilt",
+          "tiltResponse",
+          "hoverPerspective",
+          "hoverScale",
+          "hoverLift",
+          "hoverResponse",
+          "blur",
+          "blurResponse",
+          "focusTrackOutside",
+          "resetTiltOnLeave",
+          "perspective",
+          "focusShift",
+          "focusRoll",
+          "enterDuration",
+          "returnDuration",
+          "focusHeight",
+          "focusWidth",
+          "focusX",
+          "focusY",
+          "backgroundColor",
+          "focusBackground",
+          "lightEnabled",
+          "pinLight",
+          "lightAnimation",
+          "lightFollowPointer",
+          "lightSpeed",
+          "pointerInfluence",
+          "lightResponse",
+          "lightFadeIn",
+          "lightFadeOut"
+        ],
+        "editedAndRestored": true
+      }
+    },
+    {
+      "name": "six GPU branches produce distinct portrait and landscape light; disabled output and desk are identical",
+      "result": "passed",
+      "elapsedMs": 35760,
+      "details": {
+        "renders": [
+          {
+            "stamp": "foshan",
+            "common": {
+              "lightContrast": 0.4,
+              "shadowStrength": 0.7,
+              "surfaceRelief": 0.22,
+              "surfaceShine": 0.3
+            },
+            "time": 3.0116199999999993,
+            "size": [
+              282,
+              407
+            ],
+            "branches": [
+              {
+                "id": "legacy-multiply",
+                "aspect": 0.786,
+                "sha256": "de4e00099cb584fdb011e3b13b0a2cf07cd06d2b884c7c5d901fb09fd15a045f"
+              },
+              {
+                "id": "local-add",
+                "aspect": 0.6923076923076923,
+                "sha256": "d2d9f748bb01dcbff9132afeff0483d640ada91241a85f4e5ab126b7de1d98fd"
+              },
+              {
+                "id": "screen",
+                "aspect": 0.6923076923076923,
+                "sha256": "aad2a6a559abdf3b1f3607a53b10853333597e952724f1ed8d0610e2ed8428af"
+              },
+              {
+                "id": "soft-light",
+                "aspect": 0.6923076923076923,
+                "sha256": "779af8f50194d06c2ff1d2bd7b2b42206baee38c8602060caad7583b12191e5f"
+              },
+              {
+                "id": "diffuse-transmission",
+                "aspect": 0.6923076923076923,
+                "sha256": "0aaccef97bbffc56ae477b9896fd5649ec5c27486e36505fa024fe6af2f15124"
+              },
+              {
+                "id": "luminance",
+                "aspect": 0.6923076923076923,
+                "sha256": "4e8bf9ba4321c92e5d712f51e6eca6d4762f23a450dc0a7673c5bb8ed3f37d55"
+              }
+            ],
+            "pairwise": [
+              {
+                "a": "legacy-multiply",
+                "b": "local-add",
+                "meanRGBDelta": 26.102408854166665,
+                "maxRGBDelta": 77,
+                "changedFraction": 0.9900390625
+              },
+              {
+                "a": "legacy-multiply",
+                "b": "screen",
+                "meanRGBDelta": 29.674739583333334,
+                "maxRGBDelta": 95,
+                "changedFraction": 0.9919270833333333
+              },
+              {
+                "a": "legacy-multiply",
+                "b": "soft-light",
+                "meanRGBDelta": 13.4833984375,
+                "maxRGBDelta": 49,
+                "changedFraction": 0.9572265625
+              },
+              {
+                "a": "legacy-multiply",
+                "b": "diffuse-transmission",
+                "meanRGBDelta": 24.247330729166666,
+                "maxRGBDelta": 76,
+                "changedFraction": 0.9826822916666667
+              },
+              {
+                "a": "legacy-multiply",
+                "b": "luminance",
+                "meanRGBDelta": 24.5314453125,
+                "maxRGBDelta": 248,
+                "changedFraction": 0.9796875
+              },
+              {
+                "a": "local-add",
+                "b": "screen",
+                "meanRGBDelta": 10.8404296875,
+                "maxRGBDelta": 49,
+                "changedFraction": 0.9264973958333333
+              },
+              {
+                "a": "local-add",
+                "b": "soft-light",
+                "meanRGBDelta": 15.614453125,
+                "maxRGBDelta": 55,
+                "changedFraction": 1
+              },
+              {
+                "a": "local-add",
+                "b": "diffuse-transmission",
+                "meanRGBDelta": 13.65,
+                "maxRGBDelta": 58,
+                "changedFraction": 0.9766276041666667
+              },
+              {
+                "a": "local-add",
+                "b": "luminance",
+                "meanRGBDelta": 13.510026041666666,
+                "maxRGBDelta": 193,
+                "changedFraction": 0.9682291666666667
+              },
+              {
+                "a": "screen",
+                "b": "soft-light",
+                "meanRGBDelta": 18.100455729166665,
+                "maxRGBDelta": 95,
+                "changedFraction": 0.9969401041666667
+              },
+              {
+                "a": "screen",
+                "b": "diffuse-transmission",
+                "meanRGBDelta": 9.836783854166667,
+                "maxRGBDelta": 38,
+                "changedFraction": 0.9985677083333333
+              },
+              {
+                "a": "screen",
+                "b": "luminance",
+                "meanRGBDelta": 11.2244140625,
+                "maxRGBDelta": 155,
+                "changedFraction": 0.9823567708333333
+              },
+              {
+                "a": "soft-light",
+                "b": "diffuse-transmission",
+                "meanRGBDelta": 12.938932291666667,
+                "maxRGBDelta": 76,
+                "changedFraction": 0.9669921875
+              },
+              {
+                "a": "soft-light",
+                "b": "luminance",
+                "meanRGBDelta": 13.630859375,
+                "maxRGBDelta": 245,
+                "changedFraction": 0.9657552083333333
+              },
+              {
+                "a": "diffuse-transmission",
+                "b": "luminance",
+                "meanRGBDelta": 5.792447916666666,
+                "maxRGBDelta": 173,
+                "changedFraction": 0.8724609375
+              }
+            ],
+            "unlitSHA256": "a35ed3aeb7a25c3d9f44cac4a3c358a083f752b3be5e522de01967fb69f1a8d1",
+            "deskSHA256": "7f1f79aedaf3ab46b25c5089a633f9d93b38ac0829c023187af22ccdb8b1312f"
+          },
+          {
+            "stamp": "tianyang",
+            "common": {
+              "lightContrast": 0.4,
+              "shadowStrength": 0.7,
+              "surfaceRelief": 0.22,
+              "surfaceShine": 0.3
+            },
+            "time": 3.0116199999999993,
+            "size": [
+              340,
+              255
+            ],
+            "branches": [
+              {
+                "id": "legacy-multiply",
+                "aspect": 0.786,
+                "sha256": "e4c960a6ee461e3a3d1e0f48bd0ec0af4a5b64778cce39e09fda80675f5f79ca"
+              },
+              {
+                "id": "local-add",
+                "aspect": 1.3333333333333333,
+                "sha256": "52a588b943aea7a5cdd3480789e19949cb978fd48a39502084561e2a061f49bc"
+              },
+              {
+                "id": "screen",
+                "aspect": 1.3333333333333333,
+                "sha256": "1e43962535238d8775da16e560cbc378bbf3aa63348fd20128cd1e37ce264f53"
+              },
+              {
+                "id": "soft-light",
+                "aspect": 1.3333333333333333,
+                "sha256": "9525109f323317e1f98124ff3db9e533b9470d1905dfac2610e4bff0926c8905"
+              },
+              {
+                "id": "diffuse-transmission",
+                "aspect": 1.3333333333333333,
+                "sha256": "708c05a26c0362a26f9db5778bcb500c015c361ea091c4cf810e5842a83e39b0"
+              },
+              {
+                "id": "luminance",
+                "aspect": 1.3333333333333333,
+                "sha256": "31286cdc5263111eded180602781be7e52e22a1ee310687e7a60dcee1ef8224b"
+              }
+            ],
+            "pairwise": [
+              {
+                "a": "legacy-multiply",
+                "b": "local-add",
+                "meanRGBDelta": 20.932682291666666,
+                "maxRGBDelta": 77,
+                "changedFraction": 0.9705729166666667
+              },
+              {
+                "a": "legacy-multiply",
+                "b": "screen",
+                "meanRGBDelta": 18.288736979166668,
+                "maxRGBDelta": 96,
+                "changedFraction": 0.9803385416666667
+              },
+              {
+                "a": "legacy-multiply",
+                "b": "soft-light",
+                "meanRGBDelta": 14.042057291666667,
+                "maxRGBDelta": 53,
+                "changedFraction": 0.9706380208333333
+              },
+              {
+                "a": "legacy-multiply",
+                "b": "diffuse-transmission",
+                "meanRGBDelta": 18.86953125,
+                "maxRGBDelta": 76,
+                "changedFraction": 0.9792317708333333
+              },
+              {
+                "a": "legacy-multiply",
+                "b": "luminance",
+                "meanRGBDelta": 19.723372395833334,
+                "maxRGBDelta": 219,
+                "changedFraction": 0.9713541666666666
+              },
+              {
+                "a": "local-add",
+                "b": "screen",
+                "meanRGBDelta": 6.961783854166667,
+                "maxRGBDelta": 46,
+                "changedFraction": 0.6592447916666667
+              },
+              {
+                "a": "local-add",
+                "b": "soft-light",
+                "meanRGBDelta": 15.500130208333333,
+                "maxRGBDelta": 67,
+                "changedFraction": 0.9998046875
+              },
+              {
+                "a": "local-add",
+                "b": "diffuse-transmission",
+                "meanRGBDelta": 18.211979166666666,
+                "maxRGBDelta": 56,
+                "changedFraction": 0.986328125
+              },
+              {
+                "a": "local-add",
+                "b": "luminance",
+                "meanRGBDelta": 18.536393229166666,
+                "maxRGBDelta": 164,
+                "changedFraction": 0.9781901041666666
+              },
+              {
+                "a": "screen",
+                "b": "soft-light",
+                "meanRGBDelta": 11.642122395833333,
+                "maxRGBDelta": 100,
+                "changedFraction": 0.9938802083333333
+              },
+              {
+                "a": "screen",
+                "b": "diffuse-transmission",
+                "meanRGBDelta": 13.185872395833334,
+                "maxRGBDelta": 42,
+                "changedFraction": 0.9988932291666667
+              },
+              {
+                "a": "screen",
+                "b": "luminance",
+                "meanRGBDelta": 16.709244791666666,
+                "maxRGBDelta": 133,
+                "changedFraction": 0.9899088541666666
+              },
+              {
+                "a": "soft-light",
+                "b": "diffuse-transmission",
+                "meanRGBDelta": 8.408203125,
+                "maxRGBDelta": 77,
+                "changedFraction": 0.9266276041666667
+              },
+              {
+                "a": "soft-light",
+                "b": "luminance",
+                "meanRGBDelta": 10.140690104166667,
+                "maxRGBDelta": 187,
+                "changedFraction": 0.9404296875
+              },
+              {
+                "a": "diffuse-transmission",
+                "b": "luminance",
+                "meanRGBDelta": 7.4376953125,
+                "maxRGBDelta": 150,
+                "changedFraction": 0.8462239583333333
+              }
+            ],
+            "unlitSHA256": "97961ec4714f2236edb6b784cfd7eb18b8dc9f996a888217698feaf3951496c6",
+            "deskSHA256": "7f1f79aedaf3ab46b25c5089a633f9d93b38ac0829c023187af22ccdb8b1312f"
+          }
+        ],
+        "persistentAssets": {
+          "materials": [
+            "6ed24001-5259-43e9-be20-4ee0943e288d",
+            "c53d9c55-9b22-4d3e-8bfb-5805544c5f95",
+            "97c7ca10-f27a-430e-b94d-2031323b1ebc",
+            "19d37afa-b7d0-442a-a740-3bb59bb05c66",
+            "77865e68-1617-404c-af7d-f61fc1ccbc08",
+            "a9335121-a8e8-466b-a4ee-381fffb2d81f",
+            "b8f5a436-073a-452b-bf0e-f550e2444a3f",
+            "2c5a6b25-fefe-4f7f-ab6c-484212967b42",
+            "8f2bc34a-af7e-42f9-b63c-36f70df57264",
+            "d7ed06c9-16a0-4414-b52e-2d38e353e617",
+            "99ed7597-46d2-4bd5-aed0-7b0ae2fd6129",
+            "87b5f57f-2cbc-491e-b03c-20e25de6dced"
+          ],
+          "textures": [
+            "34ec0c3b-9a5f-40d3-ac82-8f7549eaa6ed",
+            "91b91ad7-d95c-4bcb-86c3-75bb2a49ed5b",
+            "2d571798-007f-48e7-85e1-38da8c98ea72",
+            "cf4aaa9a-fb26-4e31-b021-ff0e2de89c5b",
+            "cfae0017-e16f-4f1b-a197-71ecdab8e19f",
+            "d11c387c-f662-4de6-a2c9-16b118a85246",
+            "60d8c853-a6cd-4517-9a2e-92749e155972",
+            "5244d1bf-3f74-4b9f-81fe-6cf69c930937",
+            "8863e24d-ae2a-462f-80b1-13966ba0221f",
+            "fed4deb3-d4c8-4703-8333-94d0db5aa13e",
+            "8891b21e-8660-4e42-b0ee-dcd74a0b74e2",
+            "85513909-a4ac-4ab6-9429-3b702b6f3308"
+          ],
+          "renderer": {
+            "programs": 25,
+            "geometries": 24,
+            "textures": 49
+          },
+          "lightTexture": "856d4a22-a2a5-4a89-9b1e-e4a854664511",
+          "createdTextures": 55
+        },
+        "identicalDisabledOutput": true,
+        "identicalDeskPixels": true
+      }
+    },
+    {
+      "name": "each algorithm lights only the hovered stamp and animated light leaves the desk static",
+      "result": "passed",
+      "elapsedMs": 6591,
+      "details": {
+        "states": [
+          {
+            "id": "legacy-multiply",
+            "owner": "foshan",
+            "lit": [
+              "foshan"
+            ]
+          },
+          {
+            "id": "local-add",
+            "owner": "foshan",
+            "lit": [
+              "foshan"
+            ]
+          },
+          {
+            "id": "screen",
+            "owner": "foshan",
+            "lit": [
+              "foshan"
+            ]
+          },
+          {
+            "id": "soft-light",
+            "owner": "foshan",
+            "lit": [
+              "foshan"
+            ]
+          },
+          {
+            "id": "diffuse-transmission",
+            "owner": "foshan",
+            "lit": [
+              "foshan"
+            ]
+          },
+          {
+            "id": "luminance",
+            "owner": "foshan",
+            "lit": [
+              "foshan"
+            ]
+          }
+        ],
+        "flowingTimeAdvanced": 0.291690000000008,
+        "backgroundUnchanged": true
+      }
+    },
+    {
+      "name": "real export, textarea import and reload preserve the selected algorithm and fine tuning",
+      "result": "passed",
+      "elapsedMs": 5224,
+      "details": {
+        "file": "six-light-parameters.json",
+        "algorithm": "soft-light",
+        "lightContrast": 0.57,
+        "exactReload": true,
+        "disabledPreserved": true
+      }
+    },
+    {
+      "name": "revision-four saves without an algorithm retain edits; invalid identifiers fall back safely",
+      "result": "passed",
+      "elapsedMs": 5305,
+      "details": {
+        "legacyEditsPreserved": true,
+        "fallbackAlgorithm": "local-add",
+        "invalidObjectRejected": true
+      }
+    },
+    {
+      "name": "desktop controls retain focus; reduced motion changes appearance without continuous frames",
+      "result": "passed",
+      "elapsedMs": 14398,
+      "details": {
+        "desktopOptions": 6,
+        "focusRetained": true,
+        "reducedDistinctOutputs": 3,
+        "reducedRAFStopped": true
+      }
+    },
+    {
+      "name": "no browser errors or unexpected shader diagnostics",
+      "result": "passed",
+      "elapsedMs": 1,
+      "details": {
+        "errors": 0,
+        "unexpectedWarnings": 0,
+        "angleSubPrecisionNotices": 1
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "url": "http://127.0.0.1:4174/",
+      "message": "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+    }
+  ],
+  "screenshots": [
+    "01-six-preset-panel.png",
+    "foshan-legacy-multiply.png",
+    "foshan-local-add.png",
+    "foshan-screen.png",
+    "foshan-soft-light.png",
+    "foshan-diffuse-transmission.png",
+    "foshan-luminance.png",
+    "tianyang-legacy-multiply.png",
+    "tianyang-local-add.png",
+    "tianyang-screen.png",
+    "tianyang-soft-light.png",
+    "tianyang-diffuse-transmission.png",
+    "tianyang-luminance.png",
+    "02-desktop-preset-focus.png",
+    "03-reduced-motion-focus.png"
+  ],
+  "finishedAt": "2026-10-28T17:57:59.175Z",
+  "result": "passed"
+}

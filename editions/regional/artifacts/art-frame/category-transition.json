@@ -1,0 +1,9020 @@
+[
+  {
+    "time": 15025,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.9945930050068268
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.9945930050068268
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.9945930050068268
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.9945930050068268
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15030.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.979011495675919
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.979011495675919
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.979011495675919
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.979011495675919
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15030.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.979011495675919
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.979011495675919
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.979011495675919
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.979011495675919
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15036,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.9552481529358197
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.9552481529358197
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.9552481529358197
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.9552481529358197
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15036,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.9552481529358197
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.9552481529358197
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.9552481529358197
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.9552481529358197
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15041.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.9224735985434637
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.9224735985434637
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.9224735985434637
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.9224735985434637
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15041.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.9224735985434637
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.9224735985434637
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.9224735985434637
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.9224735985434637
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15047.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.8823679126080936
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.8823679126080936
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.8823679126080936
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.8823679126080936
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15047.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.8823679126080936
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.8823679126080936
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.8823679126080936
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.8823679126080936
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15052.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.8358903086026432
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.8358903086026432
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.8358903086026432
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.8358903086026432
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15052.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.8358903086026432
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.8358903086026432
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.8358903086026432
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.8358903086026432
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15058.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.7859356140191065
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.7859356140191065
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.7859356140191065
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.7859356140191065
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15058.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.7859356140191065
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.7859356140191065
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.7859356140191065
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.7859356140191065
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15063.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.7297343504779283
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.7297343504779283
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.7297343504779283
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.7297343504779283
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15063.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.7297343504779283
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.7297343504779283
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.7297343504779283
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.7297343504779283
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15069.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.6700045516613566
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.6700045516613566
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.6700045516613566
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.6700045516613566
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15069.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.6700045516613566
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.6700045516613566
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.6700045516613566
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.6700045516613566
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15074.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.6088348884842969
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.6088348884842969
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.6088348884842969
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.6088348884842969
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15074.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.6088348884842969
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.6088348884842969
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.6088348884842969
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.6088348884842969
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15080.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.5437962020937561
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.5437962020937561
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.5437962020937561
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.5437962020937561
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15080.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.5437962020937561
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.5437962020937561
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.5437962020937561
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.5437962020937561
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15086,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.48154219025944056
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.48154219025944056
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.48154219025944056
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.48154219025944056
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15086,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.48154219025944056
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.48154219025944056
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.48154219025944056
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.48154219025944056
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15091.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.41726285662265905
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.41726285662265905
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.41726285662265905
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.41726285662265905
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15091.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.41726285662265905
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.41726285662265905
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.41726285662265905
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.41726285662265905
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15097.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.3542167974510576
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.3542167974510576
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.3542167974510576
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.3542167974510576
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15097.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.3542167974510576
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.3542167974510576
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.3542167974510576
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.3542167974510576
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15102.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.2944251133363561
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.2944251133363561
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.2944251133363561
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.2944251133363561
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15102.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.2944251133363561
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.2944251133363561
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.2944251133363561
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.2944251133363561
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15108.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.23665855166135996
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.23665855166135996
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.23665855166135996
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.23665855166135996
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15108.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.23665855166135996
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.23665855166135996
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.23665855166135996
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.23665855166135996
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15113.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.18390276194811428
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.18390276194811428
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.18390276194811428
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.18390276194811428
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15113.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.18390276194811428
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.18390276194811428
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.18390276194811428
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.18390276194811428
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15119.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.1360045962676406
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.1360045962676406
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.1360045962676406
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.1360045962676406
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15119.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.1360045962676406
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.1360045962676406
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.1360045962676406
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.1360045962676406
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15125,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.09246100682748937
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.09246100682748937
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.09246100682748937
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.09246100682748937
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15125,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.09246100682748937
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.09246100682748937
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.09246100682748937
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.09246100682748937
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15130.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.05726416112880972
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.05726416112880972
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.05726416112880972
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.05726416112880972
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15130.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.05726416112880972
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.05726416112880972
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.05726416112880972
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.05726416112880972
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15136.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.029258910332268018
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.029258910332268018
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.029258910332268018
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.029258910332268018
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15136.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.029258910332268018
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.029258910332268018
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.029258910332268018
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.029258910332268018
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15141.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.010367999999998045
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.010367999999998045
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.010367999999998045
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.010367999999998045
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15141.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.010367999999998045
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.010367999999998045
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.010367999999998045
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.010367999999998045
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15147.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.0008494783796076932
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.0008494783796076932
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.0008494783796076932
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.0008494783796076932
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15147.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0.0008494783796076932
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0.0008494783796076932
+      },
+      {
+        "id": "heshan",
+        "opacity": 0.0008494783796076932
+      },
+      {
+        "id": "suixi",
+        "opacity": 0.0008494783796076932
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15152.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15152.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15158.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15158.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15163.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.001238049398948177
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15163.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.001238049398948177
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15169.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.006010518407212666
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15169.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.006010518407212666
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15174.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.014192078324568069
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15174.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.014192078324568069
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15180.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.02583121130728869
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15180.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.02583121130728869
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15186.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.04061223459804877
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15186.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.04061223459804877
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15191.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.05799604658152023
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15191.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.05799604658152023
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15197.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.0780321312922644
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.00044816247182594533
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15197.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.0780321312922644
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.00044816247182594533
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15202.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.1009637421111994
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.004162643313299372
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15202.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.1009637421111994
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.004162643313299372
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15208.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.1257815416979767
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.011310504883548
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15208.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.1257815416979767
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.011310504883548
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15213.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.15319301577760916
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.0219566897069865
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15213.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.15319301577760916
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.0219566897069865
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15219.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.18256949661908348
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.03580484598046588
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15219.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.18256949661908348
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.03580484598046588
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15224.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.21314258546205872
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.052330930691209705
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15224.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.21314258546205872
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.052330930691209705
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15230.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.24582905127723748
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.07194091265965581
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.00007475000000005134
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15230.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.24582905127723748
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.07194091265965581
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.00007475000000005134
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15236,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.27927116904583266
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.09374408414725932
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.0026460000000003044
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15236,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.27927116904583266
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.09374408414725932
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.0026460000000003044
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15241.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.3144900360631152
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.11833830803907179
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.008884551465064916
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15241.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.3144900360631152
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.11833830803907179
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.008884551465064916
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15247.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.3506914064613145
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.14515200000000544
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.018579535687455257
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15247.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.3506914064613145
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.14515200000000544
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.018579535687455257
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15252.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.38701116885800885
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.17345575000000588
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.031274298084150096
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15252.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.38701116885800885
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.17345575000000588
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.031274298084150096
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15258.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.4245750621712975
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.20408380559729333
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.047235486664161185
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15258.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.4245750621712975
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.20408380559729333
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.047235486664161185
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15263.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.46185116754319827
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.2357519564237395
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.06570270773854121
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15263.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.46185116754319827
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.2357519564237395
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.06570270773854121
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15269.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.500681817993992
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.27002978005259415
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.08755862114951309
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.001587274417731248
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15269.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.500681817993992
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.27002978005259415
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.08755862114951309
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.001587274417731248
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15275,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.538148832456802
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.3043185920360654
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.11107625544703394
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.006740755822690157
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15275,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.538148832456802
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.3043185920360654
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.11107625544703394
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.006740755822690157
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15280.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.5754249378287029
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.3396096767468093
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.13678934429000927
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.015282873591285422
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15280.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.5754249378287029
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.3396096767468093
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.13678934429000927
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.015282873591285422
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15286.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.6129888311420036
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.3763783784748359
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.165031825131484
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.02726810424493044
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15286.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.6129888311420036
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.3763783784748359
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.165031825131484
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.02726810424493044
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15291.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.6493085935386977
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.4131211780616129
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.19460468670173217
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.042078052592038284
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15291.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.6493085935386977
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.4131211780616129
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.19460468670173217
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.042078052592038284
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15297.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.6855099639368968
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.4509791975958004
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.22638832607063017
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.060056282494369055
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15297.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.6855099639368968
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.4509791975958004
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.22638832607063017
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.060056282494369055
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15302.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.7201096850112768
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.4884100137115029
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.25905726202104373
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.080370363072882
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15302.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.7201096850112768
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.4884100137115029
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.25905726202104373
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.080370363072882
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15308.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.754170948722763
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.5265797672802384
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.29360447614575313
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.10356400845229015
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15308.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.754170948722763
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.5265797672802384
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.29360447614575313
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.10356400845229015
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15313.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.7868574145379419
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.564611687640872
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.32925082175056397
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.12909375000000034
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15313.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.7868574145379419
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.564611687640872
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.32925082175056397
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.12909375000000034
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15319.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.8168892751690442
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.6009695813298253
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.36447982738542256
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.1557389464688189
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15319.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.8168892751690442
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.6009695813298253
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.36447982738542256
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.1557389464688189
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15325,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.8468069842223913
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.6388125815176586
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.4023790353117984
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.18582527873779334
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15325,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.8468069842223913
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.6388125815176586
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.4023790353117984
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.18582527873779334
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15330.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.873747345792639
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.6746150298647661
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.4394505952291538
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.2165729750187852
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15330.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.873747345792639
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.6746150298647661
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.4394505952291538
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.2165729750187852
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15336.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.8990362578888089
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.7101530779489156
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.47750675000000536
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.24941620717506105
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15336.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.8990362578888089
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.7101530779489156
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.47750675000000536
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.24941620717506105
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15341.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9215801938392217
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.7439671585274278
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.5149980000000055
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.28299165138993726
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15341.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9215801938392217
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.7439671585274278
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.5149980000000055
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.28299165138993726
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15347.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9420039534184864
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.7770918948159348
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.5530926836964768
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.31832525319309546
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15347.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9420039534184864
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.7770918948159348
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.5530926836964768
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.31832525319309546
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15352.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9593877654019569
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.8081539092787444
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.5902399254320141
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.35396474699474856
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15352.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9593877654019569
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.8081539092787444
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.5902399254320141
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.35396474699474856
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15358.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9739318046581547
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.837569332832463
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.6269337580766421
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.39034401352367437
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15358.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9739318046581547
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.837569332832463
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.6269337580766421
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.39034401352367437
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15363.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9856287783621333
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.8656339999999987
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.6636350894064597
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.4279509797144986
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15363.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9856287783621333
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.8656339999999987
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.6636350894064597
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.4279509797144986
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15369.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9939894815927875
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.8915993613824198
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.6994740796393697
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.46593256949661993
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15369.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9939894815927875
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.8915993613824198
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.6994740796393697
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.46593256949661993
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15374.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9987619506010519
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9148661485725025
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.7336422098046589
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.5034090674305043
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15374.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 0.9987619506010519
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9148661485725025
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.7336422098046589
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.5034090674305043
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15380.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9360854468444797
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.7671869776483876
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.5415482755447066
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15380.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9360854468444797
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.7671869776483876
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.5415482755447066
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15386,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9543090728775373
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.7987200045078916
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.5787977280240456
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15386,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9543090728775373
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.7987200045078916
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.5787977280240456
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15391.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9702575850864044
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.8297209490984286
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.6169820216003087
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15391.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9702575850864044
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.8297209490984286
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.6169820216003087
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15397.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9824214907963954
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.8573271913974496
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.6525756793764143
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15397.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9824214907963954
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.8573271913974496
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.6525756793764143
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15402.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9918159115326839
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.8839507631480146
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.6886973728399778
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15402.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9918159115326839
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.8839507631480146
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.6886973728399778
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15408.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.997662120210369
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9079224883546256
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.7232016393689031
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15408.2,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.997662120210369
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9079224883546256
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.7232016393689031
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15413.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9999777265214125
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9299190864012015
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.7571481998497357
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15413.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 0.9999777265214125
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9299190864012015
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.7571481998497357
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15419.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9492862509391441
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.7897022915101436
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15419.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9492862509391441
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.7897022915101436
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15425,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9658260676183335
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.820666000000003
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15425,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9658260676183335
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.820666000000003
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15430.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9791269663786638
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.8493372500000029
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15430.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9791269663786638
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.8493372500000029
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15436.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9894776365514665
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.8765636527047376
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15436.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9894776365514665
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.8765636527047376
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15441.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9963180601051849
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9011824853493654
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15441.6,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9963180601051849
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9011824853493654
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15447.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9996743927498124
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9235104089030841
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15447.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 0.9996743927498124
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9235104089030841
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15452.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9436967154395236
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15452.7,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9436967154395236
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15458.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9611157552592033
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15458.3,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9611157552592033
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15463.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9753386581517653
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15463.8,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9753386581517653
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15469.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9866876408715256
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15469.4,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9866876408715256
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15474.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9945670313673933
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15474.9,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9945670313673933
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15480.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9990683732156277
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15480.5,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 0.9990683732156277
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15486.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 1
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  },
+  {
+    "time": 15486.1,
+    "series": "china",
+    "states": [
+      {
+        "id": "foshan",
+        "opacity": 0
+      },
+      {
+        "id": "guangzhou",
+        "opacity": 0
+      },
+      {
+        "id": "heshan",
+        "opacity": 0
+      },
+      {
+        "id": "suixi",
+        "opacity": 0
+      },
+      {
+        "id": "beijing",
+        "opacity": 1
+      },
+      {
+        "id": "tianyang",
+        "opacity": 1
+      },
+      {
+        "id": "quanzhou",
+        "opacity": 1
+      },
+      {
+        "id": "hongkong",
+        "opacity": 1
+      },
+      {
+        "id": "singapore",
+        "opacity": 0
+      },
+      {
+        "id": "kualalumpur",
+        "opacity": 0
+      },
+      {
+        "id": "sanfrancisco",
+        "opacity": 0
+      },
+      {
+        "id": "london",
+        "opacity": 0
+      }
+    ]
+  }
+]
