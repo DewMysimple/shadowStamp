@@ -1,0 +1,546 @@
+{
+  "base": "http://127.0.0.1:4173/",
+  "startedAt": "2026-10-26T09:31:16.046Z",
+  "scope": "One enabled stamp-local light: rendered appearance controls, static surroundings, interaction, migration and resource lifecycle. Visual similarity to reference is reviewed separately.",
+  "sourceSnapshot": {
+    "src/parameters.js": "2d11c3e128361a2cc41608bd7c910de8d87ff11a9f69caf4487787ad85a5d7f1",
+    "src/ParameterPanel.jsx": "402c126d78d2c7f8229b54ac415b54c0418fd0b4e917d7f1ef8eff67166b4d04",
+    "src/rendering/StampMaterial.js": "741374545803db3050230923acabb59d53ed28c4e0598c02113f8e292bf6cd6e",
+    "src/rendering/StampGallery.js": "239ddf46c0b103d1ea1a79ddf0e43b3696ec6be9457c0c0e24ad7f69717af360",
+    "src/rendering/DappledLight.js": "c1316b92413a941f408e0f900040ec45eee4dd1d88a30ae84aa07a4d0e5f8ab9",
+    "src/rendering/dappledShaders.js": "680b10b983864b3d24e20e88ddba66b3f505181c025225d24e26eeb57f2671b3",
+    "src/rendering/ncsLighting.js": "d8f4162e59e254dc7217382d9e5a29dcb1a4b569191b0509eb567ad9c735cab6",
+    "src/rendering/SurfaceTexture.js": "19188bc2efc1f141f0e285e4d26c8c4e979113bafa7a6208d5e68b73b86a1503"
+  },
+  "checks": [
+    {
+      "name": "fresh session has one default enabled light, no preset or model switches",
+      "result": "passed",
+      "details": {
+        "fields": 51,
+        "oneCanvas": true,
+        "noModeSelector": true,
+        "lightEnabled": true,
+        "idle": {
+          "raf": 3,
+          "fieldUpdates": 0,
+          "time": 3
+        }
+      }
+    },
+    {
+      "name": "default light flows on the stamp while the surrounding background remains static",
+      "result": "passed",
+      "details": {
+        "pixels": {
+          "region": "inside",
+          "samples": 4225,
+          "meanRGBDelta": 1.1906114398422067,
+          "p95": 5,
+          "maximum": 15.000000000000002,
+          "changedFraction": 0.6719526627218935
+        },
+        "staticBackgroundSHA256": "574e9a242e29b0c4bcd9a2a47c933418d292671869bdf25de7a07f186874a1d6",
+        "before": {
+          "active": true,
+          "time": 4.011079999999992,
+          "fieldUpdates": 33,
+          "pointer": [
+            0.6264846333667459,
+            0.6692080286420924
+          ],
+          "target": [
+            0.6278416323108306,
+            0.6710315663089375
+          ],
+          "aspect": 0.786,
+          "width": 384,
+          "height": 480,
+          "texture": "de68fa3a-6d85-41db-a2e3-0a574ac72843",
+          "enabled": true,
+          "animate": true,
+          "followPointer": true,
+          "sizeNorm": 2.204724409448819,
+          "density": 12.110357142857142,
+          "parameters": {
+            "enabled": true,
+            "intensity": 1,
+            "speed": 0.35,
+            "color": "#4e5c3c",
+            "light": "#ffd198",
+            "background": "#fbf7f1",
+            "focusColor": "#22201c",
+            "softness": 1.35,
+            "coverage": 0.708,
+            "animate": true,
+            "density": 26.7,
+            "scale": 1,
+            "angle": 44,
+            "stretch": 0.84,
+            "scatter": 1,
+            "wave": 0.118,
+            "grain": 0.65,
+            "contrast": 0.26,
+            "study": 0,
+            "followPointer": true,
+            "responseTime": 0.16,
+            "pointerInfluence": 0.85,
+            "stampRatio": 0.786
+          }
+        },
+        "after": {
+          "active": true,
+          "time": 4.827769999999978,
+          "fieldUpdates": 59,
+          "pointer": [
+            0.6278416323108306,
+            0.6710315663089375
+          ],
+          "target": [
+            0.6278416323108306,
+            0.6710315663089375
+          ],
+          "aspect": 0.786,
+          "width": 384,
+          "height": 480,
+          "texture": "de68fa3a-6d85-41db-a2e3-0a574ac72843",
+          "enabled": true,
+          "animate": true,
+          "followPointer": true,
+          "sizeNorm": 2.204724409448819,
+          "density": 12.110357142857142,
+          "parameters": {
+            "enabled": true,
+            "intensity": 1,
+            "speed": 0.35,
+            "color": "#4e5c3c",
+            "light": "#ffd198",
+            "background": "#fbf7f1",
+            "focusColor": "#22201c",
+            "softness": 1.35,
+            "coverage": 0.708,
+            "animate": true,
+            "density": 26.7,
+            "scale": 1,
+            "angle": 44,
+            "stretch": 0.84,
+            "scatter": 1,
+            "wave": 0.118,
+            "grain": 0.65,
+            "contrast": 0.26,
+            "study": 0,
+            "followPointer": true,
+            "responseTime": 0.16,
+            "pointerInfluence": 0.85,
+            "stampRatio": 0.786
+          }
+        }
+      }
+    },
+    {
+      "name": "the default illumination produces warm highlights in real stamp pixels",
+      "result": "passed",
+      "details": {
+        "samples": 3969,
+        "highlightSamples": 2282,
+        "highlightFraction": 0.5749559082892416,
+        "highlightMeanRedMinusBlueGain": 25.972830850131462,
+        "highlightMeanLuminanceGain": 13.20836196319017,
+        "overallMeanRedMinusBlueGain": 18.884605694129505,
+        "note": "Same geometry and original print; red-versus-blue gain verifies warm illumination, not pixel identity to the reference."
+      }
+    },
+    {
+      "name": "the audited original main light and orange lamp reach the GPU in linear color",
+      "result": "passed",
+      "details": {
+        "uMainColor": {
+          "hex": "#fff4e6",
+          "expectedLinearRGB": [
+            1,
+            0.9046611743911496,
+            0.7912979403326302
+          ],
+          "actual": [
+            [
+              1,
+              0.9046611743890203,
+              0.7912979403281551
+            ]
+          ]
+        },
+        "uLampColor": {
+          "hex": "#ffe0b0",
+          "expectedLinearRGB": [
+            1,
+            0.7454042095403874,
+            0.43415363617474895
+          ],
+          "actual": [
+            [
+              1,
+              0.7454042095350284,
+              0.43415363616478553
+            ]
+          ]
+        },
+        "uMainIntensity": [
+          1.6
+        ],
+        "uLampIntensity": [
+          0.65
+        ],
+        "uLampHeight": [
+          0.45
+        ]
+      }
+    },
+    {
+      "name": "paper size, impression and shine controls alter pixels and active GPU uniforms",
+      "result": "passed",
+      "details": [
+        {
+          "key": "textureScale",
+          "from": 0.4,
+          "to": 3,
+          "pixels": {
+            "region": "inside",
+            "samples": 4225,
+            "meanRGBDelta": 21.147534516765255,
+            "p95": 52.333333333333336,
+            "maximum": 96.33333333333333,
+            "changedFraction": 0.9955029585798817
+          },
+          "uniforms": [
+            3
+          ]
+        },
+        {
+          "key": "surfaceRelief",
+          "from": 0,
+          "to": 1,
+          "pixels": {
+            "region": "inside",
+            "samples": 4225,
+            "meanRGBDelta": 22.378382642998044,
+            "p95": 55.333333333333336,
+            "maximum": 94.66666666666667,
+            "changedFraction": 0.9969230769230769
+          },
+          "uniforms": [
+            1
+          ]
+        },
+        {
+          "key": "surfaceShine",
+          "from": 0,
+          "to": 1,
+          "pixels": {
+            "region": "inside",
+            "samples": 4225,
+            "meanRGBDelta": 1.7921104536489132,
+            "p95": 7.666666666666666,
+            "maximum": 46.666666666666664,
+            "changedFraction": 0.7815384615384615
+          },
+          "uniforms": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "light pattern enlargement controls actual pixels and inverse optical density",
+      "result": "passed",
+      "details": {
+        "fromScale": 0.5,
+        "toScale": 2,
+        "densityA": 24.220714285714283,
+        "densityB": 6.055178571428571,
+        "sizeNormA": 2.204724409448819,
+        "sizeNormB": 2.204724409448819,
+        "pixels": {
+          "region": "inside",
+          "samples": 4225,
+          "meanRGBDelta": 6.696962524654836,
+          "p95": 21.666666666666668,
+          "maximum": 25.999999999999996,
+          "changedFraction": 0.9228402366863905
+        },
+        "sourceRule": "26.7 / (scale * sizeNorm); a larger scale enlarges the optical pattern without changing print UVs."
+      }
+    },
+    {
+      "name": "warm light, dark tint, depth, intensity and defocus controls change rendered illumination",
+      "result": "passed",
+      "details": [
+        {
+          "key": "lightColor",
+          "from": "#ffe4aa",
+          "to": "#b7d1ef",
+          "pixels": {
+            "region": "inside",
+            "samples": 4225,
+            "meanRGBDelta": 4.857988165680492,
+            "p95": 10,
+            "maximum": 13,
+            "changedFraction": 0.8033136094674557
+          },
+          "uniforms": [
+            [
+              0.7176470588235294,
+              0.8196078431372549,
+              0.9372549019607843
+            ]
+          ]
+        },
+        {
+          "key": "shadowColor",
+          "from": "#4f5a43",
+          "to": "#975040",
+          "pixels": {
+            "region": "inside",
+            "samples": 4225,
+            "meanRGBDelta": 1.1965285996055055,
+            "p95": 4,
+            "maximum": 5,
+            "changedFraction": 0.44828402366863906
+          },
+          "uniforms": [
+            [
+              0.592156862745098,
+              0.3137254901960784,
+              0.25098039215686274
+            ]
+          ]
+        },
+        {
+          "key": "shadowStrength",
+          "from": 0,
+          "to": 0.8,
+          "pixels": {
+            "region": "inside",
+            "samples": 4225,
+            "meanRGBDelta": 11.92765285996054,
+            "p95": 29.666666666666664,
+            "maximum": 34.666666666666664,
+            "changedFraction": 0.9188165680473372
+          },
+          "uniforms": [
+            0.8
+          ]
+        },
+        {
+          "key": "lightIntensity",
+          "from": 0,
+          "to": 1.4,
+          "pixels": {
+            "region": "inside",
+            "samples": 4225,
+            "meanRGBDelta": 15.712978303747544,
+            "p95": 30.666666666666668,
+            "maximum": 65,
+            "changedFraction": 1
+          },
+          "uniforms": [
+            1.4
+          ]
+        },
+        {
+          "key": "lightSoftness",
+          "from": 0,
+          "to": 3,
+          "pixels": {
+            "region": "inside",
+            "samples": 4225,
+            "meanRGBDelta": 2.0250887573964467,
+            "p95": 10.666666666666666,
+            "maximum": 17,
+            "changedFraction": 0.7472189349112426
+          },
+          "uniforms": [
+            1.4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "name": "surrounding shadow color, depth and softness change actual shadow pixels",
+      "result": "passed",
+      "details": [
+        {
+          "key": "contactShadowColor",
+          "from": "#3a4a37",
+          "to": "#874f45",
+          "pixels": {
+            "region": "outside",
+            "samples": 6840,
+            "meanRGBDelta": 1.5675925925925942,
+            "p95": 9.333333333333334,
+            "maximum": 20,
+            "changedFraction": 0.4448830409356725
+          },
+          "uniforms": [
+            [
+              0.5294117647058824,
+              0.30980392156862746,
+              0.27058823529411763
+            ]
+          ]
+        },
+        {
+          "key": "contactShadowOpacity",
+          "from": 0,
+          "to": 0.9,
+          "pixels": {
+            "region": "outside",
+            "samples": 6840,
+            "meanRGBDelta": 6.94800194931771,
+            "p95": 42,
+            "maximum": 89.33333333333333,
+            "changedFraction": 0.44839181286549706
+          },
+          "uniforms": [
+            0.81,
+            1
+          ]
+        },
+        {
+          "key": "contactShadowSoftness",
+          "from": 0,
+          "to": 3,
+          "pixels": {
+            "region": "outside",
+            "samples": 6840,
+            "meanRGBDelta": 2.299805068226131,
+            "p95": 13,
+            "maximum": 33,
+            "changedFraction": 0.4114035087719298
+          },
+          "uniforms": [
+            3,
+            1.35
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pointer changes the optical texture independently of time; disabled tracking is stable",
+      "result": "passed",
+      "details": {
+        "pixels": {
+          "region": "inside",
+          "samples": 4225,
+          "meanRGBDelta": 21.100512820512805,
+          "p95": 37.666666666666664,
+          "maximum": 62.333333333333336,
+          "changedFraction": 0.9990532544378699
+        },
+        "opticalA": "bd238328",
+        "opticalB": "2410bfff",
+        "frozenTime": 4.921149999999976,
+        "disabledTrackingStatic": true,
+        "zeroInfluenceStatic": true,
+        "rest": {
+          "raf": 2051,
+          "fieldUpdates": 180,
+          "time": 4.921149999999976
+        }
+      }
+    },
+    {
+      "name": "live and initial reduced-motion preferences stop flow, pointer motion and RAF",
+      "result": "passed",
+      "details": {
+        "live": {
+          "raf": 2202,
+          "fieldUpdates": 200,
+          "time": 5.481080000000025
+        },
+        "initial": {
+          "raf": 167,
+          "fieldUpdates": 3,
+          "time": 3
+        },
+        "pixelsStatic": true
+      }
+    },
+    {
+      "name": "old saved modes upgrade to the enabled light; new edits, off state, export and import persist",
+      "result": "passed",
+      "details": {
+        "oldRevisionUpgraded": true,
+        "oldGalleryValuePreserved": 12,
+        "v1Upgrade": true,
+        "newOffStateSurvivedReload": true,
+        "exportedAppearanceRevision": 4,
+        "importedTextureScale": 2.3
+      }
+    },
+    {
+      "name": "mobile touch moves stamp-local illumination and keeps controls usable",
+      "result": "passed",
+      "details": {
+        "opticalA": "2199b50a",
+        "opticalB": "cdb0b778",
+        "pixels": {
+          "region": "inside",
+          "samples": 4225,
+          "meanRGBDelta": 16.07589743589745,
+          "p95": 33,
+          "maximum": 52.66666666666667,
+          "changedFraction": 0.9985798816568048
+        },
+        "actualTouchUV": [
+          0.666857184278182,
+          0.666865223314348
+        ],
+        "panelEditKeptFocus": true
+      }
+    },
+    {
+      "name": "six-stamp cycles and lighting edits reuse GPU assets; dispose releases owned textures",
+      "result": "passed",
+      "details": {
+        "cycles": 6,
+        "before": {
+          "programs": 5,
+          "geometries": 2,
+          "textures": 20
+        },
+        "after": {
+          "programs": 5,
+          "geometries": 2,
+          "textures": 20
+        },
+        "stableTextureAllocations": 24,
+        "disposedTextureCount": 0,
+        "deletedTextures": 20
+      }
+    },
+    {
+      "name": "current source stayed unchanged throughout verification and browser remained clean",
+      "result": "passed",
+      "details": {
+        "errors": 0,
+        "warnings": 0,
+        "sourceStable": true
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "finalSourceSnapshot": {
+    "src/parameters.js": "2d11c3e128361a2cc41608bd7c910de8d87ff11a9f69caf4487787ad85a5d7f1",
+    "src/ParameterPanel.jsx": "402c126d78d2c7f8229b54ac415b54c0418fd0b4e917d7f1ef8eff67166b4d04",
+    "src/rendering/StampMaterial.js": "741374545803db3050230923acabb59d53ed28c4e0598c02113f8e292bf6cd6e",
+    "src/rendering/StampGallery.js": "239ddf46c0b103d1ea1a79ddf0e43b3696ec6be9457c0c0e24ad7f69717af360",
+    "src/rendering/DappledLight.js": "c1316b92413a941f408e0f900040ec45eee4dd1d88a30ae84aa07a4d0e5f8ab9",
+    "src/rendering/dappledShaders.js": "680b10b983864b3d24e20e88ddba66b3f505181c025225d24e26eeb57f2671b3",
+    "src/rendering/ncsLighting.js": "d8f4162e59e254dc7217382d9e5a29dcb1a4b569191b0509eb567ad9c735cab6",
+    "src/rendering/SurfaceTexture.js": "19188bc2efc1f141f0e285e4d26c8c4e979113bafa7a6208d5e68b73b86a1503"
+  },
+  "finishedAt": "2026-10-26T09:32:38.448Z",
+  "result": "passed"
+}

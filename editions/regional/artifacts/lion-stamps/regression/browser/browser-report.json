@@ -1,0 +1,6796 @@
+{
+  "baseURL": "http://127.0.0.1:4173/",
+  "startedAt": "2026-10-26T10:07:39.356Z",
+  "browser": "Installed Chrome, headless, real WebGL",
+  "checks": [
+    {
+      "name": "desktop: initial, hover, midpoint, focus and return screenshots",
+      "result": "passed",
+      "elapsedMs": 2819,
+      "details": {
+        "canvasCount": 1,
+        "midpoint": 0.42596364380085383,
+        "label": "醒狮八态 · 喜",
+        "backgroundExit": true
+      }
+    },
+    {
+      "name": "desktop: all eight stamps select through exposed pointer targets",
+      "result": "passed",
+      "elapsedMs": 10239,
+      "details": [
+        {
+          "id": "joy",
+          "point": {
+            "x": 705.6001892089844,
+            "y": 350.9952697753906,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "anger",
+          "point": {
+            "x": 525.5981140136719,
+            "y": 539.9973449707031,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "sorrow",
+          "point": {
+            "x": 766.0753479003906,
+            "y": 647.99951171875,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "delight",
+          "point": {
+            "x": 964.7954711914062,
+            "y": 296.9944305419922,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "motion",
+          "point": {
+            "x": 1022.4009399414062,
+            "y": 557.995361328125,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "stillness",
+          "point": {
+            "x": 1223.9935913085938,
+            "y": 422.9951477050781,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "surprise",
+          "point": {
+            "x": 1252.7938232421875,
+            "y": 674.9992370605469,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "doubt",
+          "point": {
+            "x": 489.5937805175781,
+            "y": 297.0007553100586,
+            "clearance": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "desktop: keyboard names, Enter, focus trap and Escape restoration",
+      "result": "passed",
+      "elapsedMs": 1674,
+      "details": {
+        "reachable": [
+          {
+            "id": "joy",
+            "name": "View 醒狮八态 · 喜, stamp 01 of 8"
+          },
+          {
+            "id": "anger",
+            "name": "View 醒狮八态 · 怒, stamp 02 of 8"
+          },
+          {
+            "id": "sorrow",
+            "name": "View 醒狮八态 · 哀, stamp 03 of 8"
+          },
+          {
+            "id": "delight",
+            "name": "View 醒狮八态 · 乐, stamp 04 of 8"
+          },
+          {
+            "id": "motion",
+            "name": "View 醒狮八态 · 动, stamp 05 of 8"
+          },
+          {
+            "id": "stillness",
+            "name": "View 醒狮八态 · 静, stamp 06 of 8"
+          },
+          {
+            "id": "surprise",
+            "name": "View 醒狮八态 · 惊, stamp 07 of 8"
+          },
+          {
+            "id": "doubt",
+            "name": "View 醒狮八态 · 疑, stamp 08 of 8"
+          }
+        ],
+        "otherControls": [],
+        "focusedTabCycle": true,
+        "escapeRestoresTrigger": true
+      }
+    },
+    {
+      "name": "desktop: Escape reverses an unfinished transition continuously",
+      "result": "passed",
+      "elapsedMs": 221,
+      "details": {
+        "before": 0.10440105917646025,
+        "after": 0.07718284659707192,
+        "final": 0
+      }
+    },
+    {
+      "name": "desktop: choosing another stamp while returning queues a new focus",
+      "result": "passed",
+      "elapsedMs": 1606,
+      "details": {
+        "selected": "delight"
+      }
+    },
+    {
+      "name": "desktop: ten repeated cycles preserve texture/material UUIDs and GPU counts",
+      "result": "passed",
+      "elapsedMs": 12089,
+      "details": {
+        "cycles": 10,
+        "renderer": {
+          "programs": 5,
+          "geometries": 2,
+          "textures": 26
+        },
+        "materialsStable": true,
+        "texturesStable": true
+      }
+    },
+    {
+      "name": "resize: focused stamp keeps intended center across desktop and mobile",
+      "result": "passed",
+      "elapsedMs": 2449,
+      "details": {
+        "centers": [
+          {
+            "size": {
+              "width": 1024,
+              "height": 768
+            },
+            "center": {
+              "x": 490.49505615234375,
+              "y": 383.9968795776367
+            },
+            "expectedX": 490.496,
+            "expectedY": 384
+          },
+          {
+            "size": {
+              "width": 390,
+              "height": 844
+            },
+            "center": {
+              "x": 194.9984245300293,
+              "y": 422
+            },
+            "expectedX": 195,
+            "expectedY": 422
+          },
+          {
+            "size": {
+              "width": 1440,
+              "height": 900
+            },
+            "center": {
+              "x": 689.7584228515625,
+              "y": 449.9999694824219
+            },
+            "expectedX": 689.76,
+            "expectedY": 450
+          }
+        ],
+        "note": "Neutral pose: desktop follows video at 47.9% viewport width; mobile uses 50%. Tilt corners verified separately."
+      }
+    },
+    {
+      "name": "mobile: initial, synthetic hover, touch midpoint, focus and return screenshots",
+      "result": "passed",
+      "elapsedMs": 1933,
+      "details": {
+        "genuineTouchEntryAndBackgroundExit": true,
+        "overflow": {
+          "innerWidth": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        }
+      }
+    },
+    {
+      "name": "mobile: all eight stamps are reachable with real touch",
+      "result": "passed",
+      "elapsedMs": 8919,
+      "details": [
+        {
+          "id": "joy",
+          "point": {
+            "x": 194.9984588623047,
+            "y": 274.2997817993164,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "anger",
+          "point": {
+            "x": 70.19844913482666,
+            "y": 464.20025634765625,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "sorrow",
+          "point": {
+            "x": 132.59844589233398,
+            "y": 658.3202514648438,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "delight",
+          "point": {
+            "x": 319.7953643798828,
+            "y": 295.4007339477539,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "motion",
+          "point": {
+            "x": 194.99388885498047,
+            "y": 472.63868713378906,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "stillness",
+          "point": {
+            "x": 70.19535446166992,
+            "y": 278.5206527709961,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "surprise",
+          "point": {
+            "x": 319.79541015625,
+            "y": 481.0809631347656,
+            "clearance": 24
+          }
+        },
+        {
+          "id": "doubt",
+          "point": {
+            "x": 261.2984619140625,
+            "y": 658.3197021484375,
+            "clearance": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "lifecycle: explicit dispose is idempotent and releases uploaded GPU assets",
+      "result": "passed",
+      "elapsedMs": 868,
+      "details": {
+        "before": {
+          "phase": "idle",
+          "selected": null,
+          "hovered": null,
+          "progress": 0,
+          "reducedMotion": false,
+          "lightStates": [
+            {
+              "id": "joy",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "anger",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "sorrow",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "delight",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "motion",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "stillness",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "surprise",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "doubt",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            }
+          ],
+          "poses": [
+            {
+              "id": "joy",
+              "rotation": [
+                0,
+                0,
+                -0.17453292519943295,
+                "ZXY"
+              ],
+              "center": [
+                -14.399999999999977,
+                99,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  586.1823979944743,
+                  456.05943999113003
+                ],
+                [
+                  629.3166053269398,
+                  211.43319414289755
+                ],
+                [
+                  781.8833946730603,
+                  490.5668058571024
+                ],
+                [
+                  825.0176020055258,
+                  245.94056000886997
+                ]
+              ]
+            },
+            {
+              "id": "anger",
+              "rotation": [
+                0,
+                0,
+                0.3141592653589793,
+                "ZXY"
+              ],
+              "center": [
+                -194.39999999999998,
+                -90,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  471.9228076230524,
+                  682.3544892812592
+                ],
+                [
+                  398.5003697595648,
+                  456.3834610095308
+                ],
+                [
+                  652.6996302404351,
+                  623.6165389904692
+                ],
+                [
+                  579.2771923769476,
+                  397.64551071874075
+                ]
+              ]
+            },
+            {
+              "id": "sorrow",
+              "rotation": [
+                0,
+                0,
+                -0.10471975511965978,
+                "ZXY"
+              ],
+              "center": [
+                46.08000000000004,
+                -198,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  656.712263483184,
+                  758.6742436576293
+                ],
+                [
+                  682.1126800572238,
+                  517.0054230831388
+                ],
+                [
+                  850.0473199427763,
+                  778.9945769168611
+                ],
+                [
+                  875.4477365168161,
+                  537.3257563423707
+                ]
+              ]
+            },
+            {
+              "id": "delight",
+              "rotation": [
+                0,
+                0,
+                0.17453292519943295,
+                "ZXY"
+              ],
+              "center": [
+                244.80000000000007,
+                153,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  890.727718216014,
+                  432.52139119457775
+                ],
+                [
+                  848.8437777627504,
+                  194.98576116803315
+                ],
+                [
+                  1080.7562222372496,
+                  399.01423883196685
+                ],
+                [
+                  1038.8722817839862,
+                  161.47860880542228
+                ]
+              ]
+            },
+            {
+              "id": "motion",
+              "rotation": [
+                0,
+                0,
+                -0.33161255787892263,
+                "ZXY"
+              ],
+              "center": [
+                302.4,
+                -108,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  888.017709544873,
+                  643.084955262572
+                ],
+                [
+                  968.8888391120307,
+                  408.2181410837017
+                ],
+                [
+                  1075.9111608879693,
+                  707.7818589162982
+                ],
+                [
+                  1156.782290455127,
+                  472.9150447374279
+                ]
+              ]
+            },
+            {
+              "id": "stillness",
+              "rotation": [
+                0,
+                0,
+                0.24434609527920614,
+                "ZXY"
+              ],
+              "center": [
+                504,
+                27,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  1161.9660650226067,
+                  558.1210394839403
+                ],
+                [
+                  1105.791800864364,
+                  332.81837184265396
+                ],
+                [
+                  1342.2081991356358,
+                  513.181628157346
+                ],
+                [
+                  1286.033934977393,
+                  287.87896051605975
+                ]
+              ]
+            },
+            {
+              "id": "surprise",
+              "rotation": [
+                0,
+                0,
+                -0.12217304763960307,
+                "ZXY"
+              ],
+              "center": [
+                532.8,
+                -225,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  1145.6389670279698,
+                  779.7209291993129
+                ],
+                [
+                  1174.1563933847744,
+                  547.4651297152435
+                ],
+                [
+                  1331.4436066152255,
+                  802.5348702847564
+                ],
+                [
+                  1359.96103297203,
+                  570.2790708006871
+                ]
+              ]
+            },
+            {
+              "id": "doubt",
+              "rotation": [
+                0,
+                0,
+                0.12217304763960307,
+                "ZXY"
+              ],
+              "center": [
+                -230.39999999999998,
+                153,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  410.9563933847745,
+                  424.5348702847565
+                ],
+                [
+                  382.43896702797,
+                  192.27907080068718
+                ],
+                [
+                  596.76103297203,
+                  401.7209291993128
+                ],
+                [
+                  568.2436066152255,
+                  169.46512971524353
+                ]
+              ]
+            }
+          ],
+          "parameters": {
+            "tiltEnabled": true,
+            "hoverTilt": 6,
+            "focusTilt": 6,
+            "tiltResponse": 0.085,
+            "hoverPerspective": 1200,
+            "hoverScale": 1.05,
+            "hoverLift": 4,
+            "hoverResponse": 0.085,
+            "blur": 11,
+            "blurResponse": 0.075,
+            "focusTrackOutside": false,
+            "resetTiltOnLeave": false,
+            "perspective": 1400,
+            "focusShift": 0,
+            "focusRoll": 0,
+            "enterDuration": 0.46,
+            "returnDuration": 0.56,
+            "focusHeight": 0.565,
+            "focusWidth": 0.295,
+            "focusX": 0.479,
+            "focusY": 0.5,
+            "backgroundColor": "#fbf7f1",
+            "focusBackground": "#22201c",
+            "lightEnabled": true,
+            "pinLight": false,
+            "lightAnimation": true,
+            "lightFollowPointer": true,
+            "lightIntensity": 1,
+            "lightContrast": 0.26,
+            "shadowStrength": 1,
+            "lightSpeed": 0.35,
+            "pointerInfluence": 0.85,
+            "lightResponse": 0.16,
+            "lightFadeIn": 0.12,
+            "lightFadeOut": 0.16,
+            "lightColor": "#ffd198",
+            "shadowColor": "#4e5c3c",
+            "contactShadowColor": "#635e53",
+            "contactShadowOpacity": 0.44,
+            "contactShadowSoftness": 1.4,
+            "textureScale": 0.9,
+            "surfaceRelief": 0.22,
+            "surfaceShine": 0.45,
+            "lightGrain": 0.65,
+            "lightCoverage": 0.708,
+            "lightScale": 1,
+            "lightAngle": 44,
+            "lightStretch": 0.84,
+            "lightScatter": 1,
+            "lightWarp": 0.118,
+            "lightSoftness": 1.35
+          },
+          "camera": {
+            "type": "PerspectiveCamera",
+            "distance": 1200,
+            "fov": 41.112090439166934
+          },
+          "renderer": {
+            "programs": 3,
+            "geometries": 2,
+            "textures": 24
+          },
+          "materials": [
+            "a23c727e-8291-4036-88cf-5ce6ec9af4f1",
+            "dcbb7748-b16d-49fa-aee8-47b795687755",
+            "8f48e14e-fcf5-449f-a040-cd8898e624ed",
+            "cfc3066b-9adf-4e20-b761-f18cb9706e41",
+            "3f45c7df-f39b-4395-97a5-df55fe5676ba",
+            "fc277db2-ab95-4daf-b0b6-fafef61e1875",
+            "928cf58a-e2dc-4786-8876-31a0b115cd62",
+            "c8c7a513-011c-41dd-8120-8d70e4e4a8b0"
+          ],
+          "textures": [
+            "a99d4fba-d559-4303-b134-72747f6f766d",
+            "9b870537-d968-4343-a78b-dab5f912cae5",
+            "2f5a1024-39e9-4c55-ae18-b779d3601487",
+            "a610444a-d279-4875-a106-efc8f4e32738",
+            "0cea45f2-cfd8-4faf-9563-aaa4bbeb1d4d",
+            "4597a25d-25b2-4974-a78e-8d7398f3e7ed",
+            "5f84a351-ebe2-4869-aa5d-1de7c6d73b1b",
+            "c138b889-98c6-41b4-b44c-6689151df0a1"
+          ],
+          "background": {
+            "active": false,
+            "time": 3,
+            "fieldUpdates": 0,
+            "pointer": [
+              0.5,
+              0.5
+            ],
+            "target": [
+              0.5,
+              0.5
+            ],
+            "aspect": 0.786,
+            "width": 384,
+            "height": 480,
+            "texture": "6a894881-c14a-42b6-8414-8a033d6c0bae",
+            "enabled": true,
+            "animate": true,
+            "followPointer": true,
+            "sizeNorm": 3,
+            "density": 8.9,
+            "parameters": {
+              "enabled": true,
+              "intensity": 1,
+              "speed": 0.35,
+              "color": "#4e5c3c",
+              "light": "#ffd198",
+              "background": "#fbf7f1",
+              "focusColor": "#22201c",
+              "softness": 1.35,
+              "coverage": 0.708,
+              "animate": true,
+              "density": 26.7,
+              "scale": 1,
+              "angle": 44,
+              "stretch": 0.84,
+              "scatter": 1,
+              "wave": 0.118,
+              "grain": 0.65,
+              "contrast": 0.26,
+              "study": 0,
+              "followPointer": true,
+              "responseTime": 0.16,
+              "pointerInfluence": 0.85,
+              "stampRatio": 0.786
+            }
+          }
+        },
+        "after": {
+          "phase": "idle",
+          "selected": null,
+          "hovered": null,
+          "progress": 0,
+          "reducedMotion": false,
+          "lightStates": [
+            {
+              "id": "joy",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "anger",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "sorrow",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "delight",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "motion",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "stillness",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "surprise",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "id": "doubt",
+              "amount": 0,
+              "uv": [
+                0.5,
+                0.5
+              ]
+            }
+          ],
+          "poses": [
+            {
+              "id": "joy",
+              "rotation": [
+                0,
+                0,
+                -0.17453292519943295,
+                "ZXY"
+              ],
+              "center": [
+                -14.399999999999977,
+                99,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  586.1823979944743,
+                  456.05943999113003
+                ],
+                [
+                  629.3166053269398,
+                  211.43319414289755
+                ],
+                [
+                  781.8833946730603,
+                  490.5668058571024
+                ],
+                [
+                  825.0176020055258,
+                  245.94056000886997
+                ]
+              ]
+            },
+            {
+              "id": "anger",
+              "rotation": [
+                0,
+                0,
+                0.3141592653589793,
+                "ZXY"
+              ],
+              "center": [
+                -194.39999999999998,
+                -90,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  471.9228076230524,
+                  682.3544892812592
+                ],
+                [
+                  398.5003697595648,
+                  456.3834610095308
+                ],
+                [
+                  652.6996302404351,
+                  623.6165389904692
+                ],
+                [
+                  579.2771923769476,
+                  397.64551071874075
+                ]
+              ]
+            },
+            {
+              "id": "sorrow",
+              "rotation": [
+                0,
+                0,
+                -0.10471975511965978,
+                "ZXY"
+              ],
+              "center": [
+                46.08000000000004,
+                -198,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  656.712263483184,
+                  758.6742436576293
+                ],
+                [
+                  682.1126800572238,
+                  517.0054230831388
+                ],
+                [
+                  850.0473199427763,
+                  778.9945769168611
+                ],
+                [
+                  875.4477365168161,
+                  537.3257563423707
+                ]
+              ]
+            },
+            {
+              "id": "delight",
+              "rotation": [
+                0,
+                0,
+                0.17453292519943295,
+                "ZXY"
+              ],
+              "center": [
+                244.80000000000007,
+                153,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  890.727718216014,
+                  432.52139119457775
+                ],
+                [
+                  848.8437777627504,
+                  194.98576116803315
+                ],
+                [
+                  1080.7562222372496,
+                  399.01423883196685
+                ],
+                [
+                  1038.8722817839862,
+                  161.47860880542228
+                ]
+              ]
+            },
+            {
+              "id": "motion",
+              "rotation": [
+                0,
+                0,
+                -0.33161255787892263,
+                "ZXY"
+              ],
+              "center": [
+                302.4,
+                -108,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  888.017709544873,
+                  643.084955262572
+                ],
+                [
+                  968.8888391120307,
+                  408.2181410837017
+                ],
+                [
+                  1075.9111608879693,
+                  707.7818589162982
+                ],
+                [
+                  1156.782290455127,
+                  472.9150447374279
+                ]
+              ]
+            },
+            {
+              "id": "stillness",
+              "rotation": [
+                0,
+                0,
+                0.24434609527920614,
+                "ZXY"
+              ],
+              "center": [
+                504,
+                27,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  1161.9660650226067,
+                  558.1210394839403
+                ],
+                [
+                  1105.791800864364,
+                  332.81837184265396
+                ],
+                [
+                  1342.2081991356358,
+                  513.181628157346
+                ],
+                [
+                  1286.033934977393,
+                  287.87896051605975
+                ]
+              ]
+            },
+            {
+              "id": "surprise",
+              "rotation": [
+                0,
+                0,
+                -0.12217304763960307,
+                "ZXY"
+              ],
+              "center": [
+                532.8,
+                -225,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  1145.6389670279698,
+                  779.7209291993129
+                ],
+                [
+                  1174.1563933847744,
+                  547.4651297152435
+                ],
+                [
+                  1331.4436066152255,
+                  802.5348702847564
+                ],
+                [
+                  1359.96103297203,
+                  570.2790708006871
+                ]
+              ]
+            },
+            {
+              "id": "doubt",
+              "rotation": [
+                0,
+                0,
+                0.12217304763960307,
+                "ZXY"
+              ],
+              "center": [
+                -230.39999999999998,
+                153,
+                0
+              ],
+              "target": [
+                0,
+                0
+              ],
+              "corners": [
+                [
+                  410.9563933847745,
+                  424.5348702847565
+                ],
+                [
+                  382.43896702797,
+                  192.27907080068718
+                ],
+                [
+                  596.76103297203,
+                  401.7209291993128
+                ],
+                [
+                  568.2436066152255,
+                  169.46512971524353
+                ]
+              ]
+            }
+          ],
+          "parameters": {
+            "tiltEnabled": true,
+            "hoverTilt": 6,
+            "focusTilt": 6,
+            "tiltResponse": 0.085,
+            "hoverPerspective": 1200,
+            "hoverScale": 1.05,
+            "hoverLift": 4,
+            "hoverResponse": 0.085,
+            "blur": 11,
+            "blurResponse": 0.075,
+            "focusTrackOutside": false,
+            "resetTiltOnLeave": false,
+            "perspective": 1400,
+            "focusShift": 0,
+            "focusRoll": 0,
+            "enterDuration": 0.46,
+            "returnDuration": 0.56,
+            "focusHeight": 0.565,
+            "focusWidth": 0.295,
+            "focusX": 0.479,
+            "focusY": 0.5,
+            "backgroundColor": "#fbf7f1",
+            "focusBackground": "#22201c",
+            "lightEnabled": true,
+            "pinLight": false,
+            "lightAnimation": true,
+            "lightFollowPointer": true,
+            "lightIntensity": 1,
+            "lightContrast": 0.26,
+            "shadowStrength": 1,
+            "lightSpeed": 0.35,
+            "pointerInfluence": 0.85,
+            "lightResponse": 0.16,
+            "lightFadeIn": 0.12,
+            "lightFadeOut": 0.16,
+            "lightColor": "#ffd198",
+            "shadowColor": "#4e5c3c",
+            "contactShadowColor": "#635e53",
+            "contactShadowOpacity": 0.44,
+            "contactShadowSoftness": 1.4,
+            "textureScale": 0.9,
+            "surfaceRelief": 0.22,
+            "surfaceShine": 0.45,
+            "lightGrain": 0.65,
+            "lightCoverage": 0.708,
+            "lightScale": 1,
+            "lightAngle": 44,
+            "lightStretch": 0.84,
+            "lightScatter": 1,
+            "lightWarp": 0.118,
+            "lightSoftness": 1.35
+          },
+          "camera": {
+            "type": "PerspectiveCamera",
+            "distance": 1200,
+            "fov": 41.112090439166934
+          },
+          "renderer": {
+            "programs": 0,
+            "geometries": 0,
+            "textures": 0
+          },
+          "materials": [
+            "a23c727e-8291-4036-88cf-5ce6ec9af4f1",
+            "dcbb7748-b16d-49fa-aee8-47b795687755",
+            "8f48e14e-fcf5-449f-a040-cd8898e624ed",
+            "cfc3066b-9adf-4e20-b761-f18cb9706e41",
+            "3f45c7df-f39b-4395-97a5-df55fe5676ba",
+            "fc277db2-ab95-4daf-b0b6-fafef61e1875",
+            "928cf58a-e2dc-4786-8876-31a0b115cd62",
+            "c8c7a513-011c-41dd-8120-8d70e4e4a8b0"
+          ],
+          "textures": [
+            "a99d4fba-d559-4303-b134-72747f6f766d",
+            "9b870537-d968-4343-a78b-dab5f912cae5",
+            "2f5a1024-39e9-4c55-ae18-b779d3601487",
+            "a610444a-d279-4875-a106-efc8f4e32738",
+            "0cea45f2-cfd8-4faf-9563-aaa4bbeb1d4d",
+            "4597a25d-25b2-4974-a78e-8d7398f3e7ed",
+            "5f84a351-ebe2-4869-aa5d-1de7c6d73b1b",
+            "c138b889-98c6-41b4-b44c-6689151df0a1"
+          ],
+          "background": {
+            "active": false,
+            "time": 3,
+            "fieldUpdates": 0,
+            "pointer": [
+              0.5,
+              0.5
+            ],
+            "target": [
+              0.5,
+              0.5
+            ],
+            "aspect": 0.786,
+            "width": 384,
+            "height": 480,
+            "texture": "6a894881-c14a-42b6-8414-8a033d6c0bae",
+            "enabled": true,
+            "animate": true,
+            "followPointer": true,
+            "sizeNorm": 3,
+            "density": 8.9,
+            "parameters": {
+              "enabled": true,
+              "intensity": 1,
+              "speed": 0.35,
+              "color": "#4e5c3c",
+              "light": "#ffd198",
+              "background": "#fbf7f1",
+              "focusColor": "#22201c",
+              "softness": 1.35,
+              "coverage": 0.708,
+              "animate": true,
+              "density": 26.7,
+              "scale": 1,
+              "angle": 44,
+              "stretch": 0.84,
+              "scatter": 1,
+              "wave": 0.118,
+              "grain": 0.65,
+              "contrast": 0.26,
+              "study": 0,
+              "followPointer": true,
+              "responseTime": 0.16,
+              "pointerInfluence": 0.85,
+              "stampRatio": 0.786
+            }
+          }
+        },
+        "canvasCount": 0,
+        "globalRemoved": true
+      }
+    },
+    {
+      "name": "reduced motion: static renderer, stable pixels and live preference changes",
+      "result": "passed",
+      "elapsedMs": 3109,
+      "details": {
+        "rafCount": 2,
+        "stableScreenshotSHA256": "8593d56b6d14209aff14f2342e0b399fcb9b321336668763591f23e0562edaef",
+        "livePreferenceRestartsAndStops": true
+      }
+    },
+    {
+      "name": "WebGL context loss: renderer cleans up and paper fallback remains interactive",
+      "result": "passed",
+      "elapsedMs": 348,
+      "details": {
+        "realContextLost": true,
+        "canvasRemoved": true,
+        "diagnosticRemoved": true,
+        "interactiveFallback": true
+      }
+    },
+    {
+      "name": "WebGL disabled: DOM paper edition loads, focuses and exits",
+      "result": "passed",
+      "elapsedMs": 1098,
+      "details": {
+        "artworkCount": 8,
+        "canvasCount": 0,
+        "focusAndEscape": true,
+        "expectedConsoleErrors": [
+          "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch",
+          "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  disabled by enterprise policy or commandline switch",
+          "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+        ],
+        "unexpectedPageErrors": []
+      }
+    },
+    {
+      "name": "browser console and page errors",
+      "result": "passed",
+      "elapsedMs": 0,
+      "details": {
+        "consoleErrors": 0,
+        "pageErrors": 0
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "screenshots": [
+    {
+      "file": "desktop-01-initial.png",
+      "note": "",
+      "phase": "idle",
+      "selected": null,
+      "hovered": null,
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0,
+            0,
+            -0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            -14.399999999999977,
+            99,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              586.1823979944743,
+              456.05943999113003
+            ],
+            [
+              629.3166053269398,
+              211.43319414289755
+            ],
+            [
+              781.8833946730603,
+              490.5668058571024
+            ],
+            [
+              825.0176020055258,
+              245.94056000886997
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -194.39999999999998,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              471.9228076230524,
+              682.3544892812592
+            ],
+            [
+              398.5003697595648,
+              456.3834610095308
+            ],
+            [
+              652.6996302404351,
+              623.6165389904692
+            ],
+            [
+              579.2771923769476,
+              397.64551071874075
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            -0.10471975511965978,
+            "ZXY"
+          ],
+          "center": [
+            46.08000000000004,
+            -198,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.712263483184,
+              758.6742436576293
+            ],
+            [
+              682.1126800572238,
+              517.0054230831388
+            ],
+            [
+              850.0473199427763,
+              778.9945769168611
+            ],
+            [
+              875.4477365168161,
+              537.3257563423707
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            244.80000000000007,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              890.727718216014,
+              432.52139119457775
+            ],
+            [
+              848.8437777627504,
+              194.98576116803315
+            ],
+            [
+              1080.7562222372496,
+              399.01423883196685
+            ],
+            [
+              1038.8722817839862,
+              161.47860880542228
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            302.4,
+            -108,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              888.017709544873,
+              643.084955262572
+            ],
+            [
+              968.8888391120307,
+              408.2181410837017
+            ],
+            [
+              1075.9111608879693,
+              707.7818589162982
+            ],
+            [
+              1156.782290455127,
+              472.9150447374279
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            504,
+            27,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1161.9660650226067,
+              558.1210394839403
+            ],
+            [
+              1105.791800864364,
+              332.81837184265396
+            ],
+            [
+              1342.2081991356358,
+              513.181628157346
+            ],
+            [
+              1286.033934977393,
+              287.87896051605975
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            532.8,
+            -225,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1145.6389670279698,
+              779.7209291993129
+            ],
+            [
+              1174.1563933847744,
+              547.4651297152435
+            ],
+            [
+              1331.4436066152255,
+              802.5348702847564
+            ],
+            [
+              1359.96103297203,
+              570.2790708006871
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -230.39999999999998,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              410.9563933847745,
+              424.5348702847565
+            ],
+            [
+              382.43896702797,
+              192.27907080068718
+            ],
+            [
+              596.76103297203,
+              401.7209291993128
+            ],
+            [
+              568.2436066152255,
+              169.46512971524353
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 41.112090439166934
+      },
+      "renderer": {
+        "programs": 3,
+        "geometries": 2,
+        "textures": 24
+      },
+      "materials": [
+        "11fc875f-2ecc-424f-bc5f-84e465dccc6c",
+        "8dfa131c-ded5-4922-b020-1b49f919a4b5",
+        "3218279b-bd30-4d13-8f02-699470ac92df",
+        "5a44643f-7487-4554-9be6-a842ae6a45b0",
+        "b5a8fe34-f89e-44ee-b7a1-7f9262d9f526",
+        "21384d58-7a43-4262-be2e-b03459490c94",
+        "49a1b5b8-a6e9-438b-8197-e2355b2bda76",
+        "2f898893-27d5-4b91-9574-35663e563b70"
+      ],
+      "textures": [
+        "6da052a6-8089-4ff0-b72a-9d105d589d60",
+        "8e027d4a-7d02-43e2-bb1f-b78e356dd86a",
+        "9f33d563-35ec-49be-af4d-f40ac5181df7",
+        "6329f62a-45a0-4e99-9c2a-eb7cc8d35bc2",
+        "ca966bd2-12ed-406c-90b3-9a388a57e750",
+        "fcea94d0-9945-47e5-872f-56912fde027f",
+        "347eb4e3-a691-40da-bd2b-8719b973619a",
+        "886cfcc1-591e-43b2-a3a5-7f3459ab7aae"
+      ],
+      "background": {
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "3998e000-2c3e-4686-ad5f-e09a397b0efb",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-02-hover.png",
+      "note": "",
+      "phase": "hovering",
+      "selected": null,
+      "hovered": "joy",
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0.9926070040647815,
+          "uv": [
+            0.5028210232352419,
+            0.4871975594652054
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0.0031148476739714225,
+            0.0006954320915478027,
+            -0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            -14.399999999999977,
+            103,
+            0
+          ],
+          "target": [
+            0.006640887297274097,
+            0.03013095281583439
+          ],
+          "corners": [
+            [
+              580.250470003849,
+              457.3099834001845
+            ],
+            [
+              625.4645949176726,
+              200.3561043647125
+            ],
+            [
+              785.6714879643849,
+              493.52693041669005
+            ],
+            [
+              831.0192549918708,
+              236.62865727026195
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -194.39999999999998,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              471.9228076230524,
+              682.3544892812592
+            ],
+            [
+              398.5003697595648,
+              456.3834610095308
+            ],
+            [
+              652.6996302404351,
+              623.6165389904692
+            ],
+            [
+              579.2771923769476,
+              397.64551071874075
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            -0.10471975511965978,
+            "ZXY"
+          ],
+          "center": [
+            46.08000000000004,
+            -198,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.712263483184,
+              758.6742436576293
+            ],
+            [
+              682.1126800572238,
+              517.0054230831388
+            ],
+            [
+              850.0473199427763,
+              778.9945769168611
+            ],
+            [
+              875.4477365168161,
+              537.3257563423707
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            244.80000000000007,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              890.727718216014,
+              432.52139119457775
+            ],
+            [
+              848.8437777627504,
+              194.98576116803315
+            ],
+            [
+              1080.7562222372496,
+              399.01423883196685
+            ],
+            [
+              1038.8722817839862,
+              161.47860880542228
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            302.4,
+            -108,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              888.017709544873,
+              643.084955262572
+            ],
+            [
+              968.8888391120307,
+              408.2181410837017
+            ],
+            [
+              1075.9111608879693,
+              707.7818589162982
+            ],
+            [
+              1156.782290455127,
+              472.9150447374279
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            504,
+            27,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1161.9660650226067,
+              558.1210394839403
+            ],
+            [
+              1105.791800864364,
+              332.81837184265396
+            ],
+            [
+              1342.2081991356358,
+              513.181628157346
+            ],
+            [
+              1286.033934977393,
+              287.87896051605975
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            532.8,
+            -225,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1145.6389670279698,
+              779.7209291993129
+            ],
+            [
+              1174.1563933847744,
+              547.4651297152435
+            ],
+            [
+              1331.4436066152255,
+              802.5348702847564
+            ],
+            [
+              1359.96103297203,
+              570.2790708006871
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -230.39999999999998,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              410.9563933847745,
+              424.5348702847565
+            ],
+            [
+              382.43896702797,
+              192.27907080068718
+            ],
+            [
+              596.76103297203,
+              401.7209291993128
+            ],
+            [
+              568.2436066152255,
+              169.46512971524353
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 41.112090439166934
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "11fc875f-2ecc-424f-bc5f-84e465dccc6c",
+        "8dfa131c-ded5-4922-b020-1b49f919a4b5",
+        "3218279b-bd30-4d13-8f02-699470ac92df",
+        "5a44643f-7487-4554-9be6-a842ae6a45b0",
+        "b5a8fe34-f89e-44ee-b7a1-7f9262d9f526",
+        "21384d58-7a43-4262-be2e-b03459490c94",
+        "49a1b5b8-a6e9-438b-8197-e2355b2bda76",
+        "2f898893-27d5-4b91-9574-35663e563b70"
+      ],
+      "textures": [
+        "6da052a6-8089-4ff0-b72a-9d105d589d60",
+        "8e027d4a-7d02-43e2-bb1f-b78e356dd86a",
+        "9f33d563-35ec-49be-af4d-f40ac5181df7",
+        "6329f62a-45a0-4e99-9c2a-eb7cc8d35bc2",
+        "ca966bd2-12ed-406c-90b3-9a388a57e750",
+        "fcea94d0-9945-47e5-872f-56912fde027f",
+        "347eb4e3-a691-40da-bd2b-8719b973619a",
+        "886cfcc1-591e-43b2-a3a5-7f3459ab7aae"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.400539999999993,
+        "fieldUpdates": 13,
+        "pointer": [
+          0.5028152600563798,
+          0.487223751741128
+        ],
+        "target": [
+          0.5028210232352419,
+          0.4871975594652054
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "3998e000-2c3e-4686-ad5f-e09a397b0efb",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-03-mid-transition.png",
+      "note": "RAF held after an actual transition frame for an exact intermediate screenshot; immediately resumed.",
+      "phase": "focusing",
+      "selected": "joy",
+      "hovered": null,
+      "progress": 0.42596364380085383,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0.9977806824839278,
+          "uv": [
+            0.5027764787994948,
+            0.5180947535682263
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            -0.00918244176310412,
+            0.000720818283833173,
+            -0.10018824441826063,
+            "ZXY"
+          ],
+          "center": [
+            -21.14726411780555,
+            59.12574468851204,
+            0
+          ],
+          "target": [
+            0.015876636251136396,
+            -0.24029699519558978
+          ],
+          "corners": [
+            [
+              533.0525392761082,
+              560.0616295891542
+            ],
+            [
+              570.4561672354316,
+              192.59145004913933
+            ],
+            [
+              827.567376659788,
+              589.6482593265885
+            ],
+            [
+              864.1883869751994,
+              222.1609168745478
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -194.39999999999998,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              471.9228076230524,
+              682.3544892812592
+            ],
+            [
+              398.50036975956493,
+              456.3834610095308
+            ],
+            [
+              652.6996302404352,
+              623.6165389904692
+            ],
+            [
+              579.2771923769476,
+              397.64551071874075
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            -0.10471975511965978,
+            "ZXY"
+          ],
+          "center": [
+            46.08000000000004,
+            -198,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.712263483184,
+              758.6742436576293
+            ],
+            [
+              682.1126800572238,
+              517.0054230831388
+            ],
+            [
+              850.0473199427763,
+              778.9945769168611
+            ],
+            [
+              875.4477365168161,
+              537.3257563423707
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            244.80000000000007,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              890.727718216014,
+              432.52139119457775
+            ],
+            [
+              848.8437777627504,
+              194.98576116803315
+            ],
+            [
+              1080.7562222372496,
+              399.01423883196685
+            ],
+            [
+              1038.872281783986,
+              161.47860880542228
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            302.4,
+            -108,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              888.0177095448729,
+              643.084955262572
+            ],
+            [
+              968.8888391120307,
+              408.2181410837017
+            ],
+            [
+              1075.9111608879691,
+              707.7818589162982
+            ],
+            [
+              1156.782290455127,
+              472.9150447374279
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            504,
+            27,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1161.9660650226067,
+              558.1210394839403
+            ],
+            [
+              1105.791800864364,
+              332.81837184265396
+            ],
+            [
+              1342.2081991356358,
+              513.181628157346
+            ],
+            [
+              1286.033934977393,
+              287.87896051605975
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            532.8,
+            -225,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1145.6389670279698,
+              779.7209291993129
+            ],
+            [
+              1174.1563933847744,
+              547.4651297152435
+            ],
+            [
+              1331.4436066152255,
+              802.5348702847564
+            ],
+            [
+              1359.96103297203,
+              570.2790708006871
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -230.39999999999998,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              410.9563933847745,
+              424.5348702847565
+            ],
+            [
+              382.4389670279701,
+              192.27907080068712
+            ],
+            [
+              596.7610329720301,
+              401.7209291993128
+            ],
+            [
+              568.2436066152255,
+              169.46512971524353
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1285.1927287601707,
+        "fov": 38.59459178951712
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "11fc875f-2ecc-424f-bc5f-84e465dccc6c",
+        "8dfa131c-ded5-4922-b020-1b49f919a4b5",
+        "3218279b-bd30-4d13-8f02-699470ac92df",
+        "5a44643f-7487-4554-9be6-a842ae6a45b0",
+        "b5a8fe34-f89e-44ee-b7a1-7f9262d9f526",
+        "21384d58-7a43-4262-be2e-b03459490c94",
+        "49a1b5b8-a6e9-438b-8197-e2355b2bda76",
+        "2f898893-27d5-4b91-9574-35663e563b70"
+      ],
+      "textures": [
+        "6da052a6-8089-4ff0-b72a-9d105d589d60",
+        "8e027d4a-7d02-43e2-bb1f-b78e356dd86a",
+        "9f33d563-35ec-49be-af4d-f40ac5181df7",
+        "6329f62a-45a0-4e99-9c2a-eb7cc8d35bc2",
+        "ca966bd2-12ed-406c-90b3-9a388a57e750",
+        "fcea94d0-9945-47e5-872f-56912fde027f",
+        "347eb4e3-a691-40da-bd2b-8719b973619a",
+        "886cfcc1-591e-43b2-a3a5-7f3459ab7aae"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.501619999999992,
+        "fieldUpdates": 16,
+        "pointer": [
+          0.5027729383055978,
+          0.5181108568494696
+        ],
+        "target": [
+          0.5067250173249832,
+          0.6022047046061584
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "3998e000-2c3e-4686-ad5f-e09a397b0efb",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-04-focus.png",
+      "note": "",
+      "phase": "focused",
+      "selected": "joy",
+      "hovered": null,
+      "progress": 1,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 1,
+          "uv": [
+            0.5291080948300065,
+            0.6588833261720419
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            -0.041940482327724175,
+            0.007956619477648237,
+            0,
+            "ZXY"
+          ],
+          "center": [
+            -30.24000000000001,
+            0,
+            0
+          ],
+          "target": [
+            0.0780137203670416,
+            -0.4053632197947395
+          ],
+          "corners": [
+            [
+              484.2994832366366,
+              706.2053348580503
+            ],
+            [
+              487.86590945034163,
+              197.53651462937654
+            ],
+            [
+              894.2793195898203,
+              705.7462682969143
+            ],
+            [
+              891.6483067704535,
+              198.24914268261938
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -194.39999999999998,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              471.9228076230524,
+              682.3544892812592
+            ],
+            [
+              398.50036975956493,
+              456.3834610095308
+            ],
+            [
+              652.6996302404351,
+              623.6165389904692
+            ],
+            [
+              579.2771923769476,
+              397.64551071874075
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            -0.10471975511965978,
+            "ZXY"
+          ],
+          "center": [
+            46.08000000000004,
+            -198,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.712263483184,
+              758.6742436576293
+            ],
+            [
+              682.1126800572238,
+              517.0054230831388
+            ],
+            [
+              850.0473199427763,
+              778.9945769168611
+            ],
+            [
+              875.4477365168161,
+              537.3257563423707
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            244.80000000000007,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              890.727718216014,
+              432.52139119457775
+            ],
+            [
+              848.8437777627504,
+              194.9857611680332
+            ],
+            [
+              1080.7562222372496,
+              399.01423883196685
+            ],
+            [
+              1038.872281783986,
+              161.47860880542228
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            302.4,
+            -108,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              888.0177095448729,
+              643.0849552625721
+            ],
+            [
+              968.8888391120307,
+              408.2181410837017
+            ],
+            [
+              1075.9111608879691,
+              707.7818589162982
+            ],
+            [
+              1156.782290455127,
+              472.9150447374279
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            504,
+            27,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1161.9660650226067,
+              558.1210394839403
+            ],
+            [
+              1105.791800864364,
+              332.81837184265396
+            ],
+            [
+              1342.2081991356358,
+              513.181628157346
+            ],
+            [
+              1286.033934977393,
+              287.8789605160597
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            532.8,
+            -225,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1145.6389670279698,
+              779.7209291993129
+            ],
+            [
+              1174.1563933847744,
+              547.4651297152435
+            ],
+            [
+              1331.4436066152255,
+              802.5348702847564
+            ],
+            [
+              1359.96103297203,
+              570.2790708006871
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -230.39999999999998,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              410.9563933847745,
+              424.5348702847565
+            ],
+            [
+              382.4389670279701,
+              192.27907080068712
+            ],
+            [
+              596.7610329720301,
+              401.7209291993128
+            ],
+            [
+              568.2436066152255,
+              169.46512971524353
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1400,
+        "fov": 35.63777782904556
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "11fc875f-2ecc-424f-bc5f-84e465dccc6c",
+        "8dfa131c-ded5-4922-b020-1b49f919a4b5",
+        "3218279b-bd30-4d13-8f02-699470ac92df",
+        "5a44643f-7487-4554-9be6-a842ae6a45b0",
+        "b5a8fe34-f89e-44ee-b7a1-7f9262d9f526",
+        "21384d58-7a43-4262-be2e-b03459490c94",
+        "49a1b5b8-a6e9-438b-8197-e2355b2bda76",
+        "2f898893-27d5-4b91-9574-35663e563b70"
+      ],
+      "textures": [
+        "6da052a6-8089-4ff0-b72a-9d105d589d60",
+        "8e027d4a-7d02-43e2-bb1f-b78e356dd86a",
+        "9f33d563-35ec-49be-af4d-f40ac5181df7",
+        "6329f62a-45a0-4e99-9c2a-eb7cc8d35bc2",
+        "ca966bd2-12ed-406c-90b3-9a388a57e750",
+        "fcea94d0-9945-47e5-872f-56912fde027f",
+        "347eb4e3-a691-40da-bd2b-8719b973619a",
+        "886cfcc1-591e-43b2-a3a5-7f3459ab7aae"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.8046499999999903,
+        "fieldUpdates": 25,
+        "pointer": [
+          0.5291078582239576,
+          0.6588844023308638
+        ],
+        "target": [
+          0.5330611061476656,
+          0.6729897466427505
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "3998e000-2c3e-4686-ad5f-e09a397b0efb",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 2.204724409448819,
+        "density": 12.110357142857142,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-05-return.png",
+      "note": "",
+      "phase": "idle",
+      "selected": null,
+      "hovered": null,
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0.002141497346487943,
+          "uv": [
+            0.5022809803553752,
+            0.5119351325805668
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0,
+            0,
+            -0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            -14.399999999999977,
+            99,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              586.1823979944743,
+              456.05943999113003
+            ],
+            [
+              629.3166053269398,
+              211.43319414289755
+            ],
+            [
+              781.8833946730603,
+              490.5668058571024
+            ],
+            [
+              825.0176020055258,
+              245.94056000886997
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -194.39999999999998,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              471.9228076230524,
+              682.3544892812592
+            ],
+            [
+              398.5003697595648,
+              456.3834610095308
+            ],
+            [
+              652.6996302404351,
+              623.6165389904692
+            ],
+            [
+              579.2771923769476,
+              397.64551071874075
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            -0.10471975511965978,
+            "ZXY"
+          ],
+          "center": [
+            46.08000000000004,
+            -198,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.712263483184,
+              758.6742436576293
+            ],
+            [
+              682.1126800572238,
+              517.0054230831388
+            ],
+            [
+              850.0473199427763,
+              778.9945769168611
+            ],
+            [
+              875.4477365168161,
+              537.3257563423707
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            244.80000000000007,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              890.727718216014,
+              432.52139119457775
+            ],
+            [
+              848.8437777627504,
+              194.98576116803315
+            ],
+            [
+              1080.7562222372496,
+              399.01423883196685
+            ],
+            [
+              1038.8722817839862,
+              161.47860880542228
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            302.4,
+            -108,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              888.017709544873,
+              643.084955262572
+            ],
+            [
+              968.8888391120307,
+              408.2181410837017
+            ],
+            [
+              1075.9111608879693,
+              707.7818589162982
+            ],
+            [
+              1156.782290455127,
+              472.9150447374279
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            504,
+            27,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1161.9660650226067,
+              558.1210394839403
+            ],
+            [
+              1105.791800864364,
+              332.81837184265396
+            ],
+            [
+              1342.2081991356358,
+              513.181628157346
+            ],
+            [
+              1286.033934977393,
+              287.87896051605975
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            532.8,
+            -225,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1145.6389670279698,
+              779.7209291993129
+            ],
+            [
+              1174.1563933847744,
+              547.4651297152435
+            ],
+            [
+              1331.4436066152255,
+              802.5348702847564
+            ],
+            [
+              1359.96103297203,
+              570.2790708006871
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -230.39999999999998,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              410.9563933847745,
+              424.5348702847565
+            ],
+            [
+              382.43896702797,
+              192.27907080068718
+            ],
+            [
+              596.76103297203,
+              401.7209291993128
+            ],
+            [
+              568.2436066152255,
+              169.46512971524353
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 41.112090439166934
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "11fc875f-2ecc-424f-bc5f-84e465dccc6c",
+        "8dfa131c-ded5-4922-b020-1b49f919a4b5",
+        "3218279b-bd30-4d13-8f02-699470ac92df",
+        "5a44643f-7487-4554-9be6-a842ae6a45b0",
+        "b5a8fe34-f89e-44ee-b7a1-7f9262d9f526",
+        "21384d58-7a43-4262-be2e-b03459490c94",
+        "49a1b5b8-a6e9-438b-8197-e2355b2bda76",
+        "2f898893-27d5-4b91-9574-35663e563b70"
+      ],
+      "textures": [
+        "6da052a6-8089-4ff0-b72a-9d105d589d60",
+        "8e027d4a-7d02-43e2-bb1f-b78e356dd86a",
+        "9f33d563-35ec-49be-af4d-f40ac5181df7",
+        "6329f62a-45a0-4e99-9c2a-eb7cc8d35bc2",
+        "ca966bd2-12ed-406c-90b3-9a388a57e750",
+        "fcea94d0-9945-47e5-872f-56912fde027f",
+        "347eb4e3-a691-40da-bd2b-8719b973619a",
+        "886cfcc1-591e-43b2-a3a5-7f3459ab7aae"
+      ],
+      "background": {
+        "active": true,
+        "time": 4.496949999999978,
+        "fieldUpdates": 47,
+        "pointer": [
+          0.5330610327637865,
+          0.6729904461283098
+        ],
+        "target": [
+          0.5330610327637865,
+          0.6729904461283098
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "3998e000-2c3e-4686-ad5f-e09a397b0efb",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-01-initial.png",
+      "note": "",
+      "phase": "idle",
+      "selected": null,
+      "hovered": null,
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0,
+            0,
+            -0.13962634015954636,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            147.7,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              133.703056473822,
+              332.14455350850716
+            ],
+            [
+              152.02171588769065,
+              201.80051896039797
+            ],
+            [
+              237.97828411230935,
+              346.7994810396021
+            ],
+            [
+              256.296943526178,
+              216.45544649149284
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            -42.200000000000045,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              29.77809249661209,
+              538.1552367992799
+            ],
+            [
+              6.921651111202378,
+              408.529916309048
+            ],
+            [
+              133.47834888879763,
+              519.8700836909521
+            ],
+            [
+              110.62190750338793,
+              390.24476320072023
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            -62.39999999999998,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              90.89355209812621,
+              731.5585134997857
+            ],
+            [
+              70.30286563720581,
+              601.5540356689507
+            ],
+            [
+              194.89713436279422,
+              715.0859643310495
+            ],
+            [
+              174.30644790187384,
+              585.0814865002144
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            126.60000000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              279.6382353537511,
+              365.9259759627565
+            ],
+            [
+              259.81016690990185,
+              240.7364787923228
+            ],
+            [
+              379.78983309009806,
+              350.0635212076771
+            ],
+            [
+              359.96176464624887,
+              224.87402403724346
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            -50.64000000000004,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              127.40316810162214,
+              528.0465954314326
+            ],
+            [
+              155.78311389824626,
+              394.5294479312681
+            ],
+            [
+              234.21688610175374,
+              550.750552068732
+            ],
+            [
+              262.59683189837784,
+              417.2334045685675
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.13962634015954636,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            143.47999999999996,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              28.813504188146517,
+              348.3343150751724
+            ],
+            [
+              11.17331364145823,
+              222.81783736217827
+            ],
+            [
+              129.22668635854177,
+              334.2221626378218
+            ],
+            [
+              111.5864958118535,
+              208.7056849248277
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            -59.079999999999984,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              283.38432004837153,
+              553.6112269209654
+            ],
+            [
+              257.0315132372205,
+              429.6310185279555
+            ],
+            [
+              382.5684867627794,
+              532.5289814720445
+            ],
+            [
+              356.21567995162843,
+              408.5487730790347
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            -0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            66.30000000000001,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              198.02165111120237,
+              713.9900836909521
+            ],
+            [
+              220.8780924966121,
+              584.3647632007203
+            ],
+            [
+              301.72190750338785,
+              732.2752367992799
+            ],
+            [
+              324.5783488887976,
+              602.649916309048
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 38.750147309498914
+      },
+      "renderer": {
+        "programs": 3,
+        "geometries": 2,
+        "textures": 24
+      },
+      "materials": [
+        "a915acea-38ba-4d63-9779-834eaa497707",
+        "56949997-52d3-458f-95ef-9acd141f861a",
+        "cf9f5918-fdbf-41cf-9308-44eebfec411e",
+        "2fe194a4-4dae-46f8-a082-bfabaa29d3eb",
+        "8bd93ae4-aefe-45fe-9bba-ea60f5a6afcb",
+        "3942bb2c-4657-4a16-a652-170b08ee6a98",
+        "d3ea883d-4e4c-4e50-8325-6809e9396283",
+        "196dbf76-6bb2-4345-8a73-233f10360046"
+      ],
+      "textures": [
+        "90844d21-1dfe-4d36-981d-456d7330e128",
+        "c714a084-feda-4043-9ae6-2d63b115b39e",
+        "c27051b1-2a02-42b1-a8d4-8b8016b9a9a5",
+        "b0abc814-954a-4e71-8f10-6ca3f43815df",
+        "b8e4c76c-a776-4406-81c4-682e25915474",
+        "26be7ae8-3397-4815-a03f-95b1f155a065",
+        "e9f38cc3-0f50-4b8e-8b08-99ad9ef89617",
+        "adcde331-64b5-4541-89e7-80bd9548074e"
+      ],
+      "background": {
+        "active": false,
+        "time": 3,
+        "fieldUpdates": 0,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "6683dd23-6519-4f3d-b274-b0ec3ab59d5c",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-02-hover.png",
+      "note": "Synthetic mouse pointerenter on a touch viewport; real touch is tested separately below.",
+      "phase": "hovering",
+      "selected": null,
+      "hovered": "joy",
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0.9703429543828296,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0,
+            0,
+            -0.13962634015954636,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            151.67213467809012,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              130.6595600358062,
+              331.0444982920393
+            ],
+            [
+              149.88777172859918,
+              194.22866299754602
+            ],
+            [
+              240.11222827140082,
+              346.42706764627366
+            ],
+            [
+              259.3404399641938,
+              209.61123235178047
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            -42.200000000000045,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              29.77809249661209,
+              538.1552367992799
+            ],
+            [
+              6.921651111202378,
+              408.529916309048
+            ],
+            [
+              133.47834888879763,
+              519.8700836909521
+            ],
+            [
+              110.62190750338793,
+              390.24476320072023
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            -62.39999999999998,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              90.89355209812621,
+              731.5585134997857
+            ],
+            [
+              70.30286563720581,
+              601.5540356689507
+            ],
+            [
+              194.89713436279422,
+              715.0859643310495
+            ],
+            [
+              174.30644790187384,
+              585.0814865002144
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            126.60000000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              279.6382353537511,
+              365.9259759627565
+            ],
+            [
+              259.81016690990185,
+              240.7364787923228
+            ],
+            [
+              379.78983309009806,
+              350.0635212076771
+            ],
+            [
+              359.96176464624887,
+              224.87402403724346
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            -50.64000000000004,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              127.40316810162214,
+              528.0465954314326
+            ],
+            [
+              155.78311389824626,
+              394.5294479312681
+            ],
+            [
+              234.21688610175374,
+              550.750552068732
+            ],
+            [
+              262.59683189837784,
+              417.2334045685675
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.13962634015954636,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            143.47999999999996,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              28.813504188146517,
+              348.3343150751724
+            ],
+            [
+              11.17331364145823,
+              222.81783736217827
+            ],
+            [
+              129.22668635854177,
+              334.2221626378218
+            ],
+            [
+              111.5864958118535,
+              208.7056849248277
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            -59.079999999999984,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              283.38432004837153,
+              553.6112269209654
+            ],
+            [
+              257.0315132372205,
+              429.6310185279555
+            ],
+            [
+              382.5684867627794,
+              532.5289814720445
+            ],
+            [
+              356.21567995162843,
+              408.5487730790347
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            -0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            66.30000000000001,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              198.02165111120237,
+              713.9900836909521
+            ],
+            [
+              220.8780924966121,
+              584.3647632007203
+            ],
+            [
+              301.72190750338785,
+              732.2752367992799
+            ],
+            [
+              324.5783488887976,
+              602.649916309048
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 38.750147309498914
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "a915acea-38ba-4d63-9779-834eaa497707",
+        "56949997-52d3-458f-95ef-9acd141f861a",
+        "cf9f5918-fdbf-41cf-9308-44eebfec411e",
+        "2fe194a4-4dae-46f8-a082-bfabaa29d3eb",
+        "8bd93ae4-aefe-45fe-9bba-ea60f5a6afcb",
+        "3942bb2c-4657-4a16-a652-170b08ee6a98",
+        "d3ea883d-4e4c-4e50-8325-6809e9396283",
+        "196dbf76-6bb2-4345-8a73-233f10360046"
+      ],
+      "textures": [
+        "90844d21-1dfe-4d36-981d-456d7330e128",
+        "c714a084-feda-4043-9ae6-2d63b115b39e",
+        "c27051b1-2a02-42b1-a8d4-8b8016b9a9a5",
+        "b0abc814-954a-4e71-8f10-6ca3f43815df",
+        "b8e4c76c-a776-4406-81c4-682e25915474",
+        "26be7ae8-3397-4815-a03f-95b1f155a065",
+        "e9f38cc3-0f50-4b8e-8b08-99ad9ef89617",
+        "adcde331-64b5-4541-89e7-80bd9548074e"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.283849999999994,
+        "fieldUpdates": 10,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "6683dd23-6519-4f3d-b274-b0ec3ab59d5c",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-03-mid-transition.png",
+      "note": "Actual touch entry; RAF held after an intermediate frame for screenshot only.",
+      "phase": "focusing",
+      "selected": "joy",
+      "hovered": null,
+      "progress": 0.4264139861099694,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0.8234304471846343,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0,
+            0,
+            -0.0800877158861677,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            86.53890954738131,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              93.96614509894326,
+              442.8688891823739
+            ],
+            [
+              112.39006694925135,
+              213.31415424261706
+            ],
+            [
+              277.6099330507486,
+              457.6080266626204
+            ],
+            [
+              296.03385490105677,
+              228.0532917228636
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            -42.200000000000045,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              29.778092496612175,
+              538.1552367992798
+            ],
+            [
+              6.921651111202465,
+              408.529916309048
+            ],
+            [
+              133.47834888879763,
+              519.8700836909521
+            ],
+            [
+              110.62190750338794,
+              390.24476320072023
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            -62.39999999999998,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              90.89355209812625,
+              731.5585134997856
+            ],
+            [
+              70.30286563720588,
+              601.5540356689506
+            ],
+            [
+              194.89713436279422,
+              715.0859643310492
+            ],
+            [
+              174.30644790187387,
+              585.0814865002143
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            126.60000000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              279.6382353537511,
+              365.9259759627566
+            ],
+            [
+              259.8101669099018,
+              240.73647879232288
+            ],
+            [
+              379.78983309009794,
+              350.0635212076772
+            ],
+            [
+              359.9617646462487,
+              224.87402403724354
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            -50.64000000000004,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              127.40316810162216,
+              528.0465954314326
+            ],
+            [
+              155.78311389824628,
+              394.5294479312681
+            ],
+            [
+              234.2168861017537,
+              550.750552068732
+            ],
+            [
+              262.59683189837784,
+              417.2334045685675
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.13962634015954636,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            143.47999999999996,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              28.813504188146585,
+              348.3343150751724
+            ],
+            [
+              11.173313641458316,
+              222.81783736217835
+            ],
+            [
+              129.2266863585418,
+              334.2221626378218
+            ],
+            [
+              111.5864958118535,
+              208.70568492482778
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            -59.079999999999984,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              283.3843200483715,
+              553.6112269209652
+            ],
+            [
+              257.03151323722045,
+              429.6310185279554
+            ],
+            [
+              382.56848676277934,
+              532.5289814720445
+            ],
+            [
+              356.2156799516283,
+              408.5487730790347
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            -0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            66.30000000000001,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              198.02165111120237,
+              713.990083690952
+            ],
+            [
+              220.8780924966121,
+              584.3647632007202
+            ],
+            [
+              301.72190750338785,
+              732.2752367992798
+            ],
+            [
+              324.57834888879756,
+              602.649916309048
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1285.2827972219939,
+        "fov": 36.353369094935296
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "a915acea-38ba-4d63-9779-834eaa497707",
+        "56949997-52d3-458f-95ef-9acd141f861a",
+        "cf9f5918-fdbf-41cf-9308-44eebfec411e",
+        "2fe194a4-4dae-46f8-a082-bfabaa29d3eb",
+        "8bd93ae4-aefe-45fe-9bba-ea60f5a6afcb",
+        "3942bb2c-4657-4a16-a652-170b08ee6a98",
+        "d3ea883d-4e4c-4e50-8325-6809e9396283",
+        "196dbf76-6bb2-4345-8a73-233f10360046"
+      ],
+      "textures": [
+        "90844d21-1dfe-4d36-981d-456d7330e128",
+        "c714a084-feda-4043-9ae6-2d63b115b39e",
+        "c27051b1-2a02-42b1-a8d4-8b8016b9a9a5",
+        "b0abc814-954a-4e71-8f10-6ca3f43815df",
+        "b8e4c76c-a776-4406-81c4-682e25915474",
+        "26be7ae8-3397-4815-a03f-95b1f155a065",
+        "e9f38cc3-0f50-4b8e-8b08-99ad9ef89617",
+        "adcde331-64b5-4541-89e7-80bd9548074e"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.3810799999999923,
+        "fieldUpdates": 13,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "6683dd23-6519-4f3d-b274-b0ec3ab59d5c",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-04-focus.png",
+      "note": "",
+      "phase": "focused",
+      "selected": "joy",
+      "hovered": null,
+      "progress": 1,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0.9939782282156304,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0,
+            0,
+            0,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              54.60000000000001,
+              597.5
+            ],
+            [
+              54.60000000000001,
+              246.49999999999997
+            ],
+            [
+              335.4,
+              597.5
+            ],
+            [
+              335.4,
+              246.49999999999997
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            -42.200000000000045,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              29.77809249661211,
+              538.1552367992799
+            ],
+            [
+              6.9216511112024,
+              408.529916309048
+            ],
+            [
+              133.47834888879763,
+              519.8700836909521
+            ],
+            [
+              110.62190750338793,
+              390.24476320072023
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            -62.39999999999998,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              90.89355209812621,
+              731.5585134997857
+            ],
+            [
+              70.30286563720584,
+              601.5540356689507
+            ],
+            [
+              194.89713436279422,
+              715.0859643310495
+            ],
+            [
+              174.30644790187384,
+              585.0814865002144
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            126.60000000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              279.6382353537511,
+              365.9259759627565
+            ],
+            [
+              259.81016690990185,
+              240.7364787923228
+            ],
+            [
+              379.78983309009806,
+              350.0635212076771
+            ],
+            [
+              359.9617646462488,
+              224.87402403724346
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            -50.64000000000004,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              127.40316810162214,
+              528.0465954314326
+            ],
+            [
+              155.78311389824626,
+              394.5294479312681
+            ],
+            [
+              234.21688610175374,
+              550.750552068732
+            ],
+            [
+              262.59683189837784,
+              417.2334045685675
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.13962634015954636,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            143.47999999999996,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              28.813504188146517,
+              348.3343150751724
+            ],
+            [
+              11.173313641458252,
+              222.81783736217832
+            ],
+            [
+              129.22668635854177,
+              334.2221626378218
+            ],
+            [
+              111.5864958118535,
+              208.7056849248277
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            -59.079999999999984,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              283.3843200483715,
+              553.6112269209654
+            ],
+            [
+              257.0315132372205,
+              429.6310185279555
+            ],
+            [
+              382.5684867627794,
+              532.5289814720445
+            ],
+            [
+              356.2156799516284,
+              408.5487730790347
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            -0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            66.30000000000001,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              198.02165111120237,
+              713.9900836909521
+            ],
+            [
+              220.8780924966121,
+              584.3647632007203
+            ],
+            [
+              301.72190750338785,
+              732.2752367992799
+            ],
+            [
+              324.5783488887976,
+              602.649916309048
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1400,
+        "fov": 33.54861488416168
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "a915acea-38ba-4d63-9779-834eaa497707",
+        "56949997-52d3-458f-95ef-9acd141f861a",
+        "cf9f5918-fdbf-41cf-9308-44eebfec411e",
+        "2fe194a4-4dae-46f8-a082-bfabaa29d3eb",
+        "8bd93ae4-aefe-45fe-9bba-ea60f5a6afcb",
+        "3942bb2c-4657-4a16-a652-170b08ee6a98",
+        "d3ea883d-4e4c-4e50-8325-6809e9396283",
+        "196dbf76-6bb2-4345-8a73-233f10360046"
+      ],
+      "textures": [
+        "90844d21-1dfe-4d36-981d-456d7330e128",
+        "c714a084-feda-4043-9ae6-2d63b115b39e",
+        "c27051b1-2a02-42b1-a8d4-8b8016b9a9a5",
+        "b0abc814-954a-4e71-8f10-6ca3f43815df",
+        "b8e4c76c-a776-4406-81c4-682e25915474",
+        "26be7ae8-3397-4815-a03f-95b1f155a065",
+        "e9f38cc3-0f50-4b8e-8b08-99ad9ef89617",
+        "adcde331-64b5-4541-89e7-80bd9548074e"
+      ],
+      "background": {
+        "active": true,
+        "time": 3.664859999999987,
+        "fieldUpdates": 22,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "6683dd23-6519-4f3d-b274-b0ec3ab59d5c",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "mobile-05-return.png",
+      "note": "",
+      "phase": "idle",
+      "selected": null,
+      "hovered": null,
+      "progress": 0,
+      "reducedMotion": false,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0.003344276614564422,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0,
+            0,
+            -0.13962634015954636,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            147.7,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              133.703056473822,
+              332.14455350850716
+            ],
+            [
+              152.02171588769065,
+              201.80051896039797
+            ],
+            [
+              237.97828411230935,
+              346.7994810396021
+            ],
+            [
+              256.296943526178,
+              216.45544649149284
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            -42.200000000000045,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              29.77809249661209,
+              538.1552367992799
+            ],
+            [
+              6.921651111202378,
+              408.529916309048
+            ],
+            [
+              133.47834888879763,
+              519.8700836909521
+            ],
+            [
+              110.62190750338793,
+              390.24476320072023
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            -62.39999999999998,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              90.89355209812621,
+              731.5585134997857
+            ],
+            [
+              70.30286563720581,
+              601.5540356689507
+            ],
+            [
+              194.89713436279422,
+              715.0859643310495
+            ],
+            [
+              174.30644790187384,
+              585.0814865002144
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.15707963267948966,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            126.60000000000002,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              279.6382353537511,
+              365.9259759627565
+            ],
+            [
+              259.81016690990185,
+              240.7364787923228
+            ],
+            [
+              379.78983309009806,
+              350.0635212076771
+            ],
+            [
+              359.96176464624887,
+              224.87402403724346
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            0,
+            -50.64000000000004,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              127.40316810162214,
+              528.0465954314326
+            ],
+            [
+              155.78311389824626,
+              394.5294479312681
+            ],
+            [
+              234.21688610175374,
+              550.750552068732
+            ],
+            [
+              262.59683189837784,
+              417.2334045685675
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.13962634015954636,
+            "ZXY"
+          ],
+          "center": [
+            -124.8,
+            143.47999999999996,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              28.813504188146517,
+              348.3343150751724
+            ],
+            [
+              11.17331364145823,
+              222.81783736217827
+            ],
+            [
+              129.22668635854177,
+              334.2221626378218
+            ],
+            [
+              111.5864958118535,
+              208.7056849248277
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            0.20943951023931956,
+            "ZXY"
+          ],
+          "center": [
+            124.79999999999995,
+            -59.079999999999984,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              283.38432004837153,
+              553.6112269209654
+            ],
+            [
+              257.0315132372205,
+              429.6310185279555
+            ],
+            [
+              382.5684867627794,
+              532.5289814720445
+            ],
+            [
+              356.21567995162843,
+              408.5487730790347
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            -0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            66.30000000000001,
+            -236.32000000000005,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              198.02165111120237,
+              713.9900836909521
+            ],
+            [
+              220.8780924966121,
+              584.3647632007203
+            ],
+            [
+              301.72190750338785,
+              732.2752367992799
+            ],
+            [
+              324.5783488887976,
+              602.649916309048
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1200,
+        "fov": 38.750147309498914
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "a915acea-38ba-4d63-9779-834eaa497707",
+        "56949997-52d3-458f-95ef-9acd141f861a",
+        "cf9f5918-fdbf-41cf-9308-44eebfec411e",
+        "2fe194a4-4dae-46f8-a082-bfabaa29d3eb",
+        "8bd93ae4-aefe-45fe-9bba-ea60f5a6afcb",
+        "3942bb2c-4657-4a16-a652-170b08ee6a98",
+        "d3ea883d-4e4c-4e50-8325-6809e9396283",
+        "196dbf76-6bb2-4345-8a73-233f10360046"
+      ],
+      "textures": [
+        "90844d21-1dfe-4d36-981d-456d7330e128",
+        "c714a084-feda-4043-9ae6-2d63b115b39e",
+        "c27051b1-2a02-42b1-a8d4-8b8016b9a9a5",
+        "b0abc814-954a-4e71-8f10-6ca3f43815df",
+        "b8e4c76c-a776-4406-81c4-682e25915474",
+        "26be7ae8-3397-4815-a03f-95b1f155a065",
+        "e9f38cc3-0f50-4b8e-8b08-99ad9ef89617",
+        "adcde331-64b5-4541-89e7-80bd9548074e"
+      ],
+      "background": {
+        "active": true,
+        "time": 4.310469999999976,
+        "fieldUpdates": 42,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "6683dd23-6519-4f3d-b274-b0ec3ab59d5c",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 3,
+        "density": 8.9,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "reduced-motion-focus.png",
+      "note": "",
+      "phase": "focused",
+      "selected": "joy",
+      "hovered": null,
+      "progress": 1,
+      "reducedMotion": true,
+      "lightStates": [
+        {
+          "id": "joy",
+          "amount": 0.7506477912227035,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "anger",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "sorrow",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "delight",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "motion",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "stillness",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "surprise",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "doubt",
+          "amount": 0,
+          "uv": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "poses": [
+        {
+          "id": "joy",
+          "rotation": [
+            0,
+            0,
+            0,
+            "ZXY"
+          ],
+          "center": [
+            -30.24000000000001,
+            0,
+            0
+          ],
+          "target": [
+            0.07787718646294253,
+            -0.3893991355933506
+          ],
+          "corners": [
+            [
+              486.36000000000007,
+              704.25
+            ],
+            [
+              486.36000000000007,
+              195.75000000000009
+            ],
+            [
+              893.16,
+              704.25
+            ],
+            [
+              893.16,
+              195.75000000000009
+            ]
+          ]
+        },
+        {
+          "id": "anger",
+          "rotation": [
+            0,
+            0,
+            0.3141592653589793,
+            "ZXY"
+          ],
+          "center": [
+            -194.39999999999998,
+            -90,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              471.9228076230524,
+              682.3544892812592
+            ],
+            [
+              398.50036975956493,
+              456.3834610095308
+            ],
+            [
+              652.6996302404351,
+              623.6165389904692
+            ],
+            [
+              579.2771923769476,
+              397.64551071874075
+            ]
+          ]
+        },
+        {
+          "id": "sorrow",
+          "rotation": [
+            0,
+            0,
+            -0.10471975511965978,
+            "ZXY"
+          ],
+          "center": [
+            46.08000000000004,
+            -198,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              656.712263483184,
+              758.6742436576293
+            ],
+            [
+              682.1126800572238,
+              517.0054230831388
+            ],
+            [
+              850.0473199427763,
+              778.9945769168611
+            ],
+            [
+              875.4477365168161,
+              537.3257563423707
+            ]
+          ]
+        },
+        {
+          "id": "delight",
+          "rotation": [
+            0,
+            0,
+            0.17453292519943295,
+            "ZXY"
+          ],
+          "center": [
+            244.80000000000007,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              890.727718216014,
+              432.52139119457775
+            ],
+            [
+              848.8437777627504,
+              194.9857611680332
+            ],
+            [
+              1080.7562222372496,
+              399.01423883196685
+            ],
+            [
+              1038.872281783986,
+              161.47860880542228
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "rotation": [
+            0,
+            0,
+            -0.33161255787892263,
+            "ZXY"
+          ],
+          "center": [
+            302.4,
+            -108,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              888.0177095448729,
+              643.0849552625721
+            ],
+            [
+              968.8888391120307,
+              408.2181410837017
+            ],
+            [
+              1075.9111608879691,
+              707.7818589162982
+            ],
+            [
+              1156.782290455127,
+              472.9150447374279
+            ]
+          ]
+        },
+        {
+          "id": "stillness",
+          "rotation": [
+            0,
+            0,
+            0.24434609527920614,
+            "ZXY"
+          ],
+          "center": [
+            504,
+            27,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1161.9660650226067,
+              558.1210394839403
+            ],
+            [
+              1105.791800864364,
+              332.81837184265396
+            ],
+            [
+              1342.2081991356358,
+              513.181628157346
+            ],
+            [
+              1286.033934977393,
+              287.8789605160597
+            ]
+          ]
+        },
+        {
+          "id": "surprise",
+          "rotation": [
+            0,
+            0,
+            -0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            532.8,
+            -225,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              1145.6389670279698,
+              779.7209291993129
+            ],
+            [
+              1174.1563933847744,
+              547.4651297152435
+            ],
+            [
+              1331.4436066152255,
+              802.5348702847564
+            ],
+            [
+              1359.96103297203,
+              570.2790708006871
+            ]
+          ]
+        },
+        {
+          "id": "doubt",
+          "rotation": [
+            0,
+            0,
+            0.12217304763960307,
+            "ZXY"
+          ],
+          "center": [
+            -230.39999999999998,
+            153,
+            0
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "corners": [
+            [
+              410.9563933847745,
+              424.5348702847565
+            ],
+            [
+              382.4389670279701,
+              192.27907080068712
+            ],
+            [
+              596.7610329720301,
+              401.7209291993128
+            ],
+            [
+              568.2436066152255,
+              169.46512971524353
+            ]
+          ]
+        }
+      ],
+      "parameters": {
+        "tiltEnabled": true,
+        "hoverTilt": 6,
+        "focusTilt": 6,
+        "tiltResponse": 0.085,
+        "hoverPerspective": 1200,
+        "hoverScale": 1.05,
+        "hoverLift": 4,
+        "hoverResponse": 0.085,
+        "blur": 11,
+        "blurResponse": 0.075,
+        "focusTrackOutside": false,
+        "resetTiltOnLeave": false,
+        "perspective": 1400,
+        "focusShift": 0,
+        "focusRoll": 0,
+        "enterDuration": 0.46,
+        "returnDuration": 0.56,
+        "focusHeight": 0.565,
+        "focusWidth": 0.295,
+        "focusX": 0.479,
+        "focusY": 0.5,
+        "backgroundColor": "#fbf7f1",
+        "focusBackground": "#22201c",
+        "lightEnabled": true,
+        "pinLight": false,
+        "lightAnimation": true,
+        "lightFollowPointer": true,
+        "lightIntensity": 1,
+        "lightContrast": 0.26,
+        "shadowStrength": 1,
+        "lightSpeed": 0.35,
+        "pointerInfluence": 0.85,
+        "lightResponse": 0.16,
+        "lightFadeIn": 0.12,
+        "lightFadeOut": 0.16,
+        "lightColor": "#ffd198",
+        "shadowColor": "#4e5c3c",
+        "contactShadowColor": "#635e53",
+        "contactShadowOpacity": 0.44,
+        "contactShadowSoftness": 1.4,
+        "textureScale": 0.9,
+        "surfaceRelief": 0.22,
+        "surfaceShine": 0.45,
+        "lightGrain": 0.65,
+        "lightCoverage": 0.708,
+        "lightScale": 1,
+        "lightAngle": 44,
+        "lightStretch": 0.84,
+        "lightScatter": 1,
+        "lightWarp": 0.118,
+        "lightSoftness": 1.35
+      },
+      "camera": {
+        "type": "PerspectiveCamera",
+        "distance": 1400,
+        "fov": 35.63777782904556
+      },
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 26
+      },
+      "materials": [
+        "d69044cb-25d0-4047-9515-9eeff21c4b74",
+        "ac107725-64b7-48bb-8a2b-47c801c3ceb9",
+        "e1dfd22e-797f-43eb-992e-d5ad146a8a65",
+        "6c7c1cb3-08fb-44d1-a76a-96645d38440c",
+        "58f8d527-5d1b-4dc8-a491-e2f20a8ba759",
+        "df6a3d39-019a-4eb1-af8c-fbe8dcd9ed33",
+        "8eae269d-0f6d-471d-80e3-a4b8cca77523",
+        "0565eaad-c137-4d5c-97db-1c6491df9ce6"
+      ],
+      "textures": [
+        "c6ca369e-5b30-4441-bb0b-3db8ed36ecc7",
+        "e4d831ae-806b-4000-95d6-60d4b786c493",
+        "315f767c-03c9-417b-bac4-da67983d916b",
+        "a33c384a-5247-4a5b-9a2f-60ff52005dfb",
+        "223aec5e-6d0a-496e-a79e-511e9d300784",
+        "0dade203-ffb2-4098-a2f9-6f1d7317c404",
+        "6c183be3-afb8-4a72-a191-89dcf6b66402",
+        "14d8bfc8-bd23-4170-a8f0-507c0cea712d"
+      ],
+      "background": {
+        "active": true,
+        "time": 3,
+        "fieldUpdates": 3,
+        "pointer": [
+          0.5,
+          0.5
+        ],
+        "target": [
+          0.5,
+          0.5
+        ],
+        "aspect": 0.786,
+        "width": 384,
+        "height": 480,
+        "texture": "6cd72ca9-d02b-4e3b-a150-7559208d3076",
+        "enabled": true,
+        "animate": true,
+        "followPointer": true,
+        "sizeNorm": 2.204724409448819,
+        "density": 12.110357142857142,
+        "parameters": {
+          "enabled": true,
+          "intensity": 1,
+          "speed": 0.35,
+          "color": "#4e5c3c",
+          "light": "#ffd198",
+          "background": "#fbf7f1",
+          "focusColor": "#22201c",
+          "softness": 1.35,
+          "coverage": 0.708,
+          "animate": true,
+          "density": 26.7,
+          "scale": 1,
+          "angle": 44,
+          "stretch": 0.84,
+          "scatter": 1,
+          "wave": 0.118,
+          "grain": 0.65,
+          "contrast": 0.26,
+          "study": 0,
+          "followPointer": true,
+          "responseTime": 0.16,
+          "pointerInfluence": 0.85,
+          "stampRatio": 0.786
+        }
+      }
+    },
+    {
+      "file": "desktop-context-loss-fallback.png",
+      "note": "Real WEBGL_lose_context event, with renderer removed and DOM edition restored."
+    },
+    {
+      "file": "mobile-webgl-disabled-focus.png",
+      "note": "Separate Chrome launched with --disable-webgl; all artwork remains usable as DOM images."
+    }
+  ],
+  "finishedAt": "2026-10-26T10:08:29.643Z",
+  "result": "passed"
+}

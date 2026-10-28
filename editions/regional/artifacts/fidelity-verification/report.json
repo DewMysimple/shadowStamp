@@ -1,0 +1,478 @@
+{
+  "base": "http://127.0.0.1:4173/",
+  "startedAt": "2026-10-26T08:08:49.567Z",
+  "scope": "Current static artwork and stamp-specific surface lighting, not a claim of pixel-identical third-party artwork",
+  "checks": [
+    {
+      "name": "unlit print removes baked coarse contour bands without flattening stamp alpha",
+      "result": "passed",
+      "details": {
+        "before": {
+          "adjacentDifference": 10.895807815021612,
+          "standardDeviation": 15.12709292434226,
+          "centerAlpha": 255,
+          "notchAlpha": 0
+        },
+        "after": {
+          "adjacentDifference": 2.050614872749659,
+          "standardDeviation": 3.340481788337269,
+          "centerAlpha": 255,
+          "notchAlpha": 0
+        }
+      }
+    },
+    {
+      "name": "default surface light changes actual stamp pixels while background remains identical",
+      "result": "passed",
+      "details": {
+        "stampPixelsChanged": true,
+        "backgroundPixelsIdentical": true,
+        "noDappledPasses": true,
+        "visibility": {
+          "samples": 1521,
+          "mean": 9.213070874424677,
+          "p95": 18.9238,
+          "maximum": 26.642999999999997
+        },
+        "state": {
+          "raf": 565,
+          "opticalUpdates": 0,
+          "opticalTime": 3
+        }
+      }
+    },
+    {
+      "name": "NCS paper keeps white margins free of the old broad brown shadow multiply",
+      "result": "passed",
+      "details": {
+        "unlit": [
+          {
+            "uv": [
+              0.04,
+              0.2
+            ],
+            "rgb": [
+              231.96,
+              230.08,
+              217.56
+            ],
+            "luminance": 229.575744,
+            "chroma": 14.400000000000006
+          },
+          {
+            "uv": [
+              0.04,
+              0.4
+            ],
+            "rgb": [
+              232.64,
+              230.68,
+              218.2
+            ],
+            "luminance": 230.19564,
+            "chroma": 14.439999999999998
+          },
+          {
+            "uv": [
+              0.04,
+              0.6
+            ],
+            "rgb": [
+              233.36,
+              231.36,
+              219
+            ],
+            "luminance": 230.892808,
+            "chroma": 14.360000000000014
+          },
+          {
+            "uv": [
+              0.04,
+              0.8
+            ],
+            "rgb": [
+              233.28,
+              231.28,
+              218.88
+            ],
+            "luminance": 230.80991999999998,
+            "chroma": 14.400000000000006
+          },
+          {
+            "uv": [
+              0.96,
+              0.2
+            ],
+            "rgb": [
+              230.2,
+              228.28,
+              216
+            ],
+            "luminance": 227.80157599999998,
+            "chroma": 14.199999999999989
+          },
+          {
+            "uv": [
+              0.96,
+              0.4
+            ],
+            "rgb": [
+              232.28,
+              230.28,
+              218
+            ],
+            "luminance": 229.818584,
+            "chroma": 14.280000000000001
+          },
+          {
+            "uv": [
+              0.96,
+              0.6
+            ],
+            "rgb": [
+              233.24,
+              231.24,
+              218.92
+            ],
+            "luminance": 230.775696,
+            "chroma": 14.320000000000022
+          },
+          {
+            "uv": [
+              0.96,
+              0.8
+            ],
+            "rgb": [
+              225.32,
+              223.32,
+              211.12
+            ],
+            "luminance": 222.86435999999998,
+            "chroma": 14.199999999999989
+          },
+          {
+            "uv": [
+              0.3,
+              0.04
+            ],
+            "rgb": [
+              232.12,
+              230.16,
+              217.72
+            ],
+            "luminance": 229.67852799999997,
+            "chroma": 14.400000000000006
+          },
+          {
+            "uv": [
+              0.7,
+              0.96
+            ],
+            "rgb": [
+              232.96,
+              231,
+              218.92
+            ],
+            "luminance": 230.54452,
+            "chroma": 14.04000000000002
+          }
+        ],
+        "lit": [
+          {
+            "uv": [
+              0.04,
+              0.2
+            ],
+            "rgb": [
+              231.56,
+              229.64,
+              217.08
+            ],
+            "luminance": 229.14136,
+            "chroma": 14.47999999999999
+          },
+          {
+            "uv": [
+              0.04,
+              0.4
+            ],
+            "rgb": [
+              231.6,
+              229.64,
+              217.16
+            ],
+            "luminance": 229.15563999999998,
+            "chroma": 14.439999999999998
+          },
+          {
+            "uv": [
+              0.04,
+              0.6
+            ],
+            "rgb": [
+              230.8,
+              228.84,
+              216.48
+            ],
+            "luminance": 228.36430399999998,
+            "chroma": 14.320000000000022
+          },
+          {
+            "uv": [
+              0.04,
+              0.8
+            ],
+            "rgb": [
+              230.76,
+              229,
+              216.64
+            ],
+            "luminance": 228.481784,
+            "chroma": 14.120000000000005
+          },
+          {
+            "uv": [
+              0.96,
+              0.2
+            ],
+            "rgb": [
+              239.24,
+              236.48,
+              222.88
+            ],
+            "luminance": 236.084856,
+            "chroma": 16.360000000000014
+          },
+          {
+            "uv": [
+              0.96,
+              0.4
+            ],
+            "rgb": [
+              240,
+              237.36,
+              223.6
+            ],
+            "luminance": 236.927792,
+            "chroma": 16.400000000000006
+          },
+          {
+            "uv": [
+              0.96,
+              0.6
+            ],
+            "rgb": [
+              235.68,
+              233.44,
+              220.36
+            ],
+            "luminance": 232.97184799999997,
+            "chroma": 15.319999999999993
+          },
+          {
+            "uv": [
+              0.96,
+              0.8
+            ],
+            "rgb": [
+              225.16,
+              223.08,
+              210.92
+            ],
+            "luminance": 222.644256,
+            "chroma": 14.240000000000009
+          },
+          {
+            "uv": [
+              0.3,
+              0.04
+            ],
+            "rgb": [
+              233.92,
+              231.84,
+              218.88
+            ],
+            "luminance": 231.34649599999997,
+            "chroma": 15.039999999999992
+          },
+          {
+            "uv": [
+              0.7,
+              0.96
+            ],
+            "rgb": [
+              231.92,
+              229.88,
+              217.84
+            ],
+            "luminance": 229.444416,
+            "chroma": 14.079999999999984
+          }
+        ],
+        "largestLuminanceDrop": 2.5285040000000265
+      }
+    },
+    {
+      "name": "surface pointer-follow switch and zero influence really freeze illumination",
+      "result": "passed",
+      "details": {
+        "disabledTrackingPixelsStatic": true,
+        "zeroInfluencePixelsStatic": true,
+        "disabledUV": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "surface roughness and coating change real highlights and GPU uniforms",
+      "result": "passed",
+      "details": {
+        "highlightPixelsChanged": true,
+        "roughnessGPU": 0.95,
+        "coatingGPU": 0
+      }
+    },
+    {
+      "name": "all six stamps retain their print identity under light, with black Kensho ink preserved",
+      "result": "passed",
+      "details": {
+        "measurements": [
+          {
+            "id": "craft",
+            "samples": 3600,
+            "meanLuminanceDelta": 4.797896000000003,
+            "colored": 3600,
+            "chromaIdentity": 1,
+            "blackSamples": 0,
+            "blackMeanDelta": 0,
+            "blackMeanAfter": 0
+          },
+          {
+            "id": "kensho",
+            "samples": 3600,
+            "meanLuminanceDelta": 4.559575944444459,
+            "colored": 0,
+            "chromaIdentity": 1,
+            "blackSamples": 76,
+            "blackMeanDelta": 0.2218894736842103,
+            "blackMeanAfter": 34.61439736842104
+          },
+          {
+            "id": "specimen",
+            "samples": 3600,
+            "meanLuminanceDelta": 4.843489777777766,
+            "colored": 3392,
+            "chromaIdentity": 1,
+            "blackSamples": 0,
+            "blackMeanDelta": 0,
+            "blackMeanAfter": 0
+          },
+          {
+            "id": "mint",
+            "samples": 3600,
+            "meanLuminanceDelta": 4.82045033333331,
+            "colored": 3600,
+            "chromaIdentity": 1,
+            "blackSamples": 0,
+            "blackMeanDelta": 0,
+            "blackMeanAfter": 0
+          },
+          {
+            "id": "gaohan",
+            "samples": 3600,
+            "meanLuminanceDelta": 4.049488333333353,
+            "colored": 0,
+            "chromaIdentity": 1,
+            "blackSamples": 504,
+            "blackMeanDelta": 0.20213095238095213,
+            "blackMeanAfter": 32.25316071428577
+          },
+          {
+            "id": "nocturne",
+            "samples": 3600,
+            "meanLuminanceDelta": 1.0301784444444422,
+            "colored": 0,
+            "chromaIdentity": 1,
+            "blackSamples": 2618,
+            "blackMeanDelta": 0.2249769289533994,
+            "blackMeanAfter": 36.773236592819096
+          }
+        ],
+        "noFinishReplacementControl": true
+      }
+    },
+    {
+      "name": "explicit dappled mode remains live and returning to surface stops optical work",
+      "result": "passed",
+      "details": {
+        "dappledUpdates": 15,
+        "surfaceRest": {
+          "raf": 6318,
+          "opticalUpdates": 34,
+          "opticalTime": 4.053850000000012
+        }
+      }
+    },
+    {
+      "name": "v1 saved custom numbers migrate to the new default surface finish and v2 key",
+      "result": "passed",
+      "details": {
+        "version": 2,
+        "userValuesPreserved": true,
+        "newModelApplied": true,
+        "factoryTripletUpgraded": true,
+        "unrelatedCustomTiltPreserved": 7.5,
+        "appearanceRevision": 2
+      }
+    },
+    {
+      "name": "touch and reduced-motion surface paths remain functional",
+      "result": "passed",
+      "details": {
+        "actualTouchUV": [
+          0.6699195943471569,
+          0.7128024907432271
+        ],
+        "reducedPixelsStatic": true
+      }
+    },
+    {
+      "name": "mode cycles reuse GPU assets and disposal releases normal textures too",
+      "result": "passed",
+      "details": {
+        "materialAndTextureIdentityStable": true,
+        "gpuTexturesBefore": 20,
+        "gpuTexturesAfter": 0,
+        "deletedTextures": 20
+      }
+    },
+    {
+      "name": "console and WebGL compilation remain clean",
+      "result": "passed",
+      "details": {
+        "errors": 0,
+        "warnings": 0,
+        "sourceStable": true
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "sourceSnapshot": {
+    "src/artwork.js": "caa0cbff1c2ae367b1aa9b517704f4b0dccc8b60b162c4c473db3f992a38c5b8",
+    "src/parameters.js": "fc00c6f38ba2915418a78a6dbcc5e2b4cb68182ce9c22297ed725e091d51082e",
+    "src/rendering/StampGallery.js": "0e3681eaf4d4653b54da37c954d1ca0cc0a3562e379ba45b7e9b0c4beaa7de9d",
+    "src/rendering/StampMaterial.js": "c5ca1ba00a5e368bfb601fcce8d954f1b0bd3bf803a41607debbccb601a814e4",
+    "src/rendering/SurfaceTexture.js": "8fda7c3a9e3cc8acf86f3e49d6fc963187c1982713ea20f86650746c7bec2e90"
+  },
+  "finalSourceSnapshot": {
+    "src/artwork.js": "caa0cbff1c2ae367b1aa9b517704f4b0dccc8b60b162c4c473db3f992a38c5b8",
+    "src/parameters.js": "fc00c6f38ba2915418a78a6dbcc5e2b4cb68182ce9c22297ed725e091d51082e",
+    "src/rendering/StampGallery.js": "0e3681eaf4d4653b54da37c954d1ca0cc0a3562e379ba45b7e9b0c4beaa7de9d",
+    "src/rendering/StampMaterial.js": "c5ca1ba00a5e368bfb601fcce8d954f1b0bd3bf803a41607debbccb601a814e4",
+    "src/rendering/SurfaceTexture.js": "8fda7c3a9e3cc8acf86f3e49d6fc963187c1982713ea20f86650746c7bec2e90"
+  },
+  "finishedAt": "2026-10-26T08:09:49.265Z",
+  "result": "passed"
+}

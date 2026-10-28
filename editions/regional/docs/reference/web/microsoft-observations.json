@@ -1,0 +1,245 @@
+{
+  "samples": [
+    {
+      "time": 18693.60000000894,
+      "draws": 6048,
+      "canvas": [
+        {
+          "w": 720,
+          "h": 450,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          "outer": "<canvas role=\"img\" aria-hidden=\"true\" __aria-label=\"A Webgl animation showing bokeh blur shapes on purple gradient background\" class=\"w-full h-full\" width=\"720\" height=\"450\" style=\"transform: translateZ(0px);\">\n        </canvas>",
+          "parent": "<block-gl class=\"block pointer-events-none sticky top-0 left-0 w-full h-100vh overflow-hidden\" pause-on-scroll=\"\">\n        <canvas role=\"img\" aria-hidden=\"true\" __aria-label=\"A Webgl animation showing bokeh blur shapes on purple gradient background\" class=\"w-full h-full\" width=\"720\" height=\"450\" style=\"transform: translateZ(0px);\">\n        </canvas>\n      </block-gl>"
+        }
+      ]
+    },
+    {
+      "time": 23788.79999999702,
+      "draws": 12467,
+      "canvas": [
+        {
+          "w": 720,
+          "h": 450,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          "outer": "<canvas role=\"img\" aria-hidden=\"true\" __aria-label=\"A Webgl animation showing bokeh blur shapes on purple gradient background\" class=\"w-full h-full\" width=\"720\" height=\"450\" style=\"transform: translateZ(0px);\">\n        </canvas>",
+          "parent": "<block-gl class=\"block pointer-events-none sticky top-0 left-0 w-full h-100vh overflow-hidden\" pause-on-scroll=\"\">\n        <canvas role=\"img\" aria-hidden=\"true\" __aria-label=\"A Webgl animation showing bokeh blur shapes on purple gradient background\" class=\"w-full h-full\" width=\"720\" height=\"450\" style=\"transform: translateZ(0px);\">\n        </canvas>\n      </block-gl>"
+        }
+      ]
+    },
+    {
+      "time": 28893.70000000298,
+      "draws": 18900,
+      "canvas": [
+        {
+          "w": 720,
+          "h": 450,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          "outer": "<canvas role=\"img\" aria-hidden=\"true\" __aria-label=\"A Webgl animation showing bokeh blur shapes on purple gradient background\" class=\"w-full h-full\" width=\"720\" height=\"450\" style=\"transform: translateZ(0px);\">\n        </canvas>",
+          "parent": "<block-gl class=\"block pointer-events-none sticky top-0 left-0 w-full h-100vh overflow-hidden\" pause-on-scroll=\"\">\n        <canvas role=\"img\" aria-hidden=\"true\" __aria-label=\"A Webgl animation showing bokeh blur shapes on purple gradient background\" class=\"w-full h-full\" width=\"720\" height=\"450\" style=\"transform: translateZ(0px);\">\n        </canvas>\n      </block-gl>"
+        }
+      ]
+    }
+  ],
+  "gl": {
+    "shaders": [
+      {
+        "length": 269,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 1724,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 269,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 294,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 269,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 1921,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 269,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 1707,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": true,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 269,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 2973,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": true,
+          "hasSinTime": true,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 269,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 3738,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": true,
+          "hasGoldenAngle": true,
+          "hasBlueNoise": true
+        }
+      },
+      {
+        "length": 424,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      },
+      {
+        "length": 2351,
+        "uniforms": [],
+        "evidence": {
+          "hasVoronoi": false,
+          "hasSinTime": false,
+          "hasGoldenAngle": false,
+          "hasBlueNoise": false
+        }
+      }
+    ],
+    "contexts": [
+      {
+        "type": "webgl2",
+        "success": true
+      }
+    ],
+    "uniformNames": [
+      "uMVMatrix",
+      "uPMatrix",
+      "uLoaded",
+      "uBgColor",
+      "uOutputColor",
+      "tBgTexture",
+      "tInput",
+      "uRadius",
+      "uFalloff",
+      "uDisplace",
+      "uSkew",
+      "uAngle",
+      "uVignetteColor",
+      "uPos",
+      "uResolution",
+      "uClearColor",
+      "uMixRadius",
+      "uFrequency",
+      "uAmplitude",
+      "uRotation",
+      "uTime",
+      "uTrackMouse",
+      "uMousePos",
+      "uAmount",
+      "uSpread",
+      "uTilt",
+      "uBlueNoiseResolution",
+      "tBlueNoise",
+      "useExposure",
+      "useGammaCorrection",
+      "useToneMapping",
+      "uExposure",
+      "uToneMappingExposure"
+    ],
+    "draws": 27265
+  },
+  "errors": []
+}

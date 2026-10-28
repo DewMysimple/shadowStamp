@@ -1,0 +1,286 @@
+[
+  {
+    "name": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "state": "hover",
+    "diagnostics": {
+      "phase": "hovering",
+      "selected": null,
+      "hovered": "craft",
+      "progress": 0,
+      "reducedMotion": false,
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "c9af9642-4d4a-4313-9ba8-b9c95a415ffd",
+        "c4d663a1-9676-425c-b05c-741dbaaeabb5",
+        "181dd195-2e7c-4060-b60d-353f51dfe146",
+        "495e4e05-1fe7-4db2-a62c-0c170e24b771",
+        "c8a3e083-2f2e-4aac-90e0-e73a636be177",
+        "f23f4c9c-34ad-4972-a6d2-18d81c1cf90a"
+      ],
+      "textures": [
+        "a454d1f6-15f8-47b5-860c-7a8f865986ee",
+        "3fe02c03-ffb8-4e56-93f2-8c729ca0019c",
+        "322cd029-034d-44de-8bb4-fdd66144a172",
+        "b4d579e1-58b6-4233-b6a9-5b187188b879",
+        "8a1202dc-f427-49df-b976-7b3d48fa0b5a",
+        "92e56dc7-b5cd-4b0c-a2ee-b38a1a7360b9"
+      ],
+      "background": null
+    },
+    "labels": {
+      "text": "NEW CRAFT SOCIETY",
+      "rect": {
+        "x": 828.28125,
+        "y": 313.234375,
+        "w": 129.5625,
+        "h": 23
+      },
+      "font": "10px / 14px \"Exhibit Mono\", \"Courier New\", monospace",
+      "color": "rgb(245, 241, 232)"
+    }
+  },
+  {
+    "name": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "state": "focus",
+    "diagnostics": {
+      "phase": "focused",
+      "selected": "craft",
+      "hovered": null,
+      "progress": 1,
+      "reducedMotion": false,
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "c9af9642-4d4a-4313-9ba8-b9c95a415ffd",
+        "c4d663a1-9676-425c-b05c-741dbaaeabb5",
+        "181dd195-2e7c-4060-b60d-353f51dfe146",
+        "495e4e05-1fe7-4db2-a62c-0c170e24b771",
+        "c8a3e083-2f2e-4aac-90e0-e73a636be177",
+        "f23f4c9c-34ad-4972-a6d2-18d81c1cf90a"
+      ],
+      "textures": [
+        "a454d1f6-15f8-47b5-860c-7a8f865986ee",
+        "3fe02c03-ffb8-4e56-93f2-8c729ca0019c",
+        "322cd029-034d-44de-8bb4-fdd66144a172",
+        "b4d579e1-58b6-4233-b6a9-5b187188b879",
+        "8a1202dc-f427-49df-b976-7b3d48fa0b5a",
+        "92e56dc7-b5cd-4b0c-a2ee-b38a1a7360b9"
+      ],
+      "background": null
+    },
+    "text": "✳\nPOSTAL STUDIES\nAN EXHIBITION IN PAPER & LIGHT\nCOLLECTION 001\n6 DIGITAL ORIGINALS\nSmall things, closely observed.\nHOVER TO DISCOVER · CLICK TO COLLECT A MOMENT\nPAPER / LIGHT / MOTION\nNEW CRAFT SOCIETY\n×\nBACK TO COLLECTION\n\nCLICK ANYWHERE OR PRESS ESC.\n\nNEW CRAFT SOCIETY. Focused view. Press Escape to return.",
+    "boxes": [
+      {
+        "id": "specimen",
+        "rect": {
+          "x": 498.3533020019531,
+          "y": 503.3677673339844,
+          "w": 316.5646057128906,
+          "h": 319.8640441894531
+        }
+      },
+      {
+        "id": "kensho",
+        "rect": {
+          "x": 581.7974853515625,
+          "y": 394.3973693847656,
+          "w": 264.8812255859375,
+          "h": 291.2049255371094
+        }
+      },
+      {
+        "id": "craft",
+        "rect": {
+          "x": 489.91949462890625,
+          "y": 195.75,
+          "w": 399.671875,
+          "h": 508.5
+        }
+      },
+      {
+        "id": "mint",
+        "rect": {
+          "x": 1206.137939453125,
+          "y": 391.74200439453125,
+          "w": 280.509765625,
+          "h": 305.509765625
+        }
+      },
+      {
+        "id": "nocturne",
+        "rect": {
+          "x": 891.7045288085938,
+          "y": 750.0880737304688,
+          "w": 223.94464111328125,
+          "h": 281.81072998046875
+        }
+      },
+      {
+        "id": "gaohan",
+        "rect": {
+          "x": 965.1563720703125,
+          "y": 662.16064453125,
+          "w": 261.363525390625,
+          "h": 295.666259765625
+        }
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "state": "hover",
+    "diagnostics": {
+      "phase": "hovering",
+      "selected": null,
+      "hovered": "craft",
+      "progress": 0,
+      "reducedMotion": false,
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "5654f1b0-e2d1-4c1a-9e90-bf8570df5a56",
+        "ffac19b7-b6f7-4119-adf6-aee1bacd1da5",
+        "aed89a3d-fd1a-47b0-bc77-3bbbfcee3f8a",
+        "0fdb0010-1366-47c2-8591-b62a18b11475",
+        "4659a010-9b76-4259-af82-d6e593044959",
+        "53e52d94-85a6-44e2-9c94-56e06abd223b"
+      ],
+      "textures": [
+        "30a67239-1fa4-4cdc-978f-13bb7e8205ef",
+        "8e3bc493-923c-4454-8e33-b18f88562911",
+        "3d1d5c6f-c4ce-41e2-aa54-5512894c00cc",
+        "9e2c3484-e304-4161-a217-ddcd556fcbd5",
+        "9d3ff18c-e7c1-418a-aa21-dd4cf1e72ee6",
+        "43265a11-3359-4df1-97d4-4f011622b77a"
+      ],
+      "background": null
+    },
+    "labels": {
+      "text": "NEW CRAFT SOCIETY",
+      "rect": {
+        "x": 193.3984375,
+        "y": 176.6875,
+        "w": 102.453125,
+        "h": 19.1875
+      },
+      "font": "8px / 11.2px \"Exhibit Mono\", \"Courier New\", monospace",
+      "color": "rgb(245, 241, 232)"
+    }
+  },
+  {
+    "name": "mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "state": "focus",
+    "diagnostics": {
+      "phase": "focused",
+      "selected": "craft",
+      "hovered": null,
+      "progress": 1,
+      "reducedMotion": false,
+      "renderer": {
+        "programs": 5,
+        "geometries": 2,
+        "textures": 14
+      },
+      "materials": [
+        "5654f1b0-e2d1-4c1a-9e90-bf8570df5a56",
+        "ffac19b7-b6f7-4119-adf6-aee1bacd1da5",
+        "aed89a3d-fd1a-47b0-bc77-3bbbfcee3f8a",
+        "0fdb0010-1366-47c2-8591-b62a18b11475",
+        "4659a010-9b76-4259-af82-d6e593044959",
+        "53e52d94-85a6-44e2-9c94-56e06abd223b"
+      ],
+      "textures": [
+        "30a67239-1fa4-4cdc-978f-13bb7e8205ef",
+        "8e3bc493-923c-4454-8e33-b18f88562911",
+        "3d1d5c6f-c4ce-41e2-aa54-5512894c00cc",
+        "9e2c3484-e304-4161-a217-ddcd556fcbd5",
+        "9d3ff18c-e7c1-418a-aa21-dd4cf1e72ee6",
+        "43265a11-3359-4df1-97d4-4f011622b77a"
+      ],
+      "background": null
+    },
+    "text": "✳\nPOSTAL STUDIES\nAN EXHIBITION IN PAPER & LIGHT\nCOLLECTION 001\n6 DIGITAL ORIGINALS\nSmall things, closely observed.\nTOUCH A STAMP TO LOOK CLOSER\nPAPER / LIGHT / MOTION\nNEW CRAFT SOCIETY\n×\nBACK TO COLLECTION\n\nCLICK ANYWHERE OR PRESS ESC.\n\nNEW CRAFT SOCIETY. Focused view. Press Escape to return.",
+    "boxes": [
+      {
+        "id": "specimen",
+        "rect": {
+          "x": 9.34374713897705,
+          "y": 338.781494140625,
+          "w": 164.6062469482422,
+          "h": 174.8720703125
+        }
+      },
+      {
+        "id": "kensho",
+        "rect": {
+          "x": 62.353271484375,
+          "y": 261.47052001953125,
+          "w": 159.98406982421875,
+          "h": 175.88458251953125
+        }
+      },
+      {
+        "id": "craft",
+        "rect": {
+          "x": 54.600006103515625,
+          "y": 243.3740234375,
+          "w": 280.796875,
+          "h": 357.25
+        }
+      },
+      {
+        "id": "mint",
+        "rect": {
+          "x": 231.6171417236328,
+          "y": 382.32977294921875,
+          "w": 152.9594268798828,
+          "h": 170.492431640625
+        }
+      },
+      {
+        "id": "nocturne",
+        "rect": {
+          "x": 98.0071792602539,
+          "y": 534.8709716796875,
+          "w": 139.37628173828125,
+          "h": 172.625244140625
+        }
+      },
+      {
+        "id": "gaohan",
+        "rect": {
+          "x": 167.35308837890625,
+          "y": 512.5785522460938,
+          "w": 156.69070434570312,
+          "h": 180.074951171875
+        }
+      }
+    ]
+  }
+]

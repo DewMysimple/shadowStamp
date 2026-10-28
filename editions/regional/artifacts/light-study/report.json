@@ -1,0 +1,87 @@
+{
+  "start": {
+    "passes": 1,
+    "programs": 3,
+    "texture": "18a02707-fff0-4081-930d-f76542961564",
+    "parameters": {
+      "intensity": 0.28,
+      "speed": 0.65,
+      "color": "#908470",
+      "light": "#fff1cf",
+      "background": "#fbf7f1",
+      "focusColor": "#24231f",
+      "softness": 1.15,
+      "coverage": 0.708,
+      "animate": false,
+      "density": 26.7,
+      "angle": 44,
+      "stretch": 0.84,
+      "scatter": 1,
+      "wave": 0.118,
+      "grain": 0.65,
+      "study": 0,
+      "followPointer": true,
+      "responseTime": 0.16,
+      "pointerInfluence": 0.65
+    }
+  },
+  "mid": {
+    "passes": 1,
+    "programs": 3,
+    "texture": "18a02707-fff0-4081-930d-f76542961564",
+    "parameters": {
+      "intensity": 0.28,
+      "speed": 0.65,
+      "color": "#908470",
+      "light": "#fff1cf",
+      "background": "#fbf7f1",
+      "focusColor": "#24231f",
+      "softness": 1.15,
+      "coverage": 0.708,
+      "animate": false,
+      "density": 26.7,
+      "angle": 44,
+      "stretch": 0.84,
+      "scatter": 1,
+      "wave": 0.118,
+      "grain": 0.65,
+      "study": 0.5,
+      "followPointer": true,
+      "responseTime": 0.16,
+      "pointerInfluence": 0.65
+    }
+  },
+  "original": {
+    "passes": 1,
+    "programs": 3,
+    "texture": "18a02707-fff0-4081-930d-f76542961564",
+    "parameters": {
+      "intensity": 0.28,
+      "speed": 0.65,
+      "color": "#908470",
+      "light": "#fff1cf",
+      "background": "#fbf7f1",
+      "focusColor": "#24231f",
+      "softness": 1.15,
+      "coverage": 0.708,
+      "animate": false,
+      "density": 26.7,
+      "angle": 44,
+      "stretch": 0.84,
+      "scatter": 1,
+      "wave": 0.118,
+      "grain": 0.65,
+      "study": 1,
+      "followPointer": true,
+      "responseTime": 0.16,
+      "pointerInfluence": 0.65
+    }
+  },
+  "reducedPixelsStable": true,
+  "cleanup": {
+    "geometries": 0,
+    "textures": 0
+  },
+  "errors": [],
+  "result": "passed"
+}

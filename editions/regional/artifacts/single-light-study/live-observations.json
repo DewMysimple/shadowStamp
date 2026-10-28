@@ -1,0 +1,217 @@
+{
+  "observedAt": "2026-10-26T08:34:14.778Z",
+  "url": "https://billguo.me/",
+  "scope": "Read-only live website screenshots and computed CSS. No third-party resources added to product.",
+  "errors": [],
+  "beforeBounds": {
+    "x": 731.597412109375,
+    "y": 326.974365234375,
+    "width": 207.828369140625,
+    "height": 251.90118408203125
+  },
+  "center": {
+    "pointerUV": [
+      0.5,
+      0.5
+    ],
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "HomeStamps-module__yl-W7q__paper",
+        "rect": {
+          "x": 727.016357421875,
+          "y": 315.103759765625,
+          "width": 221.30859375,
+          "height": 266.8685302734375
+        },
+        "filter": "blur(0px)",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal"
+      },
+      {
+        "tag": "DIV",
+        "cls": "HomeStamps-module__yl-W7q__image",
+        "rect": {
+          "x": 727.016357421875,
+          "y": 315.103759765625,
+          "width": 221.30859375,
+          "height": 266.8685302734375
+        },
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal"
+      },
+      {
+        "tag": "IMG",
+        "cls": "",
+        "rect": {
+          "x": 727.016357421875,
+          "y": 315.103759765625,
+          "width": 221.30859375,
+          "height": 266.8685302734375
+        },
+        "filter": "none",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal",
+        "width": 190,
+        "height": 238
+      },
+      {
+        "tag": "CANVAS",
+        "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+        "rect": {
+          "x": 727.016357421875,
+          "y": 315.103759765625,
+          "width": 221.30859375,
+          "height": 266.8685302734375
+        },
+        "filter": "none",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal",
+        "width": 190,
+        "height": 238
+      }
+    ]
+  },
+  "upperRight": {
+    "pointerUV": [
+      0.82,
+      0.18
+    ],
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "HomeStamps-module__yl-W7q__paper",
+        "rect": {
+          "x": 726.2328491210938,
+          "y": 308.3056640625,
+          "width": 221.78741455078125,
+          "height": 267.7529296875
+        },
+        "filter": "blur(0px)",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal"
+      },
+      {
+        "tag": "DIV",
+        "cls": "HomeStamps-module__yl-W7q__image",
+        "rect": {
+          "x": 726.2328491210938,
+          "y": 308.3056640625,
+          "width": 221.78741455078125,
+          "height": 267.7529296875
+        },
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal"
+      },
+      {
+        "tag": "IMG",
+        "cls": "",
+        "rect": {
+          "x": 726.2328491210938,
+          "y": 308.3056640625,
+          "width": 221.78741455078125,
+          "height": 267.7529296875
+        },
+        "filter": "none",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal",
+        "width": 190,
+        "height": 238
+      },
+      {
+        "tag": "CANVAS",
+        "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+        "rect": {
+          "x": 726.2328491210938,
+          "y": 308.3056640625,
+          "width": 221.78741455078125,
+          "height": 267.7529296875
+        },
+        "filter": "none",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal",
+        "width": 190,
+        "height": 238
+      }
+    ]
+  },
+  "lowerLeft": {
+    "pointerUV": [
+      0.18,
+      0.82
+    ],
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "HomeStamps-module__yl-W7q__paper",
+        "rect": {
+          "x": 717.8011474609375,
+          "y": 317.587646484375,
+          "width": 221.02099609375,
+          "height": 267.2559814453125
+        },
+        "filter": "blur(0px)",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal"
+      },
+      {
+        "tag": "DIV",
+        "cls": "HomeStamps-module__yl-W7q__image",
+        "rect": {
+          "x": 717.8011474609375,
+          "y": 317.587646484375,
+          "width": 221.02099609375,
+          "height": 267.2559814453125
+        },
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal"
+      },
+      {
+        "tag": "IMG",
+        "cls": "",
+        "rect": {
+          "x": 717.8011474609375,
+          "y": 317.587646484375,
+          "width": 221.02099609375,
+          "height": 267.2559814453125
+        },
+        "filter": "none",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal",
+        "width": 190,
+        "height": 238
+      },
+      {
+        "tag": "CANVAS",
+        "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+        "rect": {
+          "x": 717.8011474609375,
+          "y": 317.587646484375,
+          "width": 221.02099609375,
+          "height": 267.2559814453125
+        },
+        "filter": "none",
+        "shadow": "none",
+        "opacity": "1",
+        "blend": "normal",
+        "width": 190,
+        "height": 238
+      }
+    ]
+  },
+  "styles": []
+}

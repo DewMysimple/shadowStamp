@@ -1,0 +1,167 @@
+{
+  "status": "draft-superseded",
+  "user_choice": "保留原界面和印刷纸面，只改光；允许微细压纹，不要浮雕或金属化。",
+  "scope": "Historical material experiment, NOT final delivery. Same stamp only; preserve screenshot aspect and pose. No image matching score.",
+  "boards": [
+    {
+      "stamp": "ncs",
+      "rows": [
+        {
+          "state": "gallery",
+          "reference": {
+            "path": "artifacts\\fidelity-research\\bill-ncs-hover-upperRight.png",
+            "input_sha256": "59da1e5f06c5a5297fc95c7fe0a5839a4fd1656dc3e6f2e42e03b769d2328110",
+            "paper_bbox_xywh": [
+              721.624755859375,
+              309.7930908203125,
+              220.91363525390625,
+              267.24322509765625
+            ],
+            "crop_ltrb": [
+              708,
+              296,
+              956,
+              591
+            ],
+            "scale": 1.5341829520661467
+          },
+          "current": {
+            "path": "artifacts\\fidelity-research\\verified-craft-gallery.png",
+            "input_sha256": "8aae1d4179f77e8325735a68c5436577c22a8ca50952857d4af8e1b6ef22c194",
+            "paper_bbox_xywh": [
+              727.4928922204398,
+              326.54924210241,
+              259.5303780421888,
+              299.19522124452266
+            ],
+            "crop_ltrb": [
+              712,
+              311,
+              1002,
+              641
+            ],
+            "scale": 1.370342742422748
+          }
+        },
+        {
+          "state": "focus",
+          "reference": {
+            "path": "artifacts\\fidelity-research\\bill-ncs-focus.png",
+            "input_sha256": "a3dbf1fc531f22f59dd727c3408288095feba806b7c13501921cc838c0e44623",
+            "paper_bbox_xywh": [
+              499.390625,
+              180,
+              431.21875,
+              540
+            ],
+            "crop_ltrb": [
+              472,
+              153,
+              958,
+              747
+            ],
+            "scale": 0.7592592592592593
+          },
+          "current": {
+            "path": "artifacts\\fidelity-research\\verified-craft-focus.png",
+            "input_sha256": "2fb241d130c98d6dd2e911be1338e239572826cd9a3be2d226527cb3ce3ac950",
+            "paper_bbox_xywh": [
+              485.54464562542984,
+              196.20299083026063,
+              404.16026132471455,
+              511.98631945139607
+            ],
+            "crop_ltrb": [
+              459,
+              170,
+              916,
+              734
+            ],
+            "scale": 0.8008026473037864
+          }
+        }
+      ],
+      "output": "same-stamp-ncs-draft.jpg"
+    },
+    {
+      "stamp": "kensho",
+      "rows": [
+        {
+          "state": "gallery",
+          "reference": {
+            "path": "artifacts\\fidelity-research\\bill-kensho-hover-upperRight.png",
+            "input_sha256": "a4655ed7c31fd2bdad1fdea8452a6db93a82c5ee5793de8dcbd03cc54794cde6",
+            "paper_bbox_xywh": [
+              260.5144348144531,
+              313.09197998046875,
+              215.66415405273438,
+              262.97222900390625
+            ],
+            "crop_ltrb": [
+              247,
+              299,
+              490,
+              590
+            ],
+            "scale": 1.5590999914820274
+          },
+          "current": {
+            "path": "artifacts\\fidelity-research\\verified-kensho-gallery.png",
+            "input_sha256": "31537a6f0894ccd16142987970b3cbafcbaacb786f49e7b92e4b0bfe916009e9",
+            "paper_bbox_xywh": [
+              575.0202572017624,
+              383.93813453169344,
+              277.892407411077,
+              306.6404668312216
+            ],
+            "crop_ltrb": [
+              559,
+              368,
+              869,
+              706
+            ],
+            "scale": 1.3370707533708155
+          }
+        },
+        {
+          "state": "focus",
+          "reference": {
+            "path": "artifacts\\fidelity-research\\bill-kensho-focus.png",
+            "input_sha256": "1e751cc06bd2a73626cdcc37b7fe5bbcd6c2e72d08621d5ce4a1ea7f15e85cbc",
+            "paper_bbox_xywh": [
+              499.390625,
+              180,
+              431.21875,
+              540
+            ],
+            "crop_ltrb": [
+              472,
+              153,
+              958,
+              747
+            ],
+            "scale": 0.7592592592592593
+          },
+          "current": {
+            "path": "artifacts\\fidelity-research\\verified-kensho-focus.png",
+            "input_sha256": "9142219aba7fc85d1c383124282482977ca70d16f1521d4f89fb6ff1e5fa627b",
+            "paper_bbox_xywh": [
+              474.00626799867473,
+              195.9643839887598,
+              426.7528644601672,
+              512.335998772736
+            ],
+            "crop_ltrb": [
+              448,
+              170,
+              927,
+              734
+            ],
+            "scale": 0.8002560838631786
+          }
+        }
+      ],
+      "output": "same-stamp-kensho-draft.jpg"
+    }
+  ]
+}

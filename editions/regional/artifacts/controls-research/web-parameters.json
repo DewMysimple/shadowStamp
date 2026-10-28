@@ -1,0 +1,6470 @@
+{
+  "observedAt": "2026-10-26T06:16:05.617Z",
+  "bill": {
+    "bounds": {
+      "x": 732.491455078125,
+      "y": 323.3573913574219,
+      "width": 209.7926025390625,
+      "height": 253.40737915039062
+    },
+    "gallery": [
+      {
+        "name": "center",
+        "pointer": {
+          "u": 0.5,
+          "v": 0.5
+        },
+        "state": {
+          "time": 8556.10000000894,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper HomeStamps-module__yl-W7q__lifted",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.6249px, -18px) translate(4.14741px, -1.99273px) rotate(5.295deg); z-index: 50;",
+              "rect": {
+                "x": 731.9967041015625,
+                "y": 320.4510803222656,
+                "w": 211.1455078125,
+                "h": 254.44052124023438
+              },
+              "transform": "matrix(0.995733, 0.0922836, -0.0922836, 0.995733, -34.4774, -19.9927)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1.0499915066299201; --tilt-x: -0.07731054386639336deg; --tilt-y: -0.3177303884055697deg; --blur: 0px; --reveal: 0.9144244786085147; --ink-lx: -0.02615434952227924; --ink-ly: 0.006066068341237445;",
+              "rect": {
+                "x": 726.7872924804688,
+                "y": 314.1336669921875,
+                "w": 221.69757080078125,
+                "h": 267.1610107421875
+              },
+              "transform": "matrix3d(1.04997, 7.85659e-06, 0.00582262, 0, 0, 1.04999, -0.00141678, 0, -0.00554541, 0.0013493, 0.999984, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "-0.0773105deg",
+                "tiltY": "-0.31773deg",
+                "scale": "1.04999",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 726.7872924804688,
+                "y": 314.1336669921875,
+                "w": 221.69757080078125,
+                "h": 267.1610107421875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 726.7872924804688,
+                "y": 314.1336669921875,
+                "w": 221.69757080078125,
+                "h": 267.1610107421875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "CANVAS",
+              "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+              "style": "opacity: 1;",
+              "rect": {
+                "x": 726.7872924804688,
+                "y": 314.1336669921875,
+                "w": 221.69757080078125,
+                "h": 267.1610107421875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "none",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "left",
+        "pointer": {
+          "u": 0.13,
+          "v": 0.5
+        },
+        "state": {
+          "time": 9182.70000000298,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper HomeStamps-module__yl-W7q__lifted",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-42.5245px, -18px) translate(2.64468px, -3.5734px) rotate(5.42989deg); z-index: 50;",
+              "rect": {
+                "x": 726.3363037109375,
+                "y": 318.67388916015625,
+                "w": 211.66143798828125,
+                "h": 254.83355712890625
+              },
+              "transform": "matrix(0.995513, 0.0946276, -0.0946276, 0.995513, -39.8798, -21.5734)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1.049999999885373; --tilt-x: -0.16083030829580444deg; --tilt-y: -4.446992182388345deg; --blur: 0px; --reveal: 1; --ink-lx: -0.36852396223484274; --ink-ly: 0.013149857671844511;",
+              "rect": {
+                "x": 722.0875244140625,
+                "y": 313.12847900390625,
+                "w": 221.65240478515625,
+                "h": 267.57073974609375
+              },
+              "transform": "matrix3d(1.04684, 0.000228529, 0.0814132, 0, 0, 1.05, -0.00294736, 0, -0.0775367, 0.00279856, 0.996986, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "-0.16083deg",
+                "tiltY": "-4.44699deg",
+                "scale": "1.05",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 722.0875244140625,
+                "y": 313.12847900390625,
+                "w": 221.65240478515625,
+                "h": 267.57073974609375
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 722.0875244140625,
+                "y": 313.12847900390625,
+                "w": 221.65240478515625,
+                "h": 267.57073974609375
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "CANVAS",
+              "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+              "style": "opacity: 1;",
+              "rect": {
+                "x": 722.0875244140625,
+                "y": 313.12847900390625,
+                "w": 221.65240478515625,
+                "h": 267.57073974609375
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "none",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "right",
+        "pointer": {
+          "u": 0.87,
+          "v": 0.5
+        },
+        "state": {
+          "time": 9803.20000000298,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper HomeStamps-module__yl-W7q__lifted",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-34.7255px, -18px) translate(0.0903122px, -3.55973px) rotate(5.37723deg); z-index: 50;",
+              "rect": {
+                "x": 731.681640625,
+                "y": 318.76422119140625,
+                "w": 211.46014404296875,
+                "h": 254.68023681640625
+              },
+              "transform": "matrix(0.995599, 0.0937127, -0.0937127, 0.995599, -34.6352, -21.5597)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1.0499999999999983; --tilt-x: -0.1712881702337675deg; --tilt-y: 4.0966789763225755deg; --blur: 0px; --reveal: 1; --ink-lx: 0.33627217418505123; --ink-ly: 0.013972993793001764;",
+              "rect": {
+                "x": 726.0200805664062,
+                "y": 311.602294921875,
+                "w": 221.53662109375,
+                "h": 267.3333740234375
+              },
+              "transform": "matrix3d(1.04732, -0.00022425, -0.0750113, 0, 0, 1.05, -0.00313901, 0, 0.0714396, 0.0029819, 0.99744, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "-0.171288deg",
+                "tiltY": "4.09668deg",
+                "scale": "1.05",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 726.0200805664062,
+                "y": 311.602294921875,
+                "w": 221.53662109375,
+                "h": 267.3333740234375
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 726.0200805664062,
+                "y": 311.602294921875,
+                "w": 221.53662109375,
+                "h": 267.3333740234375
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "CANVAS",
+              "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+              "style": "opacity: 1;",
+              "rect": {
+                "x": 726.0200805664062,
+                "y": 311.602294921875,
+                "w": 221.53662109375,
+                "h": 267.3333740234375
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "none",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "top",
+        "pointer": {
+          "u": 0.5,
+          "v": 0.13
+        },
+        "state": {
+          "time": 10408.40000000596,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper HomeStamps-module__yl-W7q__lifted",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.6245px, -22.6995px) translate(-2.6146px, -2.59332px) rotate(5.2689deg); z-index: 50;",
+              "rect": {
+                "x": 725.2849731445312,
+                "y": 315.18902587890625,
+                "w": 211.04559326171875,
+                "h": 254.36431884765625
+              },
+              "transform": "matrix(0.995775, 0.0918301, -0.0918301, 0.995775, -41.2391, -25.2929)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1.0499999999999992; --tilt-x: 4.079468148596367deg; --tilt-y: 0.04665990173696523deg; --blur: 0px; --reveal: 1; --ink-lx: 0.0058708206115518635; --ink-ly: -0.33726544350676857;",
+              "rect": {
+                "x": 719.2045288085938,
+                "y": 310.10980224609375,
+                "w": 221.55096435546875,
+                "h": 266.47808837890625
+              },
+              "transform": "matrix3d(1.05, 6.08309e-05, -0.000852921, 0, 0, 1.04734, 0.074697, 0, 0.000814369, -0.07114, 0.997466, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "4.07947deg",
+                "tiltY": "0.0466599deg",
+                "scale": "1.05",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 719.2045288085938,
+                "y": 310.10980224609375,
+                "w": 221.55096435546875,
+                "h": 266.47808837890625
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 719.2045288085938,
+                "y": 310.10980224609375,
+                "w": 221.55096435546875,
+                "h": 266.47808837890625
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "CANVAS",
+              "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+              "style": "opacity: 1;",
+              "rect": {
+                "x": 719.2045288085938,
+                "y": 310.10980224609375,
+                "w": 221.55096435546875,
+                "h": 266.47808837890625
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "none",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "bottom",
+        "pointer": {
+          "u": 0.5,
+          "v": 0.87
+        },
+        "state": {
+          "time": 11024.90000000596,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper HomeStamps-module__yl-W7q__lifted",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.6249px, -13.3509px) translate(-4.77476px, -1.14678px) rotate(5.13876deg); z-index: 50;",
+              "rect": {
+                "x": 723.3739624023438,
+                "y": 326.1746520996094,
+                "w": 210.54656982421875,
+                "h": 253.98355102539062
+              },
+              "transform": "matrix(0.995981, 0.089568, -0.089568, 0.995981, -43.3996, -14.4977)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1.0499999999999992; --tilt-x: -4.237734956446471deg; --tilt-y: 0.1780517738664589deg; --blur: 0px; --reveal: 1; --ink-lx: 0.016146145438929338; --ink-ly: 0.34853637119104336;",
+              "rect": {
+                "x": 718.954833984375,
+                "y": 319.12249755859375,
+                "w": 221.02801513671875,
+                "h": 265.9735107421875
+              },
+              "transform": "matrix3d(1.04999, -0.000241117, -0.00325405, 0, 0, 1.04713, -0.0775897, 0, 0.00310759, 0.0738946, 0.997261, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "-4.23773deg",
+                "tiltY": "0.178052deg",
+                "scale": "1.05",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 718.954833984375,
+                "y": 319.12249755859375,
+                "w": 221.02801513671875,
+                "h": 265.9735107421875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 718.954833984375,
+                "y": 319.12249755859375,
+                "w": 221.02801513671875,
+                "h": 265.9735107421875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "CANVAS",
+              "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+              "style": "opacity: 1;",
+              "rect": {
+                "x": 718.954833984375,
+                "y": 319.12249755859375,
+                "w": 221.02801513671875,
+                "h": 265.9735107421875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "none",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "upperRight",
+        "pointer": {
+          "u": 0.8,
+          "v": 0.2
+        },
+        "state": {
+          "time": 11678.300000011921,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper HomeStamps-module__yl-W7q__lifted",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.475px, -21.7996px) translate(-5.48488px, 0.387781px) rotate(5.02259deg); z-index: 50;",
+              "rect": {
+                "x": 726.0369262695312,
+                "y": 319.4309387207031,
+                "w": 210.10015869140625,
+                "h": 253.64254760742188
+              },
+              "transform": "matrix(0.99616, 0.0875485, -0.0875485, 0.99616, -40.9599, -21.4119)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1.0499999999999992; --tilt-x: 3.4227516618855933deg; --tilt-y: 3.65333447836913deg; --blur: 0px; --reveal: 1; --ink-lx: 0.30287553756341784; --ink-ly: -0.2818416535170179;",
+              "rect": {
+                "x": 719.7586059570312,
+                "y": 313.0750732421875,
+                "w": 220.12493896484375,
+                "h": 266.6014404296875
+              },
+              "transform": "matrix3d(1.04787, 0.00399444, -0.0667861, 0, 0, 1.04813, 0.0626879, 0, 0.0637194, -0.0595814, 0.996188, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "3.42275deg",
+                "tiltY": "3.65333deg",
+                "scale": "1.05",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 719.7586059570312,
+                "y": 313.0750732421875,
+                "w": 220.12493896484375,
+                "h": 266.6014404296875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 719.7586059570312,
+                "y": 313.0750732421875,
+                "w": 220.12493896484375,
+                "h": 266.6014404296875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "CANVAS",
+              "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+              "style": "opacity: 1;",
+              "rect": {
+                "x": 719.7586059570312,
+                "y": 313.0750732421875,
+                "w": 220.12493896484375,
+                "h": 266.6014404296875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "none",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      }
+    ],
+    "focusInitial": {
+      "time": 13768.5,
+      "elements": [
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__wrapper",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+          "perspective": "1200px",
+          "filter": "none",
+          "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__paper",
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "perspective": "none",
+          "filter": "blur(0px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__image",
+          "style": null,
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+          "style": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1430,
+            "h": 900
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "0.08",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__card",
+          "style": null,
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+          "style": "",
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "perspective": "1400px",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__paper",
+          "style": "--tilt-x: 0deg; --tilt-y: 0deg; --ink-lx: 0; --ink-ly: 0;",
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "perspective": "none",
+          "filter": "blur(0px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__morphs",
+          "style": "--morph: 1;",
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        }
+      ]
+    },
+    "focusBounds": {
+      "x": 499.390625,
+      "y": 180,
+      "width": 431.21875,
+      "height": 540
+    },
+    "focus": [
+      {
+        "name": "center",
+        "pointer": {
+          "u": 0.5,
+          "v": 0.5
+        },
+        "state": {
+          "time": 14402.800000011921,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 0deg; --tilt-y: 0deg; --ink-lx: 0; --ink-ly: 0;",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "left",
+        "pointer": {
+          "u": 0.12,
+          "v": 0.5
+        },
+        "state": {
+          "time": 15009.90000000596,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 0deg; --tilt-y: -4.559525023628026deg; --ink-lx: -0.3768726343558414; --ink-ly: 0;",
+              "rect": {
+                "x": 502.6724548339844,
+                "y": 176.6534881591797,
+                "w": 429.9184875488281,
+                "h": 546.6929931640625
+              },
+              "transform": "matrix3d(0.996835, 0, 0.0794948, 0, 0, 1, 0, 0, -0.0794948, 0, 0.996835, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "-4.55953deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 502.6724548339844,
+                "y": 176.6534881591797,
+                "w": 429.9184875488281,
+                "h": 546.6929931640625
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "right",
+        "pointer": {
+          "u": 0.88,
+          "v": 0.5
+        },
+        "state": {
+          "time": 15631.10000000894,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 0deg; --tilt-y: 4.559270797100531deg; --ink-lx: 0.37448296511148266; --ink-ly: 0;",
+              "rect": {
+                "x": 497.4091491699219,
+                "y": 176.6536865234375,
+                "w": 429.9186096191406,
+                "h": 546.692626953125
+              },
+              "transform": "matrix3d(0.996836, 0, -0.0794903, 0, 0, 1, 0, 0, 0.0794903, 0, 0.996836, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "4.55927deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 497.4091491699219,
+                "y": 176.6536865234375,
+                "w": 429.9186096191406,
+                "h": 546.692626953125
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "top",
+        "pointer": {
+          "u": 0.5,
+          "v": 0.12
+        },
+        "state": {
+          "time": 16238.20000000298,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 4.559588691703418deg; --tilt-y: 0.0004112278421375947deg; --ink-lx: 0.0029257367078541737; --ink-ly: -0.37703115454537867;",
+              "rect": {
+                "x": 496.0333251953125,
+                "y": 184.91815185546875,
+                "w": 437.932861328125,
+                "h": 538.4181518554688
+              },
+              "transform": "matrix3d(1, 5.70564e-07, -7.15457e-06, 0, 0, 0.996835, 0.0794959, 0, 7.17728e-06, -0.0794959, 0.996835, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "4.55959deg",
+                "tiltY": "0.000411228deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 496.0333251953125,
+                "y": 184.91815185546875,
+                "w": 437.932861328125,
+                "h": 538.4181518554688
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "bottom",
+        "pointer": {
+          "u": 0.5,
+          "v": 0.88
+        },
+        "state": {
+          "time": 16864.10000000894,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: -4.559279073285818deg; --tilt-y: 5.450521349403952e-9deg; --ink-lx: 0; --ink-ly: 0.374542844261622;",
+              "rect": {
+                "x": 496.0338134765625,
+                "y": 176.6640625,
+                "w": 437.932373046875,
+                "h": 538.4177856445312
+              },
+              "transform": "matrix3d(1, -7.56189e-12, -9.48285e-11, 0, 0, 0.996836, -0.0794905, 0, 9.51295e-11, 0.0794905, 0.996836, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "-4.55928deg",
+                "tiltY": "5.45052e-09deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 496.0338134765625,
+                "y": 176.6640625,
+                "w": 437.932373046875,
+                "h": 538.4177856445312
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "upperRight",
+        "pointer": {
+          "u": 0.82,
+          "v": 0.18
+        },
+        "state": {
+          "time": 17486.30000001192,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 3.8394060924005835deg; --tilt-y: 3.8397283469868144deg; --ink-lx: 0.3177896935500715; --ink-ly: -0.31520267471285945;",
+              "rect": {
+                "x": 494.7643127441406,
+                "y": 180.34666442871094,
+                "w": 435.9269714355469,
+                "h": 544.45703125
+              },
+              "transform": "matrix3d(0.997755, 0.00448404, -0.0668155, 0, 0, 0.997756, 0.0669602, 0, 0.0669658, -0.0668099, 0.995516, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "3.83941deg",
+                "tiltY": "3.83973deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 494.7643127441406,
+                "y": 180.34666442871094,
+                "w": 435.9269714355469,
+                "h": 544.45703125
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "outsideRight",
+        "pointer": {
+          "u": 1.35,
+          "v": 0.5
+        },
+        "state": {
+          "time": 18391.60000000894,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 3.839996083537651deg; --tilt-y: 3.839998061839725deg; --ink-lx: 0.31999997735343144; --ink-ly: -0.31999997739438657;",
+              "rect": {
+                "x": 494.7637634277344,
+                "y": 180.34698486328125,
+                "w": 435.9277648925781,
+                "h": 544.4570922851562
+              },
+              "transform": "matrix3d(0.997755, 0.00448505, -0.0668201, 0, 0, 0.997755, 0.0669705, 0, 0.0669705, -0.0668201, 0.995515, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "3.84deg",
+                "tiltY": "3.84deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 494.7637634277344,
+                "y": 180.34698486328125,
+                "w": 435.9277648925781,
+                "h": 544.4570922851562
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "outsideLeft",
+        "pointer": {
+          "u": -0.35,
+          "v": 0.5
+        },
+        "state": {
+          "time": 18999.20000000298,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 3.839996083537651deg; --tilt-y: 3.839998061839725deg; --ink-lx: 0.31999997735343144; --ink-ly: -0.31999997739438657;",
+              "rect": {
+                "x": 494.7637634277344,
+                "y": 180.34698486328125,
+                "w": 435.9277648925781,
+                "h": 544.4570922851562
+              },
+              "transform": "matrix3d(0.997755, 0.00448505, -0.0668201, 0, 0, 0.997755, 0.0669705, 0, 0.0669705, -0.0668201, 0.995515, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "3.84deg",
+                "tiltY": "3.84deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 494.7637634277344,
+                "y": 180.34698486328125,
+                "w": 435.9277648925781,
+                "h": 544.4570922851562
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "outsideTop",
+        "pointer": {
+          "u": 0.5,
+          "v": -0.25
+        },
+        "state": {
+          "time": 19610.70000000298,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 3.839996083537651deg; --tilt-y: 3.839998061839725deg; --ink-lx: 0.31999997735343144; --ink-ly: -0.31999997739438657;",
+              "rect": {
+                "x": 494.7637634277344,
+                "y": 180.34698486328125,
+                "w": 435.9277648925781,
+                "h": 544.4570922851562
+              },
+              "transform": "matrix3d(0.997755, 0.00448505, -0.0668201, 0, 0, 0.997755, 0.0669705, 0, 0.0669705, -0.0668201, 0.995515, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "3.84deg",
+                "tiltY": "3.84deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 494.7637634277344,
+                "y": 180.34698486328125,
+                "w": 435.9277648925781,
+                "h": 544.4570922851562
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      },
+      {
+        "name": "outsideBottom",
+        "pointer": {
+          "u": 0.5,
+          "v": 1.2
+        },
+        "state": {
+          "time": 20231.90000000596,
+          "elements": [
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__wrapper",
+              "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+              "perspective": "1200px",
+              "filter": "none",
+              "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__image",
+              "style": null,
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-384.avif",
+                  "width": 190,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "IMG",
+              "cls": "",
+              "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+              "rect": {
+                "x": 727.0746459960938,
+                "y": 320.38238525390625,
+                "w": 209.9248046875,
+                "h": 253.50848388671875
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+              "style": null,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 1430,
+                "h": 900
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "0.08",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__card",
+              "style": null,
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+              "style": "",
+              "rect": {
+                "x": 499.390625,
+                "y": 180,
+                "w": 431.21875,
+                "h": 540
+              },
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "perspective": "1400px",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "HomeStamps-module__yl-W7q__paper",
+              "style": "--tilt-x: 3.839996083537651deg; --tilt-y: 3.839998061839725deg; --ink-lx: 0.31999997735343144; --ink-ly: -0.31999997739438657;",
+              "rect": {
+                "x": 494.7637634277344,
+                "y": 180.34698486328125,
+                "w": 435.9277648925781,
+                "h": 544.4570922851562
+              },
+              "transform": "matrix3d(0.997755, 0.00448505, -0.0668201, 0, 0, 0.997755, 0.0669705, 0, 0.0669705, -0.0668201, 0.995515, 0, 0, 0, 0, 1)",
+              "perspective": "none",
+              "filter": "blur(0px)",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "3.84deg",
+                "tiltY": "3.84deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": [
+                {
+                  "src": "https://billguo.me/stamps/ncs-640.avif",
+                  "width": 431,
+                  "complete": true
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "cls": "StampDetail-module__6eujwG__morphs",
+              "style": "--morph: 1;",
+              "rect": {
+                "x": 494.7637634277344,
+                "y": 180.34698486328125,
+                "w": 435.9277648925781,
+                "h": 544.4570922851562
+              },
+              "transform": "none",
+              "perspective": "none",
+              "filter": "none",
+              "transition": "all",
+              "opacity": "1",
+              "css": {
+                "tiltX": "0deg",
+                "tiltY": "0deg",
+                "scale": "1",
+                "mx": "",
+                "my": ""
+              },
+              "images": []
+            }
+          ]
+        }
+      }
+    ],
+    "focusPointerTrace": [
+      {
+        "t": 20951.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "0.0444599deg",
+        "y": "0.0444599deg"
+      },
+      {
+        "t": 20956.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "0.113003deg",
+        "y": "0.113003deg"
+      },
+      {
+        "t": 20962.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "0.212686deg",
+        "y": "0.212686deg"
+      },
+      {
+        "t": 20968,
+        "eventAt": 20951.20000000298,
+        "x": "0.332031deg",
+        "y": "0.332031deg"
+      },
+      {
+        "t": 20973.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "0.465845deg",
+        "y": "0.465845deg"
+      },
+      {
+        "t": 20979.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "0.607151deg",
+        "y": "0.607151deg"
+      },
+      {
+        "t": 20984.5,
+        "eventAt": 20951.20000000298,
+        "x": "0.754926deg",
+        "y": "0.754926deg"
+      },
+      {
+        "t": 20990.5,
+        "eventAt": 20951.20000000298,
+        "x": "0.920053deg",
+        "y": "0.920053deg"
+      },
+      {
+        "t": 20996.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "1.08624deg",
+        "y": "1.08624deg"
+      },
+      {
+        "t": 21002,
+        "eventAt": 20951.20000000298,
+        "x": "1.23786deg",
+        "y": "1.23786deg"
+      },
+      {
+        "t": 21006.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "1.37147deg",
+        "y": "1.37147deg"
+      },
+      {
+        "t": 21012.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "1.5156deg",
+        "y": "1.5156deg"
+      },
+      {
+        "t": 21018.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "1.66565deg",
+        "y": "1.66565deg"
+      },
+      {
+        "t": 21023.5,
+        "eventAt": 20951.20000000298,
+        "x": "1.8007deg",
+        "y": "1.8007deg"
+      },
+      {
+        "t": 21029.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "1.93744deg",
+        "y": "1.93744deg"
+      },
+      {
+        "t": 21034.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "2.05933deg",
+        "y": "2.05933deg"
+      },
+      {
+        "t": 21040.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "2.18196deg",
+        "y": "2.18196deg"
+      },
+      {
+        "t": 21045.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "2.29637deg",
+        "y": "2.29637deg"
+      },
+      {
+        "t": 21051.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "2.40472deg",
+        "y": "2.40472deg"
+      },
+      {
+        "t": 21057.5,
+        "eventAt": 20951.20000000298,
+        "x": "2.52073deg",
+        "y": "2.52073deg"
+      },
+      {
+        "t": 21062.5,
+        "eventAt": 20951.20000000298,
+        "x": "2.60803deg",
+        "y": "2.60803deg"
+      },
+      {
+        "t": 21067.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "2.69679deg",
+        "y": "2.69679deg"
+      },
+      {
+        "t": 21074.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "2.79285deg",
+        "y": "2.79285deg"
+      },
+      {
+        "t": 21079.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "2.86741deg",
+        "y": "2.86741deg"
+      },
+      {
+        "t": 21084.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "2.9374deg",
+        "y": "2.9374deg"
+      },
+      {
+        "t": 21090.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.00766deg",
+        "y": "3.00766deg"
+      },
+      {
+        "t": 21095.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.07196deg",
+        "y": "3.07196deg"
+      },
+      {
+        "t": 21101.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.13381deg",
+        "y": "3.13381deg"
+      },
+      {
+        "t": 21106.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.18835deg",
+        "y": "3.18835deg"
+      },
+      {
+        "t": 21112.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.2408deg",
+        "y": "3.2408deg"
+      },
+      {
+        "t": 21117.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.28856deg",
+        "y": "3.28856deg"
+      },
+      {
+        "t": 21123.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.33429deg",
+        "y": "3.33429deg"
+      },
+      {
+        "t": 21129,
+        "eventAt": 20951.20000000298,
+        "x": "3.37513deg",
+        "y": "3.37513deg"
+      },
+      {
+        "t": 21134.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.4129deg",
+        "y": "3.4129deg"
+      },
+      {
+        "t": 21140.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.45237deg",
+        "y": "3.45237deg"
+      },
+      {
+        "t": 21145.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.48152deg",
+        "y": "3.48152deg"
+      },
+      {
+        "t": 21151.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.51111deg",
+        "y": "3.51111deg"
+      },
+      {
+        "t": 21156.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.53794deg",
+        "y": "3.53794deg"
+      },
+      {
+        "t": 21163.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.56958deg",
+        "y": "3.56958deg"
+      },
+      {
+        "t": 21170.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.59689deg",
+        "y": "3.59689deg"
+      },
+      {
+        "t": 21175.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.61484deg",
+        "y": "3.61484deg"
+      },
+      {
+        "t": 21179.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.62829deg",
+        "y": "3.62829deg"
+      },
+      {
+        "t": 21186.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.65186deg",
+        "y": "3.65186deg"
+      },
+      {
+        "t": 21192.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.66854deg",
+        "y": "3.66854deg"
+      },
+      {
+        "t": 21197.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.68162deg",
+        "y": "3.68162deg"
+      },
+      {
+        "t": 21203.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.69665deg",
+        "y": "3.69665deg"
+      },
+      {
+        "t": 21208.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.70807deg",
+        "y": "3.70807deg"
+      },
+      {
+        "t": 21213,
+        "eventAt": 20951.20000000298,
+        "x": "3.7169deg",
+        "y": "3.7169deg"
+      },
+      {
+        "t": 21219,
+        "eventAt": 20951.20000000298,
+        "x": "3.72836deg",
+        "y": "3.72836deg"
+      },
+      {
+        "t": 21224,
+        "eventAt": 20951.20000000298,
+        "x": "3.73736deg",
+        "y": "3.73736deg"
+      },
+      {
+        "t": 21229.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.74654deg",
+        "y": "3.74654deg"
+      },
+      {
+        "t": 21235.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.75518deg",
+        "y": "3.75518deg"
+      },
+      {
+        "t": 21241,
+        "eventAt": 20951.20000000298,
+        "x": "3.76232deg",
+        "y": "3.76232deg"
+      },
+      {
+        "t": 21246.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.76954deg",
+        "y": "3.76954deg"
+      },
+      {
+        "t": 21252.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.7755deg",
+        "y": "3.7755deg"
+      },
+      {
+        "t": 21257.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.78134deg",
+        "y": "3.78134deg"
+      },
+      {
+        "t": 21264.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.78772deg",
+        "y": "3.78772deg"
+      },
+      {
+        "t": 21269.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.79178deg",
+        "y": "3.79178deg"
+      },
+      {
+        "t": 21274.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.7956deg",
+        "y": "3.7956deg"
+      },
+      {
+        "t": 21281.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.80046deg",
+        "y": "3.80046deg"
+      },
+      {
+        "t": 21286.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.80337deg",
+        "y": "3.80337deg"
+      },
+      {
+        "t": 21292,
+        "eventAt": 20951.20000000298,
+        "x": "3.80677deg",
+        "y": "3.80677deg"
+      },
+      {
+        "t": 21297.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.80996deg",
+        "y": "3.80996deg"
+      },
+      {
+        "t": 21301.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.81195deg",
+        "y": "3.81195deg"
+      },
+      {
+        "t": 21307.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.81453deg",
+        "y": "3.81453deg"
+      },
+      {
+        "t": 21314.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.81717deg",
+        "y": "3.81717deg"
+      },
+      {
+        "t": 21319.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.81904deg",
+        "y": "3.81904deg"
+      },
+      {
+        "t": 21324,
+        "eventAt": 20951.20000000298,
+        "x": "3.8207deg",
+        "y": "3.8207deg"
+      },
+      {
+        "t": 21330.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.82265deg",
+        "y": "3.82265deg"
+      },
+      {
+        "t": 21335.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.82411deg",
+        "y": "3.82411deg"
+      },
+      {
+        "t": 21341.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.8257deg",
+        "y": "3.8257deg"
+      },
+      {
+        "t": 21346.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.8269deg",
+        "y": "3.8269deg"
+      },
+      {
+        "t": 21352.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.82816deg",
+        "y": "3.82816deg"
+      },
+      {
+        "t": 21358.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.82926deg",
+        "y": "3.82926deg"
+      },
+      {
+        "t": 21363.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.8302deg",
+        "y": "3.8302deg"
+      },
+      {
+        "t": 21371.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83147deg",
+        "y": "3.83147deg"
+      },
+      {
+        "t": 21375.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83202deg",
+        "y": "3.83202deg"
+      },
+      {
+        "t": 21380.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83268deg",
+        "y": "3.83268deg"
+      },
+      {
+        "t": 21385.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83324deg",
+        "y": "3.83324deg"
+      },
+      {
+        "t": 21391.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.83393deg",
+        "y": "3.83393deg"
+      },
+      {
+        "t": 21396.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83446deg",
+        "y": "3.83446deg"
+      },
+      {
+        "t": 21402.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83496deg",
+        "y": "3.83496deg"
+      },
+      {
+        "t": 21407.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83541deg",
+        "y": "3.83541deg"
+      },
+      {
+        "t": 21413.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83583deg",
+        "y": "3.83583deg"
+      },
+      {
+        "t": 21418.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83623deg",
+        "y": "3.83623deg"
+      },
+      {
+        "t": 21424.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83659deg",
+        "y": "3.83659deg"
+      },
+      {
+        "t": 21429.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83684deg",
+        "y": "3.83684deg"
+      },
+      {
+        "t": 21434.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83714deg",
+        "y": "3.83714deg"
+      },
+      {
+        "t": 21441,
+        "eventAt": 20951.20000000298,
+        "x": "3.83743deg",
+        "y": "3.83743deg"
+      },
+      {
+        "t": 21447.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83769deg",
+        "y": "3.83769deg"
+      },
+      {
+        "t": 21451.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83787deg",
+        "y": "3.83787deg"
+      },
+      {
+        "t": 21458.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83812deg",
+        "y": "3.83812deg"
+      },
+      {
+        "t": 21464.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.8383deg",
+        "y": "3.8383deg"
+      },
+      {
+        "t": 21469.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83843deg",
+        "y": "3.83843deg"
+      },
+      {
+        "t": 21475.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83858deg",
+        "y": "3.83858deg"
+      },
+      {
+        "t": 21479.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83869deg",
+        "y": "3.83869deg"
+      },
+      {
+        "t": 21485.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83883deg",
+        "y": "3.83883deg"
+      },
+      {
+        "t": 21492.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83895deg",
+        "y": "3.83895deg"
+      },
+      {
+        "t": 21496.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83903deg",
+        "y": "3.83903deg"
+      },
+      {
+        "t": 21503.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83914deg",
+        "y": "3.83914deg"
+      },
+      {
+        "t": 21508.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83921deg",
+        "y": "3.83921deg"
+      },
+      {
+        "t": 21514.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83929deg",
+        "y": "3.83929deg"
+      },
+      {
+        "t": 21519.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83935deg",
+        "y": "3.83935deg"
+      },
+      {
+        "t": 21525.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83941deg",
+        "y": "3.83941deg"
+      },
+      {
+        "t": 21530.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83946deg",
+        "y": "3.83946deg"
+      },
+      {
+        "t": 21535,
+        "eventAt": 20951.20000000298,
+        "x": "3.8395deg",
+        "y": "3.8395deg"
+      },
+      {
+        "t": 21540.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83955deg",
+        "y": "3.83955deg"
+      },
+      {
+        "t": 21546,
+        "eventAt": 20951.20000000298,
+        "x": "3.83959deg",
+        "y": "3.83959deg"
+      },
+      {
+        "t": 21553.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83964deg",
+        "y": "3.83964deg"
+      },
+      {
+        "t": 21558.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83967deg",
+        "y": "3.83967deg"
+      },
+      {
+        "t": 21564.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.8397deg",
+        "y": "3.8397deg"
+      },
+      {
+        "t": 21570.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83973deg",
+        "y": "3.83973deg"
+      },
+      {
+        "t": 21575,
+        "eventAt": 20951.20000000298,
+        "x": "3.83975deg",
+        "y": "3.83975deg"
+      },
+      {
+        "t": 21579.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83977deg",
+        "y": "3.83977deg"
+      },
+      {
+        "t": 21585.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.8398deg",
+        "y": "3.8398deg"
+      },
+      {
+        "t": 21591.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83982deg",
+        "y": "3.83982deg"
+      },
+      {
+        "t": 21596.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83983deg",
+        "y": "3.83983deg"
+      },
+      {
+        "t": 21602.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83985deg",
+        "y": "3.83985deg"
+      },
+      {
+        "t": 21608,
+        "eventAt": 20951.20000000298,
+        "x": "3.83986deg",
+        "y": "3.83986deg"
+      },
+      {
+        "t": 21613.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83988deg",
+        "y": "3.83988deg"
+      },
+      {
+        "t": 21618.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.83989deg",
+        "y": "3.83989deg"
+      },
+      {
+        "t": 21624.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.8399deg",
+        "y": "3.8399deg"
+      },
+      {
+        "t": 21629.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83991deg",
+        "y": "3.83991deg"
+      },
+      {
+        "t": 21635.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83992deg",
+        "y": "3.83992deg"
+      },
+      {
+        "t": 21640.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83992deg",
+        "y": "3.83992deg"
+      },
+      {
+        "t": 21647,
+        "eventAt": 20951.20000000298,
+        "x": "3.83993deg",
+        "y": "3.83993deg"
+      },
+      {
+        "t": 21651.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83994deg",
+        "y": "3.83994deg"
+      },
+      {
+        "t": 21657.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83994deg",
+        "y": "3.83994deg"
+      },
+      {
+        "t": 21662.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83995deg",
+        "y": "3.83995deg"
+      },
+      {
+        "t": 21668.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83995deg",
+        "y": "3.83995deg"
+      },
+      {
+        "t": 21673.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83996deg",
+        "y": "3.83996deg"
+      },
+      {
+        "t": 21679.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83996deg",
+        "y": "3.83996deg"
+      },
+      {
+        "t": 21684.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83997deg",
+        "y": "3.83997deg"
+      },
+      {
+        "t": 21690.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83997deg",
+        "y": "3.83997deg"
+      },
+      {
+        "t": 21695.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83997deg",
+        "y": "3.83997deg"
+      },
+      {
+        "t": 21703.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83997deg",
+        "y": "3.83997deg"
+      },
+      {
+        "t": 21708.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83998deg",
+        "y": "3.83998deg"
+      },
+      {
+        "t": 21712.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83998deg",
+        "y": "3.83998deg"
+      },
+      {
+        "t": 21717.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83998deg",
+        "y": "3.83998deg"
+      },
+      {
+        "t": 21723.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.83998deg",
+        "y": "3.83998deg"
+      },
+      {
+        "t": 21729.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83998deg",
+        "y": "3.83998deg"
+      },
+      {
+        "t": 21734.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21740.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21746.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21752.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21758.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21762.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21768.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21775.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21780.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21785.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21790.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21796.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21803.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21808.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21814.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21819.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21824.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21831,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21836.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21841.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21847.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21852.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21858.60000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21863.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21869.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21873.90000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21879,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21884.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21894.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21897.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21902.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21908.10000000894,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21914.20000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21919.5,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21925.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21932.70000000298,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21935.40000000596,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21942,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21947.30000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      },
+      {
+        "t": 21952.80000001192,
+        "eventAt": 20951.20000000298,
+        "x": "3.83999deg",
+        "y": "3.83999deg"
+      }
+    ],
+    "css": [
+      "@property --tilt-x { syntax: \"<angle>\"; inherits: false; initial-value: 0deg; }",
+      "@property --tilt-y { syntax: \"<angle>\"; inherits: false; initial-value: 0deg; }"
+    ],
+    "focusDrag": {
+      "time": 22681.30000001192,
+      "elements": [
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__wrapper",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+          "perspective": "1200px",
+          "filter": "none",
+          "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__paper",
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "perspective": "none",
+          "filter": "blur(0px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__image",
+          "style": null,
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+          "style": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1430,
+            "h": 900
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "0.08",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__card",
+          "style": null,
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted StampDetail-module__6eujwG__isHeld",
+          "style": "transform: translate3d(35.9349px, -67.5px, 0px) rotate(0deg) scale(1, 1);",
+          "rect": {
+            "x": 535.3255004882812,
+            "y": 112.5,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "matrix(1, 0, 0, 1, 35.9349, -67.5)",
+          "perspective": "1400px",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__paper",
+          "style": "--tilt-x: 0.0006837712097529423deg; --tilt-y: 0.0006837712096654306deg; --ink-lx: 0.0033344939376611623; --ink-ly: -0.003334493938087925;",
+          "rect": {
+            "x": 535.3246459960938,
+            "y": 112.5001220703125,
+            "w": 431.2197265625,
+            "h": 540.0009765625
+          },
+          "transform": "matrix3d(1, 1.42422e-10, -1.19341e-05, 0, 0, 1, 1.19341e-05, 0, 1.19341e-05, -1.19341e-05, 1, 0, 0, 0, 0, 1)",
+          "perspective": "none",
+          "filter": "blur(0px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0.000683771deg",
+            "tiltY": "0.000683771deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__morphs",
+          "style": "--morph: 1;",
+          "rect": {
+            "x": 535.3246459960938,
+            "y": 112.5001220703125,
+            "w": 431.2197265625,
+            "h": 540.0009765625
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        }
+      ]
+    },
+    "focusDragEnd": {
+      "time": 23491.5,
+      "elements": [
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__wrapper",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-35.5218px, -21.7434px) translate(-4.48805px, 1.216px) rotate(4.97702deg); visibility: hidden;",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "matrix(0.99623, 0.0867561, -0.0867561, 0.99623, -40.0098, -20.5274)",
+          "perspective": "1200px",
+          "filter": "none",
+          "transition": "filter 0.16s cubic-bezier(0.2, 0.6, 0.2, 1)",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__paper",
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 1; --ink-lx: 0.28435811701932073; --ink-ly: -0.27301971053313023;",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "perspective": "none",
+          "filter": "blur(0px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__image",
+          "style": null,
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-384.avif",
+              "width": 190,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "style": "position:absolute;inset:0;width:100%;height:100%;color:transparent",
+          "rect": {
+            "x": 727.0746459960938,
+            "y": 320.38238525390625,
+            "w": 209.9248046875,
+            "h": 253.50848388671875
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+          "style": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1430,
+            "h": 900
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "0.08",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__card",
+          "style": null,
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+          "style": "",
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "perspective": "1400px",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "HomeStamps-module__yl-W7q__paper",
+          "style": "--tilt-x: 0.000009724796782263526deg; --tilt-y: 0.000009724796781018873deg; --ink-lx: 0; --ink-ly: 0;",
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "matrix3d(1, 2.88082e-14, -1.6973e-07, 0, 0, 1, 1.6973e-07, 0, 1.6973e-07, -1.6973e-07, 1, 0, 0, 0, 0, 1)",
+          "perspective": "none",
+          "filter": "blur(0px)",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "9.7248e-06deg",
+            "tiltY": "9.7248e-06deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": [
+            {
+              "src": "https://billguo.me/stamps/ncs-640.avif",
+              "width": 431,
+              "complete": true
+            }
+          ]
+        },
+        {
+          "tag": "DIV",
+          "cls": "StampDetail-module__6eujwG__morphs",
+          "style": "--morph: 1;",
+          "rect": {
+            "x": 499.390625,
+            "y": 180,
+            "w": 431.21875,
+            "h": 540
+          },
+          "transform": "none",
+          "perspective": "none",
+          "filter": "none",
+          "transition": "all",
+          "opacity": "1",
+          "css": {
+            "tiltX": "0deg",
+            "tiltY": "0deg",
+            "scale": "1",
+            "mx": "",
+            "my": ""
+          },
+          "images": []
+        }
+      ]
+    }
+  },
+  "microsoft": {
+    "dom": {
+      "canvases": [
+        {
+          "width": 720,
+          "height": 450,
+          "css": {
+            "width": 1440,
+            "height": 900
+          },
+          "parent": "<block-gl class=\"block pointer-events-none sticky top-0 left-0 w-full h-100vh overflow-hidden\" pause-on-scroll=\"\">\n        <canvas role=\"img\" aria-hidden=\"true\" __aria-label=\"A Webgl animation showing bokeh blur shapes on purple gradient background\" class=\"w-full h-full\" width=\"720\" height=\"450\" style=\"transform: translateZ(0px);\">\n        </canvas>\n      </block-gl>"
+        }
+      ]
+    },
+    "samples": [
+      {
+        "name": "left",
+        "pointer": {
+          "x": 100,
+          "y": 450
+        },
+        "audit": {
+          "uniforms": {
+            "uBgColor": [
+              1,
+              0.6666666666666666,
+              0.6470588235294118
+            ],
+            "uRadius": [
+              0.354
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.84
+            ],
+            "uAngle": [
+              0.12222222222222222
+            ],
+            "uVignetteColor": [
+              0.2901960784313726,
+              0,
+              0.20784313725490197
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              720,
+              450
+            ],
+            "uClearColor": [
+              1,
+              0.6666666666666666,
+              0.6470588235294118
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              12.875199999988018
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "tInput": [
+              1
+            ],
+            "uAmount": [
+              0.754
+            ],
+            "uSpread": [
+              1
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ],
+            "tBlueNoise": [
+              1
+            ],
+            "uLoaded": [
+              1
+            ],
+            "uOutputColor": [
+              1,
+              0.8196078431372549,
+              0.596078431372549
+            ],
+            "tBgTexture": [
+              0
+            ]
+          },
+          "programs": {
+            "1": {
+              "uLoaded": [
+                1
+              ],
+              "uBgColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ],
+              "uOutputColor": [
+                1,
+                0.8196078431372549,
+                0.596078431372549
+              ],
+              "tBgTexture": [
+                0
+              ],
+              "tInput": [
+                1
+              ]
+            },
+            "2": {
+              "uBgColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ]
+            },
+            "3": {
+              "uRadius": [
+                0.354
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                0.2901960784313726,
+                0,
+                0.20784313725490197
+              ],
+              "uPos": [
+                0.06944534182548523,
+                0.5000007152557373
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "uClearColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ]
+            },
+            "4": {
+              "uMixRadius": [
+                1
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                12.875199999988018
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "tInput": [
+                0
+              ]
+            },
+            "5": {
+              "uAmount": [
+                0.534
+              ],
+              "uSpread": [
+                1
+              ],
+              "uAngle": [
+                0.12222222222222222
+              ],
+              "uTime": [
+                12.875199999988018
+              ],
+              "uSkew": [
+                0.84
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "tInput": [
+                0
+              ]
+            },
+            "6": {
+              "uAmount": [
+                0.754
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ],
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ]
+            }
+          },
+          "contexts": [
+            {
+              "type": "webgl2",
+              "success": true
+            }
+          ],
+          "draws": 7868
+        }
+      },
+      {
+        "name": "right",
+        "pointer": {
+          "x": 1300,
+          "y": 450
+        },
+        "audit": {
+          "uniforms": {
+            "uBgColor": [
+              1,
+              0.6666666666666666,
+              0.6470588235294118
+            ],
+            "uRadius": [
+              0.354
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.84
+            ],
+            "uAngle": [
+              0.12222222222222222
+            ],
+            "uVignetteColor": [
+              0.2901960784313726,
+              0,
+              0.20784313725490197
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              720,
+              450
+            ],
+            "uClearColor": [
+              1,
+              0.6666666666666666,
+              0.6470588235294118
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              14.30939999997608
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "tInput": [
+              1
+            ],
+            "uAmount": [
+              0.754
+            ],
+            "uSpread": [
+              1
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ],
+            "tBlueNoise": [
+              1
+            ],
+            "uLoaded": [
+              1
+            ],
+            "uOutputColor": [
+              1,
+              0.8196078431372549,
+              0.596078431372549
+            ],
+            "tBgTexture": [
+              0
+            ]
+          },
+          "programs": {
+            "1": {
+              "uLoaded": [
+                1
+              ],
+              "uBgColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ],
+              "uOutputColor": [
+                1,
+                0.8196078431372549,
+                0.596078431372549
+              ],
+              "tBgTexture": [
+                0
+              ],
+              "tInput": [
+                1
+              ]
+            },
+            "2": {
+              "uBgColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ]
+            },
+            "3": {
+              "uRadius": [
+                0.354
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                0.2901960784313726,
+                0,
+                0.20784313725490197
+              ],
+              "uPos": [
+                0.9027767777442932,
+                0.5000002384185791
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "uClearColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ]
+            },
+            "4": {
+              "uMixRadius": [
+                1
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                14.30939999997608
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "tInput": [
+                0
+              ]
+            },
+            "5": {
+              "uAmount": [
+                0.534
+              ],
+              "uSpread": [
+                1
+              ],
+              "uAngle": [
+                0.12222222222222222
+              ],
+              "uTime": [
+                14.30939999997608
+              ],
+              "uSkew": [
+                0.84
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "tInput": [
+                0
+              ]
+            },
+            "6": {
+              "uAmount": [
+                0.754
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ],
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ]
+            }
+          },
+          "contexts": [
+            {
+              "type": "webgl2",
+              "success": true
+            }
+          ],
+          "draws": 8771
+        }
+      },
+      {
+        "name": "top",
+        "pointer": {
+          "x": 720,
+          "y": 100
+        },
+        "audit": {
+          "uniforms": {
+            "uBgColor": [
+              1,
+              0.6666666666666666,
+              0.6470588235294118
+            ],
+            "uRadius": [
+              0.354
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.84
+            ],
+            "uAngle": [
+              0.12222222222222222
+            ],
+            "uVignetteColor": [
+              0.2901960784313726,
+              0,
+              0.20784313725490197
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              720,
+              450
+            ],
+            "uClearColor": [
+              1,
+              0.6666666666666666,
+              0.6470588235294118
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              15.753399999976068
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "tInput": [
+              1
+            ],
+            "uAmount": [
+              0.754
+            ],
+            "uSpread": [
+              1
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ],
+            "tBlueNoise": [
+              1
+            ],
+            "uLoaded": [
+              1
+            ],
+            "uOutputColor": [
+              1,
+              0.8196078431372549,
+              0.596078431372549
+            ],
+            "tBgTexture": [
+              0
+            ]
+          },
+          "programs": {
+            "1": {
+              "uLoaded": [
+                1
+              ],
+              "uBgColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ],
+              "uOutputColor": [
+                1,
+                0.8196078431372549,
+                0.596078431372549
+              ],
+              "tBgTexture": [
+                0
+              ],
+              "tInput": [
+                1
+              ]
+            },
+            "2": {
+              "uBgColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ]
+            },
+            "3": {
+              "uRadius": [
+                0.354
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                0.2901960784313726,
+                0,
+                0.20784313725490197
+              ],
+              "uPos": [
+                0.500000536441803,
+                0.888888418674469
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "uClearColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ]
+            },
+            "4": {
+              "uMixRadius": [
+                1
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                15.753399999976068
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "tInput": [
+                0
+              ]
+            },
+            "5": {
+              "uAmount": [
+                0.534
+              ],
+              "uSpread": [
+                1
+              ],
+              "uAngle": [
+                0.12222222222222222
+              ],
+              "uTime": [
+                15.753399999976068
+              ],
+              "uSkew": [
+                0.84
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "tInput": [
+                0
+              ]
+            },
+            "6": {
+              "uAmount": [
+                0.754
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ],
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ]
+            }
+          },
+          "contexts": [
+            {
+              "type": "webgl2",
+              "success": true
+            }
+          ],
+          "draws": 9674
+        }
+      },
+      {
+        "name": "bottom",
+        "pointer": {
+          "x": 720,
+          "y": 800
+        },
+        "audit": {
+          "uniforms": {
+            "uBgColor": [
+              1,
+              0.6666666666666666,
+              0.6470588235294118
+            ],
+            "uRadius": [
+              0.354
+            ],
+            "uFalloff": [
+              1
+            ],
+            "uDisplace": [
+              0
+            ],
+            "uSkew": [
+              0.84
+            ],
+            "uAngle": [
+              0.12222222222222222
+            ],
+            "uVignetteColor": [
+              0.2901960784313726,
+              0,
+              0.20784313725490197
+            ],
+            "uPos": [
+              0.5,
+              0.5
+            ],
+            "uResolution": [
+              720,
+              450
+            ],
+            "uClearColor": [
+              1,
+              0.6666666666666666,
+              0.6470588235294118
+            ],
+            "uMixRadius": [
+              1
+            ],
+            "uFrequency": [
+              0.35
+            ],
+            "uAmplitude": [
+              1.18
+            ],
+            "uRotation": [
+              0
+            ],
+            "uTime": [
+              17.235799999982053
+            ],
+            "uTrackMouse": [
+              0
+            ],
+            "tInput": [
+              1
+            ],
+            "uAmount": [
+              0.754
+            ],
+            "uSpread": [
+              1
+            ],
+            "uTilt": [
+              0.5
+            ],
+            "uBlueNoiseResolution": [
+              256,
+              256
+            ],
+            "tBlueNoise": [
+              1
+            ],
+            "uLoaded": [
+              1
+            ],
+            "uOutputColor": [
+              1,
+              0.8196078431372549,
+              0.596078431372549
+            ],
+            "tBgTexture": [
+              0
+            ]
+          },
+          "programs": {
+            "1": {
+              "uLoaded": [
+                1
+              ],
+              "uBgColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ],
+              "uOutputColor": [
+                1,
+                0.8196078431372549,
+                0.596078431372549
+              ],
+              "tBgTexture": [
+                0
+              ],
+              "tInput": [
+                1
+              ]
+            },
+            "2": {
+              "uBgColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ]
+            },
+            "3": {
+              "uRadius": [
+                0.354
+              ],
+              "uFalloff": [
+                1
+              ],
+              "uDisplace": [
+                0
+              ],
+              "uSkew": [
+                0.54
+              ],
+              "uAngle": [
+                0
+              ],
+              "uVignetteColor": [
+                0.2901960784313726,
+                0,
+                0.20784313725490197
+              ],
+              "uPos": [
+                0.5000002384185791,
+                0.11111174523830414
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "uClearColor": [
+                1,
+                0.6666666666666666,
+                0.6470588235294118
+              ]
+            },
+            "4": {
+              "uMixRadius": [
+                1
+              ],
+              "uFrequency": [
+                0.35
+              ],
+              "uAmplitude": [
+                1.18
+              ],
+              "uRotation": [
+                0
+              ],
+              "uTime": [
+                17.235799999982053
+              ],
+              "uTrackMouse": [
+                0
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "tInput": [
+                0
+              ]
+            },
+            "5": {
+              "uAmount": [
+                0.534
+              ],
+              "uSpread": [
+                1
+              ],
+              "uAngle": [
+                0.12222222222222222
+              ],
+              "uTime": [
+                17.235799999982053
+              ],
+              "uSkew": [
+                0.84
+              ],
+              "uMixRadius": [
+                1
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "tInput": [
+                0
+              ]
+            },
+            "6": {
+              "uAmount": [
+                0.754
+              ],
+              "uTilt": [
+                0.5
+              ],
+              "uPos": [
+                0.5,
+                0.5
+              ],
+              "uResolution": [
+                720,
+                450
+              ],
+              "uBlueNoiseResolution": [
+                256,
+                256
+              ],
+              "tInput": [
+                0
+              ],
+              "tBlueNoise": [
+                1
+              ]
+            }
+          },
+          "contexts": [
+            {
+              "type": "webgl2",
+              "success": true
+            }
+          ],
+          "draws": 10605
+        }
+      }
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,76 @@
+{
+  "browser": "installed Google Chrome via Playwright",
+  "stamps": [
+    {
+      "kind": "craft",
+      "width": 720,
+      "height": 900,
+      "creationMs": 156,
+      "centerAlpha": 255,
+      "edgeCutAlpha": 0,
+      "cornerAlpha": 255,
+      "deterministicPixels": true,
+      "differingChannels": 0
+    },
+    {
+      "kind": "kensho",
+      "width": 720,
+      "height": 900,
+      "creationMs": 12,
+      "centerAlpha": 255,
+      "edgeCutAlpha": 0,
+      "cornerAlpha": 255,
+      "deterministicPixels": true,
+      "differingChannels": 0
+    },
+    {
+      "kind": "specimen",
+      "width": 720,
+      "height": 900,
+      "creationMs": 12,
+      "centerAlpha": 255,
+      "edgeCutAlpha": 0,
+      "cornerAlpha": 255,
+      "deterministicPixels": true,
+      "differingChannels": 0
+    },
+    {
+      "kind": "mint",
+      "width": 720,
+      "height": 900,
+      "creationMs": 13,
+      "centerAlpha": 255,
+      "edgeCutAlpha": 0,
+      "cornerAlpha": 255,
+      "deterministicPixels": true,
+      "differingChannels": 0
+    },
+    {
+      "kind": "gaohan",
+      "width": 720,
+      "height": 900,
+      "creationMs": 11,
+      "centerAlpha": 255,
+      "edgeCutAlpha": 0,
+      "cornerAlpha": 255,
+      "deterministicPixels": true,
+      "differingChannels": 0
+    },
+    {
+      "kind": "nocturne",
+      "width": 720,
+      "height": 900,
+      "creationMs": 18,
+      "centerAlpha": 255,
+      "edgeCutAlpha": 0,
+      "cornerAlpha": 255,
+      "deterministicPixels": true,
+      "differingChannels": 0
+    }
+  ],
+  "customSize": {
+    "width": 288,
+    "height": 360
+  },
+  "unknownKindThrows": true
+}

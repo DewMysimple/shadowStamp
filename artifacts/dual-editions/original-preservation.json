@@ -1,0 +1,11 @@
+{
+  "originalCommit": "11d5049",
+  "integratedEditionCommit": "74ba21c",
+  "runtimeFileCount": 27,
+  "runtimeFilesUnchanged": true,
+  "mismatchedFiles": [],
+  "unchangedPNG": true,
+  "beforeSHA256": "7864239674362a60e563f145c83c42803705b018b706750374f1ca3637701718",
+  "afterSHA256": "7864239674362a60e563f145c83c42803705b018b706750374f1ca3637701718",
+  "conditions": "Original localhost4173 same fresh browser context, reload,1440x900 DPR1, centered inactive pointer, animation/follow/tilt disabled in diagnostics only. No user browser data touched."
+}

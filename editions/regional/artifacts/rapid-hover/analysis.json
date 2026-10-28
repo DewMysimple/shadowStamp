@@ -1,0 +1,140 @@
+{
+  "baseRevision": "73cba51",
+  "sourceFindings": [
+    {
+      "file": "src/rendering/StampMaterial.js",
+      "condition": "activity > 0.001 && uBlur < 0.02",
+      "effect": "All physical light and RGB light-map modulation suppressed until incoming card is almost fully sharp."
+    },
+    {
+      "file": "src/rendering/StampGallery.js",
+      "logic": "blurTarget=0 for current active; exponential damp with settings.blurResponse",
+      "defaultInitialBlur": 11,
+      "defaultResponseSeconds": 0.075,
+      "predictedWaitMs": 473.2438708669887,
+      "maximumResponseSeconds": 0.4,
+      "maximumPredictedWaitMs": 2523.9673112906066
+    },
+    {
+      "file": "src/parameters.js",
+      "defaultLightFadeInSeconds": 0.12,
+      "fadeToHalfMs": 83.17766166719343,
+      "effect": "The visible blackout is much longer than the intended light fade-in itself."
+    }
+  ],
+  "observedFullHoverVisits": [
+    {
+      "id": "joy",
+      "enteredAt": 1419.1000000089407,
+      "windowMs": 700.2000000029802,
+      "firstFrameMs": 27.5,
+      "firstActivity": 0.12967527416660946,
+      "firstBlur": 0,
+      "firstLitMs": 27.5,
+      "maxActivity": 0.9974535512959654,
+      "lastBlur": 0,
+      "firstField": 1,
+      "lastField": 16,
+      "pointer": [
+        0.5,
+        0.5
+      ],
+      "target": [
+        0.500516858634223,
+        0.49765451927736004
+      ]
+    },
+    {
+      "id": "anger",
+      "enteredAt": 2124.800000011921,
+      "windowMs": 666.5,
+      "firstFrameMs": 0.29999999701976776,
+      "firstActivity": 0.0447988508837116,
+      "firstBlur": 10.222201161933238,
+      "firstLitMs": 472.19999998807907,
+      "maxActivity": 0.9963082942566415,
+      "lastBlur": 0,
+      "firstField": 16,
+      "lastField": 31,
+      "pointer": [
+        0.5027075007144036,
+        0.4876282669041733
+      ],
+      "target": [
+        0.49962625449744014,
+        0.49919488187170885
+      ]
+    },
+    {
+      "id": "motion",
+      "enteredAt": 2796.9000000059605,
+      "windowMs": 666.9000000059605,
+      "firstFrameMs": 0.4000000059604645,
+      "firstActivity": 0.04559452026635267,
+      "firstBlur": 10.208580642747986,
+      "firstLitMs": 473.29999999701977,
+      "maxActivity": 0.9963082942566415,
+      "lastBlur": 0,
+      "firstField": 32,
+      "lastField": 46,
+      "pointer": [
+        0.49491408212998467,
+        0.4875503090935653
+      ],
+      "target": [
+        0.5003402327058663,
+        0.4992097713797115
+      ]
+    },
+    {
+      "id": "doubt",
+      "enteredAt": 3470.4000000059605,
+      "windowMs": 677,
+      "firstFrameMs": 0.7000000029802322,
+      "firstActivity": 0.04638952686737224,
+      "firstBlur": 10.194978272153229,
+      "firstLitMs": 471,
+      "maxActivity": 0.9966344593719543,
+      "lastBlur": 0,
+      "firstField": 47,
+      "lastField": 62,
+      "pointer": [
+        0.5050944471255155,
+        0.4881466641526568
+      ],
+      "target": [
+        0.49981196224653784,
+        0.49907205510577096
+      ]
+    }
+  ],
+  "rapidVisitsWithNoPermittedLight": 11,
+  "rapidVisitCount": 12,
+  "resourceSummary": {
+    "beforeFirstActivation": {
+      "textures": [
+        24
+      ],
+      "programs": [
+        3
+      ]
+    },
+    "afterFirstActivation": {
+      "textures": [
+        26
+      ],
+      "programs": [
+        5
+      ]
+    }
+  },
+  "recommendations": [
+    "Decouple the paper-light shader from near-zero blur; blur may settle while light is already fading in.",
+    "On an active-stamp identity change, invalidate/update the shared optical map in that render frame, and seed its local pointer from the new card. Keep existing per-card movement response thereafter.",
+    "Keep lightFadeIn/lightFadeOut and blurResponse semantics; do not silently override saved parameter values to mask the shader gating."
+  ],
+  "limits": [
+    "GPU uniform measurements prove the actual activity/blur combination and shader gate; this baseline is not a per-pixel luminance threshold benchmark.",
+    "Headless installed Chrome uses software WebGL on this machine; response should additionally be observed in the user browser."
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "capturedAt": "2026-10-28T03:33:43.028Z",
+  "viewport": [
+    1440,
+    900
+  ],
+  "assets": [
+    {
+      "id": "foshan",
+      "number": "01",
+      "place": "佛山",
+      "title": "狮起南海",
+      "ratio": 0.6923076923076923,
+      "file": "stamp-01-foshan.png",
+      "width": 720,
+      "height": 1040
+    },
+    {
+      "id": "guangzhou",
+      "number": "02",
+      "place": "广州",
+      "title": "花城采青",
+      "ratio": 0.6923076923076923,
+      "file": "stamp-02-guangzhou.png",
+      "width": 720,
+      "height": 1040
+    },
+    {
+      "id": "heshan",
+      "number": "03",
+      "place": "鹤山",
+      "title": "灵狮猫步",
+      "ratio": 0.6923076923076923,
+      "file": "stamp-03-heshan.png",
+      "width": 720,
+      "height": 1040
+    },
+    {
+      "id": "suixi",
+      "number": "04",
+      "place": "遂溪",
+      "title": "高桩腾跃",
+      "ratio": 0.6923076923076923,
+      "file": "stamp-04-suixi.png",
+      "width": 720,
+      "height": 1040
+    },
+    {
+      "id": "beijing",
+      "number": "05",
+      "place": "北京",
+      "title": "京华太狮",
+      "ratio": 1.3333333333333333,
+      "file": "stamp-05-beijing.png",
+      "width": 720,
+      "height": 540
+    },
+    {
+      "id": "tianyang",
+      "number": "06",
+      "place": "田阳",
+      "title": "壮乡飞狮",
+      "ratio": 1.3333333333333333,
+      "file": "stamp-06-tianyang.png",
+      "width": 720,
+      "height": 540
+    },
+    {
+      "id": "quanzhou",
+      "number": "07",
+      "place": "泉州",
+      "title": "闽南狮阵",
+      "ratio": 1.3333333333333333,
+      "file": "stamp-07-quanzhou.png",
+      "width": 720,
+      "height": 540
+    },
+    {
+      "id": "hongkong",
+      "number": "08",
+      "place": "香港",
+      "title": "港城狮跃",
+      "ratio": 1.3333333333333333,
+      "file": "stamp-08-hongkong.png",
+      "width": 720,
+      "height": 540
+    },
+    {
+      "id": "singapore",
+      "number": "09",
+      "place": "新加坡",
+      "title": "狮庆南洋",
+      "ratio": 0.5333333333333333,
+      "file": "stamp-09-singapore.png",
+      "width": 720,
+      "height": 1350
+    },
+    {
+      "id": "kualalumpur",
+      "number": "10",
+      "place": "吉隆坡",
+      "title": "雄狮竞跃",
+      "ratio": 0.5333333333333333,
+      "file": "stamp-10-kualalumpur.png",
+      "width": 720,
+      "height": 1350
+    },
+    {
+      "id": "sanfrancisco",
+      "number": "11",
+      "place": "旧金山",
+      "title": "金山狮影",
+      "ratio": 0.5333333333333333,
+      "file": "stamp-11-sanfrancisco.png",
+      "width": 720,
+      "height": 1350
+    },
+    {
+      "id": "london",
+      "number": "12",
+      "place": "伦敦",
+      "title": "伦敦狮韵",
+      "ratio": 0.5333333333333333,
+      "file": "stamp-12-london.png",
+      "width": 720,
+      "height": 1350
+    }
+  ],
+  "pageErrors": []
+}

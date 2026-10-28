@@ -1,0 +1,1999 @@
+{
+  "gallery": {
+    "time": 12766.300000011921,
+    "bodyClass": "",
+    "bodyAttr": [],
+    "stamps": [
+      {
+        "id": "kensho",
+        "rect": {
+          "x": 259.3883972167969,
+          "y": 318.078125,
+          "w": 208.11016845703125,
+          "h": 252.11773681640625
+        },
+        "transform": "matrix(0.996907, 0.0785879, -0.0785879, 0.996907, -370.76, -79.0896)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(-3.63591px, -6.08956px) rotate(4.50741deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "ncs",
+        "rect": {
+          "x": 728.7035522460938,
+          "y": 318.578125,
+          "w": 211.557861328125,
+          "h": 254.75469970703125
+        },
+        "transform": "matrix(0.995557, 0.0941569, -0.0941569, 0.995557, -37.5644, -21.7086)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.5525px, -18px) translate(0.988093px, -3.70859px) rotate(5.4028deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "specimen",
+        "rect": {
+          "x": 39.959163665771484,
+          "y": 317.496826171875,
+          "w": 231.81085205078125,
+          "h": 269.7357177734375
+        },
+        "transform": "matrix(0.98172, -0.190332, 0.190332, 0.98172, -535.01, -186.534)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-6.28348px, 2.46624px) rotate(-10.9721deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "motion",
+        "rect": {
+          "x": 1173.7777099609375,
+          "y": 316.3768310546875,
+          "w": 212.7952880859375,
+          "h": 255.6954345703125
+        },
+        "transform": "matrix(0.995008, -0.0997964, 0.0997964, 0.995008, -60.9184, -88.7364)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(2.88161px, -5.73639px) rotate(-5.72745deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "gao-han",
+        "rect": {
+          "x": 921.8294677734375,
+          "y": 306.71490478515625,
+          "w": 242.2513427734375,
+          "h": 277.05035400390625
+        },
+        "transform": "matrix(0.969853, 0.24369, -0.24369, 0.969853, -62.0449, -351.69)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(4.12702px, -4.68957px) rotate(14.1044deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "lunar-gala",
+        "rect": {
+          "x": 490.068359375,
+          "y": 307.23858642578125,
+          "w": 247.6793212890625,
+          "h": 280.71685791015625
+        },
+        "transform": "matrix(0.9621, -0.272696, 0.272696, 0.9621, -385.279, -420.614)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(3.42078px, -2.61392px) rotate(-15.8247deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    ],
+    "tooltips": [
+      {
+        "cls": "HomeStamps-module__yl-W7q__tooltip",
+        "text": "",
+        "opacity": "0",
+        "style": null,
+        "font": "",
+        "padding": "4px 12px",
+        "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(98.7573 0.462741 3.79202)",
+        "borderRadius": "999px"
+      },
+      {
+        "cls": "Home-module__baJ6tW__stampViewBack",
+        "text": "← Go back [Esc]",
+        "opacity": "1",
+        "style": null,
+        "font": "",
+        "padding": "6px 8px",
+        "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(45.3389 3.09339 7.00407)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+        "text": "",
+        "opacity": "0.08",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+        "text": "",
+        "opacity": "0.08",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "CommandPalette-module__l1XfSG__scrim ",
+        "text": "",
+        "opacity": "0",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      }
+    ]
+  },
+  "hover": {
+    "time": 14094.70000000298,
+    "bodyClass": "",
+    "bodyAttr": [],
+    "stamps": [
+      {
+        "id": "kensho",
+        "rect": {
+          "x": 264.56256103515625,
+          "y": 324.330322265625,
+          "w": 205.38824462890625,
+          "h": 250.02020263671875
+        },
+        "transform": "matrix(0.99779, 0.0664424, -0.0664424, 0.99779, -366.946, -73.8861)",
+        "filter": "blur(4px)",
+        "opacity": "1",
+        "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.177305px, -0.886127px) rotate(3.80967deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "ncs",
+        "rect": {
+          "x": 723.6765747070312,
+          "y": 320.77093505859375,
+          "w": 210.69305419921875,
+          "h": 254.09539794921875
+        },
+        "transform": "matrix(0.995921, 0.0902317, -0.0902317, 0.995921, -43.0238, -19.8454)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.2489px, -1.59545px) rotate(5.17694deg); z-index: 50;",
+        "paper": {
+          "style": "--scale: 1.049999999912687; --tilt-x: 0.137899814949889deg; --tilt-y: -0.01749172958477428deg; --blur: 0px; --reveal: 0; --ink-lx: 0.000112773215466766; --ink-ly: -0.01127395635829406;",
+          "transform": "matrix3d(1.05, -7.71507e-07, 0.000320551, 0, 0, 1.05, 0.00252715, 0, -0.000305288, -0.00240681, 0.999997, 0, 0, 0, 0, 1)"
+        }
+      },
+      {
+        "id": "specimen",
+        "rect": {
+          "x": 41.017921447753906,
+          "y": 310.73388671875,
+          "w": 233.2481689453125,
+          "h": 270.76123046875
+        },
+        "transform": "matrix(0.980302, -0.197505, 0.197505, 0.980302, -533.233, -192.784)",
+        "filter": "blur(4px)",
+        "opacity": "1",
+        "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.50608px, -3.78392px) rotate(-11.3911deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "motion",
+        "rect": {
+          "x": 1172.8857421875,
+          "y": 316.15966796875,
+          "w": 212.2586669921875,
+          "h": 255.2879638671875
+        },
+        "transform": "matrix(0.99525, -0.0973477, 0.0973477, 0.99525, -62.0787, -89.1573)",
+        "filter": "blur(4px)",
+        "opacity": "1",
+        "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.72132px, -6.15729px) rotate(-5.58646deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "gao-han",
+        "rect": {
+          "x": 921.6136474609375,
+          "y": 307.9126892089844,
+          "w": 241.552734375,
+          "h": 276.5713195800781
+        },
+        "transform": "matrix(0.970767, 0.240024, -0.240024, 0.970767, -62.61, -350.731)",
+        "filter": "blur(4px)",
+        "opacity": "1",
+        "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5619px, -3.73135px) rotate(13.888deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "lunar-gala",
+        "rect": {
+          "x": 486.7938537597656,
+          "y": 305.884765625,
+          "w": 247.82620239257812,
+          "h": 280.81463623046875
+        },
+        "transform": "matrix(0.961874, -0.273494, 0.273494, 0.961874, -388.481, -421.919)",
+        "filter": "blur(4px)",
+        "opacity": "1",
+        "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.219695px, -3.91884px) rotate(-15.8723deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    ],
+    "tooltips": [
+      {
+        "cls": "HomeStamps-module__yl-W7q__tooltip HomeStamps-module__yl-W7q__visible",
+        "text": "NEW CRAFT SOCIETY",
+        "opacity": "1",
+        "style": "translate: 833.976px 231.068px;",
+        "font": "",
+        "padding": "4px 12px",
+        "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(98.7573 0.462741 3.79202)",
+        "borderRadius": "999px"
+      },
+      {
+        "cls": "Home-module__baJ6tW__stampViewBack",
+        "text": "← Go back [Esc]",
+        "opacity": "1",
+        "style": null,
+        "font": "",
+        "padding": "6px 8px",
+        "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(45.3389 3.09339 7.00407)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+        "text": "",
+        "opacity": "0.08",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+        "text": "",
+        "opacity": "0.08",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "CommandPalette-module__l1XfSG__scrim ",
+        "text": "",
+        "opacity": "0",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      }
+    ]
+  },
+  "focusSamples": [
+    {
+      "time": 14119.40000000596,
+      "bodyClass": "",
+      "bodyAttr": [],
+      "stamps": [
+        {
+          "id": "kensho",
+          "rect": {
+            "x": 264.61883544921875,
+            "y": 324.3983459472656,
+            "w": 205.3585205078125,
+            "h": 249.99716186523438
+          },
+          "transform": "matrix(0.997799, 0.0663104, -0.0663104, 0.997799, -366.905, -73.8296)",
+          "filter": "blur(4px)",
+          "opacity": "1",
+          "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.218721px, -0.829612px) rotate(3.8021deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "ncs",
+          "rect": {
+            "x": 723.6461181640625,
+            "y": 320.80120849609375,
+            "w": 210.68408203125,
+            "h": 254.08856201171875
+          },
+          "transform": "matrix(0.995924, 0.0901911, -0.0901911, 0.995924, -43.0587, -19.8186)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.28383px, -1.56857px) rotate(5.1746deg); visibility: hidden;",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "specimen",
+          "rect": {
+            "x": 41.034400939941406,
+            "y": 310.68280029296875,
+            "w": 233.25469970703125,
+            "h": 270.76593017578125
+          },
+          "transform": "matrix(0.980295, -0.197538, 0.197538, 0.980295, -533.213, -192.833)",
+          "filter": "blur(4px)",
+          "opacity": "1",
+          "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.48634px, -3.83269px) rotate(-11.393deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "motion",
+          "rect": {
+            "x": 1172.883056640625,
+            "y": 316.15863037109375,
+            "w": 212.245361328125,
+            "h": 255.2777099609375
+          },
+          "transform": "matrix(0.995256, -0.0972866, 0.0972866, 0.995256, -62.088, -89.1634)",
+          "filter": "blur(4px)",
+          "opacity": "1",
+          "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.71203px, -6.16345px) rotate(-5.58294deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "gao-han",
+          "rect": {
+            "x": 921.6101684570312,
+            "y": 307.922607421875,
+            "w": 241.54827880859375,
+            "h": 276.56817626953125
+          },
+          "transform": "matrix(0.970773, 0.240001, -0.240001, 0.970773, -62.6157, -350.723)",
+          "filter": "blur(4px)",
+          "opacity": "1",
+          "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5562px, -3.723px) rotate(13.8866deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "lunar-gala",
+          "rect": {
+            "x": 486.7569274902344,
+            "y": 305.88958740234375,
+            "w": 247.82327270507812,
+            "h": 280.81268310546875
+          },
+          "transform": "matrix(0.961878, -0.273478, 0.273478, 0.961878, -388.519, -421.915)",
+          "filter": "blur(4px)",
+          "opacity": "1",
+          "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.181328px, -3.91501px) rotate(-15.8713deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        }
+      ],
+      "tooltips": [
+        {
+          "cls": "HomeStamps-module__yl-W7q__tooltip",
+          "text": "",
+          "opacity": "1",
+          "style": "translate: 833.941px 231.098px;",
+          "font": "",
+          "padding": "4px 12px",
+          "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(98.7573 0.462741 3.79202)",
+          "borderRadius": "999px"
+        },
+        {
+          "cls": "Home-module__baJ6tW__stampViewBack",
+          "text": "← Go back [Esc]",
+          "opacity": "1",
+          "style": null,
+          "font": "",
+          "padding": "6px 8px",
+          "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(45.3389 3.09339 7.00407)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "CommandPalette-module__l1XfSG__scrim ",
+          "text": "",
+          "opacity": "0",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        }
+      ]
+    },
+    {
+      "time": 14201.90000000596,
+      "bodyClass": "",
+      "bodyAttr": [],
+      "stamps": [
+        {
+          "id": "kensho",
+          "rect": {
+            "x": 264.61883544921875,
+            "y": 324.3983459472656,
+            "w": 205.3585205078125,
+            "h": 249.99716186523438
+          },
+          "transform": "matrix(0.997799, 0.0663104, -0.0663104, 0.997799, -366.905, -73.8296)",
+          "filter": "blur(0.374441px)",
+          "opacity": "1",
+          "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.218721px, -0.829612px) rotate(3.8021deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "ncs",
+          "rect": {
+            "x": 723.6461181640625,
+            "y": 320.80120849609375,
+            "w": 210.68408203125,
+            "h": 254.08856201171875
+          },
+          "transform": "matrix(0.995924, 0.0901911, -0.0901911, 0.995924, -43.0587, -19.8186)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.28383px, -1.56857px) rotate(5.1746deg); visibility: hidden;",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "specimen",
+          "rect": {
+            "x": 41.034400939941406,
+            "y": 310.68280029296875,
+            "w": 233.25469970703125,
+            "h": 270.76593017578125
+          },
+          "transform": "matrix(0.980295, -0.197538, 0.197538, 0.980295, -533.213, -192.833)",
+          "filter": "blur(0.374441px)",
+          "opacity": "1",
+          "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.48634px, -3.83269px) rotate(-11.393deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "motion",
+          "rect": {
+            "x": 1172.883056640625,
+            "y": 316.15863037109375,
+            "w": 212.245361328125,
+            "h": 255.2777099609375
+          },
+          "transform": "matrix(0.995256, -0.0972866, 0.0972866, 0.995256, -62.088, -89.1634)",
+          "filter": "blur(0.374441px)",
+          "opacity": "1",
+          "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.71203px, -6.16345px) rotate(-5.58294deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "gao-han",
+          "rect": {
+            "x": 921.6101684570312,
+            "y": 307.922607421875,
+            "w": 241.54827880859375,
+            "h": 276.56817626953125
+          },
+          "transform": "matrix(0.970773, 0.240001, -0.240001, 0.970773, -62.6157, -350.723)",
+          "filter": "blur(0.374441px)",
+          "opacity": "1",
+          "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5562px, -3.723px) rotate(13.8866deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "lunar-gala",
+          "rect": {
+            "x": 486.7569274902344,
+            "y": 305.88958740234375,
+            "w": 247.82327270507812,
+            "h": 280.81268310546875
+          },
+          "transform": "matrix(0.961878, -0.273478, 0.273478, 0.961878, -388.519, -421.915)",
+          "filter": "blur(0.374441px)",
+          "opacity": "1",
+          "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.181328px, -3.91501px) rotate(-15.8713deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        }
+      ],
+      "tooltips": [
+        {
+          "cls": "HomeStamps-module__yl-W7q__tooltip",
+          "text": "",
+          "opacity": "0.271208",
+          "style": "translate: 833.941px 231.098px;",
+          "font": "",
+          "padding": "4px 12px",
+          "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(98.7573 0.462741 3.79202)",
+          "borderRadius": "999px"
+        },
+        {
+          "cls": "Home-module__baJ6tW__stampViewBack",
+          "text": "← Go back [Esc]",
+          "opacity": "1",
+          "style": null,
+          "font": "",
+          "padding": "6px 8px",
+          "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(45.3389 3.09339 7.00407)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "CommandPalette-module__l1XfSG__scrim ",
+          "text": "",
+          "opacity": "0",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        }
+      ]
+    },
+    {
+      "time": 14310,
+      "bodyClass": "",
+      "bodyAttr": [],
+      "stamps": [
+        {
+          "id": "kensho",
+          "rect": {
+            "x": 264.61883544921875,
+            "y": 324.3983459472656,
+            "w": 205.3585205078125,
+            "h": 249.99716186523438
+          },
+          "transform": "matrix(0.997799, 0.0663104, -0.0663104, 0.997799, -366.905, -73.8296)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.218721px, -0.829612px) rotate(3.8021deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "ncs",
+          "rect": {
+            "x": 723.6461181640625,
+            "y": 320.80120849609375,
+            "w": 210.68408203125,
+            "h": 254.08856201171875
+          },
+          "transform": "matrix(0.995924, 0.0901911, -0.0901911, 0.995924, -43.0587, -19.8186)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.28383px, -1.56857px) rotate(5.1746deg); visibility: hidden;",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "specimen",
+          "rect": {
+            "x": 41.034400939941406,
+            "y": 310.68280029296875,
+            "w": 233.25469970703125,
+            "h": 270.76593017578125
+          },
+          "transform": "matrix(0.980295, -0.197538, 0.197538, 0.980295, -533.213, -192.833)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.48634px, -3.83269px) rotate(-11.393deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "motion",
+          "rect": {
+            "x": 1172.883056640625,
+            "y": 316.15863037109375,
+            "w": 212.245361328125,
+            "h": 255.2777099609375
+          },
+          "transform": "matrix(0.995256, -0.0972866, 0.0972866, 0.995256, -62.088, -89.1634)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.71203px, -6.16345px) rotate(-5.58294deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "gao-han",
+          "rect": {
+            "x": 921.6101684570312,
+            "y": 307.922607421875,
+            "w": 241.54827880859375,
+            "h": 276.56817626953125
+          },
+          "transform": "matrix(0.970773, 0.240001, -0.240001, 0.970773, -62.6157, -350.723)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5562px, -3.723px) rotate(13.8866deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "lunar-gala",
+          "rect": {
+            "x": 486.7569274902344,
+            "y": 305.88958740234375,
+            "w": 247.82327270507812,
+            "h": 280.81268310546875
+          },
+          "transform": "matrix(0.961878, -0.273478, 0.273478, 0.961878, -388.519, -421.915)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.181328px, -3.91501px) rotate(-15.8713deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        }
+      ],
+      "tooltips": [
+        {
+          "cls": "HomeStamps-module__yl-W7q__tooltip",
+          "text": "",
+          "opacity": "0.0142175",
+          "style": "translate: 833.941px 231.098px;",
+          "font": "",
+          "padding": "4px 12px",
+          "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(98.7573 0.462741 3.79202)",
+          "borderRadius": "999px"
+        },
+        {
+          "cls": "Home-module__baJ6tW__stampViewBack",
+          "text": "← Go back [Esc]",
+          "opacity": "1",
+          "style": null,
+          "font": "",
+          "padding": "6px 8px",
+          "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(45.3389 3.09339 7.00407)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "CommandPalette-module__l1XfSG__scrim ",
+          "text": "",
+          "opacity": "0",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        }
+      ]
+    },
+    {
+      "time": 14671.5,
+      "bodyClass": "",
+      "bodyAttr": [],
+      "stamps": [
+        {
+          "id": "kensho",
+          "rect": {
+            "x": 264.61883544921875,
+            "y": 324.3983459472656,
+            "w": 205.3585205078125,
+            "h": 249.99716186523438
+          },
+          "transform": "matrix(0.997799, 0.0663104, -0.0663104, 0.997799, -366.905, -73.8296)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.218721px, -0.829612px) rotate(3.8021deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "ncs",
+          "rect": {
+            "x": 723.6461181640625,
+            "y": 320.80120849609375,
+            "w": 210.68408203125,
+            "h": 254.08856201171875
+          },
+          "transform": "matrix(0.995924, 0.0901911, -0.0901911, 0.995924, -43.0587, -19.8186)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.28383px, -1.56857px) rotate(5.1746deg); visibility: hidden;",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "specimen",
+          "rect": {
+            "x": 41.034400939941406,
+            "y": 310.68280029296875,
+            "w": 233.25469970703125,
+            "h": 270.76593017578125
+          },
+          "transform": "matrix(0.980295, -0.197538, 0.197538, 0.980295, -533.213, -192.833)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.48634px, -3.83269px) rotate(-11.393deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "motion",
+          "rect": {
+            "x": 1172.883056640625,
+            "y": 316.15863037109375,
+            "w": 212.245361328125,
+            "h": 255.2777099609375
+          },
+          "transform": "matrix(0.995256, -0.0972866, 0.0972866, 0.995256, -62.088, -89.1634)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.71203px, -6.16345px) rotate(-5.58294deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "gao-han",
+          "rect": {
+            "x": 921.6101684570312,
+            "y": 307.922607421875,
+            "w": 241.54827880859375,
+            "h": 276.56817626953125
+          },
+          "transform": "matrix(0.970773, 0.240001, -0.240001, 0.970773, -62.6157, -350.723)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5562px, -3.723px) rotate(13.8866deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "lunar-gala",
+          "rect": {
+            "x": 486.7569274902344,
+            "y": 305.88958740234375,
+            "w": 247.82327270507812,
+            "h": 280.81268310546875
+          },
+          "transform": "matrix(0.961878, -0.273478, 0.273478, 0.961878, -388.519, -421.915)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.181328px, -3.91501px) rotate(-15.8713deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        }
+      ],
+      "tooltips": [
+        {
+          "cls": "HomeStamps-module__yl-W7q__tooltip",
+          "text": "",
+          "opacity": "0",
+          "style": "translate: 833.941px 231.098px;",
+          "font": "",
+          "padding": "4px 12px",
+          "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(98.7573 0.462741 3.79202)",
+          "borderRadius": "999px"
+        },
+        {
+          "cls": "Home-module__baJ6tW__stampViewBack",
+          "text": "← Go back [Esc]",
+          "opacity": "1",
+          "style": null,
+          "font": "",
+          "padding": "6px 8px",
+          "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(45.3389 3.09339 7.00407)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "CommandPalette-module__l1XfSG__scrim ",
+          "text": "",
+          "opacity": "0",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        }
+      ]
+    },
+    {
+      "time": 14674.10000000894,
+      "bodyClass": "",
+      "bodyAttr": [],
+      "stamps": [
+        {
+          "id": "kensho",
+          "rect": {
+            "x": 264.61883544921875,
+            "y": 324.3983459472656,
+            "w": 205.3585205078125,
+            "h": 249.99716186523438
+          },
+          "transform": "matrix(0.997799, 0.0663104, -0.0663104, 0.997799, -366.905, -73.8296)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.218721px, -0.829612px) rotate(3.8021deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "ncs",
+          "rect": {
+            "x": 723.6461181640625,
+            "y": 320.80120849609375,
+            "w": 210.68408203125,
+            "h": 254.08856201171875
+          },
+          "transform": "matrix(0.995924, 0.0901911, -0.0901911, 0.995924, -43.0587, -19.8186)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.28383px, -1.56857px) rotate(5.1746deg); visibility: hidden;",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "specimen",
+          "rect": {
+            "x": 41.034400939941406,
+            "y": 310.68280029296875,
+            "w": 233.25469970703125,
+            "h": 270.76593017578125
+          },
+          "transform": "matrix(0.980295, -0.197538, 0.197538, 0.980295, -533.213, -192.833)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.48634px, -3.83269px) rotate(-11.393deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "motion",
+          "rect": {
+            "x": 1172.883056640625,
+            "y": 316.15863037109375,
+            "w": 212.245361328125,
+            "h": 255.2777099609375
+          },
+          "transform": "matrix(0.995256, -0.0972866, 0.0972866, 0.995256, -62.088, -89.1634)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.71203px, -6.16345px) rotate(-5.58294deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "gao-han",
+          "rect": {
+            "x": 921.6101684570312,
+            "y": 307.922607421875,
+            "w": 241.54827880859375,
+            "h": 276.56817626953125
+          },
+          "transform": "matrix(0.970773, 0.240001, -0.240001, 0.970773, -62.6157, -350.723)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5562px, -3.723px) rotate(13.8866deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "lunar-gala",
+          "rect": {
+            "x": 486.7569274902344,
+            "y": 305.88958740234375,
+            "w": 247.82327270507812,
+            "h": 280.81268310546875
+          },
+          "transform": "matrix(0.961878, -0.273478, 0.273478, 0.961878, -388.519, -421.915)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.181328px, -3.91501px) rotate(-15.8713deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        }
+      ],
+      "tooltips": [
+        {
+          "cls": "HomeStamps-module__yl-W7q__tooltip",
+          "text": "",
+          "opacity": "0",
+          "style": "translate: 833.941px 231.098px;",
+          "font": "",
+          "padding": "4px 12px",
+          "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(98.7573 0.462741 3.79202)",
+          "borderRadius": "999px"
+        },
+        {
+          "cls": "Home-module__baJ6tW__stampViewBack",
+          "text": "← Go back [Esc]",
+          "opacity": "1",
+          "style": null,
+          "font": "",
+          "padding": "6px 8px",
+          "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(45.3389 3.09339 7.00407)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "CommandPalette-module__l1XfSG__scrim ",
+          "text": "",
+          "opacity": "0",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        }
+      ]
+    },
+    {
+      "time": 14949.40000000596,
+      "bodyClass": "",
+      "bodyAttr": [],
+      "stamps": [
+        {
+          "id": "kensho",
+          "rect": {
+            "x": 264.61883544921875,
+            "y": 324.3983459472656,
+            "w": 205.3585205078125,
+            "h": 249.99716186523438
+          },
+          "transform": "matrix(0.997799, 0.0663104, -0.0663104, 0.997799, -366.905, -73.8296)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.218721px, -0.829612px) rotate(3.8021deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "ncs",
+          "rect": {
+            "x": 723.6461181640625,
+            "y": 320.80120849609375,
+            "w": 210.68408203125,
+            "h": 254.08856201171875
+          },
+          "transform": "matrix(0.995924, 0.0901911, -0.0901911, 0.995924, -43.0587, -19.8186)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.28383px, -1.56857px) rotate(5.1746deg); visibility: hidden;",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "specimen",
+          "rect": {
+            "x": 41.034400939941406,
+            "y": 310.68280029296875,
+            "w": 233.25469970703125,
+            "h": 270.76593017578125
+          },
+          "transform": "matrix(0.980295, -0.197538, 0.197538, 0.980295, -533.213, -192.833)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.48634px, -3.83269px) rotate(-11.393deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "motion",
+          "rect": {
+            "x": 1172.883056640625,
+            "y": 316.15863037109375,
+            "w": 212.245361328125,
+            "h": 255.2777099609375
+          },
+          "transform": "matrix(0.995256, -0.0972866, 0.0972866, 0.995256, -62.088, -89.1634)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.71203px, -6.16345px) rotate(-5.58294deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "gao-han",
+          "rect": {
+            "x": 921.6101684570312,
+            "y": 307.922607421875,
+            "w": 241.54827880859375,
+            "h": 276.56817626953125
+          },
+          "transform": "matrix(0.970773, 0.240001, -0.240001, 0.970773, -62.6157, -350.723)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5562px, -3.723px) rotate(13.8866deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "lunar-gala",
+          "rect": {
+            "x": 486.7569274902344,
+            "y": 305.88958740234375,
+            "w": 247.82327270507812,
+            "h": 280.81268310546875
+          },
+          "transform": "matrix(0.961878, -0.273478, 0.273478, 0.961878, -388.519, -421.915)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.181328px, -3.91501px) rotate(-15.8713deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        }
+      ],
+      "tooltips": [
+        {
+          "cls": "HomeStamps-module__yl-W7q__tooltip",
+          "text": "",
+          "opacity": "0",
+          "style": "translate: 833.941px 231.098px;",
+          "font": "",
+          "padding": "4px 12px",
+          "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(98.7573 0.462741 3.79202)",
+          "borderRadius": "999px"
+        },
+        {
+          "cls": "Home-module__baJ6tW__stampViewBack",
+          "text": "← Go back [Esc]",
+          "opacity": "1",
+          "style": null,
+          "font": "",
+          "padding": "6px 8px",
+          "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(45.3389 3.09339 7.00407)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "CommandPalette-module__l1XfSG__scrim ",
+          "text": "",
+          "opacity": "0",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        }
+      ]
+    },
+    {
+      "time": 15302.40000000596,
+      "bodyClass": "",
+      "bodyAttr": [],
+      "stamps": [
+        {
+          "id": "kensho",
+          "rect": {
+            "x": 264.61883544921875,
+            "y": 324.3983459472656,
+            "w": 205.3585205078125,
+            "h": 249.99716186523438
+          },
+          "transform": "matrix(0.997799, 0.0663104, -0.0663104, 0.997799, -366.905, -73.8296)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.218721px, -0.829612px) rotate(3.8021deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "ncs",
+          "rect": {
+            "x": 723.6461181640625,
+            "y": 320.80120849609375,
+            "w": 210.68408203125,
+            "h": 254.08856201171875
+          },
+          "transform": "matrix(0.995924, 0.0901911, -0.0901911, 0.995924, -43.0587, -19.8186)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.28383px, -1.56857px) rotate(5.1746deg); visibility: hidden;",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "specimen",
+          "rect": {
+            "x": 41.034400939941406,
+            "y": 310.68280029296875,
+            "w": 233.25469970703125,
+            "h": 270.76593017578125
+          },
+          "transform": "matrix(0.980295, -0.197538, 0.197538, 0.980295, -533.213, -192.833)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.48634px, -3.83269px) rotate(-11.393deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "motion",
+          "rect": {
+            "x": 1172.883056640625,
+            "y": 316.15863037109375,
+            "w": 212.245361328125,
+            "h": 255.2777099609375
+          },
+          "transform": "matrix(0.995256, -0.0972866, 0.0972866, 0.995256, -62.088, -89.1634)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.71203px, -6.16345px) rotate(-5.58294deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "gao-han",
+          "rect": {
+            "x": 921.6101684570312,
+            "y": 307.922607421875,
+            "w": 241.54827880859375,
+            "h": 276.56817626953125
+          },
+          "transform": "matrix(0.970773, 0.240001, -0.240001, 0.970773, -62.6157, -350.723)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5562px, -3.723px) rotate(13.8866deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "lunar-gala",
+          "rect": {
+            "x": 486.7569274902344,
+            "y": 305.88958740234375,
+            "w": 247.82327270507812,
+            "h": 280.81268310546875
+          },
+          "transform": "matrix(0.961878, -0.273478, 0.273478, 0.961878, -388.519, -421.915)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.181328px, -3.91501px) rotate(-15.8713deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        }
+      ],
+      "tooltips": [
+        {
+          "cls": "HomeStamps-module__yl-W7q__tooltip",
+          "text": "",
+          "opacity": "0",
+          "style": "translate: 833.941px 231.098px;",
+          "font": "",
+          "padding": "4px 12px",
+          "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(98.7573 0.462741 3.79202)",
+          "borderRadius": "999px"
+        },
+        {
+          "cls": "Home-module__baJ6tW__stampViewBack",
+          "text": "← Go back [Esc]",
+          "opacity": "1",
+          "style": null,
+          "font": "",
+          "padding": "6px 8px",
+          "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(45.3389 3.09339 7.00407)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "CommandPalette-module__l1XfSG__scrim ",
+          "text": "",
+          "opacity": "0",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        }
+      ]
+    },
+    {
+      "time": 15909.300000011921,
+      "bodyClass": "",
+      "bodyAttr": [],
+      "stamps": [
+        {
+          "id": "kensho",
+          "rect": {
+            "x": 264.61883544921875,
+            "y": 324.3983459472656,
+            "w": 205.3585205078125,
+            "h": 249.99716186523438
+          },
+          "transform": "matrix(0.997799, 0.0663104, -0.0663104, 0.997799, -366.905, -73.8296)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(0.218721px, -0.829612px) rotate(3.8021deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "ncs",
+          "rect": {
+            "x": 723.6461181640625,
+            "y": 320.80120849609375,
+            "w": 210.68408203125,
+            "h": 254.08856201171875
+          },
+          "transform": "matrix(0.995924, 0.0901911, -0.0901911, 0.995924, -43.0587, -19.8186)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.7749px, -18.25px) translate(-4.28383px, -1.56857px) rotate(5.1746deg); visibility: hidden;",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "specimen",
+          "rect": {
+            "x": 41.034400939941406,
+            "y": 310.68280029296875,
+            "w": 233.25469970703125,
+            "h": 270.76593017578125
+          },
+          "transform": "matrix(0.980295, -0.197538, 0.197538, 0.980295, -533.213, -192.833)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-4.48634px, -3.83269px) rotate(-11.393deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "motion",
+          "rect": {
+            "x": 1172.883056640625,
+            "y": 316.15863037109375,
+            "w": 212.245361328125,
+            "h": 255.2777099609375
+          },
+          "transform": "matrix(0.995256, -0.0972866, 0.0972866, 0.995256, -62.088, -89.1634)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.71203px, -6.16345px) rotate(-5.58294deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "gao-han",
+          "rect": {
+            "x": 921.6101684570312,
+            "y": 307.922607421875,
+            "w": 241.54827880859375,
+            "h": 276.56817626953125
+          },
+          "transform": "matrix(0.970773, 0.240001, -0.240001, 0.970773, -62.6157, -350.723)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.5562px, -3.723px) rotate(13.8866deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        },
+        {
+          "id": "lunar-gala",
+          "rect": {
+            "x": 486.7569274902344,
+            "y": 305.88958740234375,
+            "w": 247.82327270507812,
+            "h": 280.81268310546875
+          },
+          "transform": "matrix(0.961878, -0.273478, 0.273478, 0.961878, -388.519, -421.915)",
+          "filter": "none",
+          "opacity": "1",
+          "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(0.181328px, -3.91501px) rotate(-15.8713deg);",
+          "paper": {
+            "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        }
+      ],
+      "tooltips": [
+        {
+          "cls": "HomeStamps-module__yl-W7q__tooltip",
+          "text": "",
+          "opacity": "0",
+          "style": "translate: 833.941px 231.098px;",
+          "font": "",
+          "padding": "4px 12px",
+          "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(98.7573 0.462741 3.79202)",
+          "borderRadius": "999px"
+        },
+        {
+          "cls": "Home-module__baJ6tW__stampViewBack",
+          "text": "← Go back [Esc]",
+          "opacity": "1",
+          "style": null,
+          "font": "",
+          "padding": "6px 8px",
+          "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(45.3389 3.09339 7.00407)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+          "text": "",
+          "opacity": "0.08",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        },
+        {
+          "cls": "CommandPalette-module__l1XfSG__scrim ",
+          "text": "",
+          "opacity": "0",
+          "style": null,
+          "font": "",
+          "padding": "0px",
+          "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+          "color": "lab(17.524 0 0 / 0.9)",
+          "borderRadius": "0px"
+        }
+      ]
+    }
+  ],
+  "focusText": "← GO BACK [ESC]\n\n12:52:03AM, EDT.\n\nCOLLECTION\n\nWorks.\n\nAn ever-growing collection of works that blend disciplines.\n\nNew Craft Society\n\nDesigned a tool that makes design process visible. 100+ beta signups.\nBRAND STRATEGY\nVISUAL IDENTITY\nPRODUCT DESIGN\nENGINEERING\n\nKensho Technologies 🔒\n\nDesigned evidence tools for S&P Global analysts.\nPRODUCT DESIGN\nENGINEERING\n\nDesign Hero\n\nMultimedia experience of designer Gao Han’s work and philosophy.\nBRAND\nMOTION\nVIEW CASE STUDY →",
+  "return": {
+    "time": 18237,
+    "bodyClass": "",
+    "bodyAttr": [],
+    "stamps": [
+      {
+        "id": "kensho",
+        "rect": {
+          "x": 269.88330078125,
+          "y": 330.75982666015625,
+          "w": 202.56591796875,
+          "h": 247.83111572265625
+        },
+        "transform": "matrix(0.998542, 0.0539796, -0.0539796, 0.998542, -363.037, -68.5512)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(-367.124px, -73px) translate(4.08689px, 4.44882px) rotate(3.09431deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "ncs",
+        "rect": {
+          "x": 723.8351440429688,
+          "y": 324.0328369140625,
+          "w": 209.93798828125,
+          "h": 253.5185546875
+        },
+        "transform": "matrix(0.996224, 0.0868158, -0.0868158, 0.996224, -43.2427, -16.8719)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(-38.5525px, -18px) translate(-4.69025px, 1.12806px) rotate(4.98045deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; --reveal: 0; --ink-lx: 0.0002785947361410024; --ink-ly: -0.011376494059147866;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "specimen",
+        "rect": {
+          "x": 43.1369514465332,
+          "y": 308.1026611328125,
+          "w": 232.91285705566406,
+          "h": 270.52252197265625
+        },
+        "transform": "matrix(0.980638, -0.195827, 0.195827, 0.980638, -531.282, -195.535)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(-528.727px, -189px) translate(-2.55467px, -6.53452px) rotate(-11.293deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "motion",
+        "rect": {
+          "x": 1173.4302978515625,
+          "y": 316.19989013671875,
+          "w": 210.4219970703125,
+          "h": 253.88836669921875
+        },
+        "transform": "matrix(0.996031, -0.089004, 0.089004, 0.996031, -62.4524, -89.8169)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(-63.8px, -83px) translate(1.34756px, -6.81686px) rotate(-5.10631deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "gao-han",
+        "rect": {
+          "x": 921.1396484375,
+          "y": 308.53228759765625,
+          "w": 241.484130859375,
+          "h": 276.524169921875
+        },
+        "transform": "matrix(0.970856, 0.239665, -0.239665, 0.970856, -63.1183, -350.135)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(-66.1719px, -347px) translate(3.05358px, -3.13532px) rotate(13.8668deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "lunar-gala",
+        "rect": {
+          "x": 483.0986328125,
+          "y": 307.3811340332031,
+          "w": 247.3272705078125,
+          "h": 280.4822692871094
+        },
+        "transform": "matrix(0.96264, -0.270785, 0.270785, 0.96264, -392.425, -420.589)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(-388.7px, -418px) translate(-3.72496px, -2.58869px) rotate(-15.711deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    ],
+    "tooltips": [
+      {
+        "cls": "HomeStamps-module__yl-W7q__tooltip",
+        "text": "",
+        "opacity": "0",
+        "style": "translate: 833.941px 231.098px;",
+        "font": "",
+        "padding": "4px 12px",
+        "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(98.7573 0.462741 3.79202)",
+        "borderRadius": "999px"
+      },
+      {
+        "cls": "Home-module__baJ6tW__stampViewBack",
+        "text": "← Go back [Esc]",
+        "opacity": "1",
+        "style": null,
+        "font": "",
+        "padding": "6px 8px",
+        "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(45.3389 3.09339 7.00407)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+        "text": "",
+        "opacity": "0.08",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+        "text": "",
+        "opacity": "0.08",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "CommandPalette-module__l1XfSG__scrim ",
+        "text": "",
+        "opacity": "0",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      }
+    ]
+  },
+  "errors": [],
+  "mobileInitial": {
+    "time": 4795.79999999702,
+    "bodyClass": "",
+    "bodyAttr": [],
+    "stamps": [
+      {
+        "id": "kensho",
+        "rect": {
+          "x": 24.82179832458496,
+          "y": 571.7994384765625,
+          "w": 246.36753845214844,
+          "h": 236.9161376953125
+        },
+        "transform": "matrix(0.574904, -0.818221, 0.818221, 0.574904, 1.63056, -4.35187)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(0px, 0px) translate(1.63056px, -4.35187px) rotate(-54.9071deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "ncs",
+        "rect": {
+          "x": 9.51658821105957,
+          "y": 635.5459594726562,
+          "w": 226.89950561523438,
+          "h": 199.78802490234375
+        },
+        "transform": "matrix(0.266009, -0.963971, 0.963971, 0.266009, -0.877408, 5.37748)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(0px, 0px) translate(-0.877408px, 5.37748px) rotate(-74.5731deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "specimen",
+        "rect": {
+          "x": 245.04783630371094,
+          "y": 500.6069641113281,
+          "w": 158.64659118652344,
+          "h": 196.54043579101562
+        },
+        "transform": "matrix(0.999708, -0.0241624, 0.0241624, 0.999708, 3.55863, 2.11157)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(0px, 0px) translate(3.55863px, 2.11157px) rotate(-1.38454deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "motion",
+        "rect": {
+          "x": 294.58233642578125,
+          "y": 503.3570556640625,
+          "w": 197.97314453125,
+          "h": 225.67559814453125
+        },
+        "transform": "matrix(0.967199, 0.254021, -0.254021, 0.967199, 4.86578, 3.27298)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(0px, 0px) translate(4.86578px, 3.27298px) rotate(14.7156deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "gao-han",
+        "rect": {
+          "x": 65.90421295166016,
+          "y": 530.3071899414062,
+          "w": 240.72915649414062,
+          "h": 246.83270263671875
+        },
+        "transform": "matrix(0.781294, -0.624163, 0.624163, 0.781294, 1.12816, 0.411059)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(0px, 0px) translate(1.12816px, 0.411059px) rotate(-38.6208deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "id": "lunar-gala",
+        "rect": {
+          "x": 149.8809814453125,
+          "y": 493.8358459472656,
+          "w": 210.84039306640625,
+          "h": 234.00534057617188
+        },
+        "transform": "matrix(0.939343, -0.34298, 0.34298, 0.939343, 1.67617, 2.6354)",
+        "filter": "none",
+        "opacity": "1",
+        "style": "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(0px, 0px) translate(1.67617px, 2.6354px) rotate(-20.0585deg);",
+        "paper": {
+          "style": "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    ],
+    "tooltips": [
+      {
+        "cls": "HomeStamps-module__yl-W7q__tooltip",
+        "text": "",
+        "opacity": "0",
+        "style": null,
+        "font": "",
+        "padding": "4px 12px",
+        "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(98.7573 0.462741 3.79202)",
+        "borderRadius": "999px"
+      },
+      {
+        "cls": "Home-module__baJ6tW__stampViewBack",
+        "text": "← Go back [Esc]",
+        "opacity": "0",
+        "style": null,
+        "font": "",
+        "padding": "6px 8px",
+        "background": "linear-gradient(color(srgb 0.999224 0.984123 0.957055 / 0.25), color(srgb 0.999224 0.984123 0.957055 / 0.25)) repeat scroll 0% 0% / auto padding-box border-box, color(srgb 0.961005 0.941458 0.909844 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(45.3389 3.09339 7.00407)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+        "text": "",
+        "opacity": "0.08",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "RouteMorph-module__f2yx_a__scrimLayer texture-paper",
+        "text": "",
+        "opacity": "0.08",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      },
+      {
+        "cls": "CommandPalette-module__l1XfSG__scrim ",
+        "text": "",
+        "opacity": "0",
+        "style": null,
+        "font": "",
+        "padding": "0px",
+        "background": "color(srgb 0.999224 0.984123 0.957055 / 0.5) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "lab(17.524 0 0 / 0.9)",
+        "borderRadius": "0px"
+      }
+    ]
+  },
+  "mobileError": "TimeoutError: locator.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'View all stamps' })\u001b[22m\n"
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Visual comparison only; no geometric rectification, recolouring or pixel-similarity claim.",
+  "panels": [
+    {
+      "file": "C:\\Users\\Administrator\\.codex\\attachments\\9854cda5-27ba-47b9-abb4-1a41416070bf\\image-3.png",
+      "sha256": "fcd0e65e293fcc5e0de03e6c25090f608b382c3a0346991a07519709f75074f7",
+      "cropXYXY": null,
+      "displaySize": [
+        380,
+        485
+      ]
+    },
+    {
+      "file": "C:\\Users\\Administrator\\Desktop\\炫技3\\artifacts\\single-light-verification\\default-warm-on.png",
+      "sha256": "5684589be31f2f2fb1a1be5fe1dfc24dd6f5f552322331cac6cd68578c5759a7",
+      "cropXYXY": [
+        490,
+        196,
+        890,
+        704
+      ],
+      "displaySize": [
+        380,
+        483
+      ]
+    },
+    {
+      "file": "C:\\Users\\Administrator\\.codex\\attachments\\9854cda5-27ba-47b9-abb4-1a41416070bf\\image-4.png",
+      "sha256": "6612667136bfa2d72b7666629d81a52d1cfff67507f449ba26112cafc6509d33",
+      "cropXYXY": null,
+      "displaySize": [
+        371,
+        421
+      ]
+    }
+  ]
+}

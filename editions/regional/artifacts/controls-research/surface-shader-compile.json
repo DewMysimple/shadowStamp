@@ -1,0 +1,6 @@
+{
+  "errors": [],
+  "phase": "focused",
+  "programs": 5,
+  "scope": "Chrome compiles all surface branch GLSL, hover and focus smoke; visual parameter verification is separate."
+}

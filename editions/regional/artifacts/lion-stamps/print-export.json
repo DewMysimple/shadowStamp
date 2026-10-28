@@ -1,0 +1,49 @@
+{
+  "createdAt": "2026-10-26T10:05:31.523Z",
+  "size": [
+    720,
+    900
+  ],
+  "prints": [
+    {
+      "id": "joy",
+      "name": "醒狮八态 · 喜",
+      "file": "lion-stamp-01-joy.png"
+    },
+    {
+      "id": "anger",
+      "name": "醒狮八态 · 怒",
+      "file": "lion-stamp-02-anger.png"
+    },
+    {
+      "id": "sorrow",
+      "name": "醒狮八态 · 哀",
+      "file": "lion-stamp-03-sorrow.png"
+    },
+    {
+      "id": "delight",
+      "name": "醒狮八态 · 乐",
+      "file": "lion-stamp-04-delight.png"
+    },
+    {
+      "id": "motion",
+      "name": "醒狮八态 · 动",
+      "file": "lion-stamp-05-motion.png"
+    },
+    {
+      "id": "stillness",
+      "name": "醒狮八态 · 静",
+      "file": "lion-stamp-06-stillness.png"
+    },
+    {
+      "id": "surprise",
+      "name": "醒狮八态 · 惊",
+      "file": "lion-stamp-07-surprise.png"
+    },
+    {
+      "id": "doubt",
+      "name": "醒狮八态 · 疑",
+      "file": "lion-stamp-08-doubt.png"
+    }
+  ]
+}

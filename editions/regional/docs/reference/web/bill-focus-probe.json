@@ -1,0 +1,415 @@
+{
+  "htmlAttrs": [
+    [
+      "lang",
+      "en"
+    ],
+    [
+      "data-selection-ink",
+      ""
+    ],
+    [
+      "data-stamp-view",
+      ""
+    ]
+  ],
+  "details": [
+    {
+      "tag": "CANVAS",
+      "cls": "HomeBloom-module__vLuROW__canvas",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "HomeBloom-module__vLuROW__canvas"
+        ]
+      ],
+      "rect": {
+        "x": 647.359375,
+        "y": -27.5,
+        "w": 793.140625,
+        "h": 954.984375
+      },
+      "css": {
+        "display": "block",
+        "visibility": "hidden",
+        "opacity": "1",
+        "transform": "none",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": []
+    },
+    {
+      "tag": "DIV",
+      "cls": "StampDetail-module__6eujwG__root",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__root"
+        ]
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1430,
+        "h": 900
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "zIndex": "100",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "StampDetail-module__6eujwG__room",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__room"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ],
+        [
+          "data-open",
+          ""
+        ]
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1430,
+        "h": 900
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "zIndex": "auto",
+        "background": "lab(6.31661 0.501573 2.99414) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": []
+    },
+    {
+      "tag": "DIV",
+      "cls": "StampDetail-module__6eujwG__roomLayer texture-paper",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__roomLayer texture-paper"
+        ]
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1430,
+        "h": 900
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "0.08",
+        "transform": "none",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) url(\"https://billguo.me/textures/paper-surface.webp\") repeat scroll 50% 50% / cover padding-box border-box"
+      },
+      "images": []
+    },
+    {
+      "tag": "DIV",
+      "cls": "StampDetail-module__6eujwG__roomLayer texture-grain",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__roomLayer texture-grain"
+        ]
+      ],
+      "rect": {
+        "x": -0.4753820300102234,
+        "y": -2.800539016723633,
+        "w": 1430,
+        "h": 900
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "0.04",
+        "transform": "matrix(1, 0, 0, 1, -0.475382, -2.80054)",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.4' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>\") repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": []
+    },
+    {
+      "tag": "DIV",
+      "cls": "StampDetail-module__6eujwG__wrap HomeStamps-module__yl-W7q__holo",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__wrap HomeStamps-module__yl-W7q__holo"
+        ],
+        [
+          "data-material",
+          "auto"
+        ]
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1430,
+        "h": 900
+      },
+      "css": {
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "StampDetail-module__6eujwG__card",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__card"
+        ],
+        [
+          "data-case",
+          ""
+        ],
+        [
+          "role",
+          "dialog"
+        ],
+        [
+          "aria-modal",
+          "true"
+        ],
+        [
+          "aria-label",
+          "New Craft Society postage stamp"
+        ],
+        [
+          "tabindex",
+          "-1"
+        ]
+      ],
+      "rect": {
+        "x": 499.390625,
+        "y": 180,
+        "w": 431.21875,
+        "h": 540
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted",
+      "style": "",
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__figure HomeStamps-module__yl-W7q__lifted"
+        ],
+        [
+          "style",
+          ""
+        ]
+      ],
+      "rect": {
+        "x": 499.390625,
+        "y": 180,
+        "w": 431.21875,
+        "h": 540
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "StampDetail-module__6eujwG__morphs",
+      "style": "--morph: 1;",
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__morphs"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ],
+        [
+          "style",
+          "--morph: 1;"
+        ]
+      ],
+      "rect": {
+        "x": 498.53131103515625,
+        "y": 179.6764678955078,
+        "w": 431.80535888671875,
+        "h": 541.402099609375
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": []
+    },
+    {
+      "tag": "CANVAS",
+      "cls": "HomeStamps-module__yl-W7q__reliefCanvas",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__reliefCanvas"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ]
+      ],
+      "rect": {
+        "x": 498.53131103515625,
+        "y": 179.6764678955078,
+        "w": 431.80535888671875,
+        "h": 541.402099609375
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "0",
+        "transform": "none",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": []
+    },
+    {
+      "tag": "A",
+      "cls": "StampDetail-module__6eujwG__caseLink",
+      "style": null,
+      "attributes": [
+        [
+          "class",
+          "StampDetail-module__6eujwG__caseLink"
+        ],
+        [
+          "aria-label",
+          "View the New Craft Society case study"
+        ],
+        [
+          "href",
+          "/work/ncs"
+        ],
+        [
+          "data-landed",
+          ""
+        ]
+      ],
+      "rect": {
+        "x": 646,
+        "y": 800,
+        "w": 138,
+        "h": 20
+      },
+      "css": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "0.7",
+        "transform": "none",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      "images": []
+    }
+  ],
+  "styles": [
+    ".StampDetail-module__6eujwG__root { z-index: var(--z-modal,100); position: fixed; inset: 0px; }",
+    ".StampDetail-module__6eujwG__room { background: var(--color-cream-700); opacity: 0; transition: opacity var(--duration-base,.4s) var(--ease-standard); cursor: zoom-out; position: absolute; inset: 0px; }",
+    ".StampDetail-module__6eujwG__room[data-open] { opacity: 1; }",
+    ".StampDetail-module__6eujwG__room.StampDetail-module__6eujwG__isDragging { transition: none; }",
+    ".StampDetail-module__6eujwG__roomLayer { pointer-events: none; position: absolute; inset: 0px; }",
+    ".StampDetail-module__6eujwG__wrap { pointer-events: none; justify-content: center; align-items: center; display: flex; position: absolute; inset: 0px; }",
+    ".StampDetail-module__6eujwG__card { --card-w-cap: calc(100vw - 2 * var(--space-lg)); --card-h: min(64svh, 540px, var(--card-w-cap) * 556 / 444); height: var(--card-h); aspect-ratio: 444 / 556; pointer-events: auto; cursor: grab; touch-action: none; position: relative; }",
+    ".StampDetail-module__6eujwG__card:active { cursor: grabbing; }",
+    ".StampDetail-module__6eujwG__card[data-case] { cursor: pointer; }",
+    ".StampDetail-module__6eujwG__figure { perspective: 1400px; transform-origin: 50% center; width: 100%; height: 100%; transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--rotZ,0deg)) scale(var(--sx,1), var(--sy,1)); position: relative; }",
+    ".StampDetail-module__6eujwG__figure.StampDetail-module__6eujwG__isHeld, .StampDetail-module__6eujwG__figure.StampDetail-module__6eujwG__isFlying { will-change: transform; backface-visibility: hidden; }",
+    ".StampDetail-module__6eujwG__morphs { opacity: var(--morph,1); pointer-events: none; position: absolute; inset: 0px; }",
+    ".StampDetail-module__6eujwG__figure[data-handoff] .StampDetail-module__6eujwG__morphs { transition: opacity var(--relight-ms,var(--duration-fast)) var(--relight-ease,var(--ease-standard)); }",
+    ".StampDetail-module__6eujwG__caseLink { top: calc(100% + (100dvh - var(--card-h)) / 4); color: var(--surface-page); font-family: var(--font-mono); font-size: var(--font-size-label-small); text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; visibility: hidden; opacity: 0.7; pointer-events: none; transition: opacity var(--duration-base,.4s) var(--ease-standard); text-decoration: none; position: absolute; left: 50%; translate: -50% -50%; }",
+    ".StampDetail-module__6eujwG__caseLink[data-landed] { visibility: visible; pointer-events: auto; }",
+    ".StampDetail-module__6eujwG__caseLink[data-landed]:hover, .StampDetail-module__6eujwG__caseLink[data-landed]:focus-visible { opacity: 1; }",
+    ".StampDetail-module__6eujwG__caseSoon { margin: 0px; }",
+    ".StampDetail-module__6eujwG__caseSoon, .StampDetail-module__6eujwG__caseSoon[data-landed] { opacity: 0.45; pointer-events: none; }",
+    ".StampDetail-module__6eujwG__root[data-morph-lift] { z-index: calc(var(--z-morph) + 1); }",
+    ".StampDetail-module__6eujwG__root[data-morph-lift] .StampDetail-module__6eujwG__room { pointer-events: none; opacity: 0 !important; transition: none !important; }"
+  ],
+  "errors": []
+}

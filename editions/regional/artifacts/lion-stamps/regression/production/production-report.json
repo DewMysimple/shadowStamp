@@ -1,0 +1,45 @@
+{
+  "baseURL": "http://127.0.0.1:4280/",
+  "startedAt": "2026-10-26T10:09:50.495Z",
+  "checks": [
+    {
+      "name": "production desktop controls stay usable in focus, persist and export",
+      "result": "passed",
+      "details": {
+        "http": 200,
+        "canvas": 1,
+        "devDiagnosticsExposed": false,
+        "persistedTilt": 12,
+        "exported": "postal-studies-parameters.json",
+        "focusedControlClicksSafe": true
+      }
+    },
+    {
+      "name": "production mobile touch can open panel, focus and return",
+      "result": "passed",
+      "details": {
+        "trueTouch": true,
+        "noOverflow": true
+      }
+    },
+    {
+      "name": "denied localStorage still renders controls and live changes",
+      "result": "passed",
+      "details": {
+        "storageFailureHandled": true,
+        "liveControls": true
+      }
+    },
+    {
+      "name": "production console, page and WebGL messages",
+      "result": "passed",
+      "details": {
+        "warnings": 0,
+        "errors": 0
+      }
+    }
+  ],
+  "errors": [],
+  "result": "passed",
+  "finishedAt": "2026-10-26T10:09:57.230Z"
+}

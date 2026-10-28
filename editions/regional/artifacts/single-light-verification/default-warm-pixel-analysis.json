@@ -1,0 +1,406 @@
+{
+  "result": "passed",
+  "createdAt": "2026-10-26T09:32:49.989403+00:00",
+  "scope": "Default NCS same-pose unlit versus warm illumination; no third-party pixel similarity claim.",
+  "method": "Fixed no-tilt focus pose from current getFocus/defaults, UV-classified pale paper margins and original green ink. Separate lit and shaded samples; PNGs are read-only.",
+  "inputs": {
+    "artifacts\\single-light-verification\\default-warm-off.png": "ae4f742617ac420aebf898bd7a76f8a886112ef526b3e887543c50c37cc64ece",
+    "artifacts\\single-light-verification\\default-warm-on.png": "5684589be31f2f2fb1a1be5fe1dfc24dd6f5f552322331cac6cd68578c5759a7"
+  },
+  "sourceSnapshot": {
+    "src/parameters.js": "2d11c3e128361a2cc41608bd7c910de8d87ff11a9f69caf4487787ad85a5d7f1",
+    "src/ParameterPanel.jsx": "402c126d78d2c7f8229b54ac415b54c0418fd0b4e917d7f1ef8eff67166b4d04",
+    "src/rendering/StampMaterial.js": "741374545803db3050230923acabb59d53ed28c4e0598c02113f8e292bf6cd6e",
+    "src/rendering/StampGallery.js": "239ddf46c0b103d1ea1a79ddf0e43b3696ec6be9457c0c0e24ad7f69717af360",
+    "src/rendering/DappledLight.js": "c1316b92413a941f408e0f900040ec45eee4dd1d88a30ae84aa07a4d0e5f8ab9",
+    "src/rendering/dappledShaders.js": "680b10b983864b3d24e20e88ddba66b3f505181c025225d24e26eeb57f2671b3",
+    "src/rendering/ncsLighting.js": "d8f4162e59e254dc7217382d9e5a29dcb1a4b569191b0509eb567ad9c735cab6",
+    "src/rendering/SurfaceTexture.js": "19188bc2efc1f141f0e285e4d26c8c4e979113bafa7a6208d5e68b73b86a1503"
+  },
+  "pose": {
+    "x": 689.76,
+    "y": 450,
+    "width": 399.681,
+    "height": 508.49999999999994,
+    "angle": 0
+  },
+  "measurements": {
+    "paperEdge": {
+      "all": {
+        "samples": 2664,
+        "beforeMeanRGB": [
+          231.0075,
+          229.4771,
+          216.8018
+        ],
+        "afterMeanRGB": [
+          219.6408,
+          214.0323,
+          192.0559
+        ],
+        "meanRGBGain": [
+          -11.3667,
+          -15.4448,
+          -24.7459
+        ],
+        "meanLuminanceGain": -15.2494,
+        "meanRedMinusBlueGain": 13.3791,
+        "representative": [
+          {
+            "uv": [
+              0.956,
+              0.292
+            ],
+            "xy": [
+              872,
+              344
+            ],
+            "beforeRGB": [
+              230,
+              228,
+              216
+            ],
+            "afterRGB": [
+              255,
+              255,
+              223
+            ]
+          },
+          {
+            "uv": [
+              0.972,
+              0.884
+            ],
+            "xy": [
+              878,
+              645
+            ],
+            "beforeRGB": [
+              233,
+              231,
+              219
+            ],
+            "afterRGB": [
+              179,
+              182,
+              167
+            ]
+          }
+        ]
+      },
+      "highlights": {
+        "samples": 532,
+        "beforeMeanRGB": [
+          230.5827,
+          229.2406,
+          216.3684
+        ],
+        "afterMeanRGB": [
+          251.0169,
+          235.6805,
+          208.7951
+        ],
+        "meanRGBGain": [
+          20.4342,
+          6.4398,
+          -7.5733
+        ],
+        "meanLuminanceGain": 8.4033,
+        "meanRedMinusBlueGain": 28.0075,
+        "representative": [
+          {
+            "uv": [
+              0.956,
+              0.292
+            ],
+            "xy": [
+              872,
+              344
+            ],
+            "beforeRGB": [
+              230,
+              228,
+              216
+            ],
+            "afterRGB": [
+              255,
+              255,
+              223
+            ]
+          },
+          {
+            "uv": [
+              0.06,
+              0.276
+            ],
+            "xy": [
+              514,
+              336
+            ],
+            "beforeRGB": [
+              236,
+              234,
+              221
+            ],
+            "afterRGB": [
+              252,
+              232,
+              208
+            ]
+          }
+        ]
+      },
+      "shadows": {
+        "samples": 2077,
+        "beforeMeanRGB": [
+          231.1107,
+          229.5335,
+          216.908
+        ],
+        "afterMeanRGB": [
+          210.9528,
+          208.1416,
+          187.4868
+        ],
+        "meanRGBGain": [
+          -20.1579,
+          -21.3919,
+          -29.4213
+        ],
+        "meanLuminanceGain": -21.7093,
+        "meanRedMinusBlueGain": 9.2634,
+        "representative": [
+          {
+            "uv": [
+              0.94,
+              0.476
+            ],
+            "xy": [
+              866,
+              438
+            ],
+            "beforeRGB": [
+              233,
+              232,
+              219
+            ],
+            "afterRGB": [
+              246,
+              228,
+              204
+            ]
+          },
+          {
+            "uv": [
+              0.972,
+              0.884
+            ],
+            "xy": [
+              878,
+              645
+            ],
+            "beforeRGB": [
+              233,
+              231,
+              219
+            ],
+            "afterRGB": [
+              179,
+              182,
+              167
+            ]
+          }
+        ]
+      }
+    },
+    "greenPrint": {
+      "all": {
+        "samples": 8613,
+        "beforeMeanRGB": [
+          167.1227,
+          190.1991,
+          146.0894
+        ],
+        "afterMeanRGB": [
+          180.0731,
+          190.9417,
+          140.0164
+        ],
+        "meanRGBGain": [
+          12.9504,
+          0.7426,
+          -6.073
+        ],
+        "meanLuminanceGain": 2.8459,
+        "meanRedMinusBlueGain": 19.0235,
+        "representative": [
+          {
+            "uv": [
+              0.58,
+              0.444
+            ],
+            "xy": [
+              722,
+              422
+            ],
+            "beforeRGB": [
+              161,
+              188,
+              139
+            ],
+            "afterRGB": [
+              233,
+              238,
+              165
+            ]
+          },
+          {
+            "uv": [
+              0.132,
+              0.804
+            ],
+            "xy": [
+              543,
+              605
+            ],
+            "beforeRGB": [
+              185,
+              201,
+              169
+            ],
+            "afterRGB": [
+              146,
+              160,
+              132
+            ]
+          }
+        ]
+      },
+      "highlights": {
+        "samples": 5152,
+        "beforeMeanRGB": [
+          164.8296,
+          188.9305,
+          143.1745
+        ],
+        "afterMeanRGB": [
+          190.8203,
+          199.4971,
+          143.5763
+        ],
+        "meanRGBGain": [
+          25.9907,
+          10.5666,
+          0.4018
+        ],
+        "meanLuminanceGain": 13.1118,
+        "meanRedMinusBlueGain": 25.5889,
+        "representative": [
+          {
+            "uv": [
+              0.58,
+              0.444
+            ],
+            "xy": [
+              722,
+              422
+            ],
+            "beforeRGB": [
+              161,
+              188,
+              139
+            ],
+            "afterRGB": [
+              233,
+              238,
+              165
+            ]
+          },
+          {
+            "uv": [
+              0.364,
+              0.148
+            ],
+            "xy": [
+              635,
+              271
+            ],
+            "beforeRGB": [
+              184,
+              200,
+              163
+            ],
+            "afterRGB": [
+              202,
+              197,
+              154
+            ]
+          }
+        ]
+      },
+      "shadows": {
+        "samples": 3171,
+        "beforeMeanRGB": [
+          170.9174,
+          192.2794,
+          150.9249
+        ],
+        "afterMeanRGB": [
+          162.7685,
+          177.3781,
+          134.4557
+        ],
+        "meanRGBGain": [
+          -8.1488,
+          -14.9013,
+          -16.4693
+        ],
+        "meanLuminanceGain": -13.5789,
+        "meanRedMinusBlueGain": 8.3204,
+        "representative": [
+          {
+            "uv": [
+              0.644,
+              0.804
+            ],
+            "xy": [
+              747,
+              605
+            ],
+            "beforeRGB": [
+              165,
+              188,
+              145
+            ],
+            "afterRGB": [
+              173,
+              185,
+              137
+            ]
+          },
+          {
+            "uv": [
+              0.132,
+              0.804
+            ],
+            "xy": [
+              543,
+              605
+            ],
+            "beforeRGB": [
+              185,
+              201,
+              169
+            ],
+            "afterRGB": [
+              146,
+              160,
+              132
+            ]
+          }
+        ]
+      },
+      "greenChannelRemainsDominantFraction": 0.9527458492975734
+    }
+  }
+}

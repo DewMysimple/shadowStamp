@@ -1,0 +1,288 @@
+{
+  "sourceProjectReadOnly": "E:\\数字媒体竞赛\\张钧儒\\lion",
+  "mappingSource": "src/config/assetPaths.js:67-74; src/data/lion-expressions.js:20-27",
+  "recommended": "Eight complete v2 images. underpaint-v1 are incomplete animation backing and must not be used as standalone stamps.",
+  "assets": [
+    {
+      "name": "喜",
+      "key": "joy",
+      "source": "E:\\数字媒体竞赛\\张钧儒\\lion\\source\\public\\assets\\expression\\lion-joy-v2.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 1973680,
+      "sha256": "db755d607d4ea75244d0e89975ce7f183319da6cd24940a266acc46ec5dd688e",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        15,
+        1240,
+        1254
+      ],
+      "originalArchiveIdentical": true,
+      "alpha24BBox": [
+        109,
+        26,
+        1137,
+        1229
+      ],
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "怒",
+      "key": "anger",
+      "source": "E:\\数字媒体竞赛\\张钧儒\\lion\\source\\public\\assets\\expression\\lion-anger-v2.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 2148975,
+      "sha256": "3c9b8b091ca8d8e549672c9cc6e0cbbca1e83a5a92d7052999ea04bc470ab37f",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        8,
+        1236,
+        1254
+      ],
+      "originalArchiveIdentical": true,
+      "alpha24BBox": [
+        104,
+        32,
+        1169,
+        1228
+      ],
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "哀",
+      "key": "sorrow",
+      "source": "E:\\数字媒体竞赛\\张钧儒\\lion\\source\\public\\assets\\expression\\lion-sorrow-v2.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 2072160,
+      "sha256": "d89c62066a6324c215f0c783aba2b2a43bca094d2a94d3cdf63c0b0e219cc27d",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        17,
+        1228,
+        1254
+      ],
+      "originalArchiveIdentical": true,
+      "alpha24BBox": [
+        82,
+        69,
+        1162,
+        1200
+      ],
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "乐",
+      "key": "delight",
+      "source": "E:\\数字媒体竞赛\\张钧儒\\lion\\source\\public\\assets\\expression\\lion-delight-v2.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 2210847,
+      "sha256": "b8e98ac5437d9735227f47dece7f74273d540590a97c4940383745aa51e563f2",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        1240,
+        1254
+      ],
+      "originalArchiveIdentical": true,
+      "alpha24BBox": [
+        122,
+        32,
+        1180,
+        1229
+      ],
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "动",
+      "key": "motion",
+      "source": "E:\\数字媒体竞赛\\张钧儒\\lion\\source\\public\\assets\\expression\\lion-motion-v2.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 2272850,
+      "sha256": "aa4d0032fad8faf2462decf90dcb9219ca92890aa567654d8993b885461a3476",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        15,
+        1238,
+        1254
+      ],
+      "originalArchiveIdentical": true,
+      "alpha24BBox": [
+        60,
+        25,
+        1221,
+        1241
+      ],
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "静",
+      "key": "stillness",
+      "source": "E:\\数字媒体竞赛\\张钧儒\\lion\\source\\public\\assets\\expression\\lion-stillness-v2.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 2045186,
+      "sha256": "8ecbfdd200043946d5e63be21a175e349979c822376c9003c561cdb2893cd886",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        1250,
+        1254
+      ],
+      "originalArchiveIdentical": true,
+      "alpha24BBox": [
+        92,
+        59,
+        1139,
+        1221
+      ],
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "惊",
+      "key": "surprise",
+      "source": "E:\\数字媒体竞赛\\张钧儒\\lion\\source\\public\\assets\\expression\\lion-surprise-v2.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 1975024,
+      "sha256": "7b167fa62fb0e24afc103e6821322443fd361bd951b5d18ac2a58423f1b97480",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        1230,
+        1254
+      ],
+      "originalArchiveIdentical": true,
+      "alpha24BBox": [
+        89,
+        54,
+        1113,
+        1205
+      ],
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "疑",
+      "key": "doubt",
+      "source": "E:\\数字媒体竞赛\\张钧儒\\lion\\source\\public\\assets\\expression\\lion-doubt-v2.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 1899231,
+      "sha256": "872da547c9c3774dbeab0333e13e88455a5573267ff93389791836d83e61177e",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBBox": [
+        0,
+        16,
+        1240,
+        1254
+      ],
+      "originalArchiveIdentical": true,
+      "alpha24BBox": [
+        140,
+        83,
+        1199,
+        1192
+      ],
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "visualReview": "Contact sheet viewed: all eight complete red-white-gold heads with distinct mouth/brow/head poses, matching attached visual family. Use complete v2 assets without reconstructing new lion images."
+}

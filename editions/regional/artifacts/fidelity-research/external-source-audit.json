@@ -1,0 +1,34 @@
+{
+  "path": "source\\紫外线镭射邮票使用 Fable 5 + Three.js 制作令人惊叹的光线效果来源：@loficosmos1#设计灵感[话题]# #会动的线条[话题]# #vibecoding[话题]#.mp4",
+  "sha256": "d96132ce5359963e783924cca2854286c831e6d08bb908ed8216c0b36845843c",
+  "matches_previously_analyzed_input": true,
+  "metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 2912,
+        "height": 1952,
+        "avg_frame_rate": "57200/1051",
+        "duration": "5.255000",
+        "nb_frames": "286"
+      }
+    ]
+  },
+  "current_pass_scope": "Identity + metadata recheck and frames0/100/220 spot inspection. Full286-frame evidence retained in docs/video-analysis.md.",
+  "spot_frames": [
+    {
+      "frame": 0,
+      "file": "external-source-frame-000.jpg"
+    },
+    {
+      "frame": 100,
+      "file": "external-source-frame-100.jpg"
+    },
+    {
+      "frame": 220,
+      "file": "external-source-frame-220.jpg"
+    }
+  ],
+  "input_unchanged": true
+}

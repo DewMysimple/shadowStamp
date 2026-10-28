@@ -1,0 +1,1061 @@
+{
+  "matching": [
+    {
+      "tag": "CANVAS",
+      "id": "",
+      "cls": "HomeBloom-module__vLuROW__canvas",
+      "rect": {
+        "x": 657.359375,
+        "y": -27.5,
+        "w": 793.140625,
+        "h": 954.984375
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "none",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeBloom-module__vLuROW__canvas"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__host HomeStamps-module__yl-W7q__holo Home-module__baJ6tW__stampScene",
+      "rect": {
+        "x": 0,
+        "y": 90,
+        "w": 1440,
+        "h": 810
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "data-material",
+          "auto"
+        ],
+        [
+          "data-morph",
+          ""
+        ],
+        [
+          "data-cue-owner",
+          ""
+        ],
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__host HomeStamps-module__yl-W7q__holo Home-module__baJ6tW__stampScene"
+        ],
+        [
+          "style",
+          "--tooltip-gap:16px;--focus-max-blur:25px;--focus-scale:0.6;--focus-fade:20ms;--shadow-color:var(--color-cream-700);--shadow-intensity:2;--shadow-intensity-hover:2"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__focusOverlay",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "none",
+        "opacity": "0",
+        "position": "absolute",
+        "zIndex": "40",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__focusOverlay"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__focusLayer HomeStamps-module__yl-W7q__focusLayer1",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "radial-gradient(circle at calc(50% + 150px) calc(50% + 150px), rgb(0, 0, 0) 50.4px, rgba(0, 0, 0, 0) 117.6px)",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__focusLayer HomeStamps-module__yl-W7q__focusLayer1"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__focusLayer HomeStamps-module__yl-W7q__focusLayer2",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "radial-gradient(circle at calc(50% + 150px) calc(50% + 150px), rgb(0, 0, 0) 100.8px, rgba(0, 0, 0, 0) 184.8px)",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__focusLayer HomeStamps-module__yl-W7q__focusLayer2"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__focusLayer HomeStamps-module__yl-W7q__focusLayer3",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "radial-gradient(circle at calc(50% + 150px) calc(50% + 150px), rgb(0, 0, 0) 168px, rgba(0, 0, 0, 0) 268.8px)",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__focusLayer HomeStamps-module__yl-W7q__focusLayer3"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__wrapper",
+      "rect": {
+        "x": 618.8134155273438,
+        "y": 379.852294921875,
+        "w": 244.7877197265625,
+        "h": 278.7763671875
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(0.966378, -0.257126, 0.257126, 0.966378, 2.5354, -3.98608)",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "6",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "data-stamp-id",
+          "kensho"
+        ],
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__wrapper"
+        ],
+        [
+          "style",
+          "--stamp-top: 38.8%; --stamp-left: 44.7%; --stamp-bottom-m: calc(0.1358 * var(--mobile-frame-w)); --stamp-left-m: 17.79%; --stamp-z: 6; --stamp-z-m: 8; --rot: -16deg; --rot-m: -56.06deg; transform: translate(0px, 0px) translate(2.5354px, -3.98608px) rotate(-14.8996deg);"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__paper",
+      "rect": {
+        "x": 618.8134155273438,
+        "y": 379.852294921875,
+        "w": 244.7877197265625,
+        "h": 278.7763671875
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "filter": "blur(0px)",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__paper"
+        ],
+        [
+          "style",
+          "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__image",
+      "rect": {
+        "x": 618.8134155273438,
+        "y": 379.852294921875,
+        "w": 244.7877197265625,
+        "h": 278.7763671875
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "opacity": "1",
+        "position": "relative",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__image"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__wrapper",
+      "rect": {
+        "x": 751.3311157226562,
+        "y": 333.4540100097656,
+        "w": 246.1116943359375,
+        "h": 279.6685485839844
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(0.964462, 0.264221, -0.264221, 0.964462, -3.09742, 5.62423)",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "7",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "data-stamp-id",
+          "ncs"
+        ],
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__wrapper"
+        ],
+        [
+          "style",
+          "--stamp-top: 31.94%; --stamp-left: 54.34%; --stamp-bottom-m: calc(0.0449 * var(--mobile-frame-w)); --stamp-left-m: 12.01%; --stamp-z: 7; --stamp-z-m: 9; --rot: 16deg; --rot-m: -74.06deg; transform: translate(0px, 0px) translate(-3.09742px, 5.62423px) rotate(15.3206deg);"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__paper",
+      "rect": {
+        "x": 751.3311157226562,
+        "y": 333.4540100097656,
+        "w": 246.1116943359375,
+        "h": 279.6685485839844
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "filter": "blur(0px)",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__paper"
+        ],
+        [
+          "style",
+          "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__image",
+      "rect": {
+        "x": 751.3311157226562,
+        "y": 333.4540100097656,
+        "w": 246.1116943359375,
+        "h": 279.6685485839844
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "opacity": "1",
+        "position": "relative",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__image"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__wrapper",
+      "rect": {
+        "x": 550.2379150390625,
+        "y": 487.19464111328125,
+        "w": 300.33050537109375,
+        "h": 303.96942138671875
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(0.744055, -0.668119, 0.668119, 0.744055, 5.35628, 0.28091)",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "4",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "data-stamp-id",
+          "specimen"
+        ],
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__wrapper"
+        ],
+        [
+          "style",
+          "--stamp-top: 53.08%; --stamp-left: 41.67%; --stamp-bottom-m: calc(0.3867 * var(--mobile-frame-w)); --stamp-left-m: 62.52%; --stamp-z: 4; --stamp-z-m: 5; --rot: -42deg; --rot-m: -2.06deg; transform: translate(0px, 0px) translate(5.35628px, 0.280911px) rotate(-41.922deg);"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__paper",
+      "rect": {
+        "x": 550.2379150390625,
+        "y": 487.19464111328125,
+        "w": 300.33050537109375,
+        "h": 303.96942138671875
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "filter": "blur(0px)",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__paper"
+        ],
+        [
+          "style",
+          "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__image",
+      "rect": {
+        "x": 550.2379150390625,
+        "y": 487.19464111328125,
+        "w": 300.33050537109375,
+        "h": 303.96942138671875
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "opacity": "1",
+        "position": "relative",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__image"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__wrapper",
+      "rect": {
+        "x": 1216.0986328125,
+        "y": 385.98486328125,
+        "w": 277.9432373046875,
+        "h": 298.55682373046875
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(0.888679, -0.45853, 0.45853, 0.888679, 5.25779, 2.30234)",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "4",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "data-stamp-id",
+          "motion"
+        ],
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__wrapper"
+        ],
+        [
+          "style",
+          "--stamp-top: 40%; --stamp-left: 87.14%; --stamp-bottom-m: calc(0.3453 * var(--mobile-frame-w)); --stamp-left-m: 79.93%; --stamp-z: 4; --stamp-z-m: 4; --rot: -26.31deg; --rot-m: 15.94deg; transform: translate(0px, 0px) translate(5.25779px, 2.30234px) rotate(-27.2923deg);"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__paper",
+      "rect": {
+        "x": 1216.0986328125,
+        "y": 385.98486328125,
+        "w": 277.9432373046875,
+        "h": 298.55682373046875
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "filter": "blur(0px)",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__paper"
+        ],
+        [
+          "style",
+          "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__image",
+      "rect": {
+        "x": 1216.0986328125,
+        "y": 385.98486328125,
+        "w": 277.9432373046875,
+        "h": 298.55682373046875
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "opacity": "1",
+        "position": "relative",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__image"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__wrapper",
+      "rect": {
+        "x": 986.9363403320312,
+        "y": 657.8276977539062,
+        "w": 251.04632568359375,
+        "h": 282.93731689453125
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(0.956666, -0.291187, 0.291187, 0.956666, 0.396992, 2.36665)",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "6",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "data-stamp-id",
+          "gao-han"
+        ],
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__wrapper"
+        ],
+        [
+          "style",
+          "--stamp-top: 72.59%; --stamp-left: 70.63%; --stamp-bottom-m: calc(0.2417 * var(--mobile-frame-w)); --stamp-left-m: 27.73%; --stamp-z: 6; --stamp-z-m: 7; --rot: -16deg; --rot-m: -38.06deg; transform: translate(0px, 0px) translate(0.396992px, 2.36665px) rotate(-16.929deg);"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__paper",
+      "rect": {
+        "x": 986.9363403320312,
+        "y": 657.8276977539062,
+        "w": 251.04632568359375,
+        "h": 282.93731689453125
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "filter": "blur(0px)",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__paper"
+        ],
+        [
+          "style",
+          "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__image",
+      "rect": {
+        "x": 986.9363403320312,
+        "y": 657.8276977539062,
+        "w": 251.04632568359375,
+        "h": 282.93731689453125
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "opacity": "1",
+        "position": "relative",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__image"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__wrapper",
+      "rect": {
+        "x": 901.7493896484375,
+        "y": 744.9940795898438,
+        "w": 210.4329833984375,
+        "h": 253.8968505859375
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(0.996027, 0.0890542, -0.0890542, 0.996027, 1.4659, 3.73156)",
+        "filter": "none",
+        "opacity": "1",
+        "position": "absolute",
+        "zIndex": "5",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "data-stamp-id",
+          "lunar-gala"
+        ],
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__wrapper"
+        ],
+        [
+          "style",
+          "--stamp-top: 81.39%; --stamp-left: 63.23%; --stamp-bottom-m: calc(0.3574 * var(--mobile-frame-w)); --stamp-left-m: 45.29%; --stamp-z: 5; --stamp-z-m: 6; --rot: 5deg; --rot-m: -20.06deg; transform: translate(0px, 0px) translate(1.4659px, 3.73156px) rotate(5.1092deg);"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__paper",
+      "rect": {
+        "x": 901.7493896484375,
+        "y": 744.9940795898438,
+        "w": 210.4329833984375,
+        "h": 253.8968505859375
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "filter": "blur(0px)",
+        "opacity": "1",
+        "position": "static",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__paper"
+        ],
+        [
+          "style",
+          "--scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px;"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__image",
+      "rect": {
+        "x": 901.7493896484375,
+        "y": 744.9940795898438,
+        "w": 210.4329833984375,
+        "h": 253.8968505859375
+      },
+      "text": "",
+      "style": {
+        "transform": "none",
+        "filter": "drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.26) -3px 8px 17px) drop-shadow(color(srgb 0.0872608 0.0770201 0.0587792 / 0.16) -8px 31px 31px)",
+        "opacity": "1",
+        "position": "relative",
+        "zIndex": "auto",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "0px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__image"
+        ]
+      ]
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "cls": "HomeStamps-module__yl-W7q__tooltip",
+      "rect": {
+        "x": -11.279999732971191,
+        "y": 66.47999572753906,
+        "w": 22.559999465942383,
+        "h": 7.5200042724609375
+      },
+      "text": "",
+      "style": {
+        "transform": "matrix(0.94, 0, 0, 0.94, -12, -24)",
+        "filter": "none",
+        "opacity": "0",
+        "position": "absolute",
+        "zIndex": "60",
+        "background": "lab(9.59725 3.34676 6.7838) none repeat scroll 0% 0% / auto padding-box border-box",
+        "mask": "none",
+        "borderRadius": "999px"
+      },
+      "attrs": [
+        [
+          "class",
+          "HomeStamps-module__yl-W7q__tooltip"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ]
+      ]
+    }
+  ],
+  "css": [
+    ".HomeStamps-module__yl-W7q__host { right: 0px; left: 0px; top: var(--bottom-band,0px); bottom: calc(-1 * var(--bottom-band,0px)); pointer-events: none; position: absolute; }",
+    ".HomeStamps-module__yl-W7q__wrapper { top: var(--stamp-top); left: var(--stamp-left); pointer-events: auto; user-select: none; aspect-ratio: 444 / 556; transform-origin: 50% center; will-change: transform; perspective: 1200px; --pos-x: 0px; --pos-y: 0px; --drift-x: 0px; --drift-y: 0px; --rot: 0deg; --rot-drift: 0deg; --motion-scale: 1; --rot-used: var(--rot); width: max(10.982%, min(190px, 19.6% - 56px)); z-index: var(--stamp-z); transform: translate(calc(var(--pos-x) * var(--motion-scale)), calc(var(--pos-y) * var(--motion-scale))) translate(calc(var(--drift-x) * var(--motion-scale)), calc(var(--drift-y) * var(--motion-scale))) rotate(calc(var(--rot-used) + var(--rot-drift) * var(--motion-scale))); position: absolute; }",
+    ".HomeStamps-module__yl-W7q__paper { --scale: 1; --tilt-x: 0deg; --tilt-y: 0deg; --blur: 0px; transform-origin: 50% center; width: 100%; height: 100%; transform-style: preserve-3d; will-change: transform, filter; filter: blur(var(--blur)); transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) scale(var(--scale)); }",
+    ".HomeStamps-module__yl-W7q__lifted .HomeStamps-module__yl-W7q__image { --shadow-intensity: var(--shadow-intensity-hover,2); }",
+    ".HomeStamps-module__yl-W7q__image { width: 100%; height: 100%; filter: drop-shadow(calc(-3px * var(--shadow-px,1)) calc(8px * var(--shadow-px,1)) calc(17px * var(--shadow-px,1)) color-mix(in srgb, var(--shadow-color,var(--color-cream-700)) calc(13% * var(--shadow-intensity,1)), transparent)) drop-shadow(calc(-8px * var(--shadow-px,1)) calc(31px * var(--shadow-px,1)) calc(31px * var(--shadow-px,1)) color-mix(in srgb, var(--shadow-color,var(--color-cream-700)) calc(8% * var(--shadow-intensity,1)), transparent)); position: relative; }",
+    ".HomeStamps-module__yl-W7q__image img { object-fit: contain; pointer-events: none; }",
+    ".HomeStamps-module__yl-W7q__holo .HomeStamps-module__yl-W7q__lifted .HomeStamps-module__yl-W7q__image { filter: drop-shadow(calc(-3px * var(--shadow-px,1)) calc(8px * var(--shadow-px,1)) calc(17px * var(--shadow-px,1)) color-mix(in srgb, var(--shadow-color,var(--color-cream-700)) calc(13% * var(--shadow-intensity,1)), transparent)) drop-shadow(calc(-8px * var(--shadow-px,1)) calc(31px * var(--shadow-px,1)) calc(31px * var(--shadow-px,1)) color-mix(in srgb, var(--shadow-color,var(--color-cream-700)) calc(8% * var(--shadow-intensity,1)), transparent)); }",
+    ".HomeStamps-module__yl-W7q__holo .HomeStamps-module__yl-W7q__reliefCanvas { pointer-events: none; opacity: 0; width: 100%; height: 100%; transition: opacity var(--duration-fast) var(--ease-standard); position: absolute; inset: 0px; }",
+    ".HomeStamps-module__yl-W7q__holo[data-morph] .HomeStamps-module__yl-W7q__reliefCanvas { transition: none; }",
+    ".HomeStamps-module__yl-W7q__holo .HomeStamps-module__yl-W7q__focusOverlay { display: none; }",
+    ".HomeStamps-module__yl-W7q__holo .HomeStamps-module__yl-W7q__wrapper { --stamp-defocus: 4px; transition: filter .16s var(--ease-standard); }",
+    ".HomeStamps-module__yl-W7q__holo.HomeStamps-module__yl-W7q__focusActive .HomeStamps-module__yl-W7q__wrapper:not(.HomeStamps-module__yl-W7q__lifted) { filter: blur(var(--stamp-defocus,4px)); }",
+    ".HomeStamps-module__yl-W7q__focusOverlay { --focus-bleed: 150px; --fc-x: calc(var(--fx,50%) + var(--focus-bleed)); --fc-y: calc(var(--fy,50%) + var(--focus-bleed)); z-index: 40; pointer-events: none; opacity: 0; transition: opacity var(--focus-fade,0s) var(--ease-standard); position: absolute; inset: 0px; }",
+    ".HomeStamps-module__yl-W7q__focusActive .HomeStamps-module__yl-W7q__focusOverlay { opacity: 1; }",
+    ".HomeStamps-module__yl-W7q__focusLayer { inset: calc(-1 * var(--focus-bleed)); position: absolute; }",
+    ".HomeStamps-module__yl-W7q__focusLayer1 { backdrop-filter: blur(var(--focus-max-blur,16px)); mask-image: radial-gradient(circle at var(--fc-x) var(--fc-y), #000 calc(var(--focus-radius,140px) * var(--focus-scale,1) * .6), transparent calc(var(--focus-radius,140px) * var(--focus-scale,1) * 1.4)); }",
+    ".HomeStamps-module__yl-W7q__focusLayer2 { backdrop-filter: blur(calc(var(--focus-max-blur,16px) * .55)); mask-image: radial-gradient(circle at var(--fc-x) var(--fc-y), #000 calc(var(--focus-radius,140px) * var(--focus-scale,1) * 1.2), transparent calc(var(--focus-radius,140px) * var(--focus-scale,1) * 2.2)); }",
+    ".HomeStamps-module__yl-W7q__focusLayer3 { backdrop-filter: blur(calc(var(--focus-max-blur,16px) * .25)); mask-image: radial-gradient(circle at var(--fc-x) var(--fc-y), #000 calc(var(--focus-radius,140px) * var(--focus-scale,1) * 2), transparent calc(var(--focus-radius,140px) * var(--focus-scale,1) * 3.2)); }",
+    "@supports ((-webkit-hyphens:none)) {\n  :is(html:not([data-webkit-rich-halo]) .HomeStamps-module__yl-W7q__focusLayer2, html:not([data-webkit-rich-halo]) .HomeStamps-module__yl-W7q__focusLayer3) { display: none; }\n  .HomeStamps-module__yl-W7q__image { transform: translateZ(0px); }\n  html:not([data-webkit-rich-motionblur]) .HomeStamps-module__yl-W7q__paper { filter: none; will-change: transform; }\n}",
+    ".HomeStamps-module__yl-W7q__tooltip { z-index: 60; padding: var(--space-2xs) var(--space-sm); background: var(--color-near-black-400); color: var(--surface-page); font-family: var(--font-mono); font-size: var(--font-size-label-small); line-height: var(--line-height-label-small); text-transform: uppercase; white-space: nowrap; box-shadow: var(--shadow-pill); will-change: transform, translate, opacity; pointer-events: none; opacity: 0; transform-origin: center bottom; transform: translate(-50%, calc(-100% - var(--tooltip-gap,var(--space-md)))) scale(.94); transition: opacity var(--duration-fast) var(--ease-standard), transform var(--duration-fast) var(--ease-standard); border-radius: 999px; position: absolute; top: 0px; left: 0px; }",
+    ".HomeStamps-module__yl-W7q__tooltip.HomeStamps-module__yl-W7q__visible { opacity: 1; transform: translate(-50%, calc(-100% - (var(--tooltip-gap,var(--space-md)) + var(--space-2xs)))) scale(1); }",
+    "@media (prefers-reduced-motion: reduce) {\n  .HomeStamps-module__yl-W7q__wrapper { --motion-scale: 0; }\n  .HomeStamps-module__yl-W7q__paper { filter: blur(); transform: rotateX(0deg) rotateY(0deg) scale(1); }\n  .HomeStamps-module__yl-W7q__tooltip, .HomeStamps-module__yl-W7q__focusOverlay, .HomeStamps-module__yl-W7q__holo .HomeStamps-module__yl-W7q__wrapper { transition: none; }\n  .HomeStamps-module__yl-W7q__holo.HomeStamps-module__yl-W7q__focusActive .HomeStamps-module__yl-W7q__wrapper:not(.HomeStamps-module__yl-W7q__lifted) { filter: none; }\n}",
+    "@media (max-width: 1023px) {\n  .HomeStamps-module__yl-W7q__host { --touch-tier: 1; width: var(--fan-frame-w,100%); --mobile-frame-w: var(--fan-frame-w); position: absolute; inset: 0px auto 0px 0px; }\n  .HomeStamps-module__yl-W7q__focusOverlay { display: none; }\n  html:not([data-phone-rich-focus]) .HomeStamps-module__yl-W7q__holo .HomeStamps-module__yl-W7q__wrapper { transition: none; }\n  html:not([data-phone-rich-focus]) .HomeStamps-module__yl-W7q__holo.HomeStamps-module__yl-W7q__focusActive .HomeStamps-module__yl-W7q__wrapper:not(.HomeStamps-module__yl-W7q__lifted) { filter: none; }\n  .HomeStamps-module__yl-W7q__wrapper { top: auto; bottom: var(--stamp-bottom-m); left: var(--stamp-left-m,var(--stamp-left)); perspective: 1200px; --rot-used: var(--rot-m,var(--rot)); width: 39.5%; z-index: var(--stamp-z-m,var(--stamp-z)); pointer-events: auto; user-select: none; -webkit-tap-highlight-color: transparent; }\n  .HomeStamps-module__yl-W7q__paper { filter: none; transform-style: flat; will-change: auto; }\n  .HomeStamps-module__yl-W7q__lifted .HomeStamps-module__yl-W7q__paper { will-change: transform; }\n  .HomeStamps-module__yl-W7q__image { --sh-x1: calc(-3px * cos(var(--rot-used)) + 8px * sin(var(--rot-used))); --sh-y1: calc(3px * sin(var(--rot-used)) + 8px * cos(var(--rot-used))); --sh-x2: calc(-8px * cos(var(--rot-used)) + 31px * sin(var(--rot-used))); --sh-y2: calc(8px * sin(var(--rot-used)) + 31px * cos(var(--rot-used))); filter: drop-shadow(var(--sh-x1) var(--sh-y1) 17px color-mix(in srgb, var(--shadow-color,var(--color-cream-700)) calc(13% * var(--shadow-intensity,1)), transparent)) drop-shadow(var(--sh-x2) var(--sh-y2) 31px color-mix(in srgb, var(--shadow-color,var(--color-cream-700)) calc(8% * var(--shadow-intensity,1)), transparent)); }\n}",
+    "@media (max-width: 1023px) and (orientation: landscape) and (max-height: 500px) {\n  .HomeStamps-module__yl-W7q__host { display: none; }\n}",
+    ".StampDetail-module__6eujwG__root { z-index: var(--z-modal,100); position: fixed; inset: 0px; }",
+    ".StampDetail-module__6eujwG__room { background: var(--color-cream-700); opacity: 0; transition: opacity var(--duration-base,.4s) var(--ease-standard); cursor: zoom-out; position: absolute; inset: 0px; }",
+    ".StampDetail-module__6eujwG__room[data-open] { opacity: 1; }",
+    ".StampDetail-module__6eujwG__room.StampDetail-module__6eujwG__isDragging { transition: none; }",
+    ".StampDetail-module__6eujwG__roomLayer { pointer-events: none; position: absolute; inset: 0px; }",
+    ".StampDetail-module__6eujwG__wrap { pointer-events: none; justify-content: center; align-items: center; display: flex; position: absolute; inset: 0px; }",
+    ".StampDetail-module__6eujwG__card { --card-w-cap: calc(100vw - 2 * var(--space-lg)); --card-h: min(64svh, 540px, var(--card-w-cap) * 556 / 444); height: var(--card-h); aspect-ratio: 444 / 556; pointer-events: auto; cursor: grab; touch-action: none; position: relative; }",
+    ".StampDetail-module__6eujwG__card:active { cursor: grabbing; }",
+    ".StampDetail-module__6eujwG__card[data-case] { cursor: pointer; }",
+    ".StampDetail-module__6eujwG__figure { perspective: 1400px; transform-origin: 50% center; width: 100%; height: 100%; transform: translate(var(--tx,0px), var(--ty,0px)) rotate(var(--rotZ,0deg)) scale(var(--sx,1), var(--sy,1)); position: relative; }",
+    ".StampDetail-module__6eujwG__figure.StampDetail-module__6eujwG__isHeld, .StampDetail-module__6eujwG__figure.StampDetail-module__6eujwG__isFlying { will-change: transform; backface-visibility: hidden; }",
+    ".StampDetail-module__6eujwG__morphs { opacity: var(--morph,1); pointer-events: none; position: absolute; inset: 0px; }",
+    ".StampDetail-module__6eujwG__figure[data-handoff] .StampDetail-module__6eujwG__morphs { transition: opacity var(--relight-ms,var(--duration-fast)) var(--relight-ease,var(--ease-standard)); }",
+    ".StampDetail-module__6eujwG__caseLink { top: calc(100% + (100dvh - var(--card-h)) / 4); color: var(--surface-page); font-family: var(--font-mono); font-size: var(--font-size-label-small); text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; visibility: hidden; opacity: 0.7; pointer-events: none; transition: opacity var(--duration-base,.4s) var(--ease-standard); text-decoration: none; position: absolute; left: 50%; translate: -50% -50%; }",
+    ".StampDetail-module__6eujwG__caseLink[data-landed] { visibility: visible; pointer-events: auto; }",
+    ".StampDetail-module__6eujwG__caseLink[data-landed]:hover, .StampDetail-module__6eujwG__caseLink[data-landed]:focus-visible { opacity: 1; }",
+    ".StampDetail-module__6eujwG__caseSoon { margin: 0px; }",
+    ".StampDetail-module__6eujwG__caseSoon, .StampDetail-module__6eujwG__caseSoon[data-landed] { opacity: 0.45; pointer-events: none; }",
+    ".StampDetail-module__6eujwG__root[data-morph-lift] { z-index: calc(var(--z-morph) + 1); }",
+    ".StampDetail-module__6eujwG__root[data-morph-lift] .StampDetail-module__6eujwG__room { pointer-events: none; opacity: 0 !important; transition: none !important; }",
+    ":root { --color-cream-100: #fffbf4; --color-cream-200: #c0bcb5; --color-cream-300: #817e78; --color-cream-400: #706d67; --color-cream-500: #423f39; --color-cream-600: #2b2823; --color-cream-700: #16140f; --color-cream-800: #0c0a06; --color-gray-100: #fbfbfb; --color-gray-200: #f7f7f7; --color-gray-300: #eee; --color-gray-400: #ddd; --color-gray-500: #cacaca; --color-gray-600: #959595; --color-gray-700: #606060; --color-gray-800: #2b2b2b; --color-near-black-100: #746960; --color-near-black-200: #594f46; --color-near-black-300: #3d342b; --color-near-black-400: #221911; --color-near-black-500: #170f08; --color-near-black-600: #0e0702; --color-near-black-700: #080301; --color-near-black-800: #050200; --color-selection-ink: #a87b4f; --surface-page: var(--color-cream-100); --surface-card: #f5f0e8; --surface-divider: var(--color-gray-500); --surface-divider-line: #dadada; --text-headings: #2b2b2b; --text-body: #2b2b2be6; --text-muted: var(--color-near-black-100); --text-muted-half: color-mix(in srgb, var(--color-near-black-100) 50%, transparent); --text-disabled: var(--color-gray-500); --text-state-on: #21763c; --text-state-off: #ac312c; --focus-ring-width: 2.5px; --focus-ring-offset: 2px; --focus-ring-color: var(--text-headings); --scrollbar-size: 8px; --scrollbar-track: transparent; --scrollbar-thumb-rest: #80808040; --scrollbar-thumb-idle: #80808000; --font-heading: \"Exposure VAR\", \"Iowan Old Style\", Palatino, Georgia, serif; --font-body: \"Söhne\", system-ui, -apple-system, sans-serif; --font-mono: \"Departure Mono\", ui-monospace, SFMono-Regular, Menlo, monospace; --font-heading-axis: 0; --font-size-h0: 96px; --font-size-h1: 72px; --font-size-h2: 56px; --font-size-h3: 48px; --font-size-h4: 40px; --font-size-h5: 28px; --font-size-h6: 24px; --font-size-h7: 20px; --line-height-h0: 96px; --line-height-h1: 88px; --line-height-h3: 56px; --line-height-h4: 48px; --line-height-h5: 33.6px; --line-height-h7: 24px; --font-size-body-medium: 14px; --font-size-body-large: 16px; --line-height-body-medium: 20px; --line-height-body-large: 24px; --line-height-prose-serif: 22px; --letter-spacing-body-medium: .16px; --letter-spacing-body-large: .16px; --font-size-label-chrome: 11px; --nav-glyph-height: 18px; --tagline-w: 4.7rem; --font-size-label-small: 12px; --line-height-label-small: 16.8px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 36px; --space-2xl: 48px; --space-3xl: 64px; --space-5xl: 76px; --space-6xl: 80px; --page-padding-x: 64px; --page-padding-y: 36px; --artboard-width: min(100vw, 177.778vh); --artboard-inset-x: max(0px, 50vw - 88.8889vh); --nav-column-x: .112; --nav-menu-left: max(calc(var(--artboard-inset-x) + var(--artboard-width) * var(--nav-column-x)), calc(var(--artboard-inset-x) + var(--space-xl) + var(--tagline-w) + var(--space-xl))); --nav-menu-right: calc(var(--nav-menu-left) + 74px); --letter-card-width: 792px; --letter-card-padding: 168px; --letter-tuck-fade: 400px; --letter-tuck-gutter: 400px; --letter-card-min-height: 1604px; --reading-column-width: 532px; --content-min-width: 670px; --works-drawer-top-gap: 53px; --works-drawer-backdrop-blur: 5px; --works-drawer-content-top: 64px; --pill-padding-x: 32px; --pill-padding-y: 16px; --pill-gap: 24px; --pill-label-size: 11px; --pill-fill: linear-gradient(color-mix(in srgb, var(--color-cream-700) 90%, transparent), color-mix(in srgb, var(--color-cream-700) 90%, transparent)), var(--texture-paper); --pill-rim: color-mix(in srgb, var(--surface-divider) 20%, transparent); --pill-radius: 999px; --texture-paper: url(/textures/paper-surface.webp); --texture-letter-paper: url(/textures/letter-paper.webp); --texture-surface: url(/textures/surface-overlay.webp); --shadow-stamp: -3px 8px 17px 0 #47474721, -8px 31px 31px 0 #4747471f, -12px 71px 42px 0 #47474712, -18px 125px 50px 0 #47474704; --shadow-elevated: 0 8px 17px 0 #47474721, 0 31px 31px 0 #4747471f, 0 71px 42px 0 #47474712, 0 125px 50px 0 #47474704; --shadow-polaroid-top: 0 0 1px 0 #47474703, 0 0 1px 0 #47474711, 0 0 1px 0 #4747471f; --shadow-letter: 0 16px 36px 0 #4747471a, 0 65px 65px 0 #47474717, 0 146px 87px 0 #4747470d, 0 259px 104px 0 #47474703; --shadow-pill: 0 4px 10px 0 #4747471a, 0 18px 18px 0 #47474717; --duration-morph: .15s; --duration-fast: .24s; --duration-base: .4s; --duration-reveal: .7s; --ease-standard: cubic-bezier(.2, .6, .2, 1); --ease-in-out: cubic-bezier(.645, .045, .355, 1); --z-texture-base: 0; --z-content: 2; --z-card-shadow: 3; --z-card-content: 4; --z-nav: 10; --z-pill-nav: 11; --z-modal: 100; --z-morph: 101; }"
+  ],
+  "resources": [
+    {
+      "name": "https://billguo.me/fonts/DepartureMono-Regular.woff2",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/fonts/Exposure_VAR.woff2",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/stamps/kensho-384.avif",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/fonts/Soehne-Buch.woff2",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/home/stamp-mark.svg",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/stamps/ncs-384.avif",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/stamps/specimen-384.avif",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/1co6dpwsw-jqk.css",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/2u5v7xdlfh11m.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/1r_x22h2ipk5o.css",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/work/gao-han.jpg",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/1mlftcslf095m.js",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/3v7e42kfrjd82.css",
+      "type": "link"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/3k2a8xskh3-fj.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/turbopack-2rk2zh_gdqiqs.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/02_3gww7bcfb3.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/13jullzwfjoaf.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/2clate34j23mk.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/1cc677ai9v_a2.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/2nvj2cjvmbkxe.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/1t6nxw83tt83g.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/0fhp91xm0lvps.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/125leska-e-p9.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/1pwgxukp-i63o.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/23g065mpsw7sx.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/_next/static/immutable/chunks/09j4kyo_en-y6.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/work/ncs-1920.webp",
+      "type": "img"
+    },
+    {
+      "name": "https://billguo.me/work/kensho-1200.webp",
+      "type": "img"
+    },
+    {
+      "name": "https://billguo.me/textures/surface-overlay.webp",
+      "type": "css"
+    },
+    {
+      "name": "https://billguo.me/textures/paper-surface.webp",
+      "type": "css"
+    },
+    {
+      "name": "https://billguo.me/textures/letter-paper.webp",
+      "type": "css"
+    },
+    {
+      "name": "https://billguo.me/stamps/motion-384.avif",
+      "type": "img"
+    },
+    {
+      "name": "https://billguo.me/stamps/lunar-gala-384.avif",
+      "type": "img"
+    },
+    {
+      "name": "https://billguo.me/stamps/gao-han-384.avif",
+      "type": "img"
+    },
+    {
+      "name": "https://billguo.me/fonts/Soehne-Buch.woff2",
+      "type": "other"
+    },
+    {
+      "name": "https://billguo.me/84d4e374b8164cd1/script.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/64229fd0fba06762/script.js",
+      "type": "script"
+    },
+    {
+      "name": "https://billguo.me/?_rsc=5CB68i4pnAekjehf",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/about?_rsc=5CB68i4pnAekjehf",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/craft?_rsc=5CB68i4pnAekjehf",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/writing?_rsc=5CB68i4pnAekjehf",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/tab-1.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/stamp-1.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/tab-2.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/tab-3.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/stamp-2.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/tab-4.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/drawer-open.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/drawer-close.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/craft-flip-4.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/craft-flip-3.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/craft-flip-1.m4a",
+      "type": "fetch"
+    },
+    {
+      "name": "https://billguo.me/sounds/craft-flip-2.m4a",
+      "type": "fetch"
+    }
+  ]
+}

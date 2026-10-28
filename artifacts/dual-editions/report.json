@@ -1,0 +1,279 @@
+{
+  "startedAt": "2026-10-28T11:46:15.429Z",
+  "scope": "Concurrent original/regional servers, exact runtime source preservation, launcher reuse and origin-isolated persistence.",
+  "origins": [
+    {
+      "edition": "original",
+      "url": "http://127.0.0.1:4173/",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\炫技3"
+    },
+    {
+      "edition": "regional",
+      "url": "http://127.0.0.1:4174/",
+      "cwd": "C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional"
+    }
+  ],
+  "checks": [
+    {
+      "name": "both concurrent servers identify as the intended edition",
+      "result": "passed",
+      "elapsedMs": 2254,
+      "details": {
+        "identities": [
+          {
+            "edition": "original",
+            "occupied": true
+          },
+          {
+            "edition": "regional",
+            "occupied": true
+          }
+        ],
+        "originalStamps": 8,
+        "regionalStamps": 12,
+        "regionalAlgorithms": 6,
+        "simultaneousPagesInOneContext": true
+      }
+    },
+    {
+      "name": "original eight-expression edition preserves static desk, hover light and focus",
+      "result": "passed",
+      "elapsedMs": 2480,
+      "details": {
+        "idleLightAmounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hoverOwner": "joy",
+        "focus": "joy",
+        "deskSHA256": "216dc654036e056b6233993ba2a43522434b008b24ec43049709f6fa73625efc",
+        "returned": true
+      }
+    },
+    {
+      "name": "regional assets, default six-choice controls and focus use the copied edition",
+      "result": "passed",
+      "elapsedMs": 2803,
+      "details": {
+        "assets": [
+          {
+            "id": "foshan",
+            "path": "/assets/stamps/01-foshan.png",
+            "status": 200,
+            "sha256": "4af5328281944742634c5a8c39cb95f48b4f6305bc59822a6b448bf9618e0e7c"
+          },
+          {
+            "id": "guangzhou",
+            "path": "/assets/stamps/02-guangzhou.png",
+            "status": 200,
+            "sha256": "fa7b897eebba55b0f86326524efd6a31cfa2a1fcfc0b677f95538e8fabf55ef0"
+          },
+          {
+            "id": "heshan",
+            "path": "/assets/stamps/03-heshan.png",
+            "status": 200,
+            "sha256": "5ccbd466fec2126ba86e1e089b73b48356795d51a269669963bb08b16af630e3"
+          },
+          {
+            "id": "suixi",
+            "path": "/assets/stamps/04-suixi.png",
+            "status": 200,
+            "sha256": "0c4c1eaee0cdcc71eac9b125432265c429950a548ee67ea554d9e02b965ff347"
+          },
+          {
+            "id": "beijing",
+            "path": "/assets/stamps/05-beijing.png",
+            "status": 200,
+            "sha256": "2451c9970975764c7c5d4397d76b11f8187545895a0deeed1a7b5de9637a86f1"
+          },
+          {
+            "id": "tianyang",
+            "path": "/assets/stamps/06-tianyang.png",
+            "status": 200,
+            "sha256": "f7209429b54d0e31664cc8dec6ca97de32c449454e7afae04a798e97e2c8d642"
+          },
+          {
+            "id": "quanzhou",
+            "path": "/assets/stamps/07-quanzhou.png",
+            "status": 200,
+            "sha256": "eebf5539ca51c8d68ed884ac32c699e4b3539494a73fc3cacb88eeedc4e1cee6"
+          },
+          {
+            "id": "hongkong",
+            "path": "/assets/stamps/08-hongkong.png",
+            "status": 200,
+            "sha256": "548b07f608378429bcf090a7877218e6f65f04c509679d7fe01048f6ba728854"
+          },
+          {
+            "id": "singapore",
+            "path": "/assets/stamps/09-singapore.png",
+            "status": 200,
+            "sha256": "710de0bc89b979b9cc47de6b86f1638b0c88833148ab788641942ed0e4df8d5f"
+          },
+          {
+            "id": "kualalumpur",
+            "path": "/assets/stamps/10-kualalumpur.png",
+            "status": 200,
+            "sha256": "cade59e01d7688043d61939790985ec0be6ab7a9c71ffe74214c2536022333ce"
+          },
+          {
+            "id": "sanfrancisco",
+            "path": "/assets/stamps/11-sanfrancisco.png",
+            "status": 200,
+            "sha256": "ab98df88da3f0968805219d91e768e437b3d6709803f951b89c55e43d9490da7"
+          },
+          {
+            "id": "london",
+            "path": "/assets/stamps/12-london.png",
+            "status": 200,
+            "sha256": "6a957488a16e64999d33f07561d37951b283caeb93ec7d220a9430632956e427"
+          }
+        ],
+        "defaultAlgorithm": "local-add",
+        "focus": "foshan",
+        "staticDesk": true,
+        "returned": true
+      }
+    },
+    {
+      "name": "one browser context retains separate settings at the two origins after reload",
+      "result": "passed",
+      "elapsedMs": 3935,
+      "details": {
+        "sharedStorageKey": "postal-studies:parameters:v2",
+        "origins": [
+          "http://127.0.0.1:4173/",
+          "http://127.0.0.1:4174/"
+        ],
+        "original": {
+          "hoverTilt": 9,
+          "lightContrast": 0.37
+        },
+        "regional": {
+          "hoverTilt": 4,
+          "lightContrast": 0.61,
+          "algorithm": "soft-light"
+        },
+        "reloadPreservedBoth": true,
+        "userBrowserProfileUntouched": true
+      }
+    },
+    {
+      "name": "both actual CMD launchers reuse existing processes and share root dependencies",
+      "result": "passed",
+      "elapsedMs": 4256,
+      "details": {
+        "runs": [
+          {
+            "file": "runStart.cmd",
+            "stdout": "[Postal Studies] Reusing original edition: http://127.0.0.1:4173/",
+            "stderr": ""
+          },
+          {
+            "file": "runGo.cmd",
+            "stdout": "[Postal Studies] Reusing regional edition: http://127.0.0.1:4174/",
+            "stderr": ""
+          }
+        ],
+        "listenersBefore": [
+          {
+            "LocalAddress": "127.0.0.1",
+            "LocalPort": 4173,
+            "OwningProcess": 46620
+          },
+          {
+            "LocalAddress": "127.0.0.1",
+            "LocalPort": 4174,
+            "OwningProcess": 16048
+          }
+        ],
+        "listenersAfter": [
+          {
+            "LocalAddress": "127.0.0.1",
+            "LocalPort": 4173,
+            "OwningProcess": 46620
+          },
+          {
+            "LocalAddress": "127.0.0.1",
+            "LocalPort": 4174,
+            "OwningProcess": 16048
+          }
+        ],
+        "noExtraServer": true,
+        "sharedVite": "C:\\Users\\Administrator\\Desktop\\炫技3\\node_modules\\vite\\bin\\vite.js",
+        "sharedModules": {
+          "react": "C:\\Users\\Administrator\\Desktop\\炫技3\\node_modules\\react\\index.js",
+          "react-dom": "C:\\Users\\Administrator\\Desktop\\炫技3\\node_modules\\react-dom\\index.js",
+          "three": "C:\\Users\\Administrator\\Desktop\\炫技3\\node_modules\\three\\build\\three.cjs"
+        },
+        "nestedCacheDirectories": [
+          ".vite",
+          ".vite-temp"
+        ],
+        "secondDependencyInstallation": false
+      }
+    },
+    {
+      "name": "runtime source and assets exactly match the two committed source editions",
+      "result": "passed",
+      "elapsedMs": 3538,
+      "details": {
+        "original": {
+          "base": "11d5049",
+          "prefix": ".",
+          "checkedFiles": 27,
+          "mismatches": [],
+          "unexpected": [],
+          "scope": [
+            "src",
+            "public",
+            "index.html",
+            "vite.config.js",
+            "package.json",
+            "package-lock.json"
+          ]
+        },
+        "regional": {
+          "base": "74ba21c",
+          "prefix": "editions/regional",
+          "checkedFiles": 38,
+          "mismatches": [],
+          "unexpected": [],
+          "scope": [
+            "src",
+            "public",
+            "index.html",
+            "vite.config.js"
+          ]
+        }
+      }
+    },
+    {
+      "name": "both editions produced no browser errors or failed requests",
+      "result": "passed",
+      "elapsedMs": 0,
+      "details": {
+        "errors": 0,
+        "failedRequests": 0
+      }
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "original-idle.png",
+    "original-hover.png",
+    "original-focus.png",
+    "regional-idle.png",
+    "regional-hover.png",
+    "regional-focus.png"
+  ],
+  "finishedAt": "2026-10-28T11:46:34.915Z",
+  "result": "passed"
+}
