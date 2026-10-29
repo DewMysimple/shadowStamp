@@ -1,0 +1,832 @@
+{
+  "status": "ready",
+  "loaded": true,
+  "selected": "guangdong",
+  "hovered": null,
+  "keyboard": false,
+  "viewport": {
+    "x": 35.84,
+    "y": 273.98399999999987,
+    "width": 1574.4,
+    "height": 834.4320000000001
+  },
+  "renderViewport": {
+    "x": -216.06400000000002,
+    "y": 22.079999999999842,
+    "width": 2078.208,
+    "height": 1338.2400000000002
+  },
+  "reducedMotion": false,
+  "tilt": {
+    "rotation": [
+      0,
+      0,
+      0,
+      "XYZ"
+    ],
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0
+    ],
+    "pointerInside": false,
+    "enabled": true
+  },
+  "modelToClip": [
+    2.886002886002886,
+    0,
+    0,
+    0,
+    0,
+    4.481792717086834,
+    0,
+    0,
+    0,
+    0,
+    -9.999999999999996,
+    -1,
+    0,
+    0,
+    0.19999999999999574,
+    2
+  ],
+  "parameters": {
+    "hdriEnabled": true,
+    "hdriIntensity": 0.12,
+    "hdriRotation": 63,
+    "worldStrength": 0.1599999964237213,
+    "exposure": 0.4000000059604645,
+    "shadowOpacity": 0.3,
+    "shadowSoftness": 1,
+    "tiltEnabled": true,
+    "tiltDegrees": 2.5,
+    "tiltResponse": 0.16,
+    "woodNormal": 1,
+    "canvasNormal": 1,
+    "lights": [
+      {
+        "enabled": true,
+        "watts": 18,
+        "diameter": 0.8500000238418579,
+        "position": [
+          -0.6499999761581421,
+          -0.949999988079071,
+          1.0499999523162842
+        ],
+        "rotation": [
+          47.629497724194344,
+          -0.000003973783187021022,
+          -34.38034116843322
+        ],
+        "color": [
+          1,
+          0.9599999785423279,
+          0.8999999761581421
+        ]
+      },
+      {
+        "enabled": true,
+        "watts": 8,
+        "diameter": 0.800000011920929,
+        "position": [
+          0.75,
+          -0.6499999761581421,
+          0.3499999940395355
+        ],
+        "rotation": [
+          70.57456884455755,
+          0.000007783539724009354,
+          49.08563258353853
+        ],
+        "color": [
+          0.8999999761581421,
+          0.949999988079071,
+          1
+        ]
+      },
+      {
+        "enabled": true,
+        "watts": 8.5,
+        "diameter": 0.5,
+        "position": [
+          0.550000011920929,
+          0.02500000037252903,
+          0.75
+        ],
+        "rotation": [
+          36.28204341828319,
+          -0.0000012101469105339708,
+          92.60256412544149
+        ],
+        "color": [
+          1,
+          0.9599999785423279,
+          0.8899999856948853
+        ]
+      }
+    ]
+  },
+  "renderPass": {
+    "renders": 121,
+    "cached": true,
+    "samples": 4,
+    "size": [
+      4096,
+      2638
+    ],
+    "depthRange": [
+      1.8,
+      2.2
+    ],
+    "solidPass": true
+  },
+  "modelSizeM": [
+    1.000000055218037,
+    0.5000000605876815,
+    0.030000000027939677
+  ],
+  "frameCorners": [
+    [
+      78.90667297578517,
+      1063.2667442263887
+    ],
+    [
+      67.66032545550974,
+      1068.8899192063898
+    ],
+    [
+      78.90667297578517,
+      319.1333681211323
+    ],
+    [
+      67.66032545550974,
+      313.51019483907885
+    ],
+    [
+      1567.1733270242148,
+      1063.2667442263887
+    ],
+    [
+      1578.4196745444901,
+      1068.8899192063898
+    ],
+    [
+      1567.1733270242148,
+      319.1333681211323
+    ],
+    [
+      1578.4196745444901,
+      313.51019483907885
+    ]
+  ],
+  "categories": [
+    {
+      "id": "guangdong",
+      "name": "Category_Guangdong",
+      "activity": 0.62,
+      "reveal": 1,
+      "position": [
+        -0.2853130307048559,
+        -0.16999999256961534,
+        0.014280001397090767
+      ],
+      "base": [
+        -0.2853130307048559,
+        -0.16999999256961534,
+        0.011800001397090767
+      ],
+      "scale": 1.0217,
+      "color": "#944e3b",
+      "opacity": 1,
+      "visible": true,
+      "bounds": [
+        0.03930385891534388,
+        0.018742393159289272,
+        0.0014712507381852667
+      ],
+      "depth": 0.014280001397090769,
+      "screen": [
+        392.15698493168264,
+        947.9359407981666
+      ],
+      "vertices": 5330
+    },
+    {
+      "id": "china",
+      "name": "Category_China",
+      "activity": 0,
+      "reveal": 1,
+      "position": [
+        0.0001909453421831131,
+        -0.16999999933422805,
+        0.011800001384566706
+      ],
+      "base": [
+        0.0001909453421831131,
+        -0.16999999933422805,
+        0.011800001384566706
+      ],
+      "scale": 1,
+      "color": "#453e34",
+      "opacity": 1,
+      "visible": true,
+      "bounds": [
+        0.036605749279260635,
+        0.018240004395292497,
+        0.0014400026660127355
+      ],
+      "depth": 0.011800001384566706,
+      "screen": [
+        823.3280081499345,
+        947.6157090052227
+      ],
+      "vertices": 4061
+    },
+    {
+      "id": "world",
+      "name": "Category_World",
+      "activity": 0,
+      "reveal": 1,
+      "position": [
+        0.28510812763124704,
+        -0.17000000692766876,
+        0.011800001358121915
+      ],
+      "base": [
+        0.28510812763124704,
+        -0.17000000692766876,
+        0.011800001358121915
+      ],
+      "scale": 1,
+      "color": "#453e34",
+      "opacity": 1,
+      "visible": true,
+      "bounds": [
+        0.03968385048210621,
+        0.018288820838753078,
+        0.0014400026725716573
+      ],
+      "depth": 0.011800001358121913,
+      "screen": [
+        1253.0764880885388,
+        947.6157204552092
+      ],
+      "vertices": 6039
+    }
+  ],
+  "roots": [
+    "b9dbc988-266e-401a-a2f9-4567b3747ddf",
+    "7a656e4a-0fa1-4020-9c33-df9913ecbdc0"
+  ],
+  "studio": {
+    "environment": true,
+    "environmentIntensity": 0.12,
+    "sceneLights": [
+      {
+        "name": "Key | large softbox",
+        "type": "RectAreaLight",
+        "intensity": 10.097058564709805
+      },
+      {
+        "name": "Fill | gentle frontal bounce",
+        "type": "RectAreaLight",
+        "intensity": 5.066059031136563
+      },
+      {
+        "name": "Rim | timber edge",
+        "type": "RectAreaLight",
+        "intensity": 13.779680975357937
+      }
+    ],
+    "hdri": {
+      "url": "/environments/citrus-orchard-road-4k.exr",
+      "loaded": true,
+      "width": 4096,
+      "height": 2048,
+      "colorSpace": "srgb-linear"
+    },
+    "environmentRotation": [
+      0,
+      1.0995574287564276,
+      0,
+      "XYZ"
+    ],
+    "worldStrength": 0.1599999964237213,
+    "worldColor": [
+      0.699999988079071,
+      0.7400000095367432,
+      0.7799999713897705
+    ],
+    "displayExposureEV": 0.4000000059604645,
+    "actualLights": 3,
+    "softboxes": [
+      {
+        "name": "Key | large softbox",
+        "shape": "DISK",
+        "diameter": 0.8500000238418579,
+        "watts": 18,
+        "enabled": true,
+        "intensity": 10.097058564709805,
+        "position": [
+          -0.6499999761581421,
+          1.0499999523162842,
+          0.949999988079071
+        ],
+        "quaternion": [
+          -0.3452411909515062,
+          -0.2755703712640314,
+          -0.10680506699657905,
+          0.8907649343208599
+        ],
+        "direction": [
+          0.4171898302604511,
+          -0.6739221174958018,
+          -0.609738981103579
+        ],
+        "color": [
+          1,
+          0.9599999785423279,
+          0.8999999761581421
+        ],
+        "sourcePosition": [
+          -0.6499999761581421,
+          -0.949999988079071,
+          1.0499999523162842
+        ],
+        "sourceRotationDegrees": [
+          47.629497724194344,
+          -0.000003973783187021022,
+          -34.38034116843322
+        ]
+      },
+      {
+        "name": "Fill | gentle frontal bounce",
+        "shape": "DISK",
+        "diameter": 0.800000011920929,
+        "watts": 8,
+        "enabled": true,
+        "intensity": 5.066059031136563,
+        "position": [
+          0.75,
+          0.3499999940395355,
+          0.6499999761581421
+        ],
+        "quaternion": [
+          -0.1534655688524164,
+          0.4094192011446035,
+          0.07007676322351739,
+          0.8966122261976099
+        ],
+        "direction": [
+          -0.7126717821097537,
+          -0.33257975550243934,
+          -0.617648473821838
+        ],
+        "color": [
+          0.8999999761581421,
+          0.949999988079071,
+          1
+        ],
+        "sourcePosition": [
+          0.75,
+          -0.6499999761581421,
+          0.3499999940395355
+        ],
+        "sourceRotationDegrees": [
+          70.57456884455755,
+          0.000007783539724009354,
+          49.08563258353853
+        ]
+      },
+      {
+        "name": "Rim | timber edge",
+        "shape": "DISK",
+        "diameter": 0.5,
+        "watts": 8.5,
+        "enabled": true,
+        "intensity": 13.779680975357937,
+        "position": [
+          0.550000011920929,
+          0.75,
+          -0.02500000037252903
+        ],
+        "quaternion": [
+          -0.3121306621845984,
+          0.6449881260983226,
+          0.3266407268162108,
+          0.6163364361299404
+        ],
+        "direction": [
+          -0.5911501932559327,
+          -0.8061137804686314,
+          0.02687046616724309
+        ],
+        "color": [
+          1,
+          0.9599999785423279,
+          0.8899999856948853
+        ],
+        "sourcePosition": [
+          0.550000011920929,
+          0.02500000037252903,
+          0.75
+        ],
+        "sourceRotationDegrees": [
+          36.28204341828319,
+          -0.0000012101469105339708,
+          92.60256412544149
+        ]
+      }
+    ],
+    "source": "C:\\Users\\Administrator\\Desktop\\Modeling\\相框\\Models\\ArtFrame_2to1\\ArtFrame_2to1.blend",
+    "diskSegments": 32,
+    "toneMapping": "Source AgX Medium High Contrast LUT",
+    "exposure": 1.3195079162244137,
+    "shadow": "Source-disk deterministic wall projection",
+    "invisibleHitAreasCastShadows": false
+  },
+  "materials": [
+    {
+      "name": "PBR_Wood_HoneyOak_Baked",
+      "type": "MeshPhysicalMaterial",
+      "displayTransform": true,
+      "transparent": false,
+      "depthWrite": true,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 1,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        1
+      ],
+      "maps": [
+        {
+          "key": "map",
+          "name": "wood_atlas_4k_basecolor",
+          "colorSpace": "srgb",
+          "channel": 0,
+          "repeat": [
+            1,
+            1
+          ],
+          "minFilter": 1008,
+          "mipmaps": true
+        },
+        {
+          "key": "normalMap",
+          "name": "wood_atlas_4k_normal",
+          "colorSpace": "",
+          "channel": 0,
+          "repeat": [
+            1,
+            1
+          ],
+          "minFilter": 1008,
+          "mipmaps": true
+        },
+        {
+          "key": "roughnessMap",
+          "name": "wood_atlas_4k_roughness",
+          "colorSpace": "",
+          "channel": 0,
+          "repeat": [
+            1,
+            1
+          ],
+          "minFilter": 1008,
+          "mipmaps": true
+        }
+      ]
+    },
+    {
+      "name": "PBR_Canvas_WarmIvory_Baked",
+      "type": "MeshPhysicalMaterial",
+      "displayTransform": true,
+      "transparent": false,
+      "depthWrite": true,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 1,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        1
+      ],
+      "maps": [
+        {
+          "key": "map",
+          "name": "canvas_128mm_2k_basecolor",
+          "colorSpace": "srgb",
+          "channel": 0,
+          "repeat": [
+            1,
+            1
+          ],
+          "minFilter": 1008,
+          "mipmaps": true
+        },
+        {
+          "key": "normalMap",
+          "name": "canvas_128mm_2k_normal",
+          "colorSpace": "",
+          "channel": 0,
+          "repeat": [
+            1,
+            1
+          ],
+          "minFilter": 1008,
+          "mipmaps": true
+        },
+        {
+          "key": "roughnessMap",
+          "name": "canvas_128mm_2k_roughness",
+          "colorSpace": "",
+          "channel": 0,
+          "repeat": [
+            1,
+            1
+          ],
+          "minFilter": 1008,
+          "mipmaps": true
+        }
+      ]
+    },
+    {
+      "name": "M_Backing_NaturalFibre",
+      "type": "MeshPhysicalMaterial",
+      "displayTransform": true,
+      "transparent": false,
+      "depthWrite": true,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 0.949999988079071,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        1
+      ],
+      "maps": [
+        {
+          "key": "map"
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    },
+    {
+      "name": "M_Landscape_Photo",
+      "type": "MeshPhysicalMaterial",
+      "displayTransform": true,
+      "transparent": false,
+      "depthWrite": true,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 0.8500000238418579,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        1
+      ],
+      "maps": [
+        {
+          "key": "map",
+          "name": "iceland_budir_arthouse_4641301",
+          "colorSpace": "srgb",
+          "channel": 0,
+          "repeat": [
+            1,
+            1
+          ],
+          "minFilter": 1008,
+          "mipmaps": true
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    },
+    {
+      "name": "M_Ink_CharcoalUmber",
+      "type": "MeshPhysicalMaterial",
+      "displayTransform": true,
+      "transparent": false,
+      "depthWrite": true,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 0.8199999928474426,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        1
+      ],
+      "maps": [
+        {
+          "key": "map"
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    },
+    {
+      "name": "M_Mat_Trim",
+      "type": "MeshPhysicalMaterial",
+      "displayTransform": true,
+      "transparent": false,
+      "depthWrite": true,
+      "side": 0,
+      "polygonOffset": true,
+      "polygonOffsetUnits": -2,
+      "roughness": 0.6600000262260437,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        -1
+      ],
+      "maps": [
+        {
+          "key": "map"
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    },
+    {
+      "name": "M_Mat_Trim",
+      "type": "MeshPhysicalMaterial",
+      "displayTransform": true,
+      "transparent": false,
+      "depthWrite": true,
+      "side": 0,
+      "polygonOffset": true,
+      "polygonOffsetUnits": -1,
+      "roughness": 0.6600000262260437,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        -1
+      ],
+      "maps": [
+        {
+          "key": "map"
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    },
+    {
+      "name": "Typography_WarmUmber",
+      "type": "MeshStandardMaterial",
+      "displayTransform": true,
+      "transparent": false,
+      "depthWrite": true,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 0.7799999713897705,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        -1
+      ],
+      "maps": [
+        {
+          "key": "map"
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    },
+    {
+      "name": "Typography_WarmLimestone",
+      "type": "MeshStandardMaterial",
+      "displayTransform": true,
+      "transparent": true,
+      "depthWrite": false,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 0.78,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        -1
+      ],
+      "maps": [
+        {
+          "key": "map"
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    },
+    {
+      "name": "Typography_WarmLimestone",
+      "type": "MeshStandardMaterial",
+      "displayTransform": true,
+      "transparent": true,
+      "depthWrite": false,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 0.78,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        -1
+      ],
+      "maps": [
+        {
+          "key": "map"
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    },
+    {
+      "name": "Typography_WarmLimestone",
+      "type": "MeshStandardMaterial",
+      "displayTransform": true,
+      "transparent": true,
+      "depthWrite": false,
+      "side": 2,
+      "polygonOffset": false,
+      "polygonOffsetUnits": 0,
+      "roughness": 0.78,
+      "metalness": 0,
+      "normalScale": [
+        1,
+        -1
+      ],
+      "maps": [
+        {
+          "key": "map"
+        },
+        {
+          "key": "normalMap"
+        },
+        {
+          "key": "roughnessMap"
+        }
+      ]
+    }
+  ],
+  "hiddenOriginalTexts": [
+    {
+      "name": "Text_Header_CN_Mesh",
+      "visible": false
+    },
+    {
+      "name": "Text_Header_EN_Mesh",
+      "visible": false
+    },
+    {
+      "name": "Text_Quote_CN_Mesh",
+      "visible": false
+    },
+    {
+      "name": "Text_Title_EN_Mesh",
+      "visible": false
+    }
+  ]
+}

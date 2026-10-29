@@ -1,0 +1,12 @@
+{
+  "startedAt": "2026-10-29T02:55:16.849Z",
+  "baseline": "f29710d",
+  "scope": "Actual old/new GPU wall pixels; horizontal banding, unchanged model/artwork, tilted wall shadows, parameter extremes, spatial precision, caching and target disposal. Desktop only.",
+  "checks": [],
+  "errors": [
+    "Failed to resolve module specifier \"three/addons/loaders/GLTFLoader.js\". Relative references must start with either \"/\", \"./\", or \"../\"."
+  ],
+  "warnings": [],
+  "finishedAt": "2026-10-29T02:56:17.851Z",
+  "passed": false
+}

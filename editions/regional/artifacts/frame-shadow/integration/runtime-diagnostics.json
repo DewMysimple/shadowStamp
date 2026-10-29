@@ -1,0 +1,1599 @@
+{
+  "phase": "idle",
+  "selected": null,
+  "hovered": null,
+  "series": "guangdong",
+  "progress": 0,
+  "reducedMotion": false,
+  "lightStates": [
+    {
+      "id": "foshan",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 1,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "guangzhou",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 1,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "heshan",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 1,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "suixi",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 1,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "beijing",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "tianyang",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "quanzhou",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "hongkong",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "singapore",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "kualalumpur",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "sanfrancisco",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "london",
+      "amount": 0,
+      "blur": 0,
+      "opacity": 0,
+      "target": [
+        0.5,
+        0.5
+      ],
+      "uv": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "id": "foshan",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          985.5593406593408,
+          416.18571428571425
+        ],
+        [
+          985.5593406593408,
+          236.95714285714286
+        ],
+        [
+          1109.6406593406593,
+          416.18571428571425
+        ],
+        [
+          1109.6406593406593,
+          236.95714285714286
+        ]
+      ]
+    },
+    {
+      "id": "guangzhou",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1223.1593406593406,
+          416.18571428571425
+        ],
+        [
+          1223.1593406593406,
+          236.95714285714286
+        ],
+        [
+          1347.2406593406592,
+          416.18571428571425
+        ],
+        [
+          1347.2406593406592,
+          236.95714285714286
+        ]
+      ]
+    },
+    {
+      "id": "heshan",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          985.5593406593408,
+          627.0428571428571
+        ],
+        [
+          985.5593406593408,
+          447.81428571428575
+        ],
+        [
+          1109.6406593406593,
+          627.0428571428571
+        ],
+        [
+          1109.6406593406593,
+          447.81428571428575
+        ]
+      ]
+    },
+    {
+      "id": "suixi",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1223.1593406593406,
+          627.0428571428571
+        ],
+        [
+          1223.1593406593406,
+          447.81428571428575
+        ],
+        [
+          1347.2406593406592,
+          627.0428571428571
+        ],
+        [
+          1347.2406593406592,
+          447.81428571428575
+        ]
+      ]
+    },
+    {
+      "id": "beijing",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          957.3120000000001,
+          394.28742857142856
+        ],
+        [
+          957.3120000000001,
+          258.8554285714286
+        ],
+        [
+          1137.888,
+          394.28742857142856
+        ],
+        [
+          1137.888,
+          258.8554285714286
+        ]
+      ]
+    },
+    {
+      "id": "tianyang",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1194.912,
+          394.28742857142856
+        ],
+        [
+          1194.912,
+          258.8554285714286
+        ],
+        [
+          1375.488,
+          394.28742857142856
+        ],
+        [
+          1375.488,
+          258.8554285714286
+        ]
+      ]
+    },
+    {
+      "id": "quanzhou",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          957.3120000000001,
+          605.1445714285715
+        ],
+        [
+          957.3120000000001,
+          469.7125714285714
+        ],
+        [
+          1137.888,
+          605.1445714285715
+        ],
+        [
+          1137.888,
+          469.7125714285714
+        ]
+      ]
+    },
+    {
+      "id": "hongkong",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1194.912,
+          605.1445714285715
+        ],
+        [
+          1194.912,
+          469.7125714285714
+        ],
+        [
+          1375.488,
+          605.1445714285715
+        ],
+        [
+          1375.488,
+          469.7125714285714
+        ]
+      ]
+    },
+    {
+      "id": "singapore",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          999.8057142857144,
+          416.18571428571425
+        ],
+        [
+          999.8057142857144,
+          236.95714285714286
+        ],
+        [
+          1095.3942857142858,
+          416.18571428571425
+        ],
+        [
+          1095.3942857142858,
+          236.95714285714286
+        ]
+      ]
+    },
+    {
+      "id": "kualalumpur",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        123.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1237.4057142857143,
+          416.18571428571425
+        ],
+        [
+          1237.4057142857143,
+          236.95714285714286
+        ],
+        [
+          1332.9942857142858,
+          416.18571428571425
+        ],
+        [
+          1332.9942857142858,
+          236.95714285714286
+        ]
+      ]
+    },
+    {
+      "id": "sanfrancisco",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        327.60000000000014,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          999.8057142857144,
+          627.0428571428571
+        ],
+        [
+          999.8057142857144,
+          447.81428571428575
+        ],
+        [
+          1095.3942857142858,
+          627.0428571428571
+        ],
+        [
+          1095.3942857142858,
+          447.81428571428575
+        ]
+      ]
+    },
+    {
+      "id": "london",
+      "rotation": [
+        0,
+        0,
+        0,
+        "ZXY"
+      ],
+      "center": [
+        565.2,
+        -87.42857142857144,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "corners": [
+        [
+          1237.4057142857143,
+          627.0428571428571
+        ],
+        [
+          1237.4057142857143,
+          447.81428571428575
+        ],
+        [
+          1332.9942857142858,
+          627.0428571428571
+        ],
+        [
+          1332.9942857142858,
+          447.81428571428575
+        ]
+      ]
+    }
+  ],
+  "parameters": {
+    "tiltEnabled": true,
+    "hoverTilt": 6,
+    "focusTilt": 6,
+    "tiltResponse": 0.085,
+    "hoverPerspective": 1200,
+    "hoverScale": 1.05,
+    "hoverLift": 4,
+    "hoverResponse": 0.085,
+    "blur": 11,
+    "blurResponse": 0.075,
+    "focusTrackOutside": false,
+    "resetTiltOnLeave": false,
+    "perspective": 1400,
+    "focusShift": 0,
+    "focusRoll": 0,
+    "enterDuration": 0.46,
+    "returnDuration": 0.56,
+    "focusHeight": 0.565,
+    "focusWidth": 0.295,
+    "focusX": 0.479,
+    "focusY": 0.5,
+    "backgroundColor": "#fbf7f1",
+    "focusBackground": "#22201c",
+    "lightAlgorithm": "local-add",
+    "lightEnabled": true,
+    "pinLight": false,
+    "lightAnimation": true,
+    "lightFollowPointer": true,
+    "lightIntensity": 1,
+    "lightContrast": 0.26,
+    "shadowStrength": 1,
+    "lightSpeed": 0.35,
+    "pointerInfluence": 0.85,
+    "lightResponse": 0.16,
+    "lightFadeIn": 0.12,
+    "lightFadeOut": 0.16,
+    "lightColor": "#ffd198",
+    "shadowColor": "#4e5c3c",
+    "contactShadowColor": "#635e53",
+    "contactShadowOpacity": 0.44,
+    "contactShadowSoftness": 1.4,
+    "textureScale": 0.9,
+    "surfaceRelief": 0.22,
+    "surfaceShine": 0.45,
+    "lightGrain": 0.65,
+    "lightCoverage": 0.708,
+    "lightScale": 1,
+    "lightAngle": 44,
+    "lightStretch": 0.84,
+    "lightScatter": 1,
+    "lightWarp": 0.118,
+    "lightSoftness": 1.35
+  },
+  "camera": {
+    "type": "PerspectiveCamera",
+    "distance": 1200,
+    "fov": 41.112090439166934
+  },
+  "renderer": {
+    "programs": 18,
+    "geometries": 25,
+    "textures": 63
+  },
+  "materials": [
+    "26fedbdd-0822-441b-886d-9f52185a3a51",
+    "d58c6e9a-b877-453d-bd05-8911f32e13f8",
+    "ad3b688d-a6d2-4da2-b624-d3edd6ab9517",
+    "5e53abf8-00b0-4f5b-9821-375164ba0bf6",
+    "dd0fe155-085d-4dd8-8a00-905384fdddef",
+    "7aa6fb9d-03e9-4daf-b426-675353507d2a",
+    "5b0dde1c-80f8-4d95-b128-c1ee9902fc18",
+    "8272b0af-74c2-4e94-9223-e6a19d638467",
+    "32169f6b-76e1-4cb6-8d18-9c33387a8049",
+    "9522530a-2ad7-4b84-aea7-8121ee831306",
+    "4ddc2567-9689-4fcf-8a1d-de828f7c2202",
+    "f4182c4c-b5ac-4057-85aa-08628d7f5067"
+  ],
+  "textures": [
+    "3d677c32-ab23-475d-9f79-7bc865dfd204",
+    "13431ccc-4ca3-45f7-bd29-9f9eecd07440",
+    "2755301c-f3c1-4299-ab42-7ec93d6e6549",
+    "a1f1bc96-7cef-4dc3-a079-135c6425d959",
+    "91835994-703d-4b0d-8a9b-7930cb7175cb",
+    "c2d5eafc-a67f-4236-9945-385c1a777dca",
+    "9f3052ff-291b-4bd7-9b76-1bc97226894e",
+    "e7c2024b-f2c3-4d1d-b8b8-45a0854a34c9",
+    "8c69ce97-18db-4a7f-bb40-a11e57c70714",
+    "e222ab88-818e-42ac-bc08-089b253356af",
+    "4872a041-c8b2-4164-b4a0-1b47f1352e7e",
+    "45a9a2b1-0a33-47b4-82ab-a3adb32ae88e"
+  ],
+  "background": {
+    "active": false,
+    "time": 3,
+    "fieldUpdates": 0,
+    "pointer": [
+      0.5,
+      0.5
+    ],
+    "target": [
+      0.5,
+      0.5
+    ],
+    "owner": null,
+    "aspect": 0.786,
+    "width": 384,
+    "height": 480,
+    "texture": "000d7624-4ada-47fc-aa6e-00573248527f",
+    "enabled": true,
+    "animate": true,
+    "followPointer": true,
+    "sizeNorm": 3,
+    "density": 8.9,
+    "parameters": {
+      "lightAlgorithm": "local-add",
+      "enabled": true,
+      "intensity": 1,
+      "speed": 0.35,
+      "color": "#4e5c3c",
+      "light": "#ffd198",
+      "background": "#fbf7f1",
+      "focusColor": "#22201c",
+      "softness": 1.35,
+      "coverage": 0.708,
+      "animate": true,
+      "density": 26.7,
+      "scale": 1,
+      "angle": 44,
+      "stretch": 0.84,
+      "scatter": 1,
+      "wave": 0.118,
+      "grain": 0.65,
+      "contrast": 0.26,
+      "study": 0,
+      "followPointer": true,
+      "responseTime": 0.16,
+      "pointerInfluence": 0.85,
+      "stampRatio": 0.786
+    }
+  },
+  "artFrame": {
+    "status": "ready",
+    "loaded": true,
+    "selected": "guangdong",
+    "hovered": null,
+    "keyboard": false,
+    "viewport": {
+      "x": 20.16,
+      "y": 197.31599999999997,
+      "width": 885.6,
+      "height": 469.36800000000005
+    },
+    "renderViewport": {
+      "x": -121.536,
+      "y": 55.619999999999976,
+      "width": 1168.992,
+      "height": 752.76
+    },
+    "reducedMotion": false,
+    "tilt": {
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "pointerInside": false,
+      "enabled": true
+    },
+    "modelToClip": [
+      2.8860028860028852,
+      0,
+      0,
+      0,
+      0,
+      4.481792717086834,
+      0,
+      0,
+      0,
+      0,
+      -9.999999999999996,
+      -1,
+      0,
+      0,
+      0.19999999999999574,
+      2
+    ],
+    "parameters": {
+      "hdriEnabled": true,
+      "hdriIntensity": 0.12,
+      "hdriRotation": 63,
+      "worldStrength": 0.1599999964237213,
+      "exposure": 0.4000000059604645,
+      "shadowOpacity": 0.3,
+      "shadowSoftness": 1,
+      "tiltEnabled": true,
+      "tiltDegrees": 2.5,
+      "tiltResponse": 0.16,
+      "woodNormal": 1,
+      "canvasNormal": 1,
+      "lights": [
+        {
+          "enabled": true,
+          "watts": 18,
+          "diameter": 0.8500000238418579,
+          "position": [
+            -0.6499999761581421,
+            -0.949999988079071,
+            1.0499999523162842
+          ],
+          "rotation": [
+            47.629497724194344,
+            -0.000003973783187021022,
+            -34.38034116843322
+          ],
+          "color": [
+            1,
+            0.9599999785423279,
+            0.8999999761581421
+          ]
+        },
+        {
+          "enabled": true,
+          "watts": 8,
+          "diameter": 0.800000011920929,
+          "position": [
+            0.75,
+            -0.6499999761581421,
+            0.3499999940395355
+          ],
+          "rotation": [
+            70.57456884455755,
+            0.000007783539724009354,
+            49.08563258353853
+          ],
+          "color": [
+            0.8999999761581421,
+            0.949999988079071,
+            1
+          ]
+        },
+        {
+          "enabled": true,
+          "watts": 8.5,
+          "diameter": 0.5,
+          "position": [
+            0.550000011920929,
+            0.02500000037252903,
+            0.75
+          ],
+          "rotation": [
+            36.28204341828319,
+            -0.0000012101469105339708,
+            92.60256412544149
+          ],
+          "color": [
+            1,
+            0.9599999785423279,
+            0.8899999856948853
+          ]
+        }
+      ]
+    },
+    "renderPass": {
+      "renders": 1536,
+      "cached": true,
+      "samples": 4,
+      "size": [
+        2338,
+        1506
+      ],
+      "depthRange": [
+        1.8,
+        2.2
+      ],
+      "solidPass": true
+    },
+    "modelSizeM": [
+      1.000000055218037,
+      0.5000000605876815,
+      0.030000000027939677
+    ],
+    "frameCorners": [
+      [
+        44.3850035488793,
+        641.2875436273437
+      ],
+      [
+        38.05893306872434,
+        644.4505795535941
+      ],
+      [
+        44.3850035488793,
+        222.71251956813697
+      ],
+      [
+        38.05893306872434,
+        219.54948459698187
+      ],
+      [
+        881.5349964511206,
+        641.2875436273437
+      ],
+      [
+        887.8610669312757,
+        644.4505795535941
+      ],
+      [
+        881.5349964511206,
+        222.71251956813697
+      ],
+      [
+        887.8610669312757,
+        219.54948459698187
+      ]
+    ],
+    "categories": [
+      {
+        "id": "guangdong",
+        "name": "Category_Guangdong",
+        "activity": 0.62,
+        "reveal": 1,
+        "position": [
+          -0.2853130307048559,
+          -0.16999999256961534,
+          0.014280001397090767
+        ],
+        "base": [
+          -0.2853130307048559,
+          -0.16999999256961534,
+          0.011800001397090767
+        ],
+        "scale": 1.0217,
+        "color": "#944e3b",
+        "opacity": 1,
+        "visible": true,
+        "bounds": [
+          0.03930385891534388,
+          0.018742393159289272,
+          0.0014712507381852667
+        ],
+        "depth": 0.014280001397090769,
+        "screen": [
+          220.58830402407153,
+          576.4139666989687
+        ],
+        "vertices": 5330
+      },
+      {
+        "id": "china",
+        "name": "Category_China",
+        "activity": 0,
+        "reveal": 1,
+        "position": [
+          0.0001909453421831131,
+          -0.16999999933422805,
+          0.011800001384566706
+        ],
+        "base": [
+          0.0001909453421831131,
+          -0.16999999933422805,
+          0.011800001384566706
+        ],
+        "scale": 1,
+        "color": "#453e34",
+        "opacity": 1,
+        "visible": true,
+        "bounds": [
+          0.036605749279260635,
+          0.018240004395292497,
+          0.0014400026660127355
+        ],
+        "depth": 0.011800001384566706,
+        "screen": [
+          463.1220045843381,
+          576.2338363154378
+        ],
+        "vertices": 4061
+      },
+      {
+        "id": "world",
+        "name": "Category_World",
+        "activity": 0,
+        "reveal": 1,
+        "position": [
+          0.28510812763124704,
+          -0.17000000692766876,
+          0.011800001358121915
+        ],
+        "base": [
+          0.28510812763124704,
+          -0.17000000692766876,
+          0.011800001358121915
+        ],
+        "scale": 1,
+        "color": "#453e34",
+        "opacity": 1,
+        "visible": true,
+        "bounds": [
+          0.03968385048210621,
+          0.018288820838753078,
+          0.0014400026725716573
+        ],
+        "depth": 0.011800001358121913,
+        "screen": [
+          704.855524549803,
+          576.2338427560552
+        ],
+        "vertices": 6039
+      }
+    ],
+    "roots": [
+      "d063126c-34c4-4dbf-b01e-9beabe161e46",
+      "145692d4-9d43-4630-ab27-f66f185cfb10"
+    ],
+    "studio": {
+      "environment": true,
+      "environmentIntensity": 0.12,
+      "sceneLights": [
+        {
+          "name": "Key | large softbox",
+          "type": "RectAreaLight",
+          "intensity": 10.097058564709805
+        },
+        {
+          "name": "Fill | gentle frontal bounce",
+          "type": "RectAreaLight",
+          "intensity": 5.066059031136563
+        },
+        {
+          "name": "Rim | timber edge",
+          "type": "RectAreaLight",
+          "intensity": 13.779680975357937
+        }
+      ],
+      "hdri": {
+        "url": "/environments/citrus-orchard-road-4k.exr",
+        "loaded": true,
+        "width": 4096,
+        "height": 2048,
+        "colorSpace": "srgb-linear"
+      },
+      "environmentRotation": [
+        0,
+        1.0995574287564276,
+        0,
+        "XYZ"
+      ],
+      "worldStrength": 0.1599999964237213,
+      "worldColor": [
+        0.699999988079071,
+        0.7400000095367432,
+        0.7799999713897705
+      ],
+      "displayExposureEV": 0.4000000059604645,
+      "actualLights": 3,
+      "softboxes": [
+        {
+          "name": "Key | large softbox",
+          "shape": "DISK",
+          "diameter": 0.8500000238418579,
+          "watts": 18,
+          "enabled": true,
+          "intensity": 10.097058564709805,
+          "position": [
+            -0.6499999761581421,
+            1.0499999523162842,
+            0.949999988079071
+          ],
+          "quaternion": [
+            -0.3452411909515062,
+            -0.2755703712640314,
+            -0.10680506699657905,
+            0.8907649343208599
+          ],
+          "direction": [
+            0.4171898302604511,
+            -0.6739221174958018,
+            -0.609738981103579
+          ],
+          "color": [
+            1,
+            0.9599999785423279,
+            0.8999999761581421
+          ],
+          "sourcePosition": [
+            -0.6499999761581421,
+            -0.949999988079071,
+            1.0499999523162842
+          ],
+          "sourceRotationDegrees": [
+            47.629497724194344,
+            -0.000003973783187021022,
+            -34.38034116843322
+          ]
+        },
+        {
+          "name": "Fill | gentle frontal bounce",
+          "shape": "DISK",
+          "diameter": 0.800000011920929,
+          "watts": 8,
+          "enabled": true,
+          "intensity": 5.066059031136563,
+          "position": [
+            0.75,
+            0.3499999940395355,
+            0.6499999761581421
+          ],
+          "quaternion": [
+            -0.1534655688524164,
+            0.4094192011446035,
+            0.07007676322351739,
+            0.8966122261976099
+          ],
+          "direction": [
+            -0.7126717821097537,
+            -0.33257975550243934,
+            -0.617648473821838
+          ],
+          "color": [
+            0.8999999761581421,
+            0.949999988079071,
+            1
+          ],
+          "sourcePosition": [
+            0.75,
+            -0.6499999761581421,
+            0.3499999940395355
+          ],
+          "sourceRotationDegrees": [
+            70.57456884455755,
+            0.000007783539724009354,
+            49.08563258353853
+          ]
+        },
+        {
+          "name": "Rim | timber edge",
+          "shape": "DISK",
+          "diameter": 0.5,
+          "watts": 8.5,
+          "enabled": true,
+          "intensity": 13.779680975357937,
+          "position": [
+            0.550000011920929,
+            0.75,
+            -0.02500000037252903
+          ],
+          "quaternion": [
+            -0.3121306621845984,
+            0.6449881260983226,
+            0.3266407268162108,
+            0.6163364361299404
+          ],
+          "direction": [
+            -0.5911501932559327,
+            -0.8061137804686314,
+            0.02687046616724309
+          ],
+          "color": [
+            1,
+            0.9599999785423279,
+            0.8899999856948853
+          ],
+          "sourcePosition": [
+            0.550000011920929,
+            0.02500000037252903,
+            0.75
+          ],
+          "sourceRotationDegrees": [
+            36.28204341828319,
+            -0.0000012101469105339708,
+            92.60256412544149
+          ]
+        }
+      ],
+      "source": "C:\\Users\\Administrator\\Desktop\\Modeling\\相框\\Models\\ArtFrame_2to1\\ArtFrame_2to1.blend",
+      "diskSegments": 32,
+      "toneMapping": "Source AgX Medium High Contrast LUT",
+      "exposure": 1.3195079162244137,
+      "shadow": "Source-disk deterministic wall projection",
+      "shadowProjection": {
+        "method": "Source-disk visibility with separable spatial filtering",
+        "samplesPerDisk": 128,
+        "targetSize": [
+          1024,
+          626
+        ],
+        "targetType": "half-float",
+        "filterStepM": 0.0016,
+        "filterPasses": 4,
+        "renders": 1415,
+        "cached": true,
+        "temporalNoise": false
+      },
+      "invisibleHitAreasCastShadows": false
+    },
+    "materials": [
+      {
+        "name": "PBR_Wood_HoneyOak_Baked",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "transparent": false,
+        "depthWrite": true,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 1,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map",
+            "name": "wood_atlas_4k_basecolor",
+            "colorSpace": "srgb",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "normalMap",
+            "name": "wood_atlas_4k_normal",
+            "colorSpace": "",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "roughnessMap",
+            "name": "wood_atlas_4k_roughness",
+            "colorSpace": "",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          }
+        ]
+      },
+      {
+        "name": "PBR_Canvas_WarmIvory_Baked",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "transparent": false,
+        "depthWrite": true,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 1,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map",
+            "name": "canvas_128mm_2k_basecolor",
+            "colorSpace": "srgb",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "normalMap",
+            "name": "canvas_128mm_2k_normal",
+            "colorSpace": "",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "roughnessMap",
+            "name": "canvas_128mm_2k_roughness",
+            "colorSpace": "",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          }
+        ]
+      },
+      {
+        "name": "M_Backing_NaturalFibre",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "transparent": false,
+        "depthWrite": true,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 0.949999988079071,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "M_Landscape_Photo",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "transparent": false,
+        "depthWrite": true,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 0.8500000238418579,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map",
+            "name": "iceland_budir_arthouse_4641301",
+            "colorSpace": "srgb",
+            "channel": 0,
+            "repeat": [
+              1,
+              1
+            ],
+            "minFilter": 1008,
+            "mipmaps": true
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "M_Ink_CharcoalUmber",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "transparent": false,
+        "depthWrite": true,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 0.8199999928474426,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "M_Mat_Trim",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "transparent": false,
+        "depthWrite": true,
+        "side": 0,
+        "polygonOffset": true,
+        "polygonOffsetUnits": -2,
+        "roughness": 0.6600000262260437,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "M_Mat_Trim",
+        "type": "MeshPhysicalMaterial",
+        "displayTransform": true,
+        "transparent": false,
+        "depthWrite": true,
+        "side": 0,
+        "polygonOffset": true,
+        "polygonOffsetUnits": -1,
+        "roughness": 0.6600000262260437,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "Typography_WarmUmber",
+        "type": "MeshStandardMaterial",
+        "displayTransform": true,
+        "transparent": false,
+        "depthWrite": true,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 0.7799999713897705,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "Typography_WarmLimestone",
+        "type": "MeshStandardMaterial",
+        "displayTransform": true,
+        "transparent": true,
+        "depthWrite": false,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 0.78,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "Typography_WarmLimestone",
+        "type": "MeshStandardMaterial",
+        "displayTransform": true,
+        "transparent": true,
+        "depthWrite": false,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 0.78,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      },
+      {
+        "name": "Typography_WarmLimestone",
+        "type": "MeshStandardMaterial",
+        "displayTransform": true,
+        "transparent": true,
+        "depthWrite": false,
+        "side": 2,
+        "polygonOffset": false,
+        "polygonOffsetUnits": 0,
+        "roughness": 0.78,
+        "metalness": 0,
+        "normalScale": [
+          1,
+          -1
+        ],
+        "maps": [
+          {
+            "key": "map"
+          },
+          {
+            "key": "normalMap"
+          },
+          {
+            "key": "roughnessMap"
+          }
+        ]
+      }
+    ],
+    "hiddenOriginalTexts": [
+      {
+        "name": "Text_Header_CN_Mesh",
+        "visible": false
+      },
+      {
+        "name": "Text_Header_EN_Mesh",
+        "visible": false
+      },
+      {
+        "name": "Text_Quote_CN_Mesh",
+        "visible": false
+      },
+      {
+        "name": "Text_Title_EN_Mesh",
+        "visible": false
+      }
+    ]
+  }
+}

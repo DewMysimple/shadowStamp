@@ -8,7 +8,8 @@ import { join } from 'node:path';
 // Run after npm run build. Use an OS-assigned private port, leaving both user
 // launchers and their existing servers untouched. No development API is used.
 const root=fileURLToPath(new URL('../',import.meta.url));
-const out=join(root,'artifacts/frame-stability');
+const out=join(root,process.env.VERIFY_OUTPUT||'artifacts/frame-stability');
+const reference=join(root,process.env.VERIFY_FRAME_REFERENCE||'artifacts/frame-stability/final-runtime.json');
 await mkdir(out,{recursive:true});
 const server=await preview({root,configFile:false,preview:{host:'127.0.0.1',port:0,strictPort:true}});
 let browser;
@@ -17,11 +18,16 @@ try {
   browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-unsafe-swiftshader']});
   const context=await browser.newContext({viewport:{width:1440,height:900},deviceScaleFactor:1.25});
   await context.addInitScript(()=>{
-    const q=window.__prodQA={contexts:0,patchedShaders:0};
+    const q=window.__prodQA={contexts:0,patchedShaders:0,shadowVisibilityShaders:0,shadowBlurShaders:0};
     const seen=new WeakSet(),get=HTMLCanvasElement.prototype.getContext;
     HTMLCanvasElement.prototype.getContext=function(type,attrs){const gl=get.call(this,type,attrs);if(/^webgl/.test(type)&&gl&&!seen.has(gl)){seen.add(gl);q.contexts++;}return gl;};
     const source=WebGL2RenderingContext.prototype.shaderSource;
-    WebGL2RenderingContext.prototype.shaderSource=function(shader,text){if(text.includes('uFrameDisplayLut')&&text.includes('previousPoint')&&text.includes('dot(tangent, tangent) < 1e-8'))q.patchedShaders++;return source.call(this,shader,text);};
+    WebGL2RenderingContext.prototype.shaderSource=function(shader,text){
+      if(text.includes('uFrameDisplayLut')&&text.includes('previousPoint')&&text.includes('dot(tangent, tangent) < 1e-8'))q.patchedShaders++;
+      if(text.includes('uWallZ')&&text.includes('i < 128'))q.shadowVisibilityShaders++;
+      if(text.includes('0.1531')&&text.includes('tDiffuse'))q.shadowBlurShaders++;
+      return source.call(this,shader,text);
+    };
   });
   const page=await context.newPage();
   page.on('pageerror',e=>report.errors.push(e.message));
@@ -32,7 +38,8 @@ try {
   await page.waitForTimeout(1800);
   report.gpu=await page.evaluate(()=>({...__prodQA,dpr:devicePixelRatio,devApi:!!window.__postalGallery,canvas:document.querySelectorAll('.exhibition-canvas').length}));
   assert.equal(report.gpu.contexts,1);assert.equal(report.gpu.canvas,1);assert.equal(report.gpu.devApi,false);assert.ok(report.gpu.patchedShaders>=5);
-  const current=JSON.parse(await readFile(join(out,'final-runtime.json'),'utf8')).artFrame;
+  assert.ok(report.gpu.shadowVisibilityShaders>=1);assert.ok(report.gpu.shadowBlurShaders>=2);
+  const current=JSON.parse(await readFile(reference,'utf8')).artFrame;
   await page.mouse.click(...current.categories.find(c=>c.id==='china').screen);
   await page.waitForFunction(()=>document.querySelector('[aria-label="选择中国邮票"]').getAttribute('aria-pressed')==='true');
   await page.waitForTimeout(700);

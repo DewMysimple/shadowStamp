@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 import { EXHIBITION } from '../src/config.js';
 
-const root=fileURLToPath(new URL('../',import.meta.url)),out=join(root,'artifacts/frame-stability');
+const root=fileURLToPath(new URL('../',import.meta.url)),out=join(root,process.env.VERIFY_OUTPUT||'artifacts/frame-stability');
 await mkdir(out,{recursive:true});
 const report={startedAt:new Date().toISOString(),scope:'Actual offscreen GPU viewport at 125%, 150%, and 200% desktop scaling; CSS raycast registration and whole-frame tilt.',checks:[],errors:[]};
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-unsafe-swiftshader']});

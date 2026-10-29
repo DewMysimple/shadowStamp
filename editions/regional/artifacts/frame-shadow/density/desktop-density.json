@@ -1,0 +1,105 @@
+{
+  "startedAt": "2026-10-29T03:20:42.753Z",
+  "scope": "Actual offscreen GPU viewport at 125%, 150%, and 200% desktop scaling; CSS raycast registration and whole-frame tilt.",
+  "checks": [
+    {
+      "width": 1536,
+      "height": 864,
+      "dpr": 1.25,
+      "passed": true,
+      "target": [
+        2494,
+        1606
+      ],
+      "actual": {
+        "viewports": [
+          [
+            0,
+            0,
+            2494,
+            1606
+          ]
+        ],
+        "drawingBuffer": [
+          1920,
+          1080
+        ],
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 Ti (0x00002C05) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "cssRaycast": true,
+      "tilt": [
+        0.026083542678341693,
+        0.030443968067617653,
+        0,
+        "XYZ"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "dpr": 1.5,
+      "passed": true,
+      "target": [
+        2079,
+        1339
+      ],
+      "actual": {
+        "viewports": [
+          [
+            0,
+            0,
+            2079,
+            1339
+          ]
+        ],
+        "drawingBuffer": [
+          1920,
+          1080
+        ],
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 Ti (0x00002C05) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "cssRaycast": true,
+      "tilt": [
+        0.02608620117587442,
+        0.030443964237857633,
+        0,
+        "XYZ"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "passed": true,
+      "target": [
+        2338,
+        1506
+      ],
+      "actual": {
+        "viewports": [
+          [
+            0,
+            0,
+            2338,
+            1506
+          ]
+        ],
+        "drawingBuffer": [
+          2520,
+          1575
+        ],
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 Ti (0x00002C05) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "cssRaycast": true,
+      "tilt": [
+        0.026083604088133906,
+        0.030444028606920713,
+        0,
+        "XYZ"
+      ]
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-29T03:21:09.781Z",
+  "passed": true
+}

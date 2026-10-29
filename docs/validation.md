@@ -1,4 +1,6 @@
-> 2026-10-29当前相框稳定性与摄影棚任务：新版unit25、相框专项14、整页浏览器19、六算法GPU8、原版unit19及两版build通过。源三灯GPU、接缝像素、微旋转与模型参数见[摄影棚说明](frame-studio.md)及[当前报告](../editions/regional/artifacts/frame-stability/report.json)。原资产整合见[相框交付](art-frame.md)，下文保留原版历史记录。
+> 2026-10-29当前下缘阴影修复：新版unit25、阴影专项7、相框控件14、整页19、桌面DPR3、生产冒烟1及regional build通过。128射线／灯、浮点墙影图和独立空间滤波消除横向台阶，1116点相框／邮票／底色RGB与旧实现一致。见[阴影修复](frame-shadow.md)及[当前报告](../editions/regional/artifacts/frame-shadow/report.json)。
+
+> 上一轮相框稳定性与摄影棚任务保留在[摄影棚说明](frame-studio.md)及[当时报告](../editions/regional/artifacts/frame-stability/report.json)；六算法GPU8、原版unit19与两版build为该轮实测，不冒充本轮重新执行。原资产整合见[相框交付](art-frame.md)，下文为更早历史。
 
 # 当前验收：双版本桌面整合
 

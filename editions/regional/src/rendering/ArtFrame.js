@@ -306,6 +306,7 @@ export function createArtFrame({ renderer, wake, onCategory, onStatus, parameter
         renderer.toneMappingExposure = 2 ** .4;
         if (dirty) {
           shadow.update(root, settings, camera);
+          shadow.render(renderer);
           renderer.setRenderTarget(target);
           // setRenderTarget installs its physical-pixel viewport. setViewport
           // would multiply by renderer DPR again on scaled desktop displays.
@@ -358,7 +359,7 @@ export function createArtFrame({ renderer, wake, onCategory, onStatus, parameter
           sceneLights: scene.children.filter(node=>node.isLight).map(light=>({name:light.name,type:light.type,intensity:light.intensity})),
           hdri: { ...studio.source }, environmentRotation: scene.environmentRotation.toArray(),
           ...studio.getDiagnostics(), toneMapping: 'Source AgX Medium High Contrast LUT', exposure: 2 ** settings.exposure,
-          shadow: 'Source-disk deterministic wall projection', softboxes: studio.softboxes,
+          shadow: 'Source-disk deterministic wall projection', shadowProjection: shadow.getDiagnostics(), softboxes: studio.softboxes,
           invisibleHitAreasCastShadows: hitTargets.some(mesh => mesh.castShadow) },
         materials: [...materialSet].filter(mat => mat.isMeshStandardMaterial).map(mat => ({ name: mat.name, type: mat.type,
           displayTransform: Boolean(mat.userData.frameDisplay),
@@ -373,6 +374,8 @@ export function createArtFrame({ renderer, wake, onCategory, onStatus, parameter
     dispose() {
       if (disposed) return;
       disposed = true;
+      scene.remove(shadow.mesh);
+      shadow.dispose();
       disposeObjects(scene);
       target.dispose(); composite.geometry.dispose(); composite.material.dispose(); compositeScene.clear();
       studio.dispose();

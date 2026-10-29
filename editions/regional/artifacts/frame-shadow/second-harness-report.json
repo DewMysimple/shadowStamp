@@ -1,0 +1,119 @@
+{
+  "startedAt": "2026-10-29T02:57:06.165Z",
+  "baseline": "f29710d",
+  "scope": "Actual old/new GPU wall pixels; horizontal banding, unchanged model/artwork, tilted wall shadows, parameter extremes, spatial precision, caching and target disposal. Desktop only.",
+  "checks": [
+    {
+      "name": "Long horizontal shadow terraces disappear in actual wall pixels",
+      "passed": true,
+      "evidence": [
+        {
+          "x": 520.8881301822039,
+          "before": 2.289760348583883,
+          "after": 1.0152505446622797
+        },
+        {
+          "x": 823.04,
+          "before": 2.3485838779956225,
+          "after": 1.0326797385620807
+        },
+        {
+          "x": 1125.191869817796,
+          "before": 2.4967320261437465,
+          "after": 1.0087145969498579
+        }
+      ]
+    },
+    {
+      "name": "Only wall projection changes; model, source lighting, page and stamp pixels are preserved",
+      "passed": true,
+      "evidence": {
+        "samples": 968,
+        "sha256": "8d65d2e179e7c5efba29f7afcb51e25813943bdac2529c5cc1c819f8906da547",
+        "sourceLights": 3,
+        "unchangedModel": true
+      }
+    },
+    {
+      "name": "Real GPU visibility is half-float, spatially filtered and not 8-bit quantized",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n5131 !== 5126\n\n    at file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-shadow.mjs:183:78\n    at async check (file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-shadow.mjs:146:26)\n    at async file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-shadow.mjs:182:3"
+    },
+    {
+      "name": "All four 5-degree corners keep continuous stable shadows, then return to rest",
+      "passed": true,
+      "evidence": [
+        {
+          "rotation": [
+            0.0837758045267195,
+            -0.08377580377095206,
+            0,
+            "XYZ"
+          ],
+          "stable": true
+        },
+        {
+          "rotation": [
+            0.0837758045267195,
+            0.08377579889931593,
+            0,
+            "XYZ"
+          ],
+          "stable": true
+        },
+        {
+          "rotation": [
+            -0.0837758160164274,
+            0.08377579889931593,
+            0,
+            "XYZ"
+          ],
+          "stable": true
+        },
+        {
+          "rotation": [
+            -0.0837758160164274,
+            -0.08377580377095206,
+            0,
+            "XYZ"
+          ],
+          "stable": true
+        }
+      ]
+    },
+    {
+      "name": "Opacity, softness and black-light extremes stay finite and retain parameter behavior",
+      "passed": true,
+      "evidence": {
+        "softnessExtremes": [
+          0.25,
+          2
+        ],
+        "blackLightsLeaveNoShadow": true,
+        "opacityRange": [
+          0,
+          0.8
+        ]
+      }
+    },
+    {
+      "name": "Shadow cache is independent of category, exposure and resize; stationary pixels do not flicker",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1305 !== 1029\n\n    at file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-shadow.mjs:220:12\n    at async check (file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-shadow.mjs:146:26)\n    at async file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-shadow.mjs:214:3"
+    },
+    {
+      "name": "Both shadow render targets are released with the existing gallery lifecycle",
+      "passed": true,
+      "evidence": {
+        "targets": 2,
+        "deleted": 2
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "finishedAt": "2026-10-29T02:57:45.586Z",
+  "passed": false
+}

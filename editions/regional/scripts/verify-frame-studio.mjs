@@ -8,7 +8,7 @@ import * as THREE from 'three';
 import { FRAME_DEFAULTS, FRAME_STUDIO_SOURCE, FRAME_STORAGE_KEY, normalizeFrameParameters, parseFrameParameters, serializeFrameParameters } from '../src/frameParameters.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const out = join(root, 'artifacts/frame-stability');
+const out = join(root, process.env.VERIFY_OUTPUT || 'artifacts/frame-stability');
 await mkdir(out, { recursive: true });
 const report = { startedAt: new Date().toISOString(), scope: 'Source Blender transforms and actual GPU uploads; continuous inner-trim hover stability; whole-frame tilt; real model controls, isolation, persistence and lifecycle. Desktop only.', checks: [], errors: [], warnings: [], screenshots: [] };
 const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true, args: ['--enable-unsafe-swiftshader'] });

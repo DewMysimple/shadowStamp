@@ -2,6 +2,8 @@
 
 # Postal Studies · 狮行万里
 
+相框下方的条带状投影已修复，改为浮点阴影图与独立空间滤波；照片、木纹和文字保持清晰。见[修复记录](../../docs/frame-shadow.md)及[当前桌面](artifacts/frame-shadow/final-1440.png)。
+
 当前以真实相框中的广东／中国／世界文字切换三组邮票，默认广东。整框支持指针微旋转；左上“相框光照”提供源三灯、HDRI、曝光、纸木与投影的独立参数。当前稳定性、源blend布光与验收见[摄影棚说明](../../docs/frame-studio.md)及[实际截图](artifacts/frame-stability/final-01-studio.png)，原资产整合见[相框说明](../../docs/art-frame.md)。
 
 React、Vite 与原生 Three.js 构建的交互邮票展览。当前是三组、12枚醒狮地域邮票：广东篇4张竖版、中国篇4张横版、世界篇4张超长竖版。每张场景插画单独生成，保留明亮的地域建筑、街道、天空和节庆色彩；邮票编号、标题、齿孔与说明由代码排版。

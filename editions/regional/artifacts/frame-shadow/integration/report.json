@@ -1,0 +1,438 @@
+{
+  "startedAt": "2026-10-29T03:17:03.740Z",
+  "base": "http://127.0.0.1:4174/",
+  "checks": [
+    {
+      "name": "Original frame, source blend, HDRI, twelve print assets and original edition preserved",
+      "status": "passed",
+      "evidence": {
+        "originalHash": "9ef10f1d8656a3d09664719dea1e9bb358be8c0878ddbe9eb46b066f96894fdf",
+        "hdriHash": "8aa6cc5bb4a5a8f5fa12870cefdd6a6b600072454add837dca45e340c1549d30",
+        "originalFiles": 30,
+        "stampImages": 12,
+        "sourceUnchanged": true
+      }
+    },
+    {
+      "name": "Five real mesh text nodes and small physical glyph scale",
+      "status": "passed",
+      "evidence": {
+        "names": [
+          "Title_Chinese",
+          "Title_English",
+          "Category_Guangdong",
+          "Category_China",
+          "Category_World"
+        ],
+        "categoryGlyphHeights": [
+          0.018344327807426453,
+          0.018240004777908325,
+          0.01828882098197937
+        ],
+        "categoryThickness": 0.0014400007203221321,
+        "verifiedGlyphs": 29
+      }
+    },
+    {
+      "name": "Actual runGo.cmd reuses the intended regional server",
+      "status": "passed",
+      "evidence": "[Postal Studies] Reusing regional edition: http://127.0.0.1:4174/"
+    },
+    {
+      "name": "Default Guangdong, one renderer, real HDRI and GPU display transform",
+      "status": "passed",
+      "evidence": {
+        "q": {
+          "callbacks": 1026,
+          "contexts": 1,
+          "lutShaders": 8
+        },
+        "studio": {
+          "environment": true,
+          "environmentIntensity": 0.12,
+          "sceneLights": [
+            {
+              "name": "Key | large softbox",
+              "type": "RectAreaLight",
+              "intensity": 10.097058564709805
+            },
+            {
+              "name": "Fill | gentle frontal bounce",
+              "type": "RectAreaLight",
+              "intensity": 5.066059031136563
+            },
+            {
+              "name": "Rim | timber edge",
+              "type": "RectAreaLight",
+              "intensity": 13.779680975357937
+            }
+          ],
+          "hdri": {
+            "url": "/environments/citrus-orchard-road-4k.exr",
+            "loaded": true,
+            "width": 4096,
+            "height": 2048,
+            "colorSpace": "srgb-linear"
+          },
+          "environmentRotation": [
+            0,
+            1.0995574287564276,
+            0,
+            "XYZ"
+          ],
+          "worldStrength": 0.1599999964237213,
+          "worldColor": [
+            0.699999988079071,
+            0.7400000095367432,
+            0.7799999713897705
+          ],
+          "displayExposureEV": 0.4000000059604645,
+          "actualLights": 3,
+          "softboxes": [
+            {
+              "name": "Key | large softbox",
+              "shape": "DISK",
+              "diameter": 0.8500000238418579,
+              "watts": 18,
+              "enabled": true,
+              "intensity": 10.097058564709805,
+              "position": [
+                -0.6499999761581421,
+                1.0499999523162842,
+                0.949999988079071
+              ],
+              "quaternion": [
+                -0.3452411909515062,
+                -0.2755703712640314,
+                -0.10680506699657905,
+                0.8907649343208599
+              ],
+              "direction": [
+                0.4171898302604511,
+                -0.6739221174958018,
+                -0.609738981103579
+              ],
+              "color": [
+                1,
+                0.9599999785423279,
+                0.8999999761581421
+              ],
+              "sourcePosition": [
+                -0.6499999761581421,
+                -0.949999988079071,
+                1.0499999523162842
+              ],
+              "sourceRotationDegrees": [
+                47.629497724194344,
+                -0.000003973783187021022,
+                -34.38034116843322
+              ]
+            },
+            {
+              "name": "Fill | gentle frontal bounce",
+              "shape": "DISK",
+              "diameter": 0.800000011920929,
+              "watts": 8,
+              "enabled": true,
+              "intensity": 5.066059031136563,
+              "position": [
+                0.75,
+                0.3499999940395355,
+                0.6499999761581421
+              ],
+              "quaternion": [
+                -0.1534655688524164,
+                0.4094192011446035,
+                0.07007676322351739,
+                0.8966122261976099
+              ],
+              "direction": [
+                -0.7126717821097537,
+                -0.33257975550243934,
+                -0.617648473821838
+              ],
+              "color": [
+                0.8999999761581421,
+                0.949999988079071,
+                1
+              ],
+              "sourcePosition": [
+                0.75,
+                -0.6499999761581421,
+                0.3499999940395355
+              ],
+              "sourceRotationDegrees": [
+                70.57456884455755,
+                0.000007783539724009354,
+                49.08563258353853
+              ]
+            },
+            {
+              "name": "Rim | timber edge",
+              "shape": "DISK",
+              "diameter": 0.5,
+              "watts": 8.5,
+              "enabled": true,
+              "intensity": 13.779680975357937,
+              "position": [
+                0.550000011920929,
+                0.75,
+                -0.02500000037252903
+              ],
+              "quaternion": [
+                -0.3121306621845984,
+                0.6449881260983226,
+                0.3266407268162108,
+                0.6163364361299404
+              ],
+              "direction": [
+                -0.5911501932559327,
+                -0.8061137804686314,
+                0.02687046616724309
+              ],
+              "color": [
+                1,
+                0.9599999785423279,
+                0.8899999856948853
+              ],
+              "sourcePosition": [
+                0.550000011920929,
+                0.02500000037252903,
+                0.75
+              ],
+              "sourceRotationDegrees": [
+                36.28204341828319,
+                -0.0000012101469105339708,
+                92.60256412544149
+              ]
+            }
+          ],
+          "source": "C:\\Users\\Administrator\\Desktop\\Modeling\\相框\\Models\\ArtFrame_2to1\\ArtFrame_2to1.blend",
+          "diskSegments": 32,
+          "toneMapping": "Source AgX Medium High Contrast LUT",
+          "exposure": 1.3195079162244137,
+          "shadow": "Source-disk deterministic wall projection",
+          "shadowProjection": {
+            "method": "Source-disk visibility with separable spatial filtering",
+            "samplesPerDisk": 128,
+            "targetSize": [
+              1024,
+              626
+            ],
+            "targetType": "half-float",
+            "filterStepM": 0.0016,
+            "filterPasses": 4,
+            "renders": 1,
+            "cached": true,
+            "temporalNoise": false
+          },
+          "invisibleHitAreasCastShadows": false
+        },
+        "originalHidden": [
+          {
+            "name": "Text_Header_CN_Mesh",
+            "visible": false
+          },
+          {
+            "name": "Text_Header_EN_Mesh",
+            "visible": false
+          },
+          {
+            "name": "Text_Quote_CN_Mesh",
+            "visible": false
+          },
+          {
+            "name": "Text_Title_EN_Mesh",
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Raycast hover and smooth normal-axis micro-motion on all three words",
+      "status": "passed",
+      "evidence": [
+        {
+          "id": "guangdong",
+          "before": [
+            -0.2853130307048559,
+            -0.16999999256961534,
+            0.014280001397090767
+          ],
+          "after": [
+            -0.2853130307048559,
+            -0.16999999256961534,
+            0.01579082858967505
+          ]
+        },
+        {
+          "id": "china",
+          "before": [
+            0.0001909453421831131,
+            -0.16999999933422805,
+            0.011800001384566706
+          ],
+          "after": [
+            0.0001909453421831131,
+            -0.16999999933422805,
+            0.01577202437814909
+          ]
+        },
+        {
+          "id": "world",
+          "before": [
+            0.28510812763124704,
+            -0.17000000692766876,
+            0.011800001358121915
+          ],
+          "after": [
+            0.28510812763124704,
+            -0.17000000692766876,
+            0.015765093348436073
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Three real text clicks update content, heading, count and unique selection",
+      "status": "passed",
+      "evidence": {
+        "categories": 3,
+        "stamps": 12
+      }
+    },
+    {
+      "name": "Category transition fades old set before staggered new entries",
+      "status": "passed",
+      "evidence": {
+        "frames": 168,
+        "staggerObserved": true
+      }
+    },
+    {
+      "name": "Rapid category clicks finish with the last chosen category",
+      "status": "passed",
+      "evidence": {
+        "series": "world"
+      }
+    },
+    {
+      "name": "Photo and blank frame clicks do not act as category buttons",
+      "status": "passed",
+      "evidence": {
+        "series": "world"
+      }
+    },
+    {
+      "name": "Accessible keyboard focus, arrow navigation and Enter selection",
+      "status": "passed",
+      "evidence": {
+        "keyboard": true
+      }
+    },
+    {
+      "name": "Existing warm stamp hover, focus, details and Escape return",
+      "status": "passed",
+      "evidence": {
+        "focus": true,
+        "return": true,
+        "assetsReused": true
+      }
+    },
+    {
+      "name": "Six lighting algorithms and saved parameter controls remain available",
+      "status": "passed",
+      "evidence": {
+        "algorithms": 6,
+        "persisted": true
+      }
+    },
+    {
+      "name": "Resizing common desktop displays preserves frame and nonoverlapping stamp ratios",
+      "status": "passed",
+      "evidence": [
+        [
+          1024,
+          768
+        ],
+        [
+          1280,
+          720
+        ],
+        [
+          1440,
+          900
+        ],
+        [
+          1920,
+          1080
+        ],
+        [
+          2560,
+          1440
+        ]
+      ]
+    },
+    {
+      "name": "Warmed categories reuse GPU resources and never reload models, HDRI or images",
+      "status": "passed",
+      "evidence": {
+        "requests": 32,
+        "renderer": {
+          "programs": 18,
+          "geometries": 25,
+          "textures": 63
+        }
+      }
+    },
+    {
+      "name": "Idle scene sleeps and the frame has no continuous floating animation",
+      "status": "passed",
+      "evidence": {
+        "idleCallbacks": 0
+      }
+    },
+    {
+      "name": "Frame and original print shaders have no new browser errors",
+      "status": "passed",
+      "evidence": {
+        "errors": 0
+      }
+    },
+    {
+      "name": "Gallery teardown releases its canvas and animation clock",
+      "status": "passed",
+      "evidence": {
+        "disposed": true
+      }
+    },
+    {
+      "name": "Reduced-motion keeps text stable and disables continuous movement",
+      "status": "passed",
+      "evidence": {
+        "reducedMotion": true
+      }
+    },
+    {
+      "name": "HDRI failure gives a clear message and usable category fallback",
+      "status": "passed",
+      "evidence": {
+        "message": true,
+        "categoriesUsable": true
+      }
+    }
+  ],
+  "screenshots": [
+    "01-initial-guangdong.png",
+    "02-hover-china.png",
+    "03-selected-china.png",
+    "04-selected-world.png",
+    "05-stamp-focus.png",
+    "06-desktop-1920.png",
+    "07-frame-closeup.png"
+  ],
+  "errors": [],
+  "scope": "Desktop frame integration, exact assets, real raycast categories, HDRI/display pipeline, existing stamp interactions and lifecycle. Mobile optimization excluded by user.",
+  "finishedAt": "2026-10-29T03:17:55.686Z",
+  "passed": true
+}

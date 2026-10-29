@@ -1,0 +1,444 @@
+{
+  "startedAt": "2026-10-29T03:07:15.402Z",
+  "scope": "Source Blender transforms and actual GPU uploads; continuous inner-trim hover stability; whole-frame tilt; real model controls, isolation, persistence and lifecycle. Desktop only.",
+  "checks": [
+    {
+      "name": "Three source disk lights match original Blender transforms and actual GPU uploads",
+      "result": "passed",
+      "elapsedMs": 16,
+      "evidence": {
+        "lights": 3,
+        "uploads": [
+          {
+            "name": "Key | large softbox",
+            "position": [
+              -0.6499999761581421,
+              1.0499999523162842,
+              -1.050000011920929
+            ],
+            "color": [
+              10.097058564709805,
+              9.69317600546204,
+              9.08735246750619
+            ]
+          },
+          {
+            "name": "Fill | gentle frontal bounce",
+            "position": [
+              0.75,
+              0.3499999940395355,
+              -1.350000023841858
+            ],
+            "color": [
+              4.5594530072386465,
+              4.812756019187605,
+              5.066059031136563
+            ]
+          },
+          {
+            "name": "Rim | timber edge",
+            "position": [
+              0.550000011920929,
+              0.75,
+              -2.025000000372529
+            ],
+            "color": [
+              13.779680975357937,
+              13.228493440663744,
+              12.263915870948647
+            ]
+          }
+        ],
+        "world": [
+          0.11199999558925633,
+          0.11839999887943264,
+          0.12479999263286601
+        ],
+        "diskShaderVariants": 8
+      }
+    },
+    {
+      "name": "Solid opaque geometry, micrometer seam ordering and stable source display pass",
+      "result": "passed",
+      "elapsedMs": 159,
+      "evidence": {
+        "renderPass": {
+          "renders": 120,
+          "cached": true,
+          "samples": 4,
+          "size": [
+            2338,
+            1506
+          ],
+          "depthRange": [
+            1.8,
+            2.2
+          ],
+          "solidPass": true
+        },
+        "trimUnits": [
+          -2,
+          -1
+        ],
+        "minimumTrimChannel": 180
+      }
+    },
+    {
+      "name": "Model control launcher is at upper left and exposes the actual supplied HDRI",
+      "result": "passed",
+      "elapsedMs": 198,
+      "evidence": {
+        "box": {
+          "x": 50.390625,
+          "y": 114,
+          "width": 161.796875,
+          "height": 40.5
+        },
+        "preview": [
+          512,
+          256
+        ],
+        "sourceDownload": true
+      }
+    },
+    {
+      "name": "Whole frame tilts gently with pointer, damps smoothly and returns on leave",
+      "result": "passed",
+      "elapsedMs": 3388,
+      "evidence": {
+        "during": {
+          "rotation": [
+            0.012645982691145216,
+            0.01601824425316915,
+            0,
+            "XYZ"
+          ],
+          "position": [
+            0,
+            0,
+            0.011170191037280466
+          ],
+          "target": [
+            0.7599999459670703,
+            -0.5999999756570936
+          ],
+          "pointerInside": true,
+          "enabled": true
+        },
+        "settled": {
+          "rotation": [
+            0.02617993771775528,
+            0.03316125343026094,
+            0,
+            "XYZ"
+          ],
+          "position": [
+            0,
+            0,
+            0.02312182482761494
+          ],
+          "target": [
+            0.7599999459670703,
+            -0.5999999756570936
+          ],
+          "pointerInside": true,
+          "enabled": true
+        },
+        "returned": true
+      }
+    },
+    {
+      "name": "Repeated traversal of both inner seams produces no black strips or nonfinite poses",
+      "result": "passed",
+      "elapsedMs": 25178,
+      "evidence": {
+        "poses": 18,
+        "minimumChannel": 175
+      }
+    },
+    {
+      "name": "Near-stationary pointer perturbations do not trigger sudden long-line flashes",
+      "result": "passed",
+      "elapsedMs": 2418,
+      "evidence": {
+        "points": 1932,
+        "perturbationCssPx": 0.05,
+        "mean": 0.011214630779848172,
+        "max": 1,
+        "strongFraction": 0,
+        "stationarySha256": "c7c0f05c409c946659cb2947f20b5796a0392de173d25922c4d0ad4b9784d094"
+      }
+    },
+    {
+      "name": "HDRI, world and exposure controls update actual GPU uniforms while stamps and desk stay identical",
+      "result": "passed",
+      "elapsedMs": 2318,
+      "evidence": {
+        "frameDelta": {
+          "mean": 6.174189814814815,
+          "max": 29,
+          "strongFraction": 0.0005787037037037037
+        },
+        "stampAndDeskSha256": "bd62ab1505f35e11fbb036e02cd86d9774cef647e6e4c97fce85a5e45fde6c46",
+        "actualWorldUniform": [
+          0.16099999725818634,
+          0.17020000219345094,
+          0.1793999934196472
+        ],
+        "actualExposure": 0.6372803110267208
+      }
+    },
+    {
+      "name": "All three light controls change power, diameter, color, position and angle without adding emitters",
+      "result": "passed",
+      "elapsedMs": 865,
+      "evidence": [
+        {
+          "name": "Key | large softbox",
+          "shape": "DISK",
+          "diameter": 0.7,
+          "watts": 12,
+          "enabled": true,
+          "intensity": 9.925340438433091,
+          "position": [
+            -0.5499999761581421,
+            1.0499999523162842,
+            0.949999988079071
+          ],
+          "quaternion": [
+            -0.35035779521087534,
+            -0.2285736770221796,
+            -0.08859016650132497,
+            0.9039664108288551
+          ],
+          "direction": [
+            0.3511693420298502,
+            -0.673922117495802,
+            -0.6500069790150693
+          ],
+          "color": [
+            1,
+            0.7529422167760779,
+            0.45641102318040466
+          ],
+          "sourcePosition": [
+            -0.5499999761581421,
+            -0.949999988079071,
+            1.0499999523162842
+          ],
+          "sourceRotationDegrees": [
+            47.629497724194344,
+            -0.000003973783187021022,
+            -28.38034116843322
+          ]
+        },
+        {
+          "name": "Fill | gentle frontal bounce",
+          "shape": "DISK",
+          "diameter": 0.7999999999999999,
+          "watts": 16,
+          "enabled": true,
+          "intensity": 10.13211836423378,
+          "position": [
+            0.85,
+            0.3499999940395355,
+            0.6499999761581421
+          ],
+          "quaternion": [
+            -0.14958771521022152,
+            0.45578316459579127,
+            0.0780124927512661,
+            0.8739561049068572
+          ],
+          "direction": [
+            -0.7733295373274857,
+            -0.33257975550243946,
+            -0.539770444658463
+          ],
+          "color": [
+            1,
+            0.7529422167760779,
+            0.45641102318040466
+          ],
+          "sourcePosition": [
+            0.85,
+            -0.6499999761581421,
+            0.3499999940395355
+          ],
+          "sourceRotationDegrees": [
+            70.57456884455755,
+            0.000007783539724009354,
+            55.08563258353853
+          ]
+        },
+        {
+          "name": "Rim | timber edge",
+          "shape": "DISK",
+          "diameter": 0.8999999999999999,
+          "watts": 20,
+          "enabled": true,
+          "intensity": 10.007030483193857,
+          "position": [
+            0.6500000119209289,
+            0.75,
+            -0.02500000037252903
+          ],
+          "quaternion": [
+            -0.29460784317422595,
+            0.6763607490400207,
+            0.3425287337305425,
+            0.5817356981200341
+          ],
+          "direction": [
+            -0.5851030821084635,
+            -0.8061137804686308,
+            0.08851528820349452
+          ],
+          "color": [
+            1,
+            0.7529422167760779,
+            0.45641102318040466
+          ],
+          "sourcePosition": [
+            0.6500000119209289,
+            0.02500000037252903,
+            0.75
+          ],
+          "sourceRotationDegrees": [
+            36.28204341828319,
+            -0.0000012101469105339708,
+            98.60256412544149
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paper, wood and shadow controls change their own material or projection",
+      "result": "passed",
+      "elapsedMs": 557,
+      "evidence": {
+        "wood": [
+          0.4,
+          0.4
+        ],
+        "canvas": [
+          0.3,
+          0.3
+        ],
+        "shadowDisabled": true,
+        "shadowDelta": {
+          "mean": 31.1,
+          "max": 58,
+          "strongFraction": 0.5
+        },
+        "blackEmittersCastNoShadow": true
+      }
+    },
+    {
+      "name": "Real export, edited import and reload preserve a complete independent frame rig",
+      "result": "passed",
+      "elapsedMs": 8479,
+      "evidence": {
+        "filename": "postal-frame-studio.json",
+        "roundTrip": true,
+        "restoredSource": true
+      }
+    },
+    {
+      "name": "Tilt controls, reduced motion and panel event isolation behave correctly",
+      "result": "passed",
+      "elapsedMs": 983,
+      "evidence": {
+        "toggle": true,
+        "reducedMotion": true,
+        "escape": true,
+        "invalidImportContained": true
+      }
+    },
+    {
+      "name": "Desktop resize, all-corner maximum tilt and supersampling stay within the view and depth range",
+      "result": "passed",
+      "elapsedMs": 41038,
+      "evidence": [
+        {
+          "width": 1024,
+          "height": 768,
+          "target": [
+            1663,
+            1071
+          ]
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "target": [
+            2079,
+            1339
+          ]
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "target": [
+            2338,
+            1506
+          ]
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "target": [
+            3118,
+            2008
+          ]
+        },
+        {
+          "width": 2560,
+          "height": 1440,
+          "target": [
+            4096,
+            2638
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stationary frame reuses one cached render and parameter edits do not leak resources",
+      "result": "passed",
+      "elapsedMs": 714,
+      "evidence": {
+        "renderer": {
+          "programs": 18,
+          "geometries": 25,
+          "textures": 31
+        },
+        "unchangedRenders": 6881,
+        "assetRequests": 36,
+        "pixelSha256": "c4640c16a9feb60c9ac02f77e1150029c128c5be60b2f2530eaec7b03bfa4653"
+      }
+    },
+    {
+      "name": "No new runtime errors; teardown releases the new render target and animation",
+      "result": "passed",
+      "elapsedMs": 347,
+      "evidence": {
+        "errors": 0,
+        "disposed": true
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "screenshots": [
+    "final-01-studio.png",
+    "final-02-model-controls.png",
+    "final-03-pointer-tilt.png",
+    "final-04-light-controls.png",
+    "final-05-desktop-1920.png",
+    "final-06-default-restored.png"
+  ],
+  "finishedAt": "2026-10-29T03:08:52.455Z",
+  "passed": true
+}

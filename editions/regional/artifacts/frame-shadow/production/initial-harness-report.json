@@ -1,0 +1,15 @@
+{
+  "startedAt": "2026-10-29T03:21:41.034Z",
+  "scope": "Built production app; actual GPU disk adapter, source HDRI panel, real category raycast and exposure input; no development diagnostics.",
+  "errors": [],
+  "gpu": {
+    "contexts": 1,
+    "patchedShaders": 8,
+    "dpr": 1.25,
+    "devApi": false,
+    "canvas": 1
+  },
+  "passed": false,
+  "failure": "Error: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\炫技3\\editions\\regional\\artifacts\\frame-shadow\\production\\final-runtime.json'\n    at async open (node:internal/fs/promises:640:25)\n    at async readFile (node:internal/fs/promises:1287:14)\n    at async file:///C:/Users/Administrator/Desktop/%E7%82%AB%E6%8A%803/editions/regional/scripts/verify-frame-production.mjs:35:28",
+  "finishedAt": "2026-10-29T03:21:52.170Z"
+}
